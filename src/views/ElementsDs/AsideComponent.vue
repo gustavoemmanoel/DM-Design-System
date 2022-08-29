@@ -6,18 +6,26 @@
       <div class="component-tag tag-ativa">Princípios</div>
       <!-- Fundação -->
       <div class="component-tag tag-ativa">Fundação</div>
-      <p>Cores</p>
-      <p>Tipografia</p>
-      <p>Iconografia</p>
-      <p>Grafismos</p>
-      <p>Grid</p>
+      <div class="options">
+        <p>Cores</p>
+        <p>Tipografia</p>
+        <p>Iconografia</p>
+        <p>Grafismos</p>
+        <p>Grid</p>
+      </div>
 
       <!-- Componentes -->
       <div class="component-tag">Componentes</div>
-      <p>Header</p>
-      <p>Botão</p>
-      <p>Campo de Texto</p>
-      <p>Dropdown</p>
+      <div class="options">
+        <p>Header</p>
+        <p>Botão</p>
+        <p>Campo de Texto</p>
+        <p>Dropdown</p>
+      </div>
+      <header>
+        <img src="/grafismos/graf-01-background.svg" />
+        <img src="/grafismos/graf-02-background.svg" />
+      </header>
     </div>
   </div>
 </template>
@@ -26,8 +34,6 @@
 export default {
   name: "AsideComponent",
 };
-
-
 </script>
 
 <style scoped>
@@ -37,7 +43,7 @@ export default {
   background: #faf6f0;
   padding: 17px;
   height: calc(100vh - 75px);
-  width: 200px;
+  width: 16.666vw;
 }
 .Principles {
   font-family: "Roboto Slab", serif;
@@ -69,6 +75,7 @@ export default {
   padding-left: 15px;
   height: 30px;
   border-radius: 6px;
+  margin: 15px 0;
 }
 
 .tag-ativa {
@@ -97,5 +104,32 @@ export default {
 .btn-aside button:hover {
   color: #0764f4;
   transition: 0.3s;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin: 10px 0 10px 25px;
+}
+
+.options p {
+  font-size: 18px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.options p:hover {
+  transition: 0.2s;
+  color: var(--dm_cinza_02);
+}
+
+header {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #2c2c2c;
 }
 </style>

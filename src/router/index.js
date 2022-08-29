@@ -10,7 +10,6 @@ import BotaoDs from '../views/ElementsDs/BotaoDs'
 
 const routes = [
 
-
   /* Fundação */
   {
     path: '/ColorsDs',
@@ -43,7 +42,7 @@ const routes = [
 
 const router = createRouter({
   history: createWebHashHistory(),
-  routes
+  routes,
 })
 
 export default router

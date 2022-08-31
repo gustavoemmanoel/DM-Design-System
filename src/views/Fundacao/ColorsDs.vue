@@ -1,22 +1,25 @@
 <template>
   <div>
+   
     <el-row>
       <el-col :span="4"><AsideComponent /></el-col>
-      <div id="ancora">teste</div>
       <el-col class="container" :span="16">
         <div
-          style="margin: 0 0 20px 0"
+          class="containerInterno"
           v-for="(userConditions, index) in colors"
           :key="index"
         >
+       
           <div style="margin: 0 0 20px 0">
-            <h1>/{{ userConditions.title }}</h1>
+            <h1>{{ userConditions.title }}</h1>
 
             <div class="hr" />
           </div>
           <div>
             <div class="container-elementos">
-              <p class="title-squad">{{ userConditions.classification }}</p>
+              <p class="title-squad">
+                {{ userConditions.classification }}
+              </p>
               <div class="grid-colors">
                 <div
                   class="container-color"
@@ -28,8 +31,23 @@
                   <div class="cont-color">
                     <p class="HEX">{{ coresDs.hex }}</p>
                   </div>
-                  <div class="color-squad" :class="coresDs.token"></div>
+                  <div
+                    class="color-squad"
+                    :style="userConditions.border"
+                    :class="coresDs.token"
+                  ></div>
                   <p class="casodeuso">{{ coresDs.casodeuso }}</p>
+                </div>
+              </div>
+              <div style="display: flex; gap: 30px">
+                <div
+                  class="contMap"
+                  v-for="(mapsExp, index) in userConditions.img"
+                  :key="index"
+                >
+                  <p style="height: 65px">{{ mapsExp.topDescription }}</p>
+                  <img :src="mapsExp.map" />
+                  <p>{{ mapsExp.descriptionMap }}</p>
                 </div>
               </div>
             </div>
@@ -58,9 +76,10 @@ export default {
   },
   data() {
     return {
+      text: "mateus",
       colors: [
         {
-          title: "Cores",
+          title: "/Cores",
           classification: "Predominantes em todas as interfaces",
           cores: [
             {
@@ -81,7 +100,7 @@ export default {
           ],
         },
         {
-          title: "Tons pretos",
+          title: "/Tons pretos",
           classification: "Variações do #2C2C2C",
           cores: [
             {
@@ -117,8 +136,9 @@ export default {
           ],
         },
         {
-          title: "Tons creme",
+          title: "/Tons creme",
           classification: "Estabelecidas no manual da marca",
+          border: "border: 1px solid var(--dm_cinza_04)",
           cores: [
             {
               token: "dm_creme_01",
@@ -138,7 +158,7 @@ export default {
           ],
         },
         {
-          title: "Cores secundárias da marca",
+          title: "/Cores secundárias da marca",
           classification: "Utilizadas para contraste e em variações de paleta",
           cores: [
             {
@@ -164,7 +184,7 @@ export default {
           ],
         },
         {
-          title: "Sub tons de cores da marca",
+          title: "/Sub tons de cores da marca",
           classification: "Usadas em hover e tags",
           cores: [
             {
@@ -244,7 +264,41 @@ export default {
           ],
         },
         {
-          title: "Cores semânticas",
+          title: "/Cores de contraste",
+          classification: "Pins, vetores de áreas e vetores de linhas. ",
+          cores: [
+            {
+              token: "dm_azul_CT01",
+              hex: "#184995",
+            },
+            {
+              token: "dm_lilas_CT01",
+              hex: "#654C95",
+            },
+            {
+              token: "dm_rosa_CT01",
+              hex: "#903E61",
+            },
+            {
+              token: "dm_verde_CT01",
+              hex: "#356316",
+            },
+            {
+              token: "dm_laranja_CT01",
+              hex: "#8F4216",
+            },
+            {
+              token: "dm_amarelo_CT01",
+              hex: "#956816",
+            },
+            {
+              token: "dm_cinza_CT01",
+              hex: "#808080",
+            },
+          ],
+        },
+        {
+          title: "/Cores semânticas",
           classification:
             "Cores usadas para representar estados e significados",
           cores: [
@@ -276,7 +330,7 @@ export default {
           ],
         },
         {
-          title: "Paleta de uso em mapa",
+          title: "/Paleta de uso em mapa",
           classification: "Pins, vetores de áreas e vetores de linhas. ",
           cores: [
             {
@@ -379,6 +433,275 @@ export default {
               hex: "#02DEDA",
             },
           ],
+          img: [
+            {
+              topDescription:
+                "Utilização das 6 cores da cartela 1. A utilização de mais cores deve seguir a sequência de cor da próxima cartela.",
+              map: "/assets/rotas01.jpg",
+              descriptionMap: "Frame da tela de rotas de logistica.",
+            },
+            {
+              topDescription:
+                "Utilização das 4 cartelas de cor - total de 24 cores.",
+              map: "/assets/rotas02.jpg",
+              descriptionMap: "Frame da tela de rotas de logistica.",
+            },
+          ],
+        },
+
+        {
+          classification:
+            "Vetor de áreas para utilizações do tipo clusters. Quando há diferenciação qualitativa entre os elementos. Pode ser aplicada transparência de camadas.",
+          cores: [
+            {
+              token: "dm_azul_00",
+              hex: "#0567FF",
+            },
+            {
+              token: "dm_lilas_00",
+              hex: "#9E6CFF",
+            },
+            {
+              token: "dm_rosa_00",
+              hex: "#F45197",
+            },
+            {
+              token: "dm_verde_00",
+              hex: "#3E9A00",
+            },
+            {
+              token: "dm_laranja_00",
+              hex: "#F25900",
+            },
+            {
+              token: "dm_amarelo_00",
+              hex: "#FFA400",
+            },
+          ],
+        },
+        {
+          classification:
+            "Vetor de áreas para utilizações onde há uma diferenciação quantitativa entre os elementos. Onde está mais escuro representa números maiores, e onde está mais claro números mais discretos.",
+          cores: [
+            {
+              token: "dm_azul_00",
+              hex: "#0567FF",
+            },
+            {
+              token: "dm_lilas_00",
+              hex: "#9E6CFF",
+            },
+            {
+              token: "dm_rosa_00",
+              hex: "#F45197",
+            },
+            {
+              token: "dm_verde_00",
+              hex: "#3E9A00",
+            },
+            {
+              token: "dm_laranja_00",
+              hex: "#F25900",
+            },
+            {
+              token: "dm_amarelo_00",
+              hex: "#FFA400",
+            },
+          ],
+          img: [
+            {
+              map: "/assets/map1.0.jpg",
+              descriptionMap: "Sem transparência",
+            },
+            {
+              map: "/assets/map1.1.jpg",
+              descriptionMap: "Com transparência",
+            },
+          ],
+        },
+        {
+          classification:
+            "Vetor de áreas para utilizações onde há uma diferenciação quantitativa entre os elementos. Onde está mais escuro representa números maiores, e onde está mais claro números mais discretos.",
+          cores: [
+            {
+              token: "dm_rosa1_C05",
+              hex: "#FEEBE2",
+            },
+            {
+              token: "dm_rosa2_C05",
+              hex: "#FCC5C0",
+            },
+            {
+              token: "dm_rosa3_C05",
+              hex: "#FA9FB5",
+            },
+            {
+              token: "dm_rosa4_C05",
+              hex: "#F768A1",
+            },
+            {
+              token: "dm_rosa5_C05",
+              hex: "#C51B8A",
+            },
+            {
+              token: "dm_rosa6_C05",
+              hex: "#7A0177",
+            },
+          ],
+          img: [
+            {
+              map: "/assets/map2.0.jpg",
+              descriptionMap: "Sem transparência",
+            },
+            {
+              map: "/assets/map2.1.jpg",
+              descriptionMap: "Com transparência",
+            },
+          ],
+        },
+        {
+          classification:
+            "Vetor de áreas para utilizações onde há uma diferenciação quantitativa entre os elementos. Onde está mais escuro representa números maiores, e onde está mais claro números mais discretos.",
+          cores: [
+            {
+              token: "dm_verde1_C06",
+              hex: "#EDF8FB",
+            },
+            {
+              token: "dm_verde2_C06",
+              hex: "#CEF3EC",
+            },
+            {
+              token: "dm_verde3_C06",
+              hex: "#99D8C9",
+            },
+            {
+              token: "dm_verde4_C06",
+              hex: "#66C2A4",
+            },
+            {
+              token: "dm_verde5_C06",
+              hex: "#2CA25F",
+            },
+            {
+              token: "dm_verde6_C06",
+              hex: "#006D2C",
+            },
+          ],
+          img: [
+            {
+              map: "/assets/map3.0.jpg",
+              descriptionMap: "Sem transparência",
+            },
+            {
+              map: "/assets/map3.1.jpg",
+              descriptionMap: "Com transparência",
+            },
+          ],
+        },
+        {
+          classification:
+            "Vetor de áreas para utilizações onde há uma diferenciação quantitativa entre os elementos. Onde está mais escuro representa números maiores, e onde está mais claro números mais discretos.",
+          cores: [
+            {
+              token: "dm_laranja1_C07",
+              hex: "#FEEDDE",
+            },
+            {
+              token: "dm_laranja2_C07",
+              hex: "#FDD0A2",
+            },
+            {
+              token: "dm_laranja3_C07",
+              hex: "#FDAE6B",
+            },
+            {
+              token: "dm_laranja4_C07",
+              hex: "#FD8D3C",
+            },
+            {
+              token: "dm_laranja5_C07",
+              hex: "#E6550D",
+            },
+            {
+              token: "dm_laranja6_C07",
+              hex: "#A63603",
+            },
+          ],
+          img: [
+            {
+              map: "/assets/map4.0.jpg",
+              descriptionMap: "Sem transparência",
+            },
+            {
+              map: "/assets/map4.1.jpg",
+              descriptionMap: "Com transparência",
+            },
+          ],
+        },
+        {
+          classification:
+            "Vetor de áreas para utilizações onde há uma diferenciação quantitativa entre os elementos. Onde está mais escuro representa números maiores, e onde está mais claro números mais discretos.",
+          cores: [
+            {
+              token: "dm_azul1_C08",
+              hex: "#EFF3FF",
+            },
+            {
+              token: "dm_azul2_C08",
+              hex: "#C6DFF8",
+            },
+            {
+              token: "dm_azul3_C08",
+              hex: "#9ECAE1",
+            },
+            {
+              token: "dm_azul4_C08",
+              hex: "#6BAED6",
+            },
+            {
+              token: "dm_azul5_C08",
+              hex: "#3182BD",
+            },
+            {
+              token: "dm_azul6_C08",
+              hex: "#08519C",
+            },
+          ],
+          img: [
+            {
+              map: "/assets/map5.0.jpg",
+              descriptionMap: "Sem transparência",
+            },
+            {
+              map: "/assets/map5.1.jpg",
+              descriptionMap: "Com transparência",
+            },
+          ],
+        },
+        {
+          classification:
+            "Vetor de áreas para utilizações onde há uma diferenciação quantitativa entre os elementos. Onde está mais escuro representa números maiores, e onde está mais claro números mais discretos.",
+          cores: [
+            {
+              token: "dm_areia_C09",
+              hex: "#E0BA88",
+            },
+            {
+              token: "dm_turquesa_C09",
+              hex: "#289DA3",
+            },
+          ],
+          img: [
+            {
+              map: "/assets/map6.0.jpg",
+              descriptionMap: "Sem transparência",
+            },
+            {
+              map: "/assets/map6.1.jpg",
+              descriptionMap: "Com transparência",
+            },
+          ],
         },
       ],
     };
@@ -392,7 +715,18 @@ export default {
 }
 
 .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
   padding: 25px;
+  /* background: green; */
+}
+
+.containerInterno {
+  /* background: pink; */
+  margin: 0 0 20px 0;
+  width: 100%;
 }
 
 h1 {
@@ -425,11 +759,9 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  /* background: #efece6; */
   border-radius: 6px;
   padding: 20px;
-  width: max-content;
-  height: max-content;
+  /* background: var(--dm_creme_03); */
 }
 
 .title-squad {
@@ -496,5 +828,14 @@ h1 {
   color: var(--dm_cinza_02);
   text-decoration: underline;
   transition: 0.2s;
+}
+
+.contMap {
+  width: 300px;
+}
+
+.contMap img {
+  height: 220px;
+  object-fit: cover;
 }
 </style>

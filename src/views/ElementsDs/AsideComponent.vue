@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="side-bar">
-      <img class="logo-dm" src="" />
+      <img class="logo-dm" src="/logo.svg" />
       <!-- Princípios -->
       <div class="component-tag tag-ativa">Princípios</div>
       <!-- Fundação -->

@@ -6,7 +6,7 @@ import 'element-plus/dist/index.css'
 
 createApp(App).use(ElementPlus).use(router).mount('#app')
 
-app.use(ElementPlus)
+/* app.use(ElementPlus)
 app.mount('#app')
 
-const app = createApp(App)
+const app = createApp(App) */

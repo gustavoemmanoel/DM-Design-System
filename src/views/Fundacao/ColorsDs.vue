@@ -1,15 +1,13 @@
 <template>
   <div>
-   
     <el-row>
-      <el-col :span="4"><AsideComponent /></el-col>
+      <el-col :span="4"><AsideComponent :btnAtivo="btnAtivo" /></el-col>
       <el-col class="container" :span="16">
         <div
           class="containerInterno"
           v-for="(userConditions, index) in colors"
           :key="index"
         >
-       
           <div style="margin: 0 0 20px 0">
             <h1>{{ userConditions.title }}</h1>
 
@@ -77,6 +75,7 @@ export default {
   data() {
     return {
       text: "mateus",
+      btnAtivo: { cores: "text-decoration: underline" },
       colors: [
         {
           title: "/Cores",

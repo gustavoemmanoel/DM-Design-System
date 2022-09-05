@@ -7,20 +7,23 @@
       <!-- Fundação -->
       <div class="component-tag tag-ativa">Fundação</div>
       <div class="options">
-        <p>Cores</p>
-        <p>Tipografia</p>
-        <p>Iconografia</p>
-        <p>Grafismos</p>
-        <p>Grid</p>
+        <router-link to="ColorsDs" :style="btnAtivo.cores">Cores</router-link>
+        <router-link to="TipografiaDs" :style="btnAtivo.tipografia"
+          >Tipografia</router-link
+        >
+        <!-- <router-link to="IconografiaDs" :style="btnAtivo.iconografia">Iconografia</router-link> -->
+        <!-- <router-link to="" :style="btnAtivo.grafismos">Grafismos</router-link> -->
+        <!-- <router-link to="" :style="btnAtivo.grid">Grid</router-link> -->
       </div>
 
       <!-- Componentes -->
       <div class="component-tag">Componentes</div>
       <div class="options">
-        <p>Header</p>
-        <p>Botão</p>
-        <p>Campo de Texto</p>
-        <p>Dropdown</p>
+        <!-- <router-link to="">Header</router-link>  -->
+        <!-- <router-link to="BotaoDs">Botão</router-link> -->
+        <!-- <router-link to="">Campo de Texto</router-link> -->
+        <!-- <router-link to="">Dropdown</router-link> -->
+        <!-- <router-link to="InputsDs">Dropdown</router-link> -->
       </div>
       <header>
         <img src="/grafismos/graf-01-background.svg" />
@@ -33,6 +36,9 @@
 <script>
 export default {
   name: "AsideComponent",
+  props: {
+    btnAtivo: String,
+  },
 };
 </script>
 

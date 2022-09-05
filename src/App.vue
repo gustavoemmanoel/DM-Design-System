@@ -1,7 +1,5 @@
 <template>
   <div>
- 
-
     <el-row>
       <el-col :span="24" class="header">
         <div>
@@ -31,12 +29,6 @@
 <script>
 export default {
   name: "app",
-  data() {
-    return {
-      text: "deds!",
-    };
-  },
-  
 };
 </script>
 

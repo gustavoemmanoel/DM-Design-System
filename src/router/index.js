@@ -8,6 +8,7 @@ import TipografiaDs from '../views/Fundacao/TipografiaDs.vue'
 import InputsDs from '../views/ElementsDs/InputsDs.vue'
 import BotaoDs from '../views/ElementsDs/BotaoDs.vue'
 import PDF from '../views/PDF.vue'
+import PreProcessamentos from '../views/PreProcessamentos.vue'
 
 const routes = [
 
@@ -16,6 +17,11 @@ const routes = [
     path: '/PDF',
     name: 'PDF',
     component: PDF
+  },
+  {
+    path: '/PreProcessamentos',
+    name: 'PreProcessamentos',
+    component: PreProcessamentos
   },
   {
     path: '/ColorsDs',

@@ -11,9 +11,9 @@
         </div>
         <table>
           <tr class="veiculo">
-            <td v-for="(baitolao, index) in DadosTotais" :key="index">
-              <b> {{ baitolao.name }} </b>
-              <p>{{ baitolao.dados }}</p>
+            <td v-for="(totaisdados, index) in DadosTotais" :key="index">
+              <b> {{ totaisdados.name }} </b>
+              <p>{{ totaisdados.dados }}</p>
             </td>
           </tr>
         </table>

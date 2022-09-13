@@ -1,6 +1,11 @@
 <template>
   <div>
     <el-row>
+      <el-col :span="24">
+        <HeaderDs :headerTitle="headerTitle" />
+      </el-col>
+    </el-row>
+    <el-row>
       <el-col :span="4"><AsideComponent :btnAtivo="btnAtivo" /></el-col>
       <el-col class="container" :span="16">
         <div
@@ -8,9 +13,8 @@
           v-for="(userConditions, index) in colors"
           :key="index"
         >
-          <div style="margin: 0 0 20px 0">
+          <div class="container_title">
             <h1>{{ userConditions.title }}</h1>
-
             <div class="hr" />
           </div>
           <div>
@@ -67,14 +71,18 @@
 </template>
 <script>
 import AsideComponent from "../ElementsDs/AsideComponent.vue";
+import HeaderDs from "../../components/HeaderDs.vue";
+
 export default {
   name: "ColorsDs",
   components: {
     AsideComponent,
+    HeaderDs,
   },
   data() {
     return {
-      text: "mateus",
+      headerTitle: "Cores",
+
       btnAtivo: { cores: "text-decoration: underline" },
       colors: [
         {
@@ -713,36 +721,8 @@ export default {
   color: #2c2c2c;
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  align-content: center;
-  padding: 25px;
-  /* background: green; */
-}
-
-.containerInterno {
-  /* background: pink; */
-  margin: 0 0 20px 0;
-  width: 100%;
-}
-
-h1 {
-  font-size: 24px;
-  color: #2c2c2c;
-  font-weight: 500;
-  font-family: "Roboto Slab", serif;
-}
-
 .h1-title {
   margin: 15px 0;
-}
-
-.hr {
-  background: var(--dm_cinza_04);
-  height: 1px;
-  width: 100%;
 }
 
 /* Cores */

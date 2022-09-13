@@ -19,11 +19,18 @@
       <!-- Componentes -->
       <div class="component-tag">Componentes</div>
       <div class="options">
-        <!-- <router-link to="">Header</router-link>  -->
-        <!-- <router-link to="BotaoDs">Botão</router-link> -->
-        <!-- <router-link to="">Campo de Texto</router-link> -->
-        <!-- <router-link to="">Dropdown</router-link> -->
-        <!-- <router-link to="InputsDs">Dropdown</router-link> -->
+        <router-link to="HeaderPage">Header</router-link> 
+        <router-link to="BotaoDs">Botão</router-link>
+        <router-link to="CampoTextoDs">Campo de Texto</router-link>
+        <router-link to="CalendarioDs">Calendario</router-link>
+        <router-link to="CardsDs">Cards</router-link>
+        <router-link to="CheckboxDs">Checkbox</router-link>
+        <router-link to="DropdownDs">Dropdown</router-link>
+        <router-link to="LoadingDs">Loading</router-link>
+        <router-link to="MenssagensDs">Menssagens</router-link>
+        <router-link to="PinsDs">Pins</router-link>
+        <router-link to="TabelasDs">Tabelas</router-link>
+        <router-link to="TagsDs">Tags</router-link>
       </div>
       <header>
         <img src="/grafismos/graf-01-background.svg" />

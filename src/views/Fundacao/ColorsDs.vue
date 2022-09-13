@@ -15,7 +15,7 @@
         >
           <div class="container_title">
             <h1>{{ userConditions.title }}</h1>
-            <div class="hr" />
+            <div class="hr"/>
           </div>
           <div>
             <div class="container-elementos">

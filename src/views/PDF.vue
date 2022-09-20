@@ -4,8 +4,10 @@
       <div class="mestre">
         <div class="pai">
           <div class="filho">
-            <div class="relatorio">Relatório de rotas</div>
-            <div class="romaneio">Romaneio X - Detalhes de Entrega</div>
+            <div class="relatorio"> 
+              <img src="/logo.jpg">
+              <div> Relatório de rotas </div></div>
+            <div class="romaneio">Roteiro X - Detalhes de Entrega</div>
           </div>
           <div class="data">01/01/2022</div>
         </div>
@@ -21,15 +23,12 @@
       <br />
       <table class="cont-table">
         <tr class="titulo">
-          <td>Identificação</td>
-          <td>Endereço</td>
-          <td>Número do Pedido</td>
-          <td>Distância</td>
-          <td>Modelo</td>
-          <td>Quantidade</td>
-          <td>Peso</td>
-          <td>Volume</td>
-          <td>Nota Fiscal</td>
+          <td><b> Identificação</b></td>
+          <td><b>Endereço</b></td>
+          <td><b>Distância</b></td>
+          <td><b>Quantidade</b></td>
+          <td><b>Peso</b></td>
+          <td><b>Volume</b></td>
         </tr>
         <tr class="resp" v-for="(trTop, index) in dadosBackEnd" :key="index">
           <td v-for="(dado, index) in trTop.tr" :key="index">
@@ -85,22 +84,7 @@ export default {
             { td: "Ivo" },
             { td: "Elisa" },
             { td: "Pedro" },
-            { td: "Eva" },
-            { td: "Bilica" },
-            { td: "José" },
-          ],
-        },
-        {
-          tr: [
-            { td: "Mateus" },
-            { td: "Guilherme" },
-            { td: "Gustavo" },
-            { td: "Ivo" },
-            { td: "Elisa" },
-            { td: "Wesley" },
-            { td: "Nath" },
-            { td: "Ane" },
-            { td: "Luciano" },
+
           ],
         },
         {
@@ -111,22 +95,7 @@ export default {
             { td: "Ivo" },
             { td: "Elisa" },
             { td: "Pedro" },
-            { td: "Eva" },
-            { td: "Bilica" },
-            { td: "José" },
-          ],
-        },
-        {
-          tr: [
-            { td: "Mateus" },
-            { td: "Guilherme" },
-            { td: "Gustavo" },
-            { td: "Ivo" },
-            { td: "Elisa" },
-            { td: "Wesley" },
-            { td: "Nath" },
-            { td: "Ane" },
-            { td: "Luciano" },
+
           ],
         },
         {
@@ -137,22 +106,7 @@ export default {
             { td: "Ivo" },
             { td: "Elisa" },
             { td: "Pedro" },
-            { td: "Eva" },
-            { td: "Bilica" },
-            { td: "José" },
-          ],
-        },
-        {
-          tr: [
-            { td: "Mateus" },
-            { td: "Guilherme" },
-            { td: "Gustavo" },
-            { td: "Ivo" },
-            { td: "Elisa" },
-            { td: "Wesley" },
-            { td: "Nath" },
-            { td: "Ane" },
-            { td: "Luciano" },
+
           ],
         },
         {
@@ -163,22 +117,7 @@ export default {
             { td: "Ivo" },
             { td: "Elisa" },
             { td: "Pedro" },
-            { td: "Eva" },
-            { td: "Bilica" },
-            { td: "José" },
-          ],
-        },
-        {
-          tr: [
-            { td: "Mateus" },
-            { td: "Guilherme" },
-            { td: "Gustavo" },
-            { td: "Ivo" },
-            { td: "Elisa" },
-            { td: "Wesley" },
-            { td: "Nath" },
-            { td: "Ane" },
-            { td: "Luciano" },
+
           ],
         },
         {
@@ -189,22 +128,7 @@ export default {
             { td: "Ivo" },
             { td: "Elisa" },
             { td: "Pedro" },
-            { td: "Eva" },
-            { td: "Bilica" },
-            { td: "José" },
-          ],
-        },
-        {
-          tr: [
-            { td: "Mateus" },
-            { td: "Guilherme" },
-            { td: "Gustavo" },
-            { td: "Ivo" },
-            { td: "Elisa" },
-            { td: "Wesley" },
-            { td: "Nath" },
-            { td: "Ane" },
-            { td: "Luciano" },
+
           ],
         },
         {
@@ -215,22 +139,7 @@ export default {
             { td: "Ivo" },
             { td: "Elisa" },
             { td: "Pedro" },
-            { td: "Eva" },
-            { td: "Bilica" },
-            { td: "José" },
-          ],
-        },
-        {
-          tr: [
-            { td: "Mateus" },
-            { td: "Guilherme" },
-            { td: "Gustavo" },
-            { td: "Ivo" },
-            { td: "Elisa" },
-            { td: "Wesley" },
-            { td: "Nath" },
-            { td: "Ane" },
-            { td: "Luciano" },
+
           ],
         },
         {
@@ -241,22 +150,7 @@ export default {
             { td: "Ivo" },
             { td: "Elisa" },
             { td: "Pedro" },
-            { td: "Eva" },
-            { td: "Bilica" },
-            { td: "José" },
-          ],
-        },
-        {
-          tr: [
-            { td: "Mateus" },
-            { td: "Guilherme" },
-            { td: "Gustavo" },
-            { td: "Ivo" },
-            { td: "Elisa" },
-            { td: "Wesley" },
-            { td: "Nath" },
-            { td: "Ane" },
-            { td: "Luciano" },
+
           ],
         },
         {
@@ -267,22 +161,7 @@ export default {
             { td: "Ivo" },
             { td: "Elisa" },
             { td: "Pedro" },
-            { td: "Eva" },
-            { td: "Bilica" },
-            { td: "José" },
-          ],
-        },
-        {
-          tr: [
-            { td: "Mateus" },
-            { td: "Guilherme" },
-            { td: "Gustavo" },
-            { td: "Ivo" },
-            { td: "Elisa" },
-            { td: "Wesley" },
-            { td: "Nath" },
-            { td: "Ane" },
-            { td: "Luciano" },
+
           ],
         },
         {
@@ -293,22 +172,7 @@ export default {
             { td: "Ivo" },
             { td: "Elisa" },
             { td: "Pedro" },
-            { td: "Eva" },
-            { td: "Bilica" },
-            { td: "José" },
-          ],
-        },
-        {
-          tr: [
-            { td: "Mateus" },
-            { td: "Guilherme" },
-            { td: "Gustavo" },
-            { td: "Ivo" },
-            { td: "Elisa" },
-            { td: "Wesley" },
-            { td: "Nath" },
-            { td: "Ane" },
-            { td: "Luciano" },
+
           ],
         },
         {
@@ -319,22 +183,7 @@ export default {
             { td: "Ivo" },
             { td: "Elisa" },
             { td: "Pedro" },
-            { td: "Eva" },
-            { td: "Bilica" },
-            { td: "José" },
-          ],
-        },
-        {
-          tr: [
-            { td: "Mateus" },
-            { td: "Guilherme" },
-            { td: "Gustavo" },
-            { td: "Ivo" },
-            { td: "Elisa" },
-            { td: "Wesley" },
-            { td: "Nath" },
-            { td: "Ane" },
-            { td: "Luciano" },
+
           ],
         },
         {
@@ -345,22 +194,7 @@ export default {
             { td: "Ivo" },
             { td: "Elisa" },
             { td: "Pedro" },
-            { td: "Eva" },
-            { td: "Bilica" },
-            { td: "José" },
-          ],
-        },
-        {
-          tr: [
-            { td: "Mateus" },
-            { td: "Guilherme" },
-            { td: "Gustavo" },
-            { td: "Ivo" },
-            { td: "Elisa" },
-            { td: "Wesley" },
-            { td: "Nath" },
-            { td: "Ane" },
-            { td: "Luciano" },
+
           ],
         },
         {
@@ -371,206 +205,10 @@ export default {
             { td: "Ivo" },
             { td: "Elisa" },
             { td: "Pedro" },
-            { td: "Eva" },
-            { td: "Bilica" },
-            { td: "José" },
+
           ],
         },
-        {
-          tr: [
-            { td: "Mateus" },
-            { td: "Guilherme" },
-            { td: "Gustavo" },
-            { td: "Ivo" },
-            { td: "Elisa" },
-            { td: "Wesley" },
-            { td: "Nath" },
-            { td: "Ane" },
-            { td: "Luciano" },
-          ],
-        },
-        {
-          tr: [
-            { td: "Mateus" },
-            { td: "Guilherme" },
-            { td: "Gustavo" },
-            { td: "Ivo" },
-            { td: "Elisa" },
-            { td: "Pedro" },
-            { td: "Eva" },
-            { td: "Bilica" },
-            { td: "José" },
-          ],
-        },
-        {
-          tr: [
-            { td: "Mateus" },
-            { td: "Guilherme" },
-            { td: "Gustavo" },
-            { td: "Ivo" },
-            { td: "Elisa" },
-            { td: "Wesley" },
-            { td: "Nath" },
-            { td: "Ane" },
-            { td: "Luciano" },
-          ],
-        },
-        {
-          tr: [
-            { td: "Mateus" },
-            { td: "Guilherme" },
-            { td: "Gustavo" },
-            { td: "Ivo" },
-            { td: "Elisa" },
-            { td: "Pedro" },
-            { td: "Eva" },
-            { td: "Bilica" },
-            { td: "José" },
-          ],
-        },
-        {
-          tr: [
-            { td: "Mateus" },
-            { td: "Guilherme" },
-            { td: "Gustavo" },
-            { td: "Ivo" },
-            { td: "Elisa" },
-            { td: "Wesley" },
-            { td: "Nath" },
-            { td: "Ane" },
-            { td: "Luciano" },
-          ],
-        },
-        {
-          tr: [
-            { td: "Mateus" },
-            { td: "Guilherme" },
-            { td: "Gustavo" },
-            { td: "Ivo" },
-            { td: "Elisa" },
-            { td: "Pedro" },
-            { td: "Eva" },
-            { td: "Bilica" },
-            { td: "José" },
-          ],
-        },
-        {
-          tr: [
-            { td: "Mateus" },
-            { td: "Guilherme" },
-            { td: "Gustavo" },
-            { td: "Ivo" },
-            { td: "Elisa" },
-            { td: "Wesley" },
-            { td: "Nath" },
-            { td: "Ane" },
-            { td: "Luciano" },
-          ],
-        },
-        {
-          tr: [
-            { td: "Mateus" },
-            { td: "Guilherme" },
-            { td: "Gustavo" },
-            { td: "Ivo" },
-            { td: "Elisa" },
-            { td: "Pedro" },
-            { td: "Eva" },
-            { td: "Bilica" },
-            { td: "José" },
-          ],
-        },
-        {
-          tr: [
-            { td: "Mateus" },
-            { td: "Guilherme" },
-            { td: "Gustavo" },
-            { td: "Ivo" },
-            { td: "Elisa" },
-            { td: "Wesley" },
-            { td: "Nath" },
-            { td: "Ane" },
-            { td: "Luciano" },
-          ],
-        },
-        {
-          tr: [
-            { td: "Mateus" },
-            { td: "Guilherme" },
-            { td: "Gustavo" },
-            { td: "Ivo" },
-            { td: "Elisa" },
-            { td: "Pedro" },
-            { td: "Eva" },
-            { td: "Bilica" },
-            { td: "José" },
-          ],
-        },
-        {
-          tr: [
-            { td: "Mateus" },
-            { td: "Guilherme" },
-            { td: "Gustavo" },
-            { td: "Ivo" },
-            { td: "Elisa" },
-            { td: "Wesley" },
-            { td: "Nath" },
-            { td: "Ane" },
-            { td: "Luciano" },
-          ],
-        },
-        {
-          tr: [
-            { td: "Mateus" },
-            { td: "Guilherme" },
-            { td: "Gustavo" },
-            { td: "Ivo" },
-            { td: "Elisa" },
-            { td: "Pedro" },
-            { td: "Eva" },
-            { td: "Bilica" },
-            { td: "José" },
-          ],
-        },
-        {
-          tr: [
-            { td: "Mateus" },
-            { td: "Guilherme" },
-            { td: "Gustavo" },
-            { td: "Ivo" },
-            { td: "Elisa" },
-            { td: "Wesley" },
-            { td: "Nath" },
-            { td: "Ane" },
-            { td: "Luciano" },
-          ],
-        },
-        {
-          tr: [
-            { td: "Mateus" },
-            { td: "Guilherme" },
-            { td: "Gustavo" },
-            { td: "Ivo" },
-            { td: "Elisa" },
-            { td: "Pedro" },
-            { td: "Eva" },
-            { td: "Bilica" },
-            { td: "José" },
-          ],
-        },
-        {
-          tr: [
-            { td: "Mateus" },
-            { td: "Guilherme" },
-            { td: "Gustavo" },
-            { td: "Ivo" },
-            { td: "Elisa" },
-            { td: "Wesley" },
-            { td: "Nath" },
-            { td: "Ane" },
-            { td: "Luciano" },
-          ],
-        },
+
       ],
     };
   },
@@ -586,18 +224,34 @@ export default {
 /* Roboto Slab */
 /* font-family: 'Roboto Slab', serif; */
 
+
+
+
 .container {
   width: 1000px;
   margin: auto;
   color: #2c2c2c !important;
 }
+
+
+
+
 .mestre {
   border-collapse: collapse;
+  margin-top: 100px;
 }
 .relatorio {
   display: flex;
   font-size: 35px;
+  background: green;
+  
 }
+
+.relatorio img{
+  background: red;
+}
+
+
 .pai {
   display: flex;
   font-size: 25px;
@@ -661,7 +315,7 @@ h1 {
 }
 
 .cont-table td {
-  width: 117px;
+  width: 190px;
 }
 td {
   border-width: 1px;

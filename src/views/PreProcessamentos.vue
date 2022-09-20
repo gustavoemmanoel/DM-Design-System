@@ -10,6 +10,11 @@
     type="success"
     effect="dark">
   </el-alert>
+  <el-alert class="erro"
+    title="Peso acima da capacidade"
+    type="error"
+    effect="dark">
+  </el-alert>
 
 </div>
 </template>

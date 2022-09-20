@@ -4,10 +4,10 @@
       <div class="mestre">
         <div class="pai">
           <div class="filho">
-            <div class="relatorio"> 
+            <div class="relatorio filhoDiv" > 
               <img src="/logo.jpg">
-              <div> Relatório de rotas </div></div>
-            <div class="romaneio">Roteiro X - Detalhes de Entrega</div>
+              <div class="rela"> Relatório de rotas </div></div>
+            <div class="romaneio filhoDiv">Roteiro X - Detalhes de Entrega</div>
           </div>
           <div class="data">01/01/2022</div>
         </div>
@@ -233,22 +233,26 @@ export default {
   color: #2c2c2c !important;
 }
 
-
-
-
 .mestre {
   border-collapse: collapse;
-  margin-top: 100px;
+  margin-top: 20px;
 }
 .relatorio {
   display: flex;
   font-size: 35px;
-  background: green;
-  
+  align-items: center;
 }
 
 .relatorio img{
-  background: red;
+  width: 120px;
+  object-fit: contain;
+  position: absolute;
+  margin-left: 10px;
+
+}
+
+.rela{
+  width: 100%;
 }
 
 
@@ -257,9 +261,16 @@ export default {
   font-size: 25px;
 }
 .filho {
-  width: 1040px;
+  width: 728px;
 }
-.filho div {
+
+.romaneio{
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.filhoDiv {
   font-family: "Roboto Slab", serif;
   font-weight: bold;
   border-width: 1px 0 0 1px;
@@ -268,8 +279,6 @@ export default {
   height: 60px;
   text-align: center;
   display: flex;
-  align-items: center;
-  justify-content: center;
 }
 .data {
   font-family: "Roboto Slab", serif;

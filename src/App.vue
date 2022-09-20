@@ -25,8 +25,133 @@ export default {
 }
 
 body {
+  overflow-y: scroll;
   background: #fdfbf9;
   padding-top: 75px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+/* TIPOGRAFIA */
+
+h1,
+.h1,
+.header_h1,
+h2,
+.h2,
+.header_h2,
+h2,
+.h3,
+.header_h3,
+h4,
+.h4,
+.header_h4 {
+  font-family: "Roboto Slab", serif !important;
+  font-weight: 500;
+}
+
+h5,
+.h5,
+.header_h5,
+h6,
+.h6,
+.header_h6 {
+  font-family: "Roboto", sans-serif !important;
+  font-weight: 700;
+}
+
+h1,
+.h1,
+.header_h1 {
+  font-size: 28px !important;
+}
+.h2,
+h2,
+.header_h2 {
+  font-size: 24px !important;
+}
+h3,
+.h3,
+.header_h3 {
+  font-size: 22px !important;
+}
+h4,
+.h4,
+.header_h4 {
+  font-size: 20px !important;
+}
+h5,
+.h5,
+.header_h5 {
+  font-size: 18px !important;
+}
+h6,
+.h6,
+.header_h6 {
+  font-size: 16px !important;
+}
+
+/* Detalhe */
+
+.detail_01,
+.detail_02,
+.detail_03,
+.detail_04 {
+  font-family: "Roboto", sans-serif;
+  color: #2c2c2c;
+  font-weight: 300;
+}
+
+.detail_01 {
+  font-size: 16px;
+}
+.detail_02 {
+  font-size: 14px;
+}
+.detail_03 {
+  font-size: 12px;
+}
+.detail_04 {
+  font-size: 10px;
+}
+
+/* Corpo */
+
+.body_01,
+.body_02,
+.body_03,
+.body_04,
+.body_05 {
+  font-family: "Roboto", sans-serif;
+  color: #2c2c2c;
+}
+
+.body_01,
+.body_02 {
+  font-weight: 500;
+}
+
+.body_03 .body_04,
+.body_05 {
+  font-weight: 400;
+}
+.body_01 {
+  font-size: 20px;
+}
+.body_02 {
+  font-size: 16px;
+}
+.body_03 {
+  font-size: 16px;
+}
+.body_04 {
+  font-size: 14px;
+}
+.body_05 {
+  font-size: 12px;
 }
 
 :root {
@@ -37,13 +162,11 @@ body {
   --dm_cinza_03: #cacaca;
   --dm_cinza_04: #f0f0f0;
   --dm_cinza_05: #f1f1f1;
-  --dm_cinza_CT01: #808080;
-  /* Creme */
+  --dm_cinza_CT01: #808080; /* Creme */
   --dm_creme_00: #f4f6f0;
   --dm_creme_01: #fdfbf9;
   --dm_creme_02: #efece6;
-  --dm_creme_03: #faf6f0;
-  /* Azul */
+  --dm_creme_03: #faf6f0; /* Azul */
   --dm_azul_00: #0567ff;
   --dm_azul_01: #448dff;
   --dm_azul_02: #82b3ff;
@@ -58,14 +181,12 @@ body {
   --dm_azul3_C08: #9ecae1;
   --dm_azul4_C08: #6baed6;
   --dm_azul5_C08: #3182bd;
-  --dm_azul6_C08: #08519c;
-  /* Lilas */
+  --dm_azul6_C08: #08519c; /* Lilas */
   --dm_lilas_00: #9e6cff;
   --dm_lilas_01: #b691ff;
   --dm_lilas_02: #cfb6ff;
   --dm_lilas_03: #e7daff;
-  --dm_lilas_CT01: #654c95;
-  /* Rosa */
+  --dm_lilas_CT01: #654c95; /* Rosa */
   --dm_rosa_00: #f45197;
   --dm_rosa_01: #f77cb1;
   --dm_rosa_02: #ff99aa;
@@ -80,8 +201,7 @@ body {
   --dm_rosa3_C05: #fa9fb5;
   --dm_rosa4_C05: #f768a1;
   --dm_rosa5_C05: #c51b8a;
-  --dm_rosa6_C05: #7a0177;
-  /* Verde */
+  --dm_rosa6_C05: #7a0177; /* Verde */
   --dm_verde_00: #3e9a00;
   --dm_verde_01: #6eb340;
   --dm_verde_02: #9fcd80;
@@ -96,8 +216,7 @@ body {
   --dm_verde3_C06: #99d8c9;
   --dm_verde4_C06: #66c2a4;
   --dm_verde5_C06: #2ca25f;
-  --dm_verde6_C06: #006d2c;
-  /* Laranja */
+  --dm_verde6_C06: #006d2c; /* Laranja */
   --dm_laranja_00: #f25900;
   --dm_laranja_01: #f58340;
   --dm_laranja_02: #f9ac80;
@@ -112,8 +231,7 @@ body {
   --dm_laranja3_C07: #fdae6b;
   --dm_laranja4_C07: #fd8d3c;
   --dm_laranja5_C07: #e6550d;
-  --dm_laranja6_C07: #a63603;
-  /* Amarelo */
+  --dm_laranja6_C07: #a63603; /* Amarelo */
   --dm_amarelo_00: #ffa400;
   --dm_amarelo_01: #ffbb40;
   --dm_amarelo_02: #ffd280;
@@ -122,13 +240,11 @@ body {
   --dm_amarelo_C02: #ffcb3f;
   --dm_amarelo_C03: #f1e80c;
   --dm_amarelo_C04: #d5ec25;
-  --dm_amarelo_CT01: #956816;
-  /* Roxo */
+  --dm_amarelo_CT01: #956816; /* Roxo */
   --dm_roxo_C01: #9e6cff;
   --dm_roxo_C02: #7445eb;
   --dm_roxo_C03: #68008c;
-  --dm_roxo_C04: #af52e6;
-  /* outras */
+  --dm_roxo_C04: #af52e6; /* outras */
   --dm_areia_C09: #e0ba88;
   --dm_turquesa_C09: #289da3;
   --dm_vermelho_00: #e2381b;
@@ -146,8 +262,7 @@ body {
 /* Cores semânticas */
 .dm_vermelho_00 {
   background: var(--dm_vermelho_00);
-}
-/* Tons pretos */
+} /* Tons pretos */
 .dm_cinza_01 {
   background: var(--dm_cinza_01);
 }
@@ -175,8 +290,7 @@ body {
 }
 .dm_creme_03 {
   background: var(--dm_creme_03);
-}
-/* Azul */
+} /* Azul */
 .dm_azul_00 {
   background: var(--dm_azul_00);
 }
@@ -207,8 +321,7 @@ body {
 }
 .dm_lilas_CT01 {
   background: var(--dm_lilas_CT01);
-}
-/* Rosa */
+} /* Rosa */
 .dm_rosa_00 {
   background: var(--dm_rosa_00);
 }
@@ -429,39 +542,6 @@ body {
 }
 .dm_areia_C09 {
   background: var(--dm_areia_C09);
-}
-
-/* TIPOGRAFIA */
-
-h1,
-h2,
-h3,
-h4 {
-  font-family: "Roboto Slab", serif !important;
-}
-
-h5,
-h6 {
-  font-family: "Roboto", sans-serif !important;
-}
-
-h1 {
-  font-size: 28px !important;
-}
-h2 {
-  font-size: 24px !important;
-}
-h3 {
-  font-size: 22px !important;
-}
-h4 {
-  font-size: 20px !important;
-}
-h5 {
-  font-size: 18px !important;
-}
-h6 {
-  font-size: 16px !important;
 }
 </style>
 

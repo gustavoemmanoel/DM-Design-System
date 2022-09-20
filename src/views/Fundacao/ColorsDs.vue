@@ -7,7 +7,7 @@
     </el-row>
     <el-row>
       <el-col :span="4"><AsideComponent :btnAtivo="btnAtivo" /></el-col>
-      <el-col class="container" :span="16">
+      <el-col class="container" :offset="1" :span="15">
         <div
           class="containerInterno"
           v-for="(userConditions, index) in colors"

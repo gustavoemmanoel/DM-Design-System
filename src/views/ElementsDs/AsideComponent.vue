@@ -11,9 +11,6 @@
         <router-link to="TipografiaDs" :style="btnAtivo.tipografia"
           >Tipografia</router-link
         >
-        <!-- <router-link to="IconografiaDs" :style="btnAtivo.iconografia">Iconografia</router-link> -->
-        <!-- <router-link to="" :style="btnAtivo.grafismos">Grafismos</router-link> -->
-        <!-- <router-link to="" :style="btnAtivo.grid">Grid</router-link> -->
       </div>
 
       <!-- Componentes -->

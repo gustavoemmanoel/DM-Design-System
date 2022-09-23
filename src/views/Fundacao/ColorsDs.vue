@@ -740,7 +740,7 @@ export default {
   align-items: flex-start;
   border-radius: 6px;
   padding: 20px;
-  /* background: var(--dm_creme_03); */
+  background: var(--dm_creme_01);
 }
 
 .title-squad {

@@ -163,10 +163,10 @@ h6,
   --dm_cinza_04: #f0f0f0;
   --dm_cinza_05: #f1f1f1;
   --dm_cinza_CT01: #808080; /* Creme */
-  --dm_creme_00: #f4f6f0;
-  --dm_creme_01: #fdfbf9;
-  --dm_creme_02: #efece6;
-  --dm_creme_03: #faf6f0; /* Azul */
+  --dm_creme_00: #FAF6F0;
+  --dm_creme_01: #EFECE6;
+  --dm_creme_02: #FDFBF9;
+/* Azul */
   --dm_azul_00: #0567ff;
   --dm_azul_01: #448dff;
   --dm_azul_02: #82b3ff;

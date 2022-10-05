@@ -61,7 +61,7 @@ export default {
       table: [
         {
           row: [
-            { title: "Título (Heading)" },
+            { title: "/Título (Heading)" },
             {
               categoria: "Título H1",
               roboto: "Roboto Slab",

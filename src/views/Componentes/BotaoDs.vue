@@ -24,7 +24,15 @@
                 </p>
               </div>
             </div>
-
+            <!--   <h1>Botão primário</h1>
+            <p class="body_03">
+              O botão primário é o que tem a maior ênfase na tela. É destinado à
+              ação essencial do usuário para executar a tarefa principal da
+              página. Possui quatro estados diferentes: ativo, hover, click e
+              bloqueado. Também possui dois tamanhos: o padrão, mais utilizado;
+              e o grande, para casos onde é necessário ainda mais destaque na
+              página, por exemplo na tela de login.
+            </p> -->
             <br />
           </div>
           <div
@@ -32,6 +40,7 @@
             v-for="(btnVfor, index) in btnConteudos"
             :key="index"
           >
+            <!-- Tipo do botão: Principal/Secundario/Bloquado -->
             <h5 style="position: relative">
               {{ btnVfor.title }}
               <el-popover
@@ -54,13 +63,12 @@
               >
                 <br />
                 <div class="botoes">
-                  <el-button :type="btnGrid.botaos.type">
-                    {{ btnGrid.botaos.btnText }}
-                  </el-button>
-
-                  <el-button :type="btnGrid.botaos.typeLarger">
-                    {{ btnGrid.botaos.btnText }}
-                  </el-button>
+                  <button :class="btnVfor.class">
+                    {{ btnGrid.botaos[0].btnText }}
+                  </button>
+                  <button :class="btnVfor.classBig">
+                    {{ btnGrid.botaos[0].btnText }}
+                  </button>
                 </div>
 
                 <br />
@@ -70,15 +78,22 @@
               <el-collapse v-model="activeNames" @change="handleChange">
                 <el-collapse-item title="Ver códigos" name="3">
                   <div class="codigos">
-                    <h6>HTML</h6>
-                    <div class="htmlColors">&lt;el-row&gt;</div>
                     <div
                       v-for="(style, index) in btnVfor.stringHTML"
                       :key="index"
                     >
-                      <div style="margin-left: 12px">{{ style.html }}</div>
+                      <h6>HTML</h6>
+                      {{ style.html }}
                     </div>
-                    <div class="htmlColors">&lt;/el-row&gt;</div>
+                    <div>
+                      <h6>CSS:</h6>
+                      <p
+                        v-for="(style, index) in btnVfor.stringCSS"
+                        :key="index"
+                      >
+                        {{ style.css }}
+                      </p>
+                    </div>
                   </div>
                 </el-collapse-item>
               </el-collapse>
@@ -118,80 +133,96 @@ export default {
         {
           content:
             "O botão primário é o que tem a maior ênfase na tela. É destinado à ação essencial do usuário para executar a tarefa principal da página. Possui quatro estados diferentes: ativo, hover, click e bloqueado. Também possui dois tamanhos: o padrão, mais utilizado; e o grande, para casos onde é necessário ainda mais destaque na página, por exemplo na tela de login.",
-          title: "Botão primário",
+          title: "Botão padrão",
+          class: "btn-primary",
+          classBig: "btn-primary btn-big",
           gridButtons: [
             /* Primeiro */
             {
-              botaos: {
-                btnText: "Botão Primário",
-                type: "primario",
-                typeLarger: "primario-larger",
-                uso: "Quando o botão está disponível na tela para ser clicado.",
-              },
+              botaos: [
+                {
+                  status: "Ativo",
+                  btnText: "Botão Primario",
+
+                  token: "body_02",
+                  cor: "dm_creme_00",
+                  alinhamento: "centralizado",
+                },
+                {
+                  status: "Ativo",
+                  btnText: "Texto do Botão",
+                  uso: "Quando o botão está disponível na tela para ser clicado.",
+                  token: "body_02",
+                  cor: "dm_creme_00",
+                  alinhamento: "centralizado",
+                },
+              ],
             },
           ],
 
-          stringHTML: [
-            { html: "<el-button>Botão primário</el-button>" },
-            {
-              html: '<el-button type="primary-larger">Botão primário Grande</el-button>',
-            },
+          stringHTML: [{ html: '<button class="btn-primary">...<button> ' }],
+          stringCSS: [
+            { css: "box-shadow: 0 3px 6px var(--dm_cinza_03);" },
+            { css: 'font-family: "Rotobo", sans-serif;' },
+            { css: "background: var(--dm_azul_00);" },
+            { css: "color: var(--dm_creme_00);" },
+            { css: "border-radius: 6px;" },
+            { css: "transition: 0.2s;" },
+            { css: "font-weight: 500;" },
+            { css: "font-size: 16px;" },
+            { css: "padding: 0 15px;" },
+            { css: "cursor: pointer;" },
+            { css: "border: none;" },
+            { css: "height: 35px;" },
+            { css: "}" },
           ],
         },
         /* Segundo */
         {
           content:
             "O botão secundário é destinado à ações que tem menor importância em relação à ação principal da página ou em páginas que contenham mais de uma ação primária. Possui quatro estados diferentes: ativo, hover, click e bloqueado. Possui  também dois tamanhos: o padrão, mais utilizado; e o grande, para casos onde é necessário ainda mais destaque na página.",
-          title: "Botão secundário",
-
+          title: "Botão secudário",
+          class: "btn-secondary",
+          classBig: "btn-secondary btn-big",
           gridButtons: [
             {
-              botaos: {
-                btnText: "Botão secundário",
-                type: "secundario",
-                typeLarger: "secundario-larger",
-                token: "body_02",
-                cor: "dm_creme_00",
-                alinhamento: "centralizado",
-              },
+              botaos: [
+                {
+                  status: "Ativo",
+                  btnText: "Botão Secundário",
+
+                  token: "body_02",
+                  cor: "dm_creme_00",
+                  alinhamento: "centralizado",
+                },
+              ],
             },
           ],
-          stringHTML: [
-            {
-              html: '<el-button type="secundario">Botão secundário</el-button>',
-            },
-            {
-              html: '<el-button type="secundario-larger">Botão secundário Grande</el-button>',
-            },
-          ],
+          stringHTML: [{ html: "xxx " }],
+          stringCSS: [{ css: "xxx" }],
         },
         /* Terceiro */
         {
           content:
             "O botão terciário é usado em ações de pouca importância e não deve ser o único botão da página. Geralmente guia para elementos externos ao sistema. Possui quatro estados diferentes: ativo, hover, click e bloqueado. Ele só possui o tamanho padrão.",
-          title: "Botão terciário",
+          title: "Botão Terciário",
           class: "btn-tertiary",
           classBig: "btn-tertiary btn-big",
           gridButtons: [
             {
-              botaos: {
-                type: "terciario",
-                typeLarger: "terciario-larger",
-                btnText: "Botão terciário",
-                token: "body_02",
-                cor: "dm_creme_00",
-                alinhamento: "centralizado",
-              },
+              botaos: [
+                {
+                  status: "Ativo",
+                  btnText: "Botão Secundário",
+                  token: "body_02",
+                  cor: "dm_creme_00",
+                  alinhamento: "centralizado",
+                },
+              ],
             },
           ],
-          stringHTML: [
-            {
-              html: '<el-button type="terciario">Botão terciário</el-button>',
-            },
-            {
-              html: '<el-button type="terciario-larger">Botão terciário</el-button>',
-            },
-          ],
+          stringHTML: [{ html: "xxx" }],
+          stringCSS: [{ css: "xxx" }],
         },
       ],
     };
@@ -210,7 +241,7 @@ export default {
 }
 .codigos {
   display: grid;
-  /* grid-template-columns: 1fr 1fr 1fr; */
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .tooltip {
@@ -218,8 +249,9 @@ export default {
   border: 1px solid var(--dm_azul_02);
   background: var(--dm_creme_02);
   border-radius: 20px;
-  width: 24px !important;
-  margin-left: 6px;
+  width: 10px;
+  top: -2px;
+  margin-left: 4px;
   color: var(--dm_azul_02);
 }
 
@@ -242,7 +274,73 @@ export default {
   --el-collapse-content-bg-color: none;
 }
 
-.htmlColors {
-  color: var(--dm_azul_01);
+/* Estilos de componentes */
+.btn-primary {
+  box-shadow: 0 3px 6px var(--dm_cinza_03);
+  font-family: "Rotobo", sans-serif;
+  background: var(--dm_azul_00);
+  color: var(--dm_creme_00);
+  border-radius: 6px;
+  transition: 0.2s;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 0 15px;
+  border: none;
+  height: 35px;
+  cursor: pointer;
+}
+.btn-primary:focus {
+  background: var(--dm_amarelo_00);
+}
+.btn-primary:hover {
+  background: var(--dm_azul_02);
+  transition: 0.2s;
+}
+.btn-secondary {
+  box-shadow: 0 3px 6px var(--dm_cinza_03);
+  font-family: "Rotobo", sans-serif;
+  background: var(--dm_creme_00);
+  color: var(--dm_azul_00);
+  border-radius: 6px;
+  transition: 0.2s;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 0 15px;
+  border: 2px solid var(--dm_azul_00);
+  height: 35px;
+  cursor: pointer;
+}
+.btn-secondary:focus {
+  border-color: var(--dm_amarelo_00);
+  color: var(--dm_amarelo_00);
+}
+.btn-secondary:hover {
+  background: var(--dm_azul_02);
+  transition: 0.2s;
+}
+
+.btn-tertiary {
+  font-family: "Rotobo", sans-serif;
+  color: var(--dm_azul_00);
+  border-radius: 6px;
+  transition: 0.2s;
+  font-weight: 500;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  background: none;
+  text-decoration: underline;
+}
+.btn-tertiary:focus {
+  color: var(--dm_amarelo_00);
+}
+.btn-tertiary:hover {
+  color: var(--dm_azul_02);
+  transition: 0.2s;
+}
+
+.btn-big {
+  height: 45px;
+  padding: 0 20px;
 }
 </style>

@@ -72,7 +72,6 @@ export default {
   data() {
     return {
       headerTitle: "Cores",
-
       btnAtivo: { cores: "text-decoration: underline" },
       colors: [
         {

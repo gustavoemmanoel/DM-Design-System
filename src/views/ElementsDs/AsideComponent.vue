@@ -3,20 +3,22 @@
     <div class="side-bar">
       <img class="logo-dm" src="/logo.svg" />
       <!-- Princípios -->
+      <div class="component-tag tag-ativa">Instalação</div>
+      <div class="options">
+        <router-link to="InstallationEl">Instalação</router-link>
+      </div>
       <div class="component-tag tag-ativa">Princípios</div>
       <!-- Fundação -->
       <div class="component-tag tag-ativa">Fundação</div>
       <div class="options">
         <router-link to="ColorsDs" :style="btnAtivo.cores">Cores</router-link>
-        <router-link to="TipografiaDs" :style="btnAtivo.tipografia"
-          >Tipografia</router-link
-        >
+        <router-link to="TipografiaDs" :style="btnAtivo.tipografia">Tipografia</router-link>
       </div>
 
       <!-- Componentes -->
       <div class="component-tag">Componentes</div>
       <div class="options">
-        <router-link to="HeaderPage">Header</router-link> 
+        <router-link to="HeaderPage">Header</router-link>
         <router-link to="BotaoDs">Botão</router-link>
         <router-link to="CampoTextoDs">Campo de Texto</router-link>
         <router-link to="CalendarioDs">Calendario</router-link>
@@ -55,6 +57,7 @@ export default {
   height: calc(100vh - 75px);
   width: 16.666vw;
 }
+
 .Principles {
   font-family: "Roboto Slab", serif;
   font-weight: 300;

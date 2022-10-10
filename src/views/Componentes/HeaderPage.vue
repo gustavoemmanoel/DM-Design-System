@@ -6,19 +6,14 @@
       </el-col>
     </el-row>
     <el-row>
-      <el-col :span="4"><AsideComponent :btnAtivo="btnAtivo" /></el-col>
-      <el-col class="container" :span="16">
-        
+      <el-col :span="4">
+        <AsideComponent :btnAtivo="btnAtivo" />
       </el-col>
-      <el-col class="sub-nav" :span="5">
-        <p>Cores principais da marca</p>
-        <p>Tons pretos</p>
-        <p>Tons creme</p>
-        <p>Cores secundárias da marca</p>
-        <p>Sub tons de cores da marca</p>
-        <p>Cores de contraste</p>
-        <p>Cores semânticas</p>
-        <p>Paleta de uso em mapa</p>
+      <el-col class="container" :span="16">
+        <header>
+          <img class="img-header" src="/logo.svg">
+
+        </header>
       </el-col>
     </el-row>
   </div>
@@ -44,5 +39,18 @@ export default {
 </script>
 
 <style scoped>
+header {
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  background: var(--dm_azul_00);
+  height: 50px;
+  width: 100%;
 
+
+}
+
+.img-header {
+  height: 30px;
+}
 </style>

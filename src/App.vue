@@ -661,13 +661,6 @@ h6,
 
 /* Estilos Gerais */
 
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  align-content: center;
-  padding: 25px;
-}
 
 .containerInterno {
   width: 100%;

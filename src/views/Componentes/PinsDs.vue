@@ -7,8 +7,7 @@
     </el-row>
     <el-row>
       <el-col :span="4"><AsideComponent :btnAtivo="btnAtivo" /></el-col>
-      <el-col class="container" :span="16">
-        
+      <el-col :offset="1" :span="15">        
       </el-col>
       <el-col class="sub-nav" :span="5">
         <p>Cores principais da marca</p>

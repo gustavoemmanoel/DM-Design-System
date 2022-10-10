@@ -7,7 +7,7 @@
     </el-row>
     <el-row>
       <el-col :span="4"><AsideComponent :btnAtivo="btnAtivo" /></el-col>
-      <el-col class="container" :offset="1" :span="17">
+      <el-col :offset="1" :span="17">
         <div
           class="containerInterno"
           v-for="(userConditions, index) in colors"
@@ -15,7 +15,7 @@
         >
           <div class="container_title">
             <h1>{{ userConditions.title }}</h1>
-            <div class="hr"/>
+            <div class="hr" />
           </div>
           <div>
             <div class="container-elementos">
@@ -56,7 +56,7 @@
           </div>
         </div>
       </el-col>
-         </el-row>
+    </el-row>
   </div>
 </template>
 <script>

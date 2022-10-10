@@ -9,7 +9,7 @@
       <el-col :span="4">
         <AsideComponent :btnAtivo="btnAtivo" />
       </el-col>
-      <el-col class="container" :offset="1" :span="15">
+      <el-col :offset="1" :span="15">
         <div class="containerInterno">
           <div>
             <div>

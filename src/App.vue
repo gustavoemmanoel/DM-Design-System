@@ -805,5 +805,18 @@ h1 {
   transition: 0.2s !important;
 }
 
-.btn-big {}
+.el-tabs__item {
+    padding: 0 20px;
+    height: var(--el-tabs-header-height);
+    height: 40px;
+    box-sizing: border-box;
+    line-height: var(--el-tabs-header-height);
+    display: inline-block;
+    list-style: none;
+    font-size: var(--el-font-size-base);
+    font-weight: 500;
+    color: var(--el-text-color-primary);
+    position: relative;
+}
+
 </style>

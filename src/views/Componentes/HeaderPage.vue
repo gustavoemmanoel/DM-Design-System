@@ -9,9 +9,9 @@
       <el-col :span="4">
         <AsideComponent :btnAtivo="btnAtivo" />
       </el-col>
-      <el-col :offset="1" :span="16">
-        <!--  -->
-        <div class="header">
+      <el-col :offset="1" :span="18">
+        <br /><br />
+        <el-row class="header">
           <el-row>
             <img class="img-header" src="/icons/dm.svg" />
             <h4 style="color: var(--dm_creme_00)">DataMachina</h4>
@@ -23,8 +23,7 @@
             <img class="icon" src="/icons/notificacao.svg" />
             <img class="icon" src="/icons/perfil.svg" />
           </el-row>
-          <!--  -->
-        </div>
+        </el-row>
         <el-row>
           <el-col :offset="1" :span="22">
             <el-tabs v-model="activeName" @tab-click="handleClick">

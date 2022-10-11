@@ -7,7 +7,9 @@
     </el-row>
     <el-row>
       <el-col :span="4"><AsideComponent :btnAtivo="btnAtivo" /></el-col>
-      <el-col :offset="1" :span="15">
+      <el-col :offset="1" :span="18">
+        <br>
+        <br>
         <div class="containerInterno">
           <div
             style="margin: 0 0 20px 0"

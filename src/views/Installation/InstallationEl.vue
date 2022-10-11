@@ -18,20 +18,14 @@
         <div class="hr" />
       </div>
 
-      <p>npm</p>
-      <p>npm i element-ui -S</p>
+      <h2 class="container_title">npm</h2>
+      <p>A instalação com o npm é recomendada e funciona perfeitamente com o webpack.</p>
+      <p class="box_code">npm i element-ui -S</p>
+      <br>
+      <br>
+      <h2 class="container_title">Novo codigo</h2>
+      <p>XXX</p>
 
-      <div class="container_title">
-        <el-row>
-          <h3>Design System</h3>
-          <p class="body_01"> - Data Machina</p>
-        </el-row>
-        <div class="hr" />
-      </div>
-
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur consequuntur consectetur ullam magni
-        eaque sint, iure facere iusto ducimus sunt praesentium vitae. Animi nam a distinctio aperiam et veritatis
-        placeat.</p>
 
     </el-col>
 

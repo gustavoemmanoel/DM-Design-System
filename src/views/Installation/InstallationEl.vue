@@ -10,7 +10,9 @@
         <AsideComponent :btnAtivo="btnAtivo" />
       </el-col>
     </el-row>
-    <el-col :offset="5" :span="17">
+    <el-col :offset="5" :span="18">
+      <br>
+      <br>
       <div class="container_title">
         <h1>Instalação Element Plus</h1>
         <div class="hr" />

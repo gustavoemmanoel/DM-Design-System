@@ -9,7 +9,8 @@
       <el-col :span="4">
         <AsideComponent :btnAtivo="btnAtivo" />
       </el-col>
-      <el-col :offset="1" :span="15">
+      <el-col :offset="1" :span="18">
+        <br /><br />
         <div class="containerInterno">
           <div>
             <div>
@@ -28,10 +29,19 @@
             </div>
             <br />
           </div>
-          <div class="container-elementos" v-for="(btnVfor, index) in btnConteudos" :key="index">
+          <div
+            class="container-elementos"
+            v-for="(btnVfor, index) in btnConteudos"
+            :key="index"
+          >
             <h5 style="position: relative">
               {{ btnVfor.title }}
-              <el-popover placement="top-start" :width="700" trigger="hover" :content="btnVfor.content">
+              <el-popover
+                placement="top-start"
+                :width="700"
+                trigger="hover"
+                :content="btnVfor.content"
+              >
                 <template #reference>
                   <el-button size="small" class="tooltip">?</el-button>
                 </template>
@@ -39,7 +49,11 @@
             </h5>
 
             <el-row>
-              <el-col v-for="(btnGrid, index) in btnVfor.gridButtons" :key="index" class="cardsBtn">
+              <el-col
+                v-for="(btnGrid, index) in btnVfor.gridButtons"
+                :key="index"
+                class="cardsBtn"
+              >
                 <br />
                 <div class="botoes">
                   <el-button :type="btnGrid.type">
@@ -59,11 +73,14 @@
                   <div class="codigos">
                     <h6>HTML</h6>
                     &lt;el-row&gt;
-                    <div style="margin-left: 16px;" v-for="(style, index) in btnVfor.stringHTML" :key="index">
+                    <div
+                      style="margin-left: 16px"
+                      v-for="(style, index) in btnVfor.stringHTML"
+                      :key="index"
+                    >
                       {{ style.html }}
                     </div>
                     &lt;/el-row&gt;
-
                   </div>
                 </el-collapse-item>
               </el-collapse>
@@ -133,9 +150,10 @@ export default {
           ],
           stringHTML: [
             { html: '<el-button type="secundario">Secundário<el-button> ' },
-            { html: '<el-button type="secundario-larger">Secundário<el-button> ' },
+            {
+              html: '<el-button type="secundario-larger">Secundário<el-button> ',
+            },
           ],
-
         },
         /* Terceiro */
         {
@@ -151,7 +169,9 @@ export default {
           ],
           stringHTML: [
             { html: '<el-button type="terciario">Botão terciário<el-button> ' },
-            { html: '<el-button type="terciario-larger">Botão terciário<el-button> ' },
+            {
+              html: '<el-button type="terciario-larger">Botão terciário<el-button> ',
+            },
           ],
         },
       ],

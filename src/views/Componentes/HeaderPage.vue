@@ -59,21 +59,5 @@ export default {
 </script>
 
 <style scoped>
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: var(--dm_azul_00);
-  height: 50px;
-  width: 100%;
-  padding: 0 16px;
-}
-
-.img-header {
-  width: 35px;
-  margin-right: 60px;
-}
-.icon {
-  width: 25px;
-}
+/* Os estilos do header são definidos no arquivo CSS pai do element Plus, para que os estilos dele funcione em qualquer página em que for chamado */
 </style>

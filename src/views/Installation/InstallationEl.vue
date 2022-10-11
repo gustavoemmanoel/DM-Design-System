@@ -38,8 +38,8 @@
 </template>
   
 <script>
-import HeaderDs from "../components/HeaderDs.vue";
-import AsideComponent from "./ElementsDs/AsideComponent.vue";
+import HeaderDs from "../../components/HeaderDs.vue";
+import AsideComponent from "./../ElementsDs/AsideComponent.vue";
 
 export default {
   name: "InstallationEl",

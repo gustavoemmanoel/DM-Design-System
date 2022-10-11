@@ -19,7 +19,7 @@ import TagsDs from '../views/Componentes/TagsDs.vue'
 import BotaoDs from '../views/Componentes/BotaoDs.vue'
 import PDF from '../views/PDF.vue'
 import PreProcessamentos from '../views/PreProcessamentos.vue'
-import InstallationEl from '../views/InstallationEl.vue'
+import InstallationEl from '../views/Installation/InstallationEl.vue'
 
 const routes = [
   {

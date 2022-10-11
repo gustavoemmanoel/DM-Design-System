@@ -18,20 +18,24 @@
         <div class="hr" />
       </div>
 
-      <p>npm</p>
-      <p>npm i element-ui -S</p>
-
+      <br>
+      
       <div class="container_title">
-        <el-row>
-          <h3>Design System</h3>
-          <p class="body_01"> - Data Machina</p>
-        </el-row>
+        <h2>NPM</h2>
         <div class="hr" />
       </div>
+      <p>A instalação com o npm é recomendada e funciona perfeitamente com o webpack.</p>
+      <p class="box_code">npm i element-ui -S</p>
 
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur consequuntur consectetur ullam magni
-        eaque sint, iure facere iusto ducimus sunt praesentium vitae. Animi nam a distinctio aperiam et veritatis
-        placeat.</p>
+      <br>
+      <br>
+
+      <div class="container_title">
+        <h2>Novo codigo</h2>
+        <div class="hr" />
+      </div>
+      <p>XXX</p>
+
 
     </el-col>
 
@@ -40,8 +44,8 @@
 </template>
   
 <script>
-import HeaderDs from "../components/HeaderDs.vue";
-import AsideComponent from "./ElementsDs/AsideComponent.vue";
+import HeaderDs from "../../components/HeaderDs.vue";
+import AsideComponent from "./../ElementsDs/AsideComponent.vue";
 
 export default {
   name: "InstallationEl",

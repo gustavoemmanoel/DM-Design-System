@@ -668,6 +668,16 @@ h6,
 .container_title {
   margin-bottom: 20px;
 }
+.box_code{
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  margin-top: 10px;
+  width: 100%;
+  height: 60px;
+  background: var(--dm_creme_00);
+  border:  solid 1px var(--dm_cinza_03) ;
+}
 
 h1 {
   font-size: 24px;

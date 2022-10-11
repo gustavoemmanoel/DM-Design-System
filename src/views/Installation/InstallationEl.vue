@@ -18,12 +18,22 @@
         <div class="hr" />
       </div>
 
-      <h2 class="container_title">npm</h2>
+      <br>
+      
+      <div class="container_title">
+        <h2>NPM</h2>
+        <div class="hr" />
+      </div>
       <p>A instalação com o npm é recomendada e funciona perfeitamente com o webpack.</p>
       <p class="box_code">npm i element-ui -S</p>
+
       <br>
       <br>
-      <h2 class="container_title">Novo codigo</h2>
+
+      <div class="container_title">
+        <h2>Novo codigo</h2>
+        <div class="hr" />
+      </div>
       <p>XXX</p>
 
 

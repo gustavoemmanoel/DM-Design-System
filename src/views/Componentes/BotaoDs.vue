@@ -11,23 +11,35 @@
       </el-col>
       <el-col :offset="1" :span="18">
         <br /><br />
+
         <div class="containerInterno">
-          <div>
-            <div>
-              <div style="display: flex; flex-direction: column; gap: 10px">
-                <h1>/Botões</h1>
-                <div class="hr"></div>
-                <p>
-                  Botões permitem que os usuários executem ações dentro da
-                  plataforma ou os levam para outras páginas. Eles são
-                  desenhados de acordo com uma hierarquia de importância dentro
-                  das tarefas da página. Os botões tem alturas definidas, mas as
-                  larguras não podem ser modificadas de acordo com o espaço
-                  destinado no grid.
-                </p>
-              </div>
-            </div>
+          <div style="display: flex; flex-direction: column; gap: 10px">
+            <h1>/Botões</h1>
+            <div class="hr"></div>
+            <p>
+              Botões permitem que os usuários executem ações dentro da
+              plataforma ou os levam para outras páginas. Eles são desenhados de
+              acordo com uma hierarquia de importância dentro das tarefas da
+              página. Os botões tem alturas definidas, mas as larguras não podem
+              ser modificadas de acordo com o espaço destinado no grid.
+            </p>
+          </div>
+          <br />
+          <div class="container-elementos">
+            <el-button disabled>Default</el-button>
+            <el-button type="primary">Primary</el-button>
+            <el-button type="success">Success</el-button>
+            <el-button type="info">Info</el-button>
+            <el-button type="warning">Warning</el-button>
+            <el-button type="danger">Danger</el-button>
             <br />
+            <br />
+            <el-button disabled>Default</el-button>
+            <el-button type="primary" disabled>Primary</el-button>
+            <el-button type="success" disabled>Success</el-button>
+            <el-button type="info" disabled>Info</el-button>
+            <el-button type="warning" disabled>Warning</el-button>
+            <el-button type="danger" disabled>Danger</el-button>
           </div>
           <div
             class="container-elementos"
@@ -69,10 +81,8 @@
             </el-row>
             <el-col :span="24">
               <el-collapse v-model="activeNames" @change="handleChange">
-                <el-collapse-item title="Ver códigos" name="3">
+                <el-collapse-item title="ver" name="3">
                   <div class="codigos">
-                    <h6>HTML</h6>
-                    &lt;el-row&gt;
                     <div
                       style="margin-left: 16px"
                       v-for="(style, index) in btnVfor.stringHTML"
@@ -80,7 +90,6 @@
                     >
                       {{ style.html }}
                     </div>
-                    &lt;/el-row&gt;
                   </div>
                 </el-collapse-item>
               </el-collapse>

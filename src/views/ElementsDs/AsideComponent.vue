@@ -21,7 +21,7 @@
         <router-link to="HeaderPage">Header</router-link>
         <router-link to="BotaoDs">Botão</router-link>
         <router-link to="CampoTextoDs">Campo de Texto</router-link>
-        <router-link to="CalendarioDs">Calendario</router-link>
+        <router-link to="CalendarioDs">Calendário</router-link>
         <router-link to="CardsDs">Cards</router-link>
         <router-link to="CheckboxDs">Checkbox</router-link>
         <router-link to="DropdownDs">Dropdown</router-link>

@@ -11,13 +11,25 @@
         <br /><br />
         <!-- TABELA -->
         <el-table :data="tableData" stripe style="width: 100%">
+          <el-table-column prop="date" label="Date" />
+          <el-table-column prop="name" label="Name" />
+          <el-table-column prop="address" label="Address" />
+          <el-table-column prop="tag" label="Tag">
+            <template #default="scope">
+              <el-tag>{{ scope.row.tag }}</el-tag>
+            </template>
+          </el-table-column>
+        </el-table>
+        <br />
+        <!-- FIM TABELA -->
+
+        <el-table :data="tableData" style="width: 100%" stripe>
           <el-table-column prop="date" label="Date" width="180">
           </el-table-column>
           <el-table-column prop="name" label="Name" width="180">
           </el-table-column>
           <el-table-column prop="address" label="Address"> </el-table-column>
         </el-table>
-        <!-- FIM TABELA -->
       </el-col>
     </el-row>
   </div>
@@ -39,24 +51,28 @@ export default {
 
       tableData: [
         {
-          date: "2016-05-03",
+          date: "Design System",
           name: "Tom",
-          address: "No. 189, Grove St, Los Angeles",
+          address: "Data Machina",
+          tag: "Tag 1",
         },
         {
-          date: "2016-05-02",
+          date: "Design System",
           name: "Tom",
-          address: "No. 189, Grove St, Los Angeles",
+          address: "Data Machina",
+          tag: "Tag 2",
         },
         {
-          date: "2016-05-04",
+          date: "Design System",
           name: "Tom",
-          address: "No. 189, Grove St, Los Angeles",
+          address: "Data Machina",
+          tag: "Tag 3",
         },
         {
-          date: "2016-05-01",
+          date: "Design System",
           name: "Tom",
-          address: "No. 189, Grove St, Los Angeles",
+          address: "Data Machina",
+          tag: "Tag 4",
         },
       ],
     };

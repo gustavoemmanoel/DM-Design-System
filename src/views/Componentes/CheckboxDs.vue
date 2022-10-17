@@ -7,9 +7,52 @@
     </el-row>
     <el-row>
       <el-col :span="4"><AsideComponent :btnAtivo="btnAtivo" /></el-col>
-      <el-col :offset="1" :span="15">        
+      <el-col :offset="1" :span="18">
+        <br />
+        <br />
+        <div>
+          <el-checkbox v-model="checked1" label="Option 1" size="large" />
+          <el-checkbox v-model="checked2" label="Option 2" size="large" />
+        </div>
+        <div>
+          <el-checkbox v-model="checked3" label="Option 1" />
+          <el-checkbox v-model="checked4" label="Option 2" />
+        </div>
+        <div>
+          <el-checkbox v-model="checked5" label="Option 1" size="small" />
+          <el-checkbox v-model="checked6" label="Option 2" size="small" />
+        </div>
+        <div>
+          <el-checkbox
+            v-model="checked5"
+            label="Option 1"
+            size="small"
+            disabled
+          />
+          <el-checkbox
+            v-model="checked6"
+            label="Option 2"
+            size="small"
+            disabled
+          />
+        </div>
+
+        <h1>Check all</h1>
+        <el-checkbox
+          v-model="checkAll"
+          :indeterminate="isIndeterminate"
+          @change="handleCheckAllChange"
+          >Check all</el-checkbox
+        >
+        <el-checkbox-group
+          v-model="checkedCities"
+          @change="handleCheckedCitiesChange"
+        >
+          <el-checkbox v-for="city in cities" :key="city" :label="city">{{
+            city
+          }}</el-checkbox>
+        </el-checkbox-group>
       </el-col>
-   
     </el-row>
   </div>
 </template>
@@ -26,13 +69,10 @@ export default {
   data() {
     return {
       headerTitle: "Check Box",
-
       btnAtivo: { cores: "text-decoration: underline" },
     };
   },
 };
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

@@ -1027,7 +1027,7 @@ h1 {
   --el-overlay-color-lighter: rgba(0, 0, 0, 0.5);
   --el-mask-color: rgba(255, 255, 255, 0.9);
   --el-mask-color-extra-light: rgba(255, 255, 255, 0.3);
-  --el-border-width: 1px;
+  --el-border-width:1px;
   --el-border-style: solid;
   --el-border-color-hover: var(--el-text-color-disabled);
   --el-border: var(--el-border-width) var(--el-border-style)

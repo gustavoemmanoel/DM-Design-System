@@ -20,27 +20,28 @@
         >
           {{ item.label }}
         </el-tag>
+
         <br />
         <br />
         <el-tag>Tag 1</el-tag>
-        <el-tag size="small">Tag 1</el-tag>
-        <el-tag size="mini">Tag 1</el-tag>
-        <br />
         <el-tag type="success">Tag 2</el-tag>
-        <el-tag type="success" size="small">Tag 2</el-tag>
-        <el-tag type="success" size="mini">Tag 2</el-tag>
-        <br />
         <el-tag type="info">Tag 3</el-tag>
-        <el-tag type="info" size="small">Tag 3</el-tag>
-        <el-tag type="info" size="mini">Tag 3</el-tag>
-        <br />
         <el-tag type="warning">Tag 4</el-tag>
-        <el-tag type="warning" size="small">Tag 4</el-tag>
-        <el-tag type="warning" size="mini">Tag 4</el-tag>
-        <br />
         <el-tag type="danger">Tag 5</el-tag>
+        <br />
+        <el-tag size="small">Tag 1</el-tag>
+        <el-tag type="success" size="small">Tag 2</el-tag>
+        <el-tag type="info" size="small">Tag 3</el-tag>
+        <el-tag type="warning" size="small">Tag 4</el-tag>
         <el-tag type="danger" size="small">Tag 5</el-tag>
+        <br />
+        <el-tag size="mini">Tag 1</el-tag>
+        <el-tag type="success" size="mini">Tag 2</el-tag>
+        <el-tag type="info" size="mini">Tag 3</el-tag>
+        <el-tag type="warning" size="mini">Tag 4</el-tag>
         <el-tag type="danger" size="mini">Tag 5</el-tag>
+        <br />
+        <br />
         <br />
         <br />
         <!-- NORMAL CLOSABLE -->
@@ -119,6 +120,9 @@
           >Tag 5</el-tag
         >
         <el-tag type="danger" size="mini" effect="plain" closable>Tag 5</el-tag>
+        <br />
+        <br />
+        <br />
       </el-col>
     </el-row>
   </div>

@@ -20,7 +20,7 @@ export default {
 body {
   overflow-y: scroll;
   background: #fdfbf9;
-  padding-top: 75px;
+  /* padding-top: 75px; */
 }
 
 .flex {
@@ -894,6 +894,7 @@ h1 {
 :root {
   --dm_creme_00: #fdfbf9;
   --dm_preto_00: #2c2c2c;
+  --dm_preto_00_color: #2c2c2c;
   --dm_azul_00-rgb: 64, 158, 255;
   --dm_verde_00-rgb: 103, 194, 58;
   --dm_amarelo_00-rgb: 230, 162, 60;
@@ -914,7 +915,7 @@ h1 {
   --el-index-top: 1000;
   --el-index-popper: 2000;
   --el-border-radius-base: 4px;
-  --el-border-radius-small: 2px;
+  --el-border-radius-small: 3px;
   --el-border-radius-round: 20px;
   --el-border-radius-circle: 100%;
   --el-transition-duration: 0.3s;
@@ -1027,7 +1028,7 @@ h1 {
   --el-overlay-color-lighter: rgba(0, 0, 0, 0.5);
   --el-mask-color: rgba(255, 255, 255, 0.9);
   --el-mask-color-extra-light: rgba(255, 255, 255, 0.3);
-  --el-border-width:1px;
+  --el-border-width: 2px;
   --el-border-style: solid;
   --el-border-color-hover: var(--el-text-color-disabled);
   --el-border: var(--el-border-width) var(--el-border-style)
@@ -3267,8 +3268,8 @@ h1 {
   --el-checkbox-font-size: 14px;
   --el-checkbox-font-weight: var(--el-font-weight-primary);
   --el-checkbox-text-color: var(--el-text-color-regular);
-  --el-checkbox-input-height: 14px;
-  --el-checkbox-input-width: 14px;
+  --el-checkbox-input-height: 20px;
+  --el-checkbox-input-width: 20px;
   --el-checkbox-border-radius: var(--el-border-radius-small);
   --el-checkbox-bg-color: var(--el-fill-color-blank);
   --el-checkbox-input-border: var(--el-border);
@@ -3366,8 +3367,8 @@ h1 {
 }
 
 .el-checkbox__input.is-disabled .el-checkbox__inner {
-  background-color: var(--el-checkbox-disabled-input-fill);
-  border-color: var(--el-checkbox-disabled-border-color);
+  background-color: var(--dm_cinza_04);
+  border-color: var(--dm_cinza_03);
   cursor: not-allowed;
 }
 
@@ -3405,7 +3406,7 @@ h1 {
 }
 
 .el-checkbox__input.is-checked .el-checkbox__inner {
-  background-color: var(--el-checkbox-checked-bg-color);
+  /* background-color: var(--el-checkbox-checked-bg-color); */
   border-color: var(--el-checkbox-checked-input-border-color);
 }
 
@@ -3446,7 +3447,8 @@ h1 {
 .el-checkbox__inner {
   display: inline-block;
   position: relative;
-  border: var(--el-checkbox-input-border);
+  /* border: var(--el-checkbox-input-border); */
+  border: 2px solid var(--dm_preto_00);
   border-radius: var(--el-checkbox-border-radius);
   box-sizing: border-box;
   width: var(--el-checkbox-input-width);
@@ -3465,17 +3467,18 @@ h1 {
 .el-checkbox__inner::after {
   box-sizing: content-box;
   content: "";
-  border: 1px solid var(--el-checkbox-checked-icon-color);
+  border: 2px solid var(--dm_azul_00);
+  width: 6px;
+  height: 16px;
+  top: -3px;
+  left: 4px;
   border-left: 0;
   border-top: 0;
-  height: 7px;
-  left: 4px;
   position: absolute;
-  top: 1px;
   transform: rotate(45deg) scaleY(0);
-  width: 3px;
   transition: transform 0.15s ease-in 50ms;
   transform-origin: center;
+  border-radius: 1px;
 }
 
 .el-checkbox__original {
@@ -3492,7 +3495,7 @@ h1 {
   display: inline-block;
   padding-left: 8px;
   line-height: 1;
-  font-size: var(--el-checkbox-font-size);
+  font-size: 16px;
 }
 
 .el-checkbox.el-checkbox--large {
@@ -3504,8 +3507,8 @@ h1 {
 }
 
 .el-checkbox.el-checkbox--large .el-checkbox__inner {
-  width: 14px;
-  height: 14px;
+  width: 20px;
+  height: 20px;
 }
 
 .el-checkbox.el-checkbox--small {
@@ -3513,12 +3516,12 @@ h1 {
 }
 
 .el-checkbox.el-checkbox--small .el-checkbox__label {
-  font-size: 12px;
+  font-size: 16px;
 }
 
 .el-checkbox.el-checkbox--small .el-checkbox__inner {
-  width: 12px;
-  height: 12px;
+  width: 20px;
+  height: 20px;
 }
 
 .el-checkbox.el-checkbox--small
@@ -3528,8 +3531,8 @@ h1 {
 }
 
 .el-checkbox.el-checkbox--small .el-checkbox__inner::after {
-  width: 2px;
-  height: 6px;
+  width: 6px;
+  height: 16px;
 }
 
 .el-checkbox:last-of-type {
@@ -9361,6 +9364,7 @@ h1 {
   padding: var(--el-header-padding);
   box-sizing: border-box;
   flex-shrink: 0;
+  z-index: 100;
   height: var(--el-header-height);
 }
 
@@ -18542,55 +18546,88 @@ h1 {
   color: var(--dm_azul_00);
   font-weight: 700;
 }
+</style>
 
-/* Alterações */
-/*
-:root {
-    --dm_creme_00: #FDFBF9;
-    --dm_preto_00: #2c2c2c;
-    --dm_azul_00: #0567FF;
-    --el-bg-color: #C1D9FF;
-
-    --el-text-color-primary: var(--dm_cinza_02);
-    --el-border-color-light: var(--dm_cinza_03);
+<style>
+.logo {
+  width: 220px;
 }
 
-.el-table {
-    --el-table-border-color: none;
-    --el-table-border: none;
-    --el-table-text-color:  var(--dm_preto_00);
-    --el-table-header-text-color: var(--dm_creme_00);
-    --el-table-row-hover-bg-color: var(--dm_azul_03);
-    --el-table-header-bg-color:  var(--dm_preto_00);
-    --el-table-fixed-box-shadow: 0 0 10px ;
-    --el-table-tr-bg-color: var(--dm_creme_00);
-    --el-table-expanded-cell-bg-color: var(--dm_preto_00);
+.el-header {
+  background: green;
+  position: fixed;
+  width: 100%;
+  padding: 0 !important;
+  height: 75px !important;
+  overflow: hidden;
 }
 
-.el-collapse {
-    --el-collapse-border-color: var(--el-border-color-lighter);
-    --el-collapse-header-height: 48px;
-    --el-collapse-header-text-color: var(--el-text-color-primary);
-    --el-collapse-header-font-size: 13px;
-    --el-collapse-content-font-size: 13px;
-    --el-collapse-content-text-color: var(--el-text-color-primary);
-    --el-collapse-header-bg-color: var(--el-fill-color-blank);
-    --el-collapse-content-bg-color: var(--el-fill-color-blank);
-    border-top: 1px solid var(--el-collapse-border-color);
-    border-bottom: 1px solid var(--el-collapse-border-color)
+.el-aside {
+  background: yellow;
+  margin-top: 75px;
+  width: 256px;
 }
 
-.el-tabs__item {
-    padding: 0 20px;
-    height: var(--el-tabs-header-height);
-    height: 40px;
-    box-sizing: border-box;
-    line-height: var(--el-tabs-header-height);
-    display: inline-block;
-    list-style: none;
-    font-size: var(--el-font-size-base);
-    font-weight: 500;
-    color: var(--el-text-color-primary);
-    position: relative;
-} */
+footer {
+  background: pink;
+}
+
+.containerInfos {
+  background: var(--dm_creme_00);
+  color: var(--dm_preto_00);
+  border-radius: 6px;
+  width: max-content;
+  padding: 30px;
+}
+
+.componentsStyleContent {
+  width: 100vw;
+  /* background: gray; */
+}
+
+.el-main {
+  margin: auto;
+  margin-top: 75px;
+  margin-bottom: 30px;
+  max-width: 1020px;
+  padding: 20px;
+  padding: 60px 72px 20px 72px;
+  box-sizing: border-box;
+  border-radius: 6px;
+}
+
+.container-elementos {
+  background: red;
+  background: var(--dm_creme_01);
+  width: 100%;
+  border-radius: 6px;
+  padding: 25px;
+  margin-bottom: 30px;
+}
+
+.chaves,
+.html_color_conteudo,
+.html_codigos_blue,
+.html_color_axx {
+  display: inline;
+  /* float: left;   */
+}
+
+.html_codigos_blue {
+  color: #3375b9;
+}
+.html_color_conteudo {
+  color: #2c2c2c;
+}
+
+.html_color_axx {
+  color: var(--dm_roxo_C04);
+}
+
+/*  */
+
+.html-line-height {
+  line-height: 25px;
+  background: rgba(151, 240, 151, 0.404);
+}
 </style>

@@ -32,8 +32,8 @@ export default {
   display: flex;
   align-items: center;
   top: 0;
-  position: fixed;
-  background: #2c2c2c;
+  /* position: fixed; */
+  background-color: #2c2c2c;
   color: #faf6f0;
   height: 75px;
   overflow: hidden;

@@ -1,38 +1,51 @@
 <template>
-  <div>
-    <el-row>
-      <el-col :span="24">
-        <HeaderDs :headerTitle="headerTitle" />
-      </el-col>
-    </el-row>
-    <el-row>
-      <el-col :span="4"><AsideComponent :btnAtivo="btnAtivo" /></el-col>
-      <el-col :offset="1" :span="18">
-        <br /><br />
-        <!-- TABELA -->
-        <el-table :data="tableData" stripe style="width: 100%">
-          <el-table-column prop="date" label="Date" />
-          <el-table-column prop="name" label="Name" />
-          <el-table-column prop="address" label="Address" />
-          <el-table-column prop="tag" label="Tag">
-            <template #default="scope">
-              <el-tag>{{ scope.row.tag }}</el-tag>
-            </template>
-          </el-table-column>
-        </el-table>
-        <br />
-        <!-- FIM TABELA -->
-
-        <el-table :data="tableData" style="width: 100%" stripe>
-          <el-table-column prop="date" label="Date" width="180">
-          </el-table-column>
-          <el-table-column prop="name" label="Name" width="180">
-          </el-table-column>
-          <el-table-column prop="address" label="Address"> </el-table-column>
-        </el-table>
-      </el-col>
-    </el-row>
-  </div>
+  <el-container>
+    <el-header>
+      <HeaderDs :headerTitle="headerTitle" />
+    </el-header>
+    <el-container>
+      <el-aside>
+        <AsideComponent :btnAtivo="btnAtivo" />
+      </el-aside>
+      <el-main>
+        <div>
+          <h1>/Tabelas</h1>
+          <div class="hr"></div>
+          <p>
+            As tabelas exibem uma série de dados de forma estrutura com linhas e
+            colunas. As tabelas inclui uma linha de título, e linhas de conteúdo
+            com detalhe zebrado (cores intercaladas) para facilitar a leitura e
+            diferenciação das linhas.
+          </p>
+          <br />
+        </div>
+        <div class="container-elementos">
+          <!-- TABELA -->
+          <el-table :data="tableData" stripe style="width: 100%">
+            <el-table-column prop="date" label="Date" />
+            <el-table-column prop="name" label="Name" />
+            <el-table-column prop="address" label="Address" />
+            <el-table-column prop="tag" label="Tag">
+              <template #default="scope">
+                <el-tag>{{ scope.row.tag }}</el-tag>
+              </template>
+            </el-table-column>
+          </el-table>
+          <br />
+        </div>
+        <div class="container-elementos">
+          <!-- FIM TABELA -->
+          <el-table :data="tableData" style="width: 100%" stripe>
+            <el-table-column prop="date" label="Date" width="180">
+            </el-table-column>
+            <el-table-column prop="name" label="Name" width="180">
+            </el-table-column>
+            <el-table-column prop="address" label="Address"> </el-table-column>
+          </el-table>
+        </div>
+      </el-main>
+    </el-container>
+  </el-container>
 </template>
 <script>
 import AsideComponent from "../ElementsDs/AsideComponent.vue";

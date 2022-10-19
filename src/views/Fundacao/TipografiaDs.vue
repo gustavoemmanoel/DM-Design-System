@@ -1,54 +1,47 @@
 <template>
-  <div>
-    <el-row>
-      <el-col :span="24">
-        <HeaderDs :headerTitle="headerTitle" />
-      </el-col>
-    </el-row>
-    <el-row>
-      <el-col :span="4"><AsideComponent :btnAtivo="btnAtivo" /></el-col>
-      <el-col :offset="1" :span="18">
-        <br>
-        <br>
-        <div class="containerInterno">
-          <div
-            style="margin: 0 0 20px 0"
-            v-for="(tableContent, index) in table"
-            :key="index"
-          >
+  <el-container>
+    <el-header>
+      <HeaderDs :headerTitle="headerTitle" />
+    </el-header>
+    <el-container>
+      <el-aside>
+        <AsideComponent :btnAtivo="btnAtivo" />
+      </el-aside>
+      <el-main>
+        <div v-for="(tableContent, index) in table" :key="index">
+          <div>
             <div>
-              <div>
-                <h1>{{ tableContent.row[0].title }}</h1>
-                <div class="hr"></div>
-              </div>
-              <table>
-                <tr class="title-table h4">
-                  <td>Categoria</td>
-                  <td>Fonte</td>
-                  <td>Peso</td>
-                  <td>Tamanho</td>
-                  <td>Token</td>
-                  <td>Exemplo</td>
-                </tr>
-                <tr v-for="(brabo, index) in tableContent.row" :key="index">
-                  <td :class="brabo.token">
-                    {{ brabo.categoria }}
-                  </td>
-                  <td>{{ brabo.roboto }}</td>
-                  <td>{{ brabo.peso }}</td>
-                  <td>{{ brabo.pixel }}</td>
-                  <td>{{ brabo.token }}</td>
-                  <td :class="brabo.token">
-                    {{ brabo.exemplo }}
-                  </td>
-                </tr>
-              </table>
+              <h1>{{ tableContent.row[0].title }}</h1>
+              <div class="hr" />
             </div>
+            <br />
+            <table class="container-elementos">
+              <tr class="title-table h4">
+                <td>Categoria</td>
+                <td>Fonte</td>
+                <td>Peso</td>
+                <td>Tamanho</td>
+                <td>Token</td>
+                <td>Exemplo</td>
+              </tr>
+              <tr v-for="(brabo, index) in tableContent.row" :key="index">
+                <td :class="brabo.token">
+                  {{ brabo.categoria }}
+                </td>
+                <td>{{ brabo.roboto }}</td>
+                <td>{{ brabo.peso }}</td>
+                <td>{{ brabo.pixel }}</td>
+                <td>{{ brabo.token }}</td>
+                <td :class="brabo.token">
+                  {{ brabo.exemplo }}
+                </td>
+              </tr>
+            </table>
           </div>
         </div>
-      </el-col>
-    </el-row>
-  </div>
+      </el-main>
+    </el-container>
+  </el-container>
 </template>
 <script>
 import AsideComponent from "../ElementsDs/AsideComponent.vue";
@@ -207,6 +200,7 @@ export default {
   color: #0567ff;
 }
 table tr td {
-  padding: 10px;
+  padding: 10px 0;
+  /* height: 40px; */
 }
 </style>

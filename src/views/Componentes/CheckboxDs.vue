@@ -1,60 +1,60 @@
 <template>
-  <div>
-    <el-row>
-      <el-col :span="24">
-        <HeaderDs :headerTitle="headerTitle" />
-      </el-col>
-    </el-row>
-    <el-row>
-      <el-col :span="4"><AsideComponent :btnAtivo="btnAtivo" /></el-col>
-      <el-col :offset="1" :span="18">
-        <br />
-        <br />
-        <div>
-          <el-checkbox v-model="checked1" label="Option 1" size="large" />
-          <el-checkbox v-model="checked2" label="Option 2" size="large" />
-        </div>
-        <div>
-          <el-checkbox v-model="checked3" label="Option 1" />
-          <el-checkbox v-model="checked4" label="Option 2" />
-        </div>
-        <div>
-          <el-checkbox v-model="checked5" label="Option 1" size="small" />
-          <el-checkbox v-model="checked6" label="Option 2" size="small" />
-        </div>
-        <div>
-          <el-checkbox
-            v-model="checked5"
-            label="Option 1"
-            size="small"
-            disabled
-          />
-          <el-checkbox
-            v-model="checked6"
-            label="Option 2"
-            size="small"
-            disabled
-          />
-        </div>
-
-        <h1>Check all</h1>
-        <el-checkbox
-          v-model="checkAll"
-          :indeterminate="isIndeterminate"
-          @change="handleCheckAllChange"
-          >Check all</el-checkbox
-        >
-        <el-checkbox-group
-          v-model="checkedCities"
-          @change="handleCheckedCitiesChange"
-        >
-          <el-checkbox v-for="city in cities" :key="city" :label="city">{{
-            city
-          }}</el-checkbox>
-        </el-checkbox-group>
-      </el-col>
-    </el-row>
-  </div>
+  <el-container>
+    <el-header>
+      <HeaderDs :headerTitle="headerTitle" />
+    </el-header>
+    <el-container>
+      <el-aside>
+        <AsideComponent :btnAtivo="btnAtivo" />
+      </el-aside>
+      <el-row class="componentsStyleContent">
+        <el-col>
+          <el-main>
+            <div>
+              <h1>/Checkbox</h1>
+              <div class="hr"></div>
+              <p>
+                O checkbox é uma pequena caixa que pode ser clicada para
+                selecionar um ou mais itens em uma lista. A caixa também indica
+                os itens que estão selecionados pelo usuário. Há quatro estados
+                possíveis para um checkbox: ativo, hover, clicado e bloqueado.
+              </p>
+            </div>
+            <div class="container-elementos">
+              <el-checkbox
+                v-model="checked1"
+                label="Option 1"
+                size="large"
+                checked
+              />
+              <el-checkbox v-model="checked3" label="datamachina" />
+              <el-checkbox
+                v-model="checked5"
+                label="Design System"
+                size="small"
+                disabled
+              />
+            </div>
+            <h1>Check all</h1>
+            <el-checkbox
+              v-model="checkAll"
+              :indeterminate="isIndeterminate"
+              @change="handleCheckAllChange"
+              >Check all</el-checkbox
+            >
+            <el-checkbox-group
+              v-model="checkedCities"
+              @change="handleCheckedCitiesChange"
+            >
+              <el-checkbox v-for="city in cities" :key="city" :label="city">{{
+                city
+              }}</el-checkbox>
+            </el-checkbox-group>
+          </el-main>
+        </el-col>
+      </el-row>
+    </el-container>
+  </el-container>
 </template>
 <script>
 import AsideComponent from "../ElementsDs/AsideComponent.vue";

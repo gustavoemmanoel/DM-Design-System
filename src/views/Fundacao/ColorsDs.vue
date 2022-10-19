@@ -1,15 +1,13 @@
 <template>
-  <div>
-    <el-row>
-      <el-col :span="24">
-        <HeaderDs :headerTitle="headerTitle" />
-      </el-col>
-    </el-row>
-    <el-row>
-      <el-col :span="4"><AsideComponent :btnAtivo="btnAtivo" /></el-col>
-      <el-col :offset="1" :span="18">
-        <br>
-        <br>
+  <el-container>
+    <el-header>
+      <HeaderDs :headerTitle="headerTitle" />
+    </el-header>
+    <el-container>
+      <el-aside>
+        <AsideComponent :btnAtivo="btnAtivo" />
+      </el-aside>
+      <el-main>
         <div
           class="containerInterno"
           v-for="(userConditions, index) in colors"
@@ -30,8 +28,7 @@
                   v-for="(coresDs, index) in userConditions.cores"
                   :key="index"
                 >
-                  <p class="token">{{ coresDs.token }}</p>
-
+                  <p class="token">--{{ coresDs.token }}</p>
                   <div class="cont-color">
                     <p class="HEX">{{ coresDs.hex }}</p>
                   </div>
@@ -57,9 +54,9 @@
             </div>
           </div>
         </div>
-      </el-col>
-    </el-row>
-  </div>
+      </el-main>
+    </el-container>
+  </el-container>
 </template>
 <script>
 import AsideComponent from "../ElementsDs/AsideComponent.vue";
@@ -752,11 +749,11 @@ export default {
   flex-direction: column;
   align-items: center;
 }
-
 .token {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 400;
   color: #2c2c2c;
+  letter-spacing: 1px;
 }
 .HEX {
   font-size: 12px;

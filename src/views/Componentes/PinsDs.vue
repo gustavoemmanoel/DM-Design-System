@@ -24,19 +24,6 @@
       </el-main>
     </el-container>
   </el-container>
-  <!--  <div>
-    <el-row>
-      <el-col :span="24">
-        <HeaderDs :headerTitle="headerTitle" />
-      </el-col>
-    </el-row>
-    <el-row>
-      <el-col :span="4"><AsideComponent :btnAtivo="btnAtivo" /></el-col>
-      <el-col :offset="1" :span="18">        
-      </el-col>
-     
-    </el-row>
-  </div> -->
 </template>
 <script>
 import AsideComponent from "../ElementsDs/AsideComponent.vue";

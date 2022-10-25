@@ -11,9 +11,8 @@ export default {
 </script>
 
 <style>
-
-/* @import 'index.css'; */
-@import 'otimizado.css';
+@import 'index.css';
+/* @import 'otimizado.css'; */
 
 body {
   overflow-y: scroll;

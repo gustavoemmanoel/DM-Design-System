@@ -2,11 +2,10 @@ import { createRouter, createWebHashHistory } from "vue-router";
 
 /* Instalação */
 import InstallationEl from "../views/Installation/InstallationEl.vue";
-/* Fundação */
-import ColorsDs from "../views/Fundacao/ColorsDs.vue";
-import IconografiaDs from "../views/Fundacao/IconografiaDs.vue";
-import TipografiaDs from "../views/Fundacao/TipografiaDs.vue";
 /* Componentes */
+import ColorsDs from "../views/Componentes/ColorsDs.vue";
+import IconografiaDs from "../views/Componentes/IconografiaDs.vue";
+import TipografiaDs from "../views/Componentes/TipografiaDs.vue";
 import HeaderPage from "../views/Componentes/HeaderPage.vue";
 import CalendarioDs from "../views/Componentes/CalendarioDs.vue";
 import CampoTextoDs from "../views/Componentes/CampoTextoDs.vue";

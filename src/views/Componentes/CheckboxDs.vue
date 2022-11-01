@@ -34,6 +34,19 @@
                 size="small"
                 disabled
               />
+              <br>
+              <br>
+              <!--  -->
+              <el-collapse v-model="activeNames" @change="handleChange">
+                <el-collapse-item title="Consistency" name="1">
+                  <div>
+                    Consistent with real life: in line with the process and
+                    logic of real life, and comply with languages and habits
+                    that the users are used to;
+                  </div>
+                </el-collapse-item>
+              </el-collapse>
+              <!--  -->
             </div>
             <h1>Check all</h1>
             <el-checkbox

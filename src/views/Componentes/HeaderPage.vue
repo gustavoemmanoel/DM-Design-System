@@ -359,7 +359,4 @@ export default {
 <style>
 /* Os estilos do header são definidos no arquivo CSS pai do element Plus, para que os estilos dele funcione em qualquer página em que for chamado */
 
-.recuo {
-  margin-left: 12px;
-}
 </style>

@@ -1,5 +1,4 @@
 import { createRouter, createWebHashHistory } from "vue-router";
-
 /* Instalação */
 import InstallationEl from "../views/Installation/InstallationEl.vue";
 /* Componentes */

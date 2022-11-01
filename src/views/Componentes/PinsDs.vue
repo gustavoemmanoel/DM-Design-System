@@ -11,14 +11,57 @@
       <el-main>
         <div class="containerInterno">
           <div>
-            <h1>/Tags</h1>
+            <h1>/Pins</h1>
             <div class="hr"></div>
-            <p>
-              Pins são elementos que servem para marcar pontos no mapa.
-            </p>
+            <p>Pins são elementos que servem para marcar pontos no mapa.</p>
           </div>
           <br />
           <div class="container-elementos">
+            <h2>Pin básico</h2>
+            <p>
+              O pin básico é utilizado para representar uma informação de um
+              ponto específico. Apesar de possuir um elemento ícone, o mesmo
+              permace como um pin básico.
+            </p>
+            <br />
+            <el-row>
+              <el-col :span="8">
+                <img src="/pins/bom.svg" alt="Bom" />
+                <img src="/pins/media.svg" alt="Media" />
+                <img src="/pins/ruim.svg" alt="Ruim" />
+                <img src="/pins/pinBlueCoroa.svg" alt="Pin" />
+                <img src="/pins/pinBlueCoroaBom.svg" alt="Pin" />
+              </el-col>
+              <el-col :span="8">
+                <strong>Pin</strong>
+                <br />
+                <br />
+                <div>Borda: <strong>1px</strong></div>
+                <div>Cor da borda: <strong>dm_preto_CT01</strong></div>
+                <div>Background: <strong>dm_preto_00</strong></div>
+                <div>Altura: <strong>44px</strong></div>
+                <div>Largura: <strong>36px</strong></div>
+              </el-col>
+              <el-col :span="8">
+                <strong>Ícone</strong>
+                <br />
+                <br />
+                <div>Cor do ícone: <strong>dm_creme_00</strong></div>
+                <div></div>
+              </el-col>
+            </el-row>
+            <br>
+            <!--  -->
+            <el-collapse v-model="activeNames" @change="handleChange">
+                <el-collapse-item title="Consistency" name="1">
+                  <div>
+                    Consistent with real life: in line with the process and
+                    logic of real life, and comply with languages and habits
+                    that the users are used to;
+                  </div>
+                </el-collapse-item>
+              </el-collapse>
+              <!--  -->
           </div>
         </div>
       </el-main>

@@ -263,16 +263,13 @@ export default {
   border-radius: 6px;
   width: 50px;
 }
-
 .botoes {
   display: flex;
   gap: 12px;
 }
-
 .codigos {
   display: grid;
 }
-
 .tooltip {
   position: absolute;
   border: 1px solid var(--dm_azul_02);
@@ -283,13 +280,10 @@ export default {
   width: 10px !important;
   height: 23px !important;
 }
-
-.testtooltip:focus,
-.tooltip:hover {
+.testtooltip:focus, .tooltip:hover {
   color: var(--dm_azul_02);
   border-color: var(--dm_azul_02);
-}
-.el-collapse {
+}.el-collapse {
   --el-collapse-header-bg-color: none;
   --el-collapse-content-bg-color: none;
 }

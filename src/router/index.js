@@ -24,7 +24,7 @@ import PDF from "../views/PDF.vue";
 
 const routes = [
   {
-    path: "/InstallationEl",
+    path: "/",
     name: "InstallationEl",
     component: InstallationEl,
   },

@@ -31,15 +31,13 @@ export default {
 .header {
   display: flex;
   align-items: center;
-  top: 0;
-  /* position: fixed; */
-  background-color: #2c2c2c;
   color: #faf6f0;
   height: 75px;
   overflow: hidden;
   width: 100%;
-  z-index: 100;
+  background-color: var(--dm_preto_00);
 }
+
 .container-ds {
   display: flex;
   align-items: center;

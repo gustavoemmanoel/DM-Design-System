@@ -22,17 +22,6 @@
         <br />
         <br />
         <br />
-        <el-button gregregre>Default</el-button>
-        <el-button primario type="primary">Primary</el-button>
-        <el-button type="success">Success</el-button>
-        <el-button type="info">Info</el-button>
-        <el-button type="warning">Warning</el-button>
-        <el-button type="danger">Danger</el-button>
-        <br />
-        <br />
-        <br />
-        <br />
-
         <div class="container-elementos">
           <el-button>Default</el-button>
           <el-button type="primary">Primary</el-button>
@@ -152,11 +141,10 @@
           <el-col :span="24">
             <el-collapse v-model="activeNames" @change="handleChange">
               <el-collapse-item title="ver" name="3">
-                <div style="margin-left: 16px" class="html_codigos_blue">
+                <div class="html_codigos_blue">
                   <el-row
                     v-for="(style, index) in btnVfor.stringHTML"
                     :key="index"
-                    class="html-line-height"
                   >
                     &lt;el-button type=
                     <div class="html_color_axx">{{ style.html }}</div>
@@ -280,10 +268,12 @@ export default {
   width: 10px !important;
   height: 23px !important;
 }
-.testtooltip:focus, .tooltip:hover {
+.testtooltip:focus,
+.tooltip:hover {
   color: var(--dm_azul_02);
   border-color: var(--dm_azul_02);
-}.el-collapse {
+}
+.el-collapse {
   --el-collapse-header-bg-color: none;
   --el-collapse-content-bg-color: none;
 }

@@ -1,0 +1,138 @@
+.el-button {
+  --el-button-hover-text-color: var(--dm_azul_00);
+  --el-button-hover-bg-color: var(--dm_azul_00-light-9);
+  --el-button-hover-border-color: var(--dm_azul_00-light-7);
+  --el-button-active-border-color: var(--dm_azul_00);
+  --el-button-outline-color: var(--dm_azul_00-light-5);
+  border: none;
+}
+.el-button {
+  border-radius: 6px;
+}
+.el-button--success {
+  --el-button-bg-color: var(--dm_verde_00);
+}
+.el-button--warning {
+  --el-button-bg-color: var(--dm_amarelo_00);
+}
+.el-button--danger {
+  --el-button-bg-color: var(--dm_vermelho_00);
+}
+.el-button--info {
+  --el-button-bg-color: var(--el-color-info);
+}
+/*  */
+.el-button--primario {
+  box-shadow: 0 3px 6px var(--dm_cinza_03);
+  font-family: "Roboto", sans-serif;
+  background: var(--dm_azul_00);
+  color: var(--dm_creme_00) !important;
+  border-radius: 6px;
+  transition: 0.2s;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 0 15px;
+  border: none;
+  height: 35px;
+  cursor: pointer;
+}
+.el-button--primario-larger {
+  box-shadow: 0 3px 6px var(--dm_cinza_03);
+  font-family: "Roboto", sans-serif;
+  background: var(--dm_azul_00);
+  color: var(--dm_creme_00) !important;
+  border-radius: 6px;
+  transition: 0.2s;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 0 15px;
+  border: none;
+  height: 35px;
+  cursor: pointer;
+  height: 45px;
+  padding: 0 20px;
+}
+.el-button--primario-larger:hover,
+.el-button--primario:hover {
+  background: var(--dm_azul_02);
+  color: var(--dm_creme_00) !important;
+  transition: 0.2s;
+}
+.el-button:focus {
+  background: var(--dm_amarelo_00);
+}
+.el-button--secundario {
+  box-shadow: 0 3px 6px var(--dm_cinza_03);
+  font-family: "Rotobo", sans-serif;
+  background: var(--dm_creme_00);
+  color: var(--dm_azul_00);
+  border-radius: 6px;
+  transition: 0.2s;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 0 15px;
+  border: 2px solid var(--dm_azul_00);
+  height: 35px;
+  cursor: pointer;
+}
+.el-button--secundario-larger {
+  box-shadow: 0 3px 6px var(--dm_cinza_03);
+  font-family: "Rotobo", sans-serif;
+  background: var(--dm_creme_00);
+  color: var(--dm_azul_00);
+  border-radius: 6px;
+  transition: 0.2s;
+  font-weight: 500;
+  font-size: 16px;
+  border: 2px solid var(--dm_azul_00);
+  cursor: pointer;
+  height: 45px;
+  padding: 0 20px;
+}
+.el-button--secundario:focus {
+  border-color: var(--dm_amarelo_00);
+  background-color: var(--dm_creme_00);
+  color: var(--dm_amarelo_00);
+}
+.el-button--secundario:hover,
+.el-button--secundario-larger:hover {
+  background: var(--dm_azul_02);
+  border-color: var(--dm_azul_00);
+  color: var(--dm_azul_00);
+  transition: 0.2s;
+}
+.el-button--terciario {
+  font-family: "Rotobo", sans-serif;
+  color: var(--dm_azul_00);
+  border-radius: 6px;
+  transition: 0.2s;
+  font-weight: 500;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  background: none;
+  text-decoration: underline;
+  box-shadow: none;
+}
+.el-button--terciario-larger {
+  font-family: "Rotobo", sans-serif;
+  color: var(--dm_azul_00);
+  border-radius: 6px;
+  transition: 0.2s;
+  font-weight: 500;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  background: none;
+  text-decoration: underline;
+  box-shadow: none;
+}
+.el-button--terciario:focus {
+  color: var(--dm_amarelo_00);
+}
+.el-button--terciario:hover,
+.el-button--terciario-larger:hover {
+  color: var(--dm_azul_02) !important;
+  background: none;
+  transition: 0.2s;
+}

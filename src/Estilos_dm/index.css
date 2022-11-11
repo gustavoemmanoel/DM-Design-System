@@ -1,2 +1,41 @@
-@import 'table.css';
-@import 'tokens.css';
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+/* font-family: 'Roboto', sans-serif; */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400;500;600;700;800;900&display=swap");
+/* font-family: 'Roboto Slab', serif; */
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+@import "inputs.css";
+@import "buttons.css";
+@import "cores.css";
+@import "outros.css";
+@import "table.css";
+@import "tags.css";
+@import "tipografia.css";
+/* @import "testes.css"; */
+
+:root {
+  --el-color-primary: var(--dm_azul_00);
+  --el-text-color-primary: var(--dm_preto_00);
+  --el-color-success: var(--dm_verde_00);
+  --el-color-warning: #e6a23c;
+  --el-color-danger: #f56c6c;
+  --el-color-error: #f56c6c;
+  --el-color-black: var(--dm_preto_00);
+  --el-color-info: var(--dm_cinza_01);
+  --el-color-white: var(--dm_creme_02);
+  --el-bg-color: var(--dm_creme_02);
+  --el-bg-color-overlay: var(--dm_creme_02);
+  --el-fill-color-blank: var(--dm_creme_02);
+
+  --el-color-primary-light-5: var(--dm_azul_02);
+}
+
+.hr {
+  background: var(--dm_cinza_04);
+  height: 1px;
+  width: 100%;
+}

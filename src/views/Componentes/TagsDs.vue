@@ -53,41 +53,43 @@
 
               <el-collapse v-model="activeNames" @change="handleChange">
                 <el-collapse-item title="ver" name="3">
-                  <el-row class="html_codigos_blue">
-                    &lt;
-                    <div class="html_codigos_blue">el-tag</div>
-                    &gt;
-                    <div class="html_color_conteudo">Tag 1</div>
-                    &lt;/el-tag&gt; <br />
-                    &lt;
-                    <div class="html_codigos_blue">el-tag</div>
-                    type=
-                    <div class="html_color_axx">"success"</div>
-                    &gt;
-                    <div class="html_color_conteudo">Tag 2</div>
-                    &lt;/el-tag&gt; <br />
-                    &lt;
-                    <div class="html_codigos_blue">el-tag</div>
-                    type=
-                    <div class="html_color_axx">"info"</div>
-                    &gt;
-                    <div class="html_color_conteudo">Tag 3</div>
-                    &lt;/el-tag&gt; <br />
-                    &lt;
-                    <div class="html_codigos_blue">el-tag</div>
-                    type=
-                    <div class="html_color_axx">"warning"</div>
-                    &gt;
-                    <div class="html_color_conteudo">Tag 4</div>
-                    &lt;/el-tag&gt; <br />
-                    &lt;
-                    <div class="html_codigos_blue">el-tag</div>
-                    type=
-                    <div class="html_color_axx">"danger"</div>
-                    &gt;
-                    <div class="html_color_conteudo">Tag 5</div>
-                    &lt;/el-tag&gt; <br />
-                  </el-row>
+                  <span class="html_codigos_blue">
+                    <span>
+                      &lt;<span class="html_codigos_blue">el-tag</span></span
+                    >&gt;<span class="html_color_conteudo">Tag 1</span
+                    >&lt;/el-tag&gt;
+                    <br />
+                    <span
+                      >&lt;<span class="html_codigos_blue">el-tag</span>
+                      type=<span class="html_color_axx">"success"</span
+                      >&gt;<span class="html_color_conteudo">Tag 2</span
+                      >&lt;/el-tag&gt;</span
+                    >
+                    <br />
+                    <span
+                      >&lt;<span class="html_codigos_blue">el-tag</span>
+                      type=<span class="html_color_axx">"info"</span>&gt;<span
+                        class="html_color_conteudo"
+                        >Tag 3</span
+                      >&lt;/el-tag&gt;</span
+                    >
+                    <br />
+                    <span
+                      >&lt;<span class="html_codigos_blue">el-tag</span>
+                      type=<span class="html_color_axx">"warning"</span
+                      >&gt;<span class="html_color_conteudo">Tag 4</span
+                      >&lt;/el-tag&gt;</span
+                    >
+                    <br />
+                    <span
+                      >&lt;<span class="html_codigos_blue">el-tag</span>
+                      type=<span class="html_color_axx">"danger"</span>&gt;<span
+                        class="html_color_conteudo"
+                        >Tag 5</span
+                      >&lt;/el-tag&gt;</span
+                    >
+                    <br />
+                  </span>
                 </el-collapse-item>
               </el-collapse>
             </div>

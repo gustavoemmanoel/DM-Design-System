@@ -31,7 +31,6 @@
               </template>
             </el-table-column>
           </el-table>
-          <br />
         </div>
         <div class="container-elementos">
           <!-- FIM TABELA -->
@@ -87,7 +86,7 @@
                 <div class="recuo">
                   &#60;el-table&#62;
                   <div class="recuo">
-                    <el-row class="html-line-height">
+                    <el-row>
                       &lt;el-table-column&nbsp;
                       <p class="html_color_axx">prop</p>
                       ="date"&nbsp;
@@ -96,7 +95,7 @@
                       <p class="html_color_axx">width</p>
                       ="180" /&gt;
                     </el-row>
-                    <el-row class="html-line-height">
+                    <el-row>
                       &lt;el-table-column&nbsp;
                       <p class="html_color_axx">prop</p>
                       ="name"&nbsp;
@@ -105,7 +104,7 @@
                       <p class="html_color_axx">width</p>
                       ="180" /&gt;
                     </el-row>
-                    <el-row class="html-line-height">
+                    <el-row>
                       &lt;el-table-column&nbsp;
                       <p class="html_color_axx">prop</p>
                       ="address"&nbsp;

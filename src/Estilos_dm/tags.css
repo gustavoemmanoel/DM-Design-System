@@ -1,0 +1,129 @@
+.el-tag {
+  --el-tag-hover-color: var(--dm_azul_00);
+  height: 30px;
+  padding: 0 10px;
+  font-size: 16px;
+  box-sizing: border-box;
+  border-radius: 6px;
+  background-color: var(--dm_azul_00);
+  color: var(--dm_creme_00);
+  border: none;
+}
+.el-tag.el-tag--success {
+  background-color: var(--dm_verde_00);
+}
+.el-tag.el-tag--warning {
+  background-color: var(--dm_amarelo_00);
+}
+.el-tag.el-tag--danger {
+  background-color: var(--dm_vermelho_00);
+}
+.el-tag.el-tag--info {
+  background-color: var(--dm_cinza_02);
+}
+.el-tag.el-tag--primary {
+  background-color: var(--dm_azul_00);
+}
+.el-tag.el-tag--primary .el-tag__close:hover {
+  background: var(--dm_azul_02);
+  color: var(--dm_azul_00);
+}
+.el-tag.el-tag--success {
+  background-color: var(--dm_verde_00);
+}
+.el-tag.el-tag--warning {
+  background-color: var(--dm_amarelo_00);
+}
+.el-tag.el-tag--danger {
+  background-color: var(--dm_vermelho_00);
+}
+.el-tag.is-hit {
+  border-color: var(--dm_azul_00);
+} /* CLOSABLE */
+.el-tag .el-tag__close {
+  color: var(--dm_creme_00);
+}
+.el-tag.el-tag .el-tag__close {
+  color: var(--dm_creme_00);
+} /* CLOSABLE PLAIN */
+.el-tag--plain.el-tag.el-tag .el-tag__close {
+  color: var(--dm_azul_00);
+}
+.el-tag--plain.el-tag.el-tag--success .el-tag__close {
+  color: var(--dm_verde_00);
+}
+.el-tag--plain.el-tag.el-tag--info .el-tag__close {
+  color: var(--dm_cinza_02);
+}
+.el-tag--plain.el-tag.el-tag--warning .el-tag__close {
+  color: var(--dm_laranja_00);
+}
+.el-tag--plain.el-tag.el-tag--danger .el-tag__close {
+  color: var(--dm_vermelho_00);
+} /*  */
+.el-tag--dark.el-tag--primary {
+  --dm_azul_00: var(--dm_creme_00);
+}
+.el-tag--dark.el-tag--success {
+  --dm_azul_00: var(--dm_creme_00);
+}
+.el-tag--dark.el-tag--warning {
+  --dm_azul_00: var(--dm_creme_00);
+}
+.el-tag--dark.el-tag--danger {
+  --dm_azul_00: var(--dm_creme_00);
+}
+.el-tag--dark.el-tag--error {
+  --dm_azul_00: var(--dm_creme_00);
+}
+.el-tag--dark.el-tag--info {
+  --dm_azul_00: var(--dm_creme_00);
+}
+.el-tag--plain {
+  background: none;
+  color: var(--dm_azul_00);
+  border: 2px solid var(--dm_azul_00);
+}
+.el-tag--plain.el-tag--success {
+  background: none;
+  color: var(--dm_verde_00);
+  border: 2px solid var(--dm_verde_00);
+}
+.el-tag--plain.el-tag--warning {
+  background: none;
+  color: var(--dm_amarelo_00);
+  border: 2px solid var(--dm_amarelo_00);
+}
+.el-tag--plain.el-tag--danger {
+  background: none;
+  color: var(--dm_vermelho_00);
+  border: 2px solid var(--dm_vermelho_00);
+}
+.el-tag--plain.el-tag--error {
+  background: none;
+  color: var(--dm__00);
+  border: 2px solid var(--dm__00);
+}
+.el-tag--plain.el-tag--info {
+  background: none;
+  color: var(--dm_cinza_02);
+  border: 2px solid var(--dm_cinza_02);
+}
+.el-tag.is-closable {
+  padding-right: 5px;
+}
+.el-tag--large {
+  padding: 0 11px;
+  height: 32px;
+  --el-icon-size: 16px;
+}
+.el-tag--small {
+  padding: 0 7px;
+  height: 26px;
+  --el-icon-size: 12px;
+}
+.el-tag--mini {
+  padding: 0 5px;
+  height: 22px;
+  --el-icon-size: 12px;
+}

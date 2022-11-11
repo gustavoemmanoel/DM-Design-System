@@ -1,0 +1,122 @@
+/* TIPOGRAFIA */
+:root {
+  --roboto: "Roboto", sans-serif;
+  --roboto-slab: "Roboto Slab", serif;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+h1,
+.h1,
+.header_h1,
+h2,
+.h2,
+.header_h2,
+h3,
+.h3,
+.header_h3,
+h4,
+.h4,
+.header_h4 {
+  font-family: var(--roboto-slab);
+  font-weight: 500;
+}
+h5,
+.h5,
+.header_h5,
+h6,
+.h6,
+.header_h6 {
+  font-family: var(--roboto);
+  font-weight: 700;
+}
+h1,
+.h1,
+.header_h1 {
+  font-size: 28px;
+}
+.h2,
+h2,
+.header_h2 {
+  font-size: 24px;
+}
+h3,
+.h3,
+.header_h3 {
+  font-size: 22px;
+}
+h4,
+.h4,
+.header_h4 {
+  font-size: 20px;
+}
+h5,
+.h5,
+.header_h5 {
+  font-size: 18px;
+}
+h6,
+.h6,
+.header_h6 {
+  font-size: 16px;
+}
+/* Detalhe */
+
+.detail_01,
+.detail_02,
+.detail_03,
+.detail_04 {
+  font-family: "Roboto", sans-serif;
+  color: #2c2c2c;
+  font-weight: 300;
+}
+.detail_01 {
+  font-size: 16px;
+}
+.detail_02 {
+  font-size: 14px;
+}
+.detail_03 {
+  font-size: 12px;
+}
+.detail_04 {
+  font-size: 10px;
+}
+/* Corpo */
+.body_01,
+.body_02,
+.body_03,
+.body_04,
+.body_05 {
+  font-family: var(--roboto);
+  color: #2c2c2c;
+}
+.body_01,
+.body_02 {
+  font-weight: 500;
+}
+.body_03 .body_04,
+.body_05 {
+  font-weight: 400;
+}
+.body_01 {
+  font-size: 20px;
+}
+.body_02 {
+  font-size: 16px;
+}
+.body_03 {
+  font-size: 16px;
+}
+.body_04 {
+  font-size: 14px;
+}
+.body_05 {
+  font-size: 12px;
+}

@@ -11,13 +11,12 @@ export default {
 </script>
 
 <style>
-@import 'index.css';
-/* @import 'otimizado.css'; */
-
+* {
+  box-sizing: border-box;
+}
 body {
   overflow-y: scroll;
   background: #fdfbf9;
-  /* padding-top: 75px; */
 }
 
 .flex {
@@ -72,7 +71,6 @@ footer {
 }
 
 .container-elementos {
-  background: red;
   background: var(--dm_creme_01);
   width: 100%;
   border-radius: 6px;
@@ -85,24 +83,51 @@ footer {
 .html_codigos_blue,
 .html_color_axx {
   display: inline;
-  /* float: left;   */
 }
 
 .html_codigos_blue {
   color: #3375b9;
+  font-size: 14px;
+  line-height: 18px;
 }
-.html_color_conteudo {
+.html_color_conteudo, [black] {
   color: #2c2c2c;
 }
 
-.html_color_axx {
+.html_color_axx, [roxo] {
   color: var(--dm_roxo_C04);
 }
-.html-line-height {
-  line-height: 25px;
+[green]{
+  color: var(--dm_verde_00);
+}
+.recuo,
+[recuo] {
+  margin-left: 20px;
 }
 
-.recuo {
-  margin-left: 12px;
+/*  */
+
+.containerInterno {
+  width: 100%;
+}
+
+.container_title {
+  margin-bottom: 20px;
+}
+
+/* Inicio Alterações no collapse */
+
+.el-collapse-item__header,
+.el-collapse-item__wrap {
+  background: none !important;
+}
+
+.el-collapse-item__content {
+  padding: 0;
+}
+/* Fim Alterações no collapse */
+
+.el-header {
+  z-index: 100;
 }
 </style>

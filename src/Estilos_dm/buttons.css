@@ -60,6 +60,7 @@
 }
 .el-button:focus {
   background: var(--dm_amarelo_00);
+  color: var(--dm_creme_02);
 }
 .el-button--secundario {
   box-shadow: 0 3px 6px var(--dm_cinza_03);

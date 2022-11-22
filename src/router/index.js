@@ -40,6 +40,7 @@ const routes = [
     name: "PreProcessamentos",
     component: PreProcessamentos,
   },
+
   {
     path: "/ColorsDs",
     name: "ColorsDs",

@@ -11,9 +11,8 @@
     <div class="component-tag">Fundação</div>
     <div class="options">
       <router-link to="ColorsDs" :style="btnAtivo.cores">Cores</router-link>
-      <router-link to="TipografiaDs" :style="btnAtivo.tipografia"
-        >Tipografia</router-link
-      >
+      <router-link to="TipografiaDs" :style="btnAtivo.tipografia">Tipografia</router-link>
+      <router-link to="IconografiaDs" :style="btnAtivo.tipografia">Iconografia</router-link>
     </div>
 
     <!-- Componentes -->

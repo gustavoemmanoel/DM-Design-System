@@ -1,0 +1,15 @@
+.el-progress.is-success .el-progress-bar__inner {
+  background: var(--dm_verde_00);
+}
+
+.el-progress.is-warning .el-progress-bar__inner {
+  background: var(--dm_amarelo_00);
+}
+
+.el-progress.is-exception .el-progress-bar__inner {
+  background: var(--dm_vermelho_00);
+}
+
+.el-progress-bar__outer {
+  background-color: var(--dm_cinza_03);
+}

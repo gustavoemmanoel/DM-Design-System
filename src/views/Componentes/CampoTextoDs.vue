@@ -9,20 +9,65 @@
       </el-aside>
 
       <el-main>
+        <div>
+          <h1>/Tags</h1>
+          <div class="hr"></div>
+          <p>
+            Os campos de texto são um dos formatos de entrada de dados
+            possíveis.
+          </p>
+        </div>
+        <br />
         <div class="containerInterno">
-          <div>
-            <h1>/Tags</h1>
-            <div class="hr"></div>
-            <p>Pins são elementos que servem para marcar pontos no mapa.</p>
-          </div>
-          <br />
           <div class="container-elementos">
-            <h6>Email*</h6>
-            <el-input v-model="input" placeholder="Please input" />
-            <br />
-            <br />
-            <h6>Email*</h6>
-            <el-input v-model="input" disabled placeholder="Please input" />
+            <el-row :gutter="20">
+              <el-col :span="12">
+                <el-form
+                  :label-position="labelPosition"
+                  label-width="100px"
+                  :model="formLabelAlign"
+                >
+                  <el-form-item label="Rua">
+                    <el-input
+                      v-model="formLabelAlign.name"
+                      placeholder="Digite"
+                    ></el-input>
+                  </el-form-item>
+                  <el-form-item label="Bairro">
+                    <el-input
+                      v-model="formLabelAlign.region"
+                      placeholder="Digite"
+                    ></el-input>
+                  </el-form-item>
+                  <el-form-item label="Número">
+                    <el-input
+                      v-model="formLabelAlign.type"
+                      placeholder="Digite"
+                    ></el-input>
+                  </el-form-item>
+                </el-form>
+              </el-col>
+              <el-col :span="12">
+                <el-form
+                  :label-position="labelPosition"
+                  label-width="100px"
+                  :model="formLabelAlign"
+                >
+                  <el-form-item label="CEP">
+                    <el-input
+                      v-model="formLabelAlign.name"
+                      placeholder="Digite"
+                    ></el-input>
+                  </el-form-item>
+                  <el-form-item label="Complemento">
+                    <el-input
+                      v-model="formLabelAlign.region"
+                      placeholder="Digite"
+                    ></el-input>
+                  </el-form-item>
+                </el-form>
+              </el-col>
+            </el-row>
           </div>
         </div>
         <h1>/Upload</h1>
@@ -34,8 +79,8 @@
             action="https://run.mocky.io/v3/9d059bf9-4660-45f2-925d-ce80ad6c4d15"
             multiple
           >
-          <h1>MAUAT</h1>
-          <div class="el-upload__text">
+            <div class="el-upload__text">
+              <dm_icon upload class="icon" />
               Drop file here or <em>click to upload</em>
             </div>
             <template #tip>
@@ -43,7 +88,7 @@
                 jpg/png files with a size less than 500kb
               </div>
             </template>
-          </el-upload>          
+          </el-upload>
         </div>
         <!--  -->
       </el-main>
@@ -64,6 +109,12 @@ export default {
     return {
       headerTitle: "Campo de Texto",
       btnAtivo: { cores: "text-decoration: underline" },
+      labelPosition: "top",
+      formLabelAlign: {
+        name: "",
+        region: "",
+        type: "",
+      },
     };
   },
 };

@@ -20,27 +20,6 @@
               </p>
             </div>
             <br />
-            <div class="container-elementos gap">
-              <el-tag
-                v-for="item in items"
-                :key="item.label"
-                :type="item.type"
-                class="mx-1"
-              >
-                {{ item.label }}
-              </el-tag>
-            </div>
-            <br />
-            <br />
-            <div>
-              <h2>Uso básico</h2>
-              <div class="hr"></div>
-              <p>
-                Use o typeatributo para definir o tipo de Tag. Além disso, o
-                coloratributo pode ser usado para definir a cor de fundo do Tag.
-              </p>
-            </div>
-            <br />
             <div class="container-elementos">
               <el-row class="gap">
                 <el-tag>Tag 1</el-tag>
@@ -94,7 +73,6 @@
               </el-collapse>
             </div>
             <br />
-            <br />
 
             <div>
               <h1>Tags secundárias</h1>
@@ -121,9 +99,7 @@
                 <el-tag type="info" size="small" effect="plain">small</el-tag>
                 <el-tag type="info" size="mini" effect="plain">mini</el-tag>
                 <el-tag type="warning" effect="plain">default</el-tag>
-                <el-tag type="warning" size="small" effect="plain"
-                  >small</el-tag
-                >
+                <el-tag type="warning" size="small" effect="plain">small</el-tag>
                 <el-tag type="warning" size="mini" effect="plain">mini</el-tag>
                 <el-tag type="danger" effect="plain">default</el-tag>
                 <el-tag type="danger" size="small" effect="plain">small</el-tag>

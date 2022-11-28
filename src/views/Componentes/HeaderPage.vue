@@ -170,7 +170,7 @@
                   :width="200"
                 >
                   <template #reference>
-                    <img class="icon" src="/icons/produtos.svg" />
+                    <img class="icon" src="/icons/whiteicons/produtos.svg" />
                   </template>
                   <el-col>
                     <el-row class="optionMenu">Logística</el-row>
@@ -187,7 +187,7 @@
 
                 <el-popover placement="bottom" trigger="click" :width="400">
                   <template #reference>
-                    <img class="icon" src="/icons/notificacao.svg" />
+                    <img class="icon" src="/icons/whiteicons/notificacao.svg" />
                   </template>
 
                   <el-col>
@@ -207,7 +207,7 @@
                 <!-- DÚVIDAS -->
                 <el-popover placement="bottom" trigger="click" :width="300">
                   <template #reference>
-                    <img class="icon" src="/icons/duvida.svg" />
+                    <img class="icon" src="/icons/whiteicons/interrogacao.svg" />
                   </template>
                   <el-col>
                     <el-row class="optionMenu">versão: 2cf2f45f</el-row>
@@ -224,7 +224,7 @@
                 <!-- PERFIL -->
                 <el-popover placement="bottom" trigger="click" :width="360">
                   <template #reference>
-                    <img class="icon" src="/icons/perfil.svg" />
+                    <img class="icon" src="/icons/whiteicons/perfil.svg" />
                   </template>
                   <el-col>
                     <el-row class="optionMenu">
@@ -366,9 +366,10 @@
                           <span
                             >&#60;img class=<span roxo>"icon"</span> src=<span
                               roxo
-                              >"https://raw.githubusercontent.com/gustavoemmanoel/DM-Design-System/a788551ff910a5544891fd15346fe8bdfcc99486/public/icons/notificacao.svg"</span
-                            >&#62;</span
-                          >
+                              >"https://raw.githubusercontent.com/gustavoemmanoel/DM-Design-System/a788551ff910a5544891fd15346fe8bdfcc99486/public/icons/notificacao.svg"
+                            </span>
+                            &#62;
+                          </span>
                         </div>
                         <span>&#60;/template&#62;</span>
                       </div>
@@ -546,8 +547,8 @@
                   <br />
                 </div>
                 <span>&#60;/div&#62;</span>
-              </div></el-collapse-item
-            >
+              </div>
+            </el-collapse-item>
           </el-collapse>
         </div>
         <br />

@@ -136,18 +136,18 @@ export default {
           border: "border: 1px solid var(--dm_cinza_04)",
           cores: [
             {
-              token: "dm_creme_01",
-              hex: "#FDFBF9",
+              token: "dm_creme_00",
+              hex: "#FAF6F0",
               casodeuso: "fundo principal textos",
             },
             {
-              token: "dm_creme_02",
+              token: "dm_creme_01",
               hex: "#EFECE6",
               casodeuso: "destaques dentro de fundo secundário",
             },
             {
-              token: "dm_creme_03",
-              hex: "#FAF6F0",
+              token: "dm_creme_02",
+              hex: "#FDFBF9",
               casodeuso: "fundo secundário",
             },
           ],

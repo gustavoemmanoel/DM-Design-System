@@ -5,9 +5,10 @@
   --el-button-active-border-color: var(--dm_azul_00);
   --el-button-outline-color: var(--dm_azul_00-light-5);
   border: none;
-}
-.el-button {
   border-radius: 6px;
+}
+.el-button:hover {
+  color: var(--dm_preto_00);
 }
 .el-button--success {
   --el-button-bg-color: var(--dm_verde_00);

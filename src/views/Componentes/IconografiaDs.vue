@@ -19,54 +19,63 @@
             </p>
           </div>
           <br />
+
           <div class="container-elementos grid_container_icone">
             <div class="column_icons">
-              <div><img src="/icons/cima.svg" />Cima</div>
-              <div><img src="/icons/baixo.svg" />Baixo</div>
-              <div><img src="/icons/prosseguir.svg" />Prosseguir</div>
-              <div><img src="/icons/voltar.svg" />Voltar</div>
-              <div><img src="/icons/check.svg" />Check</div>
-              <div><img src="/icons/close.svg" />Close</div>
-              <div><img src="/icons/menu.svg" />Menu</div>
-              <div><img src="/icons/produtos.svg" />Produtos</div>
-              <div><img src="/icons/maisOpcoes.svg" />Mais Opcões</div>
-              <div><img src="/icons/estatisticas.svg" />Estatisticas</div>
-              <div><img src="/icons/pasta.svg" />Pasta</div>
-              <div><img src="/icons/editar.svg" />Editar</div>
-              <div><img src="/icons/email.svg" />Email</div>
-              <div><img src="/icons/envio.svg" />Envio</div>
+              <div><dm_icon cima />cima</div>
+              <div><dm_icon baixo />baixo</div>
+              <div><dm_icon prosseguir />prosseguir</div>
+              <div><dm_icon voltar />voltar</div>
+              <div><dm_icon avancar />avancar</div>
+              <div><dm_icon retroceder />retroceder</div>
+              <div><dm_icon check />check</div>
+              <div><dm_icon close />close</div>
+              <div><dm_icon menu />menu</div>
+              <div><dm_icon produtos />produtos</div>
+              <div><dm_icon maisOpcoes />maisOpcoes</div>
+              <div><dm_icon estatisticas />estatisticas</div>
+              <div><dm_icon pasta />pasta</div>
+              <div><dm_icon email />email</div>
+              <div><dm_icon envio />envio</div>
+              <div><dm_icon cadeadoAberto />cadeadoAberto</div>
+              <div><dm_icon cadeadoFechado />cadeadoFechado</div>
             </div>
             <div class="column_icons">
-              <div><img src="/icons/cadeadoAberto.svg" />Cadeado Aberto</div>
-              <div><img src="/icons/cadeadoFechado.svg" />Cadeado Fechado</div>
-              <div><img src="/icons/adicionar.svg" />Adicionar</div>
-              <div><img src="/icons/correta.svg" />Correta</div>
-              <div><img src="/icons/alerta.svg" />Alerta</div>
-              <div><img src="/icons/duvida.svg" />Dúvida</div>
-              <div><img src="/icons/errada.svg" />Errado</div>
-              <div><img src="/icons/video.svg" />Vídeo</div>
-              <div><img src="/icons/calendario.svg" />Calendario</div>
-              <div><img src="/icons/camada.svg" />Camada</div>
-              <div><img src="/icons/camadaAberta.svg" />camadaAberta</div>
-              <div><img src="/icons/camadaFechada.svg" />camadaFechada</div>
-              <div><img src="/icons/chat.svg" />Chat</div>
-              <div><img src="/icons/documento.svg" />Documento</div>
+              <div><dm_icon alerta />alerta</div>
+              <div><dm_icon correta />correta</div>
+              <div><dm_icon maisInformacoes />maisInformacoes</div>
+              <div><dm_icon duvida />duvida</div>
+              <div><dm_icon adicionar />adicionar</div>
+              <div><dm_icon errada />errada</div>
+              <div><dm_icon editar />editar</div>
+              <div><dm_icon internet />internet</div>
+              <div><dm_icon localizacao />localizacao</div>
+              <div><dm_icon historico />historico</div>
+              <div><dm_icon calendario />calendario</div>
+              <div><dm_icon camada />camada</div>
+              <div><dm_icon camadaAberta />camadaAberta</div>
+              <div><dm_icon camadaFechada />camadaFechada</div>
+              <div><dm_icon chat />chat</div>
+              <div><dm_icon documento />documento</div>
+              <div><dm_icon loading />loading</div>
             </div>
             <div class="column_icons">
-              <div><img src="/icons/historico.svg" />Historico</div>
-              <div><img src="/icons/telefone.svg" />Telefone</div>
-              <div><img src="/icons/internet.svg" />Internet</div>
-              <div><img src="/icons/localizacao.svg" />Localizacao</div>
-              <div><img src="/icons/mapas.svg" />Mapas</div>
-              <div><img src="/icons/lixeira.svg" />Lixeira</div>
-              <div><img src="/icons/logout.svg" />Logout</div>
-              <div><img src="/icons/upload.svg" />Upload</div>
-              <div><img src="/icons/download.svg" />Download</div>
-              <div><img src="/icons/lupa.svg" />Lupa</div>
-              <div><img src="/icons/perfil.svg" />Perfil</div>
-              <div><img src="/icons/notificacao.svg" />Notificacao</div>
-              <div><img src="/icons/sugestao.svg" />Sugestao</div>
-              <div><img src="/icons/emote.svg" />Emote</div>
+              <div><dm_icon telefone />telefone</div>
+              <div><dm_icon mapas />mapas</div>
+              <div><dm_icon lixeira />lixeira</div>
+              <div><dm_icon logout />logout</div>
+              <div><dm_icon upload />upload</div>
+              <div><dm_icon download />download</div>
+              <div><dm_icon lupa />lupa</div>
+              <div><dm_icon perfil />perfil</div>
+              <div><dm_icon notificacao />notificacao</div>
+              <div><dm_icon sugestao />sugestao</div>
+              <div><dm_icon emote />emote</div>
+              <div><dm_icon filtro />filtro</div>
+              <div><dm_icon video />video</div>
+              <div><dm_icon novoArquivo />novoArquivodeo</div>
+              <div><dm_icon imagem />imagem</div>
+              <div><dm_icon endereco />endereco</div>
             </div>
           </div>
         </div>

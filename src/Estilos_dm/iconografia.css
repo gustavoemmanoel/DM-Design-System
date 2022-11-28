@@ -1,0 +1,161 @@
+dm_icon {
+  display: flex;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 25px;
+  height: 25px;
+}
+[maisInformacoes] {
+  background-image: url("../../public/icons/maisInformacoes.svg");
+}
+[endereco] {
+  background-image: url("../../public/icons/endereco.svg");
+}
+[loading] {
+  background-image: url("../../public/icons/loading.svg");
+}
+[imagem] {
+  background-image: url("../../public/icons/imagem.svg");
+}
+[novoArquivo] {
+  background-image: url("../../public/icons/novoArquivo.svg");
+}
+[email] {
+  background-image: url("../../public/icons/email.svg");
+}
+[envio] {
+  background-image: url("../../public/icons/envio.svg");
+}
+[retroceder] {
+  background-image: url("../../public/icons/retroceder.svg");
+}
+[avancar] {
+  background-image: url("../../public/icons/avancar.svg");
+}
+[filtro] {
+  background-image: url("../../public/icons/filtro.svg");
+}
+[video] {
+  background-image: url("../../public/icons/video.svg");
+}
+[menu] {
+  background-image: url("../../public/icons/menu.svg");
+}
+[cima] {
+  background-image: url("../../public/icons/cima.svg");
+}
+[cadeadoAberto] {
+  background-image: url("../../public/icons/cadeadoAberto.svg");
+}
+[cadeadoFechado] {
+  background-image: url("../../public/icons/cadeadoFechado.svg");
+}
+[adicionar] {
+  background-image: url("../../public/icons/adicionar.svg");
+}
+[correta] {
+  background-image: url("../../public/icons/correta.svg");
+}
+[alerta] {
+  background-image: url("../../public/icons/alerta.svg");
+}
+[duvida] {
+  background-image: url("../../public/icons/duvida.svg");
+}
+[errada] {
+  background-image: url("../../public/icons/errada.svg");
+}
+[calendario] {
+  background-image: url("../../public/icons/calendario.svg");
+}
+[camada] {
+  background-image: url("../../public/icons/camada.svg");
+}
+[camadaAberta] {
+  background-image: url("../../public/icons/camadaAberta.svg");
+}
+[camadaFechada] {
+  background-image: url("../../public/icons/camadaFechada.svg");
+}
+[chat] {
+  background-image: url("../../public/icons/chat.svg");
+}
+[documento] {
+  background-image: url("../../public/icons/documento.svg");
+}
+[historico] {
+  background-image: url("../../public/icons/historico.svg");
+}
+[telefone] {
+  background-image: url("../../public/icons/telefone.svg");
+}
+[internet] {
+  background-image: url("../../public/icons/internet.svg");
+}
+[localizacao] {
+  background-image: url("../../public/icons/localizacao.svg");
+}
+[mapas] {
+  background-image: url("../../public/icons/mapas.svg");
+}
+[lixeira] {
+  background-image: url("../../public/icons/lixeira.svg");
+}
+[logout] {
+  background-image: url("../../public/icons/logout.svg");
+}
+[upload] {
+  background-image: url("../../public/icons/upload.svg");
+}
+[download] {
+  background-image: url("../../public/icons/download.svg");
+}
+[lupa] {
+  background-image: url("../../public/icons/lupa.svg");
+}
+[perfil] {
+  background-image: url("../../public/icons/perfil.svg");
+}
+[notificacao] {
+  background-image: url("../../public/icons/notificacao.svg");
+}
+[sugestao] {
+  background-image: url("../../public/icons/sugestao.svg");
+}
+[emote] {
+  background-image: url("../../public/icons/emote.svg");
+}
+[estatisticas] {
+  background-image: url("../../public/icons/estatisticas.svg");
+}
+[maisOpcoes] {
+  background-image: url("../../public/icons/maisOpcoes.svg");
+}
+[prosseguir] {
+  background-image: url("../../public/icons/prosseguir.svg");
+}
+[editar] {
+  background-image: url("../../public/icons/editar.svg");
+}
+[baixo] {
+  background-image: url("../../public/icons/baixo.svg");
+}
+[voltar] {
+  background-image: url("../../public/icons/voltar.svg");
+}
+[check] {
+  background-image: url("../../public/icons/check.svg");
+}
+[close] {
+  background-image: url("../../public/icons/close.svg");
+}
+[produtos] {
+  background-image: url("../../public/icons/produtos.svg");
+}
+[pasta] {
+  background-image: url("../../public/icons/pasta.svg");
+}
+[upload] {
+  background-image: url("../../public/icons/upload.svg");
+}

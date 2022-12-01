@@ -4,7 +4,7 @@
     <!-- Princípios -->
     <div class="component-tag tag-ativa">Instalação</div>
     <div class="options">
-      <router-link to="InstallationEl">Instalação</router-link>
+      <router-link to="/">Instalação</router-link>
     </div>
     <div class="component-tag">Princípios</div>
     <!-- Fundação -->

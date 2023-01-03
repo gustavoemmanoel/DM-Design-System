@@ -1,12 +1,25 @@
+.el-table {
+  --el-table-border-color: none;
+  color: var(--dm_cinza_01);
+}
+
 .el-table th.el-table__cell {
-  background-color: var(--dm_preto_00) ;
+  background-color: var(--dm_preto_00);
 }
 
 .el-table thead {
-  color: var(--dm_creme_00) ;
+  color: var(--dm_creme_02);
 }
 
 .el-table td.el-table__cell,
 .el-table th.el-table__cell.is-leaf {
-  border: none ;
+  border: none;
+}
+
+.el-table--enable-row-transition .el-table__body td.el-table__cell {
+  background-color: var(--dm_creme_02);
+}
+
+.el-table--striped .el-table__body tr.el-table__row--striped td.el-table__cell {
+  background: var(--dm_creme_00);
 }

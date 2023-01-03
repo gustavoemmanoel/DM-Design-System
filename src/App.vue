@@ -86,23 +86,26 @@ footer {
 }
 
 .html_codigos_blue {
-  color: #3375b9;
+  color: #4576a7;
   font-size: 14px;
   line-height: 18px;
 }
-.html_color_conteudo, [black] {
-  color: #2c2c2c;
+.html_color_conteudo,
+[black] {
+  color: var(--dm_preto_00);
 }
 
-.html_color_axx, [roxo] {
-  color: var(--dm_roxo_C04);
+.html_color_axx,
+[roxo] {
+  color: var(--dm_roxo_C02);
+  /* color: var(--dm_roxo_C04); */
 }
-[green]{
+[green] {
   color: var(--dm_verde_00);
 }
 .recuo,
 [recuo] {
-  margin-left: 20px;
+  margin-left: 10px;
 }
 
 /*  */

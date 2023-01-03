@@ -1,3 +1,21 @@
+dm_icone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: green;
+  width: max-content;
+  height: max-content;
+}
+maisInformacoes {
+  height: 100px;
+  width: 100px;
+  background: yellow;
+  background-image: url("../../public/icons/maisInformacoes.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
 dm_icon {
   display: flex;
   background-repeat: no-repeat;
@@ -6,6 +24,7 @@ dm_icon {
   width: 25px;
   height: 25px;
 }
+
 [maisInformacoes] {
   background-image: url("../../public/icons/maisInformacoes.svg");
 }

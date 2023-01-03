@@ -22,6 +22,7 @@
 
           <div class="container-elementos grid_container_icone">
             <div class="column_icons">
+              <dm_icone><maisInformacoes /></dm_icone>
               <div><dm_icon cima />cima</div>
               <div><dm_icon baixo />baixo</div>
               <div><dm_icon prosseguir />prosseguir</div>

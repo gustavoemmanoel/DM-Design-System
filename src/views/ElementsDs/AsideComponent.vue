@@ -2,7 +2,8 @@
   <div class="side-bar">
     <img class="logo-dm" src="/logo.svg" />
     <!-- Princípios -->
-    <div class="component-tag tag-ativa">Instalação</div>
+    <!-- <div class="component-tag tag-ativa">Instalação</div> -->
+    <div class="component-tag">Instalação</div>
     <div class="options">
       <router-link to="/">Instalação</router-link>
     </div>
@@ -10,9 +11,9 @@
     <!-- Fundação -->
     <div class="component-tag">Fundação</div>
     <div class="options">
-      <router-link to="ColorsDs" :style="btnAtivo.cores">Cores</router-link>
-      <router-link to="TipografiaDs" :style="btnAtivo.tipografia">Tipografia</router-link>
-      <router-link to="IconografiaDs" :style="btnAtivo.tipografia">Iconografia</router-link>
+      <router-link to="ColorsDs">Cores</router-link>
+      <router-link to="TipografiaDs"> Tipografia </router-link>
+      <router-link to="IconografiaDs"> Iconografia </router-link>
     </div>
 
     <!-- Componentes -->
@@ -31,9 +32,7 @@
       <router-link to="TabelasDs">Tabelas</router-link>
       <router-link to="TagsDs">Tags</router-link>
     </div>
-    <router-link to="SobreDs" class="component-tag tag-ativa"
-      >Sobre</router-link
-    >
+    <router-link to="SobreDs" class="component-tag"> Sobre </router-link>
     <!--  <el-footer>
       <img src="/grafismos/graf-01-background.svg" />
       <img src="/grafismos/graf-02-background.svg" />
@@ -51,6 +50,21 @@ export default {
 </script>
 
 <style scoped>
+a {
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--dm_preto_00);
+}
+a:hover {
+  text-decoration: underline;
+  color: var(--dm_cinza_01);
+}
+a:focus {
+  text-decoration: underline;
+  color: var(--dm_azul_00);
+}
 /*  */
 .side-bar {
   position: fixed;

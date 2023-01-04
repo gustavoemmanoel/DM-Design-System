@@ -257,39 +257,50 @@
               <!-- Código para copiar -->
 
               <div class="html_codigos_blue">
-                <span>&#60;div&#62;</span>
+                <span>&#60;<span tagColor>div</span>&#62;</span>
                 <br />
                 <div recuo>
-                  <span>&#60;el-row class=<span roxo>"header"</span>&#62;</span>
+                  <span
+                    >&#60;<span tagColor>el-row</span> class=<span roxo
+                      >"header"</span
+                    >&#62;</span
+                  >
                   <div recuo>
-                    <span>&#60;el-row&#62;</span>
+                    <span>&#60;<span tagColor>el-row</span>&#62;</span>
                     <div class="border-left">
                       <div recuo>
                         <span>
-                          &#60;img class=<span roxo>"img-header"</span>
+                          &#60;<span tagColor>img</span> class=<span roxo
+                            >"img-header"</span
+                          >
                           src=<span roxo
                             >"https://raw.githubusercontent.com/gustavoemmanoel/DM-Design-System/a788551ff910a5544891fd15346fe8bdfcc99486/public/icons/dm.svg"</span
                           >/&#62; <br /> </span
                         ><span>
-                          &#60;h4 style=<span roxo
+                          &#60;<span tagColor>h4</span> style=<span roxo
                             >"color: var(--dm_creme_00)"</span
                           >&#62;</span
                         ><span black>DataMachina</span
-                        ><span>&#60;/h4&#62;</span>
+                        ><span>&#60;/<span tagColor>h4</span>&#62;</span>
                       </div>
                     </div>
-                    <span>&#60;/el-row&#62;</span>
+                    <span>&#60;/<span tagColor>el-row</span>&#62;</span>
                     <br />
                     <br />
 
-                    &#60;el-row style=<span roxo>"gap: 10px"</span>&#62;
+                    &#60;<span tagColor>el-row</span> style=<span roxo
+                      >"gap: 10px"</span
+                    >&#62;
 
                     <div recuo>
                       <!-- PRODUTOS -->
                       <span green>&#60;!-- Produtos --&#62;</span>
                       <br />
                       <span
-                        >&#60;el-popover placement=<span roxo>"bottom"</span>
+                        >&#60;<span tagColor>el-popover</span> placement=<span
+                          roxo
+                          >"bottom"</span
+                        >
                         style=<span roxo>"padding: 0; background: green"</span>
                         trigger=<span roxo>"click"</span> :width=<span roxo
                           >"200"</span
@@ -298,7 +309,7 @@
                       <div class="border-left">
                         <div recuo>
                           <span
-                            >&#60;template
+                            >&#60;<span tagColor>template</span>
                             <span roxo>#reference</span>&#62;</span
                           >
                           <br />
@@ -310,45 +321,64 @@
                               >&#62;</span
                             >
                           </div>
-                          <span>&#60;/template&#62;</span>
+                          <span>&#60;/<span tagColor>template</span>&#62;</span>
                           <br />
                           <!--  -->
-                          <span>&#60;el-col&#62;</span>
+                          <span>&#60;<span tagColor>el-col</span>&#62;</span>
                           <br />
                           <div recuo>
                             <span
-                              >&#60;el-row class=<span roxo>"optionMenu"</span
+                              >&#60;<span tagColor>el-row</span> class=<span
+                                roxo
+                                >"optionMenu"</span
                               >&#62;</span
                             ><span black>Logística</span
-                            ><span>&#60;/el-row&#62;</span>
+                            ><span
+                              >&#60;/<span tagColor>el-row</span>&#62;</span
+                            >
                             <br />
-                            <span>&#60;hr&#62;</span><br />
+                            <span>&#60;<span tagColor>hr</span>&#62;</span
+                            ><br />
                             <span
-                              >&#60;el-row class=<span roxo>"optionMenu"</span
+                              >&#60;<span tagColor>el-row</span> class=<span
+                                roxo
+                                >"optionMenu"</span
                               >&#62;</span
                             ><span black>Chatbot</span
-                            ><span>&#60;/el-row&#62;</span>
+                            ><span
+                              >&#60;/<span tagColor>el-row</span>&#62;</span
+                            >
                             <br />
-                            <span>&#60;hr&#62;</span><br />
+                            <span>&#60;<span tagColor>hr</span>&#62;</span
+                            ><br />
                             <span
-                              >&#60;el-row class=<span roxo>"optionMenu"</span
+                              >&#60;<span tagColor>el-row</span> class=<span
+                                roxo
+                                >"optionMenu"</span
                               >&#62;</span
                             ><span black>Data Machina</span
-                            ><span>&#60;/el-row&#62;</span>
+                            ><span
+                              >&#60;/<span tagColor>el-row</span>&#62;</span
+                            >
                             <br />
-                            <span>&#60;hr&#62;</span><br />
+                            <span>&#60;<span tagColor>hr</span>&#62;</span
+                            ><br />
                             <span
-                              >&#60;el-row class=<span roxo>"optionMenu"</span
+                              >&#60;<span tagColor>el-row</span> class=<span
+                                roxo
+                                >"optionMenu"</span
                               >&#62;</span
                             ><span black>Design</span
-                            ><span>&#60;/el-row&#62;</span>
+                            ><span
+                              >&#60;/<span tagColor>el-row</span>&#62;</span
+                            >
                             <br />
                           </div>
-                          <span>&#60;/el-col&#62;</span>
+                          <span>&#60;/<span tagColor>el-col</span>&#62;</span>
                           <!--  -->
                         </div>
                       </div>
-                      <span>&#60;/el-popover&#62;</span>
+                      <span>&#60;/<span tagColor>el-popover</span>&#62;</span>
                       <br />
                       <br />
 
@@ -356,7 +386,10 @@
                       <span green>&#60;!-- Notificações --&#62;</span>
                       <br />
                       <span
-                        >&#60;el-popover placement=<span roxo>"bottom"</span>
+                        >&#60;<span tagColor>el-popover</span> placement=<span
+                          roxo
+                          >"bottom"</span
+                        >
                         trigger=<span roxo>"click"</span> :width=<span roxo
                           >"400"</span
                         >&#62;</span
@@ -365,7 +398,7 @@
                       <div class="border-left">
                         <div recuo>
                           <span
-                            >&#60;template
+                            >&#60;<span tagColor>template</span>
                             <span roxo>#reference</span>&#62;</span
                           >
                           <br />
@@ -378,49 +411,55 @@
                               &#62;
                             </span>
                           </div>
-                          <span>&#60;/template&#62;</span>
+                          <span>&#60;/<span tagColor>template</span>&#62;</span>
                         </div>
                         <div recuo>
-                          <span>&#60;el-col&#62;</span>
+                          <span>&#60;<span tagColor>el-col</span>&#62;</span>
                           <br />
                           <div recuo>
                             <span
-                              >&#60;el-row class=<span roxo>"optionMenu"</span
+                              >&#60;<span tagColor>el-row</span> class=<span
+                                roxo
+                                >"optionMenu"</span
                               >&#62;</span
                             >
                             <span black
                               >O painel Logística foi atualizado - Versão
                               2.43.2.1</span
                             >
-                            <span>&#60;/el-row&#62;</span>
+                            <span>&#60;/<span tagColor>el-row</span>&#62;</span>
                             <br />
-                            <span>&#60;hr&#62;</span>
+                            <span>&#60;<span tagColor>hr</span>&#62;</span>
                             <br />
                             <span
-                              >&#60;el-row class=<span roxo>"optionMenu"</span
+                              >&#60;<span tagColor>el-row</span> class=<span
+                                roxo
+                                >"optionMenu"</span
                               >&#62;</span
                             >
                             <span black
                               >O colaborador Gustavo Emmanoel foi
                               cadastrado</span
                             >
-                            <span>&#60;/el-row&#62;</span>
+                            <span>&#60;/<span tagColor>el-row</span>&#62;</span>
                             <br />
-                            <span>&#60;hr&#62;</span>
+                            <span>&#60;<span tagColor>hr</span>&#62;</span>
                             <br />
                             <span
-                              >&#60;el-row class=<span roxo>"optionMenu"</span
+                              >&#60;<span tagColor>el-row</span> class=<span
+                                roxo
+                                >"optionMenu"</span
                               >&#62;</span
                             >
                             <span black>Você se cadastrou!</span>
-                            <span>&#60;/el-row&#62;</span>
+                            <span>&#60;/<span tagColor>el-row</span>&#62;</span>
                             <br />
                           </div>
-                          <span>&#60;/el-col&#62;</span>
+                          <span>&#60;/<span tagColor>el-col</span>&#62;</span>
                           <br />
                         </div>
                       </div>
-                      <span>&#60;/el-popover&#62;</span>
+                      <span>&#60;/<span tagColor>el-popover</span>&#62;</span>
                       <br />
                       <br />
 
@@ -428,7 +467,10 @@
                       <span green>&#60;!-- Dúvidas --&#62;</span>
                       <br />
                       <span
-                        >&#60;el-popover placement=<span roxo>"bottom"</span>
+                        >&#60;<span tagColor>el-popover</span> placement=<span
+                          roxo
+                          >"bottom"</span
+                        >
                         trigger=<span roxo>"click"</span> :width=<span roxo
                           >"300"</span
                         >&#62;</span
@@ -449,22 +491,25 @@
                               >&#62;</span
                             >
                           </div>
-                          <span>&#60;/template&#62;</span>
+                          <span>&#60;/<span tagColor>template</span>&#62;</span>
                         </div>
                         <div recuo>
-                          <span>&#60;el-col&#62;</span>
+                          <span>&#60;<span tagColor>el-col</span>&#62;</span>
                           <br />
                           <div recuo>
                             <span
-                              >&#60;el-row class=<span roxo>"optionMenu"</span
+                              >&#60;<span tagColor>el-row</span> class=<span
+                                roxo
+                                >"optionMenu"</span
                               >&#62;</span
                             >
                             <span black>versão: 2cf2f45f</span>
-                            <span>&#60;/el-row&#62;</span>
+                            <span>&#60;/<span tagColor>el-row</span>&#62;</span>
                             <br />
                             <span>&#60;hr/&#62;</span>
                             <br />
-                            &#60;el-row class=<span roxo>"optionMenu"</span
+                            &#60;<span tagColor>el-row</span> class=<span roxo
+                              >"optionMenu"</span
                             >&#62;<span black
                               >Dúvidas? entre em contato por:</span
                             >
@@ -476,21 +521,23 @@
                               <div black>datamachina@datamachina.com.br</div>
                               <span>&#60;/p&#62;</span>
                             </div>
-                            <span>&#60;/el-row&#62;</span>
+                            <span>&#60;/<span tagColor>el-row</span>&#62;</span>
                             <br />
                           </div>
-                          <span>&#60;/el-col&#62;</span>
+                          <span>&#60;/<span tagColor>el-col</span>&#62;</span>
                           <br />
                         </div>
                       </div>
-                      <span>&#60;/el-popover&#62;</span>
+                      <span>&#60;/<span tagColor>el-popover</span>&#62;</span>
                       <br />
                       <br />
 
                       <!-- Perfil -->
                       <span green>&#60;!-- Perfil --&#62;</span>
                       <br />
-                      &#60;el-popover placement=<span roxo>"bottom"</span>
+                      &#60;<span tagColor>el-popover</span> placement=<span roxo
+                        >"bottom"</span
+                      >
                       trigger=<span roxo>"click"</span> :width=<span roxo
                         >"360"</span
                       >&#62;
@@ -500,16 +547,19 @@
                           &#60;template <span roxo>#reference</span>&#62;
                           <br />
                           <div recuo>
-                            &#60;img class=<span roxo>"icon"</span> src=<span
-                              roxo
+                            &#60;<span tagColor>img</span> class=<span roxo
+                              >"icon"</span
+                            >
+                            src=<span roxo
                               >"https://raw.githubusercontent.com/gustavoemmanoel/DM-Design-System/a788551ff910a5544891fd15346fe8bdfcc99486/public/icons/perfil.svg"&#62;</span
                             >
                           </div>
-                          &#60;/template&#62;
+                          &#60;/<span tagColor>template</span>&#62;
                           <br />
-                          &#60;el-col&#62;
+                          &#60;<span tagColor>el-col</span>&#62;
                           <div recuo>
-                            &#60;el-row class="<span roxo>tag-primaria"</span
+                            &#60;<span tagColor>el-row</span> class="<span roxo
+                              >tag-primaria"</span
                             >&#62;
                             <br />
                             <div recuo>
@@ -518,47 +568,57 @@
                                 >Mateus Durães</span
                               >
                               &#60;/p&#62;<br />
-                              &#60;div&#62;<span black>Administrador</span
-                              >&#60;/div&#62;<span black>
+                              &#60;<span tagColor>div</span>&#62;<span black
+                                >Administrador</span
+                              >&#60;/<span tagColor>div</span>&#62;<span black>
                                 <br />
                                 mateusduraessantos@datamachina.com.br</span
                               >
                             </div>
-                            &#60;/el-row&#62;
+                            &#60;/<span tagColor>el-row</span>&#62;
                             <br />
-                            &#60;hr&#62;
+                            &#60;<span tagColor>hr</span>&#62;
                             <br />
-                            &#60;el-row class=<span roxo>"optionMenu"</span
-                            >&#62;<span black>Configurações</span
-                            >&#60;/el-row&#62;
+                            &#60;<span tagColor>el-row</span> class=<span roxo
+                              >"optionMenu"</span
+                            >&#62;<span black>Configurações</span>&#60;/<span
+                              tagColor
+                              >el-row</span
+                            >&#62;
                             <br />
-                            &#60;el-row class=<span roxo>"optionMenu"</span
-                            >&#62;<span black>Configurações</span
-                            >&#60;/el-row&#62;
+                            &#60;<span tagColor>el-row</span> class=<span roxo
+                              >"optionMenu"</span
+                            >&#62;<span black>Configurações</span>&#60;/<span
+                              tagColor
+                              >el-row</span
+                            >&#62;
                             <br />
-                            &#60;hr&#62;
+                            &#60;<span tagColor>hr</span>&#62;
                             <br />
-                            &#60;el-row class=<span roxo>"optionMenu"</span
+                            &#60;<span tagColor>el-row</span> class=<span roxo
+                              >"optionMenu"</span
                             >&#62;
                             <br />
                             <div recuo>
-                              &#60;el-button&#62;<span black>Sair</span
-                              >&#60;/el-button&#62;
+                              &#60;<span tagColor>el-button</span>&#62;<span
+                                black
+                                >Sair</span
+                              >&#60;/<span tagColor>el-button</span>&#62;
                             </div>
-                            &#60;/el-row&#62;
+                            &#60;/<span tagColor>el-row</span>&#62;
                           </div>
-                          &#60;/el-col&#62;
+                          &#60;/<span tagColor>el-col</span>&#62;
                         </div>
                       </div>
-                      <span>&#60;/el-popover&#62;</span>
+                      <span>&#60;/<span tagColor>el-popover</span>&#62;</span>
                     </div>
 
-                    &#60;/el-row&#62;
+                    &#60;/<span tagColor>el-row</span>&#62;
                   </div>
-                  <span>&#60;/el-row&#62;</span>
+                  <span>&#60;/<span tagColor>el-row</span>&#62;</span>
                   <br />
                 </div>
-                <span>&#60;/div&#62;</span>
+                <span>&#60;/<span tagColor>div</span>&#62;</span>
               </div>
             </el-collapse-item>
           </el-collapse>
@@ -588,7 +648,7 @@
             <el-collapse-item title="ver" name="3">
               <!-- Collapse -->
               <div class="html_codigos_blue">
-                &#60;el-row&#62;
+                &#60;<span tagColor>el-row</span>&#62;
                 <div recuo>
                   &#60;el-col :offset=<span roxo>"1"</span> :span=<span roxo
                     >"22</span
@@ -620,9 +680,9 @@
                     </div>
                     &#60;/el-tabs&#62;
                   </div>
-                  &#60;/el-col&#62;
+                  &#60;/<span tagColor>el-col</span>&#62;
                 </div>
-                &#60;/el-row&#62;
+                &#60;/<span tagColor>el-row</span>&#62;
                 <br />
                 <!-- Script -->
                 &#60;script&#62;
@@ -664,27 +724,6 @@
             </el-collapse-item>
           </el-collapse>
         </div>
-        <!--  -->
-        <!--  -->
-        <!--  -->
-        <!--  -->
-        <!--  -->
-        <!--  -->
-        <!--  -->
-        <!--  -->
-        <!--  -->
-        <!--  -->
-
-        <!--  -->
-        <!--  -->
-        <!--  -->
-        <!--  -->
-        <!--  -->
-        <!--  -->
-        <!--  -->
-        <!--  -->
-        <!--  -->
-        <!--  -->
       </el-main>
     </el-container>
   </el-container>
@@ -731,11 +770,5 @@ export default {
   display: flex;
   align-items: center;
   height: 50px;
-}
-
-.border-left {
-  border-width: 0 0 0 1px;
-  border-style: solid;
-  border-color: var(--dm_cinza_03);
 }
 </style>

@@ -13,36 +13,69 @@
             <div>
               <h1>/Checkbox</h1>
               <div class="hr"></div>
+              <br />
               <p>
                 O checkbox é uma pequena caixa que pode ser clicada para
                 selecionar um ou mais itens em uma lista. A caixa também indica
                 os itens que estão selecionados pelo usuário. Há quatro estados
                 possíveis para um checkbox: ativo, hover, clicado e bloqueado.
               </p>
+              <br />
             </div>
             <div class="container-elementos">
-              <el-checkbox
-                v-model="checked1"
-                label="Option 1"
-                size="large"
-                checked
-              />
+              <el-checkbox v-model="checked1" label="Option 1" checked />
               <el-checkbox v-model="checked3" label="datamachina" />
-              <el-checkbox
-                v-model="checked5"
-                label="Design System"
-                size="small"
-                disabled
-              />
+              <el-checkbox v-model="checked5" label="Design System" disabled />
               <br />
               <br />
               <!--  -->
+              <!--  -->
+              <!--  -->
+              <!--  -->
+
               <el-collapse v-model="activeNames" @change="handleChange">
-                <el-collapse-item title="Consistency" name="1">
-                  <div>
-                    Consistent with real life: in line with the process and
-                    logic of real life, and comply with languages and habits
-                    that the users are used to;
+                <el-collapse-item title="Ver" name="1">
+       
+                  <!-- Código para copiar -->
+
+                  <div class="html_codigos_blue">
+                    <div>&#60;<span tagColor>template</span>&#62;</div>
+                    <div class="border-left">
+                      <div recuo>
+                        <!-- Checked -->
+                        <span
+                          >&#60;<span tagColor>el-checkbox</span> v-model=<span
+                            roxo
+                            >"checked1"</span
+                          >
+                          label=<span roxo>"Option 1" </span>
+                          <span tagColor> checked</span>
+                        </span>
+                        /&#62;
+                        <br />
+                        <!-- Normal -->
+                        <span
+                          >&#60;<span tagColor>el-checkbox</span> v-model=<span
+                            roxo
+                            >"checked1"</span
+                          >
+                          label=<span roxo>"datamachina" </span>
+                        </span>
+                        /&#62;
+                        <br />
+                        <!-- disabled -->
+                        <span
+                          >&#60;<span tagColor>el-checkbox</span> v-model=<span
+                            roxo
+                            >"checked1"</span
+                          >
+                          label=<span roxo>"Design System"" </span>
+                          <span tagColor> disabled</span>
+                        </span>
+                        /&#62;
+                      </div>
+                    </div>
+                    &#60;/<span tagColor>template</span>&#62;
                   </div>
                 </el-collapse-item>
               </el-collapse>

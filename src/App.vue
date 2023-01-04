@@ -19,6 +19,10 @@ body {
   background: #fdfbf9;
 }
 
+[tagColor] {
+  color: var(--dm_azul_C03);
+}
+
 .flex {
   display: flex;
   align-items: center;
@@ -78,6 +82,12 @@ footer {
   margin-bottom: 30px;
 }
 
+.border-left {
+  border-width: 0 0 0 1px;
+  border-style: solid;
+  border-color: var(--dm_cinza_03);
+}
+
 .chaves,
 .html_color_conteudo,
 .html_codigos_blue,
@@ -86,9 +96,9 @@ footer {
 }
 
 .html_codigos_blue {
-  color: #4576a7;
+  color: var(--dm_cinza_02);
   font-size: 14px;
-  line-height: 18px;
+  line-height: 22px;
 }
 .html_color_conteudo,
 [black] {
@@ -105,7 +115,7 @@ footer {
 }
 .recuo,
 [recuo] {
-  margin-left: 10px;
+  margin-left: 12px;
 }
 
 /*  */

@@ -81,6 +81,6 @@ export default {
   position: absolute;
   height: 475px;
   left: 0;
-  opacity: 0.1;
+  opacity: 0.03;
 }
 </style>

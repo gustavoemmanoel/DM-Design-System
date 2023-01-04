@@ -1,20 +1,29 @@
+/*
 dm_icone {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: green;
   width: max-content;
   height: max-content;
 }
+
+cima,
 maisInformacoes {
-  height: 100px;
-  width: 100px;
-  background: yellow;
-  background-image: url("../../public/icons/maisInformacoes.svg");
+  height: 25px;
+  width: 25px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
 }
+
+maisInformacoes {
+  background-image: url("../../public/icons/maisInformacoes.svg");
+}
+
+cima {
+  background-image: url("../../public/icons/cima.svg");
+}
+*/
 
 dm_icon {
   display: flex;

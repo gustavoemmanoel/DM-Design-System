@@ -11,6 +11,7 @@
         <div>
           <h1>/Tabelas</h1>
           <div class="hr"></div>
+          <br />
           <p>
             As tabelas exibem uma série de dados de forma estrutura com linhas e
             colunas. As tabelas inclui uma linha de título, e linhas de conteúdo
@@ -31,94 +32,84 @@
               </template>
             </el-table-column>
           </el-table>
-        </div>
-        <div class="container-elementos">
-          <!-- FIM TABELA -->
-          <el-table :data="tableData" style="width: 100%" stripe>
-            <el-table-column prop="date" label="Date" width="180">
-            </el-table-column>
-            <el-table-column prop="name" label="Name" width="180">
-            </el-table-column>
-            <el-table-column prop="address" label="Address"> </el-table-column>
-          </el-table>
-          <br />
-          <el-collapse v-model="activeNames" @change="handleChange">
-            <el-collapse-item title="Consistency" name="1">
-              <div>
-                Consistent with real life: in line with the process and logic of
-                real life, and comply with languages and habits that the users
-                are used to;
-              </div>
-            </el-collapse-item>
-          </el-collapse>
-        </div>
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <div class="container-elementos">
-          <h4>Basic table is just for data display.</h4>
-          <br />
-
-          <p>
-            After setting attribute data of el-table with an object array, you
-            can use prop (corresponding to a key of the object in data array) in
-            el-table-column to insert data to table columns, and set the
-            attribute label to define the column name. You can also use the
-            attribute width to define the width of columns.
-          </p>
-          <br />
-          <el-table :data="tableData" style="width: 100%">
-            <el-table-column prop="date" label="Date" width="180" />
-            <el-table-column prop="name" label="Name" width="180" />
-            <el-table-column prop="address" label="Address" />
-          </el-table>
 
           <br />
 
-          <el-collapse v-model="activeNames" @change="handleChange">
-            <el-collapse-item title="Consistency" name="1">
-              <div style="margin-left: 16px; color: #3375b9">
-                &#60;template&#62;
-                <div class="recuo">
-                  &#60;el-table&#62;
-                  <div class="recuo">
-                    <el-row>
-                      &lt;el-table-column&nbsp;
-                      <p class="html_color_axx">prop</p>
-                      ="date"&nbsp;
-                      <p class="html_color_axx">label</p>
-                      ="Date" &nbsp;
-                      <p class="html_color_axx">width</p>
-                      ="180" /&gt;
-                    </el-row>
-                    <el-row>
-                      &lt;el-table-column&nbsp;
-                      <p class="html_color_axx">prop</p>
-                      ="name"&nbsp;
-                      <p class="html_color_axx">label</p>
-                      ="Name" &nbsp;
-                      <p class="html_color_axx">width</p>
-                      ="180" /&gt;
-                    </el-row>
-                    <el-row>
-                      &lt;el-table-column&nbsp;
-                      <p class="html_color_axx">prop</p>
-                      ="address"&nbsp;
-                      <p class="html_color_axx">label</p>
-                      ="Address" &nbsp;
-                      <p class="html_color_axx">width</p>
-                      ="180" /&gt;
-                    </el-row>
+          <div class="html_codigos_blue">
+            &#60;<span tagColor>el-table</span>&#62;
+
+            <br />
+            <div recuo>
+              &#60;<span tagColor>el-table-colum</span> prop=<span roxo
+                >"date"</span
+              >
+              label=<span roxo>"Date"</span> width=<span roxo>"180"</span>
+              /&#62;
+              <br />
+              <!--  -->
+              &#60;<span tagColor>el-table-colum</span> prop=<span roxo
+                >"date"</span
+              >
+              label=<span roxo>"Date"</span> width=<span roxo>"180"</span>
+              /&#62;
+
+              <br />
+              <!--  -->
+              &#60;<span tagColor>el-table-colum</span> prop=<span roxo
+                >"date"</span
+              >
+              label=<span roxo>"Date"</span> width=<span roxo>"180"</span>
+              &#62;
+              <br />
+
+              <div class="border-left">
+                <div recuo>
+                  &#60;<span tagColor>template</span> #default=<span roxo
+                    >"scope"</span
+                  >&#62;
+                  <br />
+                  <div recuo>
+                    &#60;<span tagColor>el-tag</span>&#62;{<!---->{<span roxo
+                      >scope.row.tag</span
+                    >}<!---->}&#60;/<span tagColor>el-tag</span>&#62;
                   </div>
-                  &#60;/el-table&#62;
+                  &#60;/<span tagColor>template</span>&#62;
                 </div>
-                &#60;/template&#62;
               </div>
-            </el-collapse-item>
+
+              &#60;/<span tagColor>el-table-colum</span>&#62;
+            </div>
+            &#60;<span tagColor>/el-table</span>&#62;
+            <br />
+            <br />
+            <!-- script -->
+            <div class="html_codigos_blue">
+              <!-- Script -->
+              &#60;<span tagColor>script</span>&#62;
+              <div recuo>
+                <span roxo>export default</span> {
+                <div recuo>
+                  <div recuo>
+                    data() {
+                    <br />
+                    <div recuo>
+                      return {
+                      <br />
+                      <div recuo>mateus: 'Mateus Durães dos Santos'</div>
+
+                      <div recuo>};</div>
+                      },
+                    </div>
+                  </div>
+                  <span>};</span>
+                </div>
+              </div>
+              &#60;/<span tagColor>script</span>&#62;
+              <!--  -->
+            </div>
+          </div>
+          <el-collapse v-model="activeNames" @change="handleChange">
+            <el-collapse-item title="Ver" name="1">.... </el-collapse-item>
           </el-collapse>
         </div>
       </el-main>

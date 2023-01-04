@@ -13,6 +13,7 @@
             <div>
               <h1>/Tags</h1>
               <div class="hr"></div>
+              <br>
               <p>
                 As tags primárias são usadas para representar status e
                 informações principais. Podem ser usadas para classificar
@@ -29,7 +30,6 @@
                 <el-tag class="ml-2" type="danger">Tag 5</el-tag>
               </el-row>
               <br />
-
               <el-collapse v-model="activeNames" @change="handleChange">
                 <el-collapse-item title="ver" name="3">
                   <span class="html_codigos_blue">
@@ -72,11 +72,11 @@
                 </el-collapse-item>
               </el-collapse>
             </div>
-            <br />
 
             <div>
-              <h1>Tags secundárias</h1>
+              <h1>/Tags secundárias</h1>
               <div class="hr" />
+              <br>
               <p>
                 As tags secundárias são usadas para representar um status e
                 informações em segundo plano. Ou uma segunda categoria de

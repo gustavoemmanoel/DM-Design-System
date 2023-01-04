@@ -11,8 +11,9 @@
       <el-main>
         <div class="containerInterno">
           <div>
-            <h1>/Tags</h1>
+            <h1>/Menssagens</h1>
             <div class="hr"></div>
+            <br>
             <p>
               Pins são elementos que servem para marcar pontos no mapa.
             </p>

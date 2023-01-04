@@ -11,6 +11,7 @@
         <div>
           <h1>/Botões</h1>
           <div class="hr" />
+          <br>
           <p>
             Botões permitem que os usuários executem ações dentro da plataforma
             ou os levam para outras páginas. Eles são desenhados de acordo com
@@ -19,8 +20,6 @@
             modificadas de acordo com o espaço destinado no grid.
           </p>
         </div>
-        <br />
-        <br />
         <br />
         <div class="container-elementos">
           <el-button>Default</el-button>

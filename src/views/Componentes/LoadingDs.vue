@@ -13,6 +13,7 @@
           <div>
             <h1>/Loading</h1>
             <div class="hr"></div>
+            <br>
             <p>
               Barras de loading mostram o progresso de alguma operação do
               sistema que está sendo executada como download, upload ou

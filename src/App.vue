@@ -110,7 +110,7 @@ body {
 }
 .recuo,
 [recuo] {
-  margin-left: 12px;
+  margin-left: 14px;
 }
 
 /*  */

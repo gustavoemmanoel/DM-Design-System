@@ -22,54 +22,130 @@
             </div>
             <br />
             <div class="container-elementos">
-              <el-row class="gap">
-                <el-tag>Tag 1</el-tag>
-                <el-tag class="ml-2" type="success">Tag 2</el-tag>
-                <el-tag class="ml-2" type="info">Tag 3</el-tag>
-                <el-tag class="ml-2" type="warning">Tag 4</el-tag>
-                <el-tag class="ml-2" type="danger">Tag 5</el-tag>
+              <el-row>
+                <el-col :span="12" class="defaultTags">
+                  <el-tag>default</el-tag>
+                  <!-- <el-tag size="small">small</el-tag> -->
+                  <!-- <el-tag size="mini">mini</el-tag> -->
+                  <el-tag type="success">success</el-tag>
+                  <!-- <el-tag type="success" size="small">small</el-tag> -->
+                  <!-- <el-tag type="success" size="mini">mini</el-tag> -->
+                  <el-tag type="info">info</el-tag>
+                  <!-- <el-tag type="info" size="small">small</el-tag> -->
+                  <!-- <el-tag type="info" size="mini">mini</el-tag> -->
+                  <el-tag type="warning">warning</el-tag>
+                  <!-- <el-tag type="warning" size="small">small</el-tag> -->
+                  <!-- <el-tag type="warning" size="mini">mini</el-tag> -->
+                  <el-tag type="danger">danger</el-tag>
+                  <!-- <el-tag type="danger" size="small">small</el-tag> -->
+                  <!-- <el-tag type="danger" size="mini">mini</el-tag> -->
+                  <el-tag closable>closable</el-tag>
+                  <el-tag type="success" closable>Tag 1</el-tag>
+                  <el-tag type="info" closable>Tag 2</el-tag>
+                  <el-tag type="warning" closable>Tag 3</el-tag>
+                  <el-tag type="danger" closable>Tag 4</el-tag>
+                </el-col>
               </el-row>
               <br />
               <el-collapse v-model="activeNames" @change="handleChange">
                 <el-collapse-item title="ver" name="3">
-                  <span class="html_codigos_blue">
-                    <span>
-                      &lt;<span class="html_codigos_blue">el-tag</span></span
-                    >&gt;<span class="html_color_conteudo">Tag 1</span
-                    >&lt;/el-tag&gt;
-                    <br />
-                    <span
-                      >&lt;<span class="html_codigos_blue">el-tag</span>
-                      type=<span class="html_color_axx">"success"</span
-                      >&gt;<span class="html_color_conteudo">Tag 2</span
-                      >&lt;/el-tag&gt;</span
-                    >
-                    <br />
-                    <span
-                      >&lt;<span class="html_codigos_blue">el-tag</span>
-                      type=<span class="html_color_axx">"info"</span>&gt;<span
-                        class="html_color_conteudo"
-                        >Tag 3</span
-                      >&lt;/el-tag&gt;</span
-                    >
-                    <br />
-                    <span
-                      >&lt;<span class="html_codigos_blue">el-tag</span>
-                      type=<span class="html_color_axx">"warning"</span
-                      >&gt;<span class="html_color_conteudo">Tag 4</span
-                      >&lt;/el-tag&gt;</span
-                    >
-                    <br />
-                    <span
-                      >&lt;<span class="html_codigos_blue">el-tag</span>
-                      type=<span class="html_color_axx">"danger"</span>&gt;<span
-                        class="html_color_conteudo"
-                        >Tag 5</span
-                      >&lt;/el-tag&gt;</span
-                    >
-                    <br />
-                  </span>
-                </el-collapse-item>
+              <span class="html_codigos_blue">
+                &#60;<span tagColor>template</span>&#62;
+
+                <div recuo>
+                  <!-- default -->
+                  <span green>&#60;!-- default --&#62;</span>
+
+                  <br>
+                 &lt;<span tagColor>el-tag</span>&gt;
+                  <span black>Tag 1</span>&lt;/<span tagColor>el-tag</span
+                  >&gt;
+                  <br />
+                  <span
+                    >&lt;<span tagColor>el-tag</span> type=<span roxo
+                      >"success"</span
+                    >&gt;<span black>success</span>&lt;/<span tagColor
+                      >el-tag</span
+                    >&gt;</span
+                  >
+                  <br />
+                  <span
+                    >&lt;<span tagColor>el-tag</span> type=<span roxo
+                      >"info"</span
+                    >&gt;<span black>info</span>&lt;/<span tagColor>el-tag</span
+                    >&gt;</span
+                  >
+                  <br />
+                  <span
+                    >&lt;<span tagColor>el-tag</span> type=<span roxo
+                      >"warning"</span
+                    >&gt;<span black>warning</span>&lt;/<span tagColor
+                      >el-tag</span
+                    >&gt;</span
+                  >
+                  <br />
+                  <span
+                    >&lt;<span tagColor>el-tag</span> type=<span roxo
+                      >"danger"</span
+                    >&gt;<span black>danger</span>&lt;/<span tagColor
+                      >el-tag</span
+                    >&gt;</span
+                  >
+                  <br />
+                </div>
+
+                <br>
+                <div recuo>
+                  <!-- closable -->
+                  <span green>&#60;!-- closable --&#62;</span>
+                  <br />
+
+                  <span
+                    >&lt;<span tagColor>el-tag</span> type=<span roxo
+                      >"default"</span><span roxo> closable</span> &gt;<span black>closable</span>&lt;/<span tagColor
+                      >el-tag</span
+                    >&gt;</span
+                  >
+                  <br />
+
+                  <span
+                    >&lt;<span tagColor>el-tag</span> type=<span roxo
+                      >"success"</span
+                    ><span roxo> closable</span>&gt;<span black>Tag 1</span>&lt;/<span tagColor
+                      >el-tag</span
+                    >&gt;</span
+                  >
+                  <br />
+
+                  <span
+                    >&lt;<span tagColor>el-tag</span> type=<span roxo
+                      >"info"</span
+                    ><span roxo> closable</span>&gt;<span black>Tag 2</span>&lt;/<span tagColor
+                      >el-tag</span
+                    >&gt;</span
+                  >
+                  <br />
+
+                  <span
+                    >&lt;<span tagColor>el-tag</span> type=<span roxo
+                      >"warning"</span
+                    ><span roxo> closable</span>&gt;<span black>Tag 3</span>&lt;/<span tagColor
+                      >el-tag</span
+                    >&gt;</span
+                  >
+                  <br>
+                  <span
+                    >&lt;<span tagColor>el-tag</span> type=<span roxo
+                      >"danger"</span
+                    ><span roxo> closable</span>&gt;<span black>Tag 4</span>&lt;/<span tagColor
+                      >el-tag</span
+                    >&gt;</span
+                  >
+                </div>
+
+                &#60;<span tagColor>template</span>&#62;
+              </span>
+               </el-collapse-item>
               </el-collapse>
             </div>
 
@@ -91,104 +167,233 @@
                   <el-tag effect="plain">default</el-tag>
                   <el-tag effect="plain" size="small">small</el-tag>
                   <el-tag effect="plain" size="mini">mini</el-tag>
-                  <el-tag type="success" effect="plain">default</el-tag>
-                  <el-tag type="success" size="small" effect="plain"
+
+                  <el-tag effect="plain" type="success">success</el-tag>
+                  <el-tag effect="plain" type="success" size="small"
                     >small</el-tag
                   >
-                  <el-tag type="success" size="mini" effect="plain"
+                  <el-tag effect="plain" type="success" size="mini"
                     >mini</el-tag
                   >
-                  <el-tag type="info" effect="plain">default</el-tag>
-                  <el-tag type="info" size="small" effect="plain">small</el-tag>
-                  <el-tag type="info" size="mini" effect="plain">mini</el-tag>
-                  <el-tag type="warning" effect="plain">default</el-tag>
-                  <el-tag type="warning" size="small" effect="plain"
+
+                  <el-tag effect="plain" type="info">info</el-tag>
+                  <el-tag effect="plain" type="info" size="small">small</el-tag>
+                  <el-tag effect="plain" type="info" size="mini">mini</el-tag>
+
+                  <el-tag effect="plain" type="warning">default</el-tag>
+                  <el-tag effect="plain" type="warning" size="small"
                     >small</el-tag
                   >
-                  <el-tag type="warning" size="mini" effect="plain"
+                  <el-tag effect="plain" type="warning" size="mini"
                     >mini</el-tag
                   >
-                  <el-tag type="danger" effect="plain">default</el-tag>
-                  <el-tag type="danger" size="small" effect="plain"
+
+                  <el-tag effect="plain" type="danger">danger</el-tag>
+                  <el-tag effect="plain" type="danger" size="small"
                     >small</el-tag
                   >
-                  <el-tag type="danger" size="mini" effect="plain">mini</el-tag>
+                  <el-tag effect="plain" type="danger" size="mini">mini</el-tag>
                 </el-col>
+
                 <el-col :span="12" class="tagsGap">
-                  <el-tag effect="plain" closable>default</el-tag>
+                  <el-tag effect="plain" closable>plain</el-tag>
                   <el-tag effect="plain" size="small" closable>small</el-tag>
                   <el-tag effect="plain" size="mini" closable>mini</el-tag>
-                  <el-tag type="success" effect="plain" closable
-                    >default</el-tag
-                  >
-                  <el-tag type="success" size="small" effect="plain" closable
+
+                  <el-tag effect="plain" type="success" closable>plain</el-tag>
+                  <el-tag effect="plain" type="success" size="small" closable
                     >small</el-tag
                   >
-                  <el-tag type="success" size="mini" effect="plain" closable
+                  <el-tag effect="plain" type="success" size="mini" closable
                     >mini</el-tag
                   >
-                  <el-tag type="info" effect="plain" closable>default</el-tag>
-                  <el-tag type="info" size="small" effect="plain" closable
+
+                  <el-tag effect="plain" type="info" closable>plain</el-tag>
+                  <el-tag effect="plain" type="info" size="small" closable
                     >small</el-tag
                   >
-                  <el-tag type="info" size="mini" effect="plain" closable
+                  <el-tag effect="plain" type="info" size="mini" closable
                     >mini</el-tag
                   >
-                  <el-tag type="warning" effect="plain" closable
-                    >default</el-tag
-                  >
-                  <el-tag type="warning" size="small" effect="plain" closable
+
+                  <el-tag effect="plain" type="warning" closable>plain</el-tag>
+                  <el-tag effect="plain" type="warning" size="small" closable
                     >small</el-tag
                   >
-                  <el-tag type="warning" size="mini" effect="plain" closable
+                  <el-tag effect="plain" type="warning" size="mini" closable
                     >mini</el-tag
                   >
-                  <el-tag type="danger" effect="plain" closable>default</el-tag>
-                  <el-tag type="danger" size="small" effect="plain" closable
+
+                  <el-tag effect="plain" type="danger" closable>plain</el-tag>
+                  <el-tag effect="plain" type="danger" size="small" closable
                     >small</el-tag
                   >
-                  <el-tag type="danger" size="mini" effect="plain" closable
+                  <el-tag effect="plain" type="danger" size="mini" closable
                     >mini</el-tag
                   >
                 </el-col>
               </el-row>
               <br />
 
-              <span class="html_codigos_blue">
+              
+
+              <el-collapse v-model="activeNames" @change="handleChange">
+                <el-collapse-item title="ver" name="3"> 
+                  <span class="html_codigos_blue">
                 &#60;<span tagColor>template</span>&#62;
                 <div recuo>
-                  <!--  -->
+                  <!-- default -->
+                  <span green>&#60;!-- default --&#62;</span>
+                  <br />
                   &#60;<span tagColor>el-tag</span> effect=<span roxo
                     >"plain"</span
-                  >
+                  >&#62;<span black>default</span>&#60;<span tagColor
+                    >/el-tag</span
+                  >&#62;
+                  <!--  -->
+                  <br />
+                  &#60;<span tagColor>el-tag</span> effect=<span roxo
+                    >"plain"
+                  </span>
+                  size=<span roxo>"small" </span>
+                  <span roxo>closable</span>&#62;<span black>small</span
+                  >&#60;<span tagColor>/el-tag</span>&#62;
+                  <!--  -->
+                  <br />
+                  &#60;<span tagColor>el-tag</span> effect=<span roxo
+                    >"plain"
+                  </span>
+                  size=<span roxo>"mini" </span>
+                  <span roxo>closable</span>&#62;<span black>mini</span
+                  >&#60;<span tagColor>/el-tag</span>&#62;
+                  <br />
+                  <!-- success -->
+                  <br />
+                  <span green>&#60;!-- success --&#62;</span>
+                  <br />
+                  &#60;<span tagColor>el-tag</span> effect=<span roxo
+                    >"plain"
+                  </span>
+                  type=<span roxo>"success" </span>
+
                   <span roxo>closable</span>&#62;<span black>default</span
                   >&#60;<span tagColor>/el-tag</span>&#62;
                   <!--  -->
+                  <br />
                   &#60;<span tagColor>el-tag</span> effect=<span roxo
-                    >"plain"</span
-                  >
-                  <span roxo>closable</span>&#62;<span black>Tag dm</span
+                    >"plain"
+                  </span>
+                  type=<span roxo>"success" </span> size=<span roxo
+                    >"small"
+                  </span>
+                  <span roxo>closable</span>&#62;<span black>small</span
                   >&#60;<span tagColor>/el-tag</span>&#62;
                   <!--  -->
                   <br />
                   &#60;<span tagColor>el-tag</span> effect=<span roxo
-                    >"plain"</span
-                  >
-                  <span roxo>closable</span>&#62;<span black>Tag dm</span
+                    >"plain"
+                  </span>
+                  type=<span roxo>"success" </span> size=<span roxo
+                    >"mini"
+                  </span>
+                  <span roxo>closable</span>&#62;<span black>mini</span
+                  >&#60;<span tagColor>/el-tag</span>&#62;
+                  <br />
+                  <br />
+                  <!-- info -->
+                  <span green>&#60;!-- info --&#62;</span>
+                  <br />
+                  &#60;<span tagColor>el-tag</span> effect=<span roxo
+                    >"plain"
+                  </span>
+                  type=<span roxo>"info" </span>
+                  <span roxo>closable</span>&#62;<span black>default</span
                   >&#60;<span tagColor>/el-tag</span>&#62;
                   <!--  -->
                   <br />
                   &#60;<span tagColor>el-tag</span> effect=<span roxo
-                    >"plain"</span
-                  >
-                  <span roxo>closable</span>&#62;<span black>Tag dm</span
+                    >"plain"
+                  </span>
+                  type=<span roxo>"info" </span> size=<span roxo>"small" </span>
+                  <span roxo>closable</span>&#62;<span black>small</span
+                  >&#60;<span tagColor>/el-tag</span>&#62;
+                  <!--  -->
+                  <br />
+                  &#60;<span tagColor>el-tag</span> effect=<span roxo
+                    >"plain"
+                  </span>
+                  type=<span roxo>"info" </span> size=<span roxo>"mini" </span>
+                  <span roxo>closable</span>&#62;<span black>mini</span
+                  >&#60;<span tagColor>/el-tag</span>&#62;
+                  <br />
+                  <!-- danger -->
+                  <br />
+                  <span green>&#60;!-- danger --&#62;</span>
+                  <br />
+                  &#60;<span tagColor>el-tag</span> effect=<span roxo
+                    >"plain"
+                  </span>
+                  type=<span roxo>"danger" </span>
+                  <span roxo>closable</span>&#62;<span black>default</span
+                  >&#60;<span tagColor>/el-tag</span>&#62;
+                  <!--  -->
+                  <br />
+                  &#60;<span tagColor>el-tag</span> effect=<span roxo
+                    >"plain"
+                  </span>
+                  type=<span roxo>"danger" </span> size=<span roxo
+                    >"small"
+                  </span>
+                  <span roxo>closable</span>&#62;<span black>small</span
+                  >&#60;<span tagColor>/el-tag</span>&#62;
+                  <!--  -->
+                  <br />
+                  &#60;<span tagColor>el-tag</span> effect=<span roxo
+                    >"plain"
+                  </span>
+                  type=<span roxo>"danger" </span> size=<span roxo
+                    >"mini"
+                  </span>
+                  <span roxo>closable</span>&#62;<span black>mini</span>
+                  <br />
+                  &#60;<span tagColor>/el-tag</span>&#62;
+                  <br />
+                  <!-- warning -->
+                  <br />
+                  <span green>&#60;!-- warning --&#62;</span>
+                  <br />
+                  &#60;<span tagColor>el-tag</span> effect=<span roxo
+                    >"plain"
+                  </span>
+                  type=<span roxo>"warning" </span>
+                  <span roxo>closable</span>&#62;<span black>default</span
+                  >&#60;<span tagColor>/el-tag</span>&#62;
+                  <!--  -->
+                  <br />
+                  &#60;<span tagColor>el-tag</span> effect=<span roxo
+                    >"plain"
+                  </span>
+                  type=<span roxo>"warning" </span> size=<span roxo
+                    >"small"
+                  </span>
+                  <span roxo>closable</span>&#62;<span black>smaill</span
+                  >&#60;<span tagColor>/el-tag</span>&#62;
+                  <!--  -->
+                  <br />
+                  &#60;<span tagColor>el-tag</span> effect=<span roxo
+                    >"plain"
+                  </span>
+                  type=<span roxo>"warning" </span> size=<span roxo
+                    >"mini"
+                  </span>
+                  <span roxo>closable</span>&#62;<span black>mini</span
                   >&#60;<span tagColor>/el-tag</span>&#62;
                 </div>
                 &#60;<span tagColor>/template</span>&#62;
               </span>
 
-              <el-collapse v-model="activeNames" @change="handleChange">
-                <el-collapse-item title="ver" name="3"> </el-collapse-item>
+
+                </el-collapse-item>
               </el-collapse>
             </div>
             <br />
@@ -228,6 +433,12 @@ export default {
 </script>
 
 <style>
+.defaultTags {
+  display: grid;
+  grid-template-columns: max-content max-content max-content max-content max-content;
+  align-items: center;
+  gap: 10px;
+}
 .tagsGap {
   display: grid;
   grid-template-columns: max-content max-content max-content;

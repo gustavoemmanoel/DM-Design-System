@@ -13,6 +13,7 @@
           <div>
             <h1>/Cards</h1>
             <div class="hr"></div>
+            <br />
             <p>
               Cards permitem a visualização das principais informações de modo
               sintético e rápido. Eles podem ser estáticos ou clicáveis,
@@ -22,19 +23,115 @@
           <br />
           <div class="container-elementos">
             <div class="container-grid">
-              <dm-card dm_card--clicavel><h4>Mercantil</h4></dm-card>
-              <dm-card>mateus</dm-card>
-              <dm-card dm_card--estatico><h4>Mercantil</h4></dm-card>
-              <dm-card dm_card--romaneio>
-                <div class="card--color" />
-                <div dm_card--content>
-                  <h4>Romaneio 01</h4>
-                  <div>Ocupação: 40%</div>
-                  <div>Peso: 1294 kg</div>
-                  <div>Volumes: 40%</div>
+              <!-- Cards clicáveis -->
+              <span>
+                <h4>Cards clicáveis</h4>
+                <div class="dm-card dm-card--clicavel"><h4>Mercantil</h4></div>
+              </span>
+              <!-- Cards estático -->
+              <span>
+                <h4>Cards estático</h4>
+                <div class="dm-card dm-card--estatico">
+                  <h4>Renda média</h4>
                 </div>
-              </dm-card>
+              </span>
+              <!-- Card Romaneio -->
+              <span>
+                <h4>Card Romaneio</h4>
+
+                <div class="dm-card dm-card--romaneio">
+                  <div class="dm-card__barra" />
+                  <div class="dm-card--content">
+                    <h4>Romaneio 01</h4>
+                    <div>Ocupação: 40%</div>
+                    <div>Peso: 1294 kg</div>
+                    <div>Volumes: 40%</div>
+                  </div>
+                </div>
+              </span>
             </div>
+
+            <br />
+            <el-collapse v-model="activeNames" @change="handleChange">
+              <el-collapse-item title="ver" name="1">
+                <span class="html_codigos_blue">
+                  <span green>&#60;!-- card clicável --&#62;</span>
+                  <br />
+                  &#60;<span tagColor>div</span> class=<span roxo
+                    >"dm-card dm-card--clicavel"</span
+                  >&#62;
+                  <div class="border-left">
+                    <div recuo>
+                      &#60;<span tagColor>h4</span>&#62;<span black
+                        >Mercantil</span
+                      >&#60;/<span tagColor>h4</span>&#62;
+                      <br />
+                    </div>
+                  </div>
+                  &#60;/<span tagColor>div</span>&#62;
+                </span>
+                <br />
+
+                <br />
+                <span class="html_codigos_blue">
+                  <span green>&#60;!-- card estático --&#62;</span>
+                  <br />
+                  &#60;<span tagColor>div</span> class=<span roxo
+                    >"dm-card dm-card--estatico"</span
+                  >&#62;
+                  <div class="border-left">
+                    <div recuo>
+                      &#60;<span tagColor>h4</span>&#62;<span black
+                        >Renda média</span
+                      >&#60;/<span tagColor>h4</span>&#62;
+                      <br />
+                    </div>
+                  </div>
+                  &#60;/<span tagColor>div</span>&#62;
+                </span>
+                <br />
+
+                <br />
+                <span class="html_codigos_blue">
+                  <span green>&#60;!-- card romaneio --&#62;</span>
+                  <br />
+                  &#60;<span tagColor>div</span> class=<span roxo
+                    >"dm-card dm-card--romaneio"</span
+                  >&#62;
+                  <div class="border-left">
+                    <div recuo>
+                      &#60;<span tagColor>div</span> class=<span roxo
+                        >"dm-card__barra"</span
+                      >/&#62;<br />
+                      &#60;<span tagColor>div</span> class=<span roxo
+                        >"dm-card--content"</span
+                      >&#62;
+                      <div class="border-left">
+                        <div recuo>
+                          &#60;<span tagColor>h4</span>&#62;<span black
+                            >Romaneio 01</span
+                          >&#60;/<span tagColor>h4</span>&#62;
+                          <br />
+                          &#60;<span tagColor>div</span>&#62;<span black
+                            >Ocupação: 40%</span
+                          >&#60;/<span tagColor>div</span>&#62;
+                          <br />
+                          &#60;<span tagColor>div</span>&#62;<span black
+                            >Peso: 1294 kg</span
+                          >&#60;/<span tagColor>div</span>&#62;
+                          <br />
+                          &#60;<span tagColor>div</span>&#62;<span black
+                            >Volumes: 40%</span
+                          >&#60;/<span tagColor>div</span>&#62;
+                        </div>
+                      </div>
+                      &#60;/<span tagColor>div</span>&#62;
+                    </div>
+                  </div>
+                  &#60;/<span tagColor>div</span>&#62;
+                </span>
+              </el-collapse-item>
+            </el-collapse>
           </div>
         </div>
       </el-main>
@@ -67,7 +164,7 @@ export default {
   align-items: center;
   gap: 20px;
 }
-dm-card {
+.dm-card {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -79,8 +176,10 @@ dm-card {
   height: max-content;
   border: 2px solid var(--dm_azul_00);
   color: var(--dm_azul_00);
+  background: var(--dm_creme_02);
 }
-[dm_card--clicavel] {
+
+.dm-card--clicavel {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -92,33 +191,44 @@ dm-card {
   height: max-content;
   border: 2px solid var(--dm_azul_00);
   color: var(--dm_azul_00);
+  cursor: pointer;
+  transition: 0.1s;
 }
-[dm_card--clicavel] div {
+.dm-card--clicavel div {
   font-size: 16px;
 }
-[dm_card--estatico] {
+.dm-card--clicavel:hover {
+  border: 2px solid var(--dm_azul_02);
+  color: var(--dm_azul_02);
+  background: var(--dm_creme_00);
+  transition: 0.1s;
+}
+.card--clicavel:focus {
+  border: 2px solid var(--dm_amarelo_00);
+}
+.card--estatico {
   border: 2px solid var(--dm_cinza_03);
   color: var(--dm_cinza_01);
 }
-[dm_card--romaneio] {
+.dm-card--romaneio {
   flex-direction: row;
   padding: 0;
   border: none;
   display: flex;
-  width: max-content;
   height: max-content;
   color: var(--dm_preto_00);
   padding: 0;
 }
-.card--color {
+.dm-card__barra {
   width: 12px;
   background: var(--dm_azul_00);
   height: 100px;
   border-radius: 6px 0 0 6px;
 }
-[dm_card--content] {
+.dm-card--content {
   display: flex;
   flex-direction: column;
+  width: 100%;
   border-style: solid;
   padding: 6px 30px 6px 12px;
   border-color: var(--dm_cinza_03);

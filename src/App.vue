@@ -16,7 +16,7 @@ export default {
 }
 body {
   overflow-y: scroll;
-  background: #fdfbf9;
+  background: var(--dm_creme_02);
 }
 
 [tagColor] {
@@ -46,10 +46,6 @@ body {
   width: 256px;
 }
 
-footer {
-  background: pink;
-}
-
 .containerInfos {
   background: var(--dm_creme_00);
   color: var(--dm_preto_00);
@@ -60,7 +56,6 @@ footer {
 
 .componentsStyleContent {
   width: 100vw;
-  /* background: gray; */
 }
 
 .el-main {

@@ -3,6 +3,7 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400;500;600;700;800;900&display=swap");
 /* font-family: 'Roboto Slab', serif; */
+
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
@@ -17,6 +18,8 @@ body {
 @import "tipografia.css";
 @import "loading.css";
 @import "iconografia.css";
+@import "checkbox.css";
+@import "upload.css";
 /* @import "testes.css"; */
 
 :root {
@@ -32,7 +35,6 @@ body {
   --el-bg-color: var(--dm_creme_02);
   --el-bg-color-overlay: var(--dm_creme_02);
   --el-fill-color-blank: var(--dm_creme_02);
-
   --el-color-primary-light-5: var(--dm_azul_02);
 }
 

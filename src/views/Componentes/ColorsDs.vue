@@ -45,8 +45,7 @@
                   class="contMap"
                   v-for="(mapsExp, index) in userConditions.img"
                   :key="index"
-                >
-                  <p style="height: 65px">{{ mapsExp.topDescription }}</p>
+                ><br>
                   <img :src="mapsExp.map" />
                   <p>{{ mapsExp.descriptionMap }}</p>
                 </div>
@@ -718,7 +717,7 @@ export default {
 .grid-colors {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  gap: 0 35px;
+  gap: 0 26px;
   margin: 10px 0;
 }
 
@@ -753,7 +752,6 @@ export default {
   font-size: 12px;
   font-weight: 400;
   color: #2c2c2c;
-  letter-spacing: 1px;
 }
 .HEX {
   font-size: 12px;
@@ -797,12 +795,9 @@ export default {
   transition: 0.2s;
 }
 
-.contMap {
-  width: 300px;
-}
-
 .contMap img {
   height: 220px;
+  border-radius: 6px;
   object-fit: cover;
 }
 </style>

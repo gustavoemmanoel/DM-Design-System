@@ -12,7 +12,7 @@
         <div>
           <h1>/Campo de texto</h1>
           <div class="hr"></div>
-          <br>
+          <br />
           <p>
             Os campos de texto são um dos formatos de entrada de dados
             possíveis.
@@ -72,7 +72,7 @@
           </div>
         </div>
         <h1>/Upload</h1>
-<br>
+        <br />
         <div class="container-elementos">
           <el-upload
             class="upload-demo"

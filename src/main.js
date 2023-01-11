@@ -5,4 +5,4 @@ import "element-plus/dist/index.css";
 import App from "./App.vue";
 import "../src/Estilos_dm/index.css";
 
-createApp(App).use(ElementPlus).use(router).mount("#app");
+createApp(App).use(router).use(ElementPlus).mount("#app");

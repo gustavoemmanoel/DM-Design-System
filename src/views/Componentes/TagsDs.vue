@@ -13,7 +13,7 @@
             <div>
               <h1>/Tags</h1>
               <div class="hr"></div>
-              <br>
+              <br />
               <p>
                 As tags primárias são usadas para representar status e
                 informações principais. Podem ser usadas para classificar
@@ -76,7 +76,7 @@
             <div>
               <h1>/Tags secundárias</h1>
               <div class="hr" />
-              <br>
+              <br />
               <p>
                 As tags secundárias são usadas para representar um status e
                 informações em segundo plano. Ou uma segunda categoria de
@@ -85,60 +85,112 @@
             </div>
             <br />
             <!-- PLAIN -->
-            <el-row class="container-elementos">
-              <el-col :span="12" class="tagsGap">
-                <el-tag effect="plain">default</el-tag>
-                <el-tag effect="plain" size="small">small</el-tag>
-                <el-tag effect="plain" size="mini">mini</el-tag>
-                <el-tag type="success" effect="plain">default</el-tag>
-                <el-tag type="success" size="small" effect="plain"
-                  >small</el-tag
-                >
-                <el-tag type="success" size="mini" effect="plain">mini</el-tag>
-                <el-tag type="info" effect="plain">default</el-tag>
-                <el-tag type="info" size="small" effect="plain">small</el-tag>
-                <el-tag type="info" size="mini" effect="plain">mini</el-tag>
-                <el-tag type="warning" effect="plain">default</el-tag>
-                <el-tag type="warning" size="small" effect="plain">small</el-tag>
-                <el-tag type="warning" size="mini" effect="plain">mini</el-tag>
-                <el-tag type="danger" effect="plain">default</el-tag>
-                <el-tag type="danger" size="small" effect="plain">small</el-tag>
-                <el-tag type="danger" size="mini" effect="plain">mini</el-tag>
-              </el-col>
-              <el-col :span="12" class="tagsGap">
-                <el-tag effect="plain" closable>default</el-tag>
-                <el-tag effect="plain" size="small" closable>small</el-tag>
-                <el-tag effect="plain" size="mini" closable>mini</el-tag>
-                <el-tag type="success" effect="plain" closable>default</el-tag>
-                <el-tag type="success" size="small" effect="plain" closable
-                  >small</el-tag
-                >
-                <el-tag type="success" size="mini" effect="plain" closable
-                  >mini</el-tag
-                >
-                <el-tag type="info" effect="plain" closable>default</el-tag>
-                <el-tag type="info" size="small" effect="plain" closable
-                  >small</el-tag
-                >
-                <el-tag type="info" size="mini" effect="plain" closable
-                  >mini</el-tag
-                >
-                <el-tag type="warning" effect="plain" closable>default</el-tag>
-                <el-tag type="warning" size="small" effect="plain" closable
-                  >small</el-tag
-                >
-                <el-tag type="warning" size="mini" effect="plain" closable
-                  >mini</el-tag
-                >
-                <el-tag type="danger" effect="plain" closable>default</el-tag>
-                <el-tag type="danger" size="small" effect="plain" closable
-                  >small</el-tag
-                >
-                <el-tag type="danger" size="mini" effect="plain" closable
-                  >mini</el-tag
-                >
-              </el-col>
-            </el-row>
+            <div class="container-elementos">
+              <el-row>
+                <el-col :span="12" class="tagsGap">
+                  <el-tag effect="plain">default</el-tag>
+                  <el-tag effect="plain" size="small">small</el-tag>
+                  <el-tag effect="plain" size="mini">mini</el-tag>
+                  <el-tag type="success" effect="plain">default</el-tag>
+                  <el-tag type="success" size="small" effect="plain"
+                    >small</el-tag
+                  >
+                  <el-tag type="success" size="mini" effect="plain"
+                    >mini</el-tag
+                  >
+                  <el-tag type="info" effect="plain">default</el-tag>
+                  <el-tag type="info" size="small" effect="plain">small</el-tag>
+                  <el-tag type="info" size="mini" effect="plain">mini</el-tag>
+                  <el-tag type="warning" effect="plain">default</el-tag>
+                  <el-tag type="warning" size="small" effect="plain"
+                    >small</el-tag
+                  >
+                  <el-tag type="warning" size="mini" effect="plain"
+                    >mini</el-tag
+                  >
+                  <el-tag type="danger" effect="plain">default</el-tag>
+                  <el-tag type="danger" size="small" effect="plain"
+                    >small</el-tag
+                  >
+                  <el-tag type="danger" size="mini" effect="plain">mini</el-tag>
+                </el-col>
+                <el-col :span="12" class="tagsGap">
+                  <el-tag effect="plain" closable>default</el-tag>
+                  <el-tag effect="plain" size="small" closable>small</el-tag>
+                  <el-tag effect="plain" size="mini" closable>mini</el-tag>
+                  <el-tag type="success" effect="plain" closable
+                    >default</el-tag
+                  >
+                  <el-tag type="success" size="small" effect="plain" closable
+                    >small</el-tag
+                  >
+                  <el-tag type="success" size="mini" effect="plain" closable
+                    >mini</el-tag
+                  >
+                  <el-tag type="info" effect="plain" closable>default</el-tag>
+                  <el-tag type="info" size="small" effect="plain" closable
+                    >small</el-tag
+                  >
+                  <el-tag type="info" size="mini" effect="plain" closable
+                    >mini</el-tag
+                  >
+                  <el-tag type="warning" effect="plain" closable
+                    >default</el-tag
+                  >
+                  <el-tag type="warning" size="small" effect="plain" closable
+                    >small</el-tag
+                  >
+                  <el-tag type="warning" size="mini" effect="plain" closable
+                    >mini</el-tag
+                  >
+                  <el-tag type="danger" effect="plain" closable>default</el-tag>
+                  <el-tag type="danger" size="small" effect="plain" closable
+                    >small</el-tag
+                  >
+                  <el-tag type="danger" size="mini" effect="plain" closable
+                    >mini</el-tag
+                  >
+                </el-col>
+              </el-row>
+              <br />
+
+              <span class="html_codigos_blue">
+                &#60;<span tagColor>template</span>&#62;
+                <div recuo>
+                  <!--  -->
+                  &#60;<span tagColor>el-tag</span> effect=<span roxo
+                    >"plain"</span
+                  >
+                  <span roxo>closable</span>&#62;<span black>default</span
+                  >&#60;<span tagColor>/el-tag</span>&#62;
+                  <!--  -->
+                  &#60;<span tagColor>el-tag</span> effect=<span roxo
+                    >"plain"</span
+                  >
+                  <span roxo>closable</span>&#62;<span black>Tag dm</span
+                  >&#60;<span tagColor>/el-tag</span>&#62;
+                  <!--  -->
+                  <br />
+                  &#60;<span tagColor>el-tag</span> effect=<span roxo
+                    >"plain"</span
+                  >
+                  <span roxo>closable</span>&#62;<span black>Tag dm</span
+                  >&#60;<span tagColor>/el-tag</span>&#62;
+                  <!--  -->
+                  <br />
+                  &#60;<span tagColor>el-tag</span> effect=<span roxo
+                    >"plain"</span
+                  >
+                  <span roxo>closable</span>&#62;<span black>Tag dm</span
+                  >&#60;<span tagColor>/el-tag</span>&#62;
+                </div>
+                &#60;<span tagColor>/template</span>&#62;
+              </span>
+
+              <el-collapse v-model="activeNames" @change="handleChange">
+                <el-collapse-item title="ver" name="3"> </el-collapse-item>
+              </el-collapse>
+            </div>
             <br />
             <br />
           </el-main>

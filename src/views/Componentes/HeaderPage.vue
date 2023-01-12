@@ -133,7 +133,7 @@
             <!-- SUBMENU -->
             <el-row>
               <el-col :offset="1" :span="22">
-                <el-tabs v-model="activeName" @tab-click="handleClick">
+                <el-tabs v-model="activeName1" @tab-click="handleClick">
                   <el-tab-pane label="User" name="first">User</el-tab-pane>
                   <el-tab-pane label="Config" name="second">Config</el-tab-pane>
                   <el-tab-pane label="Role" name="third">Role</el-tab-pane>
@@ -741,6 +741,7 @@ export default {
   data() {
     return {
       headerTitle: "Header",
+      activeName1: "first",
       activeName: "first",
       btnAtivo: { cores: "text-decoration: underline" },
     };

@@ -80,7 +80,8 @@ body {
 .border-left {
   border-width: 0 0 0 1px;
   border-style: solid;
-  border-color: var(--dm_cinza_03);
+  /* border-color: var(--dm_cinza_03) ; */
+  border-color: rgb(217, 217, 217);
 }
 
 .chaves,

@@ -12,7 +12,7 @@
           <el-main>
             <div>
               <h1>/Tags</h1>
-              <div class="hr"></div>
+              <hr />
               <br />
               <p>
                 As tags primárias são usadas para representar status e
@@ -151,7 +151,7 @@
 
             <div>
               <h1>/Tags secundárias</h1>
-              <div class="hr" />
+              <hr />
               <br />
               <p>
                 As tags secundárias são usadas para representar um status e

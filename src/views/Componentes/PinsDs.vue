@@ -12,7 +12,7 @@
         <div class="containerInterno">
           <div>
             <h1>/Pins</h1>
-            <div class="hr"></div>
+            <hr />
             <br>
             <p>Pins são elementos que servem para marcar pontos no mapa.</p>
           </div>

@@ -12,7 +12,7 @@
           <el-main>
             <div>
               <h1>/Checkbox</h1>
-              <div class="hr"></div>
+              <hr />
               <br />
               <p>
                 O checkbox é uma pequena caixa que pode ser clicada para

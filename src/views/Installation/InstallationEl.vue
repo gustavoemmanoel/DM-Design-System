@@ -15,14 +15,14 @@
       <br>
       <div class="container_title">
         <h1>Instalação Element Plus</h1>
-        <div class="hr" />
+        <hr />
       </div>
 
       <br>
       
       <div class="container_title">
         <h2>NPM</h2>
-        <div class="hr" />
+        <hr />
       </div>
       <p>A instalação com o npm é recomendada e funciona perfeitamente com o webpack.</p>
       <p class="box_code">npm i element-ui -S</p>
@@ -32,7 +32,7 @@
 
       <div class="container_title">
         <h2>Novo codigo</h2>
-        <div class="hr" />
+        <hr />
       </div>
       <p>XXX</p>
 

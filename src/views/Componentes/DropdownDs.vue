@@ -12,14 +12,42 @@
         <div class="containerInterno">
           <div>
             <h1>/Dropdown</h1>
-            <div class="hr"></div>
-            <br>
-            <p>
-              Pins são elementos que servem para marcar pontos no mapa.
-            </p>
+            <hr />
+            <br />
+            <p>Pins são elementos que servem para marcar pontos no mapa.</p>
           </div>
           <br />
           <div class="container-elementos">
+            <div class="flex flex-wrap items-center">
+              <el-dropdown>
+                <el-button class="button__dropdown" type="primary">
+                  Dropdown List<el-icon class="el-icon--right"
+                    ><arrow-down
+                  /></el-icon>
+                </el-button>
+                <template #dropdown>
+                  <el-dropdown-menu>
+                    <el-dropdown-item>Action 1</el-dropdown-item>
+                    <el-dropdown-item>Action 2</el-dropdown-item>
+                    <el-dropdown-item>Action 3</el-dropdown-item>
+                    <el-dropdown-item>Action 4</el-dropdown-item>
+                    <el-dropdown-item>Action 5</el-dropdown-item>
+                  </el-dropdown-menu>
+                </template>
+              </el-dropdown>
+              <el-dropdown split-button type="primary" @click="handleClick">
+                Dropdown List
+                <template #dropdown>
+                  <el-dropdown-menu>
+                    <el-dropdown-item>Action 1</el-dropdown-item>
+                    <el-dropdown-item>Action 2</el-dropdown-item>
+                    <el-dropdown-item>Action 3</el-dropdown-item>
+                    <el-dropdown-item>Action 4</el-dropdown-item>
+                    <el-dropdown-item>Action 5</el-dropdown-item>
+                  </el-dropdown-menu>
+                </template>
+              </el-dropdown>
+            </div>
           </div>
         </div>
       </el-main>
@@ -45,7 +73,3 @@ export default {
   },
 };
 </script>
-
-<style scoped>
-
-</style>

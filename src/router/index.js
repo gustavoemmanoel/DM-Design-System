@@ -1,10 +1,18 @@
 import { createRouter, createWebHashHistory } from "vue-router";
 /* Instalação */
 import InstallationEl from "../views/Installation/InstallationEl.vue";
+/* Fundação */
+import ColorsDs from "../views/Fundacao/ColorsDs.vue";
+import TipografiaDs from "../views/Fundacao/TipografiaDs.vue";
+import IconografiaDs from "../views/Fundacao/IconografiaDs.vue";
+import GridDs from "../views/Fundacao/GridDs.vue";
+import GrafismosDs from "../views/Fundacao/GrafismosDs.vue";
+
+/* Telas */
+
+import LoginDs from "../views/Telas/LoginDs.vue";
+
 /* Componentes */
-import ColorsDs from "../views/Componentes/ColorsDs.vue";
-import IconografiaDs from "../views/Componentes/IconografiaDs.vue";
-import TipografiaDs from "../views/Componentes/TipografiaDs.vue";
 import HeaderPage from "../views/Componentes/HeaderPage.vue";
 import CalendarioDs from "../views/Componentes/CalendarioDs.vue";
 import CampoTextoDs from "../views/Componentes/CampoTextoDs.vue";
@@ -18,6 +26,7 @@ import TabelasDs from "../views/Componentes/TabelasDs.vue";
 import TagsDs from "../views/Componentes/TagsDs.vue";
 import BotaoDs from "../views/Componentes/BotaoDs.vue";
 import SobreDs from "../views/Componentes/SobreDs.vue";
+import UploadDs from "../views/Componentes/UploadDs.vue";
 /* Outros */
 import PreProcessamentos from "../views/PreProcessamentos.vue";
 import PDF from "../views/PDF.vue";
@@ -29,7 +38,6 @@ const routes = [
     component: InstallationEl,
   },
 
-  /* Fundação */
   {
     path: "/PDF",
     name: "PDF",
@@ -40,7 +48,7 @@ const routes = [
     name: "PreProcessamentos",
     component: PreProcessamentos,
   },
-
+  /* Fundação */
   {
     path: "/ColorsDs",
     name: "ColorsDs",
@@ -56,7 +64,29 @@ const routes = [
     name: "IconografiaDs",
     component: IconografiaDs,
   },
+  {
+    path: "/GrafismosDs",
+    name: "Grafismoss",
+    component: GrafismosDs,
+  },
+  {
+    path: "/GridDs",
+    name: "GridaDs",
+    component: GridDs,
+  },
+  /* Telas */
+  {
+    path: "/LoginDs",
+    name: "LoginDs",
+    component: LoginDs,
+  },
+
   /* Componentes */
+  {
+    path: "/UploadDs",
+    name: "UploadDs",
+    component: UploadDs,
+  },
   {
     path: "/HeaderPage",
     name: "HeaderPage",

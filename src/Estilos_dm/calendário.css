@@ -1,0 +1,33 @@
+.el-range-editor.is-active {
+    box-shadow: 0 0 0 2px var(--dm_cinza_02) inset
+}
+
+.el-date-editor.el-input__wrapper {
+    box-shadow: 0 0 0 2px var(--dm_cinza_02, var(--el-border-color)) inset
+}
+
+.el-date-editor.el-input__wrapper:hover {
+    box-shadow: 0 0 0 2px var(--dm_azul_00, var(--dm_azul_00)) inset
+}
+
+/* Popup */
+
+.el-date-range-picker__content.is-left {
+    border-right: none
+}
+
+.el-date-table th {
+    color: var(--dm_cinza_01);
+}
+
+.el-date-table td.today .el-date-table-cell__text {
+    color: var(--dm_azul_00);  
+}
+
+.el-date-range-picker__header div {
+    font-weight: 700;
+}
+
+.el-date-table th{
+    border-bottom: none
+}

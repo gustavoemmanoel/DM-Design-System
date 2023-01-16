@@ -14,14 +14,24 @@
       <router-link to="ColorsDs">Cores</router-link>
       <router-link to="TipografiaDs"> Tipografia </router-link>
       <router-link to="IconografiaDs"> Iconografia </router-link>
+      <router-link to="GrafismosDs"> Grafismos </router-link>
+      <router-link to="GridDs"> Grid </router-link>
     </div>
-
+    
+    
+    <!-- Telas -->
+    <div class="component-tag">Telas</div>
+    <div class="options">
+      <router-link to="LoginDs">Login</router-link>
+    </div>
+    
     <!-- Componentes -->
     <div class="component-tag">Componentes</div>
     <div class="options">
       <router-link to="HeaderPage">Header</router-link>
       <router-link to="BotaoDs">Botão</router-link>
       <router-link to="CampoTextoDs">Campo de Texto</router-link>
+      <router-link to="UploadDs">Upload</router-link>
       <router-link to="CalendarioDs">Calendário</router-link>
       <router-link to="CardsDs">Cards</router-link>
       <router-link to="CheckboxDs">Checkbox</router-link>

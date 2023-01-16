@@ -9,18 +9,43 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-@import "inputs.css";
-@import "buttons.css";
+*::-webkit-scrollbar {
+  width: 16px;               /* width of the entire scrollbar */
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--dm_creme_02);        /* color of the tracking area */
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--dm_cinza_03);    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 3px solid var(--dm_creme_02);  /* creates padding around scroll thumb */
+}
+
+/* Fundação */
+@import "tipografia.css";
 @import "cores.css";
-@import "outros.css";
+@import "iconografia.css";
+
+/* Telas */
+@import "login.css";
+
+/* Components */
+@import "header.css";
+@import "campodetexto.css";
+@import "buttons.css";
 @import "table.css";
 @import "tags.css";
-@import "tipografia.css";
 @import "loading.css";
-@import "iconografia.css";
+@import "calendário.css";
+@import "dropdown.css";
 @import "checkbox.css";
 @import "upload.css";
 /* @import "testes.css"; */
+
+/* Outros */
+@import "outros.css";
 
 :root {
   --el-color-primary: var(--dm_azul_00);
@@ -38,8 +63,7 @@ body {
   --el-color-primary-light-5: var(--dm_azul_02);
 }
 
-.hr {
-  background: var(--dm_cinza_04);
-  height: 1px;
-  width: 100%;
+hr, .hr {
+  border: none;
+  border-top: 1px solid var(--dm_cinza_04);
 }

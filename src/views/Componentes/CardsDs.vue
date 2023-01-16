@@ -12,7 +12,7 @@
         <div class="containerInterno">
           <div>
             <h1>/Cards</h1>
-            <div class="hr"></div>
+            <hr />
             <br />
             <p>
               Cards permitem a visualização das principais informações de modo
@@ -26,11 +26,13 @@
               <!-- Cards clicáveis -->
               <span>
                 <h4>Cards clicáveis</h4>
+                <br>
                 <div class="dm-card dm-card--clicavel"><h4>Mercantil</h4></div>
               </span>
               <!-- Cards estático -->
               <span>
                 <h4>Cards estático</h4>
+                <br>
                 <div class="dm-card dm-card--estatico">
                   <h4>Renda média</h4>
                 </div>
@@ -38,7 +40,7 @@
               <!-- Card Romaneio -->
               <span>
                 <h4>Card Romaneio</h4>
-
+                <br>
                 <div class="dm-card dm-card--romaneio">
                   <div class="dm-card__barra" />
                   <div class="dm-card--content">

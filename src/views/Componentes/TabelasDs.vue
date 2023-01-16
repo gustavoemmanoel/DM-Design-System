@@ -10,7 +10,7 @@
       <el-main>
         <div>
           <h1>/Tabelas</h1>
-          <div class="hr"></div>
+          <hr />
           <br />
           <p>
             As tabelas exibem uma série de dados de forma estrutura com linhas e

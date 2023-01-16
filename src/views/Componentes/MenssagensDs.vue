@@ -12,10 +12,10 @@
         <div class="containerInterno">
           <div>
             <h1>/Menssagens</h1>
-            <div class="hr"></div>
+            <hr />
             <br>
             <p>
-              Pins são elementos que servem para marcar pontos no mapa.
+              Mensagens aparecem na tela para comunicar ao usuário informações importantes antes de executar alguma ação, durante a utilização do sistema ou após alguma ação ser executada.
             </p>
           </div>
           <br />

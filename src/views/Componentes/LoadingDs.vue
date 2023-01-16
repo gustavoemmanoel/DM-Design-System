@@ -12,7 +12,7 @@
         <div class="containerInterno">
           <div>
             <h1>/Loading</h1>
-            <div class="hr"></div>
+            <hr />
             <br>
             <p>
               Barras de loading mostram o progresso de alguma operação do
@@ -22,22 +22,6 @@
             </p>
           </div>
           <br />
-          <!--  <div class="container-elementos">
-            <div
-              v-loading="true"
-              element-loading-text="Loading..."
-              element-loading-spinner="el-icon-loading"
-            >
-              <h1>Mateus</h1>
-              <br />
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Voluptatibus dolores cum corrupti neque nisi, dolorum similique
-                odio assumenda quibusdam suscipit, eaque, aut et molestias
-                maxime repellat debitis quis consectetur voluptate!
-              </p>
-            </div>
-          </div> -->
         </div>
 
         <div class="container-elementos">
@@ -56,7 +40,7 @@
             <el-collapse-item title="ver" name="1">
               <div class="html_codigos_blue">
                 <span
-                  >&#60;el-progress :stroke-width=<span roxo>"14</span>"
+                  >&#60;<span tagColor>el-progress</span> :stroke-width=<span roxo>"14"</span>
                   :percentage=<span roxo>"100"</span> :format=<span roxo
                     >"format"/
                   </span>
@@ -64,17 +48,17 @@
                 </span>
                 <br />
                 <span
-                  >&#60;el-progress :stroke-width=<span roxo>"14</span>"
+                  >&#60;<span tagColor>el-progress</span> :stroke-width=<span roxo>"14"</span>
                   :percentage=<span roxo>"20"</span>/&#62;</span
                 ><br />
                 <span
-                  >&#60;el-progress :stroke-width=<span roxo>"14</span>"
+                  >&#60;<span tagColor>el-progress</span> :stroke-width=<span roxo>"14"</span>
                   :percentage=<span roxo> "60" </span>
                   &#62;/
                 </span>
                 <br />
                 <span
-                  >&#60;el-progress :stroke-width=<span roxo>"14</span>"
+                  >&#60;<span tagColor>el-progress</span> :stroke-width=<span roxo>"14"</span>
                   :percentage=<span roxo> "50" </span>
                   &#62;/
                 </span>
@@ -101,19 +85,19 @@
               <el-collapse-item title="ver" name="1">
                 <div class="html_codigos_blue">
                   <span
-                    >&#60;el-progress :percentage=<span roxo>"10"</span>
+                    >&#60;<span tagColor>el-progress</span> :percentage=<span roxo>"10"</span>
                     :color=<span roxo>"colors"</span>/&#62;</span
                   ><br />
                   <span
-                    >&#60;el-progress :percentage=<span roxo>"30"</span>
+                    >&#60;<span tagColor>el-progress</span> :percentage=<span roxo>"30"</span>
                     :color=<span roxo>"colors"</span>/&#62;</span
                   ><br />
                   <span
-                    >&#60;el-progress :percentage=<span roxo>"70"</span>
+                    >&#60;<span tagColor>el-progress</span> :percentage=<span roxo>"70"</span>
                     :color=<span roxo>"colors"</span>/&#62;</span
                   ><br />
                   <span
-                    >&#60;el-progress :percentage=<span roxo>"100"</span>
+                    >&#60;<span tagColor>el-progress</span> :percentage=<span roxo>"100"</span>
                     :color=<span roxo>"colors"</span>/&#62;</span
                   ><br />
                 </div>

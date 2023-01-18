@@ -1,0 +1,72 @@
+.grafismo {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.grafismo-cont {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.grafismo-cont__img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.grafismo__protagonizar {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    bottom: 30px;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.grafismo__content {
+    position: absolute;
+    width: max-content;
+    margin-left: 5%;
+    top: 65vh;
+}
+
+.grafismo__title {
+    background-color: var(--dm_creme_02);
+    padding: 18px;
+    font-weight: 500;
+    color: var(--dm_preto_00);
+    width: max-content;
+}
+
+.grafismo__dm {
+    height: 70px;
+    transform: translatex(305px);
+}
+
+.form-container {
+    background: var(--dm_creme_02);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form__button {
+    width: 100%;
+}
+
+.fale-conosco {
+    position: absolute;
+    bottom: 10vh;
+    margin: auto;
+}
+
+@media only screen and (max-width: 1050px) {
+    .grafismo__dm {
+        height: 70px;
+        transform: translatex(0);
+    }
+}

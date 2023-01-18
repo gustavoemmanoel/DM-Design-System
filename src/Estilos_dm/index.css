@@ -6,6 +6,8 @@
 
 body {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box !important;
   font-family: "Roboto", sans-serif;
 }
 
@@ -42,7 +44,6 @@ body {
 @import "dropdown.css";
 @import "checkbox.css";
 @import "upload.css";
-/* @import "testes.css"; */
 
 /* Outros */
 @import "outros.css";

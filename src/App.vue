@@ -15,7 +15,6 @@ export default {
   box-sizing: border-box;
 }
 body {
-  overflow-y: scroll;
   background: var(--dm_creme_02);
 }
 

@@ -83,190 +83,194 @@
             </span>
           </div>
           <br />
-          <div class="html_codigos_blue">
-            &#60;<span tagColor>div</span>&#62;
-            <div class="border-left">
-              <div recuo>
-                &#60;<span tagColor>el-row</span>&#62;
+          <el-collapse v-model="activeNames" @change="handleChange">
+            <el-collapse-item title="ver" name="3">
+              <div class="html_codigos_blue">
+                &#60;<span tagColor>div</span>&#62;
                 <div class="border-left">
                   <div recuo>
-                    &#60;<span tagColor>el-col</span> :span=<span roxo
-                      >"12"</span
-                    >
-                    class=<span roxo>"form-container"</span>&#62;
+                    &#60;<span tagColor>el-row</span>&#62;
                     <div class="border-left">
                       <div recuo>
                         &#60;<span tagColor>el-col</span> :span=<span roxo
-                          >"16"</span
-                        >&#62;
+                          >"12"</span
+                        >
+                        class=<span roxo>"form-container"</span>&#62;
                         <div class="border-left">
                           <div recuo>
-                            &#60;<span tagColor>el-form</span>&#62;
+                            &#60;<span tagColor>el-col</span> :span=<span roxo
+                              >"16"</span
+                            >&#62;
                             <div class="border-left">
                               <div recuo>
-                                &#60;<span tagColor>h1</span>&#62;&#60;<span
-                                  tagColor
-                                  >span</span
-                                >
-                                style=<span roxo
-                                  >"color: var(--dm_azul_00)"</span
-                                >&#62;<span black>/</span>&#60;/<span tagColor
-                                  >span</span
-                                >&#62;<span black>Login</span>&#60;/<span
-                                  tagColor
-                                  >h1</span
+                                &#60;<span tagColor>el-form</span>&#62;
+                                <div class="border-left">
+                                  <div recuo>
+                                    &#60;<span tagColor>h1</span>&#62;&#60;<span
+                                      tagColor
+                                      >span</span
+                                    >
+                                    style=<span roxo
+                                      >"color: var(--dm_azul_00)"</span
+                                    >&#62;<span black>/</span>&#60;/<span
+                                      tagColor
+                                      >span</span
+                                    >&#62;<span black>Login</span>&#60;/<span
+                                      tagColor
+                                      >h1</span
+                                    >&#62;
+                                    <br />
+                                    &#60;<span tagColor>br</span> /&#62;
+                                  </div>
+                                  <!-- Email -->
+                                  <div recuo>
+                                    <span green>&#60;!-- Email --&#62;</span>
+                                    <br />
+                                    &#60;<span tagColor>el-form-item</span>&#62;
+                                    <div recuo>
+                                      &#60;<span tagColor>el-input</span>
+                                      type=<span roxo>"text"</span>
+                                      placeholder=<span roxo>"E-mail"</span>
+                                      /&#62;
+                                    </div>
+                                    &#60;/<span tagColor>el-form-item</span
+                                    >&#62;
+                                  </div>
+                                  <!-- Senha -->
+                                  <div recuo>
+                                    <br />
+                                    <span green>&#60;!-- Senha --&#62;</span>
+                                    <br />
+                                    &#60;<span tagColor>el-form-item</span>&#62;
+                                    <div recuo>
+                                      &#60;<span tagColor>el-input</span>
+                                      type=<span roxo>"password"</span>
+                                      placeholder=<span roxo>"Senha"</span>
+                                      /&#62;
+                                    </div>
+                                    &#60;/<span tagColor>el-form-item</span
+                                    >&#62;
+                                  </div>
+                                  <!-- Entrar -->
+                                  <div recuo>
+                                    <br />
+                                    <span green>&#60;!-- Entrar --&#62;</span>
+                                    <br />
+                                    &#60;<span tagColor>el-form-item</span>&#62;
+                                    <div recuo>
+                                      &#60;<span tagColor>el-button</span>
+                                      type=<span roxo>"primario"</span>
+                                      class=<span roxo>"form__button"</span
+                                      >&#62;<span black>Entrar</span>&#60;/<span
+                                        tagColor
+                                        >el-button</span
+                                      >&#62;
+                                    </div>
+                                    &#60;/<span tagColor>el-form-item</span
+                                    >&#62;
+                                    <!-- button -->
+                                    <br />
+                                    <br />
+                                    <span green>&#60;!-- Button --&#62;</span>
+                                    <br />
+                                    &#60;<span tagColor>el-button</span>
+                                    type=<span roxo>"terciario"</span>&#62;<span
+                                      black
+                                      >Esqueceu a senha?</span
+                                    >&#60;/<span tagColor>el-button</span>&#62;
+                                  </div>
+                                </div>
+                                &#60;/<span tagColor>el-form</span>&#62;
+                                <br />
+                                &#60;<span tagColor>p</span> class=<span roxo
+                                  >"fale-conosco"</span
                                 >&#62;
-                                <br />
-                                &#60;<span tagColor>br</span> /&#62;
-                              </div>
-                              <!-- Email -->
-                              <div recuo>
-                                <span green>&#60;!-- Email --&#62;</span>
-                                <br />
-                                &#60;<span tagColor>el-form-item</span>&#62;
                                 <div recuo>
-                                  &#60;<span tagColor>el-input</span> type=<span
+                                  &#60;<span tagColor>span</span> style=<span
                                     roxo
-                                    >"text"</span
-                                  >
-                                  placeholder=<span roxo>"E-mail"</span> /&#62;
+                                    >"color: var(--dm_azul_00)"</span
+                                  >&#62;<span black>/</span>&#60;/<span tagColor
+                                    >span</span
+                                  >&#62;<span black>fale conosco: </span>
+                                  &#60;<span tagColor>u</span>&#62;<span black
+                                    >contato@datamachina.com.br</span
+                                  >&#60;/<span tagColor>u</span>&#62;
                                 </div>
-                                &#60;/<span tagColor>el-form-item</span>&#62;
-                              </div>
-                              <!-- Senha -->
-                              <div recuo>
+                                &#60;/<span tagColor>p</span>&#62;
                                 <br />
-                                <span green>&#60;!-- Senha --&#62;</span>
-                                <br />
-                                &#60;<span tagColor>el-form-item</span>&#62;
-                                <div recuo>
-                                  &#60;<span tagColor>el-input</span> type=<span
-                                    roxo
-                                    >"password"</span
-                                  >
-                                  placeholder=<span roxo>"Senha"</span> /&#62;
-                                </div>
-                                &#60;/<span tagColor>el-form-item</span>&#62;
-                              </div>
-                              <!-- Entrar -->
-                              <div recuo>
-                                <br />
-                                <span green>&#60;!-- Entrar --&#62;</span>
-                                <br />
-                                &#60;<span tagColor>el-form-item</span>&#62;
-                                <div recuo>
-                                  &#60;<span tagColor>el-button</span>
-                                  type=<span roxo>"primario"</span> class=<span
-                                    roxo
-                                    >"form__button"</span
-                                  >&#62;<span black>Entrar</span>&#60;/<span
-                                    tagColor
-                                    >el-button</span
-                                  >&#62;
-                                </div>
-                                &#60;/<span tagColor>el-form-item</span>&#62;
-                                <!-- button -->
-                                <br />
-                                <br />
-                                <span green>&#60;!-- Button --&#62;</span>
-                                <br />
-                                &#60;<span tagColor>el-button</span> type=<span
-                                  roxo
-                                  >"terciario"</span
-                                >&#62;<span black>Esqueceu a senha?</span
-                                >&#60;/<span tagColor>el-button</span>&#62;
                               </div>
                             </div>
-                            &#60;/<span tagColor>el-form</span>&#62;
-                            <br />
-                            &#60;<span tagColor>p</span> class=<span roxo
-                              >"fale-conosco"</span
-                            >&#62;
-                            <div recuo>
-                              &#60;<span tagColor>span</span> style=<span roxo
-                                >"color: var(--dm_azul_00)"</span
-                              >&#62;<span black>/</span>&#60;/<span tagColor
-                                >span</span
-                              >&#62;<span black>fale conosco: </span> &#60;<span
-                                tagColor
-                                >u</span
-                              >&#62;<span black>contato@datamachina.com.br</span
-                              >&#60;/<span tagColor>u</span>&#62;
-                            </div>
-                            &#60;/<span tagColor>p</span>&#62;
-                            <br />
+                            &#60;/<span tagColor>el-col</span>&#62;
                           </div>
                         </div>
                         &#60;/<span tagColor>el-col</span>&#62;
-                      </div>
-                    </div>
-                    &#60;/<span tagColor>el-col</span>&#62;
-                    <br />
-                    <br />
-                    &#60;<span tagColor>el-col</span> :span=<span roxo
-                      >"12"</span
-                    >
-                    class=<span roxo>"grafismo"</span>&#62;
-                    <br />
-
-                    <div recuo>
-                      &#60;<span tagColor>div</span> class=<span roxo
-                        >"grafismo-cont"</span
-                      >&#62;
-                      <div recuo>
-                        &#60;<span tagColor>img</span> class=<span roxo
-                          >"grafismo-cont__img"</span
-                        >
-                        src=<span roxo>"login-grafismo.jpg"</span> alt=<span
-                          roxo
-                          >"background"</span
-                        >
-                        /&#62;
-                      </div>
-                      &#60;/<span tagColor>div</span>&#62;
-                    </div>
-                    <div recuo>
-                      &#60;<span tagColor>div</span> class=<span roxo
-                        >"grafismo__protagonizar"</span
-                      >&#62;
-                      <div recuo>
-                        &#60;<span tagColor>div</span> class=<span roxo
-                          >"grafismo__content"</span
-                        >&#62;
                         <br />
-                        <div recuo>
-                          &#60;<span tagColor>h3</span> class=<span roxo
-                            >"grafismo__title"</span
-                          >&#62;&#60;<span tagColor>span</span> style=<span roxo
-                            >"color: var(--dm_azul_00)"</span
-                          >&#62;/&#60;/<span tagColor>span</span>&#62;<span
-                            black
-                            >Protagonizar a mudança!</span
-                          >&#60;/<span tagColor>h3</span>&#62;
-                          <br />
-                          &#60;<span tagColor>img</span> class=<span roxo
-                            >"grafismo__dm"</span
-                          >
-                          src=<span roxo>"dm_login.svg"</span> alt=<span roxo
-                            >"Data Machina"</span
-                          >
-                          /&#62;
-                        </div>
-                        &#60;/<span tagColor>div</span>&#62;
-                      </div>
-                      &#60;/<span tagColor>div</span>&#62;
-                    </div>
+                        <br />
+                        &#60;<span tagColor>el-col</span> :span=<span roxo
+                          >"12"</span
+                        >
+                        class=<span roxo>"grafismo"</span>&#62;
+                        <br />
 
-                    &#60;/<span tagColor>el-col</span>&#62;
+                        <div recuo>
+                          &#60;<span tagColor>div</span> class=<span roxo
+                            >"grafismo-cont"</span
+                          >&#62;
+                          <div recuo>
+                            &#60;<span tagColor>img</span> class=<span roxo
+                              >"grafismo-cont__img"</span
+                            >
+                            src=<span roxo>"login-grafismo.jpg"</span> alt=<span
+                              roxo
+                              >"background"</span
+                            >
+                            /&#62;
+                          </div>
+                          &#60;/<span tagColor>div</span>&#62;
+                        </div>
+                        <div recuo>
+                          &#60;<span tagColor>div</span> class=<span roxo
+                            >"grafismo__protagonizar"</span
+                          >&#62;
+                          <div recuo>
+                            &#60;<span tagColor>div</span> class=<span roxo
+                              >"grafismo__content"</span
+                            >&#62;
+                            <br />
+                            <div recuo>
+                              &#60;<span tagColor>h3</span> class=<span roxo
+                                >"grafismo__title"</span
+                              >&#62;&#60;<span tagColor>span</span> style=<span
+                                roxo
+                                >"color: var(--dm_azul_00)"</span
+                              >&#62;/&#60;/<span tagColor>span</span>&#62;<span
+                                black
+                                >Protagonizar a mudança!</span
+                              >&#60;/<span tagColor>h3</span>&#62;
+                              <br />
+                              &#60;<span tagColor>img</span> class=<span roxo
+                                >"grafismo__dm"</span
+                              >
+                              src=<span roxo>"dm_login.svg"</span> alt=<span
+                                roxo
+                                >"Data Machina"</span
+                              >
+                              /&#62;
+                            </div>
+                            &#60;/<span tagColor>div</span>&#62;
+                          </div>
+                          &#60;/<span tagColor>div</span>&#62;
+                        </div>
+
+                        &#60;/<span tagColor>el-col</span>&#62;
+                      </div>
+                    </div>
+                    &#60;/<span tagColor>el-row</span>&#62;
                   </div>
                 </div>
-                &#60;/<span tagColor>el-row</span>&#62;
+                &#60;/<span tagColor>div</span>&#62;
               </div>
-            </div>
-            &#60;/<span tagColor>div</span>&#62;
-          </div>
-          <el-collapse v-model="activeNames" @change="handleChange">
-            <el-collapse-item title="ver" name="3"> </el-collapse-item>
+            </el-collapse-item>
           </el-collapse>
         </div>
       </el-main>

@@ -41,6 +41,7 @@
       <router-link to="PinsDs">Pins</router-link>
       <router-link to="TabelasDs">Tabelas</router-link>
       <router-link to="TagsDs">Tags</router-link>
+      <router-link to="LegendaDs">Legenda</router-link>
     </div>
     <router-link to="SobreDs" class="component-tag"> Sobre </router-link>
     <!--  <el-footer>

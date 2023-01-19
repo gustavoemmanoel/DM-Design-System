@@ -9,7 +9,7 @@
       </el-aside>
       <el-main>
         <div>
-          <h1>/login</h1>
+          <h1>/Login</h1>
           <hr />
           <br />
           <p>Tela de login.</p>
@@ -59,7 +59,7 @@
                     <div class="grafismo-cont">
                       <img
                         class="grafismo-cont__img"
-                        src="login-grafismo.jpg"
+                        src="imagens_design_system/login-grafismo.jpg"
                         alt="background"
                       />
                     </div>
@@ -71,7 +71,7 @@
                         </h3>
                         <img
                           class="grafismo__dm"
-                          src="dm_login.svg"
+                          src="imagens_design_system/dm_login.svg"
                           alt="Data Machina"
                         />
                       </div>

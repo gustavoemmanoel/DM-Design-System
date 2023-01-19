@@ -27,6 +27,7 @@ import TagsDs from "../views/Componentes/TagsDs.vue";
 import BotaoDs from "../views/Componentes/BotaoDs.vue";
 import SobreDs from "../views/Componentes/SobreDs.vue";
 import UploadDs from "../views/Componentes/UploadDs.vue";
+import LegendaDs from "../views/Componentes/LegendaDs.vue";
 /* Outros */
 import PreProcessamentos from "../views/PreProcessamentos.vue";
 import PDF from "../views/PDF.vue";
@@ -147,6 +148,12 @@ const routes = [
     name: "TagsDs",
     component: TagsDs,
   },
+  {
+    path: "/LegendaDs",
+    name: "LegendaDs",
+    component: LegendaDs,
+  },
+  /* Sobre */
   {
     path: "/SobreDs",
     name: "SobreDS",

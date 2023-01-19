@@ -7,21 +7,27 @@
   border: none;
   border-radius: 6px;
 }
+
 .el-button:hover {
   color: var(--dm_preto_00);
 }
+
 .el-button--success {
   --el-button-bg-color: var(--dm_verde_00);
 }
+
 .el-button--warning {
   --el-button-bg-color: var(--dm_amarelo_00);
 }
+
 .el-button--danger {
   --el-button-bg-color: var(--dm_vermelho_00);
 }
+
 .el-button--info {
   --el-button-bg-color: var(--el-color-info);
 }
+
 /*  */
 .el-button--primario {
   box-shadow: 0 3px 6px var(--dm_cinza_03);
@@ -37,6 +43,7 @@
   height: 35px;
   cursor: pointer;
 }
+
 .el-button--primario-larger {
   box-shadow: 0 3px 6px var(--dm_cinza_03);
   font-family: "Roboto", sans-serif;
@@ -53,16 +60,19 @@
   height: 45px;
   padding: 0 20px;
 }
+
 .el-button--primario-larger:hover,
 .el-button--primario:hover {
   background: var(--dm_azul_02);
   color: var(--dm_creme_00) !important;
   transition: 0.2s;
 }
+
 .el-button:focus {
   background: var(--dm_amarelo_00);
   color: var(--dm_creme_02);
 }
+
 .el-button--secundario {
   box-shadow: 0 3px 6px var(--dm_cinza_03);
   font-family: "Rotobo", sans-serif;
@@ -77,6 +87,21 @@
   height: 35px;
   cursor: pointer;
 }
+
+.el-button--secundario:focus {
+  border-color: var(--dm_amarelo_00);
+  background-color: var(--dm_creme_00);
+  color: var(--dm_amarelo_00);
+}
+
+.el-button--secundario:hover,
+.el-button--secundario-larger:hover {
+  background: var(--dm_azul_02);
+  border-color: var(--dm_azul_00);
+  color: var(--dm_azul_00);
+  transition: 0.2s;
+}
+
 .el-button--secundario-larger {
   box-shadow: 0 3px 6px var(--dm_cinza_03);
   font-family: "Rotobo", sans-serif;
@@ -91,18 +116,13 @@
   height: 45px;
   padding: 0 20px;
 }
-.el-button--secundario:focus {
+
+.el-button--secundario-larger:focus {
   border-color: var(--dm_amarelo_00);
   background-color: var(--dm_creme_00);
   color: var(--dm_amarelo_00);
 }
-.el-button--secundario:hover,
-.el-button--secundario-larger:hover {
-  background: var(--dm_azul_02);
-  border-color: var(--dm_azul_00);
-  color: var(--dm_azul_00);
-  transition: 0.2s;
-}
+
 .el-button--terciario {
   font-family: "Rotobo", sans-serif;
   color: var(--dm_azul_00);
@@ -116,6 +136,7 @@
   text-decoration: underline;
   box-shadow: none;
 }
+
 .el-button--terciario-larger {
   font-family: "Rotobo", sans-serif;
   color: var(--dm_azul_00);
@@ -129,12 +150,20 @@
   text-decoration: underline;
   box-shadow: none;
 }
+
 .el-button--terciario:focus {
   color: var(--dm_amarelo_00);
+  background: none;
 }
+
 .el-button--terciario:hover,
 .el-button--terciario-larger:hover {
-  color: var(--dm_azul_02) !important;
+  color: var(--dm_azul_02);
   background: none;
   transition: 0.2s;
+}
+
+.el-button--terciario-larger:focus {
+  color: var(--dm_amarelo_00);
+  background: none;
 }

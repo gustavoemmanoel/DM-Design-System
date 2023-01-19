@@ -44,6 +44,7 @@ body {
 @import "dropdown.css";
 @import "checkbox.css";
 @import "upload.css";
+@import "legenda.css";
 
 /* Outros */
 @import "outros.css";

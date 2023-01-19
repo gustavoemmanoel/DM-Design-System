@@ -27,11 +27,11 @@
             <br />
             <el-row>
               <el-col :span="8">
-                <img src="/pins/bom.svg" alt="Bom" />
-                <img src="/pins/media.svg" alt="Media" />
-                <img src="/pins/ruim.svg" alt="Ruim" />
-                <img src="/pins/pinBlueCoroa.svg" alt="Pin" />
-                <img src="/pins/pinBlueCoroaBom.svg" alt="Pin" />
+                <img src="imagens_design_system/pins/bom.svg" alt="Bom" />
+                <img src="imagens_design_system/pins/media.svg" alt="Media" />
+                <img src="imagens_design_system/pins/ruim.svg" alt="Ruim" />
+                <img src="imagens_design_system/pins/pinBlueCoroa.svg" alt="Pin" />
+                <img src="imagens_design_system/pins/pinBlueCoroaBom.svg" alt="Pin" />
               </el-col>
               <el-col :span="8">
                 <strong>Pin</strong>

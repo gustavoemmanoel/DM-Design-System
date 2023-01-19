@@ -158,7 +158,7 @@
           <div>
             <el-row class="header">
               <el-row>
-                <img class="img-header" src="/icons/dm.svg" />
+                <img class="img-header" src="imagens_design_system/icons/whiteicons/dm.svg" />
                 <h4 style="color: var(--dm_creme_00)">DataMachina</h4>
               </el-row>
 
@@ -170,7 +170,7 @@
                   :width="200"
                 >
                   <template #reference>
-                    <img class="icon" src="/icons/whiteicons/produtos.svg" />
+                    <img class="icon" src="imagens_design_system/icons/whiteicons/produtos.svg" />
                   </template>
                   <el-col>
                     <el-row class="optionMenu">Logística</el-row>
@@ -187,7 +187,7 @@
 
                 <el-popover placement="bottom" trigger="click" :width="400">
                   <template #reference>
-                    <img class="icon" src="/icons/whiteicons/notificacao.svg" />
+                    <img class="icon" src="imagens_design_system/icons/whiteicons/notificacao.svg" />
                   </template>
 
                   <el-col>
@@ -209,7 +209,7 @@
                   <template #reference>
                     <img
                       class="icon"
-                      src="/icons/whiteicons/interrogacao.svg"
+                      src="imagens_design_system/icons/whiteicons/interrogacao.svg"
                     />
                   </template>
                   <el-col>
@@ -227,7 +227,7 @@
                 <!-- PERFIL -->
                 <el-popover placement="bottom" trigger="click" :width="360">
                   <template #reference>
-                    <img class="icon" src="/icons/whiteicons/perfil.svg" />
+                    <img class="icon" src="imagens_design_system/icons/whiteicons/perfil.svg" />
                   </template>
                   <el-col>
                     <el-row class="optionMenu">
@@ -803,7 +803,7 @@
               :width="200"
             >
               <template #reference>
-                <img class="icon" src="icons/produtos.svg" alt="produto" />
+                <img class="icon" src="imagens_design_system/icons/blackicons/produtos.svg" alt="produto" />
               </template>
 
               <el-col>
@@ -835,7 +835,7 @@
           <!-- Notificações -->
           <el-popover placement="bottom" trigger="click" :width="400">
             <template #reference>
-              <img class="icon" src="icons/notificacao.svg" alt="Notificação" />
+              <img class="icon" src="imagens_design_system/icons/blackicons/notificacao.svg" alt="Notificação" />
             </template>
             <el-col>
               <el-row class="optionMenu"
@@ -865,7 +865,7 @@
           <!-- DÚVIDAS -->
           <el-popover placement="bottom" trigger="click" :width="300">
             <template #reference>
-              <img class="icon" src="icons/duvida.svg" alt="Dúvidas" />
+              <img class="icon" src="imagens_design_system/icons/blackicons/duvida.svg" alt="Dúvidas" />
             </template>
             <el-col>
               <el-row class="optionMenu">versão: 2cf2f45f</el-row>
@@ -893,7 +893,7 @@
           <!-- PERFIL -->
           <el-popover placement="bottom" trigger="click" :width="360">
             <template #reference>
-              <img class="icon" src="icons/perfil.svg" alt="Perfil" />
+              <img class="icon" src="imagens_design_system/icons/blackicons/perfil.svg" alt="Perfil" />
             </template>
             <el-col>
               <el-row class="optionMenu">

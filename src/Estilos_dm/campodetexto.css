@@ -29,7 +29,7 @@
   box-shadow: 0 0 0 1px var(--dm_azul_00) inset;
 }
 .el-loading-spinner .circular {
-  background-image: url("../../public/icons/loading.svg");
+  background-image: url("../../public/imagens_design_system/icons/blackicons/loading.svg");
   background-size: 30px;
   background-repeat: no-repeat;
   background-position: center;

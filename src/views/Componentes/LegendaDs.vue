@@ -17,25 +17,256 @@
             <p>
               A legenda é um quadro que contém os elementos gráficos presentes
               no mapa, representados através de cores, ícones, hachuras, pontos
-              e linhas e suas respectivas descrições..
+              e linhas e suas respectivas descrições.
             </p>
           </div>
           <br />
           <div class="container-elementos">
-            <div class="legenda-dm">
-              <p class="body_02">legend</p>
-              <div class="demo-collapse">
-                <el-collapse v-model="activeNames" @change="handleChange">
-                  <el-collapse-item title="Consistency" name="1">
+            <el-row>
+              <el-col :span="6">
+                <el-collapse
+                  class="legenda-dm"
+                  legenda
+                  v-model="activeNames"
+                  @change="handleChange"
+                >
+                  <el-collapse-item title="Legenda">
                     <div>
-                      Consistent with real life: in line with the process and
-                      logic of real life, and comply with languages and habits
-                      that the users are used to;
+                      <p class="body_04 body_05--title">/Project Title</p>
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Repellat unde deserunt nostrum suscipit ut exercitationem
+                      id hic sit quaerat illo libero, molestias quo quod porro
+                      autem nemo iste. Laboriosam, mollitia.
+                    </div>
+                    <hr />
+                    <p class="body_04 body_05--title">/Project Title</p>
+                    <div>
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Repellat unde deserunt nostrum suscipit ut exercitationem
+                      id hic sit quaerat illo libero, molestias quo quod porro
+                      autem nemo iste. Laboriosam, mollitia.
                     </div>
                   </el-collapse-item>
                 </el-collapse>
-              </div>
-            </div>
+              </el-col>
+              <el-col :span="6" :offset="1">
+                <!-- Início Legenda Design System -->
+                <el-collapse
+                  class="legenda-dm"
+                  legenda
+                  v-model="activeNames"
+                  @change="handleChange"
+                >
+                  <el-collapse-item title="Legenda">
+                    <div class="legenda legenda-margin">
+                      <p class="body_05 body_05--title">/Pins</p>
+                      <div>
+                        <img
+                          class="legenda__pin"
+                          src="imagens_design_system/pins/pinRosa.svg"
+                          alt="pinRosa"
+                        />
+                        <p class="detail_02">Pin rosa</p>
+                      </div>
+                      <div>
+                        <img
+                          class="legenda__pin"
+                          src="imagens_design_system/pins/pinAzul.svg"
+                          alt="pinRosa"
+                        />
+                        <p class="detail_02">Pin rosa</p>
+                      </div>
+                      <div>
+                        <img
+                          class="legenda__pin"
+                          src="imagens_design_system/pins/pinLilas.svg"
+                          alt="pinRosa"
+                        />
+                        <p class="detail_02">Pin rosa</p>
+                      </div>
+                      <div>
+                        <img
+                          class="legenda__pin"
+                          src="imagens_design_system/pins/pinVerde.svg"
+                          alt="pinRosa"
+                        />
+                        <p class="detail_02">Pin rosa</p>
+                      </div>
+                      <div>
+                        <img
+                          class="legenda__pin"
+                          src="imagens_design_system/pins/pinLaranja.svg"
+                          alt="pinRosa"
+                        />
+                        <p class="detail_02">Pin rosa</p>
+                      </div>
+                      <div>
+                        <img
+                          class="legenda__pin"
+                          src="imagens_design_system/pins/pinAmarelo.svg"
+                          alt="pinRosa"
+                        />
+                        <p class="detail_02">Pin rosa</p>
+                      </div>
+                    </div>
+                    <hr />
+                    <div class="legenda">
+                      <p class="body_05 body_05--title">/Linhas</p>
+                      <div>
+                        <div class="linha-continua" />
+                        <p class="detail_02">Pin rosa</p>
+                      </div>
+                      <div>
+                        <div class="linha-tracejada" />
+                        <p class="detail_02">Pin rosa</p>
+                      </div>
+                    </div>
+                    <hr />
+                  </el-collapse-item>
+                </el-collapse>
+                <!-- Fim Legenda Design System -->
+              </el-col>
+              <el-col :span="6" :offset="1">
+                <!-- Início Legenda Design System -->
+                <el-collapse
+                  class="legenda-dm"
+                  legenda
+                  v-model="activeNames"
+                  @change="handleChange"
+                >
+                  <el-collapse-item title="Legenda">
+                    <div class="legenda">
+                      <p class="body_05 body_05--title">/Linhas</p>
+                      <div>
+                        <div class="linha-continua" />
+                        <p class="detail_02">Pin rosa</p>
+                      </div>
+                      <div>
+                        <div class="linha-tracejada" />
+                        <p class="detail_02">Pin rosa</p>
+                      </div>
+                    </div>
+                    <hr />
+                    <!-- Coropléticos com degradê -->
+                    <div class="legenda">
+                      <p class="body_05 body_05--title">
+                        /Coropléticos com degradê
+                      </p>
+                      <div>
+                        <div class="degrade degrade--1" />
+                        <p class="detail_02">Intervalo</p>
+                      </div>
+                      <div>
+                        <div class="degrade degrade--2" />
+                        <p class="detail_02">Intervalo</p>
+                      </div>
+                      <div>
+                        <div class="degrade degrade--3" />
+                        <p class="detail_02">Intervalo</p>
+                      </div>
+                      <div>
+                        <div class="degrade degrade--4" />
+                        <p class="detail_02">Intervalo</p>
+                      </div>
+                      <div>
+                        <div class="degrade degrade--5" />
+                        <p class="detail_02">Intervalo</p>
+                      </div>
+                      <div>
+                        <div class="degrade degrade--6" />
+                        <p class="detail_02">Intervalo</p>
+                      </div>
+                    </div>
+                    <hr />
+                    <!-- Geometrias -->
+                    <div class="legenda">
+                      <p class="body_05 body_05--title">/Geometrias</p>
+                      <div>
+                        <div class="geometrias geometrias--1" />
+                        <p class="detail_02">Nome da geometria</p>
+                      </div>
+                      <div>
+                        <div class="geometrias geometrias--2" />
+                        <p class="detail_02">Nome da geometria</p>
+                      </div>
+                      <div>
+                        <div class="geometrias geometrias--3" />
+                        <p class="detail_02">Nome da geometria</p>
+                      </div>
+                      <div>
+                        <div class="geometrias geometrias--4" />
+                        <p class="detail_02">Nome da geometria</p>
+                      </div>
+                      <div>
+                        <div class="geometrias geometrias--5" />
+                        <p class="detail_02">Nome da geometria</p>
+                      </div>
+                    </div>
+                  </el-collapse-item>
+                </el-collapse></el-col
+              >
+              <!-- Fim Legenda Design System -->
+            </el-row>
+            <br />
+
+            <el-collapse v-model="activeNames" @change="handleChange">
+              <el-collapse-item title="ver" name="3">
+                <div class="html_codigos_blue">
+                  &#60;<span tagColor>el-collapse</span> class=<span roxo
+                    >"legenda-dm"</span
+                  >
+                  legenda v-model=<span roxo>"activeNames"</span> @change=<span
+                    roxo
+                    >"handleChange"</span
+                  >&#62;
+
+                  <div recuo>
+                    &#60;<span tagColor>el-collapse-item</span> title=<span roxo
+                      >"Legenda"</span
+                    >&#62; <br />
+
+                    <div recuo>
+                      &#60;<span tagColor>div</span>&#62; <br />
+                      &#60;<span tagColor>p</span> class=<span roxo
+                        >"body_05 body_05--title"</span
+                      >&#62;<span black>/Project Title</span>&#60;/<span
+                        tagColor
+                        >p</span
+                      >&#62;
+                      <div recuo black>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Repellat unde deserunt nostrum suscipit ut
+                        exercitationem id hic sit quaerat illo libero, molestias
+                        quo quod porro autem nemo iste. Laboriosam, mollitia.
+                      </div>
+                      &#60;/<span tagColor>div</span>&#62;
+                      <br />
+                      &#60;<span tagColor>hr</span>&#62;
+                      <br />
+                      &#60;<span tagColor>p</span> class=<span roxo
+                        >"body_05 body_05--title"</span
+                      >&#62;<span black>/Project Title</span>&#60;/<span
+                        tagColor
+                        >p</span
+                      >&#62;
+                      <br />
+                      &#60;<span tagColor>div</span>&#62;
+                      <div recuo black>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Repellat unde deserunt nostrum suscipit ut
+                        exercitationem id hic sit quaerat illo libero, molestias
+                        quo quod porro autem nemo iste. Laboriosam, mollitia.
+                      </div>
+
+                      &#60;/<span tagColor>div</span>&#62;
+                    </div>
+                    &#60;/<span tagColor>el-collapse-item</span>&#62;
+                  </div>
+
+                  &#60;/<span tagColor>el-collapse</span>&#62;
+                </div>
+              </el-collapse-item></el-collapse
+            >
           </div>
         </div>
       </el-main>
@@ -60,4 +291,76 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+[legenda] hr {
+  border-color: var(--dm_creme_01);
+  margin: 16px 0;
+}
+
+.legenda-margin div {
+  margin-bottom: 6px;
+}
+.legenda div {
+  display: flex;
+  align-items: center;
+}
+.legenda__pin {
+  width: 18px;
+  margin-right: 8px;
+}
+
+.linha-continua {
+  border-top: 2px;
+  border-color: var(--dm_rosa_00);
+  border-style: solid;
+  width: 25px;
+  margin-right: 8px;
+}
+.linha-tracejada {
+  border-top: 2px;
+  border-color: var(--dm_preto_00);
+  border-style: dashed;
+  width: 25px;
+  margin-right: 8px;
+}
+
+.degrade,
+.geometrias {
+  width: 30px;
+  height: 25px;
+  margin-right: 8px;
+}
+.degrade--1 {
+  background: var(--dm_verde1_C06);
+}
+.degrade--2 {
+  background: var(--dm_verde2_C06);
+}
+.degrade--3 {
+  background: var(--dm_verde3_C06);
+}
+.degrade--4 {
+  background: var(--dm_verde4_C06);
+}
+.degrade--5 {
+  background: var(--dm_verde5_C06);
+}
+.degrade--6 {
+  background: var(--dm_verde6_C06);
+}
+.geometrias--1 {
+  background: var(--dm_azul_00);
+}
+.geometrias--2 {
+  background: var(--dm_lilas_00);
+}
+.geometrias--3 {
+  background: var(--dm_rosa_00);
+}
+.geometrias--4 {
+  background: var(--dm_laranja_00);
+}
+.geometrias--5 {
+  background: var(--dm_amarelo_00);
+}
+</style>

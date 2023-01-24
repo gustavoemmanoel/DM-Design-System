@@ -10,10 +10,11 @@
         </el-aside>
 
         <el-main>
+          <!--  -->
           <div class="containerInterno">
             <div>
               <h1>/Calendário</h1>
-             <hr>
+              <hr />
               <br />
               <p>
                 O calendário permite aos usuários escolher uma data ou um
@@ -22,25 +23,45 @@
             </div>
             <br />
             <div class="container-elementos">
-
-              <div class="block">
-                <el-date-picker
-                  v-model="value1"
-                  type="daterange"
-                  range-separator="-"
-                  start-placeholder="Início"
-                  end-placeholder="Término"
-                  :size="size"
-                />
-              </div>
+              <el-date-picker
+                v-model="value1"
+                type="daterange"
+                range-separator="-"
+                start-placeholder="Início"
+                end-placeholder="Término"
+                :prefix-icon="customPrefix"
+                :size="size"
+              />
+              <el-collapse v-model="activeNames" @change="handleChange">
+                <el-collapse-item title="ver" name="1"> </el-collapse-item>
+              </el-collapse>
+            </div>
+          </div>
+          <div class="containerInterno">
+            <div>
+              <h1>/Calendário</h1>
+              <hr />
+              <br />
+              <p>
+                O calendário permite aos usuários escolher uma data ou um
+                período de visualização de informações.
+              </p>
+            </div>
+            <br />
+            <div class="container-elementos">
+              <el-date-picker
+                class="calendario"
+                v-model="value2"
+                type="date"
+                placeholder="Pick a day"
+                :prefix-icon="customPrefix"
+                :size="size"
+              />
               <!--  -->
 
               <el-collapse v-model="activeNames" @change="handleChange">
-                <el-collapse-item title="ver" name="1">
-                 
-                </el-collapse-item>
+                <el-collapse-item title="ver" name="1"> </el-collapse-item>
               </el-collapse>
-              <!--  -->
             </div>
           </div>
         </el-main>
@@ -51,7 +72,7 @@
 <script>
 import AsideComponent from "../ElementsDs/AsideComponent.vue";
 import HeaderDs from "../../components/HeaderDs.vue";
-
+import { h, shallowRef } from "vue";
 export default {
   name: "CalendarioDs",
   components: {
@@ -60,7 +81,14 @@ export default {
   },
   data() {
     return {
-      headerTitle: "Calendario",
+      headerTitle: "Calendário",
+      value1: null,
+      value2: null,
+      customPrefix: shallowRef({
+        render() {
+          return h("dm-icons-calendar", "");
+        },
+      }),
 
       btnAtivo: { cores: "text-decoration: underline" },
     };

@@ -7,210 +7,214 @@ dm_icon {
   height: 25px;
 }
 
-[maisInformacoes] {
+dm-icons-maisInformacoes, dm-icons-endereco, dm-icons-loading, dm-icons-imagem, dm-icons-novoArquivo, dm-icons-email, dm-icons-envio, dm-icons-retroceder, dm-icons-avancar, dm-icons-filtro, dm-icons-video, dm-icons-menu, dm-icons-cima, dm-icons-cadeadoAberto, dm-icons-cadeadoFechado, dm-icons-adicionar, dm-icons-correta, dm-icons-alerta, dm-icons-duvida, dm-icons-errada, dm-icons-calendario, dm-icons-camada, dm-icons-camadaAberta, dm-icons-camadaFechada, dm-icons-chat, dm-icons-documento, dm-icons-historico, dm-icons-telefone, dm-icons-internet, dm-icons-localizacao, dm-icons-mapas, dm-icons-lixeira, dm-icons-logout, dm-icons-upload, dm-icons-download, dm-icons-lupa, dm-icons-perfil, dm-icons-notificacao, dm-icons-sugestao, dm-icons-emote, dm-icons-estatisticas, dm-icons-maisOpcoes, dm-icons-prosseguir, dm-icons-editar, dm-icons-baixo, dm-icons-voltar, dm-icons-check, dm-icons-close, dm-icons-produtos, dm-icons-pasta, dm-icons-upload {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 20px;
+  height: 20px;
+}
+
+[maisInformacoes], dm-icons-maisInformacoes {
   background-image: url("../../public/imagens_design_system/icons/blackicons/maisInformacoes.svg");
 }
 
-[maisInformacoes] {
-  background-image: url("../../public/imagens_design_system/icons/blackicons/maisInformacoes.svg");
-}
-
-[endereco] {
+[endereco], dm-icons-endereco {
   background-image: url("../../public/imagens_design_system/icons/blackicons/endereco.svg");
 }
 
-[loading] {
+[loading], dm-icons-loading {
   background-image: url("../../public/imagens_design_system/icons/blackicons/loading.svg");
 }
 
-[imagem] {
+[imagem], dm-icons-imagem {
   background-image: url("../../public/imagens_design_system/icons/blackicons/imagem.svg");
 }
 
-[novoArquivo] {
+[novoArquivo], dm-icons-novoArquivo {
   background-image: url("../../public/imagens_design_system/icons/blackicons/novoArquivo.svg");
 }
 
-[email] {
+[email], dm-icons-email {
   background-image: url("../../public/imagens_design_system/icons/blackicons/email.svg");
 }
 
-[envio] {
+[envio], dm-icons-envio {
   background-image: url("../../public/imagens_design_system/icons/blackicons/envio.svg");
 }
 
-[retroceder] {
+[retroceder], dm-icons-retroceder {
   background-image: url("../../public/imagens_design_system/icons/blackicons/retroceder.svg");
 }
 
-[avancar] {
+[avancar], dm-icons-avancar {
   background-image: url("../../public/imagens_design_system/icons/blackicons/avancar.svg");
 }
 
-[filtro] {
+[filtro], dm-icons-filtro {
   background-image: url("../../public/imagens_design_system/icons/blackicons/filtro.svg");
 }
 
-[video] {
+[video], dm-icons-video {
   background-image: url("../../public/imagens_design_system/icons/blackicons/video.svg");
 }
 
-[menu] {
+[menu], dm-icons-menu {
   background-image: url("../../public/imagens_design_system/icons/blackicons/menu.svg");
 }
 
-[cima] {
+[cima], dm-icons-cima {
   background-image: url("../../public/imagens_design_system/icons/blackicons/cima.svg");
 }
 
-[cadeadoAberto] {
+[cadeadoAberto], dm-icons-cadeadoAberto {
   background-image: url("../../public/imagens_design_system/icons/blackicons/cadeadoAberto.svg");
 }
 
-[cadeadoFechado] {
+[cadeadoFechado], dm-icons-cadeadoFechado {
   background-image: url("../../public/imagens_design_system/icons/blackicons/cadeadoFechado.svg");
 }
 
-[adicionar] {
+[adicionar], dm-icons-adicionar {
   background-image: url("../../public/imagens_design_system/icons/blackicons/adicionar.svg");
 }
 
-[correta] {
+[correta], dm-icons-correta {
   background-image: url("../../public/imagens_design_system/icons/blackicons/correta.svg");
 }
 
-[alerta] {
+[alerta], dm-icons-alerta {
   background-image: url("../../public/imagens_design_system/icons/blackicons/alerta.svg");
 }
 
-[duvida] {
+[duvida], dm-icons-duvida {
   background-image: url("../../public/imagens_design_system/icons/blackicons/duvida.svg");
 }
 
-[errada] {
+[errada], dm-icons-errada {
   background-image: url("../../public/imagens_design_system/icons/blackicons/errada.svg");
 }
 
-[calendario] {
+[calendario], dm-icons-calendario {
   background-image: url("../../public/imagens_design_system/icons/blackicons/calendario.svg");
 }
 
-[camada] {
+[camada], dm-icons-camada {
   background-image: url("../../public/imagens_design_system/icons/blackicons/camada.svg");
 }
 
-[camadaAberta] {
+[camadaAberta], dm-icons-camadaAberta {
   background-image: url("../../public/imagens_design_system/icons/blackicons/camadaAberta.svg");
 }
 
-[camadaFechada] {
+[camadaFechada], dm-icons-camadaFechada {
   background-image: url("../../public/imagens_design_system/icons/blackicons/camadaFechada.svg");
 }
 
-[chat] {
+[chat], dm-icons-chat {
   background-image: url("../../public/imagens_design_system/icons/blackicons/chat.svg");
 }
 
-[documento] {
+[documento], dm-icons-documento {
   background-image: url("../../public/imagens_design_system/icons/blackicons/documento.svg");
 }
 
-[historico] {
+[historico], dm-icons-historico {
   background-image: url("../../public/imagens_design_system/icons/blackicons/historico.svg");
 }
 
-[telefone] {
+[telefone], dm-icons-telefone {
   background-image: url("../../public/imagens_design_system/icons/blackicons/telefone.svg");
 }
 
-[internet] {
+[internet], dm-icons-internet {
   background-image: url("../../public/imagens_design_system/icons/blackicons/internet.svg");
 }
 
-[localizacao] {
+[localizacao], dm-icons-localizacao {
   background-image: url("../../public/imagens_design_system/icons/blackicons/localizacao.svg");
 }
 
-[mapas] {
+[mapas], dm-icons-mapas {
   background-image: url("../../public/imagens_design_system/icons/blackicons/mapas.svg");
 }
 
-[lixeira] {
+[lixeira], dm-icons-lixeira {
   background-image: url("../../public/imagens_design_system/icons/blackicons/lixeira.svg");
 }
 
-[logout] {
+[logout], dm-icons-logout {
   background-image: url("../../public/imagens_design_system/icons/blackicons/logout.svg");
 }
 
-[upload] {
+[upload], dm-icons-upload {
   background-image: url("../../public/imagens_design_system/icons/blackicons/upload.svg");
 }
 
-[download] {
+[download], dm-icons-download {
   background-image: url("../../public/imagens_design_system/icons/blackicons/download.svg");
 }
 
-[lupa] {
+[lupa], dm-icons-lupa {
   background-image: url("../../public/imagens_design_system/icons/blackicons/lupa.svg");
 }
 
-[perfil] {
+[perfil], dm-icons-perfil {
   background-image: url("../../public/imagens_design_system/icons/blackicons/perfil.svg");
 }
 
-[notificacao] {
+[notificacao], dm-icons-notificacao {
   background-image: url("../../public/imagens_design_system/icons/blackicons/notificacao.svg");
 }
 
-[sugestao] {
+[sugestao], dm-icons-sugestao {
   background-image: url("../../public/imagens_design_system/icons/blackicons/sugestao.svg");
 }
 
-[emote] {
+[emote], dm-icons-emote {
   background-image: url("../../public/imagens_design_system/icons/blackicons/emote.svg");
 }
 
-[estatisticas] {
+[estatisticas], dm-icons-estatisticas {
   background-image: url("../../public/imagens_design_system/icons/blackicons/estatisticas.svg");
 }
 
-[maisOpcoes] {
+[maisOpcoes], dm-icons-maisOpcoes {
   background-image: url("../../public/imagens_design_system/icons/blackicons/maisOpcoes.svg");
 }
 
-[prosseguir] {
+[prosseguir], dm-icons-prosseguir {
   background-image: url("../../public/imagens_design_system/icons/blackicons/prosseguir.svg");
 }
 
-[editar] {
+[editar], dm-icons-editar {
   background-image: url("../../public/imagens_design_system/icons/blackicons/editar.svg");
 }
 
-[baixo] {
+[baixo], dm-icons-baixo {
   background-image: url("../../public/imagens_design_system/icons/blackicons/baixo.svg");
 }
 
-[voltar] {
+[voltar], dm-icons-voltar {
   background-image: url("../../public/imagens_design_system/icons/blackicons/voltar.svg");
 }
 
-[check] {
+[check], dm-icons-check {
   background-image: url("../../public/imagens_design_system/icons/blackicons/check.svg");
 }
 
-[close] {
+[close], dm-icons-close {
   background-image: url("../../public/imagens_design_system/icons/blackicons/close.svg");
 }
 
-[produtos] {
+[produtos], dm-icons-produtos {
   background-image: url("../../public/imagens_design_system/icons/blackicons/produtos.svg");
 }
 
-[pasta] {
+[pasta], dm-icons-pasta {
   background-image: url("../../public/imagens_design_system/icons/blackicons/pasta.svg");
 }
 
-[upload] {
+[upload], dm-icons-upload {
   background-image: url("../../public/imagens_design_system/icons/blackicons/upload.svg");
 }

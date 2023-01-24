@@ -13,7 +13,7 @@
           <div>
             <h1>/Pins</h1>
             <hr />
-            <br>
+            <br />
             <p>Pins são elementos que servem para marcar pontos no mapa.</p>
           </div>
           <br />
@@ -30,8 +30,14 @@
                 <img src="imagens_design_system/pins/bom.svg" alt="Bom" />
                 <img src="imagens_design_system/pins/media.svg" alt="Media" />
                 <img src="imagens_design_system/pins/ruim.svg" alt="Ruim" />
-                <img src="imagens_design_system/pins/pinBlueCoroa.svg" alt="Pin" />
-                <img src="imagens_design_system/pins/pinBlueCoroaBom.svg" alt="Pin" />
+                <img
+                  src="imagens_design_system/pins/pinBlueCoroa.svg"
+                  alt="Pin"
+                />
+                <img
+                  src="imagens_design_system/pins/pinBlueCoroaBom.svg"
+                  alt="Pin"
+                />
               </el-col>
               <el-col :span="8">
                 <strong>Pin</strong>
@@ -51,18 +57,18 @@
                 <div></div>
               </el-col>
             </el-row>
-            <br>
+            <br />
             <!--  -->
             <el-collapse v-model="activeNames" @change="handleChange">
-                <el-collapse-item title="Consistency" name="1">
-                  <div>
-                    Consistent with real life: in line with the process and
-                    logic of real life, and comply with languages and habits
-                    that the users are used to;
-                  </div>
-                </el-collapse-item>
-              </el-collapse>
-              <!--  -->
+              <el-collapse-item title="Consistency" name="1">
+                <div>
+                  Consistent with real life: in line with the process and logic
+                  of real life, and comply with languages and habits that the
+                  users are used to;
+                </div>
+              </el-collapse-item>
+            </el-collapse>
+            <!--  -->
           </div>
         </div>
       </el-main>

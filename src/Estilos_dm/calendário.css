@@ -1,3 +1,36 @@
+/* Default */
+
+.el-input__wrapper {
+    box-shadow: 0 0 0 2px var(--dm_cinza_02, var(--dm_azul_00)) inset
+}
+
+.el-input__wrapper:hover {
+    box-shadow: 0 0 0 2px var(--dm_azul_00, var(--dm_azul_00)) inset
+}
+
+.el-input .el-input__icon, .el-date-editor .el-range__icon {
+    width: 20px;
+}
+
+dm-icons-calendar {
+    background-image: url("../../public/imagens_design_system/icons/grayicons/gray_calendario.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 20px;
+    height: 20px;
+}
+
+.el-date-editor .el-icon svg {
+    width: 16px;
+    height: 16px;
+}
+
+.el-date-editor .el-icon {
+    width: 18px;
+    color: var(--dm_cinza_01);
+}
+
 .el-range-editor.is-active {
     box-shadow: 0 0 0 2px var(--dm_cinza_02) inset
 }
@@ -10,24 +43,69 @@
     box-shadow: 0 0 0 2px var(--dm_azul_00, var(--dm_azul_00)) inset
 }
 
-/* Popup */
+/* container popup */
+.el-popper.is-pure.is-light.el-picker__popper {
+    border-radius: 6px;
+    border: 2px solid var(--dm_cinza_02);
+}
 
 .el-date-range-picker__content.is-left {
-    border-right: none
+    border: none;
 }
+
+.el-date-range-picker {
+    width: 690px;
+}
+
+.el-date-table td .el-date-table-cell {
+    height: 28px;
+}
+
+.el-date-table {
+    font-size: 14px;
+}
+
+
+/* calendário Unico */
+
+.calendario.el-date-editor.el-input, .el-date-editor.el-input__wrapper {
+    height: 34px;
+}
+
+/* Seta do popup */
+
+.el-popper[data-popper-placement^=bottom]>.el-popper__arrow {
+    z-index: 1;
+}
+
+.el-picker__popper.el-popper[data-popper-placement^=bottom] .el-popper__arrow::before {
+    border: 2px solid var(--dm_cinza_02);
+    transform: rotate(45deg) translatex(-1px);
+}
+
+/*  */
 
 .el-date-table th {
     color: var(--dm_cinza_01);
 }
 
 .el-date-table td.today .el-date-table-cell__text {
-    color: var(--dm_azul_00);  
+    color: var(--dm_azul_00);
 }
 
 .el-date-range-picker__header div {
     font-weight: 700;
 }
 
-.el-date-table th{
+.el-date-table th {
     border-bottom: none
+}
+
+.el-date-table td.available:hover .el-date-table-cell__text,
+.el-date-table-cell__text:hover {
+    outline: 3px solid var(--dm_azul_00);
+    border-radius: 50px;
+    width: 25px;
+    height: 25px;
+    color: var(--dm_preto_00);
 }

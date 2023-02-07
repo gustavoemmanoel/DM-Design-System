@@ -23,130 +23,12 @@
           <br />
           <div class="container-elementos">
             <el-row>
-              <el-col :span="6">
-                <el-collapse
-                  class="legenda-dm"
-                  legenda
-                  v-model="activeNames"
-                  @change="handleChange"
-                >
+              <el-col :span="8" class="another" id="blocked">
+                <h5>Exemplo</h5>
+                <div id="transparent-div" class="transparent" @click="takeoff(0)" />
+                <el-collapse class="legenda-dm" legenda>
                   <el-collapse-item title="Legenda">
-                    <div>
-                      <p class="body_04 body_05--title">/Project Title</p>
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Repellat unde deserunt nostrum suscipit ut exercitationem
-                      id hic sit quaerat illo libero, molestias quo quod porro
-                      autem nemo iste. Laboriosam, mollitia.
-                    </div>
-                    <hr />
-                    <p class="body_04 body_05--title">/Project Title</p>
-                    <div>
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Repellat unde deserunt nostrum suscipit ut exercitationem
-                      id hic sit quaerat illo libero, molestias quo quod porro
-                      autem nemo iste. Laboriosam, mollitia.
-                    </div>
-                  </el-collapse-item>
-                </el-collapse>
-              </el-col>
-              <el-col :span="6" :offset="1">
-                <!-- Início Legenda Design System -->
-                <el-collapse
-                  class="legenda-dm"
-                  legenda
-                  v-model="activeNames"
-                  @change="handleChange"
-                >
-                  <el-collapse-item title="Legenda">
-                    <div class="legenda legenda-margin">
-                      <p class="body_05 body_05--title">/Pins</p>
-                      <div>
-                        <img
-                          class="legenda__pin"
-                          src="imagens_design_system/pins/pinRosa.svg"
-                          alt="pinRosa"
-                        />
-                        <p class="detail_02">Pin rosa</p>
-                      </div>
-                      <div>
-                        <img
-                          class="legenda__pin"
-                          src="imagens_design_system/pins/pinAzul.svg"
-                          alt="pinRosa"
-                        />
-                        <p class="detail_02">Pin rosa</p>
-                      </div>
-                      <div>
-                        <img
-                          class="legenda__pin"
-                          src="imagens_design_system/pins/pinLilas.svg"
-                          alt="pinRosa"
-                        />
-                        <p class="detail_02">Pin rosa</p>
-                      </div>
-                      <div>
-                        <img
-                          class="legenda__pin"
-                          src="imagens_design_system/pins/pinVerde.svg"
-                          alt="pinRosa"
-                        />
-                        <p class="detail_02">Pin rosa</p>
-                      </div>
-                      <div>
-                        <img
-                          class="legenda__pin"
-                          src="imagens_design_system/pins/pinLaranja.svg"
-                          alt="pinRosa"
-                        />
-                        <p class="detail_02">Pin rosa</p>
-                      </div>
-                      <div>
-                        <img
-                          class="legenda__pin"
-                          src="imagens_design_system/pins/pinAmarelo.svg"
-                          alt="pinRosa"
-                        />
-                        <p class="detail_02">Pin rosa</p>
-                      </div>
-                    </div>
-                    <hr />
-                    <div class="legenda">
-                      <p class="body_05 body_05--title">/Linhas</p>
-                      <div>
-                        <div class="linha-continua" />
-                        <p class="detail_02">Pin rosa</p>
-                      </div>
-                      <div>
-                        <div class="linha-tracejada" />
-                        <p class="detail_02">Pin rosa</p>
-                      </div>
-                    </div>
-                    <hr />
-                  </el-collapse-item>
-                </el-collapse>
-                <!-- Fim Legenda Design System -->
-              </el-col>
-              <el-col :span="6" :offset="1">
-                <!-- Início Legenda Design System -->
-                <el-collapse
-                  class="legenda-dm"
-                  legenda
-                  v-model="activeNames"
-                  @change="handleChange"
-                >
-                  <el-collapse-item title="Legenda">
-                    <div class="legenda">
-                      <p class="body_05 body_05--title">/Linhas</p>
-                      <div>
-                        <div class="linha-continua" />
-                        <p class="detail_02">Pin rosa</p>
-                      </div>
-                      <div>
-                        <div class="linha-tracejada" />
-                        <p class="detail_02">Pin rosa</p>
-                      </div>
-                    </div>
-                    <hr />
+
                     <!-- Coropléticos com degradê -->
                     <div class="legenda">
                       <p class="body_05 body_05--title">
@@ -203,8 +85,85 @@
                       </div>
                     </div>
                   </el-collapse-item>
-                </el-collapse></el-col
-              >
+                </el-collapse>
+              </el-col>
+              <el-col :span="8" :offset="1">
+                <h5>Padrão</h5>
+                <!-- Início Legenda Design System -->
+                <el-collapse class="legenda-dm" legenda>
+                  <el-collapse-item title="Legenda">
+                    <div>
+                      <p class="body_04 body_05--title">/Project Title</p>
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat nostrum exercitationem id hic.
+                    </div>
+                    <hr />
+                    <p class="body_04 body_05--title">/Project Title</p>
+                    <div>
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Repellat unde deserunt nostrum suscipit ut exercitationem
+                      id hic sit quaerat iquo quod porro
+                      autem nemo iste. Laboriosam, mollitia.
+                    </div>
+                  </el-collapse-item>
+                </el-collapse>
+
+                <!-- Fim Legenda Design System -->
+              </el-col>
+              <el-col :span="6" :offset="1" class="another" id="blocked">
+                <h5>Exemplo</h5>
+                <!-- Início Legenda Design System -->
+                <div id="transparent-div" />
+                <div class="block-row">
+                  <el-collapse class="legenda-dm" legenda>
+                    <el-collapse-item title="Legenda">
+                      <div class="legenda legenda-margin">
+                        <p class="body_05 body_05--title">/Pins</p>
+                        <div>
+                          <img class="legenda__pin" src="imagens_design_system/pins/pinRosa.svg" alt="pinRosa" />
+                          <p class="detail_02">Pin rosa</p>
+                        </div>
+                        <div>
+                          <img class="legenda__pin" src="imagens_design_system/pins/pinAzul.svg" alt="pinRosa" />
+                          <p class="detail_02">Pin rosa</p>
+                        </div>
+                        <div>
+                          <img class="legenda__pin" src="imagens_design_system/pins/pinLilas.svg" alt="pinRosa" />
+                          <p class="detail_02">Pin rosa</p>
+                        </div>
+                        <div>
+                          <img class="legenda__pin" src="imagens_design_system/pins/pinVerde.svg" alt="pinRosa" />
+                          <p class="detail_02">Pin rosa</p>
+                        </div>
+                        <div>
+                          <img class="legenda__pin" src="imagens_design_system/pins/pinLaranja.svg" alt="pinRosa" />
+                          <p class="detail_02">Pin rosa</p>
+                        </div>
+                        <div>
+                          <img class="legenda__pin" src="imagens_design_system/pins/pinAmarelo.svg" alt="pinRosa" />
+                          <p class="detail_02">Pin rosa</p>
+                        </div>
+                      </div>
+                      <hr />
+                      <div class="legenda">
+                        <p class="body_05 body_05--title">/Linhas</p>
+                        <div>
+                          <div class="linha-continua" />
+                          <p class="detail_02">Pin rosa</p>
+                        </div>
+                        <div>
+                          <div class="linha-tracejada" />
+                          <p class="detail_02">Pin rosa</p>
+                        </div>
+                        <div>
+                          <div class="linha-bolinha" />
+                          <p class="detail_02">Pin rosa</p>
+                        </div>
+                      </div>
+                    </el-collapse-item>
+                  </el-collapse>
+
+                </div>
+              </el-col>
               <!-- Fim Legenda Design System -->
             </el-row>
             <br />
@@ -212,27 +171,16 @@
             <el-collapse v-model="activeNames" @change="handleChange">
               <el-collapse-item title="ver" name="3">
                 <div class="html_codigos_blue">
-                  &#60;<span tagColor>el-collapse</span> class=<span roxo
-                    >"legenda-dm"</span
-                  >
-                  legenda v-model=<span roxo>"activeNames"</span> @change=<span
-                    roxo
-                    >"handleChange"</span
-                  >&#62;
+                  &#60;<span tagColor>el-collapse</span> class=<span roxo>"legenda-dm"</span>
+                  legenda v-model=<span roxo>"activeNames"</span> @change=<span roxo>"handleChange"</span>&#62;
 
                   <div recuo>
-                    &#60;<span tagColor>el-collapse-item</span> title=<span roxo
-                      >"Legenda"</span
-                    >&#62; <br />
+                    &#60;<span tagColor>el-collapse-item</span> title=<span roxo>"Legenda"</span>&#62; <br />
 
                     <div recuo>
                       &#60;<span tagColor>div</span>&#62; <br />
-                      &#60;<span tagColor>p</span> class=<span roxo
-                        >"body_05 body_05--title"</span
-                      >&#62;<span black>/Project Title</span>&#60;/<span
-                        tagColor
-                        >p</span
-                      >&#62;
+                      &#60;<span tagColor>p</span> class=<span roxo>"body_05 body_05--title"</span>&#62;<span
+                        black>/Project Title</span>&#60;/<span tagColor>p</span>&#62;
                       <div recuo black>
                         Lorem, ipsum dolor sit amet consectetur adipisicing
                         elit. Repellat unde deserunt nostrum suscipit ut
@@ -243,12 +191,8 @@
                       <br />
                       &#60;<span tagColor>hr</span>&#62;
                       <br />
-                      &#60;<span tagColor>p</span> class=<span roxo
-                        >"body_05 body_05--title"</span
-                      >&#62;<span black>/Project Title</span>&#60;/<span
-                        tagColor
-                        >p</span
-                      >&#62;
+                      &#60;<span tagColor>p</span> class=<span roxo>"body_05 body_05--title"</span>&#62;<span
+                        black>/Project Title</span>&#60;/<span tagColor>p</span>&#62;
                       <br />
                       &#60;<span tagColor>div</span>&#62;
                       <div recuo black>
@@ -265,12 +209,12 @@
 
                   &#60;/<span tagColor>el-collapse</span>&#62;
                 </div>
-              </el-collapse-item></el-collapse
-            >
+              </el-collapse-item></el-collapse>
           </div>
         </div>
       </el-main>
     </el-container>
+
   </el-container>
 </template>
 <script>
@@ -288,22 +232,52 @@ export default {
       headerTitle: "Legenda",
     };
   },
+  methods: {
+    takeoff(index) {
+
+      const a = document.getElementsByClassName('another')[index]
+      a.removeAttribute('id', 'blocked')
+
+      const b = document.getElementsByClassName('transparent')[index]
+      b.removeAttribute('id', 'transparent-div')
+    }
+  }
 };
 </script>
 
+
+<style>
+#transparent-div {
+  position: relative;
+  width: 100%;
+  z-index: 1;
+  top: 0;
+  height: 100%;
+}
+
+#blocked .legenda-dm .el-collapse-item__wrap {
+  display: block !important;
+}
+</style>
 <style scoped>
 [legenda] hr {
   border-color: var(--dm_creme_01);
   margin: 16px 0;
 }
 
+.another {
+  height: 490px;
+}
+
 .legenda-margin div {
   margin-bottom: 6px;
 }
+
 .legenda div {
   display: flex;
   align-items: center;
 }
+
 .legenda__pin {
   width: 18px;
   margin-right: 8px;
@@ -316,6 +290,7 @@ export default {
   width: 25px;
   margin-right: 8px;
 }
+
 .linha-tracejada {
   border-top: 2px;
   border-color: var(--dm_preto_00);
@@ -324,43 +299,64 @@ export default {
   margin-right: 8px;
 }
 
+.linha-bolinha {
+  border-color: var(--dm_amarelo_00);
+  border-style: dotted;
+  width: 25px;
+  margin-right: 8px;
+  border-width: 5px 0 0 0;
+}
+
 .degrade,
 .geometrias {
   width: 30px;
   height: 25px;
   margin-right: 8px;
 }
+
 .degrade--1 {
   background: var(--dm_verde1_C06);
 }
+
 .degrade--2 {
   background: var(--dm_verde2_C06);
 }
+
 .degrade--3 {
   background: var(--dm_verde3_C06);
 }
+
 .degrade--4 {
   background: var(--dm_verde4_C06);
 }
+
 .degrade--5 {
   background: var(--dm_verde5_C06);
 }
+
 .degrade--6 {
   background: var(--dm_verde6_C06);
 }
+
 .geometrias--1 {
   background: var(--dm_azul_00);
 }
+
 .geometrias--2 {
   background: var(--dm_lilas_00);
 }
+
 .geometrias--3 {
   background: var(--dm_rosa_00);
 }
+
 .geometrias--4 {
   background: var(--dm_laranja_00);
 }
+
 .geometrias--5 {
   background: var(--dm_amarelo_00);
 }
 </style>
+
+

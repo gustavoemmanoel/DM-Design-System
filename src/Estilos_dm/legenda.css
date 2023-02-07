@@ -3,8 +3,9 @@
     border-radius: 6px;
     width: 190px;
     box-shadow: 5px 3px 10px rgba(0, 0, 0, 0.15);
+    position: absolute;
+    bottom: 0;
 }
-
 .legenda-dm .body_02 {
     padding: 10px;
 }
@@ -16,3 +17,4 @@
 .body_05--title{
     margin-bottom: 10px;
 }
+

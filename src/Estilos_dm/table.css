@@ -17,9 +17,9 @@
 }
 
 .el-table--enable-row-transition .el-table__body td.el-table__cell {
-  background-color: var(--dm_creme_02);
+  background-color: var(--dm_creme_00);
 }
 
 .el-table--striped .el-table__body tr.el-table__row--striped td.el-table__cell {
-  background: var(--dm_creme_00);
+  background: var(--dm_creme_02);
 }

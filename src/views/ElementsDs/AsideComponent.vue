@@ -1,13 +1,16 @@
 <template>
   <div class="side-bar">
     <img class="logo-dm" src="/logo.svg" />
+    <div class="component-tag">Princípios</div>
+    <div class="options">
+      <router-link to="InicioDs">Início</router-link>
+      <router-link to="PrincipiosDs">Princípios</router-link>
+    </div>
     <!-- Princípios -->
-    <!-- <div class="component-tag tag-ativa">Instalação</div> -->
     <div class="component-tag">Instalação</div>
     <div class="options">
       <router-link to="/">Instalação</router-link>
     </div>
-    <div class="component-tag">Princípios</div>
     <!-- Fundação -->
     <div class="component-tag">Fundação</div>
     <div class="options">
@@ -17,14 +20,14 @@
       <router-link to="GrafismosDs"> Grafismos </router-link>
       <router-link to="GridDs"> Grid </router-link>
     </div>
-    
-    
+
+
     <!-- Telas -->
     <div class="component-tag">Telas</div>
     <div class="options">
       <router-link to="LoginDs">Login</router-link>
     </div>
-    
+
     <!-- Componentes -->
     <div class="component-tag">Componentes</div>
     <div class="options">
@@ -44,10 +47,6 @@
       <router-link to="LegendaDs">Legenda</router-link>
     </div>
     <router-link to="SobreDs" class="component-tag"> Sobre </router-link>
-    <!--  <el-footer>
-      <img src="/grafismos/graf-01-background.svg" />
-      <img src="/grafismos/graf-02-background.svg" />
-    </el-footer> -->
   </div>
 </template>
 
@@ -68,14 +67,17 @@ a {
   font-weight: 400;
   color: var(--dm_preto_00);
 }
+
 a:hover {
   text-decoration: underline;
   color: var(--dm_cinza_01);
 }
+
 a:focus {
   text-decoration: underline;
   color: var(--dm_azul_00);
 }
+
 /*  */
 .side-bar {
   position: fixed;

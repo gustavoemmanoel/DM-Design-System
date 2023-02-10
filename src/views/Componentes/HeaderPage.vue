@@ -24,28 +24,17 @@
           <div>
             <el-row class="header">
               <el-row>
-                <img
-                  class="img-header"
-                  src="https://raw.githubusercontent.com/gustavoemmanoel/DM-Design-System/a788551ff910a5544891fd15346fe8bdfcc99486/public/icons/dm.svg"
-                  alt="dm"
-                />
+                <img class="img-header" src="imagens_design_system/icons/whiteicons/dm.svg" alt="dm" />
                 <h4 style="color: var(--dm_creme_00)">DataMachina</h4>
               </el-row>
 
               <el-row style="gap: 10px">
                 <!-- Produtos -->
-                <el-popover
-                  placement="bottom"
-                  style="padding: 0; background: green"
-                  trigger="click"
-                  :width="200"
-                >
+                <el-popover placement="bottom" style="padding: 0; background: green" trigger="click" :width="200">
                   <template #reference>
-                    <img
-                      class="icon"
-                      src="https://raw.githubusercontent.com/gustavoemmanoel/DM-Design-System/a788551ff910a5544891fd15346fe8bdfcc99486/public/icons/produtos.svg"
-                      alt="produto"
-                    />
+                    <img class="icon"
+                      src="imagens_design_system/icons/whiteicons/produtos.svg"
+                      alt="produto" />
                   </template>
 
                   <el-col>
@@ -62,21 +51,15 @@
                 <!-- Notificações -->
                 <el-popover placement="bottom" trigger="click" :width="400">
                   <template #reference>
-                    <img
-                      class="icon"
-                      src="https://raw.githubusercontent.com/gustavoemmanoel/DM-Design-System/a788551ff910a5544891fd15346fe8bdfcc99486/public/icons/notificacao.svg"
-                      alt="Notificação"
-                    />
+                    <img class="icon"
+                      src="imagens_design_system/icons/whiteicons/notificacao.svg"
+                      alt="Notificação" />
                   </template>
                   <el-col>
-                    <el-row class="optionMenu"
-                      >O painel Logística foi atualizado - Versão
-                      2.43.2.1</el-row
-                    >
+                    <el-row class="optionMenu">O painel Logística foi atualizado - Versão
+                      2.43.2.1</el-row>
                     <hr />
-                    <el-row class="optionMenu"
-                      >O colaborador Gustavo Emmanoel foi cadastrado</el-row
-                    >
+                    <el-row class="optionMenu">O colaborador Gustavo Emmanoel foi cadastrado</el-row>
                     <hr />
                     <el-row class="optionMenu">Você se cadastrou!</el-row>
                   </el-col>
@@ -85,17 +68,14 @@
                 <!-- DÚVIDAS -->
                 <el-popover placement="bottom" trigger="click" :width="300">
                   <template #reference>
-                    <img
-                      class="icon"
-                      src="https://raw.githubusercontent.com/gustavoemmanoel/DM-Design-System/a788551ff910a5544891fd15346fe8bdfcc99486/public/icons/duvida.svg"
-                      alt="Dúvidas"
-                    />
+                    <img class="icon"
+                      src="imagens_design_system/icons/whiteicons/duvida.svg"
+                      alt="Dúvidas" />
                   </template>
                   <el-col>
                     <el-row class="optionMenu">versão: 2cf2f45f</el-row>
                     <hr />
-                    <el-row class="optionMenu"
-                      >Dúvidas? entre em contato por:
+                    <el-row class="optionMenu">Dúvidas? entre em contato por:
                       <p class="dm_azul_00_color">
                         datamachina@datamachina.com.br
                       </p>
@@ -106,18 +86,16 @@
                 <!-- PERFIL -->
                 <el-popover placement="bottom" trigger="click" :width="360">
                   <template #reference>
-                    <img
-                      class="icon"
-                      src="https://raw.githubusercontent.com/gustavoemmanoel/DM-Design-System/a788551ff910a5544891fd15346fe8bdfcc99486/public/icons/perfil.svg"
-                      alt="Perfil"
-                    />
+                    <img class="icon"
+                      src="imagens_design_system/icons/whiteicons/perfil.svg"
+                      alt="Perfil" />
                   </template>
                   <el-col>
                     <el-row class="optionMenu">
                       <p class="body_01">Mateus Durães</p>
                       <div class="tag-primaria">Administrador</div>
-                      mateusduraessantos@datamachina.com.br</el-row
-                    >
+                      mateusduraessantos@datamachina.com.br
+                    </el-row>
                     <hr />
                     <el-row class="optionMenu">Configurações</el-row>
                     <el-row class="optionMenu">Configurações</el-row>
@@ -163,12 +141,7 @@
               </el-row>
 
               <el-row style="gap: 10px">
-                <el-popover
-                  placement="bottom"
-                  style="padding: 0; background: green"
-                  trigger="click"
-                  :width="200"
-                >
+                <el-popover placement="bottom" style="padding: 0; background: green" trigger="click" :width="200">
                   <template #reference>
                     <img class="icon" src="imagens_design_system/icons/whiteicons/produtos.svg" />
                   </template>
@@ -191,14 +164,10 @@
                   </template>
 
                   <el-col>
-                    <el-row class="optionMenu"
-                      >O painel Logística foi atualizado - Versão
-                      2.43.2.1</el-row
-                    >
+                    <el-row class="optionMenu">O painel Logística foi atualizado - Versão
+                      2.43.2.1</el-row>
                     <hr />
-                    <el-row class="optionMenu"
-                      >O colaborador Gustavo Emmanoel foi cadastrado</el-row
-                    >
+                    <el-row class="optionMenu">O colaborador Gustavo Emmanoel foi cadastrado</el-row>
                     <hr />
                     <el-row class="optionMenu">Você se cadastrou!</el-row>
                   </el-col>
@@ -207,10 +176,7 @@
                 <!-- DÚVIDAS -->
                 <el-popover placement="bottom" trigger="click" :width="300">
                   <template #reference>
-                    <img
-                      class="icon"
-                      src="imagens_design_system/icons/whiteicons/interrogacao.svg"
-                    />
+                    <img class="icon" src="imagens_design_system/icons/whiteicons/interrogacao.svg" />
                   </template>
                   <el-col>
                     <el-row class="optionMenu">versão: 2cf2f45f</el-row>
@@ -260,327 +226,188 @@
                 &#60;<span tagColor>div</span>&#62;
                 <div class="border-left">
                   <div recuo>
-                    <span
-                      >&#60;<span tagColor>el-row</span> class=<span roxo
-                        >"header"</span
-                      >&#62;</span
-                    >
+                    <span>&#60;<span tagColor>el-row</span> class=<span roxo>"header"</span>&#62;</span>
                     <div class="border-left">
                       <div recuo>
                         <span>&#60;<span tagColor>el-row</span>&#62;</span>
                         <div class="border-left">
                           <div recuo>
                             <span>
-                              &#60;<span tagColor>img</span> class=<span roxo
-                                >"img-header"</span
-                              >
-                              src=<span roxo
-                                >"https://raw.githubusercontent.com/gustavoemmanoel/DM-Design-System/a788551ff910a5544891fd15346fe8bdfcc99486/public/icons/dm.svg"</span
-                              >/&#62; <br /> </span
-                            ><span>
-                              &#60;<span tagColor>h4</span> style=<span roxo
-                                >"color: var(--dm_creme_00)"</span
-                              >&#62;</span
-                            ><span black>DataMachina</span
-                            ><span>&#60;/<span tagColor>h4</span>&#62;</span>
+                              &#60;<span tagColor>img</span> class=<span roxo>"img-header"</span>
+                              src=<span
+                                roxo>"imagens_design_system/icons/whiteicons/dm.svg"</span>/&#62;
+                              <br /> </span><span>
+                              &#60;<span tagColor>h4</span> style=<span roxo>"color:
+                                var(--dm_creme_00)"</span>&#62;</span><span black>DataMachina</span><span>&#60;/<span
+                                tagColor>h4</span>&#62;</span>
                           </div>
                         </div>
                         <span>&#60;/<span tagColor>el-row</span>&#62;</span>
                         <br />
                         <br />
-                        &#60;<span tagColor>el-row</span> style=<span roxo
-                          >"gap: 10px"</span
-                        >&#62;
+                        &#60;<span tagColor>el-row</span> style=<span roxo>"gap: 10px"</span>&#62;
                         <div class="border-left">
                           <div recuo>
                             <!-- PRODUTOS -->
                             <span green>&#60;!-- Produtos --&#62;</span>
                             <br />
-                            <span
-                              >&#60;<span tagColor>el-popover</span>
-                              placement=<span roxo>"bottom"</span> style=<span
-                                roxo
-                                >"padding: 0; background: green"</span
-                              >
-                              trigger=<span roxo>"click"</span> :width=<span
-                                roxo
-                                >"200"</span
-                              >&#62;</span
-                            >
+                            <span>&#60;<span tagColor>el-popover</span>
+                              placement=<span roxo>"bottom"</span> style=<span roxo>"padding: 0; background:
+                                green"</span>
+                              trigger=<span roxo>"click"</span> :width=<span roxo>"200"</span>&#62;</span>
                             <div class="border-left">
                               <div recuo>
-                                <span
-                                  >&#60;<span tagColor>template</span>
-                                  <span roxo>#reference</span>&#62;</span
-                                >
+                                <span>&#60;<span tagColor>template</span>
+                                  <span roxo>#reference</span>&#62;</span>
                                 <br />
                                 <div recuo>
-                                  <span
-                                    >&#60;img class=<span roxo>"icon"</span>
-                                    src=<span roxo
-                                      >"https://raw.githubusercontent.com/gustavoemmanoel/DM-Design-System/a788551ff910a5544891fd15346fe8bdfcc99486/public/icons/produtos.svg"</span
-                                    >&#62;</span
-                                  >
+                                  <span>&#60;img class=<span roxo>"icon"</span>
+                                    src=<span
+                                      roxo>"imagens_design_system/icons/whiteicons/produtos.svg"</span>&#62;</span>
                                 </div>
-                                <span
-                                  >&#60;/<span tagColor>template</span
-                                  >&#62;</span
-                                >
+                                <span>&#60;/<span tagColor>template</span>&#62;</span>
                                 <br />
                                 <!--  -->
-                                <span
-                                  >&#60;<span tagColor>el-col</span>&#62;</span
-                                >
+                                <span>&#60;<span tagColor>el-col</span>&#62;</span>
                                 <br />
                                 <div recuo>
-                                  <span
-                                    >&#60;<span tagColor>el-row</span>
-                                    class=<span roxo>"optionMenu"</span
-                                    >&#62;</span
-                                  ><span black>Logística</span
-                                  ><span
-                                    >&#60;/<span tagColor>el-row</span
-                                    >&#62;</span
-                                  >
+                                  <span>&#60;<span tagColor>el-row</span>
+                                    class=<span roxo>"optionMenu"</span>&#62;</span><span
+                                    black>Logística</span><span>&#60;/<span tagColor>el-row</span>&#62;</span>
                                   <br />
-                                  <span>&#60;<span tagColor>hr</span>&#62;</span
-                                  ><br />
-                                  <span
-                                    >&#60;<span tagColor>el-row</span>
-                                    class=<span roxo>"optionMenu"</span
-                                    >&#62;</span
-                                  ><span black>Chatbot</span
-                                  ><span
-                                    >&#60;/<span tagColor>el-row</span
-                                    >&#62;</span
-                                  >
+                                  <span>&#60;<span tagColor>hr</span>&#62;</span><br />
+                                  <span>&#60;<span tagColor>el-row</span>
+                                    class=<span roxo>"optionMenu"</span>&#62;</span><span
+                                    black>Chatbot</span><span>&#60;/<span tagColor>el-row</span>&#62;</span>
                                   <br />
-                                  <span>&#60;<span tagColor>hr</span>&#62;</span
-                                  ><br />
-                                  <span
-                                    >&#60;<span tagColor>el-row</span>
-                                    class=<span roxo>"optionMenu"</span
-                                    >&#62;</span
-                                  ><span black>Data Machina</span
-                                  ><span
-                                    >&#60;/<span tagColor>el-row</span
-                                    >&#62;</span
-                                  >
+                                  <span>&#60;<span tagColor>hr</span>&#62;</span><br />
+                                  <span>&#60;<span tagColor>el-row</span>
+                                    class=<span roxo>"optionMenu"</span>&#62;</span><span black>Data
+                                    Machina</span><span>&#60;/<span tagColor>el-row</span>&#62;</span>
                                   <br />
-                                  <span>&#60;<span tagColor>hr</span>&#62;</span
-                                  ><br />
-                                  <span
-                                    >&#60;<span tagColor>el-row</span>
-                                    class=<span roxo>"optionMenu"</span
-                                    >&#62;</span
-                                  ><span black>Design</span
-                                  ><span
-                                    >&#60;/<span tagColor>el-row</span
-                                    >&#62;</span
-                                  >
+                                  <span>&#60;<span tagColor>hr</span>&#62;</span><br />
+                                  <span>&#60;<span tagColor>el-row</span>
+                                    class=<span roxo>"optionMenu"</span>&#62;</span><span
+                                    black>Design</span><span>&#60;/<span tagColor>el-row</span>&#62;</span>
                                   <br />
                                 </div>
-                                <span
-                                  >&#60;/<span tagColor>el-col</span>&#62;</span
-                                >
+                                <span>&#60;/<span tagColor>el-col</span>&#62;</span>
                                 <!--  -->
                               </div>
                             </div>
-                            <span
-                              >&#60;/<span tagColor>el-popover</span>&#62;</span
-                            >
+                            <span>&#60;/<span tagColor>el-popover</span>&#62;</span>
                             <br />
                             <br />
                             <!-- NOTIFICAÇÕES -->
                             <span green>&#60;!-- Notificações --&#62;</span>
                             <br />
-                            <span
-                              >&#60;<span tagColor>el-popover</span>
-                              placement=<span roxo>"bottom"</span> trigger=<span
-                                roxo
-                                >"click"</span
-                              >
-                              :width=<span roxo>"400"</span>&#62;</span
-                            >
+                            <span>&#60;<span tagColor>el-popover</span>
+                              placement=<span roxo>"bottom"</span> trigger=<span roxo>"click"</span>
+                              :width=<span roxo>"400"</span>&#62;</span>
                             <br />
                             <div class="border-left">
                               <div recuo>
-                                <span
-                                  >&#60;<span tagColor>template</span>
-                                  <span roxo>#reference</span>&#62;</span
-                                >
+                                <span>&#60;<span tagColor>template</span>
+                                  <span roxo>#reference</span>&#62;</span>
                                 <br />
                                 <div recuo>
-                                  <span
-                                    >&#60;img class=<span roxo>"icon"</span>
-                                    src=<span roxo
-                                      >"https://raw.githubusercontent.com/gustavoemmanoel/DM-Design-System/a788551ff910a5544891fd15346fe8bdfcc99486/public/icons/notificacao.svg"
+                                  <span>&#60;img class=<span roxo>"icon"</span>
+                                    src=<span
+                                      roxo>"imagens_design_system/icons/whiteicons/notificacao.svg"
                                     </span>
                                     &#62;
                                   </span>
                                 </div>
-                                <span
-                                  >&#60;/<span tagColor>template</span
-                                  >&#62;</span
-                                >
+                                <span>&#60;/<span tagColor>template</span>&#62;</span>
                               </div>
                               <div recuo>
-                                <span
-                                  >&#60;<span tagColor>el-col</span>&#62;</span
-                                >
+                                <span>&#60;<span tagColor>el-col</span>&#62;</span>
                                 <br />
                                 <div recuo>
-                                  <span
-                                    >&#60;<span tagColor>el-row</span>
-                                    class=<span roxo>"optionMenu"</span
-                                    >&#62;</span
-                                  >
-                                  <span black
-                                    >O painel Logística foi atualizado - Versão
-                                    2.43.2.1</span
-                                  >
-                                  <span
-                                    >&#60;/<span tagColor>el-row</span
-                                    >&#62;</span
-                                  >
+                                  <span>&#60;<span tagColor>el-row</span>
+                                    class=<span roxo>"optionMenu"</span>&#62;</span>
+                                  <span black>O painel Logística foi atualizado - Versão
+                                    2.43.2.1</span>
+                                  <span>&#60;/<span tagColor>el-row</span>&#62;</span>
                                   <br />
-                                  <span
-                                    >&#60;<span tagColor>hr</span>&#62;</span
-                                  >
+                                  <span>&#60;<span tagColor>hr</span>&#62;</span>
                                   <br />
-                                  <span
-                                    >&#60;<span tagColor>el-row</span>
-                                    class=<span roxo>"optionMenu"</span
-                                    >&#62;</span
-                                  >
-                                  <span black
-                                    >O colaborador Gustavo Emmanoel foi
-                                    cadastrado</span
-                                  >
-                                  <span
-                                    >&#60;/<span tagColor>el-row</span
-                                    >&#62;</span
-                                  >
+                                  <span>&#60;<span tagColor>el-row</span>
+                                    class=<span roxo>"optionMenu"</span>&#62;</span>
+                                  <span black>O colaborador Gustavo Emmanoel foi
+                                    cadastrado</span>
+                                  <span>&#60;/<span tagColor>el-row</span>&#62;</span>
                                   <br />
-                                  <span
-                                    >&#60;<span tagColor>hr</span>&#62;</span
-                                  >
+                                  <span>&#60;<span tagColor>hr</span>&#62;</span>
                                   <br />
-                                  <span
-                                    >&#60;<span tagColor>el-row</span>
-                                    class=<span roxo>"optionMenu"</span
-                                    >&#62;</span
-                                  >
+                                  <span>&#60;<span tagColor>el-row</span>
+                                    class=<span roxo>"optionMenu"</span>&#62;</span>
                                   <span black>Você se cadastrou!</span>
-                                  <span
-                                    >&#60;/<span tagColor>el-row</span
-                                    >&#62;</span
-                                  >
+                                  <span>&#60;/<span tagColor>el-row</span>&#62;</span>
                                   <br />
                                 </div>
-                                <span
-                                  >&#60;/<span tagColor>el-col</span>&#62;</span
-                                >
+                                <span>&#60;/<span tagColor>el-col</span>&#62;</span>
                                 <br />
                               </div>
                             </div>
-                            <span
-                              >&#60;/<span tagColor>el-popover</span>&#62;</span
-                            >
+                            <span>&#60;/<span tagColor>el-popover</span>&#62;</span>
                             <br />
                             <br />
                             <!-- DÚVIDAS -->
                             <span green>&#60;!-- Dúvidas --&#62;</span>
                             <br />
-                            <span
-                              >&#60;<span tagColor>el-popover</span>
-                              placement=<span roxo>"bottom"</span> trigger=<span
-                                roxo
-                                >"click"</span
-                              >
-                              :width=<span roxo>"300"</span>&#62;</span
-                            >
+                            <span>&#60;<span tagColor>el-popover</span>
+                              placement=<span roxo>"bottom"</span> trigger=<span roxo>"click"</span>
+                              :width=<span roxo>"300"</span>&#62;</span>
                             <br />
                             <div class="border-left">
                               <div recuo>
-                                <span
-                                  >&#60;template
-                                  <span roxo>#reference</span>&#62;</span
-                                >
+                                <span>&#60;template
+                                  <span roxo>#reference</span>&#62;</span>
                                 <br />
                                 <div recuo>
-                                  <span
-                                    >&#60;img class=<span roxo>"icon"</span>
-                                    src=<span roxo
-                                      >"https://raw.githubusercontent.com/gustavoemmanoel/DM-Design-System/a788551ff910a5544891fd15346fe8bdfcc99486/public/icons/duvida.svg"</span
-                                    >&#62;</span
-                                  >
+                                  <span>&#60;img class=<span roxo>"icon"</span>
+                                    src=<span
+                                      roxo>"imagens_design_system/icons/whiteicons/duvida.svg"</span>&#62;</span>
                                 </div>
-                                <span
-                                  >&#60;/<span tagColor>template</span
-                                  >&#62;</span
-                                >
+                                <span>&#60;/<span tagColor>template</span>&#62;</span>
                               </div>
                               <div recuo>
-                                <span
-                                  >&#60;<span tagColor>el-col</span>&#62;</span
-                                >
+                                <span>&#60;<span tagColor>el-col</span>&#62;</span>
                                 <br />
                                 <div recuo>
-                                  <span
-                                    >&#60;<span tagColor>el-row</span>
-                                    class=<span roxo>"optionMenu"</span
-                                    >&#62;</span
-                                  >
+                                  <span>&#60;<span tagColor>el-row</span>
+                                    class=<span roxo>"optionMenu"</span>&#62;</span>
                                   <span black>versão: 2cf2f45f</span>
-                                  <span
-                                    >&#60;/<span tagColor>el-row</span
-                                    >&#62;</span
-                                  >
+                                  <span>&#60;/<span tagColor>el-row</span>&#62;</span>
                                   <br />
                                   <span>&#60;hr/&#62;</span>
                                   <br />
-                                  &#60;<span tagColor>el-row</span> class=<span
-                                    roxo
-                                    >"optionMenu"</span
-                                  >&#62;<span black
-                                    >Dúvidas? entre em contato por:</span
-                                  >
+                                  &#60;<span tagColor>el-row</span> class=<span roxo>"optionMenu"</span>&#62;<span
+                                    black>Dúvidas? entre em contato por:</span>
                                   <br />
                                   <div recuo>
-                                    &#60;p class=<span roxo
-                                      >"dm_azul_00_color"&#62;</span
-                                    >
+                                    &#60;p class=<span roxo>"dm_azul_00_color"&#62;</span>
                                     <div black>
                                       datamachina@datamachina.com.br
                                     </div>
                                     <span>&#60;/p&#62;</span>
                                   </div>
-                                  <span
-                                    >&#60;/<span tagColor>el-row</span
-                                    >&#62;</span
-                                  >
+                                  <span>&#60;/<span tagColor>el-row</span>&#62;</span>
                                   <br />
                                 </div>
-                                <span
-                                  >&#60;/<span tagColor>el-col</span>&#62;</span
-                                >
+                                <span>&#60;/<span tagColor>el-col</span>&#62;</span>
                                 <br />
                               </div>
                             </div>
-                            <span
-                              >&#60;/<span tagColor>el-popover</span>&#62;</span
-                            >
+                            <span>&#60;/<span tagColor>el-popover</span>&#62;</span>
                             <br />
                             <br />
                             <!-- Perfil -->
                             <span green>&#60;!-- Perfil --&#62;</span>
                             <br />
                             &#60;<span tagColor>el-popover</span>
-                            placement=<span roxo>"bottom"</span> trigger=<span
-                              roxo
-                              >"click"</span
-                            >
+                            placement=<span roxo>"bottom"</span> trigger=<span roxo>"click"</span>
                             :width=<span roxo>"360"</span>&#62;
                             <br />
                             <div class="border-left">
@@ -588,75 +415,48 @@
                                 &#60;template <span roxo>#reference</span>&#62;
                                 <br />
                                 <div recuo>
-                                  &#60;<span tagColor>img</span> class=<span
-                                    roxo
-                                    >"icon"</span
-                                  >
-                                  src=<span roxo
-                                    >"https://raw.githubusercontent.com/gustavoemmanoel/DM-Design-System/a788551ff910a5544891fd15346fe8bdfcc99486/public/icons/perfil.svg"&#62;</span
-                                  >
+                                  &#60;<span tagColor>img</span> class=<span roxo>"icon"</span>
+                                  src=<span
+                                    roxo>"imagens_design_system/icons/whiteicons/perfil.svg"&#62;</span>
                                 </div>
                                 &#60;/<span tagColor>template</span>&#62;
                                 <br />
                                 &#60;<span tagColor>el-col</span>&#62;
                                 <div recuo>
-                                  &#60;<span tagColor>el-row</span> class="<span
-                                    roxo
-                                    >tag-primaria"</span
-                                  >&#62;
+                                  &#60;<span tagColor>el-row</span> class="<span roxo>tag-primaria"</span>&#62;
                                   <br />
                                   <div recuo>
-                                    &#60;p class=<span roxo>"body_01"</span
-                                    >&#62;<span black>Mateus Durães</span>
+                                    &#60;p class=<span roxo>"body_01"</span>&#62;<span black>Mateus Durães</span>
                                     &#60;/p&#62;<br />
-                                    &#60;<span tagColor>div</span>&#62;<span
-                                      black
-                                      >Administrador</span
-                                    >&#60;/<span tagColor>div</span>&#62;<span
-                                      black
-                                    >
+                                    &#60;<span tagColor>div</span>&#62;<span black>Administrador</span>&#60;/<span
+                                      tagColor>div</span>&#62;<span black>
                                       <br />
-                                      mateusduraessantos@datamachina.com.br</span
-                                    >
+                                      mateusduraessantos@datamachina.com.br</span>
                                   </div>
                                   &#60;/<span tagColor>el-row</span>&#62;
                                   <br />
                                   &#60;<span tagColor>hr</span>&#62;
                                   <br />
-                                  &#60;<span tagColor>el-row</span> class=<span
-                                    roxo
-                                    >"optionMenu"</span
-                                  >&#62;<span black>Configurações</span
-                                  >&#60;/<span tagColor>el-row</span>&#62;
+                                  &#60;<span tagColor>el-row</span> class=<span roxo>"optionMenu"</span>&#62;<span
+                                    black>Configurações</span>&#60;/<span tagColor>el-row</span>&#62;
                                   <br />
-                                  &#60;<span tagColor>el-row</span> class=<span
-                                    roxo
-                                    >"optionMenu"</span
-                                  >&#62;<span black>Configurações</span
-                                  >&#60;/<span tagColor>el-row</span>&#62;
+                                  &#60;<span tagColor>el-row</span> class=<span roxo>"optionMenu"</span>&#62;<span
+                                    black>Configurações</span>&#60;/<span tagColor>el-row</span>&#62;
                                   <br />
                                   &#60;<span tagColor>hr</span>&#62;
                                   <br />
-                                  &#60;<span tagColor>el-row</span> class=<span
-                                    roxo
-                                    >"optionMenu"</span
-                                  >&#62;
+                                  &#60;<span tagColor>el-row</span> class=<span roxo>"optionMenu"</span>&#62;
                                   <br />
                                   <div recuo>
-                                    &#60;<span tagColor>el-button</span
-                                    >&#62;<span black>Sair</span>&#60;/<span
-                                      tagColor
-                                      >el-button</span
-                                    >&#62;
+                                    &#60;<span tagColor>el-button</span>&#62;<span black>Sair</span>&#60;/<span
+                                      tagColor>el-button</span>&#62;
                                   </div>
                                   &#60;/<span tagColor>el-row</span>&#62;
                                 </div>
                                 &#60;/<span tagColor>el-col</span>&#62;
                               </div>
                             </div>
-                            <span
-                              >&#60;/<span tagColor>el-popover</span>&#62;</span
-                            >
+                            <span>&#60;/<span tagColor>el-popover</span>&#62;</span>
                           </div>
                         </div>
                         &#60;/<span tagColor>el-row</span>&#62;
@@ -699,22 +499,16 @@
                 &#60;<span tagColor>el-row</span>&#62;
                 <div class="border-left">
                   <div recuo>
-                    &#60;<span tagColor>el-col</span> :offset=<span roxo
-                      >"1"</span
-                    >
+                    &#60;<span tagColor>el-col</span> :offset=<span roxo>"1"</span>
                     :span=<span roxo>"22</span>"&#62;
                     <div class="border-left">
                       <div recuo>
-                        &#60;<span tagColor>el-tabs</span> v-model=<span roxo
-                          >"activeName"</span
-                        >
+                        &#60;<span tagColor>el-tabs</span> v-model=<span roxo>"activeName"</span>
                         @tab-click=<span roxo>"handleClick"</span>&#62;
                         <div class="border-left">
                           <div recuo>
-                            &#60;<span tagColor>el-tab-pane</span> label="<span
-                              roxo
-                              >User</span
-                            >" name="<span roxo>first"</span>&#62;
+                            &#60;<span tagColor>el-tab-pane</span> label="<span roxo>User</span>" name="<span
+                              roxo>first"</span>&#62;
                             <span black>User</span>
                             &#60;/<span tagColor>el-tab-pane</span>&#62;<br />
                             &#60;<span tagColor>el-tab-pane</span> label="
@@ -727,10 +521,8 @@
                             " name="third"&#62;
                             <span black>Role</span>
                             &#60;/<span tagColor>el-tab-pane</span>&#62; <br />
-                            &#60;<span tagColor>el-tab-pane</span> label="<span
-                              roxo
-                              >Task</span
-                            >" name=<span roxo>"fourth"</span>&#62;
+                            &#60;<span tagColor>el-tab-pane</span> label="<span roxo>Task</span>" name=<span
+                              roxo>"fourth"</span>&#62;
                             <span black>Task</span>
                             &#60;/<span tagColor>el-tab-pane</span>&#62;<br />
                           </div>
@@ -796,12 +588,7 @@
         <div class="container-elementos">
           <el-row style="gap: 10px">
             <!-- Produtos -->
-            <el-popover
-              placement="bottom"
-              style="padding: 0; background: green"
-              trigger="click"
-              :width="200"
-            >
+            <el-popover placement="bottom" style="padding: 0; background: green" trigger="click" :width="200">
               <template #reference>
                 <img class="icon" src="imagens_design_system/icons/blackicons/produtos.svg" alt="produto" />
               </template>
@@ -818,7 +605,7 @@
             </el-popover>
           </el-row>
         </div>
-        
+
         <!-- Notificações -->
         <div>
           <h3>Notificações</h3>
@@ -838,13 +625,9 @@
               <img class="icon" src="imagens_design_system/icons/blackicons/notificacao.svg" alt="Notificação" />
             </template>
             <el-col>
-              <el-row class="optionMenu"
-                >O painel Logística foi atualizado - Versão 2.43.2.1</el-row
-              >
+              <el-row class="optionMenu">O painel Logística foi atualizado - Versão 2.43.2.1</el-row>
               <hr />
-              <el-row class="optionMenu"
-                >O colaborador Gustavo Emmanoel foi cadastrado</el-row
-              >
+              <el-row class="optionMenu">O colaborador Gustavo Emmanoel foi cadastrado</el-row>
               <hr />
               <el-row class="optionMenu">Você se cadastrou!</el-row>
             </el-col>
@@ -870,8 +653,7 @@
             <el-col>
               <el-row class="optionMenu">versão: 2cf2f45f</el-row>
               <hr />
-              <el-row class="optionMenu"
-                >Dúvidas? entre em contato por:
+              <el-row class="optionMenu">Dúvidas? entre em contato por:
                 <p class="dm_azul_00_color">datamachina@datamachina.com.br</p>
               </el-row>
             </el-col>
@@ -899,8 +681,8 @@
               <el-row class="optionMenu">
                 <p class="body_01">Mateus Durães</p>
                 <div class="tag-primaria">Administrador</div>
-                mateusduraessantos@datamachina.com.br</el-row
-              >
+                mateusduraessantos@datamachina.com.br
+              </el-row>
               <hr />
               <el-row class="optionMenu">Configurações</el-row>
               <el-row class="optionMenu">Configurações</el-row>

@@ -11,6 +11,7 @@
 
         <el-main>
           <!--  -->
+
           <div class="containerInterno">
             <div>
               <h1>/Calendário</h1>
@@ -28,51 +29,72 @@
 
               <br>
               <br>
-              <br>
-              <div class="html_codigos_blue">
-                <span tagColor>&#60;el-date-picker</span>
-                <div recuo>
-                  v-model=<span roxo>"value1"</span> <br />type=<span roxo>"daterange"</span><br />
-                  range-separator=<span roxo>"-"</span> <br />start-placeholder=<span roxo>"Início"</span>
-                  <br>
-                  end-placeholder=<span roxo>"Término"</span><br /> :prefix-icon=<span>"customPrefix"</span><br />
-                  :size=<span roxo>"size"</span>
-                </div>
-                <span tagColor>/&#62;</span>
-              </div>
-              <br>
-              <br>
-              <div class="html_codigos_blue">
-                <span tagColor>&#60;script&#62;</span>
-                <br>
-                import { h, shallowRef } from 'vue'
-                <br>
-                <br>
-                export default {
-                <div recuo>
-                  data() {
-                  <div recuo>
-                    return {
-                    customPrefix: shallowRef({
-                    <div recuo>
-                      render() {
-                      <div recuo>return h("dm-icons-calendar", "");
-                        <br>
-                        },
-                      </div>
-                      }),
-                    </div>
-                    };
-                  </div>
-                  },
-                </div>
-                };
-
-                <br>
-                <span tagColor>&#60;/script&#62;</span>
-              </div>
               <el-collapse v-model="activeNames" @change="handleChange">
                 <el-collapse-item title="ver" name="1">
+                  <div class="html_codigos_blue">
+                    &#60;<span tagColor>template</span> &#62;
+                    <div class="border-left">
+                      <div recuo>
+                        <span tagColor>&#60;el-date-picker</span>
+                        <div class="border-left">
+                          <div recuo>
+                            <span attributeColor>v-model</span>=<span roxo>"value1"</span> <br /><span
+                              attributeColor>type</span>=<span roxo>"daterange"</span><br />
+                            <span attributeColor>range-separator</span>=<span roxo>"-"</span> <br /><span
+                              attributeColor>start-placeholder</span>=<span roxo>"Início"</span>
+                            <br>
+                            <span attributeColor>end-placeholder</span>=<span roxo>"Término"</span><br /> <span
+                              attributeColor>:prefix-icon</span>=<span>"customPrefix"</span><br />
+                            <span attributeColor>:size</span>=<span roxo>"size"</span>
+                          </div>
+                        </div>
+                        <span tagColor>/&#62;</span>
+                      </div>
+                    </div>
+                    &#60;/<span tagColor>template</span>&#62;
+                  </div>
+                  <br>
+                  <br>
+                  <div class="html_codigos_blue">
+                    &#60;<span tagColor>script</span>&#62;
+                    <br>
+                    <span roxo>import</span> { <span black>h, shallowRef</span> } <span roxo>from</span> <span
+                      green>'vue'</span>
+                    <br>
+                    <span roxo>export default</span> {
+                    <div class="border-left">
+                      <div recuo>
+                        <span yellow>data</span>() {
+                        <div class="border-left">
+                          <div recuo>
+                            <span roxo>return</span> {
+                            customPrefix: <span yellow>shallowRef</span>({
+                            <div class="border-left">
+                              <div recuo>
+                                <span yellow>render</span>() {
+                                <div class="border-left">
+                                  <div recuo><span roxo>return</span> <span yellow>h</span>(<span
+                                      black>"dm-icons-calendar"</span>, <span black>""</span>);
+                                    <br>
+                                    },
+                                  </div>
+                                </div>
+                                }),
+                              </div>
+                            </div>
+                            };
+                          </div>
+                        </div>
+                        },
+                      </div>
+                    </div>
+                    };
+
+                    <br>
+                    &#60;/<span tagColor>script</span>&#62;
+                  </div>
+
+
                 </el-collapse-item>
               </el-collapse>
             </div>
@@ -95,47 +117,72 @@
 
               <br>
               <br>
-              <br>
-              <div class="html_codigos_blue">
-                <span tagColor>&#60;el-date-picker</span>
-                <div recuo>class=<span roxo>"calendario"</span> <br>v-model=<span roxo>"value2"</span><br> type=<span
-                    roxo>"date"</span> <br> placeholder=<span roxo>"Pick a day"</span><br> :prefix-icon=<span
-                    roxo>"customPrefix"</span><br> :size=<span roxo>"size"</span> </div>
-                <span tagColor>/&#62;</span>
-              </div>
-              <br>
-              <br>
-              <div class="html_codigos_blue">
-                <span tagColor>&#60;script&#62;</span>
-                <br>
-                import { h, shallowRef } from 'vue'
-                <br>
-                <br>
-                export default {
-                <div recuo>
-                  data() {
-                  <div recuo>
-                    return {
-                    customPrefix: shallowRef({
-                    <div recuo>
-                      render() {
-                      <div recuo>return h("dm-icons-calendar", "");
-                        <br>
+
+              <el-collapse v-model="activeNames" @change="handleChange">
+                <el-collapse-item title="ver" name="1">
+                  <div class="html_codigos_blue">
+                    &#60;<span tagColor>template</span> &#62;
+                    <div class="border-left">
+                      <div recuo>
+                        &#60;<span tagColor>el-date-picker</span>
+                        <div class="border-left">
+                          <div recuo><span attributeColor>class</span>=<span roxo>"calendario"</span> <br><span
+                              attributeColor>v-model</span>=<span roxo>"value2"</span><br>
+                            <span attributeColor>type</span>=<span roxo>"date"</span> <br> <span
+                              attributeColor>placeholder</span>=<span roxo>"Pick
+                              a day"</span><br>
+                            <span attributeColor>:prefix-icon</span>=<span roxo>"customPrefix"</span><br> <span
+                              attributeColor>:size</span>=<span roxo>"size"</span>
+                          </div>
+                        </div>
+                        <span tagColor></span>/&#62;
+                      </div>
+                    </div>
+                    &#60;/<span tagColor>template</span>&#62;
+                  </div>
+                  <br>
+                  <br>
+                  <div class="html_codigos_blue">
+                    &#60;<span tagColor>script</span>&#62;
+                    <br>
+                    <span roxo>import</span> { <span black>h, shallowRef</span> } <span roxo>from</span> <span
+                      green>'vue'</span>
+                    <br>
+                    <span roxo>export default</span> {
+                    <div class="border-left">
+                      <div recuo>
+                        <span yellow>data</span>() {
+                        <div class="border-left">
+                          <div recuo>
+                            <span roxo>return</span> {
+                            customPrefix: <span yellow>shallowRef</span>({
+                            <div class="border-left">
+                              <div recuo>
+                                <span yellow>render</span>() {
+                                <div class="border-left">
+                                  <div recuo><span roxo>return</span> <span yellow>h</span>(<span
+                                      black>"dm-icons-calendar"</span>, <span black>""</span>);
+                                    <br>
+                                    },
+                                  </div>
+                                </div>
+                                }),
+                              </div>
+                            </div>
+                            };
+                          </div>
+                        </div>
                         },
                       </div>
-                      }),
                     </div>
                     };
-                  </div>
-                  },
-                </div>
-                };
 
-                <br>
-                <span tagColor>&#60;/script&#62;</span>
-              </div>
-              <el-collapse v-model="activeNames" @change="handleChange">
-                <el-collapse-item title="ver" name="1"> </el-collapse-item>
+                    <br>
+                    &#60;/<span tagColor>script</span>&#62;
+                  </div>
+
+
+                </el-collapse-item>
               </el-collapse>
             </div>
           </div>

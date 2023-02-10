@@ -14,12 +14,9 @@ export default {
 * {
   box-sizing: border-box;
 }
+
 body {
   background: var(--dm_creme_02);
-}
-
-[tagColor] {
-  color: var(--dm_azul_C03);
 }
 
 .flex {
@@ -95,6 +92,7 @@ body {
   font-size: 14px;
   line-height: 22px;
 }
+
 .html_color_conteudo,
 [black] {
   color: var(--dm_preto_00);
@@ -102,12 +100,25 @@ body {
 
 .html_color_axx,
 [roxo] {
-  color: var(--dm_roxo_C02);
-  /* color: var(--dm_roxo_C04); */
+  color: var(--dm_verde_C01);
 }
+
+[tagColor] {
+  color: var(--dm_azul_C03);
+}
+
+[attributeColor] {
+  color: var(--dm_lilas_01);
+}
+
 [green] {
-  color: var(--dm_verde_00);
+  color: var(--dm_verde_01);
 }
+
+[yellow] {
+  color: var(--dm_amarelo_00);
+}
+
 .recuo,
 [recuo] {
   margin-left: 14px;
@@ -133,6 +144,7 @@ body {
 .el-collapse-item__content {
   padding: 0;
 }
+
 /* Fim Alterações no collapse */
 
 .el-header {

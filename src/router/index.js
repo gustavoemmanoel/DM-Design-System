@@ -1,6 +1,9 @@
 import { createRouter, createWebHashHistory } from "vue-router";
 /* Instalação */
 import InstallationEl from "../views/Installation/InstallationEl.vue";
+/* Princípios */
+import InicioDs from "../views/InicioDs.vue";
+import PrincipiosDs from "../views/PrincipiosDs.vue";
 /* Fundação */
 import ColorsDs from "../views/Fundacao/ColorsDs.vue";
 import TipografiaDs from "../views/Fundacao/TipografiaDs.vue";
@@ -49,6 +52,18 @@ const routes = [
     name: "PreProcessamentos",
     component: PreProcessamentos,
   },
+  /* PrincipiosDs */
+  {
+    path: "/InicioDs",
+    name: "InicioDs",
+    component: InicioDs,
+  },
+  {
+    path: "/PrincipiosDs",
+    name: "PrincipiosDs",
+    component: PrincipiosDs,
+  },
+
   /* Fundação */
   {
     path: "/ColorsDs",

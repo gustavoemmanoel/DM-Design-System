@@ -22,62 +22,211 @@
 
           <div class="container-elementos grid_container_icone">
             <div class="column_icons">
-              <!-- <dm_icone><maisInformacoes /></dm_icone>
-              <dm_icone><cima /></dm_icone> -->
-              <div><dm_icon cima />cima</div>
-              <div><dm_icon baixo />baixo</div>
-              <div><dm_icon prosseguir />prosseguir</div>
-              <div><dm_icon voltar />voltar</div>
-              <div><dm_icon avancar />avancar</div>
-              <div><dm_icon retroceder />retroceder</div>
-              <div><dm_icon check />check</div>
-              <div><dm_icon close />close</div>
-              <div><dm_icon menu />menu</div>
-              <div><dm_icon produtos />produtos</div>
-              <div><dm_icon maisOpcoes />maisOpcoes</div>
-              <div><dm_icon estatisticas />estatisticas</div>
-              <div><dm_icon pasta />pasta</div>
-              <div><dm_icon email />email</div>
-              <div><dm_icon envio />envio</div>
-              <div><dm_icon cadeadoAberto />cadeadoAberto</div>
-              <div><dm_icon cadeadoFechado />cadeadoFechado</div>
+
+              <div class="c-icon">
+                <dm_icon cima />
+                <div class="container_icon"> &#60;<span tagColor>dm_icon</span> cima /&#62;</div>
+              </div>
+              <div class="c-icon">
+                <dm_icon baixo />
+                <div class="container_icon"> &#60;<span tagColor>dm_icon</span> baixo /&#62;</div>
+              </div>
+              <div class="c-icon">
+                <dm_icon prosseguir />
+                <div class="container_icon"> &#60;<span tagColor>dm_icon</span> prosseguir /&#62;</div>
+              </div>
+              <div class="c-icon">
+                <dm_icon voltar />
+                <div class="container_icon"> &#60;<span tagColor>dm_icon</span> voltar /&#62;</div>
+              </div>
+              <div class="c-icon">
+                <dm_icon avancar />
+                <div class="container_icon"> &#60;<span tagColor>dm_icon</span> avancar /&#62;</div>
+              </div>
+              <div class="c-icon">
+                <dm_icon retroceder />
+                <div class="container_icon"> &#60;<span tagColor>dm_icon</span> retroceder /&#62;</div>
+              </div>
+              <div class="c-icon">
+                <dm_icon check />
+                <div class="container_icon"> &#60;<span tagColor>dm_icon</span> check /&#62;</div>
+              </div>
+              <div class="c-icon">
+                <dm_icon close />
+                <div class="container_icon"> &#60;<span tagColor>dm_icon</span> close /&#62;</div>
+              </div>
+              <div class="c-icon">
+                <dm_icon menu />
+                <div class="container_icon"> &#60;<span tagColor>dm_icon</span> menu /&#62;</div>
+              </div>
+              <div class="c-icon">
+                <dm_icon produtos />
+                <div class="container_icon"> &#60;<span tagColor>dm_icon</span> produtos /&#62;</div>
+              </div>
+              <div class="c-icon">
+                <dm_icon maisOpcoes />
+                <div class="container_icon"> &#60;<span tagColor>dm_icon</span> maisOpcoes /&#62;</div>
+              </div>
+              <div class="c-icon">
+                <dm_icon estatisticas />
+                <div class="container_icon"> &#60;<span tagColor>dm_icon</span> estatisticas /&#62;</div>
+              </div>
+              <div class="c-icon">
+                <dm_icon pasta />
+                <div class="container_icon"> &#60;<span tagColor>dm_icon</span> pasta /&#62;</div>
+              </div>
+              <div class="c-icon">
+                <dm_icon email />
+                <div class="container_icon"> &#60;<span tagColor>dm_icon</span> email /&#62;</div>
+              </div>
+              <div class="c-icon">
+                <dm_icon envio />
+                <div class="container_icon"> &#60;<span tagColor>dm_icon</span> envio /&#62;</div>
+              </div>
+              <div class="c-icon">
+                <dm_icon cadeadoAberto />
+                <div class="container_icon"> &#60;<span tagColor>dm_icon</span> cadeadoAberto /&#62;</div>
+              </div>
+              <div class="c-icon">
+                <dm_icon cadeadoFechado />
+                <div class="container_icon"> &#60;<span tagColor>dm_icon</span> cadeadoFechado /&#62;</div>
+              </div>
             </div>
             <div class="column_icons">
-              <div><dm_icon alerta />alerta</div>
-              <div><dm_icon correta />correta</div>
-              <div><dm_icon maisInformacoes />maisInformacoes</div>
-              <div><dm_icon duvida />duvida</div>
-              <div><dm_icon adicionar />adicionar</div>
-              <div><dm_icon errada />errada</div>
-              <div><dm_icon editar />editar</div>
-              <div><dm_icon internet />internet</div>
-              <div><dm_icon localizacao />localizacao</div>
-              <div><dm_icon historico />historico</div>
-              <div><dm_icon calendario />calendario</div>
-              <div><dm_icon camada />camada</div>
-              <div><dm_icon camadaAberta />camadaAberta</div>
-              <div><dm_icon camadaFechada />camadaFechada</div>
-              <div><dm_icon chat />chat</div>
-              <div><dm_icon documento />documento</div>
-              <div><dm_icon loading />loading</div>
+              <div class="c-icon">
+                <dm_icon alerta />
+                <div class="container_icon"> &#60;<span tagColor>dm_icon</span> alerta /&#62;</div>
+              </div>
+              <div class="c-icon">
+                <dm_icon correta />
+                <div class="container_icon"> &#60;<span tagColor>dm_icon</span> correta /&#62;</div>
+              </div>
+              <div class="c-icon">
+                <dm_icon maisInformacoes />
+                <div class="container_icon"> &#60;<span tagColor>dm_icon</span> maisInformacoes /&#62;</div>
+              </div>
+              <div class="c-icon">
+                <dm_icon duvida />
+                <div class="container_icon"> &#60;<span tagColor>dm_icon</span> duvida /&#62;</div>
+              </div>
+              <div class="c-icon">
+                <dm_icon adicionar />
+                <div class="container_icon"> &#60;<span tagColor>dm_icon</span> adicionar /&#62;</div>
+              </div>
+              <div class="c-icon">
+                <dm_icon errada />
+                <div class="container_icon"> &#60;<span tagColor>dm_icon</span> errada /&#62;</div>
+              </div>
+              <div class="c-icon">
+                <dm_icon editar />
+                <div class="container_icon"> &#60;<span tagColor>dm_icon</span> editar /&#62;</div>
+              </div>
+              <div class="c-icon">
+                <dm_icon internet />
+                <div class="container_icon"> &#60;<span tagColor>dm_icon</span> internet /&#62;</div>
+              </div>
+              <div class="c-icon">
+                <dm_icon localizacao />
+                <div class="container_icon"> &#60;<span tagColor>dm_icon</span> localizacao /&#62;</div>
+              </div>
+              <div class="c-icon">
+                <dm_icon historico />
+                <div class="container_icon"> &#60;<span tagColor>dm_icon</span> historico /&#62;</div>
+              </div>
+              <div class="c-icon">
+                <dm_icon calendario />
+                <div class="container_icon"> &#60;<span tagColor>dm_icon</span> calendario /&#62;</div>
+              </div>
+              <div class="c-icon">
+                <dm_icon camada />
+                <div class="container_icon"> &#60;<span tagColor>dm_icon</span> camada /&#62;</div>
+              </div>
+              <div class="c-icon">
+                <dm_icon camadaAberta />
+                <div class="container_icon"> &#60;<span tagColor>dm_icon</span> camadaAberta /&#62;</div>
+              </div>
+              <div class="c-icon">
+                <dm_icon camadaFechada />
+                <div class="container_icon"> &#60;<span tagColor>dm_icon</span> camadaFechada /&#62;</div>
+              </div>
+              <div class="c-icon">
+                <dm_icon chat />
+                <div class="container_icon"> &#60;<span tagColor>dm_icon</span> chat /&#62;</div>
+              </div>
+              <div class="c-icon">
+                <dm_icon documento />
+                <div class="container_icon"> &#60;<span tagColor>dm_icon</span> documento /&#62;</div>
+              </div>
+              <div class="c-icon">
+                <dm_icon loading />
+                <div class="container_icon"> &#60;<span tagColor>dm_icon</span> loading /&#62;</div>
+              </div>
             </div>
             <div class="column_icons">
-              <div><dm_icon telefone />telefone</div>
-              <div><dm_icon mapas />mapas</div>
-              <div><dm_icon lixeira />lixeira</div>
-              <div><dm_icon logout />logout</div>
-              <div><dm_icon upload />upload</div>
-              <div><dm_icon download />download</div>
-              <div><dm_icon lupa />lupa</div>
-              <div><dm_icon perfil />perfil</div>
-              <div><dm_icon notificacao />notificacao</div>
-              <div><dm_icon sugestao />sugestao</div>
-              <div><dm_icon emote />emote</div>
-              <div><dm_icon filtro />filtro</div>
-              <div><dm_icon video />video</div>
-              <div><dm_icon novoArquivo />novoArquivodeo</div>
-              <div><dm_icon imagem />imagem</div>
-              <div><dm_icon endereco />endereco</div>
+              <div class="c-icon">
+                <dm_icon telefone />
+                <div class="container_icon"> &#60;<span tagColor>dm_icon</span> telefone /&#62;</div>
+              </div>
+              <div class="c-icon">
+                <dm_icon mapas />
+                <div class="container_icon"> &#60;<span tagColor>dm_icon</span> mapas /&#62;</div>
+              </div>
+              <div class="c-icon">
+                <dm_icon lixeira />
+                <div class="container_icon"> &#60;<span tagColor>dm_icon</span> lixeira /&#62;</div>
+              </div>
+              <div class="c-icon">
+                <dm_icon logout />
+                <div class="container_icon"> &#60;<span tagColor>dm_icon</span> logout /&#62;</div>
+              </div>
+              <div class="c-icon">
+                <dm_icon upload />
+                <div class="container_icon"> &#60;<span tagColor>dm_icon</span> upload /&#62;</div>
+              </div>
+              <div class="c-icon">
+                <dm_icon download />
+                <div class="container_icon"> &#60;<span tagColor>dm_icon</span> download /&#62;</div>
+              </div>
+              <div class="c-icon">
+                <dm_icon lupa />
+                <div class="container_icon"> &#60;<span tagColor>dm_icon</span> lupa /&#62;</div>
+              </div>
+              <div class="c-icon">
+                <dm_icon perfil />
+                <div class="container_icon"> &#60;<span tagColor>dm_icon</span> perfil /&#62;</div>
+              </div>
+              <div class="c-icon">
+                <dm_icon notificacao />
+                <div class="container_icon"> &#60;<span tagColor>dm_icon</span> notificacao /&#62;</div>
+              </div>
+              <div class="c-icon">
+                <dm_icon sugestao />
+                <div class="container_icon"> &#60;<span tagColor>dm_icon</span> sugestao /&#62;</div>
+              </div>
+              <div class="c-icon">
+                <dm_icon emote />
+                <div class="container_icon"> &#60;<span tagColor>dm_icon</span> emote /&#62;</div>
+              </div>
+              <div class="c-icon">
+                <dm_icon filtro />
+                <div class="container_icon"> &#60;<span tagColor>dm_icon</span> filtro /&#62;</div>
+              </div>
+              <div class="c-icon">
+                <dm_icon video />
+                <div class="container_icon"> &#60;<span tagColor>dm_icon</span> video /&#62;</div>
+              </div>
+              <div class="c-icon">
+                <dm_icon novoArquivo />
+                <div class="container_icon"> &#60;<span tagColor>dm_icon</span> novoArquivodeo /&#62;</div>
+              </div>
+              <div class="c-icon">
+                <dm_icon imagem />
+                <div class="container_icon"> &#60;<span tagColor>dm_icon</span> imagem /&#62;</div>
+              </div>
+              <div class="c-icon">
+                <dm_icon endereco />
+                <div class="container_icon"> &#60;<span tagColor>dm_icon</span> endereco /&#62;</div>
+              </div>
             </div>
           </div>
         </div>
@@ -114,9 +263,13 @@ export default {
 img {
   width: 24px;
 }
-.column_icons div {
+
+.container_icon {
+  margin-left: 20px;
+}
+
+.c-icon {
   display: flex;
-  gap: 15px;
   align-items: center;
   margin-bottom: 15px;
 }

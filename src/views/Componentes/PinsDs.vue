@@ -25,51 +25,80 @@
               permace como um pin básico.
             </p>
             <br />
-            <el-row>
-              <el-col :span="8">
-                <img src="imagens_design_system/pins/bom.svg" alt="Bom" />
-                <img src="imagens_design_system/pins/media.svg" alt="Media" />
-                <img src="imagens_design_system/pins/ruim.svg" alt="Ruim" />
-                <img
-                  src="imagens_design_system/pins/pinBlueCoroa.svg"
-                  alt="Pin"
-                />
-                <img
-                  src="imagens_design_system/pins/pinBlueCoroaBom.svg"
-                  alt="Pin"
-                />
-              </el-col>
-              <el-col :span="8">
-                <strong>Pin</strong>
-                <br />
-                <br />
-                <div>Borda: <strong>1px</strong></div>
-                <div>Cor da borda: <strong>dm_preto_CT01</strong></div>
-                <div>Background: <strong>dm_preto_00</strong></div>
-                <div>Altura: <strong>44px</strong></div>
-                <div>Largura: <strong>36px</strong></div>
-              </el-col>
-              <el-col :span="8">
-                <strong>Ícone</strong>
-                <br />
-                <br />
-                <div>Cor do ícone: <strong>dm_creme_00</strong></div>
-                <div></div>
-              </el-col>
-            </el-row>
+            <div class="pin__container">
+              <img class="pin__large" src="imagens_design_system/pins/pin__basico--azul.svg" alt="Pin" />
+              <img class="pin__small" src="imagens_design_system/pins/pin__basico--azul.svg" alt="Pin" />
+            </div>
+
             <br />
-            <!--  -->
-            <el-collapse v-model="activeNames" @change="handleChange">
-              <el-collapse-item title="Consistency" name="1">
-                <div>
-                  Consistent with real life: in line with the process and logic
-                  of real life, and comply with languages and habits that the
-                  users are used to;
-                </div>
-              </el-collapse-item>
-            </el-collapse>
-            <!--  -->
+
           </div>
+          <div class="container-elementos">
+            <h2>Pin com ícone</h2>
+            <p>
+              O pin também pode conter um ícone interno para representar mais uma informação sobre aquele ponto específico.
+            </p>
+            <br />
+            <div class="pin__container">
+
+              <img class="pin__large" src="imagens_design_system/pins/pin__coroa.svg" alt="Pin" />
+              <img class="pin__small" src="imagens_design_system/pins/pin__coroa.svg" alt="Pin" />
+
+            </div>
+
+          </div>
+          <div class="container-elementos">
+            <h2>Pin de desempenho</h2>
+            <p>
+              O pin de desempenho é um pin com duplo ícone. O segundo ícone apresenta o desempenho de um ponto em
+              relação a outros pontos.
+            </p>
+            <br />
+            <div class="pin__container">
+
+              <img class="pin__large" src="imagens_design_system/pins/pin__desempenho--bom.svg" alt="Pin" />
+              <img class="pin__small" src="imagens_design_system/pins/pin__desempenho--bom.svg" alt="Pin" />
+
+
+
+            </div>
+            <div class="pin__container">
+              <span><img class="pin__desempenho" src="imagens_design_system/pins/bom.svg" alt="Pin" />
+                Bom
+              </span>
+              <span><img class="pin__desempenho" src="imagens_design_system/pins/medio.svg" alt="Pin" />
+                Médio
+              </span>
+              <span><img class="pin__desempenho" src="imagens_design_system/pins/ruim.svg" alt="Pin" />
+                Ruim
+              </span>
+            </div>
+         
+            
+          </div>
+
+          <div class="container-elementos">
+            <h2>Pin de desempenho</h2>
+            <p>
+              O pin de desempenho é um pin com duplo ícone. O segundo ícone apresenta o desempenho de um ponto em
+              relação a outros pontos.
+            </p>
+            <br />
+            <div class="pin__container">
+
+              <img class="pin__large" src="imagens_design_system/pins/pin__desempenho--bom.svg" alt="Pin" />
+              <img class="pin__small" src="imagens_design_system/pins/pin__desempenho--bom.svg" alt="Pin" />
+            </div>
+          </div>
+
+
+
+          <div>
+            <h1>/Aplicação</h1>
+            <hr />
+            <br />
+          </div>
+          <img class="mapa__pins" src="mapa__pins.svg">
         </div>
       </el-main>
     </el-container>
@@ -88,11 +117,41 @@ export default {
   data() {
     return {
       headerTitle: "Pins",
-
-      btnAtivo: { cores: "text-decoration: underline" },
     };
   },
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.pin__large {
+  width: 72px;
+  margin-right: 50px;
+}
+
+.pin__small {
+  width: 40px;
+}
+
+.mapa__pins {
+  width: 100%;
+}
+
+.pin__desempenho {
+  width: 30px
+}
+
+.pin__container {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  margin-top: 50px;
+  width: 184px;
+}
+
+.pin__container span {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+</style>

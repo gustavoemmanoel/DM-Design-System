@@ -12,18 +12,19 @@
 
       <el-main>
         <div class="containerInterno">
-          <dm-popup @click="teste(0)" popup="ninja">POPUP 1</dm-popup>
+          <dm-popup @click="teste" popup="ninja">ninja</dm-popup>
+          <dm-popup v-on:click="teste" popup="ninja">ninja</dm-popup>
           <br>
           <br>
           <br>
 
-          <dm-popup @click="teste(1)" popup="poderoso">POPUP 2</dm-popup>
+          <dm-popup @click="teste" popup="brabo">brabo</dm-popup>
 
           <br>
           <br>
           <br>
 
-          <dm-popup @click="teste(2)" popup="brabo">POPUP 2</dm-popup>
+          <dm-popup @click="teste" popup="poderoso">poderoso</dm-popup>
 
           <br>
           <br>
@@ -58,19 +59,6 @@
             <br>
             <p>A ação não é permitida ou está indisponível. A mensagem é centralizada e bloqueia a tela.</p>
             <img src="mensagens/erro.jpg">
-
-            <!-- <dm-popup @click="openPopup">
-              <dm-popup-content>
-                <dm_icon alerta style="width: 40px; height: 40px;" />
-                <p>Erro ao carregar rota 01.</p>
-                <p class="detail_01">A nova rota escolhida para NF ficará acima da capacidade e/ou confira sua conexão.
-                </p>
-                <dm-popup-btn class="close-popup" @click="upDmErro">Ok</dm-popup-btn>
-              </dm-popup-content>
-            </dm-popup>
-            <dm-popup-btn @click="openPopup" type="primario">Visualizar popup</dm-popup-btn> -->
-
-
 
 
           </div>
@@ -162,6 +150,8 @@ export default {
       popup: false,
       dmPopup: null,
       chamge: true,
+      popupSelecionadothis: null,
+      nameAtributo: null,
       popups:
         [
           {
@@ -191,26 +181,32 @@ export default {
       alert('Hellow World!')
     },
 
-    teste(index) {
+    teste(event) {
 
-      let x = document.getElementsByTagName('dm-popup')[index].getAttribute('popup')
+      this.nameAtributo = event.target.getAttribute('popup')
+      /* areaClicked = ['',][''], */
+      console.log(`nome do atributo: ${this.nameAtributo}`)
+
+      this.popupSelecionado = this.popups.find((popupName) => {
+        return popupName.popup === this.nameAtributo
+      })
+
+      console.log(`${this.popupSelecionado.popup} ${this.popupSelecionado.title}`)
+
+      let x = document.querySelector('dm-popup').getAttribute('popup')
       let p = document.querySelector(`[popup="${x}"]`)
       this.dmPopup = document.querySelector('dm-popup')
       if (this.chamge === true) {
         console.log(this.chamge)
 
-        // Quando o this.popup for igual ao popup do html, ele adiciona esses dados na div correta
-
         var elementx = document.createElement('div')
 
-        elementx.innerHTML = `<dm-popup-background><h1>${this.popups[index].popup}</h1> <br> ${this.popups[index].title} <br>  ${this.popups[index].mensagemPrincipal} <br>  ${this.popups[index].btn}</dm-popup-background>`
-
+        elementx.innerHTML = `<dm-popup-background><h1>${this.popupSelecionado.popup}</h1> <br> ${this.popupSelecionado.title} <br>  ${this.popupSelecionado.mensagemPrincipal} <br>  ${this.popupSelecionado.btn}</dm-popup-background>`
         p.appendChild(elementx)
         elementx.setAttribute('id', 'excluir')
+
         this.chamge = false
       } else {
-
-
         console.log(this.chamge)
 
         document.querySelector('#excluir').remove()
@@ -219,22 +215,6 @@ export default {
       }
     },
 
-    /*    openPopup(event) {
-         this.dmPopup = document.querySelector('dm-popup')
-         if (this.popup == false) {
-           this.popup = !this.popup
-           this.dmPopup.style.display = 'flex'
-         } else {
-           const classId = event.target.classList[0]
-           this.dmPopup.setAttribute('class', 'dm-mensage-background')
-           const classClicked = ['close-popup', 'dm-mensage-background']
-           const a = classClicked.some((classClicked) => classClicked === classId)
-           if (a) {
-             this.dmPopup.style.display = 'none'
-             this.popup = !this.popup
-           }
-         }
-       }, */
   }
 };
 
@@ -254,7 +234,6 @@ dm-popup-background {
   border-radius: 6px;
   color: var(--dm_preto_00);
 }
-
 
 dm-popup {
   display: block;
@@ -287,48 +266,4 @@ dm-popup {
   background: rgba(0, 0, 0, 0.8);
   z-index: 100;
 }
-
-/* dm-popup {
-  position: fixed;
-  display: none;
-  justify-content: center;
-  align-items: center;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.8);
-  z-index: 100;
-}
-
-dm-popup-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  text-align: center;
-  width: 500px;
-  height: 300px;
-  background: var(--dm_creme_02);
-  padding: 40px;
-  border-radius: 6px;
-}
-
-dm-popup-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: max-content;
-  box-shadow: 0 3px 6px var(--dm_cinza_03);
-  background: var(--dm_azul_00);
-  color: var(--dm_creme_00) !important;
-  border-radius: 6px;
-  transition: 0.2s;
-  font-weight: 500;
-  font-size: 16px;
-  padding: 0 15px;
-  border: none;
-  height: 35px;
-  cursor: pointer;
-} */
 </style>

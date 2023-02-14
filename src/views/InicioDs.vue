@@ -44,9 +44,7 @@
                                 claras dentro da interface, como um botão ou um dropdown.
                             </p>
                         </div>
-
                     </div>
-
                 </div>
             </div>
 
@@ -72,10 +70,15 @@ export default {
 </script>
 
 <style scoped>
+.c-principios {
+    width: 100%;
+}
+
 .principios {
     position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
     align-items: center;
     height: 280px;
     background: var(--dm_preto_00);
@@ -88,7 +91,6 @@ export default {
 
 .principios__elements {
     z-index: 1;
-    width: 100%;
     height: 70%;
     object-fit: contain;
 }

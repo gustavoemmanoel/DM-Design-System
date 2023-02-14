@@ -100,7 +100,7 @@ body {
 
 .html_color_axx,
 [roxo] {
-  color: var(--dm_verde_C01);
+  color: var(--dm_roxo_C01);
 }
 
 [tagColor] {

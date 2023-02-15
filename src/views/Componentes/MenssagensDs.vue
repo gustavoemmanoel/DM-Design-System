@@ -12,22 +12,13 @@
 
       <el-main>
         <div class="containerInterno">
-          <dm-popup @click="teste" popup="ninja">ninja</dm-popup>
-          <dm-popup v-on:click="teste" popup="ninja">ninja</dm-popup>
+          <dm-popup @click="upPopup" popupName="ninja">Popup 1</dm-popup>
           <br>
           <br>
           <br>
 
-          <dm-popup @click="teste" popup="brabo">brabo</dm-popup>
+          <dm-popup @click="upPopup" popupName="brabo">Popup 1</dm-popup>
 
-          <br>
-          <br>
-          <br>
-
-          <dm-popup @click="teste" popup="poderoso">poderoso</dm-popup>
-
-          <br>
-          <br>
           <br>
           <br>
           <br>
@@ -59,6 +50,10 @@
             <br>
             <p>A ação não é permitida ou está indisponível. A mensagem é centralizada e bloqueia a tela.</p>
             <img src="mensagens/erro.jpg">
+
+            <br>
+
+            <dm-popup @click="upPopup" popupName="brabo">Popup 1</dm-popup>
 
 
           </div>
@@ -147,31 +142,28 @@ export default {
   data() {
     return {
       headerTitle: "Menssagens",
-      popup: false,
+      popupName: false,
       dmPopup: null,
-      chamge: true,
+      changePopup: true,
       popupSelecionadothis: null,
       nameAtributo: null,
+      removeAtr: null,
+      arrayClicked: null,
       popups:
         [
           {
-            popup: 'ninja',
-            title: 'Erro',
+            popupName: 'ninja',
+            title: 'Sucesso',
             mensagemPrincipal: 'Mateus Durães',
-            btn: 'Fechar'
+            closeButton: 'Fechar'
           },
           {
-            popup: 'brabo',
-            title: 'aviso',
-            mensagemPrincipal: 'lucas',
-            btn: 'Fechar'
-          },
-          {
-            popup: 'poderoso',
-            title: 'Sem Erro',
+            popupName: 'brabo',
+            title: 'Erro',
             mensagemPrincipal: 'Pedro Durães',
-            btn: 'Fechar'
+            closeButton: 'close'
           },
+
         ]
     };
   },
@@ -181,47 +173,46 @@ export default {
       alert('Hellow World!')
     },
 
-    teste(event) {
+    upPopup(event) {
+      this.removeAtr = event.target.getAttribute('remove')
+      if (this.changePopup === true) {
+        document.querySelector('body').style.overflow = 'hidden'
 
-      this.nameAtributo = event.target.getAttribute('popup')
-      /* areaClicked = ['',][''], */
-      console.log(`nome do atributo: ${this.nameAtributo}`)
-
-      this.popupSelecionado = this.popups.find((popupName) => {
-        return popupName.popup === this.nameAtributo
-      })
-
-      console.log(`${this.popupSelecionado.popup} ${this.popupSelecionado.title}`)
-
-      let x = document.querySelector('dm-popup').getAttribute('popup')
-      let p = document.querySelector(`[popup="${x}"]`)
-      this.dmPopup = document.querySelector('dm-popup')
-      if (this.chamge === true) {
-        console.log(this.chamge)
-
-        var elementx = document.createElement('div')
-
-        elementx.innerHTML = `<dm-popup-background><h1>${this.popupSelecionado.popup}</h1> <br> ${this.popupSelecionado.title} <br>  ${this.popupSelecionado.mensagemPrincipal} <br>  ${this.popupSelecionado.btn}</dm-popup-background>`
-        p.appendChild(elementx)
-        elementx.setAttribute('id', 'excluir')
-
-        this.chamge = false
-      } else {
-        console.log(this.chamge)
-
+        console.log(`add ${this.nameAtributo}`)
+        this.nameAtributo = event.target.getAttribute('popupName')
+        this.arrayClicked = this.popups.find((qualeopopup) => {
+          return qualeopopup.popupName === this.nameAtributo
+        })
+        console.log(this.arrayClicked)
+        if (this.arrayClicked == undefined) {
+          alert('dm-popup - Dados de exibição não encontrados')
+        }
+        this.dmPopup = document.querySelector('dm-popup')
+        let p = document.querySelector(`[popupName="${this.nameAtributo}"]`)
+        this.popupSelecionado = this.popups.find((popupName) => {
+          return popupName.popupName === this.nameAtributo
+        })
+        var newDiv = document.createElement('dm-popup-overlay')
+        newDiv.setAttribute('id', 'excluir')
+        newDiv.setAttribute('remove', `${this.nameAtributo}`)
+        newDiv.innerHTML = `<dm-popup-background id="dm-popup-background">
+          <h1>${this.popupSelecionado.popupName}</h1> <br> ${this.popupSelecionado.title} <br>  ${this.popupSelecionado.mensagemPrincipal} <br><el-button class="el-button el-button--primario" remove="${this.nameAtributo}"> ${this.popupSelecionado.closeButton}</el-button></dm-popup-background>`
+        p.appendChild(newDiv)
+        this.changePopup = !this.changePopup
+      } else if (this.removeAtr === this.arrayClicked.popupName) {
+        document.querySelector('body').style.overflow = 'auto'
         document.querySelector('#excluir').remove()
-
-        this.chamge = true
+        this.changePopup = !this.changePopup
+        console.log(`remove ${this.nameAtributo}`)
       }
     },
-
-  }
+  },
 };
 
 </script>
 
 <style>
-dm-popup-background {
+#dm-popup-background {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -233,9 +224,11 @@ dm-popup-background {
   padding: 40px;
   border-radius: 6px;
   color: var(--dm_preto_00);
+  cursor: default;
 }
 
 dm-popup {
+  cursor: pointer;
   display: block;
   display: flex;
   align-items: center;
@@ -255,6 +248,7 @@ dm-popup {
 }
 
 #excluir {
+  cursor: default;
   position: fixed;
   display: flex;
   justify-content: center;

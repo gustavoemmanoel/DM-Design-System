@@ -116,10 +116,14 @@
             <el-collapse v-model="activeNames" @change="handleChange">
               <el-collapse-item title="ver" name="1">
                 <div class="html_codigos_blue">
-                  <span>&#60;<span tagColor>el-progress</span> type=<span roxo>"circle"</span> :percentage=<span roxo>"percentage1"</span> :color=<span roxo>"color1"</span>/&#62;</span><br />
-                  <span>&#60;<span tagColor>el-progress</span> type=<span roxo>"circle"</span> :percentage=<span roxo>"percentage2"</span> :color=<span roxo>"color2"</span>/&#62;</span><br />
-                  <span>&#60;<span tagColor>el-progress</span> type=<span roxo>"circle"</span> :percentage=<span roxo>"percentage3"</span> :color=<span roxo>"color3"</span>/&#62;</span><br />
-                  <span>&#60;<span tagColor>el-progress</span> type=<span roxo>"circle"</span> :percentage=<span roxo>"percentage4"</span> :color=<span roxo>"color4"</span>/&#62;</span><br />
+                  <span>&#60;<span tagColor>el-progress</span> type=<span roxo>"circle"</span> :percentage=<span
+                      roxo>"percentage1"</span> :color=<span roxo>"color1"</span>/&#62;</span><br />
+                  <span>&#60;<span tagColor>el-progress</span> type=<span roxo>"circle"</span> :percentage=<span
+                      roxo>"percentage2"</span> :color=<span roxo>"color2"</span>/&#62;</span><br />
+                  <span>&#60;<span tagColor>el-progress</span> type=<span roxo>"circle"</span> :percentage=<span
+                      roxo>"percentage3"</span> :color=<span roxo>"color3"</span>/&#62;</span><br />
+                  <span>&#60;<span tagColor>el-progress</span> type=<span roxo>"circle"</span> :percentage=<span
+                      roxo>"percentage4"</span> :color=<span roxo>"color4"</span>/&#62;</span><br />
                 </div>
                 <br>
                 <div class="html_codigos_blue">
@@ -204,134 +208,135 @@
           </div>
           <br />
 
-          <div class="html_html_codigos_blue">
 
-            <span green> &#60;!-- Button Loading --&#62;</span>
-            <br>
-
-            &#60;<span roxo>el-button</span> @click=<span yellow>"loadingDM"</span>
-            type=<span roxo>"primario"</span>&#62;Ver loading&#60;/<span roxo>el-button</span>&#62;
-            <br>
-            <br>
-            <span green> &#60;!-- Loading --&#62;</span>
-            <br>
-            &#60;<span tagColor>dm-loading</span> @click=<span yellow>"hiddenLoadingDM"</span> v-if=<span
-              roxo>"showLoading"</span>&#62;
-            <div recuo>
-              &#60;<span tagColor>dm-loading-background</span>&#62;
-              <div recuo>
-                &#60;<span tagColor>p</span> class=<span roxo>"body_01"</span>&#62;
-                Aguarde alguns instantes. &#60;br&#62; <br>
-                Estamos salvando tudo.&#60;/<span tagColor>p</span>&#62;
-                <br>
-                &#60;<span tagColor>el-progress</span> :stroke-width=<span roxo>"14"</span> :percentage=<span
-                  roxo>"percentage"</span> :color=<span roxo>"color"</span> :format=<span roxo>"format"</span> /&#62;
-                <br>
-                &#60;<span tagColor>p</span> class="detail_01"&#62;8 segundos restantes...&#60;/<span
-                  tagColor>p</span>&#62;
-              </div>
-              &#60;/<span tagColor>dm-loading-background</span>&#62;
-
-              <br>
-              &#60;<span tagColor>el-button</span> @click=<span yellow>"loadingDM"</span> type=<span
-                roxo>"terciario"</span>&#62;Fechar demonstração&#60;/<span tagColor>el-button</span>&#62;
-            </div>
-            &#60;/<span tagColor>dm-loading</span>&#62;
-          </div>
-          <br>
-          <br>
-          <div class="html_codigos_blue">
-            &#60;<span tagColor>script</span>&#62;
-            <br>
-            <span roxo>export default</span> {
-            <div class="border-left">
-              <div recuo>
-                <div>
-                  name: <span roxo>"LoadingDs"</span>, <br>
-                </div>
-                <div>
-                  data() {
-                  <div class="border-left">
-                    <div recuo>
-                      <span roxo>return</span> {
-                      <div class="border-left">
-                        <div recuo>
-                          showLoading: false,
-                          <br>
-                          color: "var(--dm_azul_00)",
-                          <br>
-                          percentage: 60
-
-
-                        </div>
-                      </div>
-
-                      };
-                    </div>
-                  </div>
-                  },
-                </div>
-                <span roxo>methods</span>: {
-                <div class="border-left">
-                  <div recuo>
-                    <span yellow>hiddenLoadingDM</span>(event) {
-                    <br>
-                    <div class="border-left">
-                      <div recuo>
-                        if (event.target.tagName == <span brown>'DM-LOADING'</span>) {
-                        <div class="border-left">
-                          <div class="border-left">
-                            <div recuo>
-                              this.<span yellow>loadingDM</span>()
-                            </div>
-                          </div>
-                        </div>
-                        }
-                      </div>
-                    </div>
-                    },
-                    <br>
-
-                    <span yellow>loadingDM</span>() {
-                    <div class="border-left">
-                      <div recuo>
-                        <span blue>const</span> $body = document.<span yellow>querySelector</span>(<span
-                          brown>'body'</span>) <br>
-
-                        <span roxo>if</span> (!<span blue>this</span>.showLoading) {
-                        <div class="border-left">
-                          <div recuo>
-                            <span blue2>$body</span>.style.overflow = <span brown>'hidden'</span> <br>
-                            <span blue2>$body</span>.style.paddingRight = <span brown>'16px'</span> <br>
-
-                            <span blue>this</span>.showLoading = !<span blue>this</span>.showLoading <br>
-                          </div>
-                        </div>
-                        } <span roxo>else</span> {
-                        <div class="border-left">
-                          <div recuo>
-                            <span blue2>$body</span>.style.overflow = <span brown>'auto'</span> <br>
-                            <span blue2>$body</span>.style.paddingRight = <span brown>'0'</span> <br>
-                            <span blue>this</span>.showLoading = !<span blue>this</span>.showLoading
-                          </div>
-                        </div>
-                        }
-                      </div>
-                    </div>
-                    },
-                  </div>
-                </div>
-                },
-              </div>
-            </div>
-            };
-            <br>
-            &#60;/<span tagColor>script</span>&#62;
-          </div>
 
           <el-collapse v-model="activeNames" @change="handleChange">
             <el-collapse-item title="ver" name="1">
+              <div class="html_codigos_blue">
 
+                <span green> &#60;!-- Button Loading --&#62;</span>
+                <br>
+
+                &#60;<span roxo>el-button</span> @click=<span yellow>"loadingDM"</span>
+                type=<span roxo>"primario"</span>&#62;Ver loading&#60;/<span roxo>el-button</span>&#62;
+                <br>
+                <br>
+                <span green> &#60;!-- Loading --&#62;</span>
+                <br>
+                &#60;<span tagColor>dm-loading</span> @click=<span yellow>"hiddenLoadingDM"</span> v-if=<span
+                  roxo>"showLoading"</span>&#62;
+                <div recuo>
+                  &#60;<span tagColor>dm-loading-background</span>&#62;
+                  <div recuo>
+                    &#60;<span tagColor>p</span> class=<span roxo>"body_01"</span>&#62;
+                    Aguarde alguns instantes. &#60;br&#62; <br>
+                    Estamos salvando tudo.&#60;/<span tagColor>p</span>&#62;
+                    <br>
+                    &#60;<span tagColor>el-progress</span> :stroke-width=<span roxo>"14"</span> :percentage=<span
+                      roxo>"percentage"</span> :color=<span roxo>"color"</span> :format=<span roxo>"format"</span>
+                    /&#62;
+                    <br>
+                    &#60;<span tagColor>p</span> class="detail_01"&#62;8 segundos restantes...&#60;/<span
+                      tagColor>p</span>&#62;
+                  </div>
+                  &#60;/<span tagColor>dm-loading-background</span>&#62;
+
+                  <br>
+                  &#60;<span tagColor>el-button</span> @click=<span yellow>"loadingDM"</span> type=<span
+                    roxo>"terciario"</span>&#62;Fechar demonstração&#60;/<span tagColor>el-button</span>&#62;
+                </div>
+                &#60;/<span tagColor>dm-loading</span>&#62;
+              </div>
+              <br>
+              <br>
+              <div class="html_codigos_blue">
+                &#60;<span tagColor>script</span>&#62;
+                <br>
+                <span roxo>export default</span> {
+                <div class="border-left">
+                  <div recuo>
+                    <div>
+                      name: <span roxo>"LoadingDs"</span>, <br>
+                    </div>
+                    <div>
+                      data() {
+                      <div class="border-left">
+                        <div recuo>
+                          <span roxo>return</span> {
+                          <div class="border-left">
+                            <div recuo>
+                              showLoading: false,
+                              <br>
+                              color: "var(--dm_azul_00)",
+                              <br>
+                              percentage: 60
+
+
+                            </div>
+                          </div>
+
+                          };
+                        </div>
+                      </div>
+                      },
+                    </div>
+                    <span roxo>methods</span>: {
+                    <div class="border-left">
+                      <div recuo>
+                        <span yellow>hiddenLoadingDM</span>(event) {
+                        <br>
+                        <div class="border-left">
+                          <div recuo>
+                            if (event.target.tagName == <span brown>'DM-LOADING'</span>) {
+                            <div class="border-left">
+                              <div class="border-left">
+                                <div recuo>
+                                  this.<span yellow>loadingDM</span>()
+                                </div>
+                              </div>
+                            </div>
+                            }
+                          </div>
+                        </div>
+                        },
+                        <br>
+
+                        <span yellow>loadingDM</span>() {
+                        <div class="border-left">
+                          <div recuo>
+                            <span blue>const</span> $body = document.<span yellow>querySelector</span>(<span
+                              brown>'body'</span>) <br>
+
+                            <span roxo>if</span> (!<span blue>this</span>.showLoading) {
+                            <div class="border-left">
+                              <div recuo>
+                                <span blue2>$body</span>.style.overflow = <span brown>'hidden'</span> <br>
+                                <span blue2>$body</span>.style.paddingRight = <span brown>'16px'</span> <br>
+
+                                <span blue>this</span>.showLoading = !<span blue>this</span>.showLoading <br>
+                              </div>
+                            </div>
+                            } <span roxo>else</span> {
+                            <div class="border-left">
+                              <div recuo>
+                                <span blue2>$body</span>.style.overflow = <span brown>'auto'</span> <br>
+                                <span blue2>$body</span>.style.paddingRight = <span brown>'0'</span> <br>
+                                <span blue>this</span>.showLoading = !<span blue>this</span>.showLoading
+                              </div>
+                            </div>
+                            }
+                          </div>
+                        </div>
+                        },
+                      </div>
+                    </div>
+                    },
+                  </div>
+                </div>
+                };
+                <br>
+                &#60;/<span tagColor>script</span>&#62;
+              </div>
             </el-collapse-item>
           </el-collapse>
         </div>

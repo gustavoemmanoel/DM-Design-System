@@ -86,7 +86,7 @@ body {
 
 .html_codigos_blue {
   color: var(--dm_cinza_02);
-  font-size: 14px;
+  font-size: 16px;
   line-height: 22px;
 }
 
@@ -114,6 +114,18 @@ body {
 
 [yellow] {
   color: var(--dm_amarelo_00);
+}
+
+[blue] {
+  color: var(--dm_azul_00);
+}
+
+[blue2] {
+  color: var(--dm_azul_01);
+}
+
+[brown] {
+  color: brown
 }
 
 .recuo,

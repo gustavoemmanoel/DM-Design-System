@@ -1,6 +1,6 @@
 <template >
-  <div class="mg-right-js">
-    <el-col class="header">
+  <div>
+    <el-col class="header mg-right-js">
       <el-col :offset="4" :span="16" class="container-ds">
         <div>
           <div class="cont-ds">
@@ -36,7 +36,18 @@ export default {
   overflow: hidden;
   width: 100%;
   background-color: var(--dm_preto_00);
+
+  position: fixed;
+  width: 100%;
+  padding: 0 ;
+  height: 75px !important;
+  overflow: hidden;
+  left: 0;
+
+
 }
+
+
 
 
 .container-ds {

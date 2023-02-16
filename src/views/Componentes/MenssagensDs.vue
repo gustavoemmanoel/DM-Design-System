@@ -125,7 +125,7 @@
                   <el-button type="secundario">Não</el-button>
                 </el-row>
               </dm-popup-background>
-              <dm-popup @click="upPopup" popupName="alerta">Popup Alerta</dm-popup>
+              <dm-popup @click="upPopup" type="escolha" popupName="alerta">Popup Alerta</dm-popup>
             </div>
             <br>
             <el-collapse v-model="activeids" @change="handleChange">
@@ -249,14 +249,6 @@ export default {
         ]
       },
 
-
-
-
-
-
-
-
-
       headerTitle: "Menssagens",
       popupName: false,
       dmPopup: null,
@@ -271,13 +263,13 @@ export default {
           {
             popupName: 'alerta',
             title: 'Você tem certeza de que deseja apagar esse romaneio?',
-            mensagemPrincipal: 'Pedro Durães',
+            icon: 'alerta',
             closeButton: 'close'
           },
           {
             popupName: 'sucesso',
             title: 'Rotas e romanieos remanejados com sucesso!',
-            mensagemPrincipal: 'algum conteúdo',
+            icon: 'errada',
             closeButton: 'Ok'
           },
         ]
@@ -285,9 +277,6 @@ export default {
   },
 
   methods: {
-
-
-
     submitForm(formName) {
       this.$refs[formName].validate((valid) => {
         if (valid) {
@@ -307,12 +296,14 @@ export default {
     },
 
     upPopup(event) {
-      const body = document.querySelector('body', '.mg-right-js')
+      const $body = document.querySelector('body')
+      const $header = document.querySelector('.header')
       this.removeAtr = event.target.getAttribute('remove')
+
       if (this.changePopup === true) {
-        body.style.overflow = 'hidden'
-        body.style.paddingRight = '16px'
-        body.style.background = 'red'
+        $body.style.overflow = 'hidden'
+        $body.style.paddingRight = '16px'
+        $header.style.paddingRight = '16px'
         this.nameAtributo = event.target.getAttribute('popupName')
         console.log(`add ${this.nameAtributo}`)
         this.arrayClicked = this.popups.find((qualeopopup) => {
@@ -323,20 +314,32 @@ export default {
           alert('dm-popup - Dados de exibição não encontrados')
         }
         this.dmPopup = document.querySelector('dm-popup')
-        let p = document.querySelector(`[popupName="${this.nameAtributo}"]`)
+        let containerPopup = document.querySelector(`[popupName="${this.nameAtributo}"]`)
         this.popupSelecionado = this.popups.find((popupName) => {
           return popupName.popupName === this.nameAtributo
         })
         var newDiv = document.createElement('dm-popup-overlay')
         newDiv.setAttribute('id', 'excluir')
         newDiv.setAttribute('remove', `${this.nameAtributo}`)
-        newDiv.innerHTML = `<dm-popup-background>
-          <h1>${this.popupSelecionado.popupName}</h1> <br> ${this.popupSelecionado.title} <br>  ${this.popupSelecionado.mensagemPrincipal} <br><el-button class="dm-button--popup"  remove="${this.nameAtributo}"> ${this.popupSelecionado.closeButton}</el-button></dm-popup-background>`
-        p.appendChild(newDiv)
+        newDiv.innerHTML = `
+        <dm-popup-background>
+          <dm_icon ${this.popupSelecionado.icon}></dm_icon>
+          
+          ${this.popupSelecionado.title}
+          <el-button 
+            class="dm-button--popup"
+            remove="${this.nameAtributo}"> ${this.popupSelecionado.closeButton}
+          </el-button>
+        </dm-popup-background>`
+
+
+
+        containerPopup.appendChild(newDiv)
         this.changePopup = !this.changePopup
       } else if (this.removeAtr === this.arrayClicked.popupName) {
-        body.style.overflow = 'auto'
-        body.style.paddingRight = '0'
+        $body.style.overflow = 'auto'
+        $body.style.paddingRight = '0'
+        $header.style.paddingRight = '0'
         document.querySelector('#excluir').remove()
         this.changePopup = !this.changePopup
         console.log(`remove ${this.nameAtributo}`)

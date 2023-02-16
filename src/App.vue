@@ -1,6 +1,6 @@
 <template>
   <div>
-    <router-view />
+    <router-view class="mg-right-js" />
   </div>
 </template>
 
@@ -19,6 +19,12 @@ body {
   background: var(--dm_creme_02);
 }
 
+.mg-right-js {
+  padding-right: 16px;
+  overflow: hidden;
+}
+
+
 .flex {
   display: flex;
   align-items: center;
@@ -28,16 +34,8 @@ body {
   width: 220px;
 }
 
-.el-header {
-  position: fixed;
-  width: 100%;
-  padding: 0 !important;
-  height: 75px !important;
-  overflow: hidden;
-}
-
 .el-aside {
-  margin-top: 75px;
+  margin-top: 15px;
   width: 256px;
 }
 
@@ -55,7 +53,7 @@ body {
 
 .el-main {
   margin: auto;
-  margin-top: 75px;
+  margin-top: 15px;
   margin-bottom: 30px;
   max-width: 1020px;
   padding: 20px;

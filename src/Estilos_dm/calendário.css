@@ -1,17 +1,5 @@
 /* Default */
 
-.el-input__wrapper {
-    box-shadow: 0 0 0 2px var(--dm_cinza_02, var(--dm_azul_00)) inset
-}
-
-.el-input__wrapper:hover {
-    box-shadow: 0 0 0 2px var(--dm_azul_00, var(--dm_azul_00)) inset
-}
-
-.el-input .el-input__icon, .el-date-editor .el-range__icon {
-    width: 20px;
-}
-
 dm-icons-calendar {
     background-image: url("../../public/imagens_design_system/icons/grayicons/gray_calendario.svg");
     background-repeat: no-repeat;
@@ -20,6 +8,12 @@ dm-icons-calendar {
     width: 20px;
     height: 20px;
 }
+
+.el-input .el-input__icon,
+.el-date-editor .el-range__icon {
+    width: 20px;
+}
+
 
 .el-date-editor .el-icon svg {
     width: 16px;
@@ -33,14 +27,6 @@ dm-icons-calendar {
 
 .el-range-editor.is-active {
     box-shadow: 0 0 0 2px var(--dm_cinza_02) inset
-}
-
-.el-date-editor.el-input__wrapper {
-    box-shadow: 0 0 0 2px var(--dm_cinza_02, var(--el-border-color)) inset
-}
-
-.el-date-editor.el-input__wrapper:hover {
-    box-shadow: 0 0 0 2px var(--dm_azul_00, var(--dm_azul_00)) inset
 }
 
 /* container popup */
@@ -68,8 +54,10 @@ dm-icons-calendar {
 
 /* calendário Unico */
 
-.calendario.el-date-editor.el-input, .el-date-editor.el-input__wrapper {
+.calendario.el-date-editor.el-input,
+.el-date-editor.el-input__wrapper {
     height: 34px;
+
 }
 
 /* Seta do popup */
@@ -81,31 +69,4 @@ dm-icons-calendar {
 .el-picker__popper.el-popper[data-popper-placement^=bottom] .el-popper__arrow::before {
     border: 2px solid var(--dm_cinza_02);
     transform: rotate(45deg) translatex(-1px);
-}
-
-/*  */
-
-.el-date-table th {
-    color: var(--dm_cinza_01);
-}
-
-.el-date-table td.today .el-date-table-cell__text {
-    color: var(--dm_azul_00);
-}
-
-.el-date-range-picker__header div {
-    font-weight: 700;
-}
-
-.el-date-table th {
-    border-bottom: none
-}
-
-.el-date-table td.available:hover .el-date-table-cell__text,
-.el-date-table-cell__text:hover {
-    outline: 3px solid var(--dm_azul_00);
-    border-radius: 50px;
-    width: 25px;
-    height: 25px;
-    color: var(--dm_preto_00);
 }

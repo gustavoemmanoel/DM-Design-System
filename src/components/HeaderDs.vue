@@ -1,5 +1,5 @@
-<template>
-  <div>
+<template >
+  <div class="mg-right-js">
     <el-col class="header">
       <el-col :offset="4" :span="16" class="container-ds">
         <div>
@@ -37,6 +37,7 @@ export default {
   width: 100%;
   background-color: var(--dm_preto_00);
 }
+
 
 .container-ds {
   display: flex;

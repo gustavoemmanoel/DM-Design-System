@@ -12,25 +12,23 @@ body {
 }
 
 *::-webkit-scrollbar {
-  width: 16px;               /* width of the entire scrollbar */
+  width: 16px;
 }
 
 *::-webkit-scrollbar-track {
-  background: var(--dm_creme_02);        /* color of the tracking area */
+  background: var(--dm_creme_02);
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: var(--dm_cinza_03);    /* color of the scroll thumb */
-  border-radius: 20px;       /* roundness of the scroll thumb */
-  border: 3px solid var(--dm_creme_02);  /* creates padding around scroll thumb */
+  background-color: var(--dm_cinza_03);
+  border-radius: 20px;
+  border: 3px solid var(--dm_creme_02);
 }
 
-/* Fundação */
 @import "tipografia.css";
 @import "cores.css";
 @import "iconografia.css";
 
-/* Telas */
 @import "login.css";
 
 /* Components */
@@ -45,9 +43,7 @@ body {
 @import "checkbox.css";
 @import "upload.css";
 @import "legenda.css";
-
-/* Outros */
-@import "outros.css";
+@import "mensagens.css";
 
 :root {
   --el-color-primary: var(--dm_azul_00);
@@ -65,7 +61,8 @@ body {
   --el-color-primary-light-5: var(--dm_azul_02);
 }
 
-hr, .hr {
+hr,
+.hr {
   border: none;
   border-top: 1px solid var(--dm_cinza_04);
 }

@@ -29,7 +29,6 @@ body {
 }
 
 .el-header {
-  background: green;
   position: fixed;
   width: 100%;
   padding: 0 !important;

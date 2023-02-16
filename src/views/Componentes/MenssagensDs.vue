@@ -12,17 +12,6 @@
 
       <el-main>
         <div class="containerInterno">
-          <dm-popup @click="upPopup" popupName="ninja">Popup 1</dm-popup>
-          <br>
-          <br>
-          <br>
-
-          <dm-popup @click="upPopup" popupName="brabo">Popup 1</dm-popup>
-
-          <br>
-          <br>
-          <br>
-
           <div>
             <h1>/Menssagens</h1>
             <hr />
@@ -46,15 +35,40 @@
             <p>Quando é obrigatório preencher um campo para seguir com a ação ou quando o formato da informação é
               incompatível com o formato correto.</p>
             <br>
+            <br>
+
+            <el-form label-position="top" :model="ruleForm" :rules="rules" ref="ruleForm" label-width="120px"
+              class="demo-ruleForm">
+              <el-form-item label="Password" prop="pass">
+                <el-input type="password" v-model="ruleForm.pass" autocomplete="off"></el-input>
+              </el-form-item>
+              <el-form-item label="Confirm" prop="checkPass">
+                <el-input type="password" v-model="ruleForm.checkPass" autocomplete="off"></el-input>
+              </el-form-item>
+              <el-form-item label="Age" prop="age">
+                <el-input v-model.number="ruleForm.age"></el-input>
+              </el-form-item>
+              <el-form-item>
+                <el-button type="primary" @click="submitForm('ruleForm')">Submit</el-button>
+                <el-button @click="resetForm('ruleForm')">Reset</el-button>
+              </el-form-item>
+            </el-form>
+
+            <el-collapse v-model="activeids" @change="handleChange">
+              <el-collapse-item title="Ver" id="1">
+
+              </el-collapse-item>
+            </el-collapse>
+
+          </div>
+          <div class="container-elementos">
+            <br>
             <h6>Erro na ação</h6>
             <br>
             <p>A ação não é permitida ou está indisponível. A mensagem é centralizada e bloqueia a tela.</p>
             <img src="mensagens/erro.jpg">
 
             <br>
-
-            <dm-popup @click="upPopup" popupName="brabo">Popup 1</dm-popup>
-
 
           </div>
           <h3>Aviso</h3>
@@ -70,11 +84,18 @@
             <img src="mensagens/alert_01.jpg">
             <br>
             <br>
-            <el-alert title="unclosable alert" type="success" :closable="false" />
-            <br>
-            <el-alert title="customized close-text" type="info" close-text="Gotcha" />
-            <br>
-            <el-alert title="alert with callback" type="warning" @click="hello" />
+            <dm-alert>
+              <dm_icon alerta />
+              <span>
+                <dm-atencao>Atenção!</dm-atencao> Trânsito lento na Marginal Tietê. Possibilidade de atraso na previsão
+                das entregas.
+              </span>
+              <button>
+                <dm_icon close />
+              </button>
+            </dm-alert>
+
+
             <br>
             <el-collapse v-model="activeids" @change="handleChange">
               <el-collapse-item title="Ver" id="1">
@@ -92,7 +113,20 @@
             <br>
             <img src="mensagens/alert_02.jpg">
             <br>
+            <br>
 
+            <div style="display: flex; gap: 20px;">
+              <dm-popup-background>
+                <dm_icon alerta />
+                <p>Voce tem acerteza de que quer apagar este romaneio?</p>
+                <p class="detail_01">Não será possível visualizar ou recuperar o romaneio.</p>
+                <el-row>
+                  <el-button type="primario">Sim</el-button>
+                  <el-button type="secundario">Não</el-button>
+                </el-row>
+              </dm-popup-background>
+              <dm-popup @click="upPopup" popupName="alerta">Popup Alerta</dm-popup>
+            </div>
             <br>
             <el-collapse v-model="activeids" @change="handleChange">
               <el-collapse-item title="Ver" id="1">
@@ -103,6 +137,19 @@
           <div class="container-elementos">
             <img src="mensagens/alert_03.jpg">
             <br>
+            <br>
+            <div style="display: flex; gap: 20px;">
+              <dm-popup-background>
+                <dm_icon alerta />
+                <p>Voce tem acerteza de que quer apagar este romaneio?</p>
+                <p class="detail_01">Não será possível visualizar ou recuperar o romaneio.</p>
+                <el-row>
+                  <el-button type="primario">Sim</el-button>
+                  <el-button type="secundario">Não</el-button>
+                </el-row>
+              </dm-popup-background>
+              <dm-popup @click="upPopup" popupName="sucesso">Popup Alerta</dm-popup>
+            </div>
             <br>
             <el-collapse v-model="activeids" @change="handleChange">
               <el-collapse-item title="Ver" id="1">
@@ -118,6 +165,14 @@
             <img src="mensagens/informativo.jpg">
             <br>
             <br>
+            <dm-information>
+              <dm_icon sugestao />
+              <span>
+                <p>Para saber como construir a tabela de acordo com o padrão, </p>
+                <el-button type="terciario">baixe o nosso modelo</el-button>
+              </span>
+            </dm-information>
+            <br>
             <el-collapse v-model="activeids" @change="handleChange">
               <el-collapse-item title="Ver" id="1">
 
@@ -132,7 +187,6 @@
 <script>
 import AsideComponent from "../ElementsDs/AsideComponent.vue";
 import HeaderDs from "../../components/HeaderDs.vue";
-
 export default {
   id: "MenssagensDs",
   components: {
@@ -140,7 +194,69 @@ export default {
     HeaderDs,
   },
   data() {
+    var checkAge = (rule, value, callback) => {
+      if (!value) {
+        return callback(new Error('Please input the age'));
+      }
+      setTimeout(() => {
+        if (!Number.isInteger(value)) {
+          callback(new Error('Please input digits'));
+        } else {
+          if (value < 18) {
+            callback(new Error('Age must be greater than 18'));
+          } else {
+            callback();
+          }
+        }
+      }, 1000);
+    };
+    var validatePass = (rule, value, callback) => {
+      if (value === '') {
+        callback(new Error('Please input the password'));
+      } else {
+        if (this.ruleForm.checkPass !== '') {
+          this.$refs.ruleForm.validateField('checkPass');
+        }
+        callback();
+      }
+    };
+    var validatePass2 = (rule, value, callback) => {
+      if (value === '') {
+        callback(new Error('Please input the password again'));
+      } else if (value !== this.ruleForm.pass) {
+        callback(new Error('Two inputs don\'t match!'));
+      } else {
+        callback();
+      }
+    };
+
     return {
+
+      ruleForm: {
+        pass: '',
+        checkPass: '',
+        age: ''
+      },
+      rules: {
+        pass: [
+          { validator: validatePass, trigger: 'blur' }
+        ],
+        checkPass: [
+          { validator: validatePass2, trigger: 'blur' }
+        ],
+        age: [
+          { validator: checkAge, trigger: 'blur' }
+        ]
+      },
+
+
+
+
+
+
+
+
+
       headerTitle: "Menssagens",
       popupName: false,
       dmPopup: null,
@@ -151,35 +267,54 @@ export default {
       arrayClicked: null,
       popups:
         [
+
           {
-            popupName: 'ninja',
-            title: 'Sucesso',
-            mensagemPrincipal: 'Mateus Durães',
-            closeButton: 'Fechar'
-          },
-          {
-            popupName: 'brabo',
-            title: 'Erro',
+            popupName: 'alerta',
+            title: 'Você tem certeza de que deseja apagar esse romaneio?',
             mensagemPrincipal: 'Pedro Durães',
             closeButton: 'close'
           },
-
+          {
+            popupName: 'sucesso',
+            title: 'Rotas e romanieos remanejados com sucesso!',
+            mensagemPrincipal: 'algum conteúdo',
+            closeButton: 'Ok'
+          },
         ]
     };
   },
 
   methods: {
+
+
+
+    submitForm(formName) {
+      this.$refs[formName].validate((valid) => {
+        if (valid) {
+          alert('submit!');
+        } else {
+          console.log('error submit!!');
+          return false;
+        }
+      });
+    },
+    resetForm(formName) {
+      this.$refs[formName].resetFields();
+    },
+
     hello() {
       alert('Hellow World!')
     },
 
     upPopup(event) {
+      const body = document.querySelector('body', '.mg-right-js')
       this.removeAtr = event.target.getAttribute('remove')
       if (this.changePopup === true) {
-        document.querySelector('body').style.overflow = 'hidden'
-
-        console.log(`add ${this.nameAtributo}`)
+        body.style.overflow = 'hidden'
+        body.style.paddingRight = '16px'
+        body.style.background = 'red'
         this.nameAtributo = event.target.getAttribute('popupName')
+        console.log(`add ${this.nameAtributo}`)
         this.arrayClicked = this.popups.find((qualeopopup) => {
           return qualeopopup.popupName === this.nameAtributo
         })
@@ -195,12 +330,13 @@ export default {
         var newDiv = document.createElement('dm-popup-overlay')
         newDiv.setAttribute('id', 'excluir')
         newDiv.setAttribute('remove', `${this.nameAtributo}`)
-        newDiv.innerHTML = `<dm-popup-background id="dm-popup-background">
-          <h1>${this.popupSelecionado.popupName}</h1> <br> ${this.popupSelecionado.title} <br>  ${this.popupSelecionado.mensagemPrincipal} <br><el-button class="el-button el-button--primario" remove="${this.nameAtributo}"> ${this.popupSelecionado.closeButton}</el-button></dm-popup-background>`
+        newDiv.innerHTML = `<dm-popup-background>
+          <h1>${this.popupSelecionado.popupName}</h1> <br> ${this.popupSelecionado.title} <br>  ${this.popupSelecionado.mensagemPrincipal} <br><el-button class="dm-button--popup"  remove="${this.nameAtributo}"> ${this.popupSelecionado.closeButton}</el-button></dm-popup-background>`
         p.appendChild(newDiv)
         this.changePopup = !this.changePopup
       } else if (this.removeAtr === this.arrayClicked.popupName) {
-        document.querySelector('body').style.overflow = 'auto'
+        body.style.overflow = 'auto'
+        body.style.paddingRight = '0'
         document.querySelector('#excluir').remove()
         this.changePopup = !this.changePopup
         console.log(`remove ${this.nameAtributo}`)
@@ -210,54 +346,3 @@ export default {
 };
 
 </script>
-
-<style>
-#dm-popup-background {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  text-align: center;
-  width: 500px;
-  height: 300px;
-  background: var(--dm_creme_02);
-  padding: 40px;
-  border-radius: 6px;
-  color: var(--dm_preto_00);
-  cursor: default;
-}
-
-dm-popup {
-  cursor: pointer;
-  display: block;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: max-content;
-  box-shadow: 0 3px 6px var(--dm_cinza_03);
-  font-family: "Roboto", sans-serif;
-  background: var(--dm_azul_00);
-  color: var(--dm_creme_00);
-  border-radius: 6px;
-  transition: 0.2s;
-  font-weight: 500;
-  font-size: 16px;
-  padding: 0 15px;
-  border: none;
-  height: 35px;
-}
-
-#excluir {
-  cursor: default;
-  position: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.8);
-  z-index: 100;
-}
-</style>

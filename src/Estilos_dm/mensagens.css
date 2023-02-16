@@ -1,0 +1,131 @@
+.dm-button--popup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 0 30px;
+    height: 35px;
+    background: var(--dm_azul_00);
+    color: var(--dm_creme_02);
+    border-radius: 6px;
+}
+
+dm-popup-background {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 500px;
+    height: 300px;
+    background: var(--dm_creme_02);
+    padding: 40px;
+    border-radius: 6px;
+    color: var(--dm_preto_00);
+    cursor: default;
+}
+
+dm-popup-background dm_icon {
+    width: 40px;
+    height: 40px;
+}
+
+
+dm-popup {
+    cursor: pointer;
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: max-content;
+    box-shadow: 0 3px 6px var(--dm_cinza_03);
+    font-family: "Roboto", sans-serif;
+    background: var(--dm_azul_00);
+    color: var(--dm_creme_00);
+    border-radius: 6px;
+    transition: 0.2s;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 0 15px;
+    border: none;
+    height: 35px;
+}
+
+#excluir {
+    cursor: default;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 100;
+}
+
+dm-information {
+    display: grid;
+    grid-template-columns: 25px 1fr;
+    gap: 20px;
+    align-items: center;
+    justify-items: center;
+    padding: 14px 20px;
+    border: 2px solid var(--dm_amarelo_01);
+    border-radius: 6px;
+    width: 350px;
+}
+
+dm-information dm_icon {
+    width: 43px;
+    height: 43px;
+}
+
+dm-information span {
+    text-align: center;
+}
+
+dm-information span .el-button--terciario {
+    text-align: center;
+    height: 0;
+}
+
+/* Element Plus */
+
+
+dm-alert {
+    display: flex;
+    align-items: center;
+    width: max-content;
+    padding: 10px 14px;
+    border-radius: 6px;
+    background-color: var(--dm_creme_02);
+    color: var(--dm_preto_00);
+    border: 2px solid var(--dm_vermelho_00);
+    min-height: 40px;
+    font-weight: 600;
+}
+
+dm-alert span {
+    display: flex;
+    gap: 4px;
+    margin-left: 14px;
+}
+
+dm-atencao {
+    color: var(--dm_vermelho_00);
+}
+
+dm-alert button {
+    border: none;
+    background: none;
+    transition: .2s;
+    cursor: pointer;
+    margin-left: 12px;
+}
+
+dm-alert button:hover {
+    opacity: 0.6;
+    transition: .2s;
+}

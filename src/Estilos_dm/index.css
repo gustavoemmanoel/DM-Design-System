@@ -44,6 +44,7 @@ body {
 @import "upload.css";
 @import "legenda.css";
 @import "mensagens.css";
+@import "pin.css";
 
 :root {
   --el-color-primary: var(--dm_azul_00);

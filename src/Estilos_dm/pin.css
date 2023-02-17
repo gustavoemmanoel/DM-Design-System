@@ -1,0 +1,59 @@
+:root {
+    --latLong: 40px
+}
+
+dm-pin {
+    display: flex;
+    width: var(--latLong);
+    height: var(--latLong);
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+dm-pin img {
+    position: absolute;
+    width: var(--latLong);
+    height: var(--latLong);
+    cursor: pointer;
+}
+
+dm-pin-background {
+    position: relative;
+    transform: translatey(-80px);
+    flex-direction: column;
+    background: var(--dm_creme_02);
+    border-radius: 6px;
+    height: max-content;
+    min-width: 300px;
+    padding-bottom: 14px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+dm-pin-footer {
+    display: block;
+    position: absolute;
+    border-radius: 0 0 6px 6px;
+    bottom: 0;
+    background-color: var(--dm_azul_00);
+    height: 14px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+dm-pin-arrow {
+    display: block;
+    margin: auto;
+    width: 16px;
+    height: 16px;
+    transform: translateY(5px) rotate(45deg);
+    background-color: var(--dm_azul_00);
+}
+
+dm-pin-conteudo {
+    display: block;
+    text-align: start;
+    padding: 10px;
+}

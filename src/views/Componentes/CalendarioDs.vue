@@ -26,6 +26,7 @@
             <div class="container-elementos">
               <el-date-picker v-model="value1" type="daterange" range-separator="-" start-placeholder="Início"
                 end-placeholder="Término" :prefix-icon="customPrefix" :size="size" />
+
               <br>
               <br>
               <el-collapse v-model="activeNames" @change="handleChange">

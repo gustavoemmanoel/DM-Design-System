@@ -36,19 +36,12 @@ import LegendaDs from "../views/Componentes/LegendaDs.vue";
 
 /* Outros */
 import PreProcessamentos from "../views/PreProcessamentos.vue";
-import PDF from "../views/PDF.vue";
 
 const routes = [
   {
     path: "/",
     name: "InstallationEl",
     component: InstallationEl,
-  },
-
-  {
-    path: "/PDF",
-    name: "PDF",
-    component: PDF,
   },
   {
     path: "/PreProcessamentos",

@@ -4,9 +4,7 @@
       <HeaderDs :headerTitle="headerTitle" />
     </el-header>
     <el-container>
-      <el-aside>
-        <AsideComponent :btnAtivo="btnAtivo" />
-      </el-aside>
+
 
       <el-main>
         <div class="containerInterno">
@@ -392,13 +390,11 @@
   </el-container>
 </template>
 <script>
-import AsideComponent from "../ElementsDs/AsideComponent.vue";
 import HeaderDs from "../../components/HeaderDs.vue";
 
 export default {
   name: "PinsDs",
   components: {
-    AsideComponent,
     HeaderDs,
   },
   data() {

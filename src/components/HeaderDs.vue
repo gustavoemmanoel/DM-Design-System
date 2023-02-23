@@ -30,25 +30,20 @@ export default {
 <style scoped>
 .header {
   display: flex;
+  position: fixed;
+  top: 0;
+  left: -256px;
+  padding: 0;
   align-items: center;
   color: #faf6f0;
   height: 75px;
   overflow: hidden;
   width: 100%;
-  background-color: var(--dm_preto_00);
-
-  position: fixed;
   width: 100%;
-  padding: 0 ;
   height: 75px !important;
   overflow: hidden;
-  left: 0;
-
-
+  background-color: var(--dm_preto_00);
 }
-
-
-
 
 .container-ds {
   display: flex;

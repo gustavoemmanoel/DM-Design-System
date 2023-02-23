@@ -4,10 +4,6 @@
       <HeaderDs :headerTitle="headerTitle" />
     </el-header>
     <el-container>
-      <el-aside>
-        <AsideComponent :btnAtivo="btnAtivo" />
-      </el-aside>
-
       <el-main>
         <div class="containerInterno">
           <div>
@@ -56,10 +52,6 @@
                 </el-dropdown>
               </div>
             </div>
-
-
-
-
             <el-collapse v-model="activeNames" @change="handleChange">
               <el-collapse-item title="ver" name="3">
                 <div class="html_codigo_blue">
@@ -147,10 +139,8 @@
                   </div>
                   &#60;/<span tagColor>el-dropdown</span>&#62;
                 </div>
-
               </el-collapse-item>
             </el-collapse>
-
           </div>
         </div>
       </el-main>
@@ -158,13 +148,11 @@
   </el-container>
 </template>
 <script>
-import AsideComponent from "../ElementsDs/AsideComponent.vue";
 import HeaderDs from "../../components/HeaderDs.vue";
 
 export default {
   name: "DropdownDs",
   components: {
-    AsideComponent,
     HeaderDs,
   },
   data() {

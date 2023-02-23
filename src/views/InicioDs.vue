@@ -4,11 +4,6 @@
             <HeaderDs :headerTitle="headerTitle" />
         </el-header>
         <el-container>
-            <el-aside>
-                <AsideComponent :btnAtivo="btnAtivo" />
-            </el-aside>
-
-
             <div class="c-principios">
                 <div class="principios">
                     <span>
@@ -52,13 +47,11 @@
     </el-container>
 </template>
 <script>
-import AsideComponent from "./ElementsDs/AsideComponent.vue";
 import HeaderDs from "../components/HeaderDs.vue";
 
 export default {
     name: "InicioDs",
     components: {
-        AsideComponent,
         HeaderDs,
     },
     data() {

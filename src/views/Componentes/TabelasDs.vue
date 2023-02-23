@@ -4,9 +4,6 @@
       <HeaderDs :headerTitle="headerTitle" />
     </el-header>
     <el-container>
-      <el-aside>
-        <AsideComponent :btnAtivo="btnAtivo" />
-      </el-aside>
       <el-main>
         <div>
           <h1>/Tabelas</h1>
@@ -147,20 +144,17 @@
   </el-container>
 </template>
 <script>
-import AsideComponent from "../ElementsDs/AsideComponent.vue";
 import HeaderDs from "../../components/HeaderDs.vue";
 
 export default {
   name: "TabelasDs",
   components: {
-    AsideComponent,
     HeaderDs,
   },
   data() {
     return {
       headerTitle: "Tabelas",
       btnAtivo: { cores: "text-decoration: underline" },
-
       tableData: [
         {
           projectName: "Design System",

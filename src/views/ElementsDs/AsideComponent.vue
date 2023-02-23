@@ -80,11 +80,11 @@ a:focus {
 
 /*  */
 .side-bar {
+  margin-top: 75px;
   position: fixed;
   background: #faf6f0;
   overflow-y: auto;
   width: 256px;
-  /* padding: 17px; */
   height: calc(100vh - 75px);
   padding: 10px;
   padding-bottom: 30px;

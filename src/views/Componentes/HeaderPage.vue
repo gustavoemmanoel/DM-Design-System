@@ -4,9 +4,6 @@
       <HeaderDs :headerTitle="headerTitle" />
     </el-header>
     <el-container>
-      <el-aside>
-        <AsideComponent :btnAtivo="btnAtivo" />
-      </el-aside>
       <el-main>
         <div>
           <h1>/Header</h1>
@@ -32,9 +29,7 @@
                 <!-- Produtos -->
                 <el-popover placement="bottom" style="padding: 0; background: green" trigger="click" :width="200">
                   <template #reference>
-                    <img class="icon"
-                      src="imagens_design_system/icons/whiteicons/produtos.svg"
-                      alt="produto" />
+                    <img class="icon" src="imagens_design_system/icons/whiteicons/produtos.svg" alt="produto" />
                   </template>
 
                   <el-col>
@@ -51,9 +46,7 @@
                 <!-- Notificações -->
                 <el-popover placement="bottom" trigger="click" :width="400">
                   <template #reference>
-                    <img class="icon"
-                      src="imagens_design_system/icons/whiteicons/notificacao.svg"
-                      alt="Notificação" />
+                    <img class="icon" src="imagens_design_system/icons/whiteicons/notificacao.svg" alt="Notificação" />
                   </template>
                   <el-col>
                     <el-row class="optionMenu">O painel Logística foi atualizado - Versão
@@ -68,9 +61,7 @@
                 <!-- DÚVIDAS -->
                 <el-popover placement="bottom" trigger="click" :width="300">
                   <template #reference>
-                    <img class="icon"
-                      src="imagens_design_system/icons/whiteicons/duvida.svg"
-                      alt="Dúvidas" />
+                    <img class="icon" src="imagens_design_system/icons/whiteicons/duvida.svg" alt="Dúvidas" />
                   </template>
                   <el-col>
                     <el-row class="optionMenu">versão: 2cf2f45f</el-row>
@@ -86,9 +77,7 @@
                 <!-- PERFIL -->
                 <el-popover placement="bottom" trigger="click" :width="360">
                   <template #reference>
-                    <img class="icon"
-                      src="imagens_design_system/icons/whiteicons/perfil.svg"
-                      alt="Perfil" />
+                    <img class="icon" src="imagens_design_system/icons/whiteicons/perfil.svg" alt="Perfil" />
                   </template>
                   <el-col>
                     <el-row class="optionMenu">
@@ -234,8 +223,7 @@
                           <div recuo>
                             <span>
                               &#60;<span tagColor>img</span> class=<span roxo>"img-header"</span>
-                              src=<span
-                                roxo>"imagens_design_system/icons/whiteicons/dm.svg"</span>/&#62;
+                              src=<span roxo>"imagens_design_system/icons/whiteicons/dm.svg"</span>/&#62;
                               <br /> </span><span>
                               &#60;<span tagColor>h4</span> style=<span roxo>"color:
                                 var(--dm_creme_00)"</span>&#62;</span><span black>DataMachina</span><span>&#60;/<span
@@ -312,8 +300,7 @@
                                 <br />
                                 <div recuo>
                                   <span>&#60;img class=<span roxo>"icon"</span>
-                                    src=<span
-                                      roxo>"imagens_design_system/icons/whiteicons/notificacao.svg"
+                                    src=<span roxo>"imagens_design_system/icons/whiteicons/notificacao.svg"
                                     </span>
                                     &#62;
                                   </span>
@@ -367,8 +354,7 @@
                                 <br />
                                 <div recuo>
                                   <span>&#60;img class=<span roxo>"icon"</span>
-                                    src=<span
-                                      roxo>"imagens_design_system/icons/whiteicons/duvida.svg"</span>&#62;</span>
+                                    src=<span roxo>"imagens_design_system/icons/whiteicons/duvida.svg"</span>&#62;</span>
                                 </div>
                                 <span>&#60;/<span tagColor>template</span>&#62;</span>
                               </div>
@@ -416,8 +402,7 @@
                                 <br />
                                 <div recuo>
                                   &#60;<span tagColor>img</span> class=<span roxo>"icon"</span>
-                                  src=<span
-                                    roxo>"imagens_design_system/icons/whiteicons/perfil.svg"&#62;</span>
+                                  src=<span roxo>"imagens_design_system/icons/whiteicons/perfil.svg"&#62;</span>
                                 </div>
                                 &#60;/<span tagColor>template</span>&#62;
                                 <br />
@@ -698,13 +683,10 @@
   </el-container>
 </template>
 <script>
-import AsideComponent from "../ElementsDs/AsideComponent.vue";
 import HeaderDs from "../../components/HeaderDs.vue";
-
 export default {
   name: "HeaderPage",
   components: {
-    AsideComponent,
     HeaderDs,
   },
   data() {

@@ -4,9 +4,6 @@
       <HeaderDs :headerTitle="headerTitle" />
     </el-header>
     <el-container>
-      <el-aside>
-        <AsideComponent :btnAtivo="btnAtivo" />
-      </el-aside>
       <el-row class="componentsStyleContent">
         <el-col>
           <el-main>
@@ -88,13 +85,11 @@
   </el-container>
 </template>
 <script>
-import AsideComponent from "../ElementsDs/AsideComponent.vue";
 import HeaderDs from "../../components/HeaderDs.vue";
 
 export default {
   name: "CheckboxDs",
   components: {
-    AsideComponent,
     HeaderDs,
   },
   data() {

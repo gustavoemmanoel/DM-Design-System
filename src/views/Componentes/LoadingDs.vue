@@ -4,10 +4,6 @@
       <HeaderDs :headerTitle="headerTitle" />
     </el-header>
     <el-container>
-      <el-aside>
-        <AsideComponent :btnAtivo="btnAtivo" />
-      </el-aside>
-
       <el-main>
         <div class="containerInterno">
           <div>
@@ -326,21 +322,17 @@
   </el-container>
 </template>
 <script>
-import AsideComponent from "../ElementsDs/AsideComponent.vue";
 import HeaderDs from "../../components/HeaderDs.vue";
 
 export default {
   name: "LoadingDs",
   components: {
-    AsideComponent,
     HeaderDs,
   },
   data() {
     return {
       headerTitle: "Loading",
       showLoading: false,
-      btnAtivo: { cores: "text-decoration: underline" },
-
       color: "var(--dm_azul_00)",
       percentage: 60,
       color1: "var(--dm_vermelho_00)",

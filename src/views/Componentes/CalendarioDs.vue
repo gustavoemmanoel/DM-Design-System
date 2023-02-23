@@ -5,10 +5,6 @@
         <HeaderDs :headerTitle="headerTitle" />
       </el-header>
       <el-container>
-        <el-aside>
-          <AsideComponent :btnAtivo="btnAtivo" />
-        </el-aside>
-
         <el-main>
           <!--  -->
 
@@ -192,14 +188,12 @@
   </div>
 </template>
 <script>
-import AsideComponent from "../ElementsDs/AsideComponent.vue";
 import HeaderDs from "../../components/HeaderDs.vue";
 import { h, shallowRef } from "vue";
 
 export default {
   name: "CalendarioDs",
   components: {
-    AsideComponent,
     HeaderDs,
   },
   data() {
@@ -209,12 +203,9 @@ export default {
           return h("dm-icons-calendar", "");
         },
       }),
-
       headerTitle: "Calendário",
       value1: null,
       value2: null,
-
-      btnAtivo: { cores: "text-decoration: underline" },
     };
   },
 };

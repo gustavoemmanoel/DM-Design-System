@@ -4,13 +4,11 @@
       <HeaderDs :headerTitle="headerTitle" />
     </el-header>
     <el-container>
-      <el-aside>
-        <AsideComponent :btnAtivo="btnAtivo" />
-      </el-aside>
+
       <el-main>
         <div>
           <h1>/Botões</h1>
-          <hr/>
+          <hr />
           <br />
           <p>
             Botões permitem que os usuários executem ações dentro da plataforma
@@ -42,42 +40,28 @@
             <el-collapse-item title="ver" name="3">
               <div class="html_codigos_blue">
                 <!-- el-button default -->
-                &#60;<span tagColor>el-button</span>&#62;<span black>Botão</span
-                >&lt;/<span tagColor>el-button</span>&gt;
+                &#60;<span tagColor>el-button</span>&#62;<span black>Botão</span>&lt;/<span tagColor>el-button</span>&gt;
                 <br />
                 <!-- el-button primario -->
-                &#60;<span tagColor>el-button</span> type=<span roxo
-                  >"primario"</span
-                >&#62;<span black>Botão</span>&lt;/<span tagColor
-                  >el-button</span
-                >&gt;
+                &#60;<span tagColor>el-button</span> type=<span roxo>"primario"</span>&#62;<span
+                  black>Botão</span>&lt;/<span tagColor>el-button</span>&gt;
                 <br />
                 <!-- el-button success -->
-                &#60;<span tagColor>el-button</span> type=<span roxo
-                  >"success"</span
-                >&#62;<span black>Botão</span>&lt;/<span tagColor
-                  >el-button</span
-                >&gt;
+                &#60;<span tagColor>el-button</span> type=<span roxo>"success"</span>&#62;<span
+                  black>Botão</span>&lt;/<span tagColor>el-button</span>&gt;
                 <br />
                 <!-- el-button info -->
-                &#60;<span tagColor>el-button</span> type=<span roxo
-                  >"info"</span
-                >&#62;<span black>Botão</span>&lt;/<span tagColor
-                  >el-button</span
-                >&gt;
+                &#60;<span tagColor>el-button</span> type=<span roxo>"info"</span>&#62;<span black>Botão</span>&lt;/<span
+                  tagColor>el-button</span>&gt;
                 <br />
                 <!-- el-button warning -->
-                &#60;<span tagColor>el-button</span> type=<span roxo
-                  >"warning"</span
-                >
+                &#60;<span tagColor>el-button</span> type=<span roxo>"warning"</span>
                 &#62;
                 <span black>Botão</span>
                 &lt;/<span tagColor>el-button</span>&gt;
                 <br />
                 <!-- el-button danger -->
-                &#60;<span tagColor>el-button</span> type=<span roxo
-                  >"danger"</span
-                >
+                &#60;<span tagColor>el-button</span> type=<span roxo>"danger"</span>
                 &#62;
                 <span black>Botão</span>
                 &lt;/<span tagColor>el-button</span>&gt;
@@ -87,7 +71,7 @@
         </div>
         <div>
           <h3>Botão primário</h3>
-          <hr/>
+          <hr />
           <br />
           <p>
             O botão primário é o que tem a maior ênfase na tela. É destinado à
@@ -102,11 +86,7 @@
         <!-- Primário -->
         <div class="container-elementos">
           <el-row>
-            <el-col
-              v-for="(btnGrid, index) in primario.gridButtons"
-              :key="index"
-              class="cardsBtn"
-            >
+            <el-col v-for="(btnGrid, index) in primario.gridButtons" :key="index" class="cardsBtn">
               <br />
               <div class="botoes">
                 <el-button :type="btnGrid.type">
@@ -123,14 +103,10 @@
             <el-collapse v-model="activeNames" @change="handleChange">
               <el-collapse-item title="ver" name="3">
                 <div class="html_codigos_blue">
-                  <span
-                    v-for="(style, index) in primario.stringHTML"
-                    :key="index"
-                  >
+                  <span v-for="(style, index) in primario.stringHTML" :key="index">
                     &lt;<span tagColor>el-button</span> type=<span roxo>{{
                       style.html
-                    }}</span
-                    >&gt;
+                    }}</span>&gt;
                     <span black>Botão</span>
                     &lt;/<span tagColor>el-button</span>&gt;
                     <br />
@@ -143,7 +119,7 @@
         <!-- Secundário -->
         <div>
           <h3>Botão secundário</h3>
-          <hr/>
+          <hr />
           <br />
           <p>
             O botão secundário é destinado à ações que tem menor importância em
@@ -157,11 +133,7 @@
         <br />
         <div class="container-elementos">
           <el-row>
-            <el-col
-              v-for="(btnGrid, index) in segundo.gridButtons"
-              :key="index"
-              class="cardsBtn"
-            >
+            <el-col v-for="(btnGrid, index) in segundo.gridButtons" :key="index" class="cardsBtn">
               <br />
               <div class="botoes">
                 <el-button :type="btnGrid.type">
@@ -178,14 +150,10 @@
             <el-collapse v-model="activeNames" @change="handleChange">
               <el-collapse-item title="ver" name="3">
                 <div class="html_codigos_blue">
-                  <span
-                    v-for="(style, index) in segundo.stringHTML"
-                    :key="index"
-                  >
+                  <span v-for="(style, index) in segundo.stringHTML" :key="index">
                     &lt;<span tagColor>el-button</span> type=<span roxo>{{
                       style.html
-                    }}</span
-                    >&gt;
+                    }}</span>&gt;
                     <span black>Botão</span>
                     &lt;/<span tagColor>el-button</span>&gt;
                     <br />
@@ -199,7 +167,7 @@
 
         <div>
           <h3>Botão terciário</h3>
-          <hr/>
+          <hr />
           <br />
           <p>
             O botão terciário é usado em ações de pouca importância e não deve
@@ -212,11 +180,7 @@
 
         <div class="container-elementos">
           <el-row>
-            <el-col
-              v-for="(btnGrid, index) in terceiro.gridButtons"
-              :key="index"
-              class="cardsBtn"
-            >
+            <el-col v-for="(btnGrid, index) in terceiro.gridButtons" :key="index" class="cardsBtn">
               <br />
               <div class="botoes">
                 <el-button :type="btnGrid.type">
@@ -233,14 +197,10 @@
             <el-collapse v-model="activeNames" @change="handleChange">
               <el-collapse-item title="ver" name="3">
                 <div class="html_codigos_blue">
-                  <span
-                    v-for="(style, index) in terceiro.stringHTML"
-                    :key="index"
-                  >
+                  <span v-for="(style, index) in terceiro.stringHTML" :key="index">
                     &lt;<span tagColor>el-button</span> type=<span roxo>{{
                       style.html
-                    }}</span
-                    >&gt;
+                    }}</span>&gt;
                     <span black>Botão</span>
                     &lt;/<span tagColor>el-button</span>&gt;
                     <br />
@@ -255,13 +215,12 @@
   </el-container>
 </template>
 <script>
-import AsideComponent from "../ElementsDs/AsideComponent.vue";
 import HeaderDs from "../../components/HeaderDs.vue";
 
 export default {
   name: "BotaoDs",
   components: {
-    AsideComponent,
+
     HeaderDs,
   },
   data() {
@@ -341,13 +300,16 @@ export default {
   border-radius: 6px;
   width: 50px;
 }
+
 .botoes {
   display: flex;
   gap: 12px;
 }
+
 .codigos {
   display: grid;
 }
+
 .tooltip {
   position: absolute;
   border: 1px solid var(--dm_azul_02);
@@ -358,15 +320,18 @@ export default {
   width: 10px !important;
   height: 23px !important;
 }
+
 .testtooltip:focus,
 .tooltip:hover {
   color: var(--dm_azul_02);
   border-color: var(--dm_azul_02);
 }
+
 .el-collapse {
   --el-collapse-header-bg-color: none;
   --el-collapse-content-bg-color: none;
 }
+
 * {
   outline: none;
 }

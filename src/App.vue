@@ -1,11 +1,14 @@
 <template>
   <div>
+    <AsideComponent />
     <router-view class="mg-right-js" />
   </div>
 </template>
 
 <script>
+import AsideComponent from './views/ElementsDs/AsideComponent.vue';
 export default {
+  components: { AsideComponent },
   name: "app",
 };
 </script>
@@ -22,6 +25,7 @@ body {
 .mg-right-js {
   padding-right: 16px;
   overflow: hidden;
+  margin-left: 256px;
 }
 
 

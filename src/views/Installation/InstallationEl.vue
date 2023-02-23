@@ -4,9 +4,6 @@
       <HeaderDs :headerTitle="headerTitle" />
     </el-header>
     <el-container>
-      <el-aside :span="4">
-        <AsideComponent :btnAtivo="btnAtivo" />
-      </el-aside>
       <el-col :offset="5" :span="18">
         <br>
         <br>
@@ -30,19 +27,15 @@
         <p>XXX</p>
       </el-col>
     </el-container>
-
-    Apenas um teste
   </el-container>
 </template>
   
 <script>
 import HeaderDs from "../../components/HeaderDs.vue";
-import AsideComponent from "./../ElementsDs/AsideComponent.vue";
 
 export default {
   name: "InstallationEl",
   components: {
-    AsideComponent,
     HeaderDs,
   },
   data() {

@@ -4,10 +4,6 @@
       <HeaderDs :headerTitle="headerTitle" />
     </el-header>
     <el-container>
-      <el-aside>
-        <AsideComponent :btnAtivo="btnAtivo" />
-      </el-aside>
-
       <el-main>
         <div>
           <h1>/Campo de texto</h1>
@@ -23,48 +19,27 @@
           <div class="container-elementos">
             <el-row :gutter="20">
               <el-col :span="12">
-                <el-form
-                  :label-position="labelPosition"
-                  :model="formLabelAlign"
-                >
+                <el-form :label-position="labelPosition" :model="formLabelAlign">
                   <el-form-item label="Rua">
-                    <el-input
-                      v-model="formLabelAlign.street"
-                      placeholder="Digite"
-                    ></el-input>
+                    <el-input v-model="formLabelAlign.street" placeholder="Digite"></el-input>
                   </el-form-item>
 
                   <el-form-item label="Bairro">
-                    <el-input
-                      v-model="formLabelAlign.district"
-                      placeholder="Digite"
-                    ></el-input>
+                    <el-input v-model="formLabelAlign.district" placeholder="Digite"></el-input>
                   </el-form-item>
 
                   <el-form-item label="Número">
-                    <el-input
-                      v-model="formLabelAlign.number"
-                      placeholder="Digite"
-                    ></el-input>
+                    <el-input v-model="formLabelAlign.number" placeholder="Digite"></el-input>
                   </el-form-item>
                 </el-form>
               </el-col>
               <el-col :span="12">
-                <el-form
-                  :label-position="labelPosition"
-                  :model="formLabelAlign"
-                >
+                <el-form :label-position="labelPosition" :model="formLabelAlign">
                   <el-form-item label="CEP">
-                    <el-input
-                      v-model="formLabelAlign.cep"
-                      placeholder="Digite"
-                    ></el-input>
+                    <el-input v-model="formLabelAlign.cep" placeholder="Digite"></el-input>
                   </el-form-item>
                   <el-form-item label="Complemento">
-                    <el-input
-                      v-model="formLabelAlign.complement"
-                      placeholder="Digite"
-                    ></el-input>
+                    <el-input v-model="formLabelAlign.complement" placeholder="Digite"></el-input>
                   </el-form-item>
                 </el-form>
               </el-col>
@@ -72,23 +47,15 @@
             <el-collapse v-model="activeNames" @change="handleChange">
               <el-collapse-item title="ver" name="3">
                 <div class="html_codigos_blue">
-                  &#60;<span tagColor>el-form</span> :label-position=<span roxo
-                    >"labelPosition"</span
-                  >
-                  label-width=<span roxo>"100px"</span> :model=<span roxo
-                    >"formLabelAlign"</span
-                  >&#62;
+                  &#60;<span tagColor>el-form</span> :label-position=<span roxo>"labelPosition"</span>
+                  label-width=<span roxo>"100px"</span> :model=<span roxo>"formLabelAlign"</span>&#62;
                   <div class="border-left">
                     <!-- Rua -->
                     <div recuo>
-                      &#60;<span tagColor>el-form-item</span> label=<span roxo
-                        >"Rua"</span
-                      >&#62;
+                      &#60;<span tagColor>el-form-item</span> label=<span roxo>"Rua"</span>&#62;
                       <div class="border-left">
                         <div recuo>
-                          &#60;<span tagColor>el-input</span> v-model=<span roxo
-                            >"formLabelAlign.street"</span
-                          >
+                          &#60;<span tagColor>el-input</span> v-model=<span roxo>"formLabelAlign.street"</span>
                           placeholder=<span roxo>"Digite"</span>&#62;
                           &#60;/<span tagColor>el-input</span>&#62;
                         </div>
@@ -98,14 +65,10 @@
                     <br />
                     <!-- Bairro -->
                     <div recuo>
-                      &#60;<span tagColor>el-form-item</span> label=<span roxo
-                        >"Bairro"</span
-                      >&#62;
+                      &#60;<span tagColor>el-form-item</span> label=<span roxo>"Bairro"</span>&#62;
                       <div class="border-left">
                         <div recuo>
-                          &#60;<span tagColor>el-input</span> v-model=<span roxo
-                            >"formLabelAlign.district"</span
-                          >
+                          &#60;<span tagColor>el-input</span> v-model=<span roxo>"formLabelAlign.district"</span>
                           placeholder=<span roxo>"Digite"</span>&#62;
                           &#60;/<span tagColor>el-input</span>&#62;
                         </div>
@@ -115,14 +78,10 @@
                     <br />
                     <!-- Número -->
                     <div recuo>
-                      &#60;<span tagColor>el-form-item</span> label=<span roxo
-                        >"Número"</span
-                      >&#62;
+                      &#60;<span tagColor>el-form-item</span> label=<span roxo>"Número"</span>&#62;
                       <div class="border-left">
                         <div recuo>
-                          &#60;<span tagColor>el-input</span> v-model=<span roxo
-                            >"formLabelAlign.number"</span
-                          >
+                          &#60;<span tagColor>el-input</span> v-model=<span roxo>"formLabelAlign.number"</span>
                           placeholder=<span roxo>"Digite"</span>&#62;
                           &#60;/<span tagColor>el-input</span>&#62;
                         </div>
@@ -132,14 +91,10 @@
                     <br />
                     <!-- CEP -->
                     <div recuo>
-                      &#60;<span tagColor>el-form-item</span> label=<span roxo
-                        >"CEP"</span
-                      >&#62;
+                      &#60;<span tagColor>el-form-item</span> label=<span roxo>"CEP"</span>&#62;
                       <div class="border-left">
                         <div recuo>
-                          &#60;<span tagColor>el-input</span> v-model=<span roxo
-                            >"formLabelAlign.cep"</span
-                          >
+                          &#60;<span tagColor>el-input</span> v-model=<span roxo>"formLabelAlign.cep"</span>
                           placeholder=<span roxo>"Digite"</span>&#62;
                           &#60;/<span tagColor>el-input</span>&#62;
                         </div>
@@ -149,14 +104,10 @@
                     <br />
                     <!-- Complemento -->
                     <div recuo>
-                      &#60;<span tagColor>el-form-item</span> label=<span roxo
-                        >"Complemento"</span
-                      >&#62;
+                      &#60;<span tagColor>el-form-item</span> label=<span roxo>"Complemento"</span>&#62;
                       <div class="border-left">
                         <div recuo>
-                          &#60;<span tagColor>el-input</span> v-model=<span roxo
-                            >"formLabelAlign.complement"</span
-                          >
+                          &#60;<span tagColor>el-input</span> v-model=<span roxo>"formLabelAlign.complement"</span>
                           placeholder=<span roxo>"Digite"</span>&#62;
                           &#60;/<span tagColor>el-input</span>&#62;
                         </div>
@@ -223,13 +174,11 @@
   </el-container>
 </template>
 <script>
-import AsideComponent from "../ElementsDs/AsideComponent.vue";
 import HeaderDs from "../../components/HeaderDs.vue";
 
 export default {
   name: "CampoTextoDs",
   components: {
-    AsideComponent,
     HeaderDs,
   },
   data() {

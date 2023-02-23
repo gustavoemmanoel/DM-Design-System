@@ -4,9 +4,6 @@
       <HeaderDs :headerTitle="headerTitle" />
     </el-header>
     <el-container>
-      <el-aside>
-        <AsideComponent :btnAtivo="btnAtivo" />
-      </el-aside>
       <el-main>
         <div v-for="(tableContent, index) in table" :key="index">
           <div>
@@ -44,15 +41,13 @@
   </el-container>
 </template>
 <script>
-import AsideComponent from "../ElementsDs/AsideComponent.vue";
 import HeaderDs from "../../components/HeaderDs.vue";
 export default {
   name: "TipografiaDs",
-  components: { AsideComponent, HeaderDs },
+  components: { HeaderDs },
   data() {
     return {
       headerTitle: "Tipografia",
-      btnAtivo: { tipografia: "text-decoration: underline" },
       table: [
         {
           row: [

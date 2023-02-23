@@ -4,9 +4,6 @@
       <HeaderDs :headerTitle="headerTitle" />
     </el-header>
     <el-container>
-      <el-aside>
-        <AsideComponent :btnAtivo="btnAtivo" />
-      </el-aside>
       <el-main>
         <div
           class="containerInterno"
@@ -58,19 +55,16 @@
   </el-container>
 </template>
 <script>
-import AsideComponent from "../ElementsDs/AsideComponent.vue";
 import HeaderDs from "../../components/HeaderDs.vue";
 
 export default {
   name: "ColorsDs",
   components: {
-    AsideComponent,
     HeaderDs,
   },
   data() {
     return {
       headerTitle: "Cores",
-      btnAtivo: { cores: "text-decoration: underline" },
       colors: [
         {
           title: "/Cores",

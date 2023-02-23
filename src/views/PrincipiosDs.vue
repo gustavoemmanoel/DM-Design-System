@@ -4,11 +4,6 @@
             <HeaderDs :headerTitle="headerTitle" />
         </el-header>
         <el-container>
-            <el-aside>
-                <AsideComponent :btnAtivo="btnAtivo" />
-            </el-aside>
-
-
             <div class="c-principios">
                 <div class="principios">
                     <p class="principios__title">Uma série de princípios de design
@@ -59,13 +54,11 @@
     </el-container>
 </template>
 <script>
-import AsideComponent from "./ElementsDs/AsideComponent.vue";
 import HeaderDs from "./../components/HeaderDs.vue";
 
 export default {
     name: "PrincipiosDs",
     components: {
-        AsideComponent,
         HeaderDs,
     },
     data() {
@@ -104,7 +97,7 @@ export default {
     background: var(--dm_azul_00);
     width: 100%;
     padding: 0 60px;
-    margin-top: 75px
+    margin-top: 15px
 }
 
 

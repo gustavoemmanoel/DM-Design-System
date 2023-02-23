@@ -16,8 +16,8 @@ dm-popup-background {
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    width: 500px;
-    height: 300px;
+    width: 480px;
+    height: 260px;
     background: var(--dm_creme_02);
     padding: 40px;
     border-radius: 6px;
@@ -48,7 +48,6 @@ dm-button-popup {
     display: flex;
     align-items: center;
     justify-content: center;
-
     box-shadow: 0 3px 6px var(--dm_cinza_03);
     font-family: "Roboto", sans-serif;
     background: var(--dm_azul_00);
@@ -57,10 +56,31 @@ dm-button-popup {
     transition: 0.2s;
     font-weight: 500;
     font-size: 16px;
-    padding: 0 15px;
+    padding: 0 32px;
     border: none;
     height: 35px;
     cursor: pointer;
+}
+
+.dm-button-popup--secundario {
+    background: var(--dm_creme_00);
+    border: 2px solid var(--dm_azul_00);
+    color: var(--dm_azul_00) !important;
+}
+
+
+.dm-button-popup--secundario:focus {
+    border-color: var(--dm_amarelo_00);
+    background-color: var(--dm_creme_00);
+    color: var(--dm_amarelo_00);
+}
+
+.dm-button-popup--secundario:hover,
+.dm-button-popup--secundario-larger:hover {
+    background: var(--dm_azul_02);
+    border-color: var(--dm_azul_00);
+    color: var(--dm_azul_00);
+    transition: 0.2s;
 }
 
 
@@ -94,8 +114,19 @@ dm-information span .el-button--terciario {
 
 /* Element Plus */
 
-
 dm-alert {
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 0;
+    z-index: 100;
+}
+
+dm-alert-container {
     display: flex;
     align-items: center;
     width: max-content;
@@ -108,7 +139,7 @@ dm-alert {
     font-weight: 600;
 }
 
-dm-alert span {
+dm-alert-container span {
     display: flex;
     gap: 4px;
     margin-left: 14px;
@@ -118,7 +149,7 @@ dm-atencao {
     color: var(--dm_vermelho_00);
 }
 
-dm-alert button {
+dm-alert-container button {
     border: none;
     background: none;
     transition: .2s;
@@ -126,7 +157,7 @@ dm-alert button {
     margin-left: 12px;
 }
 
-dm-alert button:hover {
+dm-alert-container button:hover {
     opacity: 0.6;
     transition: .2s;
 }

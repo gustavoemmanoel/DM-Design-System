@@ -4,9 +4,7 @@
       <HeaderDs :headerTitle="headerTitle" />
     </el-header>
     <el-container>
-      <el-aside>
-        <AsideComponent :btnAtivo="btnAtivo" />
-      </el-aside>
+     
       <el-main>
         <div>
           <h1>/Grid</h1>
@@ -78,19 +76,16 @@
   </el-container>
 </template>
 <script>
-import AsideComponent from "../ElementsDs/AsideComponent.vue";
 import HeaderDs from "../../components/HeaderDs.vue";
 
 export default {
   name: "GridDs",
   components: {
-    AsideComponent,
     HeaderDs,
   },
   data() {
     return {
       headerTitle: "Grid",
-      btnAtivo: { cores: "text-decoration: underline" },
       tableData: [{ largura: "1080px", colunas: "24", gap: "10px" }],
     };
   },

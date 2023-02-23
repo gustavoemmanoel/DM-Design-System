@@ -101,7 +101,7 @@ body {
 
 .html_color_axx,
 [roxo] {
-  color: var(--dm_roxo_C01);
+  color: rgb(201, 165, 255);
 }
 
 [tagColor] {
@@ -121,15 +121,15 @@ body {
 }
 
 [blue] {
-  color: var(--dm_azul_00);
+  color: rgb(77, 146, 219);
 }
 
 [blue2] {
-  color: var(--dm_azul_01);
+  color: rgb(114, 192, 255);
 }
 
 [brown] {
-  color: brown
+  color: rgb(176, 129, 97)
 }
 
 .recuo,

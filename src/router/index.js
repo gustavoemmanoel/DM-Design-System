@@ -1,9 +1,12 @@
 import { createRouter, createWebHashHistory } from "vue-router";
+
 /* Instalação */
 import InstallationEl from "../views/Installation/InstallationEl.vue";
+
 /* Princípios */
 import InicioDs from "../views/InicioDs.vue";
 import PrincipiosDs from "../views/PrincipiosDs.vue";
+
 /* Fundação */
 import ColorsDs from "../views/Fundacao/ColorsDs.vue";
 import TipografiaDs from "../views/Fundacao/TipografiaDs.vue";
@@ -12,7 +15,6 @@ import GridDs from "../views/Fundacao/GridDs.vue";
 import GrafismosDs from "../views/Fundacao/GrafismosDs.vue";
 
 /* Telas */
-
 import LoginDs from "../views/Telas/LoginDs.vue";
 
 /* Componentes */
@@ -23,7 +25,7 @@ import CardsDs from "../views/Componentes/CardsDs.vue";
 import CheckboxDs from "../views/Componentes/CheckboxDs.vue";
 import DropdownDs from "../views/Componentes/DropdownDs.vue";
 import LoadingDs from "../views/Componentes/LoadingDs.vue";
-import MenssagensDs from "../views/Componentes/MenssagensDs.vue";
+import MensagensDs from "../views/Componentes/MensagensDs.vue";
 import PinsDs from "../views/Componentes/PinsDs.vue";
 import TabelasDs from "../views/Componentes/TabelasDs.vue";
 import TagsDs from "../views/Componentes/TagsDs.vue";
@@ -31,6 +33,7 @@ import BotaoDs from "../views/Componentes/BotaoDs.vue";
 import SobreDs from "../views/Componentes/SobreDs.vue";
 import UploadDs from "../views/Componentes/UploadDs.vue";
 import LegendaDs from "../views/Componentes/LegendaDs.vue";
+
 /* Outros */
 import PreProcessamentos from "../views/PreProcessamentos.vue";
 import PDF from "../views/PDF.vue";
@@ -144,9 +147,9 @@ const routes = [
     component: LoadingDs,
   },
   {
-    path: "/MenssagensDs",
-    name: "MenssagensDs",
-    component: MenssagensDs,
+    path: "/MensagensDs",
+    name: "MensagensDs",
+    component: MensagensDs,
   },
   {
     path: "/PinsDs",

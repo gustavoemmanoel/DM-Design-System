@@ -40,7 +40,7 @@
       <router-link to="CheckboxDs">Checkbox</router-link>
       <router-link to="DropdownDs">Dropdown</router-link>
       <router-link to="LoadingDs">Loading</router-link>
-      <router-link to="MenssagensDs">Menssagens</router-link>
+      <router-link to="MensagensDs">Mensagens</router-link>
       <router-link to="PinsDs">Pins</router-link>
       <router-link to="TabelasDs">Tabelas</router-link>
       <router-link to="TagsDs">Tags</router-link>

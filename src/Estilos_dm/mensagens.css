@@ -31,16 +31,28 @@ dm-popup-background dm_icon {
 }
 
 dm-popup {
-    cursor: pointer;
-    display: block;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 100;
+    color: var(--dm_creme_00);
+}
+
+dm-button-popup {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: max-content;
+
     box-shadow: 0 3px 6px var(--dm_cinza_03);
     font-family: "Roboto", sans-serif;
     background: var(--dm_azul_00);
-    color: var(--dm_creme_00);
+    color: var(--dm_creme_00) !important;
     border-radius: 6px;
     transition: 0.2s;
     font-weight: 500;
@@ -48,21 +60,11 @@ dm-popup {
     padding: 0 15px;
     border: none;
     height: 35px;
+    cursor: pointer;
 }
 
-#excluir {
-    cursor: default;
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.8);
-    z-index: 100;
-}
+
+/* ALERTA */
 
 dm-information {
     display: grid;

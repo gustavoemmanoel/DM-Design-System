@@ -1,0 +1,335 @@
+<template>
+  <el-container>
+
+
+    <el-header>
+      <HeaderDs :headerTitle="headerTitle" />
+    </el-header>
+    <el-container>
+      <el-aside>
+        <AsideComponent :btnAtivo="btnAtivo" />
+      </el-aside>
+
+      <el-main>
+        <div class="containerInterno">
+          <div>
+            <h1>/Mensagens</h1>
+            <hr />
+            <br>
+            <p>
+              Mensagens aparecem na tela para comunicar ao usuário informações importantes antes de executar alguma
+              ação, durante a utilização do sistema ou após alguma ação ser executada.
+            </p>
+          </div>
+          <br />
+
+          <h3>Erro</h3>
+          <p>A mensagem de erro é uma resposta inesperada a uma ação executada pelo usuário e pode causar frustração.
+            Por isso, precisa ser relevante, útil e clara. O usuário deve ser informado sobre o que aconteceu e
+            orientado sobre como resolver. </p>
+          <br />
+
+          <div class="container-elementos">
+            <h6>Em caixas de texto obrigatória:</h6>
+            <br>
+            <p>Quando é obrigatório preencher um campo para seguir com a ação ou quando o formato da informação é
+              incompatível com o formato correto.</p>
+            <br>
+            <br>
+
+            <el-form label-position="top" :model="ruleForm" :rules="rules" ref="ruleForm" label-width="120px"
+              class="demo-ruleForm">
+              <el-form-item label="Password" prop="pass">
+                <el-input type="password" v-model="ruleForm.pass" autocomplete="off"></el-input>
+              </el-form-item>
+              <el-form-item label="Confirm" prop="checkPass">
+                <el-input type="password" v-model="ruleForm.checkPass" autocomplete="off"></el-input>
+              </el-form-item>
+              <el-form-item label="Age" prop="age">
+                <el-input v-model.number="ruleForm.age"></el-input>
+              </el-form-item>
+              <el-form-item>
+                <el-button type="primary" @click="submitForm('ruleForm')">Submit</el-button>
+                <el-button @click="resetForm('ruleForm')">Reset</el-button>
+              </el-form-item>
+            </el-form>
+
+            <el-collapse v-model="activeids" @change="handleChange">
+              <el-collapse-item title="Ver" id="1">
+
+              </el-collapse-item>
+            </el-collapse>
+
+          </div>
+          <div class="container-elementos">
+            <br>
+            <h6>Erro na ação</h6>
+            <br>
+            <p>A ação não é permitida ou está indisponível. A mensagem é centralizada e bloqueia a tela.</p>
+            <img src="mensagens/erro.jpg">
+
+            <br>
+
+          </div>
+          <h3>Aviso</h3>
+          <br>
+          <div class="container-elementos">
+
+
+
+            <p>A mensagem de aviso comunica ao usuário uma informação importante, mas não impede nenhuma ação do
+              usuário.
+              É exibida na parte superior da tela.</p>
+            <br>
+            <img src="mensagens/alert_01.jpg">
+            <br>
+            <br>
+            <dm-alert>
+              <dm_icon alerta />
+              <span>
+                <dm-atencao>Atenção!</dm-atencao> Trânsito lento na Marginal Tietê. Possibilidade de atraso na previsão
+                das entregas.
+              </span>
+              <button>
+                <dm_icon close />
+              </button>
+            </dm-alert>
+
+
+            <br>
+            <el-collapse v-model="activeids" @change="handleChange">
+              <el-collapse-item title="Ver" id="1">
+
+              </el-collapse-item>
+            </el-collapse>
+          </div>
+          <h3>Alerta</h3>
+          <br>
+          <div class="container-elementos">
+            <p>A mensagem de alerta bloqueia a tela em razão da sensibilidade quanto a uma possível perda de informação
+              e documentação. Ela também solicita a confirmação da escolha de uma ação do usuário e exibe o aviso de
+              confirmação, ou não, da execução da ação.
+            </p>
+            <br>
+            <img src="mensagens/alert_02.jpg">
+            <br>
+            <br>
+
+            <div style="display: flex; gap: 20px;">
+
+              <dm-popup-background>
+                <dm_icon alerta />
+                <p>Voce tem acerteza de que quer apagar este romaneio?</p>
+                <p class="detail_01">Não será possível visualizar ou recuperar o romaneio.</p>
+                <el-row>
+                  <dm-button class="el-button el-button--primario" popup="close">Sim</dm-button>
+                  <dm-button class="el-button el-button--secundario">Não</dm-button>
+                </el-row>
+              </dm-popup-background>
+
+
+              <dm-popup @click="popup" popup="close">
+                <dm-popup-background>
+                  <dm_icon alerta />
+                  <p>Voce tem acerteza de que quer apagar este romaneio?</p>
+                  <p class="detail_01">Não será possível visualizar ou recuperar o romaneio.</p>
+                  <el-row>
+                    <dm-button class="el-button el-button--primario" popup="close">Sim</dm-button>
+                    <dm-button class="el-button el-button--secundario">Não</dm-button>
+                  </el-row>
+                </dm-popup-background>
+              </dm-popup>
+
+              <dm-button-popup @click="popup" popup="close" class="el-button el-button--primario">Ver</dm-button-popup>
+
+            </div>
+            <br>
+            <el-collapse v-model="activeids" @change="handleChange">
+              <el-collapse-item title="Ver" id="1">
+
+              </el-collapse-item>
+            </el-collapse>
+          </div>
+          <div class="container-elementos">
+            <img src="mensagens/alert_03.jpg">
+            <br>
+            <br>
+            <div style="display: flex; gap: 20px;">
+
+              <dm-popup-background>
+                <dm_icon alerta />
+                <p>Voce tem acerteza de que quer apagar este romaneio?</p>
+                <p class="detail_01">Não será possível visualizar ou recuperar o romaneio.</p>
+                <el-row>
+                  <dm-button class="el-button el-button--primario" popup="close">Sim</dm-button>
+                  <dm-button class="el-button el-button--secundario">Não</dm-button>
+                </el-row>
+              </dm-popup-background>
+              <dm-popup @click="popup" popup="close">
+                <dm-popup-background>
+                  <dm_icon alerta />
+                  <p>Voce tem acerteza de que quer apagar este romaneio?</p>
+                  <p class="detail_01">Não será possível visualizar ou recuperar o romaneio.</p>
+                  <el-row>
+                    <dm-button class="el-button el-button--primario" popup="close">Sim</dm-button>
+                    <dm-button class="el-button el-button--secundario">Não</dm-button>
+                  </el-row>
+                </dm-popup-background>
+              </dm-popup>
+
+              <dm-button-popup @click="popup" popup="close" class="el-button el-button--primario">Ver</dm-button-popup>
+            </div>
+
+
+            <br>
+            <el-collapse v-model="activeids" @change="handleChange">
+              <el-collapse-item title="Ver" id="1">
+
+              </el-collapse-item>
+            </el-collapse>
+          </div>
+          <h3>Aviso informativo</h3>
+          <br>
+          <div class="container-elementos">
+            <p>Avisos informativos comunicam informações importantes ou sugerem conteúdos informativos ao usuário.</p>
+            <br>
+            <img src="mensagens/informativo.jpg">
+            <br>
+            <br>
+            <dm-information>
+              <dm_icon sugestao />
+              <span>
+                <p>Para saber como construir a tabela de acordo com o padrão, </p>
+                <el-button type="terciario">baixe o nosso modelo</el-button>
+              </span>
+            </dm-information>
+            <br>
+            <el-collapse v-model="activeids" @change="handleChange">
+              <el-collapse-item title="Ver" id="1">
+
+              </el-collapse-item>
+            </el-collapse>
+          </div>
+        </div>
+      </el-main>
+    </el-container>
+  </el-container>
+</template>
+<script>
+import AsideComponent from "../ElementsDs/AsideComponent.vue";
+import HeaderDs from "../../components/HeaderDs.vue";
+export default {
+  id: "MensagensDs",
+  components: {
+    AsideComponent,
+    HeaderDs,
+  },
+  data() {
+    var checkAge = (rule, value, callback) => {
+      if (!value) {
+        return callback(new Error('Please input the age'));
+      }
+      setTimeout(() => {
+        if (!Number.isInteger(value)) {
+          callback(new Error('Please input digits'));
+        } else {
+          if (value < 18) {
+            callback(new Error('Age must be greater than 18'));
+          } else {
+            callback();
+          }
+        }
+      }, 1000);
+    };
+    var validatePass = (rule, value, callback) => {
+      if (value === '') {
+        callback(new Error('Please input the password'));
+      } else {
+        if (this.ruleForm.checkPass !== '') {
+          this.$refs.ruleForm.validateField('checkPass');
+        }
+        callback();
+      }
+    };
+    var validatePass2 = (rule, value, callback) => {
+      if (value === '') {
+        callback(new Error('Please input the password again'));
+      } else if (value !== this.ruleForm.pass) {
+        callback(new Error('Two inputs don\'t match!'));
+      } else {
+        callback();
+      }
+    };
+    return {
+      upPopup: false,
+      idPopup: null,
+      ruleForm: {
+        pass: '',
+        checkPass: '',
+        age: ''
+      },
+      rules: {
+        pass: [
+          { validator: validatePass, trigger: 'blur' }
+        ],
+        checkPass: [
+          { validator: validatePass2, trigger: 'blur' }
+        ],
+        age: [
+          { validator: checkAge, trigger: 'blur' }
+        ]
+      },
+      headerTitle: "Mensagens",
+    };
+  },
+
+  mounted() {
+    this.indexadorPopus()
+  },
+  methods: {
+
+    indexadorPopus() {
+      //INDEXA TODOS POPUPS CRIADOS NO HMTL
+      const $arrayPopups = document.querySelectorAll('dm-popup')
+      const $arraysButtons = document.querySelectorAll('dm-button-popup')
+      for (let i = 0; $arrayPopups.length > i; i++) {
+        $arrayPopups[i].style.display = 'none'
+        $arrayPopups[i].setAttribute('popupid', `${i}`)
+        $arraysButtons[i].setAttribute('popupbutton', `${i}`)
+      }
+    },
+    popup(event) {
+      //ABRE POPUP CLICADO
+      if (this.upPopup === false) {
+        this.idPopup = event.target.getAttribute('popupbutton')
+        this.upPopup = !this.upPopup
+        document.querySelector(`[popupid="${this.idPopup}"]`).style.display = 'flex'
+      }
+      //COMPARA OS OBJETOS CLICADOS QUE PODEM FECHAR O POPUP
+      else if (event.target.getAttribute('popup') == 'close') {
+        this.upPopup = !this.upPopup
+        document.querySelector(`[popupid="${this.idPopup}"]`).style.display = 'none'
+      }
+    }
+  },
+
+  submitForm(formName) {
+    this.$refs[formName].validate((valid) => {
+      if (valid) {
+        alert('submit!');
+      } else {
+        console.log('error submit!!');
+        return false;
+      }
+    });
+  },
+  resetForm(formName) {
+    this.$refs[formName].resetFields();
+  },
+  hello() {
+    alert('Hellow World!')
+  },
+
+};
+
+</script>

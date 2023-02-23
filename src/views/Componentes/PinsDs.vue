@@ -9,29 +9,6 @@
       </el-aside>
 
       <el-main>
-
-
-
-        <!--  -->
-        <!--  -->
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-
-
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-
         <div class="containerInterno">
           <div>
             <h1>/Pins</h1>
@@ -48,24 +25,101 @@
               ponto específico. Apesar de possuir um elemento ícone, o mesmo
               permace como um pin básico.
             </p>
-            <br />
-            <div class="pin__container">
-              <img class="pin__large" src="imagens_design_system/pins/pin__basico--azul.svg" alt="Pin" />
+            <br>
+            <br>
+            <br>
+            <el-row>
+              <el-col :span="4">
+                <dm-pin>
+                  <dm-pin-background>
+                    <dm-pin-conteudo>
+                      <h4>Informação primária</h4>
+                      <p>Informação secundária</p>
+                    </dm-pin-conteudo>
+                    <dm-pin-footer><dm-pin-arrow /></dm-pin-footer>
+                  </dm-pin-background>
+                  <img class="dm-pin" @mouseover="pinHover" @mouseleave="pinHover"
+                    src="imagens_design_system/pins/pin__basico--azul.svg" />
+                </dm-pin>
+                <span class="detail_03" tagColor>pin__basico--azul</span>
+              </el-col>
 
-              <dm-pin>
-                <dm-pin-background>
-                  <dm-pin-conteudo>
-                    <h4>Informação primária</h4>
-                    <p>Informação secundária</p>
-                  </dm-pin-conteudo>
-                  <dm-pin-footer><dm-pin-arrow /></dm-pin-footer>
-                </dm-pin-background>
+              <el-col :span="4">
+                <dm-pin>
+                  <dm-pin-background>
+                    <dm-pin-conteudo>
+                      <h4>Informação primária</h4>
+                      <p>Informação secundária</p>
+                    </dm-pin-conteudo>
+                    <dm-pin-footer><dm-pin-arrow /></dm-pin-footer>
+                  </dm-pin-background>
+                  <img class="dm-pin" @mouseover="pinHover" @mouseleave="pinHover"
+                    src="imagens_design_system/pins/pin__basico--rosa.svg" />
+                </dm-pin>
+                <span class="detail_03" tagColor>pin__basico--rosa</span>
+              </el-col>
 
-                <img class="dm-pin" @mouseover="pinHover" @mouseleave="pinHover"
-                  src="imagens_design_system/pins/pin__basico--azul.svg" />
-              </dm-pin>
+              <el-col :span="4">
+                <dm-pin>
+                  <dm-pin-background>
+                    <dm-pin-conteudo>
+                      <h4>Informação primária</h4>
+                      <p>Informação secundária</p>
+                    </dm-pin-conteudo>
+                    <dm-pin-footer><dm-pin-arrow /></dm-pin-footer>
+                  </dm-pin-background>
+                  <img class="dm-pin" @mouseover="pinHover" @mouseleave="pinHover"
+                    src="imagens_design_system/pins/pin__basico--lilas.svg" />
+                </dm-pin>
+                <span class="detail_03">pin__basico--lilas</span>
+              </el-col>
+              <el-col :span="4">
+                <dm-pin>
+                  <dm-pin-background>
+                    <dm-pin-conteudo>
+                      <h4>Informação primária</h4>
+                      <p>Informação secundária</p>
+                    </dm-pin-conteudo>
+                    <dm-pin-footer><dm-pin-arrow /></dm-pin-footer>
+                  </dm-pin-background>
+                  <img class="dm-pin" @mouseover="pinHover" @mouseleave="pinHover"
+                    src="imagens_design_system/pins/pin__basico--verde.svg" />
+                </dm-pin>
+                <span class="detail_03">pin__basico--verde</span>
 
-            </div>
+              </el-col>
+              <el-col :span="4">
+                <dm-pin>
+                  <dm-pin-background>
+                    <dm-pin-conteudo>
+                      <h4>Informação primária</h4>
+                      <p>Informação secundária</p>
+                    </dm-pin-conteudo>
+                    <dm-pin-footer><dm-pin-arrow /></dm-pin-footer>
+                  </dm-pin-background>
+                  <img class="dm-pin" @mouseover="pinHover" @mouseleave="pinHover"
+                    src="imagens_design_system/pins/pin__basico--laranja.svg" />
+                </dm-pin>
+                <span class="detail_03">pin__basico--laranja</span>
+              </el-col>
+              <el-col :span="4">
+                <dm-pin>
+                  <dm-pin-background>
+                    <dm-pin-conteudo>
+                      <h4>Informação primária</h4>
+                      <p>Informação secundária</p>
+                    </dm-pin-conteudo>
+                    <dm-pin-footer><dm-pin-arrow /></dm-pin-footer>
+                  </dm-pin-background>
+                  <img class="dm-pin" @mouseover="pinHover" @mouseleave="pinHover"
+                    src="imagens_design_system/pins/pin__basico--amarelo.svg" />
+                </dm-pin>
+                <span class="detail_03">pin__basico--amarelo</span>
+              </el-col>
+            </el-row>
+            <br>
+            <br>
+
 
             <el-collapse v-model="activeNames" @change="handleChange">
               <el-collapse-item title="ver" name="3">
@@ -95,12 +149,14 @@
                       &#60;/<span tagColor>dm-pin-background</span>&#62;
                       <br>
                       &#60;<span tagColor>img</span>
-                      <div recuo>
-                        @<span yellow>mouseover</span>=<span roxo>"pinHover"</span> <br> @<span
-                          yellow>mouseleave</span>=<span roxo>"pinHover"</span> <br> class=<span
-                          roxo>"<span>dm-pi</span>n"</span>
-                        <br>
-                        src=<span roxo>"imagens_design_system/pins/pin__basico--azul.svg"</span>
+                      <div class="border-left">
+                        <div recuo>
+                          @<span yellow>mouseover</span>=<span roxo>"pinHover"</span> <br> @<span
+                            yellow>mouseleave</span>=<span roxo>"pinHover"</span> <br> class=<span
+                            roxo>"<span>dm-pi</span>n"</span>
+                          <br>
+                          src=<span roxo>"imagens_design_system/pins/pin__basico--azul.svg"</span>
+                        </div>
                       </div>
                       /&#62;
                     </div>
@@ -126,7 +182,7 @@
                             <span roxo>return</span> {
                             <div class="border-left">
                               <div recuo>
-                                pin: <span blue>"false"</span>
+                                pin: <span blue>false,</span>
                               </div>
                             </div>
 
@@ -188,8 +244,21 @@
             <div class="pin__container">
 
               <img class="pin__large" src="imagens_design_system/pins/pin__coroa.svg" alt="Pin" />
-              <img class="pin__small" src="imagens_design_system/pins/pin__coroa.svg" alt="Pin" />
 
+
+              <dm-pin>
+                <dm-pin-background>
+                  <dm-pin-conteudo>
+                    <h4>Informação primária</h4>
+                    <p>Informação secundária</p>
+                  </dm-pin-conteudo>
+                  <dm-pin-footer><dm-pin-arrow /></dm-pin-footer>
+                </dm-pin-background>
+
+                <img class="dm-pin" @mouseover="pinHover" @mouseleave="pinHover"
+                  src="imagens_design_system/pins/pin__coroa--azul.svg" />
+
+              </dm-pin>
 
 
             </div>
@@ -368,6 +437,12 @@ export default {
 </script>
 
 <style scoped>
+.detail_03 {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
 .pin__large {
   width: 72px;
   margin-right: 50px;

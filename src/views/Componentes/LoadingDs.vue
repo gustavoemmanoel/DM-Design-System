@@ -194,7 +194,7 @@
             <el-button @click="loadingDM" type="primario">Ver loading</el-button>
 
             <!-- Loading -->
-            <dm-loading @click="hiddenLoadingDM" v-if="showLoading">
+            <dm-loading v-if="showLoading">
               <dm-loading-background>
                 <p class="body_01"> Aguarde alguns instantes. <br>
                   Estamos salvando tudo.</p>
@@ -223,8 +223,7 @@
                 <br>
                 <span green> &#60;!-- Loading --&#62;</span>
                 <br>
-                &#60;<span tagColor>dm-loading</span> @click=<span yellow>"hiddenLoadingDM"</span> v-if=<span
-                  roxo>"showLoading"</span>&#62;
+                &#60;<span tagColor>dm-loading</span> v-if=<span roxo>"showLoading"</span>&#62;
                 <div recuo>
                   &#60;<span tagColor>dm-loading-background</span>&#62;
                   <div recuo>
@@ -283,24 +282,6 @@
                     <span roxo>methods</span>: {
                     <div class="border-left">
                       <div recuo>
-                        <span yellow>hiddenLoadingDM</span>(event) {
-                        <br>
-                        <div class="border-left">
-                          <div recuo>
-                            if (event.target.tagName == <span brown>'DM-LOADING'</span>) {
-                            <div class="border-left">
-                              <div class="border-left">
-                                <div recuo>
-                                  this.<span yellow>loadingDM</span>()
-                                </div>
-                              </div>
-                            </div>
-                            }
-                          </div>
-                        </div>
-                        },
-                        <br>
-
                         <span yellow>loadingDM</span>() {
                         <div class="border-left">
                           <div recuo>
@@ -379,12 +360,6 @@ export default {
       this.percentage += 10;
       if (this.percentage > 100) {
         this.percentage = 100;
-      }
-    },
-
-    hiddenLoadingDM(event) {
-      if (event.target.tagName == 'DM-LOADING') {
-        this.loadingDM()
       }
     },
     loadingDM() {

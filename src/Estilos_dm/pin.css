@@ -36,11 +36,15 @@ dm-pin-footer {
     position: absolute;
     border-radius: 0 0 6px 6px;
     bottom: 0;
-    background-color: var(--dm_azul_00);
     height: 14px;
     width: 100%;
     display: flex;
     justify-content: center;
+}
+
+dm-pin-arrow,
+dm-pin-footer {
+    background-color: var(--dm_azul_00);
 }
 
 dm-pin-arrow {
@@ -49,7 +53,6 @@ dm-pin-arrow {
     width: 16px;
     height: 16px;
     transform: translateY(5px) rotate(45deg);
-    background-color: var(--dm_azul_00);
 }
 
 dm-pin-conteudo {

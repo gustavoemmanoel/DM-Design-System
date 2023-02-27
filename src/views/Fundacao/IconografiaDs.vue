@@ -213,7 +213,7 @@
               </div>
               <div class="c-icon">
                 <dm_icon novoArquivo />
-                <div class="container_icon"> &#60;<span tagColor>dm_icon</span> novoArquivodeo /&#62;</div>
+                <div class="container_icon"> &#60;<span tagColor>dm_icon</span> novoArquivo /&#62;</div>
               </div>
               <div class="c-icon">
                 <dm_icon imagem />

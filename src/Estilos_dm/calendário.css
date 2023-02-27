@@ -25,10 +25,6 @@ dm-icons-calendar {
     color: var(--dm_cinza_01);
 }
 
-.el-range-editor.is-active {
-    box-shadow: 0 0 0 2px var(--dm_cinza_02) inset
-}
-
 /* container popup */
 .el-popper.is-pure.is-light.el-picker__popper {
     border-radius: 6px;

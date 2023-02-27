@@ -37,7 +37,7 @@
           <br />
           <br />
           <el-collapse v-model="activeNames" @change="handleChange">
-            <el-collapse-item title="ver" name="3">
+            <el-collapse-item title="Ver código" name="3">
               <div class="html_codigos_blue">
                 <!-- el-button default -->
                 &#60;<span tagColor>el-button</span>&#62;<span black>Botão</span>&lt;/<span tagColor>el-button</span>&gt;
@@ -101,7 +101,7 @@
           </el-row>
           <el-col :span="24">
             <el-collapse v-model="activeNames" @change="handleChange">
-              <el-collapse-item title="ver" name="3">
+              <el-collapse-item title="Ver código" name="3">
                 <div class="html_codigos_blue">
                   <span v-for="(style, index) in primario.stringHTML" :key="index">
                     &lt;<span tagColor>el-button</span> type=<span roxo>{{
@@ -148,7 +148,7 @@
           </el-row>
           <el-col :span="24">
             <el-collapse v-model="activeNames" @change="handleChange">
-              <el-collapse-item title="ver" name="3">
+              <el-collapse-item title="Ver código" name="3">
                 <div class="html_codigos_blue">
                   <span v-for="(style, index) in segundo.stringHTML" :key="index">
                     &lt;<span tagColor>el-button</span> type=<span roxo>{{
@@ -195,7 +195,7 @@
           </el-row>
           <el-col :span="24">
             <el-collapse v-model="activeNames" @change="handleChange">
-              <el-collapse-item title="ver" name="3">
+              <el-collapse-item title="Ver código" name="3">
                 <div class="html_codigos_blue">
                   <span v-for="(style, index) in terceiro.stringHTML" :key="index">
                     &lt;<span tagColor>el-button</span> type=<span roxo>{{
@@ -220,13 +220,11 @@ import HeaderDs from "../../components/HeaderDs.vue";
 export default {
   name: "BotaoDs",
   components: {
-
     HeaderDs,
   },
   data() {
     return {
       headerTitle: "Botão",
-      btnAtivo: { cores: "text-decoration: underline" },
       primario: {
         content:
           "O botão primário é o que tem a maior ênfase na tela. É destinado à ação essencial do usuário para executar a tarefa principal da página. Possui quatro estados diferentes: ativo, hover, click e bloqueado. Também possui dois tamanhos: o padrão, mais utilizado; e o grande, para casos onde é necessário ainda mais destaque na página, por exemplo na tela de login.",
@@ -240,7 +238,6 @@ export default {
             larger: "primario-larger",
           },
         ],
-
         stringHTML: [
           {
             html: '"primario"',
@@ -248,8 +245,6 @@ export default {
           {
             html: '"primario-larger"',
           },
-
-          // { html: '<el-button type="primario-larger">Primário<el-button> ' },
         ],
       },
       /* Segundo */

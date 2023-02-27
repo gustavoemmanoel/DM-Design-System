@@ -1,8 +1,9 @@
 :root {
-    --latLong: 40px
+    --latLong: 44px
 }
 
 dm-pin {
+    position: relative;
     display: flex;
     width: var(--latLong);
     height: var(--latLong);
@@ -20,7 +21,7 @@ dm-pin img {
 }
 
 dm-pin-background {
-    position: relative;
+    position: absolute;
     transform: translatey(-80px);
     flex-direction: column;
     background: var(--dm_creme_02);
@@ -59,4 +60,122 @@ dm-pin-conteudo {
     display: block;
     text-align: start;
     padding: 10px;
+}
+
+dm-pin-img {
+    display: flex;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: var(--latLong);
+    height: var(--latLong);
+    cursor: pointer;
+}
+
+/* Azul básico */
+
+[pin_basico_azul] {
+    background-image: url('../../public/imagens_design_system/pins/azul/pin_basico_azul.svg');
+}
+
+[pin_basico_azul_bom] {
+    background-image: url('../../public/imagens_design_system/pins/azul/pin_basico_azul_bom.svg');
+}
+
+[pin_basico_azul_medio] {
+    background-image: url('../../public/imagens_design_system/pins/azul/pin_basico_azul_medio.svg');
+}
+
+[pin_basico_azul_ruim] {
+    background-image: url('../../public/imagens_design_system/pins/azul/pin_basico_azul_ruim.svg');
+}
+
+/* Azul coroa */
+
+[pin_coroa_azul] {
+    background-image: url('../../public/imagens_design_system/pins/azul/pin_coroa_azul.svg');
+}
+
+[pin_coroa_azul_bom] {
+    background-image: url('../../public/imagens_design_system/pins/azul/pin_coroa_azul_bom.svg');
+}
+
+[pin_coroa_azul_medio] {
+    background-image: url('../../public/imagens_design_system/pins/azul/pin_coroa_azul_medio.svg');
+}
+
+[pin_coroa_azul_ruim] {
+    background-image: url('../../public/imagens_design_system/pins/azul/pin_coroa_azul_ruim.svg');
+}
+
+/* Rosa básico */
+
+[pin_basico_rosa] {
+    background-image: url('../../public/imagens_design_system/pins/rosa/pin_basico_rosa.svg');
+}
+
+[pin_basico_rosa_bom] {
+    background-image: url('../../public/imagens_design_system/pins/rosa/pin_basico_rosa_bom.svg');
+}
+
+[pin_basico_rosa_medio] {
+    background-image: url('../../public/imagens_design_system/pins/rosa/pin_basico_rosa_medio.svg');
+}
+
+[pin_basico_rosa_ruim] {
+    background-image: url('../../public/imagens_design_system/pins/rosa/pin_basico_rosa_ruim.svg');
+}
+
+/* Rosa coroa */
+
+[pin_coroa_rosa] {
+    background-image: url('../../public/imagens_design_system/pins/rosa/pin_coroa_rosa.svg');
+}
+
+[pin_coroa_rosa_bom] {
+    background-image: url('../../public/imagens_design_system/pins/rosa/pin_coroa_rosa_bom.svg');
+}
+
+[pin_coroa_rosa_medio] {
+    background-image: url('../../public/imagens_design_system/pins/rosa/pin_coroa_rosa_medio.svg');
+}
+
+[pin_coroa_rosa_ruim] {
+    background-image: url('../../public/imagens_design_system/pins/rosa/pin_coroa_rosa_ruim.svg');
+}
+
+/* Amarelo básico */
+
+[pin_basico_amarelo] {
+    background-image: url('../../public/imagens_design_system/pins/amarelo/pin_basico_amarelo.svg');
+}
+
+[pin_basico_amarelo_bom] {
+    background-image: url('../../public/imagens_design_system/pins/amarelo/pin_basico_amarelo_bom.svg');
+}
+
+[pin_basico_amarelo_medio] {
+    background-image: url('../../public/imagens_design_system/pins/amarelo/pin_basico_amarelo_medio.svg');
+}
+
+[pin_basico_amarelo_ruim] {
+    background-image: url('../../public/imagens_design_system/pins/amarelo/pin_basico_amarelo_ruim.svg');
+}
+
+/* Amarelo coroa */
+
+[pin_coroa_amarelo] {
+    background-image: url('../../public/imagens_design_system/pins/amarelo/pin_coroa_amarelo.svg');
+}
+
+[pin_coroa_amarelo_bom] {
+    background-image: url('../../public/imagens_design_system/pins/amarelo/pin_coroa_amarelo_bom.svg');
+}
+
+[pin_coroa_amarelo_medio] {
+    background-image: url('../../public/imagens_design_system/pins/amarelo/pin_coroa_amarelo_medio.svg');
+}
+
+[pin_coroa_amarelo_ruim] {
+    background-image: url('../../public/imagens_design_system/pins/amarelo/pin_coroa_amarelo_ruim.svg');
 }

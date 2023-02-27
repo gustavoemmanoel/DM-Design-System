@@ -31,7 +31,7 @@
           </el-table>
           <br />
           <el-collapse v-model="activeNames" @change="handleChange">
-            <el-collapse-item title="Ver" name="1">
+            <el-collapse-item title="Ver código" name="1">
           <div class="html_codigos_blue">
             &#60;<span tagColor>el-table</span> :data=<span roxo
               >"tableData" stripe </span
@@ -154,7 +154,6 @@ export default {
   data() {
     return {
       headerTitle: "Tabelas",
-      btnAtivo: { cores: "text-decoration: underline" },
       tableData: [
         {
           projectName: "Design System",

@@ -26,7 +26,7 @@
               <br>
               <br>
               <el-collapse v-model="activeNames" @change="handleChange">
-                <el-collapse-item title="ver" name="1">
+                <el-collapse-item title="ver código" name="1">
                   <div class="html_codigos_blue">
                     &#60;<span tagColor>template</span> &#62;
                     <div class="border-left">
@@ -115,7 +115,7 @@
               <br>
 
               <el-collapse v-model="activeNames" @change="handleChange">
-                <el-collapse-item title="ver" name="1">
+                <el-collapse-item title="ver código" name="1">
                   <div class="html_codigos_blue">
                     &#60;<span tagColor>template</span> &#62;
                     <div class="border-left">

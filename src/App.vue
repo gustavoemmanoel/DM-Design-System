@@ -101,7 +101,7 @@ body {
 
 .html_color_axx,
 [roxo] {
-  color: rgb(201, 165, 255);
+  color: rgb(193, 151, 255);
 }
 
 [tagColor] {
@@ -117,7 +117,7 @@ body {
 }
 
 [yellow] {
-  color: var(--dm_amarelo_00);
+  color: #d8ad00;
 }
 
 [blue] {

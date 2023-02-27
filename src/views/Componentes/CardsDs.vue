@@ -5,6 +5,8 @@
     </el-header>
     <el-container>
   
+    
+
 
       <el-main>
         <div class="containerInterno">
@@ -53,7 +55,7 @@
 
             <br />
             <el-collapse v-model="activeNames" @change="handleChange">
-              <el-collapse-item title="ver" name="1">
+              <el-collapse-item title="Ver código" name="1">
                 <span class="html_codigos_blue">
                   <span green>&#60;!-- card clicável --&#62;</span>
                   <br />
@@ -149,7 +151,6 @@ export default {
   data() {
     return {
       headerTitle: "Cards",
-      btnAtivo: { cores: "text-decoration: underline" },
     };
   },
 };
@@ -233,4 +234,8 @@ export default {
   border-width: 2px 2px 2px 0;
   border-radius: 0 6px 6px 0;
 }
+
+
+
+
 </style>

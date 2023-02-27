@@ -31,7 +31,7 @@
               <!--  -->
 
               <el-collapse v-model="activeNames" @change="handleChange">
-                <el-collapse-item title="Ver" name="1">
+                <el-collapse-item title="ver código" name="1">
        
                   <!-- Código para copiar -->
 
@@ -95,10 +95,7 @@ export default {
   data() {
     return {
       headerTitle: "Check Box",
-      btnAtivo: { cores: "text-decoration: underline" },
     };
   },
 };
 </script>
-
-<style scoped></style>

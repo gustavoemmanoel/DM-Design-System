@@ -36,7 +36,7 @@
           <br />
 
           <el-collapse v-model="activeNames" @change="handleChange">
-            <el-collapse-item title="ver" name="1">
+            <el-collapse-item title="Ver código" name="1">
               <div class="html_codigos_blue">
                 <span>&#60;<span tagColor>el-progress</span> :stroke-width=<span roxo>"14"</span> :percentage=<span
                     roxo>percentage1</span> :color=<span roxo>"color1"</span> /&#62;</span><br />
@@ -110,7 +110,7 @@
 
           <div class="demo-collapse">
             <el-collapse v-model="activeNames" @change="handleChange">
-              <el-collapse-item title="ver" name="1">
+              <el-collapse-item title="Ver código" name="1">
                 <div class="html_codigos_blue">
                   <span>&#60;<span tagColor>el-progress</span> type=<span roxo>"circle"</span> :percentage=<span
                       roxo>"percentage1"</span> :color=<span roxo>"color1"</span>/&#62;</span><br />
@@ -207,7 +207,7 @@
 
 
           <el-collapse v-model="activeNames" @change="handleChange">
-            <el-collapse-item title="ver" name="1">
+            <el-collapse-item title="Ver código" name="1">
               <div class="html_codigos_blue">
 
                 <span green> &#60;!-- Button Loading --&#62;</span>

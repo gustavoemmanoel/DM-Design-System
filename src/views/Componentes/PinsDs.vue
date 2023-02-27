@@ -12,7 +12,7 @@
             <br>
             <p>Pins são elementos que servem para marcar pontos no mapa.</p>
           </div>
-          <br />
+          <br>
           <div class="container-elementos">
             <h3>Pin básico</h3>
             <br>
@@ -24,101 +24,22 @@
             <br>
             <br>
             <br>
-            <el-row>
-              <el-col :span="4">
-                <dm-pin>
-                  <dm-pin-background>
-                    <dm-pin-conteudo>
-                      <h4>Informação primária</h4>
-                      <p>Informação secundária</p>
-                    </dm-pin-conteudo>
-                    <dm-pin-footer><dm-pin-arrow /></dm-pin-footer>
-                  </dm-pin-background>
-                  <img class="dm-pin" @mouseover="pinHover" @mouseleave="pinHover"
-                    src="imagens_design_system/pins/pin__basico--azul.svg" />
-                </dm-pin>
-                <span class="detail_03" tagColor>pin__basico--azul</span>
-              </el-col>
-
-              <el-col :span="4">
-                <dm-pin>
-                  <dm-pin-background>
-                    <dm-pin-conteudo>
-                      <h4>Informação primária</h4>
-                      <p>Informação secundária</p>
-                    </dm-pin-conteudo>
-                    <dm-pin-footer><dm-pin-arrow /></dm-pin-footer>
-                  </dm-pin-background>
-                  <img class="dm-pin" @mouseover="pinHover" @mouseleave="pinHover"
-                    src="imagens_design_system/pins/pin__basico--rosa.svg" />
-                </dm-pin>
-                <span class="detail_03" tagColor>pin__basico--rosa</span>
-              </el-col>
-
-              <el-col :span="4">
-                <dm-pin>
-                  <dm-pin-background>
-                    <dm-pin-conteudo>
-                      <h4>Informação primária</h4>
-                      <p>Informação secundária</p>
-                    </dm-pin-conteudo>
-                    <dm-pin-footer><dm-pin-arrow /></dm-pin-footer>
-                  </dm-pin-background>
-                  <img class="dm-pin" @mouseover="pinHover" @mouseleave="pinHover"
-                    src="imagens_design_system/pins/pin__basico--lilas.svg" />
-                </dm-pin>
-                <span class="detail_03">pin__basico--lilas</span>
-              </el-col>
-              <el-col :span="4">
-                <dm-pin>
-                  <dm-pin-background>
-                    <dm-pin-conteudo>
-                      <h4>Informação primária</h4>
-                      <p>Informação secundária</p>
-                    </dm-pin-conteudo>
-                    <dm-pin-footer><dm-pin-arrow /></dm-pin-footer>
-                  </dm-pin-background>
-                  <img class="dm-pin" @mouseover="pinHover" @mouseleave="pinHover"
-                    src="imagens_design_system/pins/pin__basico--verde.svg" />
-                </dm-pin>
-                <span class="detail_03">pin__basico--verde</span>
-
-              </el-col>
-              <el-col :span="4">
-                <dm-pin>
-                  <dm-pin-background>
-                    <dm-pin-conteudo>
-                      <h4>Informação primária</h4>
-                      <p>Informação secundária</p>
-                    </dm-pin-conteudo>
-                    <dm-pin-footer><dm-pin-arrow /></dm-pin-footer>
-                  </dm-pin-background>
-                  <img class="dm-pin" @mouseover="pinHover" @mouseleave="pinHover"
-                    src="imagens_design_system/pins/pin__basico--laranja.svg" />
-                </dm-pin>
-                <span class="detail_03">pin__basico--laranja</span>
-              </el-col>
-              <el-col :span="4">
-                <dm-pin>
-                  <dm-pin-background>
-                    <dm-pin-conteudo>
-                      <h4>Informação primária</h4>
-                      <p>Informação secundária</p>
-                    </dm-pin-conteudo>
-                    <dm-pin-footer><dm-pin-arrow /></dm-pin-footer>
-                  </dm-pin-background>
-                  <img class="dm-pin" @mouseover="pinHover" @mouseleave="pinHover"
-                    src="imagens_design_system/pins/pin__basico--amarelo.svg" />
-                </dm-pin>
-                <span class="detail_03">pin__basico--amarelo</span>
-              </el-col>
-            </el-row>
-            <br>
-            <br>
-
+            <!-- Azul básico -->
+            <span>
+              <dm-pin>
+                <dm-pin-background>
+                  <dm-pin-conteudo>
+                    <h4>Pin Azul</h4>
+                    <p>Informação secundária</p>
+                  </dm-pin-conteudo>
+                  <dm-pin-footer><dm-pin-arrow /></dm-pin-footer>
+                </dm-pin-background>
+                <dm-pin-img pin_basico_azul @mouseover="pinHover" @mouseleave="pinHover" />
+              </dm-pin>
+            </span>
 
             <el-collapse v-model="activeNames" @change="handleChange">
-              <el-collapse-item title="ver" name="3">
+              <el-collapse-item title="Ver código">
                 <div class="html_codigos_blue">
                   &#60;<span tagColor>dm-pin</span>&#62;
                   <div class="border-left">
@@ -151,7 +72,7 @@
                             yellow>mouseleave</span>=<span roxo>"pinHover"</span> <br> class=<span
                             roxo>"<span>dm-pi</span>n"</span>
                           <br>
-                          src=<span roxo>"imagens_design_system/pins/pin__basico--azul.svg"</span>
+                          src=<span roxo>"imagens_design_system/pins/.svg"</span>
                         </div>
                       </div>
                       /&#62;
@@ -161,7 +82,6 @@
                 </div>
                 <br>
                 <br>
-
                 <div class="html_codigos_blue">
                   &#60;<span tagColor>script</span>&#62;
                   <br>
@@ -171,43 +91,54 @@
                       <div>
                         name: <span roxo>"LoadingDs"</span>, <br>
                       </div>
-                      <div>
-                        <span yellow>data</span>() {
-                        <div class="border-left">
-                          <div recuo>
-                            <span roxo>return</span> {
-                            <div class="border-left">
-                              <div recuo>
-                                pin: <span blue>false,</span>
-                              </div>
-                            </div>
-
-                            };
-                          </div>
-                        </div>
-                        },
+                      <span yellow>mounted</span>() {
+                      <div class="border-left">
+                        <div recuo><span blue>this</span>.<span yellow>indexadorPins</span>()</div>
                       </div>
+                      },<br>
                       methods: {
                       <div class="border-left">
                         <div recuo>
+                          <span yellow>indexadorPins</span>() {
+                          <div class="border-left">
+                            <div recuo>
+                              <span blue>const</span> dmPinsSelector = document.<span yellow>querySelectorAll</span>(<span
+                                brown>'dm-pin'</span>) <br>
+                              <span roxo>for</span> (<span blue>let</span> i = <span green>0</span>; i &#60;
+                              dmPinsSelector.length; i++) {
+                              <div class="border-left">
+                                <div recuo>
+                                  dmPinsSelector[i].setAttribute(<span brown>'id'</span>, `pin-${i}`) <br>
+                                  <span blue>const</span> indexadorPin = document.getElementById(`pin-${i}`)<br>
+                                  indexadorPin.childNodes[<span green>0</span>].setAttribute(<span brown>'id'</span>,
+                                  `delete-${i}`)<br>
+                                  indexadorPin.childNodes[<span green>1</span>].setAttribute(<span brown>'id'</span>,
+                                  `pin-${i}`)<br>
+                                  indexadorPin.childNodes[<span green>0</span>].style.display = <span brown>'none'</span>
+                                </div>
+                              </div>
+                              }
+                            </div>
+                          </div>
+                          },
+                          <br>
                           <span yellow>pinHover</span>() {
                           <div class="border-left">
                             <div recuo>
-                              <span blue>const</span> pin = document.<span yellow>querySelector</span>(<span
-                                brown>'dm-pin-background'</span>)
+                              <span blue>const</span> getId = event.target.id <br>
+                              <span blue>const</span> $pin = document.<span yellow>getElementById</span>(<span
+                                blue>getId</span>).children[<span green>0</span>]
                               <br>
-                              <span roxo>if</span>(!this.pin) {
+                              <span roxo>if</span> ($pin.style.display == <span brown>'none'</span>) {
                               <div class="border-left">
                                 <div recuo>
-                                  pin.style.display = <span brown>'flex'</span><br>
-                                  <span blue>this</span>.pin = <span blue>!this</span>.pin<br>
+                                  $pin.style.display = <span brown>'flex'</span><br>
                                 </div>
                               </div>
                               } <span roxo>else</span> {
                               <div class="border-left">
                                 <div recuo>
-                                  pin.style.display = <span brown>'none'</span><br>
-                                  <span blue>this</span>.pin = <span blue>!this</span>.pin<br>
+                                  $pin.style.display = <span brown>'none'</span><br>
                                 </div>
                               </div>
                               }
@@ -225,9 +156,7 @@
                 </div>
               </el-collapse-item>
             </el-collapse>
-
-
-            <br />
+            <br>
           </div>
           <div class="container-elementos">
             <h3>Pin com ícone</h3>
@@ -236,29 +165,118 @@
               O pin também pode conter um ícone interno para representar mais uma informação sobre aquele ponto
               específico.
             </p>
-            <br />
-            <div class="pin__container">
-
-              <img class="pin__large" src="imagens_design_system/pins/pin__coroa.svg" alt="Pin" />
-
-
-              <dm-pin>
-                <dm-pin-background>
-                  <dm-pin-conteudo>
-                    <h4>Informação primária</h4>
-                    <p>Informação secundária</p>
-                  </dm-pin-conteudo>
-                  <dm-pin-footer><dm-pin-arrow /></dm-pin-footer>
-                </dm-pin-background>
-
-                <img class="dm-pin" @mouseover="pinHover" @mouseleave="pinHover"
-                  src="imagens_design_system/pins/pin__coroa--azul.svg" />
-
-              </dm-pin>
-
-
+            <br>
+            <br>
+            <div style="display: grid; grid-template-columns: 1fr 1fr 1fr;">
+              <!-- Azuis -->
+              <div>
+                <div class="pins-tags">
+                  <dm-pin-img class="pin-amostra" pin_basico_azul />
+                  <div>&#60;<span tagColor>pin_basico_azul</span> /&#62;</div>
+                </div>
+                <div class="pins-tags">
+                  <dm-pin-img class="pin-amostra" pin_basico_azul_bom />
+                  <div>&#60;<span tagColor>pin_basico_azul_bom</span> /&#62;</div>
+                </div>
+                <div class="pins-tags">
+                  <dm-pin-img class="pin-amostra" pin_basico_azul_medio />
+                  <div>&#60;<span tagColor>pin_basico_azul_medio</span> /&#62;</div>
+                </div>
+                <div class="pins-tags">
+                  <dm-pin-img class="pin-amostra" pin_basico_azul_ruim />
+                  <div>&#60;<span tagColor>pin_basico_azul_ruim</span> /&#62;</div>
+                </div>
+                <br>
+                <div class="pins-tags">
+                  <dm-pin-img class="pin-amostra" pin_coroa_azul />
+                  <div>&#60;<span tagColor>pin_coroa_azul</span> /&#62;</div>
+                </div>
+                <div class="pins-tags">
+                  <dm-pin-img class="pin-amostra" pin_coroa_azul_bom />
+                  <div>&#60;<span tagColor>pin_coroa_azul_bom</span> /&#62;</div>
+                </div>
+                <div class="pins-tags">
+                  <dm-pin-img class="pin-amostra" pin_coroa_azul_medio />
+                  <div>&#60;<span tagColor>pin_coroa_azul_medio</span> /&#62;</div>
+                </div>
+                <div class="pins-tags">
+                  <dm-pin-img class="pin-amostra" pin_coroa_azul_ruim />
+                  <div>&#60;<span tagColor>pin_coroa_azul_ruim</span> /&#62;</div>
+                </div>
+              </div>
+              <!-- Rosas -->
+              <div>
+                <div class="pins-tags">
+                  <dm-pin-img class="pin-amostra" pin_basico_rosa />
+                  <div>&#60;<span tagColor>pin_basico_rosa</span> /&#62;</div>
+                </div>
+                <div class="pins-tags">
+                  <dm-pin-img class="pin-amostra" pin_basico_rosa_bom />
+                  <div>&#60;<span tagColor>pin_basico_rosa_bom</span> /&#62;</div>
+                </div>
+                <div class="pins-tags">
+                  <dm-pin-img class="pin-amostra" pin_basico_rosa_medio />
+                  <div>&#60;<span tagColor>pin_basico_rosa_medio</span> /&#62;</div>
+                </div>
+                <div class="pins-tags">
+                  <dm-pin-img class="pin-amostra" pin_basico_rosa_ruim />
+                  <div>&#60;<span tagColor>pin_basico_rosa_ruim</span> /&#62;</div>
+                </div>
+                <br>
+                <div class="pins-tags">
+                  <dm-pin-img class="pin-amostra" pin_coroa_rosa />
+                  <div>&#60;<span tagColor>pin_coroa_rosa</span> /&#62;</div>
+                </div>
+                <div class="pins-tags">
+                  <dm-pin-img class="pin-amostra" pin_coroa_rosa_bom />
+                  <div>&#60;<span tagColor>pin_coroa_rosa_bom</span> /&#62;</div>
+                </div>
+                <div class="pins-tags">
+                  <dm-pin-img class="pin-amostra" pin_coroa_rosa_medio />
+                  <div>&#60;<span tagColor>pin_coroa_rosa_medio</span> /&#62;</div>
+                </div>
+                <div class="pins-tags">
+                  <dm-pin-img class="pin-amostra" pin_coroa_rosa_ruim />
+                  <div>&#60;<span tagColor>pin_coroa_rosa_ruim</span> /&#62;</div>
+                </div>
+              </div>
+              <!-- Amarelos -->
+              <div>
+                <div class="pins-tags">
+                  <dm-pin-img class="pin-amostra" pin_basico_amarelo />
+                  <div>&#60;<span tagColor>pin_basico_amarelo</span> /&#62;</div>
+                </div>
+                <div class="pins-tags">
+                  <dm-pin-img class="pin-amostra" pin_basico_amarelo_bom />
+                  <div>&#60;<span tagColor>pin_basico_amarelo_bom</span> /&#62;</div>
+                </div>
+                <div class="pins-tags">
+                  <dm-pin-img class="pin-amostra" pin_basico_amarelo_medio />
+                  <div>&#60;<span tagColor>pin_basico_amarelo_medio</span> /&#62;</div>
+                </div>
+                <div class="pins-tags">
+                  <dm-pin-img class="pin-amostra" pin_basico_amarelo_ruim />
+                  <div>&#60;<span tagColor>pin_basico_amarelo_ruim</span> /&#62;</div>
+                </div>
+                <br>
+                <div class="pins-tags">
+                  <dm-pin-img class="pin-amostra" pin_coroa_amarelo />
+                  <div>&#60;<span tagColor>pin_coroa_amarelo</span> /&#62;</div>
+                </div>
+                <div class="pins-tags">
+                  <dm-pin-img class="pin-amostra" pin_coroa_amarelo_bom />
+                  <div>&#60;<span tagColor>pin_coroa_amarelo_bom</span> /&#62;</div>
+                </div>
+                <div class="pins-tags">
+                  <dm-pin-img class="pin-amostra" pin_coroa_amarelo_medio />
+                  <div>&#60;<span tagColor>pin_coroa_amarelo_medio</span> /&#62;</div>
+                </div>
+                <div class="pins-tags">
+                  <dm-pin-img class="pin-amostra" pin_coroa_amarelo_ruim />
+                  <div>&#60;<span tagColor>pin_coroa_amarelo_ruim</span> /&#62;</div>
+                </div>
+              </div>
             </div>
-
           </div>
           <div class="container-elementos">
             <h3>Pin de desempenho</h3>
@@ -267,15 +285,7 @@
               O pin de desempenho é um pin com duplo ícone. O segundo ícone apresenta o desempenho de um ponto em
               relação a outros pontos.
             </p>
-            <br />
-            <div class="pin__container">
 
-              <img class="pin__large" src="imagens_design_system/pins/pin__desempenho--bom.svg" alt="Pin" />
-              <img class="pin__small" src="imagens_design_system/pins/pin__desempenho--bom.svg" alt="Pin" />
-
-
-
-            </div>
             <div class="pin__container">
               <span><img class="pin__desempenho" src="imagens_design_system/pins/bom.svg" alt="Pin" />
                 Bom
@@ -287,7 +297,7 @@
                 Ruim
               </span>
             </div>
-
+            <br>
 
           </div>
 
@@ -298,7 +308,7 @@
               Os ícones que vão dentro dos pins são sempre preenchidos na cor DM_creme_00, padronizados no tamanho 20px
               X 20px.
             </p>
-            <br />
+            <br>
             <el-row>
               <h1 style="text-align: center; margin-bottom: 20px; width: 100%">Coleção de ícones para os pins</h1>
             </el-row>
@@ -308,7 +318,6 @@
               <img class="pin__icon" src="imagens_design_system/pins/pin__icon--estrela.svg" alt="Pin" />
             </div>
           </div>
-
           <div class="container-elementos">
             <h3>Estados do pin</h3>
             <br>
@@ -316,12 +325,12 @@
               Os ícones que vão dentro dos pins são sempre preenchidos na cor DM_creme_00, padronizados no tamanho 20px
               X 20px.
             </p>
-            <br />
+            <br>
             <div class="estados__pin">
               <div>
                 <h3>Pin ativo</h3>
                 <div>
-                  <img class="pin__medio" src="imagens_design_system/pins/pin__basico--azul.svg" alt="Pin" />
+                  <img class="pin__medio" src="imagens_design_system/pins/azul/pin_basico_azul.svg" alt="Pin" />
                 </div>
 
                 <p>A cor do pin é pré-determinada em cada caso de uso.</p>
@@ -339,7 +348,7 @@
               <div>
                 <h3>Pin clicado</h3>
                 <div>
-                  <img class="pin__medio" src="imagens_design_system/pins/pin__basico--rosa.svg" alt="Pin" />
+                  <img class="pin__medio" src="imagens_design_system/pins/rosa/pin_basico_rosa.svg" alt="Pin" />
                 </div>
                 <p>No estado de click o pin é sempre rosa.</p>
               </div>
@@ -354,7 +363,7 @@
               Para melhor acessibilidade de aplicações, esta sessão disponibiliza os pins acima já componentizados para
               a utilização imediata.
             </p>
-            <br />
+            <br>
             <p>O pin por padrão vem com todas as opções ativas, sendo necessário o designer configurá-lo conforme o caso
               de uso.</p>
             <br>
@@ -362,7 +371,17 @@
               <div>
                 <h3>Pin mestre</h3>
                 <div>
-                  <img class="pin__medio" src="imagens_design_system/pins/pin__desempenho--bom.svg" alt="Pin" />
+
+                  <dm-pin>
+                    <dm-pin-background>
+                      <dm-pin-conteudo>
+                        <h4>Informação primária</h4>
+                        <p>Informação secundária</p>
+                      </dm-pin-conteudo>
+                      <dm-pin-footer><dm-pin-arrow /></dm-pin-footer>
+                    </dm-pin-background>
+                    <dm-pin-img pin_coroa_azul_bom @mouseover="pinHover" @mouseleave="pinHover" />
+                  </dm-pin>
                 </div>
               </div>
               <p>Importante: o pin mestre só deve ser aterado caso a intenção seja alterar o aspecto geral de todos os
@@ -374,9 +393,6 @@
               </p>
             </div>
           </div>
-
-
-
           <div>
             <h3>Aplicação</h3>
             <hr />
@@ -398,13 +414,11 @@ export default {
   data() {
     return {
       headerTitle: "Pins",
-      pin: false,
     };
   },
   mounted() {
     this.indexadorPins()
   },
-
   methods: {
     indexadorPins() {
       const dmPinsSelector = document.querySelectorAll('dm-pin')
@@ -416,13 +430,12 @@ export default {
         indexadorPin.childNodes[0].style.display = 'none'
       }
     },
-
     pinHover(event) {
       const getId = event.target.id
       const $pin = document.getElementById(getId).children[0]
       if ($pin.style.display == 'none') {
         $pin.style.display = 'flex'
-      } else if ($pin.style.display == 'flex') {
+      } else {
         $pin.style.display = 'none'
       }
     }
@@ -431,19 +444,15 @@ export default {
 </script>
 
 <style scoped>
-.detail_03 {
-  display: block;
-  width: 100%;
-  text-align: center;
+.pins-tags {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
 .pin__large {
   width: 72px;
   margin-right: 50px;
-}
-
-.pin__small {
-  width: 40px;
 }
 
 .mapa__pins {
@@ -506,7 +515,6 @@ export default {
   grid-template-columns: 250px 1fr;
   gap: 40px;
   width: 100%;
-
 }
 
 .estados__pin--mestre div {
@@ -517,7 +525,6 @@ export default {
   background: var(--dm_creme_00);
   min-height: 168px;
   border-radius: 6px;
-
 }
 
 .estados__pin--mestre p {
@@ -539,6 +546,9 @@ export default {
   justify-content: flex-end;
   background: var(--dm_creme_00);
   min-height: 168px;
+}
 
+.pin-amostra {
+  cursor: default;
 }
 </style>

@@ -41,11 +41,7 @@ export default {
   data() {
     return {
       headerTitle: "Instalação",
-      btnAtivo: { cores: "text-decoration: underline" },
-
     }
   },
 };
 </script>
-  
-<style scoped></style>

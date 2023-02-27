@@ -44,7 +44,7 @@
             </el-row>
             <br />
             <el-collapse v-model="activeNames" @change="handleChange">
-              <el-collapse-item title="ver" name="3">
+              <el-collapse-item title="Ver código" name="3">
                 <span class="html_codigos_blue">
                   &#60;<span tagColor>template</span>&#62;
                   <div recuo>
@@ -143,7 +143,7 @@
             </el-row>
             <br />
             <el-collapse v-model="activeNames" @change="handleChange">
-              <el-collapse-item title="ver" name="3">
+              <el-collapse-item title="Ver código" name="3">
                 <span class="html_codigos_blue">
                   &#60;<span tagColor>template</span>&#62;
                   <div recuo>
@@ -286,7 +286,6 @@ export default {
         { type: "danger", label: "Tag 5" },
       ],
       headerTitle: "Tags",
-      btnAtivo: { cores: "text-decoration: underline" },
     };
   },
 };

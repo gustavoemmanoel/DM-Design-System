@@ -53,7 +53,7 @@
               </div>
             </div>
             <el-collapse v-model="activeNames" @change="handleChange">
-              <el-collapse-item title="ver" name="3">
+              <el-collapse-item title="ver código" name="3">
                 <div class="html_codigo_blue">
                   &#60;<span tagColor>el-dropdown</span>&#62;
                   <div class="border-left">
@@ -158,8 +158,6 @@ export default {
   data() {
     return {
       headerTitle: "Dropdown",
-
-      btnAtivo: { cores: "text-decoration: underline" },
     };
   },
 };

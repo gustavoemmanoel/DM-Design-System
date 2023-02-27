@@ -45,7 +45,7 @@
               </el-col>
             </el-row>
             <el-collapse v-model="activeNames" @change="handleChange">
-              <el-collapse-item title="ver" name="3">
+              <el-collapse-item title="Ver código" name="3">
                 <div class="html_codigos_blue">
                   &#60;<span tagColor>el-form</span> :label-position=<span roxo>"labelPosition"</span>
                   label-width=<span roxo>"100px"</span> :model=<span roxo>"formLabelAlign"</span>&#62;
@@ -184,9 +184,7 @@ export default {
   data() {
     return {
       headerTitle: "Campo de Texto",
-      btnAtivo: { cores: "text-decoration: underline" },
       labelPosition: "top",
-
       formLabelAlign: {
         street: "",
         district: "",

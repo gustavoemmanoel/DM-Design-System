@@ -49,59 +49,276 @@
             </el-form>
 
             <el-collapse v-model="activeids" @change="handleChange">
-              <el-collapse-item title="Ver" id="1">
+              <el-collapse-item title="Ver código">
+                <!-- HTML -->
+                <div class="html_codigos_blue">
+                  &#60;<span tagColor>template</span>&#62;
+                  <div class="border-left">
+                    <div recuo>
+                      &#60;<span tagColor>el-form</span>
+                      <div recuo>label-position=<span roxo>"top"</span> <br> :model=<span roxo>"ruleForm"</span> <br>
+                        :rules=<span roxo>"rules"</span> ref=<span roxo>"ruleForm"</span> <br> label-width=<span
+                          roxo>"120px"</span> <br> class=<span roxo>"demo-ruleForm"</span></div>&#62;
+                      <div class="border-left">
+                        <div recuo>
+                          &#60;<span tagColor>el-form-item</span> label=<span roxo>"Password"</span> prop=<span
+                            roxo>"pass"</span>&#62;
+                          <br>
+                          <div class="border-left">
+                            <div recuo>
+                              &#60;<span tagColor>el-input</span> type=<span roxo>"password"</span> v-model=<span
+                                roxo>"ruleForm.pass"</span> autocomplete=<span roxo>"off"</span>&#62;&#60;/<span
+                                tagColor>el-input</span>&#62;
+                            </div>
+                          </div>
+                          &#60;/<span tagColor>el-form-item</span>&#62;
+                          <br>
+                          &#60;<span tagColor>el-form-item</span> label=<span roxo>"Confirm"</span> prop=<span
+                            roxo>"checkPass"</span>&#62;
+                          <br>
+                          <div class="border-left">
+                            <div recuo>
+                              &#60;<span tagColor>el-input</span> type=<span roxo>"password"</span> v-model=<span
+                                roxo>"ruleForm.checkPass"</span> autocomplete=<span roxo>"off"</span>&#62;
+                              &#60;/<span tagColor>el-input</span>&#62;
+                            </div>
+                          </div>
+                          &#60;/<span tagColor>el-form-item</span>&#62;
+                          <br>
+                          &#60;<span tagColor>el-form-item</span> label=<span roxo>"Age"</span> prop=<span
+                            roxo>"age"</span>&#62;
+                          <div class="border-left">
+                            <div recuo>
+                              &#60;<span tagColor>el-input</span> v-model.number=<span
+                                roxo>"ruleForm.age"</span>&#62;&#60;/<span tagColor>el-input</span>&#62;
+                            </div>
+                          </div>
+                          &#60;/<span tagColor>el-form-item</span>&#62;
+                          <br>
+                          &#60;<span tagColor>el-form-item</span>&#62;
+                          <div class="border-left">
+                            <div recuo>
+                              &#60;<span tagColor>el-button</span> type=<span roxo>"primary"</span> @click=<span
+                                roxo>"submitForm('ruleForm')"</span>&#62;Enviar&#60;/<span tagColor>el-button</span>&#62;
+                              <br>
+                              &#60;<span tagColor>el-button</span> @click=<span
+                                roxo>"resetForm('ruleForm')"</span>&#62;Resetar&#60;/<span tagColor>el-button</span>&#62;
+                            </div>
+                          </div>
+                          &#60;/<span tagColor>el-form-item</span>&#62;
+                        </div>
+                      </div>
+                      &#60;/<span tagColor>el-form</span>&#62;
+                    </div>
+                  </div>
 
+                  &#60;/<span tagColor>template</span>&#62;
+                </div>
+
+                <!-- SCRIPTS -->
+                <br>
+                <br>
+                <div class="html_codigos_blue">
+                  &#60;<span tagColor>script</span>&#62;
+                  <br>
+                  <span roxo>export default</span> {
+                  <div class="border-left">
+                    <div recuo>
+                      <span yellow>data</span>() {
+                      <div class="border-left">
+                        <div recuo>
+                          <span blue>var</span> checkAge = (rule, value, <span yellow>callback</span>) =&#62; {
+                          <div class="border-left">
+                            <div recuo>
+                              <span roxo>if</span> (!<span blue2>value</span>) {
+                              <div class="border-left">
+                                <div recuo>
+                                  <span roxo>return</span> <span yellow>callback</span>(new Error(<span brown>'Please
+                                    input
+                                    the
+                                    age'</span>));
+                                </div>
+                              </div>
+                              }
+                              <br>
+                              <span yellow>setTimeout</span>(() =&#62; {
+                              <div class="border-left">
+                                <div recuo>
+                                  <span roxo>if</span> (!Number.isInteger(<span blue2>value</span>)) {
+                                  <div class="border-left">
+                                    <div recuo><span yellow>callback</span>(new Error(<span brown>'Please input
+                                        digits'</span>));
+                                    </div>
+                                  </div>
+                                  } <span roxo>else</span> {
+                                  <br>
+                                  <div class="border-left">
+                                    <div recuo>
+                                      <span roxo>if</span> (<span blue2>value</span> &#60; <span green>18</span>) {
+                                      <div class="border-left">
+                                        <div recuo><span yellow>callback</span>(new Error(<span brown>'Age must be greater
+                                            than
+                                            18'</span>));</div>
+                                      </div>
+                                      } <span roxo>else</span> {
+                                      <div class="border-left">
+                                        <div recuo><span yellow>callback</span>();</div>
+                                      </div>
+                                      } <br>
+                                    </div>
+                                  </div>
+                                  } <br>
+                                </div>
+                              </div>
+                              }, <span green>1000</span>);
+                            </div>
+                          </div>
+                          };
+                          <br>
+                          <span blue>var</span> <span yellow>validatePass</span> = (rule, value, callback) =&#62; {
+                          <div class="border-left">
+                            <div recuo>
+                              <span roxo>if</span> (value === <span brown>''</span>) {
+                              <div class="border-left">
+                                <div recuo><span yellow>callback</span>(new Error(<span brown>'Please input the
+                                    password'</span>));
+                                </div>
+                              </div>
+                              } <span roxo>else</span> {
+                              <div class="border-left">
+                                <div recuo>
+                                  <span roxo>if</span> (<span blue>this</span>.ruleForm.checkPass !== <span
+                                    brown>''</span>)
+                                  {<br>
+                                  <span blue>this</span>.$refs.ruleForm.validateField(<span brown>'checkPass'</span>);<br>
+                                  }
+                                  <span yellow>callback</span>();<br>
+                                </div>
+                              </div>
+                              }<br>
+                            </div>
+                          </div>
+                          };<br>
+                          <span blue>var</span> <span yellow>validatePass2</span> = (rule, value, callback) =&#62; {
+                          <div class="border-left">
+                            <div recuo>
+                              <span roxo>if</span> (<span blue2>value</span> === <span brown>''</span>) {
+                              <div class="border-left">
+                                <div recuo><span yellow>callback</span>(new Error(<span brown>'Please input the password
+                                    again'</span>));
+                                </div>
+                              </div>
+                              }<span roxo> else if</span> (<span blue2>value</span> !== this.ruleForm.pass) {
+                              <div class="border-left">
+                                <div recuo>
+                                  <span yellow>callback</span>(new Error(<span brown>'Two inputs don\'t match!'</span>));
+                                </div>
+                              </div>
+                              } else {<br>
+                              <div class="border-left">
+                                <div recuo><span yellow>callback</span>();</div>
+                              </div>
+                              }<br>
+                            </div>
+                          </div>
+                          };<br>
+                          <span roxo>return</span> {
+                          <div class="border-left">
+                            <div recuo>
+                              ruleForm: {
+                              <div class="border-left">
+                                <div recuo>
+                                  pass: <span brown>''</span>,<br>
+                                  checkPass: <span brown>''</span>,<br>
+                                  age: <span brown>''</span>
+                                </div>
+                              </div>
+                              },<br>
+                              rules: {<br>
+                              <div class="border-left">
+                                <div recuo>
+                                  pass: [
+                                  <div class="border-left">
+                                    <div recuo>{ <span yellow>validator</span>: <span yellow>validatePass</span>, trigger:
+                                      <span brown>'blur'</span> }
+                                    </div>
+                                  </div>
+                                  ],<br>
+                                  checkPass: [
+                                  <div class="border-left">
+                                    <div recuo>{ <span yellow>validator</span>: <span yellow>validatePass2</span>,
+                                      trigger:
+                                      <span brown>'blur'</span> }
+                                    </div>
+                                  </div>
+                                  ],<br>
+                                  age: [
+                                  <div class="border-left">
+                                    <div recuo>{ <span yellow>validator</span>: <span yellow>checkAge</span>, trigger:
+                                      <span brown>'blur'</span> }
+                                    </div>
+                                  </div>
+                                  ]<br>
+                                </div>
+                              </div>
+                              },<br>
+                            </div>
+                          </div>
+                          };
+                        </div>
+                      </div>
+                      },
+                      <br>
+                      methods: {
+
+                      <div class="border-left">
+                        <div recuo>
+                          <span yellow>submitForm</span>(<span blue2>formName</span>) {
+                          <br>
+                          <div class="border-left">
+                            <div recuo>
+                              <span blue>this</span>.$refs[<span blue2>formName</span>].<span
+                                yellow>validate</span>((<span blue2>valid</span>) =>
+                              {
+                              <div class="border-left">
+                                <div recuo>
+                                  <span roxo>if</span> (<span blue2>valid</span>) {
+                                  <div class="border-left">
+                                    <div recuo>alert(<span brown>'submit!'</span>);</div>
+                                  </div>
+                                  } <span roxo>else</span> {
+                                  <div class="border-left">
+                                    <div recuo>
+                                      console.<span yellow>log</span>(<span brown>'error submit!!'</span>);<br>
+                                      <span roxo>return</span> <span blue>false</span>;
+                                    </div>
+                                  </div>
+                                  }
+                                </div>
+                              </div>
+                              });
+                            </div>
+                          </div>
+                          },
+                          <br>
+                          <span yellow>resetForm</span>(<span blue2>formName</span>) { <br>
+                          <div class="border-left">
+                            <div recuo><span blue>this</span>.$refs[<span blue2>formName</span>].<span
+                                yellow>resetFields</span>();</div>
+                          </div>
+                          },
+                        </div>
+                      </div>
+                      }
+                    </div>
+                  </div>
+                  },
+                  <br>
+                  &#60;/<span tagColor>script</span>&#62;
+                </div>
               </el-collapse-item>
             </el-collapse>
-
           </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
           <div class="container-elementos">
@@ -147,7 +364,7 @@
 
             <br>
             <el-collapse v-model="activeids" @change="handleChange">
-              <el-collapse-item title="Ver" id="1">
+              <el-collapse-item title="Ver código">
                 <!-- HTML -->
 
                 <div class="html_codigos_blue">
@@ -405,11 +622,10 @@
                 <dm_icon close />
               </button>
             </dm-alert-container>
+
             <br>
-
             <el-collapse v-model="activeids" @change="handleChange">
-              <el-collapse-item title="Ver" id="1">
-
+              <el-collapse-item title="Ver código">
                 <div class="html_codigos_blue">
                   &#60;<span tagColor>dm-alert</span> v-if=<span roxo>"alertDm"</span>&#62;<br>
                   <div class="border-left">
@@ -433,7 +649,8 @@
                           &#60;/<span tagColor>span</span>&#62;
                           <br>
                           &#60;<span tagColor>button</span>&#62;<br>
-                          &#60;<span tagColor>dm_icon</span> <span roxo>close</span> /&#62;<br>
+                          &#60;<span tagColor>dm_icon</span> <span roxo>close</span> @click=<span roxo>"upAlert"</span>
+                          /&#62;<br>
                           &#60;/<span tagColor>button</span>&#62;<br>
                         </div>
                       </div>
@@ -441,19 +658,14 @@
                     </div>
                   </div>
                   &#60;/<span tagColor>dm-alert</span>&#62;
+                  <br>
+                  <br>
+                  &#60;<span tagColor>dm-button-alert</span> @click=<span roxo>"upAlert"</span> class=<span
+                    roxo>"el-button
+                    el-button--primario"</span>&#62;<span black>ver</span>&#60;/<span tagColor>dm-button-alert</span>&#62;
                 </div>
                 <br>
                 <br>
-                <!--  -->
-                <!--  -->
-                <!--  -->
-                <!--  -->
-                <!--  -->
-                <!--  -->
-                <!--  -->
-                <!--  -->
-                <!--  -->
-                <!--  -->
                 <div class="html_codigos_blue">
                   &#60;<span tagColor>script</span>&#62;
                   <br>
@@ -517,18 +729,6 @@
                   &#60;/<span tagColor>script</span>&#62;
                 </div>
 
-                <!--  -->
-                <!--  -->
-                <!--  -->
-                <!--  -->
-                <!--  -->
-                <!--  -->
-                <!--  -->
-                <!--  -->
-                <!--  -->
-                <!--  -->
-
-
               </el-collapse-item>
             </el-collapse>
           </div>
@@ -556,7 +756,6 @@
                 </el-row>
               </dm-popup-background>
 
-
               <dm-popup @click="popup" popup="close">
                 <dm-popup-background>
                   <dm_icon alerta />
@@ -574,7 +773,7 @@
             <br>
 
             <el-collapse v-model="activeids" @change="handleChange">
-              <el-collapse-item title="Ver" id="1">
+              <el-collapse-item title="Ver código">
 
                 <div class="html_codigos_blue">
                   &#60;<span tagColor>template</span>&#62;
@@ -748,7 +947,7 @@
 
               <dm-popup-background>
                 <dm_icon correta />
-                <p>Rotas e romanieos remanjejados com sucesso!</p>
+                <p>Rotas e romaneios remanejados com sucesso!</p>
                 <el-row>
                   <dm-button class="el-button el-button--primario" popup="close">Ok</dm-button>
                 </el-row>
@@ -759,7 +958,7 @@
               <dm-popup @click="popup" popup="close">
                 <dm-popup-background>
                   <dm_icon correta />
-                  <p>Rotas e romanieos remanjejados com sucesso!</p>
+                  <p>Rotas e romaneios remanejados com sucesso!</p>
                   <el-row>
                     <dm-button class="el-button el-button--primario" popup="close">Ok</dm-button>
                   </el-row>
@@ -768,12 +967,159 @@
 
               <dm-button-popup @click="popup" popup="close" class="el-button el-button--primario">Ver</dm-button-popup>
             </div>
-
-
             <br>
             <el-collapse v-model="activeids" @change="handleChange">
-              <el-collapse-item title="Ver" id="1">
-
+              <el-collapse-item title="Ver código">
+                <div class="html_codigos_blue">
+                  &#60;<span tagColor>template</span>&#62;
+                  <div class="border-left">
+                    <div recuo>
+                      &#60;<span tagColor>dm-popup</span> @click=<span roxo>"popup"</span> popup=<span
+                        roxo>"close"</span>&#62;
+                      <div class="border-left">
+                        <div recuo>
+                          &#60;<span tagColor>dm-popup-background</span>&#62;
+                          <div class="border-left">
+                            <div recuo>
+                              &#60;<span tagColor>dm_icon</span> <span roxo>correta</span> /&#62;<br>
+                              &#60;<span tagColor>p</span>&#62;<span black>Rotas e romaneios remanejados com
+                                sucesso!</span>&#60;/<span tagColor>p</span>&#62;<br>
+                              <br>
+                              &#60;<span tagColor>el-row</span>&#62;<br>
+                              <border-left>
+                                <div class="border-left">
+                                  <div recuo>
+                                    &#60;<span tagColor>dm-button</span> class=<span roxo>"el-button
+                                      el-button--primario"</span>
+                                    popup=<span roxo>"close"</span>&#62;<span black>Ok</span>&#60;/<span
+                                      tagColor>dm-button</span>&#62;<br>
+                                  </div>
+                                </div>
+                              </border-left>
+                              &#60;/<span tagColor>el-row</span>&#62;
+                            </div>
+                          </div>
+                          &#60;/<span tagColor>dm-popup-background</span>&#62;
+                        </div>
+                      </div>
+                      &#60;/<span tagColor>dm-popup</span>&#62;
+                      <br>
+                      &#60;<span tagColor>dm-button-popup</span>
+                      <div class="border-left">
+                        <div recuo>
+                          @click="<span yellow>popup</span>"
+                          <br> popup=<span roxo>"close"</span>
+                          <br>class=<span roxo>"el-button el-button--primario"</span>&#62;<span black>
+                            <div class="border-left">
+                              <div recuo>Ver</div>
+                            </div>
+                          </span>
+                        </div>
+                      </div>
+                      &#60;/<span tagColor>dm-button-popup</span>&#62;
+                    </div>
+                  </div>
+                  &#60;/<span tagColor>template</span>&#62;
+                </div>
+                <br>
+                <br>
+                <div class="html_codigos_blue">
+                  &#60;<span tagColor>script</span>&#62;
+                  <br>
+                  <span roxo>export default</span> {
+                  <div class="border-left">
+                    <div recuo>
+                      data() {
+                      <div class="border-left">
+                        <div recuo>
+                          <span roxo>return</span>{
+                          <div class="border-left">
+                            <div recuo>
+                              upPopup: <span blue>false</span>, <br>
+                              idPopup: <span blue>null</span>,
+                            </div>
+                          </div>
+                          }
+                        </div>
+                      </div>
+                      },
+                      <br>
+                      mounted() {
+                      <div class="border-left">
+                        <div recuo>
+                          <span blue>this</span>.<span yellow>indexadorPopus</span>()
+                        </div>
+                      </div>
+                      },
+                      <br>
+                      methods: {
+                      <div class="border-left">
+                        <div recuo>
+                          <span yellow>indexadorPopus</span>() {
+                          <div class="border-left">
+                            <div recuo>
+                              <span green>//INDEXA TODOS POPUPS CRIADOS NO HMTL</span> <br>
+                              <span blue>const</span> <span blue2>$arrayPopups</span> = document.<span
+                                yellow>querySelectorAll</span>(<span brown>'dm-popup'</span>) <br>
+                              <span blue>const</span> <span blue2>$arraysButtons</span> = document.<span
+                                yellow>querySelectorAll</span>(<span brown>'dm-button-popup'</span>)<br>
+                              <span roxo>for</span> (let <span blue2>i</span> = <span green>0</span>; $arrayPopups.length
+                              >
+                              <span blue2>i</span>; <span blue2>i</span>++) {
+                              <div class="border-left">
+                                <div recuo>
+                                  <span blue2>$arrayPopups</span>[i].style.display = <span brown>'none'</span> <br>
+                                  <span blue2>$arrayPopups</span>[i].<span yellow>setAttribute</span>(<span
+                                    brown>'popupid'</span>, `${<span blue2>i</span>}`) <br>
+                                  <span blue2>$arraysButtons</span>[i].<span yellow>setAttribute</span>(<span
+                                    brown>'popupbutton'</span>, `${<span blue2>i</span>}`)
+                                </div>
+                              </div>
+                              }
+                            </div>
+                          </div>
+                          },
+                          <br>
+                          <span yellow>popup</span>(event) {
+                          <div class="border-left">
+                            <div recuo>
+                              <span green>//ABRE POPUP CLICADO</span>
+                              <br>
+                              <span roxo>if</span> (<span blue>this</span>.upPopup === <span blue>false</span>) {
+                              <div class="border-left">
+                                <div recuo>
+                                  <span blue>this</span>.idPopup = event.target.getAttribute('popupbutton')<br>
+                                  <span blue>this</span>.upPopup = <span blue>!this</span>.upPopup <br>
+                                  document.<span yellow>querySelector</span>(`[popupid="${<span
+                                    blue>this</span>.idPopup}"]`).style.display = <span brown>'flex'</span>
+                                </div>
+                              </div>
+                              }
+                              <br>
+                              <span green>//COMPARA OS OBJETOS CLICADOS QUE PODEM FECHAR O POPUP</span>
+                              <br>
+                              <span roxo>else if</span> (event.target.getAttribute('popup') == <span brown>'close'</span>)
+                              {
+                              <div class="border-left">
+                                <div recuo>
+                                  <span blue>this</span>.upPopup = <span blue>!this</span>.upPopup<br>
+                                  document.<span yellow>querySelector</span>(`[popupid="${<span
+                                    blue>this</span>.idPopup}"]`).style.display = <span brown>'none'</span>
+                                </div>
+                              </div>
+                              }
+                            </div>
+                          </div>
+                          }
+                        </div>
+                      </div>
+                      },
+                    </div>
+                  </div>
+                  },
+                  <br>
+                  &#60;/<span tagColor>script</span>&#62;
+                </div>
               </el-collapse-item>
             </el-collapse>
           </div>
@@ -785,8 +1131,6 @@
             <img class="imagemExemplo" src="mensagens/informativo.jpg">
             <br>
             <br>
-
-
             <dm-information>
               <dm_icon sugestao />
               <span>
@@ -794,12 +1138,9 @@
                 <el-button type="terciario">baixe o nosso modelo</el-button>
               </span>
             </dm-information>
-
             <br>
-
             <el-collapse v-model="activeids" @change="handleChange">
-              <el-collapse-item title="Ver" id="1">
-
+              <el-collapse-item title="Ver código">
                 <div class="html_codigos_blue">
                   &#60;<span tagColor>dm-information</span>&#62;
                   <div class="border-left">
@@ -833,7 +1174,7 @@
 <script>
 import HeaderDs from "../../components/HeaderDs.vue";
 export default {
-  id: "MensagensDs",
+  name: "MensagensDs",
   components: {
     HeaderDs,
   },
@@ -897,6 +1238,9 @@ export default {
     };
   },
 
+
+
+
   mounted() {
     this.indexadorPopus()
   },
@@ -911,7 +1255,6 @@ export default {
         this.alertDm = this.alertDm = false
       }
     },
-
     indexadorPopus() {
       //INDEXA TODOS POPUPS CRIADOS NO HMTL
       const $arrayPopups = document.querySelectorAll('dm-popup')
@@ -936,7 +1279,6 @@ export default {
       }
     }
   },
-
   submitForm(formName) {
     this.$refs[formName].validate((valid) => {
       if (valid) {
@@ -954,24 +1296,10 @@ export default {
     alert('Hellow World!')
   },
 };
-
 </script>
 
-<style>
+<style scoped>
 .imagemExemplo {
   width: 100%;
   border-radius: 6px;
-}
-
-.container-alert {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 20px 0;
-  z-index: 100;
-}
-</style>
+}</style>

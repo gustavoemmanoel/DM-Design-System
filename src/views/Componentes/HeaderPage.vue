@@ -208,7 +208,7 @@
           <br />
 
           <el-collapse v-model="activeNames" @change="handleChange">
-            <el-collapse-item title="ver" name="3">
+            <el-collapse-item title="ver código" name="3">
               <!-- Código para copiar -->
 
               <div class="html_codigos_blue">
@@ -479,7 +479,7 @@
 
           <!-- Collapse -->
           <el-collapse v-model="activeNames" @change="handleChange">
-            <el-collapse-item title="ver" name="3">
+            <el-collapse-item title="ver código" name="3">
               <div class="html_codigos_blue">
                 &#60;<span tagColor>el-row</span>&#62;
                 <div class="border-left">
@@ -694,7 +694,6 @@ export default {
       headerTitle: "Header",
       activeName1: "first",
       activeName: "first",
-      btnAtivo: { cores: "text-decoration: underline" },
     };
   },
 };

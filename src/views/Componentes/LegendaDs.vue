@@ -165,7 +165,7 @@
             <br />
 
             <el-collapse v-model="activeNames" @change="handleChange">
-              <el-collapse-item title="ver" name="3">
+              <el-collapse-item title="Ver código" name="3">
                 <div class="html_codigos_blue">
                   &#60;<span tagColor>el-collapse</span> class=<span roxo>"legenda-dm"</span>
                   legenda v-model=<span roxo>"activeNames"</span> @change=<span roxo>"handleChange"</span>&#62;

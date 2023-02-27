@@ -11,7 +11,8 @@
               <h1>/Upload</h1>
               <hr />
               <br />
-              <p>xxxx</p>
+              <p>Upload</p>
+              <br>
             </div>
 
             <div class="container-elementos">
@@ -27,10 +28,8 @@
                   </div>
                 </template>
               </el-upload>
-
               <el-collapse v-model="activeNames" @change="handleChange">
-                <el-collapse-item title="ver" name="3">
-
+                <el-collapse-item title="Ver código" name="3">
                   <div class="html_codigo_blue">
                     &#60;<span tagColor>el-upload</span> class=<span roxo>"upload-demo"</span> drag action=<span
                       roxo>"https://run.mocky.io/v3/9d059bf9-4660-45f2-925d-ce80ad6c4d15"</span>
@@ -65,8 +64,6 @@
                       &#60;/<span tagColor>el-upload</span>&#62;
                     </div>
                   </div>
-
-
                 </el-collapse-item>
               </el-collapse>
             </div>
@@ -88,8 +85,6 @@ export default {
   data() {
     return {
       headerTitle: "Upload",
-
-      btnAtivo: { cores: "text-decoration: underline" },
     };
   },
 };

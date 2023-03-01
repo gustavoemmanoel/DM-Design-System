@@ -167,115 +167,122 @@
             </p>
             <br>
             <br>
-            <div style="display: grid; grid-template-columns: 1fr 1fr 1fr;">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px;">
               <!-- Azuis -->
-              <div>
+              <span>
                 <div class="pins-tags">
                   <dm-pin-img class="pin-amostra" pin_basico_azul />
-                  <div>&#60;<span tagColor>pin_basico_azul</span> /&#62;</div>
+                  <div>&#60;<span tagColor>dm-pin-img </span>pin_basico_azul /&#62;</div>
                 </div>
                 <div class="pins-tags">
                   <dm-pin-img class="pin-amostra" pin_basico_azul_bom />
-                  <div>&#60;<span tagColor>pin_basico_azul_bom</span> /&#62;</div>
+                  <div>&#60;<span tagColor>dm-pin-img </span>pin_basico_azul_bom /&#62;</div>
                 </div>
                 <div class="pins-tags">
                   <dm-pin-img class="pin-amostra" pin_basico_azul_medio />
-                  <div>&#60;<span tagColor>pin_basico_azul_medio</span> /&#62;</div>
+                  <div>&#60;<span tagColor>dm-pin-img </span>pin_basico_azul_medio /&#62;</div>
                 </div>
                 <div class="pins-tags">
                   <dm-pin-img class="pin-amostra" pin_basico_azul_ruim />
-                  <div>&#60;<span tagColor>pin_basico_azul_ruim</span> /&#62;</div>
+                  <div>&#60;<span tagColor>dm-pin-img </span> pin_basico_azul_ruim /&#62;</div>
                 </div>
-                <br>
+              </span>
+              <span>
                 <div class="pins-tags">
                   <dm-pin-img class="pin-amostra" pin_coroa_azul />
-                  <div>&#60;<span tagColor>pin_coroa_azul</span> /&#62;</div>
+                  <div>&#60;<span tagColor>dm-pin-img </span>pin_coroa_azul /&#62;</div>
                 </div>
                 <div class="pins-tags">
                   <dm-pin-img class="pin-amostra" pin_coroa_azul_bom />
-                  <div>&#60;<span tagColor>pin_coroa_azul_bom</span> /&#62;</div>
+                  <div>&#60;<span tagColor>dm-pin-img </span>pin_coroa_azul_bom /&#62;</div>
                 </div>
                 <div class="pins-tags">
                   <dm-pin-img class="pin-amostra" pin_coroa_azul_medio />
-                  <div>&#60;<span tagColor>pin_coroa_azul_medio</span> /&#62;</div>
+                  <div>&#60;<span tagColor>dm-pin-img </span>pin_coroa_azul_medio /&#62;</div>
                 </div>
                 <div class="pins-tags">
                   <dm-pin-img class="pin-amostra" pin_coroa_azul_ruim />
-                  <div>&#60;<span tagColor>pin_coroa_azul_ruim</span> /&#62;</div>
+                  <div>&#60;<span tagColor>dm-pin-img </span>pin_coroa_azul_ruim /&#62;</div>
                 </div>
-              </div>
+              </span>
+
               <!-- Rosas -->
-              <div>
+              <span>
                 <div class="pins-tags">
                   <dm-pin-img class="pin-amostra" pin_basico_rosa />
-                  <div>&#60;<span tagColor>pin_basico_rosa</span> /&#62;</div>
+                  <div>&#60;<span tagColor>dm-pin-img </span>pin_basico_rosa /&#62;</div>
                 </div>
                 <div class="pins-tags">
                   <dm-pin-img class="pin-amostra" pin_basico_rosa_bom />
-                  <div>&#60;<span tagColor>pin_basico_rosa_bom</span> /&#62;</div>
+                  <div>&#60;<span tagColor>dm-pin-img </span>pin_basico_rosa_bom /&#62;</div>
                 </div>
                 <div class="pins-tags">
                   <dm-pin-img class="pin-amostra" pin_basico_rosa_medio />
-                  <div>&#60;<span tagColor>pin_basico_rosa_medio</span> /&#62;</div>
+                  <div>&#60;<span tagColor>dm-pin-img </span>pin_basico_rosa_medio /&#62;</div>
                 </div>
                 <div class="pins-tags">
                   <dm-pin-img class="pin-amostra" pin_basico_rosa_ruim />
-                  <div>&#60;<span tagColor>pin_basico_rosa_ruim</span> /&#62;</div>
+                  <div>&#60;<span tagColor>dm-pin-img </span>pin_basico_rosa_ruim /&#62;</div>
                 </div>
-                <br>
+              </span>
+              <span>
                 <div class="pins-tags">
                   <dm-pin-img class="pin-amostra" pin_coroa_rosa />
-                  <div>&#60;<span tagColor>pin_coroa_rosa</span> /&#62;</div>
+                  <div>&#60;<span tagColor>dm-pin-img </span>pin_coroa_rosa /&#62;</div>
                 </div>
                 <div class="pins-tags">
                   <dm-pin-img class="pin-amostra" pin_coroa_rosa_bom />
-                  <div>&#60;<span tagColor>pin_coroa_rosa_bom</span> /&#62;</div>
+                  <div>&#60;<span tagColor>dm-pin-img </span>pin_coroa_rosa_bom /&#62;</div>
                 </div>
                 <div class="pins-tags">
                   <dm-pin-img class="pin-amostra" pin_coroa_rosa_medio />
-                  <div>&#60;<span tagColor>pin_coroa_rosa_medio</span> /&#62;</div>
+                  <div>&#60;<span tagColor>dm-pin-img </span>pin_coroa_rosa_medio /&#62;</div>
                 </div>
                 <div class="pins-tags">
                   <dm-pin-img class="pin-amostra" pin_coroa_rosa_ruim />
-                  <div>&#60;<span tagColor>pin_coroa_rosa_ruim</span> /&#62;</div>
+                  <div>&#60;<span tagColor>dm-pin-img </span>pin_coroa_rosa_ruim /&#62;</div>
                 </div>
-              </div>
+              </span>
+
               <!-- Amarelos -->
-              <div>
+              <span>
                 <div class="pins-tags">
                   <dm-pin-img class="pin-amostra" pin_basico_amarelo />
-                  <div>&#60;<span tagColor>pin_basico_amarelo</span> /&#62;</div>
+                  <div>&#60;<span tagColor>dm-pin-img </span>pin_basico_amarelo /&#62;</div>
                 </div>
                 <div class="pins-tags">
                   <dm-pin-img class="pin-amostra" pin_basico_amarelo_bom />
-                  <div>&#60;<span tagColor>pin_basico_amarelo_bom</span> /&#62;</div>
+                  <div>&#60;<span tagColor>dm-pin-img </span>pin_basico_amarelo_bom /&#62;</div>
                 </div>
                 <div class="pins-tags">
                   <dm-pin-img class="pin-amostra" pin_basico_amarelo_medio />
-                  <div>&#60;<span tagColor>pin_basico_amarelo_medio</span> /&#62;</div>
+                  <div>&#60;<span tagColor>dm-pin-img </span>pin_basico_amarelo_medio /&#62;</div>
                 </div>
                 <div class="pins-tags">
                   <dm-pin-img class="pin-amostra" pin_basico_amarelo_ruim />
-                  <div>&#60;<span tagColor>pin_basico_amarelo_ruim</span> /&#62;</div>
+                  <div>&#60;<span tagColor>dm-pin-img </span>pin_basico_amarelo_ruim /&#62;</div>
                 </div>
-                <br>
+              </span>
+              <span>
                 <div class="pins-tags">
                   <dm-pin-img class="pin-amostra" pin_coroa_amarelo />
-                  <div>&#60;<span tagColor>pin_coroa_amarelo</span> /&#62;</div>
+                  <div>&#60;<span tagColor>dm-pin-img </span>pin_coroa_amarelo /&#62;</div>
                 </div>
                 <div class="pins-tags">
                   <dm-pin-img class="pin-amostra" pin_coroa_amarelo_bom />
-                  <div>&#60;<span tagColor>pin_coroa_amarelo_bom</span> /&#62;</div>
+                  <div>&#60;<span tagColor>dm-pin-img </span>pin_coroa_amarelo_bom /&#62;</div>
                 </div>
                 <div class="pins-tags">
                   <dm-pin-img class="pin-amostra" pin_coroa_amarelo_medio />
-                  <div>&#60;<span tagColor>pin_coroa_amarelo_medio</span> /&#62;</div>
+                  <div>&#60;<span tagColor>dm-pin-img </span>pin_coroa_amarelo_medio /&#62;</div>
                 </div>
                 <div class="pins-tags">
                   <dm-pin-img class="pin-amostra" pin_coroa_amarelo_ruim />
-                  <div>&#60;<span tagColor>pin_coroa_amarelo_ruim</span> /&#62;</div>
+                  <div>&#60;<span tagColor>dm-pin-img </span>pin_coroa_amarelo_ruim /&#62;</div>
                 </div>
-              </div>
+
+              </span>
+
             </div>
           </div>
           <div class="container-elementos">

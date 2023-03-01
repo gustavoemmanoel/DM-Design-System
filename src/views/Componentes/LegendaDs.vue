@@ -170,37 +170,43 @@
                   &#60;<span tagColor>el-collapse</span> class=<span roxo>"legenda-dm"</span>
                   legenda v-model=<span roxo>"activeNames"</span> @change=<span roxo>"handleChange"</span>&#62;
 
-                  <div recuo>
-                    &#60;<span tagColor>el-collapse-item</span> title=<span roxo>"Legenda"</span>&#62; <br />
-
+                  <div class="border-left">
                     <div recuo>
-                      &#60;<span tagColor>div</span>&#62; <br />
-                      &#60;<span tagColor>p</span> class=<span roxo>"body_05 body_05--title"</span>&#62;<span
-                        black>/Project Title</span>&#60;/<span tagColor>p</span>&#62;
-                      <div recuo black>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Repellat unde deserunt nostrum suscipit ut
-                        exercitationem id hic sit quaerat illo libero, molestias
-                        quo quod porro autem nemo iste. Laboriosam, mollitia.
+                      &#60;<span tagColor>el-collapse-item</span> title=<span roxo>"Legenda"</span>&#62; <br />
+                      <div class="border-left">
+                        <div recuo>
+                          &#60;<span tagColor>div</span>&#62; <br />
+                          &#60;<span tagColor>p</span> class=<span roxo>"body_05 body_05--title"</span>&#62;<span
+                            black>/Project Title</span>&#60;/<span tagColor>p</span>&#62;
+                          <div class="border-left">
+                            <div recuo black>
+                              Lorem, ipsum dolor sit amet consectetur adipisicing
+                              elit. Repellat unde deserunt nostrum suscipit ut
+                              exercitationem id hic sit quaerat illo libero, molestias
+                              quo quod porro autem nemo iste. Laboriosam, mollitia.
+                            </div>
+                          </div>
+                          &#60;/<span tagColor>div</span>&#62;
+                          <br />
+                          &#60;<span tagColor>hr</span>&#62;
+                          <br />
+                          &#60;<span tagColor>p</span> class=<span roxo>"body_05 body_05--title"</span>&#62;<span
+                            black>/Project Title</span>&#60;/<span tagColor>p</span>&#62;
+                          <br />
+                          &#60;<span tagColor>div</span>&#62;
+                          <div class="border-left">
+                            <div recuo black>
+                              Lorem, ipsum dolor sit amet consectetur adipisicing
+                              elit. Repellat unde deserunt nostrum suscipit ut
+                              exercitationem id hic sit quaerat illo libero, molestias
+                              quo quod porro autem nemo iste. Laboriosam, mollitia.
+                            </div>
+                          </div>
+                          &#60;/<span tagColor>div</span>&#62;
+                        </div>
                       </div>
-                      &#60;/<span tagColor>div</span>&#62;
-                      <br />
-                      &#60;<span tagColor>hr</span>&#62;
-                      <br />
-                      &#60;<span tagColor>p</span> class=<span roxo>"body_05 body_05--title"</span>&#62;<span
-                        black>/Project Title</span>&#60;/<span tagColor>p</span>&#62;
-                      <br />
-                      &#60;<span tagColor>div</span>&#62;
-                      <div recuo black>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Repellat unde deserunt nostrum suscipit ut
-                        exercitationem id hic sit quaerat illo libero, molestias
-                        quo quod porro autem nemo iste. Laboriosam, mollitia.
-                      </div>
-
-                      &#60;/<span tagColor>div</span>&#62;
+                      &#60;/<span tagColor>el-collapse-item</span>&#62;
                     </div>
-                    &#60;/<span tagColor>el-collapse-item</span>&#62;
                   </div>
 
                   &#60;/<span tagColor>el-collapse</span>&#62;

@@ -34,14 +34,12 @@
                         <span tagColor>&#60;el-date-picker</span>
                         <div class="border-left">
                           <div recuo>
-                            <span attributeColor>v-model</span>=<span roxo>"value1"</span> <br /><span
-                              attributeColor>type</span>=<span roxo>"daterange"</span><br />
-                            <span attributeColor>range-separator</span>=<span roxo>"-"</span> <br /><span
-                              attributeColor>start-placeholder</span>=<span roxo>"Início"</span>
+                            v-model=<span roxo>"value1"</span> <br />type=<span roxo>"daterange"</span><br />
+                            range-separator=<span roxo>"-"</span> <br />start-placeholder=<span roxo>"Início"</span>
                             <br>
-                            <span attributeColor>end-placeholder</span>=<span roxo>"Término"</span><br /> <span
-                              attributeColor>:prefix-icon</span>=<span>"customPrefix"</span><br />
-                            <span attributeColor>:size</span>=<span roxo>"size"</span>
+                            end-placeholder=<span roxo>"Término"</span><br />:prefix-icon=<span
+                              roxo>"customPrefix"</span><br />
+                            :size=<span roxo>"size"</span>
                           </div>
                         </div>
                         <span tagColor>/&#62;</span>
@@ -54,8 +52,7 @@
                   <div class="html_codigos_blue">
                     &#60;<span tagColor>script</span>&#62;
                     <br>
-                    <span roxo>import</span> { <span black>h, shallowRef</span> } <span roxo>from</span> <span
-                      green>'vue'</span>
+                    <span roxo>import</span> { h, shallowRef } <span roxo>from</span> <span green>'vue'</span>
                     <br>
                     <span roxo>export default</span> {
                     <div class="border-left">
@@ -70,7 +67,7 @@
                                 <span yellow>render</span>() {
                                 <div class="border-left">
                                   <div recuo><span roxo>return</span> <span yellow>h</span>(<span
-                                      black>"dm-icons-calendar"</span>, <span black>""</span>);
+                                      brown>"dm-icons-calendar"</span>, <span black>""</span>);
                                     <br>
                                     },
                                   </div>
@@ -141,7 +138,7 @@
                   <div class="html_codigos_blue">
                     &#60;<span tagColor>script</span>&#62;
                     <br>
-                    <span roxo>import</span> { <span black>h, shallowRef</span> } <span roxo>from</span> <span
+                    <span roxo>import</span> { h, shallowRef } <span roxo>from</span> <span
                       green>'vue'</span>
                     <br>
                     <span roxo>export default</span> {
@@ -157,7 +154,7 @@
                                 <span yellow>render</span>() {
                                 <div class="border-left">
                                   <div recuo><span roxo>return</span> <span yellow>h</span>(<span
-                                      black>"dm-icons-calendar"</span>, <span black>""</span>);
+                                      brown>"dm-icons-calendar"</span>, <span black>""</span>);
                                     <br>
                                     },
                                   </div>

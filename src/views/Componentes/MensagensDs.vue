@@ -369,8 +369,6 @@
 
                 <div class="html_codigos_blue">
                   &#60;<span tagColor>template</span>&#62;
-                  <br>
-                  <br>
                   <div class="border-left">
                     <div recuo>
                       &#60;<span tagColor>span</span>&#62;
@@ -430,7 +428,6 @@
                       </div>
                       &#60;/<span tagColor>span</span>&#62;
                     </div>
-                    <br>
                   </div>
                   &#60;/<span tagColor>template</span>&#62;
 
@@ -627,42 +624,52 @@
             <el-collapse v-model="activeids" @change="handleChange">
               <el-collapse-item title="Ver código">
                 <div class="html_codigos_blue">
-                  &#60;<span tagColor>dm-alert</span> v-if=<span roxo>"alertDm"</span>&#62;<br>
+                  &#60;<span tagColor>template</span>&#62;
                   <div class="border-left">
                     <div recuo>
-                      &#60;<span tagColor>dm-alert-container</span>&#62;<br>
+                      &#60;<span tagColor>dm-alert</span> v-if=<span roxo>"alertDm"</span>&#62;<br>
                       <div class="border-left">
                         <div recuo>
-                          &#60;<span tagColor>dm_icon </span><span roxo>alerta</span> /&#62; <br>
-                          &#60;<span tagColor>span</span>&#62;
+                          &#60;<span tagColor>dm-alert-container</span>&#62;<br>
                           <div class="border-left">
                             <div recuo>
-                              &#60;<span tagColor>dm-atencao</span>&#62;<span black>Atenção!</span> &#60;/<span
-                                tagColor>dm-atencao</span>&#62; <span black>
-                                Trânsito lento na Marginal Tietê. Possibilidade de
-                                atraso na previsão
-                                das entregas.
-                              </span>
+                              &#60;<span tagColor>dm_icon </span><span roxo>alerta</span> /&#62; <br>
+                              &#60;<span tagColor>span</span>&#62;
+                              <div class="border-left">
+                                <div recuo>
+                                  &#60;<span tagColor>dm-atencao</span>&#62;<span black>Atenção!</span> &#60;/<span
+                                    tagColor>dm-atencao</span>&#62; <span black>
+                                    Trânsito lento na Marginal Tietê. Possibilidade de
+                                    atraso na previsão
+                                    das entregas.
+                                  </span>
+                                  <br>
+                                </div>
+                              </div>
+                              &#60;/<span tagColor>span</span>&#62;
                               <br>
+                              &#60;<span tagColor>button</span>&#62;<br>
+                              &#60;<span tagColor>dm_icon</span> <span roxo>close</span> @click=<span
+                                roxo>"upAlert"</span>
+                              /&#62;<br>
+                              &#60;/<span tagColor>button</span>&#62;<br>
                             </div>
                           </div>
-                          &#60;/<span tagColor>span</span>&#62;
-                          <br>
-                          &#60;<span tagColor>button</span>&#62;<br>
-                          &#60;<span tagColor>dm_icon</span> <span roxo>close</span> @click=<span roxo>"upAlert"</span>
-                          /&#62;<br>
-                          &#60;/<span tagColor>button</span>&#62;<br>
+                          &#60;/<span tagColor>dm-alert-container</span>&#62;
                         </div>
                       </div>
-                      &#60;/<span tagColor>dm-alert-container</span>&#62;
+                      &#60;/<span tagColor>dm-alert</span>&#62;
+                      <br>
+                      <br>
+                      &#60;<span tagColor>dm-button-alert</span> @click=<span roxo>"upAlert"</span> class=<span
+                        roxo>"el-button
+                        el-button--primario"</span>&#62;<span black>ver</span>&#60;/<span
+                        tagColor>dm-button-alert</span>&#62;
+                      <br>
+                      <br>
                     </div>
                   </div>
-                  &#60;/<span tagColor>dm-alert</span>&#62;
-                  <br>
-                  <br>
-                  &#60;<span tagColor>dm-button-alert</span> @click=<span roxo>"upAlert"</span> class=<span
-                    roxo>"el-button
-                    el-button--primario"</span>&#62;<span black>ver</span>&#60;/<span tagColor>dm-button-alert</span>&#62;
+                  &#60;/<span tagColor>template</span>&#62;
                 </div>
                 <br>
                 <br>

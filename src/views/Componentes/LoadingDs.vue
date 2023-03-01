@@ -38,16 +38,24 @@
           <el-collapse v-model="activeNames" @change="handleChange">
             <el-collapse-item title="Ver código" name="1">
               <div class="html_codigos_blue">
-                <span>&#60;<span tagColor>el-progress</span> :stroke-width=<span roxo>"14"</span> :percentage=<span
-                    roxo>percentage1</span> :color=<span roxo>"color1"</span> /&#62;</span><br />
-                <span>&#60;<span tagColor>el-progress</span> :stroke-width=<span roxo>"14"</span> :percentage=<span
-                    roxo>percentage2</span> :color=<span roxo>"color2"</span> /&#62;</span><br />
-                <span>&#60;<span tagColor>el-progress</span> :stroke-width=<span roxo>"14"</span> :percentage=<span
-                    roxo>percentage3</span> :color=<span roxo>"color3"</span> /&#62;</span><br />
-                <span>&#60;<span tagColor>el-progress</span> :stroke-width=<span roxo>"14"</span> :percentage=<span
-                    roxo>percentage4</span> :color=<span roxo>"color4"</span> /&#62;</span><br />
-              </div>
 
+                &#60;<span tagColor>template</span>&#62;
+
+                <div class="border-left">
+                  <div recuo>
+                    <span>&#60;<span tagColor>el-progress</span> :stroke-width=<span roxo>"14"</span> :percentage=<span
+                        roxo>percentage1</span> :color=<span roxo>"color1"</span> /&#62;</span><br />
+                    <span>&#60;<span tagColor>el-progress</span> :stroke-width=<span roxo>"14"</span> :percentage=<span
+                        roxo>percentage2</span> :color=<span roxo>"color2"</span> /&#62;</span><br />
+                    <span>&#60;<span tagColor>el-progress</span> :stroke-width=<span roxo>"14"</span> :percentage=<span
+                        roxo>percentage3</span> :color=<span roxo>"color3"</span> /&#62;</span><br />
+                    <span>&#60;<span tagColor>el-progress</span> :stroke-width=<span roxo>"14"</span> :percentage=<span
+                        roxo>percentage4</span> :color=<span roxo>"color4"</span> /&#62;</span><br />
+                  </div>
+                </div>
+                &#60;<span tagColor>template</span> /&#62;
+              </div>
+              <br>
               <br>
               <div class="html_codigos_blue">
                 &#60;<span tagColor>script</span>&#62;
@@ -65,9 +73,6 @@
                           <span roxo>return</span> {
                           <div class="border-left">
                             <div recuo>
-
-
-
                               color1: <span brown>"var(--dm_vermelho_00)"</span>,<br>
                               percentage1: <span green>25</span>,<br>
                               color2: <span brown>"var(--dm_laranja_00)"</span>,<br>
@@ -76,10 +81,8 @@
                               percentage3: <span green>75</span>,<br>
                               color4: <span brown>"var(--dm_verde_00)"</span>,<br>
                               percentage4: <span green>100</span>,<br>
-
                             </div>
                           </div>
-
                           };
                         </div>
                       </div>
@@ -112,15 +115,22 @@
             <el-collapse v-model="activeNames" @change="handleChange">
               <el-collapse-item title="Ver código" name="1">
                 <div class="html_codigos_blue">
-                  <span>&#60;<span tagColor>el-progress</span> type=<span roxo>"circle"</span> :percentage=<span
-                      roxo>"percentage1"</span> :color=<span roxo>"color1"</span>/&#62;</span><br />
-                  <span>&#60;<span tagColor>el-progress</span> type=<span roxo>"circle"</span> :percentage=<span
-                      roxo>"percentage2"</span> :color=<span roxo>"color2"</span>/&#62;</span><br />
-                  <span>&#60;<span tagColor>el-progress</span> type=<span roxo>"circle"</span> :percentage=<span
-                      roxo>"percentage3"</span> :color=<span roxo>"color3"</span>/&#62;</span><br />
-                  <span>&#60;<span tagColor>el-progress</span> type=<span roxo>"circle"</span> :percentage=<span
-                      roxo>"percentage4"</span> :color=<span roxo>"color4"</span>/&#62;</span><br />
+                  &#60;<span tagColor>template</span>&#62;
+                  <div class="border-left">
+                    <div recuo>
+                      <span>&#60;<span tagColor>el-progress</span> type=<span roxo>"circle"</span> :percentage=<span
+                          roxo>"percentage1"</span> :color=<span roxo>"color1"</span>/&#62;</span><br />
+                      <span>&#60;<span tagColor>el-progress</span> type=<span roxo>"circle"</span> :percentage=<span
+                          roxo>"percentage2"</span> :color=<span roxo>"color2"</span>/&#62;</span><br />
+                      <span>&#60;<span tagColor>el-progress</span> type=<span roxo>"circle"</span> :percentage=<span
+                          roxo>"percentage3"</span> :color=<span roxo>"color3"</span>/&#62;</span><br />
+                      <span>&#60;<span tagColor>el-progress</span> type=<span roxo>"circle"</span> :percentage=<span
+                          roxo>"percentage4"</span> :color=<span roxo>"color4"</span>/&#62;</span>
+                    </div>
+                  </div>
+                  &#60;<span tagColor>template</span> /&#62;
                 </div>
+                <br>
                 <br>
                 <div class="html_codigos_blue">
                   &#60;<span tagColor>script</span>&#62;
@@ -204,43 +214,48 @@
           </div>
           <br />
 
-
-
           <el-collapse v-model="activeNames" @change="handleChange">
             <el-collapse-item title="Ver código" name="1">
               <div class="html_codigos_blue">
-
-                <span green> &#60;!-- Button Loading --&#62;</span>
-                <br>
-
-                &#60;<span roxo>el-button</span> @click=<span yellow>"loadingDM"</span>
-                type=<span roxo>"primario"</span>&#62;Ver loading&#60;/<span roxo>el-button</span>&#62;
-                <br>
-                <br>
-                <span green> &#60;!-- Loading --&#62;</span>
-                <br>
-                &#60;<span tagColor>dm-loading</span> v-if=<span roxo>"showLoading"</span>&#62;
-                <div recuo>
-                  &#60;<span tagColor>dm-loading-background</span>&#62;
+                &#60;<span tagColor>template</span>&#62;
+                <div class="border-left">
                   <div recuo>
-                    &#60;<span tagColor>p</span> class=<span roxo>"body_01"</span>&#62;
-                    Aguarde alguns instantes. &#60;br&#62; <br>
-                    Estamos salvando tudo.&#60;/<span tagColor>p</span>&#62;
+                    <span green> &#60;!-- Button Loading --&#62;</span>
                     <br>
-                    &#60;<span tagColor>el-progress</span> :stroke-width=<span roxo>"14"</span> :percentage=<span
-                      roxo>"percentage"</span> :color=<span roxo>"color"</span> :format=<span roxo>"format"</span>
-                    /&#62;
+                    &#60;<span roxo>el-button</span> @click=<span yellow>"loadingDM"</span>
+                    type=<span roxo>"primario"</span>&#62;<span black>Ver loading</span>&#60;/<span roxo>el-button</span>&#62;
                     <br>
-                    &#60;<span tagColor>p</span> class="detail_01"&#62;8 segundos restantes...&#60;/<span
-                      tagColor>p</span>&#62;
+                    <br>
+                    <span green> &#60;!-- Loading --&#62;</span>
+                    <br>
+                    &#60;<span tagColor>dm-loading</span> v-if=<span roxo>"showLoading"</span>&#62;
+                    <div class="border-left">
+                      <div recuo>
+                        &#60;<span tagColor>dm-loading-background</span>&#62;
+                        <div class="border-left">
+                          <div recuo>
+                            &#60;<span tagColor>p</span> class=<span roxo>"body_01"</span>&#62;
+                            <span black>Aguarde alguns instantes.</span> &#60;br&#62; <br>
+                            Estamos salvando tudo.&#60;/<span tagColor>p</span>&#62;
+                            <br>
+                            &#60;<span tagColor>el-progress</span> :stroke-width=<span roxo>"14"</span> :percentage=<span
+                              roxo>"percentage"</span> :color=<span roxo>"color"</span> :format=<span roxo>"format"</span>
+                            /&#62;
+                            <br>
+                            &#60;<span tagColor>p</span> class=<span roxo>"detail_01"</span>&#62;<span black>8 segundos restantes...</span>&#60;/<span
+                              tagColor>p</span>&#62;
+                          </div>
+                        </div>
+                        &#60;/<span tagColor>dm-loading-background</span>&#62;
+                        <br>
+                        &#60;<span tagColor>el-button</span> @click=<span yellow>"loadingDM"</span> type=<span
+                          roxo>"terciario"</span>&#62;<span black>Fechar demonstração</span>&#60;/<span tagColor>el-button</span>&#62;
+                      </div>
+                    </div>
+                    &#60;/<span tagColor>dm-loading</span>&#62;
                   </div>
-                  &#60;/<span tagColor>dm-loading-background</span>&#62;
-
-                  <br>
-                  &#60;<span tagColor>el-button</span> @click=<span yellow>"loadingDM"</span> type=<span
-                    roxo>"terciario"</span>&#62;Fechar demonstração&#60;/<span tagColor>el-button</span>&#62;
                 </div>
-                &#60;/<span tagColor>dm-loading</span>&#62;
+                &#60;<span tagColor>template</span> /&#62;
               </div>
               <br>
               <br>
@@ -264,7 +279,7 @@
                               <br>
                               color: "var(--dm_azul_00)",
                               <br>
-                              percentage: 60
+                              percentage: <span green>60</span>
 
 
                             </div>

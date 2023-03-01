@@ -479,8 +479,13 @@
 
           <!-- Collapse -->
           <el-collapse v-model="activeNames" @change="handleChange">
-            <el-collapse-item title="ver código" name="3">
-              <div class="html_codigos_blue">
+            <el-collapse-item title="ver código"> </el-collapse-item>
+          </el-collapse>
+          <div class="html_codigos_blue">
+
+            &#60;<span tagColor>template</span>&#62;
+            <div class="border-left">
+              <div recuo>
                 &#60;<span tagColor>el-row</span>&#62;
                 <div class="border-left">
                   <div recuo>
@@ -519,44 +524,54 @@
                   </div>
                 </div>
                 &#60;/<span tagColor>el-row</span>&#62;
+              </div>
+            </div>
+            &#60;<span tagColor>template</span> /&#62;
+            <br />
+            <br />
+            <!-- Script -->
+            &#60;<span tagColor>script</span>&#62;
+            <br />
+            <span roxo>export default</span> {
+            <div class="border-left">
+              <div recuo>
+                data() {
                 <br />
-                <br />
-                <!-- Script -->
-                &#60;<span tagColor>script</span>&#62;
-                <br />
-                export default {
-                <div recuo>
-                  data() {
-                  <br />
+                <div class="border-left">
                   <div recuo>
-                    return {
-                    <div recuo>
+                    <span roxo>return</span> {
+                    <div class="border-left">
                       <div recuo>
                         activeName: <span black>"first"</span>,
                         <br />
                       </div>
-                      };
                     </div>
+                    };
                   </div>
-                  },
-                  <br />
-                  <span>methods: {</span>
+                </div>
+                },
+                <br />
+                <span>methods: {</span>
+                <div class="border-left">
                   <div recuo>
-                    handleClick(tab, event) {
-                    <div recuo>
-                      console
-                      <span>.log(tab, event);</span>
+                    handleClick(<span blue>tab, event</span>) {
+                    <div class="border-left">
+                      <div recuo>
+                        console<span>.log(<span blue>tab, event</span>);</span>
+                      </div>
                     </div>
                     <span>},</span>
                   </div>
-                  <span>},</span>
                 </div>
-                <span>};</span>
-                &#60;/<span tagColor>script</span>&#62;
-                <!--  -->
+                <span>},</span>
               </div>
-            </el-collapse-item>
-          </el-collapse>
+            </div>
+            <span>};</span>
+            <br>
+            &#60;/<span tagColor>script</span>&#62;
+            <!--  -->
+          </div>
+
         </div>
 
         <div>

@@ -46,7 +46,6 @@
             <el-collapse v-model="activeNames" @change="handleChange">
               <el-collapse-item title="Ver código" name="3">
                 <span class="html_codigos_blue">
-                  &#60;<span tagColor>template</span>&#62;
                   <div recuo>
                     <!-- default -->
                     <span green>&#60;!-- default --&#62;</span>
@@ -87,7 +86,6 @@
                     <span>&lt;<span tagColor>el-tag</span> type=<span roxo>"danger"</span><span roxo>
                         closable</span>&gt;<span black>Tag 4</span>&lt;/<span tagColor>el-tag</span>&gt;</span>
                   </div>
-                  &#60;<span tagColor>template</span>&#62;
                 </span>
               </el-collapse-item>
             </el-collapse>
@@ -145,119 +143,115 @@
             <el-collapse v-model="activeNames" @change="handleChange">
               <el-collapse-item title="Ver código" name="3">
                 <span class="html_codigos_blue">
-                  &#60;<span tagColor>template</span>&#62;
-                  <div recuo>
-                    <!-- default -->
-                    <span green>&#60;!-- default --&#62;</span>
-                    <br />
-                    &#60;<span tagColor>el-tag</span> effect=<span roxo>"plain"</span>&#62;<span
-                      black>default</span>&#60;<span tagColor>/el-tag</span>&#62;
-                    <!--  -->
-                    <br />
-                    &#60;<span tagColor>el-tag</span> effect=<span roxo>"plain"
-                    </span>
-                    size=<span roxo>"small" </span>
-                    <span roxo>closable</span>&#62;<span black>small</span>&#60;<span tagColor>/el-tag</span>&#62;
-                    <!--  -->
-                    <br />
-                    &#60;<span tagColor>el-tag</span> effect=<span roxo>"plain"
-                    </span>
-                    size=<span roxo>"mini" </span>
-                    <span roxo>closable</span>&#62;<span black>mini</span>&#60;<span tagColor>/el-tag</span>&#62;
-                    <br />
-                    <!-- success -->
-                    <br />
-                    <span green>&#60;!-- success --&#62;</span>
-                    <br />
-                    &#60;<span tagColor>el-tag</span> effect=<span roxo>"plain"
-                    </span>
-                    type=<span roxo>"success" </span>
-                    <span roxo>closable</span>&#62;<span black>default</span>&#60;<span tagColor>/el-tag</span>&#62;
-                    <!--  -->
-                    <br />
-                    &#60;<span tagColor>el-tag</span> effect=<span roxo>"plain"
-                    </span>
-                    type=<span roxo>"success" </span> size=<span roxo>"small"
-                    </span>
-                    <span roxo>closable</span>&#62;<span black>small</span>&#60;<span tagColor>/el-tag</span>&#62;
-                    <!--  -->
-                    <br />
-                    &#60;<span tagColor>el-tag</span> effect=<span roxo>"plain"
-                    </span>
-                    type=<span roxo>"success" </span> size=<span roxo>"mini"
-                    </span>
-                    <span roxo>closable</span>&#62;<span black>mini</span>&#60;<span tagColor>/el-tag</span>&#62;
-                    <br />
-                    <br />
-                    <!-- info -->
-                    <span green>&#60;!-- info --&#62;</span>
-                    <br />
-                    &#60;<span tagColor>el-tag</span> effect=<span roxo>"plain"
-                    </span>
-                    type=<span roxo>"info" </span>
-                    <span roxo>closable</span>&#62;<span black>default</span>&#60;<span tagColor>/el-tag</span>&#62;
-                    <!--  -->
-                    <br />
-                    &#60;<span tagColor>el-tag</span> effect=<span roxo>"plain"
-                    </span>
-                    type=<span roxo>"info" </span> size=<span roxo>"small" </span>
-                    <span roxo>closable</span>&#62;<span black>small</span>&#60;<span tagColor>/el-tag</span>&#62;
-                    <!--  -->
-                    <br />
-                    &#60;<span tagColor>el-tag</span> effect=<span roxo>"plain"
-                    </span>
-                    type=<span roxo>"info" </span> size=<span roxo>"mini" </span>
-                    <span roxo>closable</span>&#62;<span black>mini</span>&#60;<span tagColor>/el-tag</span>&#62;
-                    <br />
-                    <!-- danger -->
-                    <br />
-                    <span green>&#60;!-- danger --&#62;</span>
-                    <br />
-                    &#60;<span tagColor>el-tag</span> effect=<span roxo>"plain"
-                    </span>
-                    type=<span roxo>"danger" </span>
-                    <span roxo>closable</span>&#62;<span black>default</span>&#60;<span tagColor>/el-tag</span>&#62;
-                    <!--  -->
-                    <br />
-                    &#60;<span tagColor>el-tag</span> effect=<span roxo>"plain"
-                    </span>
-                    type=<span roxo>"danger" </span> size=<span roxo>"small"
-                    </span>
-                    <span roxo>closable</span>&#62;<span black>small</span>&#60;<span tagColor>/el-tag</span>&#62;
-                    <!--  -->
-                    <br />
-                    &#60;<span tagColor>el-tag</span> effect=<span roxo>"plain"
-                    </span>
-                    type=<span roxo>"danger" </span> size=<span roxo>"mini"
-                    </span>
-                    <span roxo>closable</span>&#62;<span black>mini</span>
-                    <br />
-                    &#60;<span tagColor>/el-tag</span>&#62;
-                    <br />
-                    <!-- warning -->
-                    <br />
-                    <span green>&#60;!-- warning --&#62;</span>
-                    <br />
-                    &#60;<span tagColor>el-tag</span> effect=<span roxo>"plain"
-                    </span>
-                    type=<span roxo>"warning" </span>
-                    <span roxo>closable</span>&#62;<span black>default</span>&#60;<span tagColor>/el-tag</span>&#62;
-                    <!--  -->
-                    <br />
-                    &#60;<span tagColor>el-tag</span> effect=<span roxo>"plain"
-                    </span>
-                    type=<span roxo>"warning" </span> size=<span roxo>"small"
-                    </span>
-                    <span roxo>closable</span>&#62;<span black>smaill</span>&#60;<span tagColor>/el-tag</span>&#62;
-                    <!--  -->
-                    <br />
-                    &#60;<span tagColor>el-tag</span> effect=<span roxo>"plain"
-                    </span>
-                    type=<span roxo>"warning" </span> size=<span roxo>"mini"
-                    </span>
-                    <span roxo>closable</span>&#62;<span black>mini</span>&#60;<span tagColor>/el-tag</span>&#62;
-                  </div>
-                  &#60;<span tagColor>/template</span>&#62;
+                  <!-- default -->
+                  <span green>&#60;!-- default --&#62;</span>
+                  <br />
+                  &#60;<span tagColor>el-tag</span> effect=<span roxo>"plain"</span>&#62;<span
+                    black>default</span>&#60;<span tagColor>/el-tag</span>&#62;
+                  <!--  -->
+                  <br />
+                  &#60;<span tagColor>el-tag</span> effect=<span roxo>"plain"
+                  </span>
+                  size=<span roxo>"small" </span>
+                  <span roxo>closable</span>&#62;<span black>small</span>&#60;<span tagColor>/el-tag</span>&#62;
+                  <!--  -->
+                  <br />
+                  &#60;<span tagColor>el-tag</span> effect=<span roxo>"plain"
+                  </span>
+                  size=<span roxo>"mini" </span>
+                  <span roxo>closable</span>&#62;<span black>mini</span>&#60;<span tagColor>/el-tag</span>&#62;
+                  <br />
+                  <!-- success -->
+                  <br />
+                  <span green>&#60;!-- success --&#62;</span>
+                  <br />
+                  &#60;<span tagColor>el-tag</span> effect=<span roxo>"plain"
+                  </span>
+                  type=<span roxo>"success" </span>
+                  <span roxo>closable</span>&#62;<span black>default</span>&#60;<span tagColor>/el-tag</span>&#62;
+                  <!--  -->
+                  <br />
+                  &#60;<span tagColor>el-tag</span> effect=<span roxo>"plain"
+                  </span>
+                  type=<span roxo>"success" </span> size=<span roxo>"small"
+                  </span>
+                  <span roxo>closable</span>&#62;<span black>small</span>&#60;<span tagColor>/el-tag</span>&#62;
+                  <!--  -->
+                  <br />
+                  &#60;<span tagColor>el-tag</span> effect=<span roxo>"plain"
+                  </span>
+                  type=<span roxo>"success" </span> size=<span roxo>"mini"
+                  </span>
+                  <span roxo>closable</span>&#62;<span black>mini</span>&#60;<span tagColor>/el-tag</span>&#62;
+                  <br />
+                  <br />
+                  <!-- info -->
+                  <span green>&#60;!-- info --&#62;</span>
+                  <br />
+                  &#60;<span tagColor>el-tag</span> effect=<span roxo>"plain"
+                  </span>
+                  type=<span roxo>"info" </span>
+                  <span roxo>closable</span>&#62;<span black>default</span>&#60;<span tagColor>/el-tag</span>&#62;
+                  <!--  -->
+                  <br />
+                  &#60;<span tagColor>el-tag</span> effect=<span roxo>"plain"
+                  </span>
+                  type=<span roxo>"info" </span> size=<span roxo>"small" </span>
+                  <span roxo>closable</span>&#62;<span black>small</span>&#60;<span tagColor>/el-tag</span>&#62;
+                  <!--  -->
+                  <br />
+                  &#60;<span tagColor>el-tag</span> effect=<span roxo>"plain"
+                  </span>
+                  type=<span roxo>"info" </span> size=<span roxo>"mini" </span>
+                  <span roxo>closable</span>&#62;<span black>mini</span>&#60;<span tagColor>/el-tag</span>&#62;
+                  <br />
+                  <!-- danger -->
+                  <br />
+                  <span green>&#60;!-- danger --&#62;</span>
+                  <br />
+                  &#60;<span tagColor>el-tag</span> effect=<span roxo>"plain"
+                  </span>
+                  type=<span roxo>"danger" </span>
+                  <span roxo>closable</span>&#62;<span black>default</span>&#60;<span tagColor>/el-tag</span>&#62;
+                  <!--  -->
+                  <br />
+                  &#60;<span tagColor>el-tag</span> effect=<span roxo>"plain"
+                  </span>
+                  type=<span roxo>"danger" </span> size=<span roxo>"small"
+                  </span>
+                  <span roxo>closable</span>&#62;<span black>small</span>&#60;<span tagColor>/el-tag</span>&#62;
+                  <!--  -->
+                  <br />
+                  &#60;<span tagColor>el-tag</span> effect=<span roxo>"plain"
+                  </span>
+                  type=<span roxo>"danger" </span> size=<span roxo>"mini"
+                  </span>
+                  <span roxo>closable</span>&#62;<span black>mini</span>
+                  <br />
+                  &#60;<span tagColor>/el-tag</span>&#62;
+                  <br />
+                  <!-- warning -->
+                  <br />
+                  <span green>&#60;!-- warning --&#62;</span>
+                  <br />
+                  &#60;<span tagColor>el-tag</span> effect=<span roxo>"plain"
+                  </span>
+                  type=<span roxo>"warning" </span>
+                  <span roxo>closable</span>&#62;<span black>default</span>&#60;<span tagColor>/el-tag</span>&#62;
+                  <!--  -->
+                  <br />
+                  &#60;<span tagColor>el-tag</span> effect=<span roxo>"plain"
+                  </span>
+                  type=<span roxo>"warning" </span> size=<span roxo>"small"
+                  </span>
+                  <span roxo>closable</span>&#62;<span black>smaill</span>&#60;<span tagColor>/el-tag</span>&#62;
+                  <!--  -->
+                  <br />
+                  &#60;<span tagColor>el-tag</span> effect=<span roxo>"plain"
+                  </span>
+                  type=<span roxo>"warning" </span> size=<span roxo>"mini"
+                  </span>
+                  <span roxo>closable</span>&#62;<span black>mini</span>&#60;<span tagColor>/el-tag</span>&#62;
                 </span>
               </el-collapse-item>
             </el-collapse>

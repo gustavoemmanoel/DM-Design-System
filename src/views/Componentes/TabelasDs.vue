@@ -32,111 +32,106 @@
           <br />
           <el-collapse v-model="activeNames" @change="handleChange">
             <el-collapse-item title="Ver código" name="1">
-          <div class="html_codigos_blue">
-            &#60;<span tagColor>el-table</span> :data=<span roxo
-              >"tableData" stripe </span
-            >&#62;
+              <div class="html_codigos_blue">
 
-            <br />
-            <div class="border-left">
-              <div recuo>
-                &#60;<span tagColor>el-table-column</span> prop=<span roxo
-                  >"projectName"</span
-                >
-                label=<span roxo>"Project Name"</span>
-                /&#62;
-                <br />
-                <!--  -->
-                &#60;<span tagColor>el-table-column</span> prop=<span roxo
-                  >"company"</span
-                >
-                label=<span roxo>"Company"</span>
-                /&#62;
-                <br />
-                <!--  -->
-                &#60;<span tagColor>el-table-column</span> prop=<span roxo
-                  >"date"</span
-                >
-                label=<span roxo>"Date"</span>
-                /&#62;
-                <br />
-                <!--  -->
-                &#60;<span tagColor>el-table-column</span> prop=<span roxo
-                  >"tag"</span
-                >
-                label=<span roxo>"Tag"</span>
-                &#62;
-                <br />
+
+                &#60;<span tagColor>template</span>&#62;
                 <div class="border-left">
                   <div recuo>
-                    &#60;<span tagColor>template</span> #default=<span roxo
-                      >"scope"</span
-                    >&#62;
-                    <br />
-                    <div recuo>
-                      &#60;<span tagColor>el-tag</span>&#62;{<!---->{<span roxo>
-                        scope.row.tag </span
-                      >}<!---->}&#60;/<span tagColor>el-tag</span>&#62;
-                    </div>
-                    &#60;/<span tagColor>template</span>&#62;
-                  </div>
-                </div>
-                &#60;/<span tagColor>el-table-column</span>&#62;
-              </div>
-            </div>
-            &#60;<span tagColor>/el-table</span>&#62;
-            <br />
-            <br />
-            <!-- script -->
-          </div>
-          <div class="html_codigos_blue">
-            <!-- Script -->
-            &#60;<span tagColor>script</span>&#62;
-            <br />
-            <span roxo>export default</span> {
-            <div class="border-left">
-              <div recuo>
-                data() {
-                <div class="border-left">
-                  <div recuo>
-                    return {
+                    &#60;<span tagColor>el-table</span> :data=<span roxo>"tableData" stripe </span>&#62;
                     <br />
                     <div class="border-left">
                       <div recuo>
-                        <span black>tableData</span>: [
+                        &#60;<span tagColor>el-table-column</span> prop=<span roxo>"projectName"</span>
+                        label=<span roxo>"Project Name"</span>
+                        /&#62;
+                        <br />
+                        <!--  -->
+                        &#60;<span tagColor>el-table-column</span> prop=<span roxo>"company"</span>
+                        label=<span roxo>"Company"</span>
+                        /&#62;
+                        <br />
+                        <!--  -->
+                        &#60;<span tagColor>el-table-column</span> prop=<span roxo>"date"</span>
+                        label=<span roxo>"Date"</span>
+                        /&#62;
+                        <br />
+                        <!--  -->
+                        &#60;<span tagColor>el-table-column</span> prop=<span roxo>"tag"</span>
+                        label=<span roxo>"Tag"</span>
+                        &#62;
+                        <br />
                         <div class="border-left">
                           <div recuo>
-                            {
-                            <div class="border-left">
-                              <div recuo>
-                                projectName:
-                                <span black>"Design System"</span>,
-                                <br />
-                                company: <span black>"Data Machina"</span>,
-                                <br />
-                                date: <span black>"12/01/2023"</span>,
-                                <br />
-                                tag: <span black>"Tag 2"</span>,
-                                <br />
-                              </div>
+                            &#60;<span tagColor>template</span> #default=<span roxo>"scope"</span>&#62;
+                            <br />
+                            <div recuo>
+                              &#60;<span tagColor>el-tag</span>&#62;{<!---->{<span roxo>
+                                scope.row.tag </span>}<!---->}&#60;/<span tagColor>el-tag</span>&#62;
                             </div>
-                            },
+                            &#60;/<span tagColor>template</span>&#62;
                           </div>
                         </div>
-                        ],
+                        &#60;/<span tagColor>el-table-column</span>&#62;
                       </div>
                     </div>
-                    };
+                    &#60;<span tagColor>/el-table</span>&#62;
                   </div>
                 </div>
-                },
+                &#60;/ <span tagColor>template</span>&#62;
               </div>
-            </div>
-            };
-            <br />
-            &#60;/<span tagColor>script</span>&#62;
-          </div>
-           </el-collapse-item>
+              <br>
+              <br>
+
+              <div class="html_codigos_blue">
+                <!-- Script -->
+                &#60;<span tagColor>script</span>&#62;
+                <br />
+                <span roxo>export default</span> {
+                <div class="border-left">
+                  <div recuo>
+                    <span yellow>data</span>() {
+                    <div class="border-left">
+                      <div recuo>
+                        <span roxo>return</span> {
+                        <br />
+                        <div class="border-left">
+                          <div recuo>
+                            tableData: [
+                            <div class="border-left">
+                              <div recuo>
+                                {
+                                <div class="border-left">
+                                  <div recuo>
+                                    projectName:
+                                    <span brown>"Design System"</span>,
+                                    <br />
+                                    company: <span brown>"Data Machina"</span>,
+                                    <br />
+                                    date: <span brown>"12/01/2023"</span>,
+                                    <br />
+                                    tag: <span brown>"Tag 2"</span>,
+                                    <br />
+                                  </div>
+                                </div>
+                                },
+                              </div>
+                            </div>
+                            ],
+                          </div>
+                        </div>
+                        };
+                      </div>
+                    </div>
+                    },
+                  </div>
+                </div>
+                };
+                <br />
+                &#60;/<span tagColor>script</span>&#62;
+              </div>
+
+            </el-collapse-item>
           </el-collapse>
         </div>
       </el-main>
@@ -189,19 +184,24 @@ export default {
 .el-col {
   border-radius: 4px;
 }
+
 .bg-purple-dark {
   background: #99a9bf;
 }
+
 .bg-purple {
   background: #d3dce6;
 }
+
 .bg-purple-light {
   background: #e5e9f2;
 }
+
 .grid-content {
   border-radius: 4px;
   min-height: 36px;
 }
+
 .row-bg {
   padding: 10px 0;
   background-color: #f9fafc;

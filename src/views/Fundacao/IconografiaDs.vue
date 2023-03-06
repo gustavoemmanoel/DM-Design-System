@@ -22,208 +22,214 @@
             <div class=" grid_container_icone">
               <div class="column_icons">
                 <div class="c-icon">
-                  <dm-icon retroceder />
-                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> retroceder /&#62;</div>
+                  <dm-icon DArrowLeft />
+                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> DArrowLeft /&#62;</div>
                 </div>
                 <div class="c-icon">
-                  <dm-icon avancar />
-                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> avancar /&#62;</div>
+                  <dm-icon DArrowRight />
+                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> DArrowRight /&#62;</div>
                 </div>
                 <div class="c-icon">
-                  <dm-icon cima />
-                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> cima /&#62;</div>
+                  <dm-icon ArrowUp />
+                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> ArrowUp /&#62;</div>
                 </div>
                 <div class="c-icon">
-                  <dm-icon baixo />
-                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> baixo /&#62;</div>
+                  <dm-icon ArrowDown />
+                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> ArrowDown /&#62;</div>
                 </div>
                 <div class="c-icon">
-                  <dm-icon prosseguir />
-                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> prosseguir /&#62;</div>
+                  <dm-icon ArrowRight />
+                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> ArrowRight /&#62;</div>
                 </div>
                 <div class="c-icon">
-                  <dm-icon voltar />
-                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> voltar /&#62;</div>
+                  <dm-icon ArrowLeft />
+                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> ArrowLeft /&#62;</div>
                 </div>
                 <div class="c-icon">
-                  <dm-icon check />
-                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> check /&#62;</div>
+                  <dm-icon Check />
+                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> Check /&#62;</div>
                 </div>
                 <div class="c-icon">
-                  <dm-icon close />
-                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> close /&#62;</div>
+                  <dm-icon Close />
+                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> Close /&#62;</div>
                 </div>
                 <div class="c-icon">
-                  <dm-icon menu />
-                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> menu /&#62;</div>
+                  <dm-icon Menu />
+                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> Menu /&#62;</div>
                 </div>
                 <div class="c-icon">
-                  <dm-icon produtos />
-                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> produtos /&#62;</div>
+                  <dm-icon Options />
+                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> Options /&#62;</div>
                 </div>
                 <div class="c-icon">
-                  <dm-icon maisOpcoes />
-                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> maisOpcoes /&#62;</div>
+                  <dm-icon Products />
+                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> Products /&#62;</div>
                 </div>
                 <div class="c-icon">
-                  <dm-icon estatisticas />
-                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> estatisticas /&#62;</div>
+                  <dm-icon Graphic />
+                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> Graphic /&#62;</div>
                 </div>
                 <div class="c-icon">
-                  <dm-icon pasta />
-                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> pasta /&#62;</div>
+                  <dm-icon Lock />
+                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> Lock /&#62;</div>
                 </div>
                 <div class="c-icon">
-                  <dm-icon email />
-                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> email /&#62;</div>
+                  <dm-icon Unlock />
+                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> Unlock /&#62;</div>
                 </div>
                 <div class="c-icon">
-                  <dm-icon envio />
-                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> envio /&#62;</div>
+                  <dm-icon Lamp />
+                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> Lamp /&#62;</div>
                 </div>
                 <div class="c-icon">
-                  <dm-icon cadeadoAberto />
-                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> cadeadoAberto /&#62;</div>
+                  <dm-icon Alert />
+                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> Alert /&#62;</div>
                 </div>
                 <div class="c-icon">
-                  <dm-icon cadeadoFechado />
-                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> cadeadoFechado /&#62;</div>
+                  <dm-icon Help />
+                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> Help /&#62;</div>
+                </div>
+              </div>
+
+              <div class="column_icons">
+                <div class="c-icon">
+                  <dm-icon Warning />
+                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> Warning /&#62;</div>
+                </div>
+                <div class="c-icon">
+                  <dm-icon Bell />
+                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> Bell /&#62;</div>
+                </div>
+
+                <div class="c-icon">
+                  <dm-icon View />
+                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> View /&#62;</div>
+                </div>
+                <div class="c-icon">
+                  <dm-icon Hide />
+                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> Hide /&#62;</div>
+                </div>
+                <div class="c-icon">
+                  <dm-icon Delete />
+                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> Delete /&#62;</div>
+                </div>
+                <div class="c-icon">
+                  <dm-icon Layers />
+                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> Layers /&#62;</div>
+                </div>
+                <div class="c-icon">
+                  <dm-icon Correct />
+                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> Correct /&#62;</div>
+                </div>
+                <div class="c-icon">
+                  <dm-icon Wrong />
+                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> Wrong /&#62;</div>
+                </div>
+                <div class="c-icon">
+                  <dm-icon Add />
+                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> Add /&#62;</div>
+                </div>
+                <div class="c-icon">
+                  <dm-icon NewFile />
+                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> NewFile /&#62;</div>
+                </div>
+                <div class="c-icon">
+                  <dm-icon Logout />
+                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> Logout /&#62;</div>
+                </div>
+                <div class="c-icon">
+                  <dm-icon User />
+                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> User /&#62;</div>
+                </div>
+                <div class="c-icon">
+                  <dm-icon Video />
+                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> Video /&#62;</div>
+                </div>
+                <div class="c-icon">
+                  <dm-icon Download />
+                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> Download /&#62;</div>
+                </div>
+                <div class="c-icon">
+                  <dm-icon Upload />
+                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> Upload /&#62;</div>
+                </div>
+                <div class="c-icon">
+                  <dm-icon Image />
+                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> Image /&#62;</div>
+                </div>
+                <div class="c-icon">
+                  <dm-icon Link />
+                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> Link /&#62;</div>
                 </div>
               </div>
               <div class="column_icons">
                 <div class="c-icon">
-                  <dm-icon alerta />
-                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> alerta /&#62;</div>
+                  <dm-icon Send />
+                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> Send /&#62;</div>
                 </div>
                 <div class="c-icon">
-                  <dm-icon correta />
-                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> correta /&#62;</div>
+                  <dm-icon Phone />
+                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> Phone /&#62;</div>
                 </div>
                 <div class="c-icon">
-                  <dm-icon maisInformacoes />
-                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> maisInformacoes /&#62;</div>
+                  <dm-icon Email />
+                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> Email /&#62;</div>
                 </div>
                 <div class="c-icon">
-                  <dm-icon duvida />
-                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> duvida /&#62;</div>
+                  <dm-icon Chat />
+                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> Chat /&#62;</div>
                 </div>
                 <div class="c-icon">
-                  <dm-icon adicionar />
-                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> adicionar /&#62;</div>
+                  <dm-icon Document />
+                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> Document /&#62;</div>
                 </div>
                 <div class="c-icon">
-                  <dm-icon errada />
-                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> errada /&#62;</div>
+                  <dm-icon Folder />
+                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> Folder /&#62;</div>
                 </div>
                 <div class="c-icon">
-                  <dm-icon editar />
-                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> editar /&#62;</div>
+                  <dm-icon Search />
+                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> Search /&#62;</div>
                 </div>
                 <div class="c-icon">
-                  <dm-icon internet />
-                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> internet /&#62;</div>
+                  <dm-icon Calendar />
+                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> Calendar /&#62;</div>
                 </div>
                 <div class="c-icon">
-                  <dm-icon localizacao />
-                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> localizacao /&#62;</div>
+                  <dm-icon Map />
+                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> Map /&#62;</div>
                 </div>
                 <div class="c-icon">
-                  <dm-icon historico />
-                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> historico /&#62;</div>
+                  <dm-icon WebSite />
+                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> WebSite /&#62;</div>
                 </div>
                 <div class="c-icon">
-                  <dm-icon calendario />
-                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> calendario /&#62;</div>
+                  <dm-icon Location />
+                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> Location /&#62;</div>
                 </div>
                 <div class="c-icon">
-                  <dm-icon camada />
-                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> camada /&#62;</div>
+                  <dm-icon Coverage />
+                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> Coverage /&#62;</div>
                 </div>
                 <div class="c-icon">
-                  <dm-icon camadaAberta />
-                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> camadaAberta /&#62;</div>
+                  <dm-icon History />
+                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> History /&#62;</div>
                 </div>
                 <div class="c-icon">
-                  <dm-icon camadaFechada />
-                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> camadaFechada /&#62;</div>
+                  <dm-icon Filter />
+                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> Filter /&#62;</div>
                 </div>
                 <div class="c-icon">
-                  <dm-icon chat />
-                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> chat /&#62;</div>
+                  <dm-icon Edit />
+                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> Edit /&#62;</div>
                 </div>
                 <div class="c-icon">
-                  <dm-icon documento />
-                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> documento /&#62;</div>
+                  <dm-icon Loading />
+                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> Loading /&#62;</div>
                 </div>
                 <div class="c-icon">
-                  <dm-icon loading />
-                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> loading /&#62;</div>
-                </div>
-              </div>
-              <div class="column_icons">
-                <div class="c-icon">
-                  <dm-icon telefone />
-                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> telefone /&#62;</div>
-                </div>
-                <div class="c-icon">
-                  <dm-icon mapas />
-                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> mapas /&#62;</div>
-                </div>
-                <div class="c-icon">
-                  <dm-icon lixeira />
-                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> lixeira /&#62;</div>
-                </div>
-                <div class="c-icon">
-                  <dm-icon logout />
-                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> logout /&#62;</div>
-                </div>
-                <div class="c-icon">
-                  <dm-icon upload />
-                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> upload /&#62;</div>
-                </div>
-                <div class="c-icon">
-                  <dm-icon download />
-                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> download /&#62;</div>
-                </div>
-                <div class="c-icon">
-                  <dm-icon lupa />
-                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> lupa /&#62;</div>
-                </div>
-                <div class="c-icon">
-                  <dm-icon perfil />
-                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> perfil /&#62;</div>
-                </div>
-                <div class="c-icon">
-                  <dm-icon notificacao />
-                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> notificacao /&#62;</div>
-                </div>
-                <div class="c-icon">
-                  <dm-icon sugestao />
-                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> sugestao /&#62;</div>
-                </div>
-                <div class="c-icon">
-                  <dm-icon emote />
-                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> emote /&#62;</div>
-                </div>
-                <div class="c-icon">
-                  <dm-icon filtro />
-                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> filtro /&#62;</div>
-                </div>
-                <div class="c-icon">
-                  <dm-icon video />
-                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> video /&#62;</div>
-                </div>
-                <div class="c-icon">
-                  <dm-icon novoArquivo />
-                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> novoArquivo /&#62;</div>
-                </div>
-                <div class="c-icon">
-                  <dm-icon imagem />
-                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> imagem /&#62;</div>
-                </div>
-                <div class="c-icon">
-                  <dm-icon endereco />
-                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> endereco /&#62;</div>
+                  <dm-icon HappyEmote />
+                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> HappyEmote /&#62;</div>
                 </div>
               </div>
             </div>
@@ -243,7 +249,7 @@
                 <br>
                 <br>
                 DM: denomina que o arquivo é de propriedade DM <br>
-                EMOTE: Denomina que tipo de ícone se trata o arquivo. <br>
+                HappyEmote: Denomina que tipo de ícone se trata o arquivo. <br>
                 ICN: Comunica que o arquivo trata-se de um ícone. <br>
                 SVG: Mostra qual o formato do arquivo.
               </p>

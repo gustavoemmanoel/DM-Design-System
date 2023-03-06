@@ -36,10 +36,10 @@
               <template #default="scope">
                 <el-row style="gap: 8px">
                   <dm-button>
-                    <dm-icon editar>{{ scope.row.edit }}</dm-icon>
+                    <dm-icon Edit>{{ scope.row.edit }}</dm-icon>
                   </dm-button>
                   <dm-button>
-                    <dm-icon lixeira>{{ scope.row.delete }}</dm-icon>
+                    <dm-icon Delete>{{ scope.row.delete }}</dm-icon>
                   </dm-button>
                 </el-row>
               </template>

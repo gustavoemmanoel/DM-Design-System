@@ -1139,7 +1139,7 @@
             <br>
             <br>
             <dm-information>
-              <dm-icon sugestao />
+              <dm-icon Lamp />
               <span>
                 <p>Para saber como construir a tabela de acordo com o padrão, </p>
                 <el-button type="terciario">baixe o nosso modelo</el-button>

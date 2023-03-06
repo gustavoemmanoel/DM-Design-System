@@ -3,16 +3,14 @@
     <el-col class="header mg-right-js">
       <el-col :offset="4" :span="16" class="container-ds">
         <div>
-          <div class="cont-ds">
-            <p class="first-title">Design System</p>
+          <h1 class="cont-ds">
+            <p class="first-title"><span style="color: var(--dm_azul_00)">/</span>Design System</p>
             |
             <p class="second-title">{{ headerTitle }}</p>
-          </div>
+          </h1>
           <p class="sub-title">Designed by Data Machina</p>
         </div>
-        <div class="align_right">
-          <p class="principal">{{ headerTitle }}</p>
-        </div>
+        <h1>{{ headerTitle }}</h1>
         <img class="graf" src="/grafismo.svg" />
       </el-col>
     </el-col>
@@ -21,9 +19,7 @@
 <script>
 export default {
   name: "HeaderDs",
-  props: {
-    headerTitle: String,
-  },
+
 };
 </script>
 
@@ -48,22 +44,22 @@ export default {
 .container-ds {
   display: flex;
   align-items: center;
+  justify-content: space-between
 }
 
-.align_right {
-  margin-left: auto;
-}
 
 .cont-ds {
   display: flex;
   align-items: center;
   gap: 10px;
-  font-size: 28px;
+  z-index: 1;
+  position: relative;
 }
 
 .first-title {
   font-weight: 500;
   font-family: "Roboto Slab", serif;
+
 }
 
 .second-title {
@@ -76,12 +72,8 @@ export default {
   font-size: 12px;
   font-weight: 300;
   font-family: "Roboto Slab", serif;
-}
-
-.principal {
-  font-size: 30px;
-  font-weight: 500;
-  font-family: "Roboto Slab", serif;
+  z-index: 1;
+  position: relative;
 }
 
 .graf {

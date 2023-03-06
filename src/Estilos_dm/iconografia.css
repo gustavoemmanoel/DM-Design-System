@@ -17,7 +17,6 @@ dm-icon {
   background-image: url("../../public/imagens_design_system/icons/blackicons/ArrowRight.svg");
 }
 
-
 [ArrowDown] {
   background-image: url("../../public/imagens_design_system/icons/blackicons/ArrowDown.svg");
 }
@@ -218,11 +217,220 @@ dm-icon {
   background-image: url("../../public/imagens_design_system/icons/blackicons/Location.svg");
 }
 
-
-[loading] {
-  background-image: url("../../public/imagens_design_system/icons/blackicons/loading.svg");
+[Loading] {
+  background-image: url("../../public/imagens_design_system/icons/blackicons/Loading.svg");
 }
 
 [HappyEmote] {
   background-image: url("../../public/imagens_design_system/icons/blackicons/HappyEmote.svg");
+}
+
+/* White Icons */
+
+[ArrowRightWhite] {
+  background-image: url("../../public/imagens_design_system/icons/whiteicons/ArrowRight.svg");
+}
+
+[ArrowDownWhite] {
+  background-image: url("../../public/imagens_design_system/icons/whiteicons/ArrowDown.svg");
+}
+
+[ArrowLeftWhite] {
+  background-image: url("../../public/imagens_design_system/icons/whiteicons/ArrowLeft.svg");
+}
+
+[DArrowLeftWhite] {
+  background-image: url("../../public/imagens_design_system/icons/whiteicons/DArrowLeft.svg");
+}
+
+[DArrowRightWhite] {
+  background-image: url("../../public/imagens_design_system/icons/whiteicons/DArrowRight.svg");
+}
+
+[ArrowUpWhite] {
+  background-image: url("../../public/imagens_design_system/icons/whiteicons/ArrowUp.svg");
+}
+
+[WarningWhite] {
+  background-image: url("../../public/imagens_design_system/icons/whiteicons/Warning.svg");
+}
+
+[ImageWhite] {
+  background-image: url("../../public/imagens_design_system/icons/whiteicons/Image.svg");
+}
+
+[LinkWhite] {
+  background-image: url("../../public/imagens_design_system/icons/whiteicons/Link.svg");
+}
+
+[EmailWhite] {
+  background-image: url("../../public/imagens_design_system/icons/whiteicons/Email.svg");
+}
+
+[SendWhite] {
+  background-image: url("../../public/imagens_design_system/icons/whiteicons/Send.svg");
+}
+
+[FilterWhite] {
+  background-image: url("../../public/imagens_design_system/icons/whiteicons/Filter.svg");
+}
+
+[VideoWhite] {
+  background-image: url("../../public/imagens_design_system/icons/whiteicons/Video.svg");
+}
+
+[MenuWhite] {
+  background-image: url("../../public/imagens_design_system/icons/whiteicons/Menu.svg");
+}
+
+[LockWhite] {
+  background-image: url("../../public/imagens_design_system/icons/whiteicons/Lock.svg");
+}
+
+[UnlockWhite] {
+  background-image: url("../../public/imagens_design_system/icons/whiteicons/Unlock.svg");
+}
+
+[AddWhite] {
+  background-image: url("../../public/imagens_design_system/icons/whiteicons/Add.svg");
+}
+
+[CorrectWhite] {
+  background-image: url("../../public/imagens_design_system/icons/whiteicons/Correct.svg");
+}
+
+[AlertWhite] {
+  background-image: url("../../public/imagens_design_system/icons/whiteicons/Alert.svg");
+}
+
+[HelpWhite] {
+  background-image: url("../../public/imagens_design_system/icons/whiteicons/Help.svg");
+}
+
+[WrongWhite] {
+  background-image: url("../../public/imagens_design_system/icons/whiteicons/Wrong.svg");
+}
+
+[CalendarWhite] {
+  background-image: url("../../public/imagens_design_system/icons/whiteicons/Calendar.svg");
+}
+
+[LayersWhite] {
+  background-image: url("../../public/imagens_design_system/icons/whiteicons/Layers.svg");
+}
+
+[ViewWhite] {
+  background-image: url("../../public/imagens_design_system/icons/whiteicons/View.svg");
+}
+
+[HideWhite] {
+  background-image: url("../../public/imagens_design_system/icons/whiteicons/Hide.svg");
+}
+
+[ChatWhite] {
+  background-image: url("../../public/imagens_design_system/icons/whiteicons/Chat.svg");
+}
+
+[DocumentWhite] {
+  background-image: url("../../public/imagens_design_system/icons/whiteicons/Document.svg");
+}
+
+[HistoryWhite] {
+  background-image: url("../../public/imagens_design_system/icons/whiteicons/History.svg");
+}
+
+[PhoneWhite] {
+  background-image: url("../../public/imagens_design_system/icons/whiteicons/Phone.svg");
+}
+
+[WebSiteWhite] {
+  background-image: url("../../public/imagens_design_system/icons/whiteicons/WebSite.svg");
+}
+
+[CoverageWhite] {
+  background-image: url("../../public/imagens_design_system/icons/whiteicons/Coverage.svg");
+}
+
+[NewFileWhite] {
+  background-image: url("../../public/imagens_design_system/icons/whiteicons/NewFile.svg");
+}
+
+[MapWhite] {
+  background-image: url("../../public/imagens_design_system/icons/whiteicons/Map.svg");
+}
+
+[DeleteWhite] {
+  background-image: url("../../public/imagens_design_system/icons/whiteicons/Delete.svg");
+}
+
+[LogoutWhite] {
+  background-image: url("../../public/imagens_design_system/icons/whiteicons/Logout.svg");
+}
+
+[UploadWhite] {
+  background-image: url("../../public/imagens_design_system/icons/whiteicons/Upload.svg");
+}
+
+[DownloadWhite] {
+  background-image: url("../../public/imagens_design_system/icons/whiteicons/Download.svg");
+}
+
+[SearchWhite] {
+  background-image: url("../../public/imagens_design_system/icons/whiteicons/Search.svg");
+}
+
+[UserWhite] {
+  background-image: url("../../public/imagens_design_system/icons/whiteicons/User.svg");
+}
+
+[BellWhite] {
+  background-image: url("../../public/imagens_design_system/icons/whiteicons/Bell.svg");
+}
+
+[LampWhite] {
+  background-image: url("../../public/imagens_design_system/icons/whiteicons/Lamp.svg");
+}
+
+[GraphicWhite] {
+  background-image: url("../../public/imagens_design_system/icons/whiteicons/Graphic.svg");
+}
+
+[OptionsWhite] {
+  background-image: url("../../public/imagens_design_system/icons/whiteicons/Options.svg");
+}
+
+[CheckWhite] {
+  background-image: url("../../public/imagens_design_system/icons/whiteicons/Check.svg");
+}
+
+[CloseWhite] {
+  background-image: url("../../public/imagens_design_system/icons/whiteicons/Close.svg");
+}
+
+[ProductsWhite] {
+  background-image: url("../../public/imagens_design_system/icons/whiteicons/Products.svg");
+}
+
+[FolderWhite] {
+  background-image: url("../../public/imagens_design_system/icons/whiteicons/Folder.svg");
+}
+
+[UploadWhite] {
+  background-image: url("../../public/imagens_design_system/icons/whiteicons/Upload.svg");
+}
+
+[EditWhite] {
+  background-image: url("../../public/imagens_design_system/icons/whiteicons/Edit.svg");
+}
+
+[LocationWhite] {
+  background-image: url("../../public/imagens_design_system/icons/whiteicons/Location.svg");
+}
+
+[LoadingWhite] {
+  background-image: url("../../public/imagens_design_system/icons/whiteicons/Loading.svg");
+}
+
+[HappyEmoteWhite] {
+  background-image: url("../../public/imagens_design_system/icons/whiteicons/HappyEmote.svg");
 }

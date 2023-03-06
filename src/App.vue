@@ -1,12 +1,12 @@
 <template>
   <div>
-    <AsideComponent />
+    <AsideComponent/>
     <router-view class="mg-right-js" />
   </div>
 </template>
 
 <script>
-import AsideComponent from './views/ElementsDs/AsideComponent.vue';
+import AsideComponent from './components/AsideComponent.vue';
 export default {
   components: { AsideComponent },
   name: "app",

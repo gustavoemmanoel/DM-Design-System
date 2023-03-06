@@ -223,12 +223,8 @@
                 <br />
                 &#60;/<span tagColor>script</span>&#62;
               </div>
-
             </el-collapse-item>
           </el-collapse>
-
-
-
         </div>
       </el-main>
     </el-container>

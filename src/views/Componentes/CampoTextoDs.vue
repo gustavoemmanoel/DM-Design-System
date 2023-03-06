@@ -17,8 +17,8 @@
               possíveis.
             </p>
             <br>
-            <el-row :gutter="30">
-              <el-col :span="13">
+            <el-row :gutter="40">
+              <el-col :span="12">
                 <el-form :label-position="labelPosition" :model="formLabelAlign">
                   <el-form-item label="Rua">
                     <el-input v-model="formLabelAlign.street" placeholder="Digite"></el-input>
@@ -33,7 +33,7 @@
                   </el-form-item>
                 </el-form>
               </el-col>
-              <el-col :span="13">
+              <el-col :span="12">
                 <el-form :label-position="labelPosition" :model="formLabelAlign">
                   <el-form-item label="CEP">
                     <el-input v-model="formLabelAlign.cep" placeholder="Digite"></el-input>

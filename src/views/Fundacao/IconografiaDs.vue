@@ -233,6 +233,227 @@
                 </div>
               </div>
             </div>
+
+          </div>
+          <div class="cont-elements">
+            <h3>Icones brancos</h3>
+            <br>
+            <br>
+            <div class="grid_container_icone"
+              style="background: #2c2c2c; color:var(--dm_creme_02); padding: 10px; border-radius: 6px;">
+              <div class="column_icons">
+                <div class="c-icon">
+                  <dm-icon DArrowLeftWhite />
+                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> DArrowLeftWhite /&#62;</div>
+                </div>
+                <div class="c-icon">
+                  <dm-icon DArrowRightWhite />
+                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> DArrowRightWhite /&#62;</div>
+                </div>
+                <div class="c-icon">
+                  <dm-icon ArrowUpWhite />
+                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> ArrowUpWhite /&#62;</div>
+                </div>
+                <div class="c-icon">
+                  <dm-icon ArrowDownWhite />
+                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> ArrowDownWhite /&#62;</div>
+                </div>
+                <div class="c-icon">
+                  <dm-icon ArrowRightWhite />
+                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> ArrowRightWhite /&#62;</div>
+                </div>
+                <div class="c-icon">
+                  <dm-icon ArrowLeftWhite />
+                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> ArrowLeftWhite /&#62;</div>
+                </div>
+                <div class="c-icon">
+                  <dm-icon CheckWhite />
+                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> CheckWhite /&#62;</div>
+                </div>
+                <div class="c-icon">
+                  <dm-icon CloseWhite />
+                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> CloseWhite /&#62;</div>
+                </div>
+                <div class="c-icon">
+                  <dm-icon MenuWhite />
+                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> MenuWhite /&#62;</div>
+                </div>
+                <div class="c-icon">
+                  <dm-icon OptionsWhite />
+                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> OptionsWhite /&#62;</div>
+                </div>
+                <div class="c-icon">
+                  <dm-icon ProductsWhite />
+                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> ProductsWhite /&#62;</div>
+                </div>
+                <div class="c-icon">
+                  <dm-icon GraphicWhite />
+                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> GraphicWhite /&#62;</div>
+                </div>
+                <div class="c-icon">
+                  <dm-icon LockWhite />
+                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> LockWhite /&#62;</div>
+                </div>
+                <div class="c-icon">
+                  <dm-icon UnlockWhite />
+                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> UnlockWhite /&#62;</div>
+                </div>
+                <div class="c-icon">
+                  <dm-icon LampWhite />
+                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> LampWhite /&#62;</div>
+                </div>
+                <div class="c-icon">
+                  <dm-icon AlertWhite />
+                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> AlertWhite /&#62;</div>
+                </div>
+                <div class="c-icon">
+                  <dm-icon HelpWhite />
+                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> HelpWhite /&#62;</div>
+                </div>
+              </div>
+              <!--  -->
+              <div class="column_icons">
+                <div class="c-icon">
+                  <dm-icon WarningWhite />
+                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> WarningWhite /&#62;</div>
+                </div>
+                <div class="c-icon">
+                  <dm-icon BellWhite />
+                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> BellWhite /&#62;</div>
+                </div>
+                <div class="c-icon">
+                  <dm-icon ViewWhite />
+                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> ViewWhite /&#62;</div>
+                </div>
+                <div class="c-icon">
+                  <dm-icon HideWhite />
+                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> HideWhite /&#62;</div>
+                </div>
+                <div class="c-icon">
+                  <dm-icon DeleteWhite />
+                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> DeleteWhite /&#62;</div>
+                </div>
+                <div class="c-icon">
+                  <dm-icon LayersWhite />
+                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> LayersWhite /&#62;</div>
+                </div>
+                <div class="c-icon">
+                  <dm-icon CorrectWhite />
+                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> CorrectWhite /&#62;</div>
+                </div>
+                <div class="c-icon">
+                  <dm-icon WrongWhite />
+                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> WrongWhite /&#62;</div>
+                </div>
+                <div class="c-icon">
+                  <dm-icon AddWhite />
+                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> AddWhite /&#62;</div>
+                </div>
+                <div class="c-icon">
+                  <dm-icon NewFileWhite />
+                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> NewFileWhite /&#62;</div>
+                </div>
+                <div class="c-icon">
+                  <dm-icon LogoutWhite />
+                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> LogoutWhite /&#62;</div>
+                </div>
+                <div class="c-icon">
+                  <dm-icon UserWhite />
+                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> UserWhite /&#62;</div>
+                </div>
+                <div class="c-icon">
+                  <dm-icon VideoWhite />
+                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> VideoWhite /&#62;</div>
+                </div>
+                <div class="c-icon">
+                  <dm-icon DownloadWhite />
+                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> DownloadWhite /&#62;</div>
+                </div>
+                <div class="c-icon">
+                  <dm-icon UploadWhite />
+                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> UploadWhite /&#62;</div>
+                </div>
+                <div class="c-icon">
+                  <dm-icon ImageWhite />
+                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> ImageWhite /&#62;</div>
+                </div>
+                <div class="c-icon">
+                  <dm-icon LinkWhite />
+                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> LinkWhite /&#62;</div>
+                </div>
+              </div>
+              <!--  -->
+              <div class="column_icons">
+                <div class="c-icon">
+                  <dm-icon SendWhite />
+                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> SendWhite /&#62;</div>
+                </div>
+                <div class="c-icon">
+                  <dm-icon PhoneWhite />
+                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> PhoneWhite /&#62;</div>
+                </div>
+                <div class="c-icon">
+                  <dm-icon EmailWhite />
+                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> EmailWhite /&#62;</div>
+                </div>
+                <div class="c-icon">
+                  <dm-icon ChatWhite />
+                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> ChatWhite /&#62;</div>
+                </div>
+                <div class="c-icon">
+                  <dm-icon DocumentWhite />
+                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> DocumentWhite /&#62;</div>
+                </div>
+                <div class="c-icon">
+                  <dm-icon FolderWhite />
+                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> FolderWhite /&#62;</div>
+                </div>
+                <div class="c-icon">
+                  <dm-icon SearchWhite />
+                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> SearchWhite /&#62;</div>
+                </div>
+                <div class="c-icon">
+                  <dm-icon CalendarWhite />
+                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> CalendarWhite /&#62;</div>
+                </div>
+                <div class="c-icon">
+                  <dm-icon MapWhite />
+                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> MapWhite /&#62;</div>
+                </div>
+                <div class="c-icon">
+                  <dm-icon WebSiteWhite />
+                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> WebSiteWhite /&#62;</div>
+                </div>
+                <div class="c-icon">
+                  <dm-icon LocationWhite />
+                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> LocationWhite /&#62;</div>
+                </div>
+                <div class="c-icon">
+                  <dm-icon CoverageWhite />
+                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> CoverageWhite /&#62;</div>
+                </div>
+                <div class="c-icon">
+                  <dm-icon HistoryWhite />
+                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> HistoryWhite /&#62;</div>
+                </div>
+                <div class="c-icon">
+                  <dm-icon FilterWhite />
+                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> FilterWhite /&#62;</div>
+                </div>
+                <div class="c-icon">
+                  <dm-icon EditWhite />
+                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> EditWhite /&#62;</div>
+                </div>
+                <div class="c-icon">
+                  <dm-icon LoadingWhite />
+                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> LoadingWhite /&#62;</div>
+                </div>
+                <div class="c-icon">
+                  <dm-icon HappyEmoteWhite />
+                  <div class="container_icon"> &#60;<span tagColor>dm-icon</span> HappyEmoteWhite /&#62;</div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 

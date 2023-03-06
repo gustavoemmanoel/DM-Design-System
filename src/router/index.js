@@ -39,134 +39,134 @@ import PreProcessamentos from "../views/PreProcessamentos.vue";
 
 const routes = [
   {
-    path: "/",
+    path: "/Instalacao",
     name: "InstallationEl",
     component: InstallationEl,
   },
   {
-    path: "/PreProcessamentos",
+    path: "/PreProcessament",
     name: "PreProcessamentos",
     component: PreProcessamentos,
   },
   /* PrincipiosDs */
   {
-    path: "/InicioDs",
+    path: "/",
     name: "InicioDs",
     component: InicioDs,
   },
   {
-    path: "/PrincipiosDs",
+    path: "/Principios",
     name: "PrincipiosDs",
     component: PrincipiosDs,
   },
 
   /* Fundação */
   {
-    path: "/ColorsDs",
+    path: "/Colors",
     name: "ColorsDs",
     component: ColorsDs,
   },
   {
-    path: "/TipografiaDs",
+    path: "/Tipografia",
     name: "TipografiaDs",
     component: TipografiaDs,
   },
   {
-    path: "/IconografiaDs",
+    path: "/Iconografia",
     name: "IconografiaDs",
     component: IconografiaDs,
   },
   {
-    path: "/GrafismosDs",
+    path: "/Grafismos",
     name: "Grafismoss",
     component: GrafismosDs,
   },
   {
-    path: "/GridDs",
+    path: "/Grid",
     name: "GridaDs",
     component: GridDs,
   },
   /* Telas */
   {
-    path: "/LoginDs",
+    path: "/Login",
     name: "LoginDs",
     component: LoginDs,
   },
 
   /* Componentes */
   {
-    path: "/UploadDs",
+    path: "/Upload",
     name: "UploadDs",
     component: UploadDs,
   },
   {
-    path: "/HeaderPage",
+    path: "/Header",
     name: "HeaderPage",
     component: HeaderPage,
   },
   {
-    path: "/BotaoDs",
+    path: "/Botao",
     name: "BotaoDs",
     component: BotaoDs,
   },
   {
-    path: "/CalendarioDs",
+    path: "/Calendario",
     name: "CalendarioDs",
     component: CalendarioDs,
   },
   {
-    path: "/CampoTextoDs",
+    path: "/CampoTexto",
     name: "CampoTextoDs",
     component: CampoTextoDs,
   },
   {
-    path: "/CardsDs",
+    path: "/Cards",
     name: "CardsDs",
     component: CardsDs,
   },
   {
-    path: "/CheckboxDs",
+    path: "/Checkbox",
     name: "CheckboxDs",
     component: CheckboxDs,
   },
   {
-    path: "/DropdownDs",
+    path: "/Dropdown",
     name: "DropdownDs",
     component: DropdownDs,
   },
   {
-    path: "/LoadingDs",
+    path: "/Loading",
     name: "LoadingDs",
     component: LoadingDs,
   },
   {
-    path: "/MensagensDs",
+    path: "/Mensagens",
     name: "MensagensDs",
     component: MensagensDs,
   },
   {
-    path: "/PinsDs",
+    path: "/Pins",
     name: "PinsDs",
     component: PinsDs,
   },
   {
-    path: "/TabelasDs",
+    path: "/Tabelas",
     name: "TabelasDs",
     component: TabelasDs,
   },
   {
-    path: "/TagsDs",
+    path: "/Tags",
     name: "TagsDs",
     component: TagsDs,
   },
   {
-    path: "/LegendaDs",
+    path: "/Legenda",
     name: "LegendaDs",
     component: LegendaDs,
   },
   /* Sobre */
   {
-    path: "/SobreDs",
+    path: "/Sobre",
     name: "SobreDS",
     component: SobreDs,
   },

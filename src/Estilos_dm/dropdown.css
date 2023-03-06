@@ -13,15 +13,13 @@
     background: var(--dm_cinza_04);
 }
 
-.el-button--dropdown.is-disabled span dm_icon {
+.el-button--dropdown.is-disabled span dm-icon {
     opacity: 0.4;
 }
 
 .el-popper.is-pure.is-light.el-dropdown__popper{
     transform: translatey(-10px);
 }
-
-
 
 .el-button--dropdown:hover,
 .el-button--dropdown:focus {

@@ -1,3 +1,13 @@
+dm-button {
+  cursor: pointer;
+  transition: .2s;
+}
+
+dm-button:hover {
+  opacity: 0.7;
+  transition: .2s;
+}
+
 .el-button {
   --el-button-hover-text-color: var(--dm_azul_00);
   --el-button-hover-bg-color: var(--dm_azul_00-light-9);
@@ -167,3 +177,4 @@
   color: var(--dm_amarelo_00);
   background: none;
 }
+

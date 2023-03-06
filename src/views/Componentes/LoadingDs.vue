@@ -5,26 +5,19 @@
     </el-header>
     <el-container>
       <el-main>
-        <div class="containerInterno">
-          <div>
-            <h1>/Loadings</h1>
-            <hr />
-            <br>
-
-          </div>
-          <br />
-        </div>
-
-        <h3>Loading barra</h3>
-        <hr>
-        <p>
-          Barras de loading mostram o progresso de alguma operação do
-          sistema que está sendo executada como download, upload ou
-          processamento. São importantes para dar feedback ao usuário, um
-          dos nosso princípios.
-        </p>
+        <h1>/Loadings</h1>
+        <hr />
         <br>
-        <div class="container-elementos">
+        <div class="cont-elements">
+          <h3>Loading barra</h3>
+          <br>
+          <p>
+            Barras de loading mostram o progresso de alguma operação do
+            sistema que está sendo executada como download, upload ou
+            processamento. São importantes para dar feedback ao usuário, um
+            dos nosso princípios.
+          </p>
+          <br>
           <el-progress v-for="(porcentagens, index) in colors" :key="index" :stroke-width="14"
             :percentage="porcentagens.percentage" :color="porcentagens.color" :format="format" />
 
@@ -36,8 +29,8 @@
           <br />
 
           <el-collapse v-model="activeNames" @change="handleChange">
-            <el-collapse-item title="Ver código" name="1">
-              <div class="html_codigos_blue">
+            <el-collapse-item title="Ver código">
+              <div class="html_codigos">
 
                 &#60;<span tagColor>template</span>&#62;
 
@@ -56,8 +49,7 @@
                 &#60;<span tagColor>template</span> /&#62;
               </div>
               <br>
-              <br>
-              <div class="html_codigos_blue">
+              <div class="html_codigos">
                 &#60;<span tagColor>script</span>&#62;
                 <br>
                 <span roxo>export default</span> {
@@ -99,10 +91,11 @@
           </el-collapse>
         </div>
 
-        <h3>loading</h3>
-        <hr>
 
-        <div class="container-elementos">
+        <div class="cont-elements">
+          <h3>Loading</h3>
+          <br>
+          <br>
           <div class="cont--el-progress">
             <el-progress type="circle" :percentage="percentage1" :color="color1" />
             <el-progress type="circle" :percentage="percentage2" :color="color2" />
@@ -110,11 +103,10 @@
             <el-progress type="circle" :percentage="percentage4" :color="color4" />
           </div>
           <br />
-
           <div class="demo-collapse">
             <el-collapse v-model="activeNames" @change="handleChange">
-              <el-collapse-item title="Ver código" name="1">
-                <div class="html_codigos_blue">
+              <el-collapse-item title="Ver código">
+                <div class="html_codigos">
                   &#60;<span tagColor>template</span>&#62;
                   <div class="border-left">
                     <div recuo>
@@ -131,8 +123,7 @@
                   &#60;<span tagColor>template</span> /&#62;
                 </div>
                 <br>
-                <br>
-                <div class="html_codigos_blue">
+                <div class="html_codigos">
                   &#60;<span tagColor>script</span>&#62;
                   <br>
                   <span roxo>export default</span> {
@@ -171,16 +162,15 @@
                   <br>
                   &#60;/<span tagColor>script</span>&#62;
                 </div>
-
               </el-collapse-item>
             </el-collapse>
           </div>
         </div>
 
 
-        <h3>Bloqueio de tela</h3>
-        <hr />
-        <div class="container-elementos">
+        <div class="cont-elements">
+          <h3>Bloqueio de tela</h3>
+          <br>
           <div class="cont--el-progress">
 
             <!-- Vitrine loading -->
@@ -193,8 +183,6 @@
               </div>
               <p class="detail_01">8 segundos restantes...</p>
             </div>
-
-
 
             <!-- Button Loading -->
             <el-button @click="loadingDM" type="primario">Ver loading</el-button>
@@ -209,21 +197,20 @@
               </dm-loading-background>
               <el-button @click="loadingDM" type="terciario">Fechar demonstração</el-button>
             </dm-loading>
-
-
           </div>
           <br />
 
           <el-collapse v-model="activeNames" @change="handleChange">
-            <el-collapse-item title="Ver código" name="1">
-              <div class="html_codigos_blue">
+            <el-collapse-item title="Ver código">
+              <div class="html_codigos">
                 &#60;<span tagColor>template</span>&#62;
                 <div class="border-left">
                   <div recuo>
                     <span green> &#60;!-- Button Loading --&#62;</span>
                     <br>
                     &#60;<span roxo>el-button</span> @click=<span yellow>"loadingDM"</span>
-                    type=<span roxo>"primario"</span>&#62;<span black>Ver loading</span>&#60;/<span roxo>el-button</span>&#62;
+                    type=<span roxo>"primario"</span>&#62;<span black>Ver loading</span>&#60;/<span
+                      roxo>el-button</span>&#62;
                     <br>
                     <br>
                     <span green> &#60;!-- Loading --&#62;</span>
@@ -242,14 +229,15 @@
                               roxo>"percentage"</span> :color=<span roxo>"color"</span> :format=<span roxo>"format"</span>
                             /&#62;
                             <br>
-                            &#60;<span tagColor>p</span> class=<span roxo>"detail_01"</span>&#62;<span black>8 segundos restantes...</span>&#60;/<span
-                              tagColor>p</span>&#62;
+                            &#60;<span tagColor>p</span> class=<span roxo>"detail_01"</span>&#62;<span black>8 segundos
+                              restantes...</span>&#60;/<span tagColor>p</span>&#62;
                           </div>
                         </div>
                         &#60;/<span tagColor>dm-loading-background</span>&#62;
                         <br>
                         &#60;<span tagColor>el-button</span> @click=<span yellow>"loadingDM"</span> type=<span
-                          roxo>"terciario"</span>&#62;<span black>Fechar demonstração</span>&#60;/<span tagColor>el-button</span>&#62;
+                          roxo>"terciario"</span>&#62;<span black>Fechar demonstração</span>&#60;/<span
+                          tagColor>el-button</span>&#62;
                       </div>
                     </div>
                     &#60;/<span tagColor>dm-loading</span>&#62;
@@ -258,8 +246,7 @@
                 &#60;<span tagColor>template</span> /&#62;
               </div>
               <br>
-              <br>
-              <div class="html_codigos_blue">
+              <div class="html_codigos">
                 &#60;<span tagColor>script</span>&#62;
                 <br>
                 <span roxo>export default</span> {
@@ -269,7 +256,7 @@
                       name: <span roxo>"LoadingDs"</span>, <br>
                     </div>
                     <div>
-                      data() {
+                      <span yellow>data</span>() {
                       <div class="border-left">
                         <div recuo>
                           <span roxo>return</span> {

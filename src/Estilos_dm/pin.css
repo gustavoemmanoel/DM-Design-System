@@ -22,7 +22,7 @@ dm-pin img {
 
 dm-pin-background {
     position: absolute;
-    transform: translatey(-80px);
+    transform: translate(-7px, -80px);
     flex-direction: column;
     background: var(--dm_creme_02);
     border-radius: 6px;
@@ -65,7 +65,7 @@ dm-pin-conteudo {
 dm-pin-img {
     display: flex;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: start;
     background-size: contain;
     width: var(--latLong);
     height: var(--latLong);

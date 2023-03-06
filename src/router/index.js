@@ -15,7 +15,7 @@ import GridDs from "../views/Fundacao/GridDs.vue";
 import GrafismosDs from "../views/Fundacao/GrafismosDs.vue";
 
 /* Telas */
-import LoginDs from "../views/Telas/LoginDs.vue";
+import LoginDs from "../views/LoginDs.vue";
 
 /* Componentes */
 import HeaderPage from "../views/Componentes/HeaderPage.vue";

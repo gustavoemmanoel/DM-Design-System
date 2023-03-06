@@ -23,7 +23,7 @@
             orientado sobre como resolver. </p>
           <br />
 
-          <div class="container-elementos">
+          <div class="cont-elements">
             <h6>Em caixas de texto obrigatória:</h6>
             <br>
             <p>Quando é obrigatório preencher um campo para seguir com a ação ou quando o formato da informação é
@@ -51,7 +51,7 @@
             <el-collapse v-model="activeids" @change="handleChange">
               <el-collapse-item title="Ver código">
                 <!-- HTML -->
-                <div class="html_codigos_blue">
+                <div class="html_codigos">
                   &#60;<span tagColor>template</span>&#62;
                   <div class="border-left">
                     <div recuo>
@@ -118,7 +118,7 @@
                 <!-- SCRIPTS -->
                 <br>
                 <br>
-                <div class="html_codigos_blue">
+                <div class="html_codigos">
                   &#60;<span tagColor>script</span>&#62;
                   <br>
                   <span roxo>export default</span> {
@@ -321,7 +321,7 @@
           </div>
 
 
-          <div class="container-elementos">
+          <div class="cont-elements">
             <br>
             <h6>Erro na ação</h6>
             <br>
@@ -333,7 +333,7 @@
             <div style="display: flex; gap: 20px;">
               <!-- Vitrine -->
               <dm-popup-background>
-                <dm_icon alerta />
+                <dm-icon alerta />
                 <p>Erro ao carregar a edição de Rotas 01.</p>
                 <p class="detail_01">A nova rota escolhida para NF ficará acima da capacidade e/ou confira sua conexão.
                 </p>
@@ -348,7 +348,7 @@
               <span>
                 <dm-popup @click="popup" popup="close">
                   <dm-popup-background>
-                    <dm_icon alerta />
+                    <dm-icon alerta />
                     <p>Erro ao carregar a edição de Rotas 01.</p>
                     <p class="detail_01">A nova rota escolhida para NF ficará acima da capacidade e/ou confira sua
                       conexão.
@@ -367,7 +367,7 @@
               <el-collapse-item title="Ver código">
                 <!-- HTML -->
 
-                <div class="html_codigos_blue">
+                <div class="html_codigos">
                   &#60;<span tagColor>template</span>&#62;
                   <div class="border-left">
                     <div recuo>
@@ -382,7 +382,7 @@
                               &#60;<span tagColor>dm-popup-background</span>&#62;
                               <div class="border-left">
                                 <div recuo>
-                                  &#60;<span tagColor>dm_icon</span> <span roxo>alerta</span> /&#62;<br>
+                                  &#60;<span tagColor>dm-icon</span> <span roxo>alerta</span> /&#62;<br>
                                   &#60;<span tagColor>p</span>&#62;<span black>Erro ao carregar a edição de Rotas 01.
 
                                   </span>&#60;/<span tagColor>p</span>&#62;<br>
@@ -434,7 +434,7 @@
                 </div>
                 <br>
                 <br>
-                <div class="html_codigos_blue">
+                <div class="html_codigos">
                   &#60;<span tagColor>script</span>&#62;
                   <br>
                   <span roxo>export default</span> {
@@ -578,7 +578,7 @@
           </div>
           <h3>Aviso</h3>
           <br>
-          <div class="container-elementos">
+          <div class="cont-elements">
 
             <p>A mensagem de aviso comunica ao usuário uma informação importante, mas não impede nenhuma ação do
               usuário.
@@ -593,14 +593,14 @@
 
             <dm-alert v-if="alertDm">
               <dm-alert-container>
-                <dm_icon alerta />
+                <dm-icon alerta />
                 <span>
                   <dm-atencao>Atenção!</dm-atencao> Trânsito lento na Marginal Tietê. Possibilidade de atraso na
                   previsão
                   das entregas.
                 </span>
                 <button>
-                  <dm_icon close @click="upAlert" />
+                  <dm-icon close @click="upAlert" />
                 </button>
               </dm-alert-container>
             </dm-alert>
@@ -609,21 +609,21 @@
             <br>
             <br>
             <dm-alert-container>
-              <dm_icon alerta />
+              <dm-icon alerta />
               <span>
                 <dm-atencao>Atenção!</dm-atencao> Trânsito lento na Marginal Tietê. Possibilidade de atraso na
                 previsão
                 das entregas.
               </span>
               <button>
-                <dm_icon close />
+                <dm-icon close />
               </button>
             </dm-alert-container>
 
             <br>
             <el-collapse v-model="activeids" @change="handleChange">
               <el-collapse-item title="Ver código">
-                <div class="html_codigos_blue">
+                <div class="html_codigos">
                   &#60;<span tagColor>template</span>&#62;
                   <div class="border-left">
                     <div recuo>
@@ -633,7 +633,7 @@
                           &#60;<span tagColor>dm-alert-container</span>&#62;<br>
                           <div class="border-left">
                             <div recuo>
-                              &#60;<span tagColor>dm_icon </span><span roxo>alerta</span> /&#62; <br>
+                              &#60;<span tagColor>dm-icon </span><span roxo>alerta</span> /&#62; <br>
                               &#60;<span tagColor>span</span>&#62;
                               <div class="border-left">
                                 <div recuo>
@@ -649,7 +649,7 @@
                               &#60;/<span tagColor>span</span>&#62;
                               <br>
                               &#60;<span tagColor>button</span>&#62;<br>
-                              &#60;<span tagColor>dm_icon</span> <span roxo>close</span> @click=<span
+                              &#60;<span tagColor>dm-icon</span> <span roxo>close</span> @click=<span
                                 roxo>"upAlert"</span>
                               /&#62;<br>
                               &#60;/<span tagColor>button</span>&#62;<br>
@@ -673,7 +673,7 @@
                 </div>
                 <br>
                 <br>
-                <div class="html_codigos_blue">
+                <div class="html_codigos">
                   &#60;<span tagColor>script</span>&#62;
                   <br>
                   <span roxo>export default</span> {
@@ -741,7 +741,7 @@
           </div>
           <h3>Alerta</h3>
           <br>
-          <div class="container-elementos">
+          <div class="cont-elements">
             <p>A mensagem de alerta bloqueia a tela em razão da sensibilidade quanto a uma possível perda de informação
               e documentação. Ela também solicita a confirmação da escolha de uma ação do usuário e exibe o aviso de
               confirmação, ou não, da execução da ação.
@@ -754,7 +754,7 @@
             <div style="display: flex; gap: 20px;">
 
               <dm-popup-background>
-                <dm_icon alerta />
+                <dm-icon alerta />
                 <p>Você tem acerteza de que quer apagar este romaneio?</p>
                 <p class="detail_01">Não será possível visualizar ou recuperar o romaneio.</p>
                 <el-row>
@@ -765,7 +765,7 @@
 
               <dm-popup @click="popup" popup="close">
                 <dm-popup-background>
-                  <dm_icon alerta />
+                  <dm-icon alerta />
                   <p>Você tem acerteza de que quer apagar este romaneio?</p>
                   <p class="detail_01">Não será possível visualizar ou recuperar o romaneio.</p>
                   <el-row>
@@ -782,7 +782,7 @@
             <el-collapse v-model="activeids" @change="handleChange">
               <el-collapse-item title="Ver código">
 
-                <div class="html_codigos_blue">
+                <div class="html_codigos">
                   &#60;<span tagColor>template</span>&#62;
 
                   <div class="border-left">
@@ -794,7 +794,7 @@
                           &#60;<span tagColor>dm-popup-background</span>&#62;
                           <div class="border-left">
                             <div recuo>
-                              &#60;<span tagColor>dm_icon</span> <span roxo>alerta</span> /&#62;<br>
+                              &#60;<span tagColor>dm-icon</span> <span roxo>alerta</span> /&#62;<br>
                               &#60;<span tagColor>p</span>&#62;<span black>Você tem acerteza de que quer apagar este
                                 romaneio?</span>&#60;/<span tagColor>p</span>&#62;<br>
                               &#60;<span tagColor>p</span> class=<span roxo>"detail_01"</span>&#62;<span black>Não será
@@ -844,7 +844,7 @@
                 </div>
                 <br>
                 <br>
-                <div class="html_codigos_blue">
+                <div class="html_codigos">
                   &#60;<span tagColor>script</span>&#62;
                   <br>
                   <span roxo>export default</span> {
@@ -946,14 +946,14 @@
               </el-collapse-item>
             </el-collapse>
           </div>
-          <div class="container-elementos">
+          <div class="cont-elements">
             <img class="imagemExemplo" src="mensagens/alert_03.jpg">
             <br>
             <br>
             <div style="display: flex; gap: 20px;">
 
               <dm-popup-background>
-                <dm_icon correta />
+                <dm-icon correta />
                 <p>Rotas e romaneios remanejados com sucesso!</p>
                 <el-row>
                   <dm-button class="el-button el-button--primario" popup="close">Ok</dm-button>
@@ -964,7 +964,7 @@
 
               <dm-popup @click="popup" popup="close">
                 <dm-popup-background>
-                  <dm_icon correta />
+                  <dm-icon correta />
                   <p>Rotas e romaneios remanejados com sucesso!</p>
                   <el-row>
                     <dm-button class="el-button el-button--primario" popup="close">Ok</dm-button>
@@ -977,7 +977,7 @@
             <br>
             <el-collapse v-model="activeids" @change="handleChange">
               <el-collapse-item title="Ver código">
-                <div class="html_codigos_blue">
+                <div class="html_codigos">
                   &#60;<span tagColor>template</span>&#62;
                   <div class="border-left">
                     <div recuo>
@@ -988,7 +988,7 @@
                           &#60;<span tagColor>dm-popup-background</span>&#62;
                           <div class="border-left">
                             <div recuo>
-                              &#60;<span tagColor>dm_icon</span> <span roxo>correta</span> /&#62;<br>
+                              &#60;<span tagColor>dm-icon</span> <span roxo>correta</span> /&#62;<br>
                               &#60;<span tagColor>p</span>&#62;<span black>Rotas e romaneios remanejados com
                                 sucesso!</span>&#60;/<span tagColor>p</span>&#62;<br>
                               <br>
@@ -1030,7 +1030,7 @@
                 </div>
                 <br>
                 <br>
-                <div class="html_codigos_blue">
+                <div class="html_codigos">
                   &#60;<span tagColor>script</span>&#62;
                   <br>
                   <span roxo>export default</span> {
@@ -1132,14 +1132,14 @@
           </div>
           <h3>Aviso informativo</h3>
           <br>
-          <div class="container-elementos">
+          <div class="cont-elements">
             <p>Avisos informativos comunicam informações importantes ou sugerem conteúdos informativos ao usuário.</p>
             <br>
             <img class="imagemExemplo" src="mensagens/informativo.jpg">
             <br>
             <br>
             <dm-information>
-              <dm_icon sugestao />
+              <dm-icon sugestao />
               <span>
                 <p>Para saber como construir a tabela de acordo com o padrão, </p>
                 <el-button type="terciario">baixe o nosso modelo</el-button>
@@ -1148,11 +1148,11 @@
             <br>
             <el-collapse v-model="activeids" @change="handleChange">
               <el-collapse-item title="Ver código">
-                <div class="html_codigos_blue">
+                <div class="html_codigos">
                   &#60;<span tagColor>dm-information</span>&#62;
                   <div class="border-left">
                     <div recuo>
-                      &#60;<span tagColor>dm_icon</span> <span roxo>sugestao</span> /&#62;<br>
+                      &#60;<span tagColor>dm-icon</span> <span roxo>sugestao</span> /&#62;<br>
                       &#60;<span tagColor>span</span>&#62;
                       <br>
                       &#60;<span tagColor>p</span>&#62;

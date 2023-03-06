@@ -5,44 +5,29 @@
     </el-header>
     <el-container>
       <el-main>
-        <div
-          class="containerInterno"
-          v-for="(userConditions, index) in colors"
-          :key="index"
-        >
-          <div class="container_title">
-            <h1>{{ userConditions.title }}</h1>
-            <hr />
-          </div>
+        <h1>/Cores</h1>
+        <hr>
+        <br>
+        <div class="containerInterno" v-for="(userConditions, index) in colors" :key="index">
           <div>
-            <div class="container-elementos">
+            <div class="cont-elements">
+              <h3>{{ userConditions.title }}</h3>
+              <br>
               <p class="title-squad">
                 {{ userConditions.classification }}
               </p>
               <div class="grid-colors">
-                <div
-                  class="container-color"
-                  v-for="(coresDs, index) in userConditions.cores"
-                  :key="index"
-                >
-                  <p class="token">--{{ coresDs.token }}</p>
+                <div class="container-color" v-for="(coresDs, index) in userConditions.cores" :key="index">
+                  <p class="body_05">--{{ coresDs.token }}</p>
                   <div class="cont-color">
-                    <p class="HEX">{{ coresDs.hex }}</p>
+                    <p class="body_05">{{ coresDs.hex }}</p>
                   </div>
-                  <div
-                    class="color-squad"
-                    :style="userConditions.border"
-                    :class="coresDs.token"
-                  ></div>
-                  <p class="casodeuso">{{ coresDs.casodeuso }}</p>
+                  <div class="color-squad" :style="userConditions.border" :class="coresDs.token"></div>
+                  <p class="casodeuso detail_03">{{ coresDs.casodeuso }}</p>
                 </div>
               </div>
               <div style="display: flex; gap: 30px">
-                <div
-                  class="contMap"
-                  v-for="(mapsExp, index) in userConditions.img"
-                  :key="index"
-                ><br>
+                <div class="contMap" v-for="(mapsExp, index) in userConditions.img" :key="index"><br>
                   <img :src="mapsExp.map" />
                   <p>{{ mapsExp.descriptionMap }}</p>
                 </div>
@@ -67,7 +52,7 @@ export default {
       headerTitle: "Cores",
       colors: [
         {
-          title: "/Cores",
+          title: "Cores",
           classification: "Predominantes em todas as interfaces",
           cores: [
             {
@@ -88,7 +73,7 @@ export default {
           ],
         },
         {
-          title: "/Tons pretos",
+          title: "Tons pretos",
           classification: "Variações do #2C2C2C",
           cores: [
             {
@@ -124,7 +109,7 @@ export default {
           ],
         },
         {
-          title: "/Tons creme",
+          title: "Tons creme",
           classification: "Estabelecidas no manual da marca",
           border: "border: 1px solid var(--dm_cinza_04)",
           cores: [
@@ -146,7 +131,7 @@ export default {
           ],
         },
         {
-          title: "/Cores secundárias da marca",
+          title: "Cores secundárias da marca",
           classification: "Utilizadas para contraste e em variações de paleta",
           cores: [
             {
@@ -172,7 +157,7 @@ export default {
           ],
         },
         {
-          title: "/Sub tons de cores da marca",
+          title: "Sub tons de cores da marca",
           classification: "Usadas em hover e tags",
           cores: [
             {
@@ -252,7 +237,7 @@ export default {
           ],
         },
         {
-          title: "/Cores de contraste",
+          title: "Cores de contraste",
           classification: "Pins, vetores de áreas e vetores de linhas. ",
           cores: [
             {
@@ -286,7 +271,7 @@ export default {
           ],
         },
         {
-          title: "/Cores semânticas",
+          title: "Cores semânticas",
           classification:
             "Cores usadas para representar estados e significados",
           cores: [
@@ -318,7 +303,7 @@ export default {
           ],
         },
         {
-          title: "/Paleta de uso em mapa",
+          title: "Paleta de uso em mapa",
           classification: "Pins, vetores de áreas e vetores de linhas. ",
           cores: [
             {
@@ -702,12 +687,6 @@ export default {
   color: #2c2c2c;
 }
 
-.h1-title {
-  margin: 15px 0;
-}
-
-/* Cores */
-
 .grid-colors {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -715,18 +694,13 @@ export default {
   margin: 10px 0;
 }
 
-.container-elementos {
+.cont-elements {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   border-radius: 6px;
   padding: 20px;
   background: var(--dm_creme_01);
-}
-
-.title-squad {
-  font-weight: 400;
-  font-size: 16px;
 }
 
 .container-color {
@@ -742,20 +716,8 @@ export default {
   flex-direction: column;
   align-items: center;
 }
-.token {
-  font-size: 12px;
-  font-weight: 400;
-  color: #2c2c2c;
-}
-.HEX {
-  font-size: 12px;
-  font-weight: 400;
-  color: #606060;
-}
 
 .casodeuso {
-  font-size: 12px;
-  font-weight: 300;
   width: 110px;
   text-align: center;
   color: #606060;
@@ -765,28 +727,6 @@ export default {
   width: 100px;
   height: 100px;
   border-radius: 6px;
-}
-
-/*  */
-
-.sub-nav {
-  position: fixed;
-  margin-top: 35px;
-  top: 75px;
-  right: 40px;
-}
-.sub-nav p {
-  margin-bottom: 6px;
-  font-size: 12px;
-  color: var(--dm_preto_00);
-  transition: 0.2s;
-  cursor: pointer;
-}
-
-.sub-nav p:hover {
-  color: var(--dm_cinza_02);
-  text-decoration: underline;
-  transition: 0.2s;
 }
 
 .contMap img {

@@ -6,10 +6,11 @@
     <el-container>
 
       <el-main>
-        <div>
-          <h1>/Botões</h1>
-          <hr />
-          <br />
+
+        <h1>/Botões</h1>
+        <hr>
+        <br />
+        <div class="cont-elements">
           <p>
             Botões permitem que os usuários executem ações dentro da plataforma
             ou os levam para outras páginas. Eles são desenhados de acordo com
@@ -17,9 +18,7 @@
             botões tem alturas definidas, mas as larguras não podem ser
             modificadas de acordo com o espaço destinado no grid.
           </p>
-        </div>
-        <br />
-        <div class="container-elementos">
+          <br>
           <el-button>Default</el-button>
           <el-button type="primary">Primary</el-button>
           <el-button type="success">Success</el-button>
@@ -37,8 +36,8 @@
           <br />
           <br />
           <el-collapse v-model="activeNames" @change="handleChange">
-            <el-collapse-item title="Ver código" name="3">
-              <div class="html_codigos_blue">
+            <el-collapse-item title="Ver código">
+              <div class="html_codigos">
                 <!-- el-button default -->
                 &#60;<span tagColor>el-button</span>&#62;<span black>Botão</span>&lt;/<span tagColor>el-button</span>&gt;
                 <br />
@@ -69,9 +68,10 @@
             </el-collapse-item>
           </el-collapse>
         </div>
-        <div>
+
+        <!-- Primário -->
+        <div class="cont-elements">
           <h3>Botão primário</h3>
-          <hr />
           <br />
           <p>
             O botão primário é o que tem a maior ênfase na tela. É destinado à
@@ -81,10 +81,6 @@
             o grande, para casos onde é necessário ainda mais destaque na
             página, por exemplo na tela de login.
           </p>
-        </div>
-        <br />
-        <!-- Primário -->
-        <div class="container-elementos">
           <el-row>
             <el-col v-for="(btnGrid, index) in primario.gridButtons" :key="index" class="cardsBtn">
               <br />
@@ -101,8 +97,8 @@
           </el-row>
           <el-col :span="24">
             <el-collapse v-model="activeNames" @change="handleChange">
-              <el-collapse-item title="Ver código" name="3">
-                <div class="html_codigos_blue">
+              <el-collapse-item title="Ver código">
+                <div class="html_codigos">
                   <span v-for="(style, index) in primario.stringHTML" :key="index">
                     &lt;<span tagColor>el-button</span> type=<span roxo>{{
                       style.html
@@ -116,10 +112,11 @@
             </el-collapse>
           </el-col>
         </div>
+
         <!-- Secundário -->
-        <div>
+
+        <div class="cont-elements">
           <h3>Botão secundário</h3>
-          <hr />
           <br />
           <p>
             O botão secundário é destinado à ações que tem menor importância em
@@ -129,9 +126,6 @@
             mais utilizado; e o grande, para casos onde é necessário ainda mais
             destaque na página.
           </p>
-        </div>
-        <br />
-        <div class="container-elementos">
           <el-row>
             <el-col v-for="(btnGrid, index) in segundo.gridButtons" :key="index" class="cardsBtn">
               <br />
@@ -148,8 +142,8 @@
           </el-row>
           <el-col :span="24">
             <el-collapse v-model="activeNames" @change="handleChange">
-              <el-collapse-item title="Ver código" name="3">
-                <div class="html_codigos_blue">
+              <el-collapse-item title="Ver código">
+                <div class="html_codigos">
                   <span v-for="(style, index) in segundo.stringHTML" :key="index">
                     &lt;<span tagColor>el-button</span> type=<span roxo>{{
                       style.html
@@ -163,11 +157,11 @@
             </el-collapse>
           </el-col>
         </div>
+
         <!-- Terciário -->
 
-        <div>
+        <div class="cont-elements">
           <h3>Botão terciário</h3>
-          <hr />
           <br />
           <p>
             O botão terciário é usado em ações de pouca importância e não deve
@@ -175,10 +169,6 @@
             ao sistema. Possui quatro estados diferentes: ativo, hover, click e
             bloqueado. Ele só possui o tamanho padrão.
           </p>
-        </div>
-        <br />
-
-        <div class="container-elementos">
           <el-row>
             <el-col v-for="(btnGrid, index) in terceiro.gridButtons" :key="index" class="cardsBtn">
               <br />
@@ -195,14 +185,10 @@
           </el-row>
           <el-col :span="24">
             <el-collapse v-model="activeNames" @change="handleChange">
-              <el-collapse-item title="Ver código" name="3">
-                <div class="html_codigos_blue">
+              <el-collapse-item title="Ver código">
+                <div class="html_codigos">
                   <span v-for="(style, index) in terceiro.stringHTML" :key="index">
-                    &lt;<span tagColor>el-button</span> type=<span roxo>{{
-                      style.html
-                    }}</span>&gt;
-                    <span black>Botão</span>
-                    &lt;/<span tagColor>el-button</span>&gt;
+                    &lt;<span tagColor>el-button</span> type=<span roxo>{{style.html}}</span>&gt;<span black>Botão</span>&lt;/<span tagColor>el-button</span>&gt;
                     <br />
                   </span>
                 </div>

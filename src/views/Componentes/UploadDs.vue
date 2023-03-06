@@ -5,21 +5,21 @@
         <HeaderDs :headerTitle="headerTitle" />
       </el-header>
       <el-container>
+
         <el-main>
           <div class="containerInterno">
             <div>
               <h1>/Upload</h1>
               <hr />
-              <br />
-              <p>Upload</p>
               <br>
             </div>
-
-            <div class="container-elementos">
-              <el-upload class="upload-demo" drag action="https://run.mocky.io/v3/9d059bf9-4660-45f2-925d-ce80ad6c4d15"
-                multiple>
+            <div class="cont-elements">
+              <p>Upload</p>
+              <br>
+              <el-upload class="upload-demo dm-upload" drag
+                action="https://run.mocky.io/v3/9d059bf9-4660-45f2-925d-ce80ad6c4d15" multiple>
                 <div class="el-upload__text">
-                  <dm_icon upload class="icon" />
+                  <dm-icon upload />
                   Drop file here or <em>click to upload</em>
                 </div>
                 <template #tip>
@@ -29,9 +29,9 @@
                 </template>
               </el-upload>
               <el-collapse v-model="activeNames" @change="handleChange">
-                <el-collapse-item title="Ver código" name="3">
-                  <div class="html_codigo_blue">
-                    &#60;<span tagColor>el-upload</span> class=<span roxo>"upload-demo"</span> drag action=<span
+                <el-collapse-item title="Ver código">
+                  <div class="html_codigos">
+                    &#60;<span tagColor>el-upload</span> class=<span roxo>"upload-demo dm-upload"</span> drag action=<span
                       roxo>"https://run.mocky.io/v3/9d059bf9-4660-45f2-925d-ce80ad6c4d15"</span>
                     <span roxo> multiple</span>&#62;
                     <div class="border-left">
@@ -39,8 +39,7 @@
                         &#60;<span tagColor>div</span> class=<span roxo>"el-upload__text"</span>&#62;
                         <div class="border-left">
                           <div recuo>
-                            &#60;<span tagColor>dm_icon</span> <span roxo>upload</span> class=<span
-                              roxo>"icon"</span>/&#62;
+                            &#60;<span tagColor>dm-icon</span> <span roxo>upload</span> /&#62;
                             <br>
                             Drop file here or &#60;<span tagColor>em</span>&#62;click to upload&#60;/<span
                               tagColor>em</span>&#62;

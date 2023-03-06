@@ -25,7 +25,7 @@ dm-popup-background {
     cursor: default;
 }
 
-dm-popup-background dm_icon {
+dm-popup-background dm-icon {
     width: 40px;
     height: 40px;
 }
@@ -98,7 +98,7 @@ dm-information {
     width: 350px;
 }
 
-dm-information dm_icon {
+dm-information dm-icon {
     width: 43px;
     height: 43px;
 }

@@ -13,7 +13,7 @@
             <p>Pins são elementos que servem para marcar pontos no mapa.</p>
           </div>
           <br>
-          <div class="container-elementos">
+          <div class="cont-elements">
             <h3>Pin básico</h3>
             <br>
             <p>
@@ -40,49 +40,55 @@
 
             <el-collapse v-model="activeNames" @change="handleChange">
               <el-collapse-item title="Ver código">
-                <div class="html_codigos_blue">
-                  &#60;<span tagColor>dm-pin</span>&#62;
+                <div class="html_codigos">
+                  &#60;<span tagColor>template</span>&#62;
+
                   <div class="border-left">
                     <div recuo>
-                      &#60;<span tagColor>dm-pin-backgroun</span>d&#62;
+                      &#60;<span tagColor>dm-pin</span>&#62;
                       <div class="border-left">
                         <div recuo>
-                          &#60;<span tagColor>dm-pin-conteudo</span>&#62;
+                          &#60;<span tagColor>dm-pin-backgroun</span>d&#62;
                           <div class="border-left">
                             <div recuo>
-                              &#60;<span tagColor>h4</span>&#62;<span black>Informação primária</span>&#60;/<span
-                                tagColor>h4</span>&#62;
+                              &#60;<span tagColor>dm-pin-conteudo</span>&#62;
+                              <div class="border-left">
+                                <div recuo>
+                                  &#60;<span tagColor>h4</span>&#62;<span black>Informação primária</span>&#60;/<span
+                                    tagColor>h4</span>&#62;
+                                  <br>
+                                  &#60;<span tagColor>p</span>&#62;<span black>Informação secundária</span>&#60;/<span
+                                    tagColor>p</span>&#62;
+                                </div>
+                              </div>
+                              &#60;/<span tagColor>dm-pin-conteudo</span>&#62;
                               <br>
-                              &#60;<span tagColor>p</span>&#62;<span black>Informação secundária</span>&#60;/<span
-                                tagColor>p</span>&#62;
+                              &#60;<span tagColor>dm-pin-footer</span>&#62;&#60;<span tagColor>dm-pin-arrow</span>
+                              /&#62;&#60;/<span tagColor>dm-pin-footer</span>&#62;
                             </div>
                           </div>
-                          &#60;/<span tagColor>dm-pin-conteudo</span>&#62;
+                          &#60;/<span tagColor>dm-pin-background</span>&#62;
                           <br>
-                          &#60;<span tagColor>dm-pin-footer</span>&#62;&#60;<span tagColor>dm-pin-arrow</span>
-                          /&#62;&#60;/<span tagColor>dm-pin-footer</span>&#62;
+                          &#60;<span tagColor>img</span>
+                          <div class="border-left">
+                            <div recuo>
+                              @<span yellow>mouseover</span>=<span roxo>"pinHover"</span> <br> @<span
+                                yellow>mouseleave</span>=<span roxo>"pinHover"</span> <br> class=<span
+                                roxo>"<span>dm-pi</span>n"</span>
+                              <br>
+                              src=<span roxo>"imagens_design_system/pins/.svg"</span>
+                            </div>
+                          </div>
+                          /&#62;
                         </div>
                       </div>
-                      &#60;/<span tagColor>dm-pin-background</span>&#62;
-                      <br>
-                      &#60;<span tagColor>img</span>
-                      <div class="border-left">
-                        <div recuo>
-                          @<span yellow>mouseover</span>=<span roxo>"pinHover"</span> <br> @<span
-                            yellow>mouseleave</span>=<span roxo>"pinHover"</span> <br> class=<span
-                            roxo>"<span>dm-pi</span>n"</span>
-                          <br>
-                          src=<span roxo>"imagens_design_system/pins/.svg"</span>
-                        </div>
-                      </div>
-                      /&#62;
+                      &#60;/<span tagColor>dm-pin</span>&#62;
                     </div>
                   </div>
-                  &#60;/<span tagColor>dm-pin</span>&#62;
+                  &#60;/<span tagColor>template</span>&#62;
                 </div>
                 <br>
-                <br>
-                <div class="html_codigos_blue">
+                <div class="html_codigos">
                   &#60;<span tagColor>script</span>&#62;
                   <br>
                   <span roxo>export default</span> {
@@ -158,7 +164,7 @@
             </el-collapse>
             <br>
           </div>
-          <div class="container-elementos">
+          <div class="cont-elements">
             <h3>Pin com ícone</h3>
             <br>
             <p>
@@ -285,7 +291,7 @@
 
             </div>
           </div>
-          <div class="container-elementos">
+          <div class="cont-elements">
             <h3>Pin de desempenho</h3>
             <br>
             <p>
@@ -308,7 +314,7 @@
 
           </div>
 
-          <div class="container-elementos">
+          <div class="cont-elements">
             <h3>Ícone de pins</h3>
             <br>
             <p>
@@ -325,7 +331,7 @@
               <img class="pin__icon" src="imagens_design_system/pins/pin__icon--estrela.svg" alt="Pin" />
             </div>
           </div>
-          <div class="container-elementos">
+          <div class="cont-elements">
             <h3>Estados do pin</h3>
             <br>
             <p>
@@ -363,7 +369,7 @@
           </div>
 
 
-          <div class="container-elementos">
+          <div class="cont-elements">
             <h3>Estados do pin</h3>
             <br>
             <p>

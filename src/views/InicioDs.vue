@@ -78,9 +78,8 @@ export default {
     color: var(--dm_creme_00);
     width: 100%;
     padding: 0 60px;
-    margin-top: 75px;
+    margin-top: 14px;
 }
-
 
 .principios__elements {
     z-index: 1;

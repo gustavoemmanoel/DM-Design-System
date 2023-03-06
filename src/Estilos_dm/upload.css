@@ -11,14 +11,22 @@
   height: 130px;
   border-style: dashed;
 }
+
 .el-upload {
   width: 100%;
 }
+
 .el-upload .icon {
   margin-bottom: 10px;
 }
+
 .el-upload__text {
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+
+.dm-upload dm-icon {
+  --dm-icon-size: 30px;
+  margin-bottom: 10px;
 }

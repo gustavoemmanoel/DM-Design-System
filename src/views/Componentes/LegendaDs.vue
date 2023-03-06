@@ -8,16 +8,16 @@
         <div class="containerInterno">
           <div>
             <h1>/Legenda</h1>
-            <hr />
-            <br />
+            <hr>
+            <br>
+          </div>
+          <div class="cont-elements">
             <p>
               A legenda é um quadro que contém os elementos gráficos presentes
               no mapa, representados através de cores, ícones, hachuras, pontos
               e linhas e suas respectivas descrições.
             </p>
-          </div>
-          <br />
-          <div class="container-elementos">
+            <br>
             <el-row>
               <el-col :span="8" class="another" id="blocked">
                 <h5>Exemplo</h5>
@@ -165,8 +165,8 @@
             <br />
 
             <el-collapse v-model="activeNames" @change="handleChange">
-              <el-collapse-item title="Ver código" name="3">
-                <div class="html_codigos_blue">
+              <el-collapse-item title="Ver código">
+                <div class="html_codigos">
                   &#60;<span tagColor>el-collapse</span> class=<span roxo>"legenda-dm"</span>
                   legenda v-model=<span roxo>"activeNames"</span> @change=<span roxo>"handleChange"</span>&#62;
 

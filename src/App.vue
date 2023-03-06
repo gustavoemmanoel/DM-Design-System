@@ -23,7 +23,6 @@ body {
 }
 
 .mg-right-js {
-  padding-right: 16px;
   overflow: hidden;
   margin-left: 256px;
 }
@@ -66,7 +65,7 @@ body {
   border-radius: 6px;
 }
 
-.container-elementos {
+.cont-elements {
   background: var(--dm_creme_01);
   width: 100%;
   border-radius: 6px;
@@ -77,29 +76,19 @@ body {
 .border-left {
   border-width: 0 0 0 1px;
   border-style: solid;
-  /* border-color: var(--dm_cinza_03) ; */
   border-color: rgb(217, 217, 217);
 }
 
-.chaves,
-.html_color_conteudo,
-.html_codigos_blue,
-.html_color_axx {
-  display: inline;
-}
-
-.html_codigos_blue {
+.html_codigos {
   color: var(--dm_cinza_02);
   font-size: 16px;
   line-height: 22px;
 }
 
-.html_color_conteudo,
 [black] {
   color: var(--dm_preto_00);
 }
 
-.html_color_axx,
 [roxo] {
   color: rgb(193, 151, 255);
 }

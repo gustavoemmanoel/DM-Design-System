@@ -8,19 +8,19 @@
         <div class="containerInterno">
           <div>
             <h1>/Dropdown</h1>
-            <hr />
-            <br />
+            <hr>
+            <br>
+          </div>
+          <div class="cont-elements">
             <p>Dropdowns permitem que o usuário escolha uma opção de uma lista em um espaço pré-determinado. A opção
               selecionada fica em destaque.</p>
-          </div>
-          <br />
-          <div class="container-elementos">
+            <br>
             <div class="flex flex-wrap items-center">
               <div style="display: flex; justify-content: space-between; gap: 100px; margin: auto">
-                <el-dropdown>
+                <el-dropdown trigger="click" class="dm-dropdown">
                   <el-button type="dropdown">
                     Dropdown List
-                    <dm_icon baixo />
+                    <dm-icon baixo />
                   </el-button>
                   <template #dropdown>
                     <el-dropdown-menu>
@@ -35,10 +35,10 @@
 
                 <!-- disabled -->
 
-                <el-dropdown>
+                <el-dropdown class="dm-dropdown">
                   <el-button type="dropdown" disabled>
                     Dropdown List
-                    <dm_icon baixo />
+                    <dm-icon baixo />
                   </el-button>
                   <template #dropdown>
                     <el-dropdown-menu>
@@ -53,9 +53,9 @@
               </div>
             </div>
             <el-collapse v-model="activeNames" @change="handleChange">
-              <el-collapse-item title="ver código" name="3">
-                <div class="html_codigos_blue">
-                  &#60;<span tagColor>el-dropdown</span>&#62;
+              <el-collapse-item title="Ver código">
+                <div class="html_codigos">
+                  &#60;<span tagColor>el-dropdown</span> trigger=<span roxo>"click"</span>&#62;
                   <div class="border-left">
                     <div recuo>
                       &#60;<span tagColor>el-button</span> type=<span tagColor>"dropdown"</span>&#62;
@@ -63,7 +63,7 @@
                       <div class="border-left">
                         <div recuo>
                           <span black>Dropdown List</span><br>
-                          &#60;<span tagColor>dm_icon</span> <span roxo>baixo</span>/&#62;
+                          &#60;<span tagColor>dm-icon</span> <span roxo>baixo</span>/&#62;
                         </div>
                       </div>
                       &#60;/<span tagColor>el-button</span>&#62;
@@ -97,7 +97,7 @@
                   &#60;/<span tagColor>el-dropdown</span>&#62;
                   <br>
                 </div>
-                <div class="html_codigos_blue">
+                <div class="html_codigos">
                   <br>
                   <span green>&#60;!-- disabled --&#62;</span>
                   <br>
@@ -110,7 +110,7 @@
                       <div class="border-left">
                         <div recuo>
                           <span black>Dropdown List</span> <br>
-                          &#60;<span tagColor>dm_icon</span> <span roxo>baixo</span>/&#62;
+                          &#60;<span tagColor>dm-icon</span> <span roxo>baixo</span>/&#62;
                         </div>
                       </div>
                       &#60;/<span tagColor>el-button</span>&#62;
@@ -146,6 +146,29 @@
               </el-collapse-item>
             </el-collapse>
           </div>
+          <div class="cont-elements">
+            <h3>Filtros</h3>
+            <br>
+            <p>Filtros permitem aos usuários visualizar conteúdos específicos e encontrar de forma mais rápida o que estão
+              procurando. Nesse caso o dropdown tem dentro da sua caixa de seleção um ou mais checkboxes e botões. Quem
+              segue os padrões já determinados nos componentes anteriores.</p>
+            <br>
+            <div style="display: flex; justify-content: center; width: 100%;"><img width="230" src="dropdown/01.svg">
+            </div>
+          </div>
+
+          <div class="cont-elements">
+            <h3>Placeholder com opção selecionada</h3>
+            <br>
+            <p>Aparece quando o usuário seleciona uma ou mais opções na caixa de seleção.</p>
+            <br>
+            <br>
+            <div style="display: flex; gap: 30px; margin: auto;">
+              <img height="20" src="dropdown/02.svg">
+              <img height="20" src="dropdown/03.svg">
+            </div>
+          </div>
+
         </div>
       </el-main>
     </el-container>

@@ -83,7 +83,6 @@ h6,
 .detail_03,
 .detail_04 {
   font-family: "Roboto", sans-serif;
-  color: #2c2c2c;
   font-weight: 300;
 }
 
@@ -110,7 +109,6 @@ h6,
 .body_04,
 .body_05 {
   font-family: var(--roboto);
-  color: #2c2c2c;
 }
 
 .body_01,

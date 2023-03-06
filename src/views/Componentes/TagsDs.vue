@@ -9,253 +9,202 @@
           <div>
             <h1>/Tags</h1>
             <hr />
-            <br />
+
+          </div>
+          <br />
+          <div class="cont-elements">
             <p>
               As tags primárias são usadas para representar status e
               informações principais. Podem ser usadas para classificar
               usuários, leads e categorias no mapa.
             </p>
-          </div>
-          <br />
-          <div class="container-elementos">
-            <el-row>
-              <el-col :span="12" class="defaultTags">
-                <el-tag>default</el-tag>
-                <!-- <el-tag size="small">small</el-tag> -->
-                <!-- <el-tag size="mini">mini</el-tag> -->
-                <el-tag type="success">success</el-tag>
-                <!-- <el-tag type="success" size="small">small</el-tag> -->
-                <!-- <el-tag type="success" size="mini">mini</el-tag> -->
-                <el-tag type="info">info</el-tag>
-                <!-- <el-tag type="info" size="small">small</el-tag> -->
-                <!-- <el-tag type="info" size="mini">mini</el-tag> -->
-                <el-tag type="warning">warning</el-tag>
-                <!-- <el-tag type="warning" size="small">small</el-tag> -->
-                <!-- <el-tag type="warning" size="mini">mini</el-tag> -->
-                <el-tag type="danger">danger</el-tag>
-                <!-- <el-tag type="danger" size="small">small</el-tag> -->
-                <!-- <el-tag type="danger" size="mini">mini</el-tag> -->
-                <el-tag closable>closable</el-tag>
-                <el-tag type="success" closable>Tag 1</el-tag>
-                <el-tag type="info" closable>Tag 2</el-tag>
-                <el-tag type="warning" closable>Tag 3</el-tag>
-                <el-tag type="danger" closable>Tag 4</el-tag>
-              </el-col>
-            </el-row>
+            <br>
+
+            <div class="defaultTags">
+              <el-tag type="azul">tag 1</el-tag>
+              <el-tag type="lilas">tag 1</el-tag>
+              <el-tag type="rosa">tag 1</el-tag>
+              <el-tag type="verde">tag 1</el-tag>
+              <el-tag type="laranja">tag 1</el-tag>
+              <el-tag type="amarelo">tag 1</el-tag>
+            </div>
+
             <br />
             <el-collapse v-model="activeNames" @change="handleChange">
-              <el-collapse-item title="Ver código" name="3">
-                <span class="html_codigos_blue">
+              <el-collapse-item title="Ver código">
+
+                <span class="html_codigos">
                   <div recuo>
                     <!-- default -->
                     <span green>&#60;!-- default --&#62;</span>
                     <br>
-                    &lt;<span tagColor>el-tag</span>&gt;
-                    <span black>Tag 1</span>&lt;/<span tagColor>el-tag</span>&gt;
+                    &lt;<span tagColor>el-tag</span> type=<span roxo>"azul"</span>&gt;<span black>tag 1</span>&lt;/<span
+                      tagColor>el-tag</span>&gt;
                     <br />
-                    <span>&lt;<span tagColor>el-tag</span> type=<span roxo>"success"</span>&gt;<span
-                        black>success</span>&lt;/<span tagColor>el-tag</span>&gt;</span>
+                    <span>&lt;<span tagColor>el-tag</span> type=<span roxo>"lilas"</span>&gt;<span black>tag
+                        2</span>&lt;/<span tagColor>el-tag</span>&gt;</span>
                     <br />
-                    <span>&lt;<span tagColor>el-tag</span> type=<span roxo>"info"</span>&gt;<span
-                        black>info</span>&lt;/<span tagColor>el-tag</span>&gt;</span>
+                    <span>&lt;<span tagColor>el-tag</span> type=<span roxo>"rosa"</span>&gt;<span black>tag
+                        3</span>&lt;/<span tagColor>el-tag</span>&gt;</span>
                     <br />
-                    <span>&lt;<span tagColor>el-tag</span> type=<span roxo>"warning"</span>&gt;<span
-                        black>warning</span>&lt;/<span tagColor>el-tag</span>&gt;</span>
+                    <span>&lt;<span tagColor>el-tag</span> type=<span roxo>"verde"</span>&gt;<span black>tag
+                        4</span>&lt;/<span tagColor>el-tag</span>&gt;</span>
                     <br />
-                    <span>&lt;<span tagColor>el-tag</span> type=<span roxo>"danger"</span>&gt;<span
-                        black>danger</span>&lt;/<span tagColor>el-tag</span>&gt;</span>
+                    <span>&lt;<span tagColor>el-tag</span> type=<span roxo>"laranja"</span>&gt;<span black>tag
+                        5</span>&lt;/<span tagColor>el-tag</span>&gt;</span>
                     <br />
-                  </div>
-                  <br>
-                  <div recuo>
-                    <!-- closable -->
-                    <span green>&#60;!-- closable --&#62;</span>
+                    <span>&lt;<span tagColor>el-tag</span> type=<span roxo>"amarelo"</span>&gt;<span black>tag
+                        6</span>&lt;/<span tagColor>el-tag</span>&gt;</span>
                     <br />
-                    <span>&lt;<span tagColor>el-tag</span> type=<span roxo>"default"</span><span roxo> closable</span>
-                      &gt;<span black>closable</span>&lt;/<span tagColor>el-tag</span>&gt;</span>
-                    <br />
-                    <span>&lt;<span tagColor>el-tag</span> type=<span roxo>"success"</span><span roxo>
-                        closable</span>&gt;<span black>Tag 1</span>&lt;/<span tagColor>el-tag</span>&gt;</span>
-                    <br />
-                    <span>&lt;<span tagColor>el-tag</span> type=<span roxo>"info"</span><span roxo>
-                        closable</span>&gt;<span black>Tag 2</span>&lt;/<span tagColor>el-tag</span>&gt;</span>
-                    <br />
-                    <span>&lt;<span tagColor>el-tag</span> type=<span roxo>"warning"</span><span roxo>
-                        closable</span>&gt;<span black>Tag 3</span>&lt;/<span tagColor>el-tag</span>&gt;</span>
-                    <br>
-                    <span>&lt;<span tagColor>el-tag</span> type=<span roxo>"danger"</span><span roxo>
-                        closable</span>&gt;<span black>Tag 4</span>&lt;/<span tagColor>el-tag</span>&gt;</span>
                   </div>
                 </span>
+
               </el-collapse-item>
             </el-collapse>
           </div>
-          <div>
-            <h1>/Tags secundárias</h1>
-            <hr />
+          <!-- PLAIN -->
+          <div class="cont-elements">
+            <h3>/Tags secundárias</h3>
             <br />
             <p>
               As tags secundárias são usadas para representar um status e
               informações em segundo plano. Ou uma segunda categoria de
               classificação de um lead.
             </p>
-          </div>
-          <br />
-          <!-- PLAIN -->
-          <div class="container-elementos">
-            <el-row>
-              <el-col :span="12" class="tagsGap">
-                <el-tag effect="plain">default</el-tag>
-                <el-tag effect="plain" size="small">small</el-tag>
-                <el-tag effect="plain" size="mini">mini</el-tag>
-                <el-tag effect="plain" type="success">success</el-tag>
-                <el-tag effect="plain" type="success" size="small">small</el-tag>
-                <el-tag effect="plain" type="success" size="mini">mini</el-tag>
-                <el-tag effect="plain" type="info">info</el-tag>
-                <el-tag effect="plain" type="info" size="small">small</el-tag>
-                <el-tag effect="plain" type="info" size="mini">mini</el-tag>
-                <el-tag effect="plain" type="warning">default</el-tag>
-                <el-tag effect="plain" type="warning" size="small">small</el-tag>
-                <el-tag effect="plain" type="warning" size="mini">mini</el-tag>
-                <el-tag effect="plain" type="danger">danger</el-tag>
-                <el-tag effect="plain" type="danger" size="small">small</el-tag>
-                <el-tag effect="plain" type="danger" size="mini">mini</el-tag>
-              </el-col>
-              <el-col :span="12" class="tagsGap">
-                <el-tag effect="plain" closable>plain</el-tag>
-                <el-tag effect="plain" size="small" closable>small</el-tag>
-                <el-tag effect="plain" size="mini" closable>mini</el-tag>
-                <el-tag effect="plain" type="success" closable>plain</el-tag>
-                <el-tag effect="plain" type="success" size="small" closable>small</el-tag>
-                <el-tag effect="plain" type="success" size="mini" closable>mini</el-tag>
-                <el-tag effect="plain" type="info" closable>plain</el-tag>
-                <el-tag effect="plain" type="info" size="small" closable>small</el-tag>
-                <el-tag effect="plain" type="info" size="mini" closable>mini</el-tag>
-                <el-tag effect="plain" type="warning" closable>plain</el-tag>
-                <el-tag effect="plain" type="warning" size="small" closable>small</el-tag>
-                <el-tag effect="plain" type="warning" size="mini" closable>mini</el-tag>
-                <el-tag effect="plain" type="danger" closable>plain</el-tag>
-                <el-tag effect="plain" type="danger" size="small" closable>small</el-tag>
-                <el-tag effect="plain" type="danger" size="mini" closable>mini</el-tag>
-              </el-col>
-            </el-row>
+            <br>
+
+            <div class="defaultTags">
+              <el-tag effect="plain" type="azul">tag 1</el-tag>
+              <el-tag effect="plain" type="lilas">tag 2</el-tag>
+              <el-tag effect="plain" type="rosa">tag 3</el-tag>
+              <el-tag effect="plain" type="amarelo">tag 4</el-tag>
+              <el-tag effect="plain" type="verde">tag 5</el-tag>
+              <el-tag effect="plain" type="laranja">tag 6</el-tag>
+            </div>
+
             <br />
+
             <el-collapse v-model="activeNames" @change="handleChange">
-              <el-collapse-item title="Ver código" name="3">
-                <span class="html_codigos_blue">
+              <el-collapse-item title="Ver código">
+                <span class="html_codigos">
                   <!-- default -->
                   <span green>&#60;!-- default --&#62;</span>
                   <br />
-                  &#60;<span tagColor>el-tag</span> effect=<span roxo>"plain"</span>&#62;<span
-                    black>default</span>&#60;<span tagColor>/el-tag</span>&#62;
+                  &#60;<span tagColor>el-tag</span> effect=<span roxo>"plain"</span> type=<span
+                    roxo>"azul"</span>&#62;<span black>tag 1</span>&#60;<span tagColor>/el-tag</span>&#62;
                   <!--  -->
                   <br />
-                  &#60;<span tagColor>el-tag</span> effect=<span roxo>"plain"
-                  </span>
-                  size=<span roxo>"small" </span>
-                  <span roxo>closable</span>&#62;<span black>small</span>&#60;<span tagColor>/el-tag</span>&#62;
+                  &#60;<span tagColor>el-tag</span> effect=<span roxo>"plain"</span> type=<span
+                    roxo>"lilas"</span>&#62;<span black>tag 2</span>&#60;<span tagColor>/el-tag</span>&#62;
                   <!--  -->
                   <br />
-                  &#60;<span tagColor>el-tag</span> effect=<span roxo>"plain"
-                  </span>
-                  size=<span roxo>"mini" </span>
-                  <span roxo>closable</span>&#62;<span black>mini</span>&#60;<span tagColor>/el-tag</span>&#62;
-                  <br />
-                  <!-- success -->
-                  <br />
-                  <span green>&#60;!-- success --&#62;</span>
-                  <br />
-                  &#60;<span tagColor>el-tag</span> effect=<span roxo>"plain"
-                  </span>
-                  type=<span roxo>"success" </span>
-                  <span roxo>closable</span>&#62;<span black>default</span>&#60;<span tagColor>/el-tag</span>&#62;
+                  &#60;<span tagColor>el-tag</span> effect=<span roxo>"plain"</span> type=<span
+                    roxo>"rosa"</span>&#62;<span black>tag 3</span>&#60;<span tagColor>/el-tag</span>&#62;
                   <!--  -->
                   <br />
-                  &#60;<span tagColor>el-tag</span> effect=<span roxo>"plain"
-                  </span>
-                  type=<span roxo>"success" </span> size=<span roxo>"small"
-                  </span>
-                  <span roxo>closable</span>&#62;<span black>small</span>&#60;<span tagColor>/el-tag</span>&#62;
+                  &#60;<span tagColor>el-tag</span> effect=<span roxo>"plain"</span> type=<span
+                    roxo>"amarelo"</span>&#62;<span black>tag 4</span>&#60;<span tagColor>/el-tag</span>&#62;
                   <!--  -->
                   <br />
-                  &#60;<span tagColor>el-tag</span> effect=<span roxo>"plain"
-                  </span>
-                  type=<span roxo>"success" </span> size=<span roxo>"mini"
-                  </span>
-                  <span roxo>closable</span>&#62;<span black>mini</span>&#60;<span tagColor>/el-tag</span>&#62;
-                  <br />
-                  <br />
-                  <!-- info -->
-                  <span green>&#60;!-- info --&#62;</span>
-                  <br />
-                  &#60;<span tagColor>el-tag</span> effect=<span roxo>"plain"
-                  </span>
-                  type=<span roxo>"info" </span>
-                  <span roxo>closable</span>&#62;<span black>default</span>&#60;<span tagColor>/el-tag</span>&#62;
+                  &#60;<span tagColor>el-tag</span> effect=<span roxo>"plain"</span> type=<span
+                    roxo>"verde"</span>&#62;<span black>tag 5</span>&#60;<span tagColor>/el-tag</span>&#62;
                   <!--  -->
                   <br />
-                  &#60;<span tagColor>el-tag</span> effect=<span roxo>"plain"
-                  </span>
-                  type=<span roxo>"info" </span> size=<span roxo>"small" </span>
-                  <span roxo>closable</span>&#62;<span black>small</span>&#60;<span tagColor>/el-tag</span>&#62;
-                  <!--  -->
-                  <br />
-                  &#60;<span tagColor>el-tag</span> effect=<span roxo>"plain"
-                  </span>
-                  type=<span roxo>"info" </span> size=<span roxo>"mini" </span>
-                  <span roxo>closable</span>&#62;<span black>mini</span>&#60;<span tagColor>/el-tag</span>&#62;
-                  <br />
-                  <!-- danger -->
-                  <br />
-                  <span green>&#60;!-- danger --&#62;</span>
-                  <br />
-                  &#60;<span tagColor>el-tag</span> effect=<span roxo>"plain"
-                  </span>
-                  type=<span roxo>"danger" </span>
-                  <span roxo>closable</span>&#62;<span black>default</span>&#60;<span tagColor>/el-tag</span>&#62;
-                  <!--  -->
-                  <br />
-                  &#60;<span tagColor>el-tag</span> effect=<span roxo>"plain"
-                  </span>
-                  type=<span roxo>"danger" </span> size=<span roxo>"small"
-                  </span>
-                  <span roxo>closable</span>&#62;<span black>small</span>&#60;<span tagColor>/el-tag</span>&#62;
-                  <!--  -->
-                  <br />
-                  &#60;<span tagColor>el-tag</span> effect=<span roxo>"plain"
-                  </span>
-                  type=<span roxo>"danger" </span> size=<span roxo>"mini"
-                  </span>
-                  <span roxo>closable</span>&#62;<span black>mini</span>
-                  <br />
-                  &#60;<span tagColor>/el-tag</span>&#62;
-                  <br />
-                  <!-- warning -->
-                  <br />
-                  <span green>&#60;!-- warning --&#62;</span>
-                  <br />
-                  &#60;<span tagColor>el-tag</span> effect=<span roxo>"plain"
-                  </span>
-                  type=<span roxo>"warning" </span>
-                  <span roxo>closable</span>&#62;<span black>default</span>&#60;<span tagColor>/el-tag</span>&#62;
-                  <!--  -->
-                  <br />
-                  &#60;<span tagColor>el-tag</span> effect=<span roxo>"plain"
-                  </span>
-                  type=<span roxo>"warning" </span> size=<span roxo>"small"
-                  </span>
-                  <span roxo>closable</span>&#62;<span black>smaill</span>&#60;<span tagColor>/el-tag</span>&#62;
-                  <!--  -->
-                  <br />
-                  &#60;<span tagColor>el-tag</span> effect=<span roxo>"plain"
-                  </span>
-                  type=<span roxo>"warning" </span> size=<span roxo>"mini"
-                  </span>
-                  <span roxo>closable</span>&#62;<span black>mini</span>&#60;<span tagColor>/el-tag</span>&#62;
+                  &#60;<span tagColor>el-tag</span> effect=<span roxo>"plain"</span> type=<span
+                    roxo>"laranja"</span>&#62;<span black>tag 6</span>&#60;<span tagColor>/el-tag</span>&#62;
+
                 </span>
               </el-collapse-item>
             </el-collapse>
           </div>
+
+          <div class="cont-elements">
+            <h3>Tags com ícones</h3>
+            <br>
+            <p>Podemos adicionar ícones nas tags em uma seleção de filtragem que mais de uma tag foi selecionada. Nesse
+              caso pode-se escolher tirar a seleção de cada uma individualmente.</p>
+            <br>
+            <el-row class="defaultTags">
+              <el-tag type="azul" closable>tag 1</el-tag>
+              <el-tag type="lilas" closable>tag 1</el-tag>
+              <el-tag type="rosa" closable>tag 1</el-tag>
+              <el-tag type="verde" closable>tag 1</el-tag>
+              <el-tag type="laranja" closable>tag 1</el-tag>
+              <el-tag type="amarelo" closable>tag 1</el-tag>
+            </el-row>
+            <br>
+            <el-row class="defaultTags">
+              <el-tag effect="plain" type="azul" closable>tag 1</el-tag>
+              <el-tag effect="plain" type="lilas" closable>tag 1</el-tag>
+              <el-tag effect="plain" type="rosa" closable>tag 1</el-tag>
+              <el-tag effect="plain" type="verde" closable>tag 1</el-tag>
+              <el-tag effect="plain" type="laranja" closable>tag 1</el-tag>
+              <el-tag effect="plain" type="amarelo" closable>tag 1</el-tag>
+            </el-row>
+            <br>
+
+            <el-collapse v-model="activeNames" @change="handleChange">
+              <el-collapse-item title="Ver código">
+                <span class="html_codigos">
+                  <!-- default closable -->
+
+                  <span green>&#60;!-- default --&#62;</span>
+                  <br />
+                  &#60;<span tagColor>el-tag</span> type=<span roxo>"azul"</span> closable&#62;<span black>tag 1</span>&#60;<span tagColor>/el-tag</span>&#62;
+                  <!--  -->
+                  <br />
+                  &#60;<span tagColor>el-tag</span> type=<span roxo>"lilas"</span> closable&#62;<span black>tag 2</span>&#60;<span tagColor>/el-tag</span>&#62;
+                  <!--  -->
+                  <br />
+                  &#60;<span tagColor>el-tag</span> type=<span roxo>"rosa"</span> closable&#62;<span black>tag 3</span>&#60;<span tagColor>/el-tag</span>&#62;
+                  <!--  -->
+                  <br />
+                  &#60;<span tagColor>el-tag</span> type=<span roxo>"amarelo"</span> closable&#62;<span black>tag 4</span>&#60;<span tagColor>/el-tag</span>&#62;
+                  <!--  -->
+                  <br />
+                  &#60;<span tagColor>el-tag</span> type=<span roxo>"verde"</span> closable&#62;<span black>tag 5</span>&#60;<span tagColor>/el-tag</span>&#62;
+                  <!--  -->
+                  <br />
+                  &#60;<span tagColor>el-tag</span> type=<span roxo>"laranja"</span> closable&#62;<span black>tag 6</span>&#60;<span tagColor>/el-tag</span>&#62;
+
+                  <br>
+                  <br />
+                  <!-- plain closable -->
+                  <span green>&#60;!-- plain --&#62;</span>
+                  <br />
+                  <!--  -->
+                  &#60;<span tagColor>el-tag</span> effect=<span roxo>"plain"</span> type=<span roxo>"azul"</span>
+                  closable&#62;<span black>tag 1</span>&#60;<span tagColor>/el-tag</span>&#62;
+                  <!--  -->
+                  <br />
+                  &#60;<span tagColor>el-tag</span> effect=<span roxo>"plain"</span> type=<span roxo>"lilas"</span>
+                  closable&#62;<span black>tag 2</span>&#60;<span tagColor>/el-tag</span>&#62;
+                  <!--  -->
+                  <br />
+                  &#60;<span tagColor>el-tag</span> effect=<span roxo>"plain"</span> type=<span roxo>"rosa"</span>
+                  closable&#62;<span black>tag 3</span>&#60;<span tagColor>/el-tag</span>&#62;
+                  <!--  -->
+                  <br />
+                  &#60;<span tagColor>el-tag</span> effect=<span roxo>"plain"</span> type=<span roxo>"amarelo"</span>
+                  closable&#62;<span black>tag 4</span>&#60;<span tagColor>/el-tag</span>&#62;
+                  <!--  -->
+                  <br />
+                  &#60;<span tagColor>el-tag</span> effect=<span roxo>"plain"</span> type=<span roxo>"verde"</span>
+                  closable&#62;<span black>tag 5</span>&#60;<span tagColor>/el-tag</span>&#62;
+                  <!--  -->
+                  <br />
+                  &#60;<span tagColor>el-tag</span> effect=<span roxo>"plain"</span> type=<span roxo>"laranja"</span>
+                  closable&#62;<span black>tag 6</span>&#60;<span tagColor>/el-tag</span>&#62;
+
+
+
+                </span>
+
+              </el-collapse-item>
+            </el-collapse>
+
+          </div>
+
           <br />
           <br />
         </el-main>
@@ -273,7 +222,7 @@ export default {
   data() {
     return {
       items: [
-        { type: "", label: "Tag 1" },
+        { type: "", label: "tag 1" },
         { type: "success", label: "Tag 2" },
         { type: "info", label: "Tag 3" },
         { type: "warning", label: "Tag 4" },
@@ -287,9 +236,7 @@ export default {
 
 <style>
 .defaultTags {
-  display: grid;
-  grid-template-columns: max-content max-content max-content max-content max-content;
-  align-items: center;
+  display: flex;
   gap: 10px;
 }
 

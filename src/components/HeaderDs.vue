@@ -19,7 +19,7 @@
 <script>
 export default {
   name: "HeaderDs",
-
+  props: { headerTitle: String, }
 };
 </script>
 

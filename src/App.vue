@@ -10,10 +10,6 @@ import AsideComponent from './components/AsideComponent.vue';
 export default {
   components: { AsideComponent },
   name: "app",
-  
-  mounted() {
-  
-  }
 };
 </script>
 

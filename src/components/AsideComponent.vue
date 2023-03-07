@@ -60,6 +60,7 @@ export default {
   name: "AsideComponent",
   props: {
     btnAtivo: String,
+
   },
   mounted() {
 

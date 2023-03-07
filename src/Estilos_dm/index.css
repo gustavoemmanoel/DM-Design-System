@@ -14,7 +14,7 @@ body {
 *::-webkit-scrollbar {
   width: 16px;
   position: fixed;
-  margin: 0px;
+  margin: 0;
   padding: 0;
 }
 

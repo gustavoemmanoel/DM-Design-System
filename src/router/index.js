@@ -33,6 +33,7 @@ import BotaoDs from "../views/Componentes/BotaoDs.vue";
 import SobreDs from "../views/Componentes/SobreDs.vue";
 import UploadDs from "../views/Componentes/UploadDs.vue";
 import LegendaDs from "../views/Componentes/LegendaDs.vue";
+import GraficoDs from "../views/Componentes/GraficoDs.vue";
 
 /* Outros */
 import PreProcessamentos from "../views/PreProcessamentos.vue";
@@ -153,6 +154,11 @@ const routes = [
     path: "/Tabelas",
     name: "TabelasDs",
     component: TabelasDs,
+  },
+  {
+    path: "/Graficos",
+    name: "GraficoDs",
+    component: GraficoDs,
   },
   {
     path: "/Tags",

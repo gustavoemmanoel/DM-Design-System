@@ -22,11 +22,11 @@
                 <td>Exemplo</td>
               </tr>
               <tr v-for="(classH, index) in tableContent.row" :key="index">
-                <td :class="classH.token" style="width: 140px">{{ classH.categoria }}</td>
-                <td>{{ classH.roboto }}</td>
-                <td>{{ classH.peso }}</td>
-                <td>{{ classH.pixel }}</td>
-                <td>{{ classH.token }}</td>
+                <td :class="classH.token"  width="140">{{ classH.categoria }}</td>
+                <td width="124">{{ classH.roboto }}</td>
+                <td width="124">{{ classH.peso }}</td>
+                <td width="124">{{ classH.pixel }}</td>
+                <td width="124">{{ classH.token }}</td>
                 <td :class="classH.token">{{ classH.exemplo }}</td>
               </tr>
             </table>

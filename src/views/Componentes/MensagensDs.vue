@@ -17,13 +17,13 @@
           </div>
           <br />
 
-          <h3>Erro</h3>
-          <p>A mensagem de erro é uma resposta inesperada a uma ação executada pelo usuário e pode causar frustração.
-            Por isso, precisa ser relevante, útil e clara. O usuário deve ser informado sobre o que aconteceu e
-            orientado sobre como resolver. </p>
-          <br />
 
           <div class="cont-elements">
+            <h3>Erro</h3>
+            <p>A mensagem de erro é uma resposta inesperada a uma ação executada pelo usuário e pode causar frustração.
+              Por isso, precisa ser relevante, útil e clara. O usuário deve ser informado sobre o que aconteceu e
+              orientado sobre como resolver. </p>
+            <br />
             <h6>Em caixas de texto obrigatória:</h6>
             <br>
             <p>Quando é obrigatório preencher um campo para seguir com a ação ou quando o formato da informação é
@@ -333,7 +333,7 @@
             <div style="display: flex; gap: 20px;">
               <!-- Vitrine -->
               <dm-popup-background>
-                <dm-icon alerta />
+                <dm-icon Alert />
                 <p>Erro ao carregar a edição de Rotas 01.</p>
                 <p class="detail_01">A nova rota escolhida para NF ficará acima da capacidade e/ou confira sua conexão.
                 </p>
@@ -348,7 +348,7 @@
               <span>
                 <dm-popup @click="popup" popup="close">
                   <dm-popup-background>
-                    <dm-icon alerta />
+                    <dm-icon Alert />
                     <p>Erro ao carregar a edição de Rotas 01.</p>
                     <p class="detail_01">A nova rota escolhida para NF ficará acima da capacidade e/ou confira sua
                       conexão.
@@ -382,7 +382,7 @@
                               &#60;<span tagColor>dm-popup-background</span>&#62;
                               <div class="border-left">
                                 <div recuo>
-                                  &#60;<span tagColor>dm-icon</span> <span roxo>alerta</span> /&#62;<br>
+                                  &#60;<span tagColor>dm-icon</span> <span roxo>Alert</span> /&#62;<br>
                                   &#60;<span tagColor>p</span>&#62;<span black>Erro ao carregar a edição de Rotas 01.
 
                                   </span>&#60;/<span tagColor>p</span>&#62;<br>
@@ -494,12 +494,18 @@
                           <span yellow>popup</span>(event) {
                           <div class="border-left">
                             <div recuo>
-                              <span green>//ABRE POPUP CLICADO</span>
+                              <span green>//ABRE POPUP CLICADO</span> <br>
+
+                              <span blue>const $body</span> = document.<span yellow>querySelector</span>(<span
+                                brown>'body'</span>)
                               <br>
                               <span roxo>if</span> (<span blue>this</span>.upPopup === <span blue>false</span>) {
                               <div class="border-left">
                                 <div recuo>
-                                  <span blue>this</span>.idPopup = event.target.getAttribute('popupbutton')<br>
+                                  <span blue>this</span>.idPopup = event.target.getAttribute(<span
+                                    brown>'popupbutton'</span>)<br>
+                                  <span blue>$body</span>.style.overflow = <span brown>'hidden'</span>
+                                  <br>
                                   <span blue>this</span>.upPopup = <span blue>!this</span>.upPopup <br>
                                   document.<span yellow>querySelector</span>(`[popupid="${<span
                                     blue>this</span>.idPopup}"]`).style.display = <span brown>'flex'</span>
@@ -513,6 +519,7 @@
                               {
                               <div class="border-left">
                                 <div recuo>
+                                  <span blue>$body</span>.style.overflow = <span brown>'auto'</span> <br>
                                   <span blue>this</span>.upPopup = <span blue>!this</span>.upPopup<br>
                                   document.<span yellow>querySelector</span>(`[popupid="${<span
                                     blue>this</span>.idPopup}"]`).style.display = <span brown>'none'</span>
@@ -531,55 +538,13 @@
                   <br>
                   &#60;/<span tagColor>script</span>&#62;
                 </div>
-
-
               </el-collapse-item>
             </el-collapse>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
           </div>
-          <h3>Aviso</h3>
-          <br>
           <div class="cont-elements">
-
+            <h3>Aviso</h3>
+            <br>
             <p>A mensagem de aviso comunica ao usuário uma informação importante, mas não impede nenhuma ação do
               usuário.
               É exibida na parte superior da tela.</p>
@@ -587,20 +552,16 @@
             <img class="imagemExemplo" src="mensagens/alert_01.jpg">
             <br>
             <br>
-
-
-
-
             <dm-alert v-if="alertDm">
               <dm-alert-container>
-                <dm-icon alerta />
+                <dm-icon Alert />
                 <span>
                   <dm-atencao>Atenção!</dm-atencao> Trânsito lento na Marginal Tietê. Possibilidade de atraso na
                   previsão
                   das entregas.
                 </span>
                 <button>
-                  <dm-icon close @click="upAlert" />
+                  <dm-icon Close @click="upAlert" />
                 </button>
               </dm-alert-container>
             </dm-alert>
@@ -609,14 +570,14 @@
             <br>
             <br>
             <dm-alert-container>
-              <dm-icon alerta />
+              <dm-icon Alert />
               <span>
                 <dm-atencao>Atenção!</dm-atencao> Trânsito lento na Marginal Tietê. Possibilidade de atraso na
                 previsão
                 das entregas.
               </span>
               <button>
-                <dm-icon close />
+                <dm-icon Close />
               </button>
             </dm-alert-container>
 
@@ -633,7 +594,7 @@
                           &#60;<span tagColor>dm-alert-container</span>&#62;<br>
                           <div class="border-left">
                             <div recuo>
-                              &#60;<span tagColor>dm-icon </span><span roxo>alerta</span> /&#62; <br>
+                              &#60;<span tagColor>dm-icon </span><span roxo>Alert</span> /&#62; <br>
                               &#60;<span tagColor>span</span>&#62;
                               <div class="border-left">
                                 <div recuo>
@@ -649,7 +610,7 @@
                               &#60;/<span tagColor>span</span>&#62;
                               <br>
                               &#60;<span tagColor>button</span>&#62;<br>
-                              &#60;<span tagColor>dm-icon</span> <span roxo>close</span> @click=<span
+                              &#60;<span tagColor>dm-icon</span> <span roxo>Close</span> @click=<span
                                 roxo>"upAlert"</span>
                               /&#62;<br>
                               &#60;/<span tagColor>button</span>&#62;<br>
@@ -739,9 +700,9 @@
               </el-collapse-item>
             </el-collapse>
           </div>
-          <h3>Alerta</h3>
-          <br>
           <div class="cont-elements">
+            <h3>Alerta</h3>
+            <br>
             <p>A mensagem de alerta bloqueia a tela em razão da sensibilidade quanto a uma possível perda de informação
               e documentação. Ela também solicita a confirmação da escolha de uma ação do usuário e exibe o aviso de
               confirmação, ou não, da execução da ação.
@@ -754,7 +715,7 @@
             <div style="display: flex; gap: 20px;">
 
               <dm-popup-background>
-                <dm-icon alerta />
+                <dm-icon Alert />
                 <p>Você tem acerteza de que quer apagar este romaneio?</p>
                 <p class="detail_01">Não será possível visualizar ou recuperar o romaneio.</p>
                 <el-row>
@@ -765,7 +726,7 @@
 
               <dm-popup @click="popup" popup="close">
                 <dm-popup-background>
-                  <dm-icon alerta />
+                  <dm-icon Alert />
                   <p>Você tem acerteza de que quer apagar este romaneio?</p>
                   <p class="detail_01">Não será possível visualizar ou recuperar o romaneio.</p>
                   <el-row>
@@ -794,7 +755,7 @@
                           &#60;<span tagColor>dm-popup-background</span>&#62;
                           <div class="border-left">
                             <div recuo>
-                              &#60;<span tagColor>dm-icon</span> <span roxo>alerta</span> /&#62;<br>
+                              &#60;<span tagColor>dm-icon</span> <span roxo>Alert</span> /&#62;<br>
                               &#60;<span tagColor>p</span>&#62;<span black>Você tem acerteza de que quer apagar este
                                 romaneio?</span>&#60;/<span tagColor>p</span>&#62;<br>
                               &#60;<span tagColor>p</span> class=<span roxo>"detail_01"</span>&#62;<span black>Não será
@@ -906,9 +867,13 @@
                             <div recuo>
                               <span green>//ABRE POPUP CLICADO</span>
                               <br>
+                              <span blue>const $body</span> = document.<span yellow>querySelector</span>(<span
+                                brown>'body'</span>)
+                              <br>
                               <span roxo>if</span> (<span blue>this</span>.upPopup === <span blue>false</span>) {
                               <div class="border-left">
                                 <div recuo>
+                                  <span blue>$body</span>.style.overflow = <span brown>'hidden'</span> <br>
                                   <span blue>this</span>.idPopup = event.target.getAttribute('popupbutton')<br>
                                   <span blue>this</span>.upPopup = <span blue>!this</span>.upPopup <br>
                                   document.<span yellow>querySelector</span>(`[popupid="${<span
@@ -923,6 +888,7 @@
                               {
                               <div class="border-left">
                                 <div recuo>
+                                  <span blue>$body</span>.style.overflow = <span brown>'auto'</span> <br>
                                   <span blue>this</span>.upPopup = <span blue>!this</span>.upPopup<br>
                                   document.<span yellow>querySelector</span>(`[popupid="${<span
                                     blue>this</span>.idPopup}"]`).style.display = <span brown>'none'</span>
@@ -953,7 +919,7 @@
             <div style="display: flex; gap: 20px;">
 
               <dm-popup-background>
-                <dm-icon correta />
+                <dm-icon Correct />
                 <p>Rotas e romaneios remanejados com sucesso!</p>
                 <el-row>
                   <dm-button class="el-button el-button--primario" popup="close">Ok</dm-button>
@@ -964,7 +930,7 @@
 
               <dm-popup @click="popup" popup="close">
                 <dm-popup-background>
-                  <dm-icon correta />
+                  <dm-icon Correct />
                   <p>Rotas e romaneios remanejados com sucesso!</p>
                   <el-row>
                     <dm-button class="el-button el-button--primario" popup="close">Ok</dm-button>
@@ -988,7 +954,7 @@
                           &#60;<span tagColor>dm-popup-background</span>&#62;
                           <div class="border-left">
                             <div recuo>
-                              &#60;<span tagColor>dm-icon</span> <span roxo>correta</span> /&#62;<br>
+                              &#60;<span tagColor>dm-icon</span> <span roxo>Correct</span> /&#62;<br>
                               &#60;<span tagColor>p</span>&#62;<span black>Rotas e romaneios remanejados com
                                 sucesso!</span>&#60;/<span tagColor>p</span>&#62;<br>
                               <br>
@@ -1071,7 +1037,7 @@
                               <span blue>const</span> <span blue2>$arraysButtons</span> = document.<span
                                 yellow>querySelectorAll</span>(<span brown>'dm-button-popup'</span>)<br>
                               <span roxo>for</span> (let <span blue2>i</span> = <span green>0</span>; $arrayPopups.length
-                              >
+                              &#62;
                               <span blue2>i</span>; <span blue2>i</span>++) {
                               <div class="border-left">
                                 <div recuo>
@@ -1090,12 +1056,18 @@
                           <span yellow>popup</span>(event) {
                           <div class="border-left">
                             <div recuo>
-                              <span green>//ABRE POPUP CLICADO</span>
+                              <span green>//ABRE POPUP CLICADO</span> <br>
+
+                              <span blue>const $body</span> = document.<span yellow>querySelector</span>(<span
+                                brown>'body'</span>)
                               <br>
                               <span roxo>if</span> (<span blue>this</span>.upPopup === <span blue>false</span>) {
                               <div class="border-left">
                                 <div recuo>
-                                  <span blue>this</span>.idPopup = event.target.getAttribute('popupbutton')<br>
+                                  <span blue>this</span>.idPopup = event.target.getAttribute(<span
+                                    brown>'popupbutton'</span>)<br>
+                                  <span blue>$body</span>.style.overflow = <span brown>'hidden'</span>
+                                  <br>
                                   <span blue>this</span>.upPopup = <span blue>!this</span>.upPopup <br>
                                   document.<span yellow>querySelector</span>(`[popupid="${<span
                                     blue>this</span>.idPopup}"]`).style.display = <span brown>'flex'</span>
@@ -1109,6 +1081,7 @@
                               {
                               <div class="border-left">
                                 <div recuo>
+                                  <span blue>$body</span>.style.overflow = <span brown>'auto'</span> <br>
                                   <span blue>this</span>.upPopup = <span blue>!this</span>.upPopup<br>
                                   document.<span yellow>querySelector</span>(`[popupid="${<span
                                     blue>this</span>.idPopup}"]`).style.display = <span brown>'none'</span>
@@ -1152,7 +1125,7 @@
                   &#60;<span tagColor>dm-information</span>&#62;
                   <div class="border-left">
                     <div recuo>
-                      &#60;<span tagColor>dm-icon</span> <span roxo>sugestao</span> /&#62;<br>
+                      &#60;<span tagColor>dm-icon</span> <span roxo>Lamp</span> /&#62;<br>
                       &#60;<span tagColor>span</span>&#62;
                       <br>
                       &#60;<span tagColor>p</span>&#62;
@@ -1244,10 +1217,6 @@ export default {
       headerTitle: "Mensagens",
     };
   },
-
-
-
-
   mounted() {
     this.indexadorPopus()
   },
@@ -1274,13 +1243,16 @@ export default {
     },
     popup(event) {
       //ABRE POPUP CLICADO
+      const $body = document.querySelector('body')
       if (this.upPopup === false) {
         this.idPopup = event.target.getAttribute('popupbutton')
+        $body.style.overflow = 'hidden'
         this.upPopup = !this.upPopup
         document.querySelector(`[popupid="${this.idPopup}"]`).style.display = 'flex'
       }
       //COMPARA OS OBJETOS CLICADOS QUE PODEM FECHAR O POPUP
       else if (event.target.getAttribute('popup') == 'close') {
+        $body.style.overflow = 'auto'
         this.upPopup = !this.upPopup
         document.querySelector(`[popupid="${this.idPopup}"]`).style.display = 'none'
       }
@@ -1309,4 +1281,5 @@ export default {
 .imagemExemplo {
   width: 100%;
   border-radius: 6px;
-}</style>
+}
+</style>

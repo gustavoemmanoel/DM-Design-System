@@ -1,6 +1,6 @@
 <template>
   <div>
-    <AsideComponent/>
+    <AsideComponent />
     <router-view class="mg-right-js" />
   </div>
 </template>
@@ -10,6 +10,10 @@ import AsideComponent from './components/AsideComponent.vue';
 export default {
   components: { AsideComponent },
   name: "app",
+  
+  mounted() {
+  
+  }
 };
 </script>
 
@@ -26,7 +30,6 @@ body {
   overflow: hidden;
   margin-left: 256px;
 }
-
 
 .flex {
   display: flex;

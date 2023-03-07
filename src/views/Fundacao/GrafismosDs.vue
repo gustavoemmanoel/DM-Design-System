@@ -52,6 +52,7 @@
         <br>
         <div class="cont-elements">
           <h3>Como utilizar:</h3>
+          <br>
           <img class="grid__img" src="grafismos/01.svg" />
           <br>
           <br>

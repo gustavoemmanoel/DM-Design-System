@@ -171,6 +171,10 @@
         <div class="cont-elements">
           <h3>Bloqueio de tela</h3>
           <br>
+          <p>Loadings que bloqueiam a tela são necessários quando o sistema não quer que o usuário execute outras
+            operações em segundo plano. O popup de loading exibe um texto que descreve a operação, uma barra de progresso,
+            a porcentagem executada do processo e em alguns casos, o tempo estimado para sua conclusão.</p>
+          <br>
           <div class="cont--el-progress">
 
             <!-- Vitrine loading -->
@@ -319,6 +323,20 @@
             </el-collapse-item>
           </el-collapse>
         </div>
+        <div class="cont-elements">
+          <h3>Segundo plano</h3>
+          <br>
+          <p>O loading em segundo plano acontece quando não é necessário bloquear a tela e o usuário pode continuar usando
+            a platafoma enquanto o sistema processa a operação. Este loading não mostra o tempo para a conclusão e a
+            porcentagem do progresso, no entanto mais detalhes aparecem no hover.</p>
+          <br>
+          <el-collapse v-model="activeNames" @change="handleChange">
+            <el-collapse-item title="Ver código">
+              ...
+            </el-collapse-item>
+          </el-collapse>
+        </div>
+
       </el-main>
     </el-container>
   </el-container>
@@ -345,8 +363,6 @@ export default {
       percentage3: 75,
       color4: "var(--dm_verde_00)",
       percentage4: 100,
-
-
     };
   },
   methods: {
@@ -371,7 +387,6 @@ export default {
         this.showLoading = !this.showLoading
       }
     },
-
     decrease() {
       this.percentage -= 10;
       if (this.percentage < 0) {

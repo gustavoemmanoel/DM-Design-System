@@ -14,8 +14,6 @@
               <br>
             </div>
             <div class="cont-elements">
-              <p>Upload</p>
-              <br>
               <el-upload class="upload-demo dm-upload" drag
                 action="https://run.mocky.io/v3/9d059bf9-4660-45f2-925d-ce80ad6c4d15" multiple>
                 <div class="el-upload__text">

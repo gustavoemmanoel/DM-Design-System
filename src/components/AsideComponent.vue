@@ -1,25 +1,25 @@
 <template>
-  <div class="side-bar" @click="markPage">
+  <div class="side-bar" @click="changeTagPage">
 
     <img class="logo-dm" src="/logo.svg" />
     <div class="options">
-      <div class="component-tag" id="TagSelected">Princípios</div>
-      <router-link to="/" id="tagPage">Início</router-link>
-      <router-link to="Principios">Princípios</router-link>
+      <div class="component-tag">Princípios</div>
+      <router-link pagename="" to="/">Início</router-link>
+      <router-link pagename="Principios" to="Principios">Princípios</router-link>
     </div>
     <!-- Princípios -->
     <div class="options">
       <div class="component-tag">Instalação</div>
-      <router-link to="Instalacao">Instalação</router-link>
+      <router-link pagename="Instalacao" to="Instalacao">Instalação</router-link>
     </div>
     <!-- Fundação -->
     <div class="options">
       <div class="component-tag">Fundação</div>
-      <router-link to="Colors">Cores</router-link>
-      <router-link to="Tipografia"> Tipografia </router-link>
-      <router-link to="Iconografia"> Iconografia </router-link>
-      <router-link to="Grafismos"> Grafismos </router-link>
-      <router-link to="Grid"> Grid </router-link>
+      <router-link pagename="Colors" to="Colors">Cores</router-link>
+      <router-link pagename="Tipografia" to="Tipografia"> Tipografia </router-link>
+      <router-link pagename="Iconografia" to="Iconografia"> Iconografia </router-link>
+      <router-link pagename="Grafismos" to="Grafismos"> Grafismos </router-link>
+      <router-link pagename="Grid" to="Grid"> Grid </router-link>
     </div>
 
     <!-- Telas -->
@@ -31,20 +31,21 @@
     <!-- Componentes -->
     <div class="options">
       <div class="component-tag">Componentes</div>
-      <router-link to="Header">Header</router-link>
-      <router-link to="Botao">Botão</router-link>
-      <router-link to="CampoTexto">Campo de Texto</router-link>
-      <router-link to="Upload">Upload</router-link>
-      <router-link to="Calendario">Calendário</router-link>
-      <router-link to="Cards">Cards</router-link>
-      <router-link to="Checkbox">Checkbox</router-link>
-      <router-link to="Dropdown">Dropdown</router-link>
-      <router-link to="Loading">Loading</router-link>
-      <router-link to="Mensagens">Mensagens</router-link>
-      <router-link to="Pins">Pins</router-link>
-      <router-link to="Tabelas">Tabelas</router-link>
-      <router-link to="Tags">Tags</router-link>
-      <router-link to="Legenda">Legenda</router-link>
+      <router-link pagename="Header" to="Header">Header</router-link>
+      <router-link pagename="Botao" to="Botao">Botão</router-link>
+      <router-link pagename="CampoTexto" to="CampoTexto">Campo de Texto</router-link>
+      <router-link pagename="Dropdown" to="Dropdown">Dropdown</router-link>
+      <router-link pagename="Calendario" to="Calendario">Calendário</router-link>
+      <router-link pagename="Tags" to="Tags">Tags</router-link>
+      <router-link pagename="Checkbox" to="Checkbox">Checkbox</router-link>
+      <router-link pagename="Loading" to="Loading">Loading</router-link>
+      <router-link pagename="Cards" to="Cards">Cards</router-link>
+      <router-link pagename="Mensagens" to="Mensagens">Mensagens</router-link>
+      <router-link pagename="Tabelas" to="Tabelas">Tabelas</router-link>
+      <router-link pagename="Graficos" to="Graficos">Gráficos</router-link>
+      <router-link pagename="Pins" to="Pins">Pins</router-link>
+      <router-link pagename="Legenda" to="Legenda">Legenda</router-link>
+      <router-link pagename="Upload" to="Upload">Upload</router-link>
     </div>
     <div class="options">
       <div class="component-tag">Sobre</div>
@@ -60,25 +61,38 @@ export default {
   props: {
     btnAtivo: String,
   },
+  mounted() {
 
-
+    this.pageLink()
+  },
   methods: {
-    markPage(event) {
-      console.log(window.location.href)
+    pageLink() {
 
+      const elementsArray = document.querySelectorAll('[pagename]')
+      const nameURL = window.location.href.split('/#/')[1]
 
-      if (event.target.tagName === 'A') {
-        document.getElementById('tagPage').removeAttribute('id')
-        document.getElementById('TagSelected').removeAttribute('id')
+      for (let i = 0; i < elementsArray.length; i++) {
+        const pageList = elementsArray[i].getAttribute('pagename')
 
-
-        event.target.setAttribute('id', 'tagPage')
-        document.getElementById('tagPage').parentNode.children[0].setAttribute('id', 'TagSelected')
-
-
+        if (pageList == nameURL) {
+          elementsArray[i].setAttribute('id', 'tagPage')
+          elementsArray[i].parentNode.childNodes[0].setAttribute('id', 'TagSelected')
+        }
       }
     },
 
+    changeTagPage(event) {
+
+      const tag = event.target
+      if (tag.tagName === 'A') {
+
+        document.getElementById('tagPage').parentNode.childNodes[0].removeAttribute('id')
+        document.getElementById('tagPage').removeAttribute('id')
+
+        tag.setAttribute('id', 'tagPage')
+        document.getElementById('tagPage').parentNode.childNodes[0].setAttribute('id', 'TagSelected')
+      }
+    }
   }
 };
 </script>
@@ -87,6 +101,7 @@ export default {
   background: var(--dm_azul_00);
   color: var(--dm_creme_02);
   padding: 0 10px;
+  transform: translatex(-24px);
 }
 
 #tagPage {

@@ -13,6 +13,8 @@
           <br />
 
           <div class="cont-elements">
+            <h3>Icones pretos</h3>
+            <br>
             <p>
               Dentro desta sessão, poderão ser encontrados todos os ícones
               presentes em nossos painéis, assim como regras de utilização.

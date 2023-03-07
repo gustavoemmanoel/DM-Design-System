@@ -333,7 +333,7 @@
             <div style="display: flex; gap: 20px;">
               <!-- Vitrine -->
               <dm-popup-background>
-                <dm-icon Alert />
+                <dm-icon AlertRed />
                 <p>Erro ao carregar a edição de Rotas 01.</p>
                 <p class="detail_01">A nova rota escolhida para NF ficará acima da capacidade e/ou confira sua conexão.
                 </p>
@@ -348,7 +348,7 @@
               <span>
                 <dm-popup @click="popup" popup="close">
                   <dm-popup-background>
-                    <dm-icon Alert />
+                    <dm-icon AlertRed />
                     <p>Erro ao carregar a edição de Rotas 01.</p>
                     <p class="detail_01">A nova rota escolhida para NF ficará acima da capacidade e/ou confira sua
                       conexão.
@@ -382,7 +382,7 @@
                               &#60;<span tagColor>dm-popup-background</span>&#62;
                               <div class="border-left">
                                 <div recuo>
-                                  &#60;<span tagColor>dm-icon</span> <span roxo>Alert</span> /&#62;<br>
+                                  &#60;<span tagColor>dm-icon</span> <span roxo>AlertRed</span> /&#62;<br>
                                   &#60;<span tagColor>p</span>&#62;<span black>Erro ao carregar a edição de Rotas 01.
 
                                   </span>&#60;/<span tagColor>p</span>&#62;<br>
@@ -715,7 +715,7 @@
             <div style="display: flex; gap: 20px;">
 
               <dm-popup-background>
-                <dm-icon Alert />
+                <dm-icon AlertYellow />
                 <p>Você tem acerteza de que quer apagar este romaneio?</p>
                 <p class="detail_01">Não será possível visualizar ou recuperar o romaneio.</p>
                 <el-row>
@@ -726,7 +726,7 @@
 
               <dm-popup @click="popup" popup="close">
                 <dm-popup-background>
-                  <dm-icon Alert />
+                  <dm-icon AlertYellow />
                   <p>Você tem acerteza de que quer apagar este romaneio?</p>
                   <p class="detail_01">Não será possível visualizar ou recuperar o romaneio.</p>
                   <el-row>
@@ -755,7 +755,7 @@
                           &#60;<span tagColor>dm-popup-background</span>&#62;
                           <div class="border-left">
                             <div recuo>
-                              &#60;<span tagColor>dm-icon</span> <span roxo>Alert</span> /&#62;<br>
+                              &#60;<span tagColor>dm-icon</span> <span roxo>AlertYellow</span> /&#62;<br>
                               &#60;<span tagColor>p</span>&#62;<span black>Você tem acerteza de que quer apagar este
                                 romaneio?</span>&#60;/<span tagColor>p</span>&#62;<br>
                               &#60;<span tagColor>p</span> class=<span roxo>"detail_01"</span>&#62;<span black>Não será
@@ -919,7 +919,7 @@
             <div style="display: flex; gap: 20px;">
 
               <dm-popup-background>
-                <dm-icon Correct />
+                <dm-icon CorrectGreen />
                 <p>Rotas e romaneios remanejados com sucesso!</p>
                 <el-row>
                   <dm-button class="el-button el-button--primario" popup="close">Ok</dm-button>
@@ -930,7 +930,7 @@
 
               <dm-popup @click="popup" popup="close">
                 <dm-popup-background>
-                  <dm-icon Correct />
+                  <dm-icon CorrectGreen />
                   <p>Rotas e romaneios remanejados com sucesso!</p>
                   <el-row>
                     <dm-button class="el-button el-button--primario" popup="close">Ok</dm-button>
@@ -954,7 +954,7 @@
                           &#60;<span tagColor>dm-popup-background</span>&#62;
                           <div class="border-left">
                             <div recuo>
-                              &#60;<span tagColor>dm-icon</span> <span roxo>Correct</span> /&#62;<br>
+                              &#60;<span tagColor>dm-icon</span> <span roxo>CorrectGreen</span> /&#62;<br>
                               &#60;<span tagColor>p</span>&#62;<span black>Rotas e romaneios remanejados com
                                 sucesso!</span>&#60;/<span tagColor>p</span>&#62;<br>
                               <br>

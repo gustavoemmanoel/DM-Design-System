@@ -65,3 +65,18 @@ dm-icons-calendar {
     border: 2px solid var(--dm_cinza_02);
     transform: rotate(45deg) translatex(-1px);
 }
+
+/* Disabled */
+
+.el-input.is-disabled .el-input__wrapper,
+.el-range-editor.is-disabled input,
+.el-range-editor.is-disabled,
+.el-range-editor.is-disabled:hover {
+    border-color: var(--dm_cinza_03);
+    background-color: var(--dm_creme_01);
+}
+
+.el-range-editor.is-disabled dm-icons-calendar,
+.el-input.is-disabled .el-input__wrapper dm-icons-calendar {
+    opacity: 0.4;
+}

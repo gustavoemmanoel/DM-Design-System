@@ -32,7 +32,6 @@ body {
 @import "cores.css";
 @import "iconografia.css";
 
-/* Components */
 @import "header.css";
 @import "campodetexto.css";
 @import "buttons.css";

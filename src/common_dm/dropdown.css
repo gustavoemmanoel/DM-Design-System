@@ -17,7 +17,7 @@
     opacity: 0.4;
 }
 
-.el-popper.is-pure.is-light.el-dropdown__popper{
+.el-popper.is-pure.is-light.el-dropdown__popper {
     transform: translatey(-10px);
 }
 
@@ -48,4 +48,8 @@
 
 .el-popper__arrow {
     display: none;
+}
+
+.el-dropdown-menu__item dm-icon {
+    margin-right: 10px;
 }

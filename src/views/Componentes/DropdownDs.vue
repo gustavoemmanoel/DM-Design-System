@@ -20,25 +20,30 @@
                 <el-dropdown trigger="click" class="dm-dropdown">
                   <el-button type="dropdown">
                     Dropdown List
-                    <dm-icon baixo />
+                    <dm-icon ArrowDown />
                   </el-button>
                   <template #dropdown>
                     <el-dropdown-menu>
-                      <el-dropdown-item>Action 1</el-dropdown-item>
-                      <el-dropdown-item>Action 2</el-dropdown-item>
-                      <el-dropdown-item>Action 3</el-dropdown-item>
-                      <el-dropdown-item>Action 4</el-dropdown-item>
+                      <el-dropdown-item>
+                        <el-checkbox>checkbox 1</el-checkbox>
+                      </el-dropdown-item>
+                      <el-dropdown-item>
+                        <el-checkbox>checkbox 2</el-checkbox>
+                      </el-dropdown-item>
+                      <el-dropdown-item> <dm-icon Link /> Action 3</el-dropdown-item>
+                      <el-dropdown-item> <dm-icon Add />Action 4</el-dropdown-item>
                       <el-dropdown-item>Action 5</el-dropdown-item>
+                      <el-dropdown-item>Action 6</el-dropdown-item>
                     </el-dropdown-menu>
                   </template>
                 </el-dropdown>
 
                 <!-- disabled -->
 
-                <el-dropdown class="dm-dropdown">
+                <el-dropdown trigger="click" class="dm-dropdown">
                   <el-button type="dropdown" disabled>
                     Dropdown List
-                    <dm-icon baixo />
+                    <dm-icon ArrowDown />
                   </el-button>
                   <template #dropdown>
                     <el-dropdown-menu>
@@ -63,7 +68,7 @@
                       <div class="border-left">
                         <div recuo>
                           <span black>Dropdown List</span><br>
-                          &#60;<span tagColor>dm-icon</span> <span roxo>baixo</span>/&#62;
+                          &#60;<span tagColor>dm-icon</span> <span roxo>ArrowDown</span>/&#62;
                         </div>
                       </div>
                       &#60;/<span tagColor>el-button</span>&#62;
@@ -110,7 +115,7 @@
                       <div class="border-left">
                         <div recuo>
                           <span black>Dropdown List</span> <br>
-                          &#60;<span tagColor>dm-icon</span> <span roxo>baixo</span>/&#62;
+                          &#60;<span tagColor>dm-icon</span> <span roxo>ArrowDown</span>/&#62;
                         </div>
                       </div>
                       &#60;/<span tagColor>el-button</span>&#62;

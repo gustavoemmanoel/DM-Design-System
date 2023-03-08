@@ -115,27 +115,27 @@
                       <div class="legenda legenda-margin">
                         <p class="body_05 body_05--title">/Pins</p>
                         <div>
-                          <img class="legenda__pin" src="imagens_design_system/pins/pinRosa.svg" alt="pinRosa" />
+                          <img class="legenda__pin" src="images_dm/pins/pinRosa.svg" alt="pinRosa" />
                           <p class="detail_02">Pin rosa</p>
                         </div>
                         <div>
-                          <img class="legenda__pin" src="imagens_design_system/pins/pinAzul.svg" alt="pinRosa" />
+                          <img class="legenda__pin" src="images_dm/pins/pinAzul.svg" alt="pinRosa" />
                           <p class="detail_02">Pin rosa</p>
                         </div>
                         <div>
-                          <img class="legenda__pin" src="imagens_design_system/pins/pinLilas.svg" alt="pinRosa" />
+                          <img class="legenda__pin" src="images_dm/pins/pinLilas.svg" alt="pinRosa" />
                           <p class="detail_02">Pin rosa</p>
                         </div>
                         <div>
-                          <img class="legenda__pin" src="imagens_design_system/pins/pinVerde.svg" alt="pinRosa" />
+                          <img class="legenda__pin" src="images_dm/pins/pinVerde.svg" alt="pinRosa" />
                           <p class="detail_02">Pin rosa</p>
                         </div>
                         <div>
-                          <img class="legenda__pin" src="imagens_design_system/pins/pinLaranja.svg" alt="pinRosa" />
+                          <img class="legenda__pin" src="images_dm/pins/pinLaranja.svg" alt="pinRosa" />
                           <p class="detail_02">Pin rosa</p>
                         </div>
                         <div>
-                          <img class="legenda__pin" src="imagens_design_system/pins/pinAmarelo.svg" alt="pinRosa" />
+                          <img class="legenda__pin" src="images_dm/pins/pinAmarelo.svg" alt="pinRosa" />
                           <p class="detail_02">Pin rosa</p>
                         </div>
                       </div>

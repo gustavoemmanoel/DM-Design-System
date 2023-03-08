@@ -76,7 +76,7 @@
                                 yellow>mouseleave</span>=<span roxo>"pinHover"</span> <br> class=<span
                                 roxo>"<span>dm-pi</span>n"</span>
                               <br>
-                              src=<span roxo>"imagens_design_system/pins/.svg"</span>
+                              src=<span roxo>"images_dm/pins/.svg"</span>
                             </div>
                           </div>
                           /&#62;
@@ -300,13 +300,13 @@
             </p>
 
             <div class="pin__container">
-              <span><img class="pin__desempenho" src="imagens_design_system/pins/bom.svg" alt="Pin" />
+              <span><img class="pin__desempenho" src="images_dm/pins/bom.svg" alt="Pin" />
                 Bom
               </span>
-              <span><img class="pin__desempenho" src="imagens_design_system/pins/medio.svg" alt="Pin" />
+              <span><img class="pin__desempenho" src="images_dm/pins/medio.svg" alt="Pin" />
                 Médio
               </span>
-              <span><img class="pin__desempenho" src="imagens_design_system/pins/ruim.svg" alt="Pin" />
+              <span><img class="pin__desempenho" src="images_dm/pins/ruim.svg" alt="Pin" />
                 Ruim
               </span>
             </div>
@@ -326,9 +326,9 @@
               <h1 style="text-align: center; margin-bottom: 20px; width: 100%">Coleção de ícones para os pins</h1>
             </el-row>
             <div class="pin__container__icon">
-              <img class="pin__icon" src="imagens_design_system/pins/pin__icon--coroa.svg" alt="Pin" />
-              <img class="pin__icon" src="imagens_design_system/pins/pin__icon--bolinha.svg" alt="Pin" />
-              <img class="pin__icon" src="imagens_design_system/pins/pin__icon--estrela.svg" alt="Pin" />
+              <img class="pin__icon" src="images_dm/pins/pin__icon--coroa.svg" alt="Pin" />
+              <img class="pin__icon" src="images_dm/pins/pin__icon--bolinha.svg" alt="Pin" />
+              <img class="pin__icon" src="images_dm/pins/pin__icon--estrela.svg" alt="Pin" />
             </div>
           </div>
           <div class="cont-elements">
@@ -343,7 +343,7 @@
               <div>
                 <h3>Pin ativo</h3>
                 <div>
-                  <img class="pin__medio" src="imagens_design_system/pins/azul/pin_basico_azul.svg" alt="Pin" />
+                  <img class="pin__medio" src="images_dm/pins/azul/pin_basico_azul.svg" alt="Pin" />
                 </div>
 
                 <p>A cor do pin é pré-determinada em cada caso de uso.</p>
@@ -351,7 +351,7 @@
               <div>
                 <h3>Pin hover</h3>
                 <div>
-                  <img class="pin__hover" src="imagens_design_system/pins/pin__hover.svg" alt="Pin" />
+                  <img class="pin__hover" src="images_dm/pins/pin__hover.svg" alt="Pin" />
                 </div>
                 <p>Pin não muda de cor e barra do hover acompanha cor do pin. <br><br>
                   Hover aparece conforme o melhor espaço na tela, seja esquerda, direita ou centralizado.
@@ -361,7 +361,7 @@
               <div>
                 <h3>Pin clicado</h3>
                 <div>
-                  <img class="pin__medio" src="imagens_design_system/pins/rosa/pin_basico_rosa.svg" alt="Pin" />
+                  <img class="pin__medio" src="images_dm/pins/rosa/pin_basico_rosa.svg" alt="Pin" />
                 </div>
                 <p>No estado de click o pin é sempre rosa.</p>
               </div>

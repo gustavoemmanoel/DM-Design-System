@@ -50,14 +50,14 @@
 
                   <el-col :span="12" class="grafismo">
                     <div class="grafismo-cont">
-                      <img class="grafismo-cont__img" src="imagens_design_system/login-grafismo.jpg" alt="background" />
+                      <img class="grafismo-cont__img" src="images_dm/login-grafismo.jpg" alt="background" />
                     </div>
                     <div class="grafismo__protagonizar">
                       <div class="grafismo__content">
                         <h3 class="grafismo__title">
                           <span style="color: var(--dm_azul_00)">/</span>Protagonizar a mudança!
                         </h3>
-                        <img class="grafismo__dm" src="imagens_design_system/dm_login.svg" alt="Data Machina" />
+                        <img class="grafismo__dm" src="images_dm/dm_login.svg" alt="Data Machina" />
                       </div>
                     </div>
                   </el-col>

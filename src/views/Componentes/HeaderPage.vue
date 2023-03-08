@@ -21,7 +21,7 @@
           <div>
             <el-row class="header">
               <el-row>
-                <img class="img-header" src="imagens_design_system/icons/whiteicons/dm.svg" />
+                <img class="img-header" src="images_dm/icons/whiteicons/dm.svg" />
                 <h4 style="color: var(--dm_creme_00)">DataMachina</h4>
               </el-row>
 
@@ -29,10 +29,7 @@
                 <!-- Produtos -->
                 <el-popover placement="bottom" style="padding: 0; background: green" trigger="click" :width="200">
                   <template #reference>
-                    <span>
-                      <img class="icon" src="imagens_design_system/icons/whiteicons/Products.svg" />
-                      <img class="icon" src="imagens_design_system/icons/whiteicons/Options.svg" />
-                    </span>
+                    <img class="icon" src="images_dm/icons/whiteicons/Products.svg" />
                   </template>
 
                   <el-col>
@@ -49,7 +46,7 @@
                 <!-- Notificações -->
                 <el-popover placement="bottom" trigger="click" :width="400">
                   <template #reference>
-                    <img class="icon" src="imagens_design_system/icons/whiteicons/Bell.svg" />
+                    <img class="icon" src="images_dm/icons/whiteicons/Bell.svg" />
                   </template>
                   <el-col>
                     <div class="optionMenu">O painel Logística foi atualizado - Versão
@@ -64,7 +61,7 @@
                 <!-- DÚVIDAS -->
                 <el-popover placement="bottom" trigger="click" :width="300">
                   <template #reference>
-                    <img class="icon" src="imagens_design_system/icons/whiteicons/Help.svg" />
+                    <img class="icon" src="images_dm/icons/whiteicons/Help.svg" />
                   </template>
                   <el-col>
                     <div class="optionMenu">versão: 2cf2f45f</div>
@@ -80,7 +77,7 @@
                 <!-- PERFIL -->
                 <el-popover placement="bottom" trigger="click" :width="360">
                   <template #reference>
-                    <img class="icon" src="imagens_design_system/icons/whiteicons/User.svg" />
+                    <img class="icon" src="images_dm/icons/whiteicons/User.svg" />
                   </template>
                   <el-col>
                     <div class="optionMenu">
@@ -124,14 +121,14 @@
           <div>
             <el-row class="header">
               <el-row>
-                <img class="img-header" src="imagens_design_system/icons/whiteicons/dm.svg" />
+                <img class="img-header" src="images_dm/icons/whiteicons/dm.svg" />
                 <h4 style="color: var(--dm_creme_00)">DataMachina</h4>
               </el-row>
 
               <el-row style="gap: 10px">
                 <el-popover placement="bottom" style="padding: 0; background: green" trigger="click" :width="200">
                   <template #reference>
-                    <img class="icon" src="imagens_design_system/icons/whiteicons/Products.svg" />
+                    <img class="icon" src="images_dm/icons/whiteicons/Products.svg" />
                   </template>
                   <el-col>
                     <div class="optionMenu">Logística</div>
@@ -150,7 +147,7 @@
 
                 <el-popover placement="bottom" trigger="click" :width="400">
                   <template #reference>
-                    <img class="icon" src="imagens_design_system/icons/whiteicons/notificacao.svg" />
+                    <img class="icon" src="images_dm/icons/whiteicons/notificacao.svg" />
                   </template>
 
                   <el-col>
@@ -166,7 +163,7 @@
                 <!-- DÚVIDAS -->
                 <el-popover placement="bottom" trigger="click" :width="300">
                   <template #reference>
-                    <img class="icon" src="imagens_design_system/icons/whiteicons/interrogacao.svg" />
+                    <img class="icon" src="images_dm/icons/whiteicons/interrogacao.svg" />
                   </template>
                   <el-col>
                     <div class="optionMenu">versão: 2cf2f45f</div>
@@ -183,7 +180,7 @@
                 <!-- PERFIL -->
                 <el-popover placement="bottom" trigger="click" :width="360">
                   <template #reference>
-                    <img class="icon" src="imagens_design_system/icons/whiteicons/user.svg" />
+                    <img class="icon" src="images_dm/icons/whiteicons/user.svg" />
                   </template>
                   <el-col>
                     <div class="optionMenu">
@@ -224,7 +221,7 @@
                           <div recuo>
                             <span>
                               &#60;<span tagColor>img</span> class=<span roxo>"img-header"</span>
-                              src=<span roxo>"imagens_design_system/icons/whiteicons/dm.svg"</span>/&#62;
+                              src=<span roxo>"images_dm/icons/whiteicons/dm.svg"</span>/&#62;
                               <br /> </span><span>
                               &#60;<span tagColor>h4</span> style=<span roxo>"color:
                                 var(--dm_creme_00)"</span>&#62;</span><span black>DataMachina</span><span>&#60;/<span
@@ -251,8 +248,7 @@
                                 <br />
                                 <div recuo>
                                   <span>&#60;img class=<span roxo>"icon"</span>
-                                    src=<span
-                                      roxo>"imagens_design_system/icons/whiteicons/Products.svg"</span>&#62;</span>
+                                    src=<span roxo>"images_dm/icons/whiteicons/Products.svg"</span>&#62;</span>
                                 </div>
                                 <span>&#60;/<span tagColor>template</span>&#62;</span>
                                 <br />
@@ -301,7 +297,7 @@
                                 <br />
                                 <div recuo>
                                   <span>&#60;img class=<span roxo>"icon"</span>
-                                    src=<span roxo>"imagens_design_system/icons/whiteicons/notificacao.svg"
+                                    src=<span roxo>"images_dm/icons/whiteicons/notificacao.svg"
                                     </span>
                                     &#62;
                                   </span>
@@ -355,7 +351,7 @@
                                 <br />
                                 <div recuo>
                                   <span>&#60;img class=<span roxo>"icon"</span>
-                                    src=<span roxo>"imagens_design_system/icons/whiteicons/duvida.svg"</span>&#62;</span>
+                                    src=<span roxo>"images_dm/icons/whiteicons/duvida.svg"</span>&#62;</span>
                                 </div>
                                 <span>&#60;/<span tagColor>template</span>&#62;</span>
                               </div>
@@ -403,7 +399,7 @@
                                 <br />
                                 <div recuo>
                                   &#60;<span tagColor>img</span> class=<span roxo>"icon"</span>
-                                  src=<span roxo>"imagens_design_system/icons/whiteicons/user.svg"&#62;</span>
+                                  src=<span roxo>"images_dm/icons/whiteicons/user.svg"&#62;</span>
                                 </div>
                                 &#60;/<span tagColor>template</span>&#62;
                                 <br />
@@ -587,7 +583,7 @@
               <br>
               <el-popover placement="bottom" trigger="click" :width="200">
                 <template #reference>
-                  <img class="icon" src="imagens_design_system/icons/blackicons/Products.svg" />
+                  <img class="icon" src="images_dm/icons/blackicons/Products.svg" />
                 </template>
                 <el-col class="dm-popover">
                   <div class="optionMenu">Logística</div>
@@ -618,7 +614,7 @@
                     &#60;<span tagColor>template</span> #reference&#62;
                     <div class="border-left">
                       <div recuo>&#60;<span tagColor>img</span> class=<span roxo>"icon"</span>
-                        src=<span roxo>"imagens_design_system/icons/blackicons/Products.svg"</span>
+                        src=<span roxo>"images_dm/icons/blackicons/Products.svg"</span>
                         /&#62;</div>
                     </div>
                     &#60;/<span tagColor>template</span>&#62;
@@ -672,7 +668,7 @@
               <br>
               <el-popover placement="bottom" trigger="click" :width="400">
                 <template #reference>
-                  <img class="icon" src="imagens_design_system/icons/blackicons/Bell.svg" />
+                  <img class="icon" src="images_dm/icons/blackicons/Bell.svg" />
                 </template>
                 <el-col>
                   <div class="optionMenu">O painel Logística foi atualizado - Versão 2.43.2.1</div>
@@ -704,7 +700,7 @@
                     &#60;<span tagColor>template</span> #reference&#62;
                     <div class="border-left">
                       <div recuo>&#60;<span tagColor>img</span> class=<span roxo>"icon"</span> src=<span
-                          roxo>"imagens_design_system/icons/blackicons/Bell.svg"</span> /&#62;</div>
+                          roxo>"images_dm/icons/blackicons/Bell.svg"</span> /&#62;</div>
                     </div>
                     &#60;/<span tagColor>template</span>&#62; <br>
                     &#60;<span tagColor>el-col</span>&#62;
@@ -750,7 +746,7 @@
 
             <el-popover placement="bottom" trigger="click" :width="300">
               <template #reference>
-                <img class="icon" src="imagens_design_system/icons/blackicons/Help.svg" />
+                <img class="icon" src="images_dm/icons/blackicons/Help.svg" />
               </template>
 
               <div class="optionMenu">versão: 2cf2f45f</div>
@@ -777,7 +773,7 @@
                       &#60;<span tagColor>template</span> #reference&#62;
                       <div class="border-left">
                         <div recuo>&#60;<span tagColor>img</span> class=<span roxo>"icon"</span> src=<span
-                            roxo>"imagens_design_system/icons/blackicons/Help.svg"</span> /&#62;
+                            roxo>"images_dm/icons/blackicons/Help.svg"</span> /&#62;
                         </div>
                       </div>
                       &#60;/<span tagColor>template</span>&#62;<br>
@@ -826,7 +822,7 @@
               <br>
               <el-popover placement="bottom" trigger="click" :width="360">
                 <template #reference>
-                  <img class="icon" src="imagens_design_system/icons/blackicons/User.svg" />
+                  <img class="icon" src="images_dm/icons/blackicons/User.svg" />
                 </template>
                 <el-col>
                   <div class="optionMenu perfil">
@@ -864,7 +860,7 @@
                     &#60;<span tagColor>template</span> #reference&#62;
                     <div class="border-left">
                       <div recuo>&#60;<span tagColor>img</span> class=<span roxo>"icon"</span> src=<span
-                          roxo>"imagens_design_system/icons/blackicons/User.svg"</span>
+                          roxo>"images_dm/icons/blackicons/User.svg"</span>
                         /&#62;
                       </div>
                     </div>

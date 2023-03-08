@@ -104,16 +104,16 @@
 
 /* Predominantes em todas as interfaces */
 .dm_azul_00 {
-  background: #0567ff;
+  background: var(--dm_azul_00);
 }
 .dm_preto_00 {
-  background: #2c2c2c;
+  background: var(--dm_preto_00);
 }
 .dm_preto_03--color {
-  color: #2c2c2c;
+  color: var(--dm_preto_00);
 }
 .dm_creme_00 {
-  background: #fdfbf9;
+  background: var(--dm_creme_00);
 }
 /* Cores semânticas */
 .dm_vermelho_00 {

@@ -10,7 +10,9 @@
     <!-- Princípios -->
     <div class="options">
       <div class="component-tag">Instalação</div>
-      <router-link pagename="Instalacao" to="Instalacao">Instalação</router-link>
+      <router-link pagename="ElementPlus" to="ElementPlus">Element Plus</router-link>
+      <router-link pagename="DesignSystem" to="DesignSystem">Design System</router-link>
+      <router-link pagename="VisualStudio" to="VisualStudio">Visual Studio</router-link>
     </div>
     <!-- Fundação -->
     <div class="options">

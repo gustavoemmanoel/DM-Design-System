@@ -439,6 +439,10 @@ dm-icon {
   background-image: url("../../public/images_dm/icons/AlertRed.svg");
 }
 
+[WrongRed] {
+  background-image: url("../../public/images_dm/icons/WrongRed.svg");
+}
+
 [AlertYellow] {
   background-image: url("../../public/images_dm/icons/AlertYellow.svg");
 }

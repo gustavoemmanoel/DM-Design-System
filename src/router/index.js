@@ -1,7 +1,9 @@
 import { createRouter, createWebHashHistory } from "vue-router";
 
 /* Instalação */
-import InstallationEl from "../views/Installation/InstallationEl.vue";
+import ElementPlus from "../views/Installation/ElementPlus.vue";
+import DesignSystem from "../views/Installation/DesignSystem.vue";
+import VisualStudio from "../views/Installation/VisualStudio.vue";
 
 /* Princípios */
 import InicioDs from "../views/InicioDs.vue";
@@ -39,10 +41,21 @@ import GraficoDs from "../views/Componentes/GraficoDs.vue";
 import PreProcessamentos from "../views/PreProcessamentos.vue";
 
 const routes = [
+  // instalação
   {
-    path: "/Instalacao",
-    name: "InstallationEl",
-    component: InstallationEl,
+    path: "/ElementPlus",
+    name: "ElementPlus",
+    component: ElementPlus,
+  },
+  {
+    path: "/DesignSystem",
+    name: "DesignSystem",
+    component: DesignSystem,
+  },
+  {
+    path: "/VisualStudio",
+    name: "VisualStudio",
+    component: VisualStudio,
   },
   {
     path: "/PreProcessament",

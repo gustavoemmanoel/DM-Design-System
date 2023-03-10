@@ -56,9 +56,12 @@
                   <div class="border-left">
                     <div recuo>
                       &#60;<span tagColor>el-form</span>
-                      <div recuo>label-position=<span roxo>"top"</span> <br> :model=<span roxo>"ruleForm"</span> <br>
-                        :rules=<span roxo>"rules"</span> ref=<span roxo>"ruleForm"</span> <br> label-width=<span
-                          roxo>"120px"</span> <br> class=<span roxo>"demo-ruleForm"</span></div>&#62;
+                      <div recuo>label-position=<span roxo>"top"</span> <br>
+                        :model=<span roxo>"ruleForm"</span> <br>
+                        :rules=<span roxo>"rules"</span> <br>
+                        ref=<span roxo>"ruleForm"</span> <br>
+                        label-width=<span roxo>"120px"</span> <br>
+                        class=<span roxo>"demo-ruleForm"</span></div>&#62;
                       <div class="border-left">
                         <div recuo>
                           &#60;<span tagColor>el-form-item</span> label=<span roxo>"Password"</span> prop=<span

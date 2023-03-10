@@ -536,7 +536,7 @@
         <hr>
         <br>
         <div class="cont-elements">
-          <h3>/Aplicação em fundos escuros</h3>
+          <h3>Aplicação em fundos escuros</h3>
           <br>
           <el-row :gutter="40">
             <el-col :span="12">
@@ -552,7 +552,7 @@
         </div>
         <!--  -->
         <div class="cont-elements">
-          <h3>/Aplicação em fundos claros</h3>
+          <h3>Aplicação em fundos claros</h3>
           <br>
           <el-row :gutter="40">
             <el-col :span="12">
@@ -568,7 +568,7 @@
         </div>
         <!--  -->
         <div class="cont-elements">
-          <h3>/Aplicação em objetos desbilitados</h3>
+          <h3>Aplicação em objetos desbilitados</h3>
           <br>
           <el-row :gutter="40">
             <el-col :span="12">

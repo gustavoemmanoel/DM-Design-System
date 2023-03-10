@@ -52,7 +52,6 @@
     <div class="options">
       <div class="component-tag">Sobre</div>
       <router-link to="Sobre">Sobre</router-link>
-
     </div>
   </div>
 </template>
@@ -62,15 +61,18 @@ export default {
   name: "AsideComponent",
   props: {
     btnAtivo: String,
-
+  },
+  data() {
+    return {
+      link: null
+    }
   },
   mounted() {
-
     this.pageLink()
+    this.changeNameTab()
   },
   methods: {
     pageLink() {
-
       const elementsArray = document.querySelectorAll('[pagename]')
       const nameURL = window.location.href.split('/#/')[1]
 
@@ -83,7 +85,10 @@ export default {
         }
       }
     },
-
+    changeNameTab() {
+      this.link = document.getElementById('tagPage').innerText
+      document.title = `Data Machina -  ${this.link}`
+    },
     changeTagPage(event) {
 
       const tag = event.target
@@ -95,7 +100,8 @@ export default {
         tag.setAttribute('id', 'tagPage')
         document.getElementById('tagPage').parentNode.childNodes[0].setAttribute('id', 'TagSelected')
       }
-    }
+      this.changeNameTab()
+    },
   }
 };
 </script>
@@ -133,12 +139,11 @@ a:focus {
 
 /*  */
 .side-bar {
-  margin-top: 75px;
   position: fixed;
   background: #faf6f0;
   overflow-y: auto;
   width: 256px;
-  height: calc(100vh - 75px);
+  height: 100vh;
   padding: 10px;
   padding-bottom: 30px;
 }

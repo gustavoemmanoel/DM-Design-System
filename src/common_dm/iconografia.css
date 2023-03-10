@@ -450,3 +450,11 @@ dm-icon {
 [CorrectGreen] {
   background-image: url("../../public/images_dm/icons/CorrectGreen.svg");
 }
+
+[CheckGreen] {
+  background-image: url("../../public/images_dm/icons/CheckGreen.svg");
+}
+
+[CloseRed] {
+  background-image: url("../../public/images_dm/icons/CloseRed.svg");
+}

@@ -10,6 +10,8 @@ import AsideComponent from './components/AsideComponent.vue';
 export default {
   components: { AsideComponent },
   name: "app",
+
+
 };
 </script>
 
@@ -20,6 +22,8 @@ export default {
 
 body {
   background: var(--dm_creme_02);
+  overflow-y: scroll;
+
 }
 
 .mg-right-js {
@@ -56,7 +60,7 @@ body {
 .el-main {
   margin: auto;
   margin-top: 15px;
-  margin-bottom: 30px;
+  padding-bottom: 30px;
   max-width: 1020px;
   padding: 20px;
   padding: 60px 72px 20px 72px;
@@ -85,7 +89,7 @@ body {
 }
 
 [black] {
-  color: var(--dm_preto_00);
+  color: var(--dm_cinza_01);
 }
 
 [roxo] {

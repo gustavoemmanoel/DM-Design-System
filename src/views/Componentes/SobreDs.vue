@@ -27,9 +27,6 @@
         <p class="detail_02">Copyright © Data Machina 2022. Todos os direitos reservados. | Privacidade | Termos de uso
         </p>
       </div>
-
-
-
     </el-container>
   </el-container>
 </template>
@@ -56,7 +53,6 @@ export default {
   justify-content: center;
   background: var(--dm_creme_01);
   width: 100%;
-  margin-top: 15px;
   height: calc(100vh - 75px);
 
 }

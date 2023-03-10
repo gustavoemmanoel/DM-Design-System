@@ -259,7 +259,13 @@
 import HeaderDs from "../../components/HeaderDs.vue";
 export default {
     name: "GraficoDs",
-    components: { HeaderDs }
+    components: { HeaderDs },
+    data() {
+        return {
+            headerTitle: "Gráficos",
+        }
+    }
+
 };
 </script>
 <style scoped>

@@ -330,13 +330,174 @@
             a platafoma enquanto o sistema processa a operação. Este loading não mostra o tempo para a conclusão e a
             porcentagem do progresso, no entanto mais detalhes aparecem no hover.</p>
           <br>
+
+
+          <div class="grid-columns">
+            <span>
+              <h6>Default</h6>
+              <br>
+              <el-popover placement="bottom" trigger="click" :width="360">
+                <template #reference>
+                  <dm-icon loading working />
+                </template>
+                <dm-loading-second>
+                  <dm-menu-option><dm-icon CheckGreen /> Configurações</dm-menu-option>
+                  <dm-menu-option><dm-icon Loading working /> Configurações</dm-menu-option>
+                  <dm-menu-option><dm-icon Loading working /> Configurações</dm-menu-option>
+                  <dm-menu-option><dm-icon Loading working /> Configurações</dm-menu-option>
+                  <dm-menu-option><dm-icon CheckGreen /> Configurações</dm-menu-option>
+                  <dm-menu-option><dm-icon Loading working /> Configurações</dm-menu-option>
+                  <dm-menu-option><dm-icon CloseRed /> Configurações</dm-menu-option>
+                </dm-loading-second>
+              </el-popover>
+            </span>
+            <span>
+              <h6>Exemplo</h6>
+              <br>
+              <img width="300" src="loading/segundoplano.svg">
+            </span>
+          </div>
+
           <el-collapse v-model="activeNames" @change="handleChange">
             <el-collapse-item title="Ver código">
-              ...
+              <div class="html_codigos">
+                &#60;<span tagColor>el-popover</span> placement=<span roxo>"bottom"</span> trigger=<span
+                  roxo>"click"</span> :width=<span roxo>"360"</span>&#62;
+                <div class="border-left">
+                  <div recuo>
+                    &#60;<span tagColor>template</span> #reference&#62;
+                    <div class="border-left">
+                      <div recuo>&#60;<span tagColor>dm-icon</span> loading working /&#62;</div>
+                    </div>
+                    &#60;/<span tagColor>template</span>&#62; <br>
+                    &#60;<span tagColor>dm-menu</span>&#62;
+                    <div class="border-left">
+                      <div recuo>
+                        &#60;<span tagcolor>dm-menu-option</span>&#62;&#60;<span tagColor>dm-icon</span> CheckGreen /&#62;
+                        <span black>Configurações</span>&#60;/<span tagcolor>dm-menu-option</span>&#62; <br>
+                        &#60;<span tagcolor>dm-menu-option</span>&#62;&#60;<span tagColor>dm-icon</span> Loading working
+                        /&#62; <span black>Configurações</span>&#60;/<span tagcolor>dm-menu-option</span>&#62; <br>
+                        &#60;<span tagcolor>dm-menu-option</span>&#62;&#60;<span tagColor>dm-icon</span> Loading working
+                        /&#62; <span black>Configurações</span>&#60;/<span tagcolor>dm-menu-option</span>&#62; <br>
+                        &#60;<span tagcolor>dm-menu-option</span>&#62;&#60;<span tagColor>dm-icon</span> Loading working
+                        /&#62; <span black>Configurações</span>&#60;/<span tagcolor>dm-menu-option</span>&#62; <br>
+                        &#60;<span tagcolor>dm-menu-option</span>&#62;&#60;<span tagColor>dm-icon</span> CheckGreen /&#62;
+                        <span black>Configurações</span>&#60;/<span tagcolor>dm-menu-option</span>&#62; <br>
+                        &#60;<span tagcolor>dm-menu-option</span>&#62;&#60;<span tagColor>dm-icon</span> Loading working
+                        /&#62; <span black>Configurações</span>&#60;/<span tagcolor>dm-menu-option</span>&#62; <br>
+                        &#60;<span tagcolor>dm-menu-option</span>&#62;&#60;<span tagColor>dm-icon</span> CloseRed /&#62;
+                        <span black>Configurações</span>&#60;/<span tagcolor>dm-menu-option</span>&#62;
+                      </div>
+                    </div>
+                    &#60;/<span tagColor>dm-menu</span>&#62;
+                  </div>
+                </div>
+                &#60;/<span tagColor>el-popover</span>&#62;
+              </div>
             </el-collapse-item>
           </el-collapse>
         </div>
+        <div class="cont-elements">
+          <h3>Carregando dentro de um contêiner</h3>
+          <br>
+          <p>Exibe animação em um contêiner (como uma tabela) durante o carregamento de dados.</p>
+          <br>
+          <el-table v-loading="loading" :data="tableData" style="width: 100%" element-loading-svg-view-box="0,0,0,0">
+            <el-table-column prop="date" label="Date" width="180" />
+            <el-table-column prop="name" label="Name" width="180" />
+            <el-table-column prop="address" label="Address" />
+          </el-table>
 
+
+          <br>
+          <el-collapse v-model="activeNames" @change="handleChange">
+            <el-collapse-item title="Ver código">
+              <div class="html_codigos">
+                &#60;<span tagColor>template</span>&#62;
+                <div class="border-left">
+                  <div recuo>
+                    &#60;<span tagColor>el-table</span> v-loading=<span roxo>"loading"</span> :data=<span
+                      roxo>"tableData"</span> style=<span roxo>"width: 100%"</span> element-loading-svg-view-box=<span
+                      roxo>"0,0,0,0"</span>&#62;
+                    <div class="border-left">
+                      <div recuo>
+                        &#60;<span tagColor>el-table-column</span> prop=<span roxo>"date</span>" label=<span
+                          roxo>"Date"</span> width=<span roxo>"180"</span> /&#62; <br>
+                        &#60;<span tagColor>el-table-column</span> prop=<span roxo>"name</span>" label=<span
+                          roxo>"Name"</span> width=<span roxo>"180"</span> /&#62; <br>
+                        &#60;<span tagColor>el-table-column</span> prop=<span roxo>"address</span>" label=<span
+                          roxo>"Address"</span> /&#62;
+                      </div>
+                    </div>
+                    &#60;/<span tagColor>el-table</span>&#62;
+                  </div>
+                </div>
+                &#60;/<span tagColor>template</span>&#62;
+              </div>
+
+              <br>
+              <div class="html_codigos">
+                &#60;<span tagColor>script</span>&#62;
+                <br>
+                <span roxo>export default</span> {
+                <div class="border-left">
+                  <div recuo>
+                    <span yellow>data</span>() {
+                    <div class="border-left">
+                      <div recuo>
+                        <span roxo>return</span> {
+                        <div class="border-left">
+                          <div recuo>
+                            loading: <span blue>true</span>,
+                            <br>
+                            tableData: [
+                            <div class="border-left">
+                              <div recuo>
+                                {
+                                <div class="border-left">
+                                  <div recuo>
+                                    date: <span brown>"10/03/2023"</span>, <br />
+                                    name: <span brown>"Design System"</span>, <br />
+                                    address: <span brown>"São Paulo"</span>
+                                  </div>
+                                </div>
+                                }, <br>
+                                {
+                                <div class="border-left">
+                                  <div recuo>
+                                    date: <span brown>"10/03/2023"</span>, <br />
+                                    name: <span brown>"Design System"</span>, <br />
+                                    address: <span brown>"São Paulo"</span>
+                                  </div>
+                                </div>
+                                }, <br>
+                                {
+                                <div class="border-left">
+                                  <div recuo>
+                                    date: <span brown>"10/03/2023"</span>, <br />
+                                    name: <span brown>"Design System"</span>, <br />
+                                    address: <span brown>"São Paulo"</span>
+                                  </div>
+                                </div>
+                                },
+                              </div>
+                            </div>
+                            ],
+                          </div>
+                        </div>
+                        }
+                      </div>
+                    </div>
+                    }
+                  </div>
+                </div>
+                }
+                <br>
+                &#60;/<span tagColor>script</span>&#62;
+              </div>
+            </el-collapse-item>
+          </el-collapse>
+        </div>
       </el-main>
     </el-container>
   </el-container>
@@ -351,6 +512,26 @@ export default {
   },
   data() {
     return {
+      loading: true,
+
+      tableData: [
+        {
+          date: "10/03/2023",
+          name: "Design System",
+          address: "São Paulo"
+        },
+        {
+          date: "10/03/2023",
+          name: "Design System",
+          address: "São Paulo"
+        },
+        {
+          date: "10/03/2023",
+          name: "Design System",
+          address: "São Paulo"
+        },
+      ],
+
       headerTitle: "Loading",
       showLoading: false,
       color: "var(--dm_azul_00)",
@@ -398,46 +579,13 @@ export default {
 </script>
 
 <style scoped>
+.grid-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 .cont--el-progress {
   display: flex;
   justify-content: space-between;
-}
-</style>
-
-<style>
-dm-loading {
-  cursor: default;
-  position: fixed;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.8);
-  z-index: 100;
-}
-
-dm-loading-background,
-.vitrine-loading {
-  background: var(--dm_creme_02);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  text-align: center;
-  width: 500px;
-  height: 300px;
-  background: var(--dm_creme_02);
-  padding: 40px;
-  border-radius: 6px;
-  color: var(--dm_preto_00);
-  cursor: default;
-}
-
-dm-loading .el-progress {
-  width: 100%
 }
 </style>

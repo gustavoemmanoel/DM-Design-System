@@ -48,7 +48,7 @@
                   <template #dropdown>
                     <el-dropdown-menu>
                       <el-dropdown-item>Action 1</el-dropdown-item>
-                      <el-dropdown-item>Action 2</el-dropdown-item>
+                      <el-drdown-item>Action 2</el-drdown-item>
                       <el-dropdown-item>Action 3</el-dropdown-item>
                       <el-dropdown-item>Action 4</el-dropdown-item>
                       <el-dropdown-item>Action 5</el-dropdown-item>
@@ -169,8 +169,8 @@
             <br>
             <br>
             <div style="display: flex; gap: 30px; margin: auto;">
-              <img height="20" src="dropdown/02.svg">
-              <img height="20" src="dropdown/03.svg">
+              <img height="17" src="dropdown/02.svg">
+              <img height="17" src="dropdown/03.svg">
             </div>
           </div>
 

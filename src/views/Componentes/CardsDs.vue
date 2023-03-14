@@ -139,7 +139,8 @@
 
           </div>
           <br>
-          <p class="detail_02">Cards de romaneio para visualização de informações pontuais e com função de botão: ao clicar nele, abre uma
+          <p class="detail_02">Cards de romaneio para visualização de informações pontuais e com função de botão: ao
+            clicar nele, abre uma
             aba com todas as informações do romaneio e seus pedidos, podendo ser visualizada e editada.</p>
           <br>
           <el-collapse v-model="activeNames" @change="handleChange">
@@ -211,26 +212,18 @@ export default {
     },
 
     cardClicked(event) {
-      const ativadoCard = document.querySelector('[card-ativo]')
+      const targetElement = event.currentTarget
+      const attributeCard = document.querySelector('[card-ativo]')
 
-      if (ativadoCard == null) {
-        cardDm()
-      } else {
-        ativadoCard.removeAttribute('card-ativo')
-        cardDm()
+      if (attributeCard == null) {
+        targetElement.setAttribute('card-ativo', '')
       }
-
-      function cardDm() {
-        const card1 = event.target.parentNode.getAttribute('id')
-        const card2 = event.target.getAttribute('id')
-        if (card1 == null) {
-          document.getElementById(card2).setAttribute('card-ativo', '')
-
-        } else {
-          document.getElementById(card1).setAttribute('card-ativo', '')
-        }
+      else {
+        attributeCard.removeAttribute('card-ativo')
+        targetElement.setAttribute('card-ativo', '')
       }
     },
+
   }
 };
 </script>

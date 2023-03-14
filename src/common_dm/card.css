@@ -1,24 +1,6 @@
 dm-card {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    border-radius: 6px;
-    padding: 10px 15px;
-    max-width: 250px;
-    min-width: 180px;
-    min-height: 100px;
-    height: max-content;
-    border: 2px;
-    border-style: solid;
-    border-color: var(--dm_azul_00);
-    color: var(--dm_azul_00);
-    background: var(--dm_creme_02);
-}
-
-.dm-card--clicavel {
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
-    
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -34,39 +16,54 @@ dm-card {
     transition: 0.2s;
 }
 
-.dm-card--clicavel div {
+dm-card div {
     font-size: 16px;
 }
 
-.dm-card--clicavel:hover {
+dm-card:hover {
     border: 2px solid var(--dm_azul_02);
     color: var(--dm_azul_02);
     transition: 0.2s;
 }
 
-.dm-card--clicavel:focus {
+[card-ativo] {
     box-shadow: inset 3px 3px 10px rgba(0, 0, 0, 0.3);
     transition: 0;
     border: 2px solid var(--dm_amarelo_00);
     color: var(--dm_amarelo_00);
 }
 
-.dm-card--estatico {
+[card-ativo]:hover {
+    border: 2px solid var(--dm_amarelo_02);
+    color: var(--dm_amarelo_01);
+}
+
+dm-card-estatico {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    border-radius: 6px;
+    padding: 10px 15px;
+    max-width: 250px;
+    min-width: 180px;
+    min-height: 100px;
+    height: max-content;
+    border-style: solid;
+    border-color: var(--dm_azul_00);
+    background: var(--dm_creme_02);
     border: 2px solid var(--dm_cinza_03);
     color: var(--dm_cinza_01);
 }
 
-.dm-card--romaneio {
-    flex-direction: row;
-    padding: 0;
-    border: none;
-    text-align: start;
+dm-card-romaneio {
+    background: var(--dm_creme_02);
     display: flex;
     height: max-content;
     color: var(--dm_preto_00);
-    padding: 0;
+    border-radius: 6px;
+    box-shadow: 4px 5px 6px rgba(0, 0, 0, 0.05);
 }
-
 
 dm-card-bar {
     display: flex;
@@ -88,13 +85,13 @@ dm-card-content {
     transition: .2s;
 }
 
-dm-card-content:focus {
-    border-color: var(--dm_cinza_02);
-    background: var(--dm_creme_01);
+dm-card-content:hover {
+    background-color: var(--dm_creme_00);
     transition: .2s;
 }
 
-.dm-card--estatico {
-    border: 2px solid var(--dm_cinza_03);
-    color: var(--dm_cinza_01);
+[romaneio-ativo] {
+    border-color: var(--dm_cinza_02);
+    background: var(--dm_creme_01);
+    transition: .2s;
 }

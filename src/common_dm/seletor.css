@@ -1,0 +1,5 @@
+.el-input__wrapper:hover,
+.el-select .el-input__wrapper.is-focus,
+.el-select .el-input.is-focus .el-input__wrapper {
+    box-shadow: none !important;
+}

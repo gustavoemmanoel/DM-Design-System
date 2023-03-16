@@ -1,3 +1,12 @@
+import AtendimentoEdmil from "../views/Atendimento/AtendimentoEdmil.vue";
+import Results from "../views/Atendimento/Results.vue";
+import FormsEdmil from "../views/Atendimento/FormsEdmil.vue";
+import ArtigosConteudo from "../views/Atendimento/Artigos/ArtigosConteudo.vue";
+
+
+
+
+
 import { createRouter, createWebHashHistory } from "vue-router";
 
 /* Instalação */
@@ -36,18 +45,41 @@ import SobreDs from "../views/Componentes/SobreDs.vue";
 import UploadDs from "../views/Componentes/UploadDs.vue";
 import LegendaDs from "../views/Componentes/LegendaDs.vue";
 import GraficoDs from "../views/Componentes/GraficoDs.vue";
-import AtendimentoEdmil from "../views/Componentes/AtendimentoEdmil.vue";
 
 /* Outros */
 import PreProcessamentos from "../views/PreProcessamentos.vue";
 
 const routes = [
-  // instalação
   {
     path: "/AtendimentoEdmil",
     name: "AtendimentoEdmil",
     component: AtendimentoEdmil,
   },
+  {
+    path: "/Results",
+    name: "Results",
+    component: Results,
+  },
+  {
+    path: "/FormsEdmil",
+    name: "FormsEdmil",
+    component: FormsEdmil,
+  },
+  {
+    path: "/ArtigosConteudo",
+    name: "ArtigosConteudo",
+    component: ArtigosConteudo,
+  },
+
+
+
+
+
+
+
+
+
+  // instalação
   {
     path: "/ElementPlus",
     name: "ElementPlus",

@@ -34,13 +34,14 @@ body {
 @import "cores.css";
 @import "iconografia.css";
 @import "header.css";
+@import "seletor.css";
 @import "campodetexto.css";
+@import "dropdown.css";
 @import "buttons.css";
 @import "table.css";
 @import "tags.css";
 @import "loading.css";
 @import "calendário.css";
-@import "dropdown.css";
 @import "checkbox.css";
 @import "upload.css";
 @import "legenda.css";
@@ -69,3 +70,4 @@ hr,
   border: none;
   border-top: 1px solid var(--dm_cinza_04);
 }
+

@@ -398,7 +398,7 @@ export default {
         attributeCard.removeAttribute('card-ativo')
         targetElement.setAttribute('card-ativo', '')
       }
-    },
+    }
   }
 };
 </script>

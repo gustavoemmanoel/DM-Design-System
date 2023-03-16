@@ -1,6 +1,6 @@
 .el-button--dropdown {
     min-width: 172px;
-    border: 2px solid var(--dm_cinza_02);
+    border: 2px solid var(--dm_cinza_02) !important;
     padding: 0 10px;
 }
 
@@ -9,12 +9,16 @@
 .el-button--dropdown.is-disabled:focus {
     min-width: 172px;
     border: 2px solid var(--dm_cinza_03);
-    color: var(--dm_cinza_02);
+    color: var(--dm_cinza_02) !important;
     background: var(--dm_cinza_04);
 }
 
 .el-button--dropdown.is-disabled span dm-icon {
     opacity: 0.4;
+}
+
+.el-dropdown .el-button:focus {
+    color: var(--dm_preto_00);
 }
 
 .el-popper.is-pure.is-light.el-dropdown__popper {
@@ -23,8 +27,8 @@
 
 .el-button--dropdown:hover,
 .el-button--dropdown:focus {
-    background: var(--dm_creme_02);
-    border: 2px solid var(--dm_cinza_02);
+    background: var(--dm_creme_02) !important;
+    border: 2px solid var(--dm_cinza_02) !important;
     color: var(--dm_preto_00);
 }
 

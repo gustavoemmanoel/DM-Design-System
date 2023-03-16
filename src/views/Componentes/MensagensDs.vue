@@ -522,7 +522,7 @@
                               {
                               <div class="border-left">
                                 <div recuo>
-                                  <span blue>$body</span>.style.overflow = <span brown>'auto'</span> <br>
+                                  <span blue>$body</span>.style.overflow = <span brown>'overlay'</span> <br>
                                   <span blue>this</span>.upPopup = <span blue>!this</span>.upPopup<br>
                                   document.<span yellow>querySelector</span>(`[popupid="${<span
                                     blue>this</span>.idPopup}"]`).style.display = <span brown>'none'</span>
@@ -891,7 +891,7 @@
                               {
                               <div class="border-left">
                                 <div recuo>
-                                  <span blue>$body</span>.style.overflow = <span brown>'auto'</span> <br>
+                                  <span blue>$body</span>.style.overflow = <span brown>'overlay'</span> <br>
                                   <span blue>this</span>.upPopup = <span blue>!this</span>.upPopup<br>
                                   document.<span yellow>querySelector</span>(`[popupid="${<span
                                     blue>this</span>.idPopup}"]`).style.display = <span brown>'none'</span>
@@ -920,7 +920,6 @@
             <br>
             <br>
             <div style="display: flex; gap: 20px;">
-
               <dm-popup-background>
                 <dm-icon CorrectGreen />
                 <p>Rotas e romaneios remanejados com sucesso!</p>
@@ -1084,7 +1083,7 @@
                               {
                               <div class="border-left">
                                 <div recuo>
-                                  <span blue>$body</span>.style.overflow = <span brown>'auto'</span> <br>
+                                  <span blue>$body</span>.style.overflow = <span brown>'overlay'</span> <br>
                                   <span blue>this</span>.upPopup = <span blue>!this</span>.upPopup<br>
                                   document.<span yellow>querySelector</span>(`[popupid="${<span
                                     blue>this</span>.idPopup}"]`).style.display = <span brown>'none'</span>
@@ -1117,7 +1116,7 @@
             <dm-information>
               <dm-icon Lamp />
               <span>
-                <p>Para saber como construir a tabela de acordo com o padrão, </p>
+                <p>Para saber como construir a tabela <br> de acordo com o padrão, </p>
                 <el-button type="terciario">baixe o nosso modelo</el-button>
               </span>
             </dm-information>
@@ -1135,7 +1134,8 @@
                       <br>
                       <div class="border-left">
                         <div recuo>
-                          <span black>Para saber como construir a tabela de acordo com o padrão,<br>
+                          <span black>Para saber como construir a tabela &#60;<span tagColor>br</span> /&#62; de acordo
+                            com o padrão,<br>
                           </span> &#60;/<span tagColor>p</span>&#62; <br>
                           &#60;<span tagColor>el-button</span> type=<span roxo>"terciario"</span>&#62;<span black>baixe o
                             nosso modelo</span>&#60;/<span roxo>el-button</span>&#62;

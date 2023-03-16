@@ -1,6 +1,6 @@
 dm-button {
-  cursor: pointer;
-  transition: .2s;
+  display: flex;
+  align-items: center;
 }
 
 dm-button:hover {
@@ -8,7 +8,8 @@ dm-button:hover {
   transition: .2s;
 }
 
-.el-button {
+.el-button,
+dm-button {
   --el-button-hover-text-color: var(--dm_azul_00);
   --el-button-hover-bg-color: var(--dm_azul_00-light-9);
   --el-button-hover-border-color: var(--dm_azul_00-light-7);
@@ -39,7 +40,8 @@ dm-button:hover {
 }
 
 /*  */
-.el-button--primario {
+.el-button--primario,
+dm-button {
   box-shadow: 0 3px 6px var(--dm_cinza_03);
   font-family: "Roboto", sans-serif;
   background: var(--dm_azul_00);
@@ -177,4 +179,3 @@ dm-button:hover {
   color: var(--dm_amarelo_00);
   background: none;
 }
-

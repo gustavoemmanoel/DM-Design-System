@@ -96,6 +96,7 @@ dm-information {
     border: 2px solid var(--dm_amarelo_01);
     border-radius: 6px;
     width: max-content;
+    background: var(--dm_creme_02);
 }
 
 dm-information dm-icon {

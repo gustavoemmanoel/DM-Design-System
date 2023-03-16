@@ -9,29 +9,30 @@ body {
   padding: 0;
   box-sizing: border-box !important;
   font-family: "Roboto", sans-serif;
+
+}
+
+.el-container {
+  overflow: overlay;
 }
 
 *::-webkit-scrollbar {
-  width: 16px;
-  position: fixed;
-  margin: 0;
-  padding: 0;
+  width: 6px;
 }
 
 *::-webkit-scrollbar-track {
-  background: var(--dm_creme_02);
+  background: transparent;
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: var(--dm_cinza_03);
+  background-color: var(--dm_cinza_02);
   border-radius: 20px;
-  border: 3px solid var(--dm_creme_02);
+  border: transparent;
 }
 
 @import "tipografia.css";
 @import "cores.css";
 @import "iconografia.css";
-
 @import "header.css";
 @import "campodetexto.css";
 @import "buttons.css";

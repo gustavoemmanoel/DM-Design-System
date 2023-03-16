@@ -53,6 +53,88 @@
             <br>
             <el-collapse v-model="activeNames" @change="handleChange">
               <el-collapse-item title="Ver código">
+                <div class="html_codigos">
+                  &#60;<span tagColor>template</span>&#62;
+                  <div class="border-left">
+                    <div recuo>
+                      &#60;<span tagColor>dm-card</span> @click=<span roxo>"cardClicked"</span> &#62;
+                      <div class="border-left">
+                        <div recuo>
+                          &#60;<span tagColor>h4</span>&#62;<span black>Mercantil</span>&#60;/<span tagColor>h4</span>
+                          &#62; <br>
+                          &#60;<span tagColor>p</span> class=<span roxo>"body_02"</span>&#62;<span black>R$ 555,03</span>
+                          &#60;/<span tagColor>p</span> &#62;
+                        </div>
+                      </div>
+                      &#60;/<span tagColor>dm-card</span> &#62;
+                    </div>
+                  </div>
+                  &#60;/<span tagColor>template</span>&#62;
+                </div>
+                <br>
+                <div class="html_codigos">
+                  &#60;<span tagColor>script</span>&#62; <br>
+                  <span roxo>export default</span> {<br>
+                  <div class="border-left">
+                    <div recuo>
+                      <span yellow>mounted</span>() {
+                      <div class="border-left">
+                        <div recuo>
+                          <span blue>this</span>.<span yellow>indexadorCard</span>() <br>
+                        </div>
+                      </div>
+                      }, <br>
+                      methods: {
+                      <div class="border-left">
+                        <div recuo>
+                          <span yellow>indexadorCard</span>() {
+                          <div class="border-left">
+                            <div recuo>
+                              const card = document.<span yellow>querySelectorAll</span>(<span brown>'dm-card'</span>)
+                              <br>
+                              <span roxo>for</span> (<span blue>let i</span> = <span green>0</span>; <span blue>i</span>
+                              &#60;
+                              card.length; <span blue>i</span>++) {
+                              <div class="border-left">
+                                <div recuo>card[<span blue>i</span>].setAttribute(<span brown>'id'</span>, `card-${<span
+                                    blue>i</span>}`)</div>
+                              </div>
+                              }
+                            </div>
+                          </div>
+                          },
+                          <br>
+                          <span yellow>cardClicked</span>(<span blue2>event</span>) {
+                          <div class="border-left">
+                            <div recuo>
+                              <span blue>const targetElement</span> = event.currentTarget <br>
+                              <span blue>const attributeCard</span> = document.querySelector('[card-ativo]') <br>
+                              <span roxo>if</span> (<span blue>attributeCard</span> == <span blue>null</span>) {
+                              <div recuo><span blue>targetElement</span>.setAttribute(<span brown>'card-ativo'</span>, '')
+                              </div>
+                              }
+                              <span roxo>else</span> {
+                              <div class="border-left">
+                                <div recuo>
+                                  <span blue>attributeCard</span>.<span yellow>removeAttribute</span>(<span
+                                    brown>'card-ativo'</span>) <br>
+                                  <span blue>targetElement</span>.<span yellow>setAttribute</span>(<span
+                                    brown>'card-ativo'</span>, '')
+                                </div>
+                              </div>
+                              }
+                            </div>
+                          </div>
+                          },
+                        </div>
+                      </div>
+                      },
+                    </div>
+                  </div>
+                  },
+                  <br>
+                  &#60;/<span tagColor>script</span>&#62;
+                </div>
 
               </el-collapse-item>
             </el-collapse>
@@ -135,16 +217,118 @@
                 <div>Volumes: 40%</div>
               </dm-card-content>
             </dm-card-romaneio>
-
-
           </div>
           <br>
           <p class="detail_02">Cards de romaneio para visualização de informações pontuais e com função de botão: ao
             clicar nele, abre uma
             aba com todas as informações do romaneio e seus pedidos, podendo ser visualizada e editada.</p>
           <br>
+
           <el-collapse v-model="activeNames" @change="handleChange">
             <el-collapse-item title="Ver código">
+              <div class="html_codigos">
+                &#60;<span tagColor>template</span>&#62;
+                <div class="border-left">
+                  <div recuo>
+                    &#60;<span tagColor>dm-card-romaneio</span> @click=<span roxo>"cardRomaneio"</span>&#62;
+                    <div class="border-left">
+                      <div recuo>
+                        &#60;<span tagColor>dm-card-bar</span> class=<span roxo>"dm_rosa_00"</span> /&#62;
+                        &#60;<span tagColor>dm-card-content</span>&#62;
+                        <div class="border-left">
+                          <div recuo>
+                            &#60;<span tagColor>h4</span>&#62;<span black>Romaneio 01</span>&#60;/<span
+                              tagColor>h4</span>&#62;
+                            &#60;<span tagColor>div</span>&#62;<spa blackn>Ocupação: 40%</spa>&#60;/<span
+                              tagColor>div</span>&#62;
+                            &#60;<span tagColor>div</span>&#62;<spa blackn>Peso: 1294 kg</spa>&#60;/<span
+                              tagColor>div</span>&#62;
+                            &#60;<span tagColor>div</span>&#62;<spa blackn>Volumes: 40%</spa>&#60;/<span
+                              tagColor>div</span>&#62;
+                          </div>
+                        </div>
+                        &#60;/<span tagColor>dm-card-content</span>&#62;
+                      </div>
+                    </div>
+                    &#60;/<span tagColor>dm-card-romaneio</span>&#62;
+                  </div>
+                </div>
+                &#60;/<span tagColor>template</span>&#62;
+              </div>
+              <br>
+
+              <div class="html_codigos">
+                &#60;<span tagColor>script</span>&#62; <br>
+                <span roxo>export default</span> {<br>
+                <div class="border-left">
+                  <div recuo>
+                    <span yellow>mounted</span>() {
+                    <div class="border-left">
+                      <div recuo>
+                        <span blue>this</span>.<span yellow>indexadorRomaneio</span>() <br>
+                      </div>
+                    </div>
+                    }, <br>
+                    methods: {
+                    <div class="border-left">
+                      <div recuo>
+                        <span yellow>indexadorRomaneio</span>() {
+                        <div class="border-left">
+                          <div recuo>
+                            <span blue>const</span> cardsRomaneio = document.<span yellow>querySelectorAll</span>(<span
+                              brown>'dm-card-romaneio'</span>) <br>
+                            <span roxo>for</span> (let <span blue>i</span> = <span green>0</span>; <span blue>i</span>
+                            &#60;
+                            cardsRomaneio.length; <span blue>i</span>++) {
+                            <div class="border-left">
+                              <div recuo>cardsRomaneio[<span blue>i</span>].<span yellow>setAttribute</span>('id',
+                                `romaneio-${<span blue>i</span>}`)</div>
+                            </div>
+                            }
+                          </div>
+                        </div>
+                        }, <br>
+
+                        <span yellow>cardRomaneio</span>(<span blue2>event</span>) {
+                        <div class="border-left">
+                          <div recuo>
+                            <span blue>const</span> selectedRomaneio = <span blue2>event.currentTarget</span> <br>
+                            <span blue>const</span> romaneioAtivo = document.querySelector(<span
+                              brown>'[romaneio-ativo]'</span>) <br>
+                            <span roxo>if</span> (<span>romaneioAtivo</span> == <span blue>null</span>) { <br>
+                            <span blue>selectedRomaneio</span>.<span yellow>setAttribute</span>(<span
+                              brown>'romaneio-ativo'</span>, '') <br>
+                            document.querySelector(<span brown>'[romaneio-ativo]'</span>).childNodes[<span
+                              green>1</span>].style.borderColor = `var(--${document.querySelector(<span
+                              brown>'[romaneio-ativo]'</span>).childNodes[<span green>0</span>].classList})`<br>
+                            }
+                            <span roxo>else</span> {
+                            <div class="border-left">
+                              <div recuo>
+                                <span blue>romaneioAtivo</span>.childNodes[<span green>1</span>].<span
+                                  yellow>removeAttribute</span>('style') <br>
+                                <span blue>romaneioAtivo</span>.<span yellow>removeAttribute</span>(<span
+                                  brown>'romaneio-ativo'</span>) <br>
+                                <span blue>selectedRomaneio</span>.childNodes[<span green>1</span>].style.borderColor =
+                                `var(--${<span blue>selectedRomaneio</span>.childNodes[<span green>0</span>].classList})`
+                                <br>
+                                <span blue>selectedRomaneio</span>.<span yellow>setAttribute</span>(<span
+                                  brown>'romaneio-ativo'</span>, '')
+                              </div>
+                            </div>
+                            }
+                          </div>
+                        </div>
+                        },
+                      </div>
+                    </div>
+                    },
+                  </div>
+                </div>
+                },
+                <br>
+                &#60;/<span tagColor>script</span>&#62;
+              </div>
 
             </el-collapse-item>
           </el-collapse>
@@ -178,29 +362,24 @@ export default {
   },
 
   methods: {
+    indexadorRomaneio() {
+      const cardsRomaneio = document.querySelectorAll('dm-card-romaneio')
+      for (let i = 0; i < cardsRomaneio.length; i++) {
+        cardsRomaneio[i].setAttribute('id', `romaneio-${i}`)
+      }
+    },
+
     cardRomaneio(event) {
       const selectedRomaneio = event.currentTarget
-
       const romaneioAtivo = document.querySelector('[romaneio-ativo]')
-
       if (romaneioAtivo == null) {
         selectedRomaneio.setAttribute('romaneio-ativo', '')
-
         document.querySelector('[romaneio-ativo]').childNodes[1].style.borderColor = `var(--${document.querySelector('[romaneio-ativo]').childNodes[0].classList})`
-      }
-      else {
+      } else {
         romaneioAtivo.childNodes[1].removeAttribute('style')
         romaneioAtivo.removeAttribute('romaneio-ativo')
         selectedRomaneio.childNodes[1].style.borderColor = `var(--${selectedRomaneio.childNodes[0].classList})`
         selectedRomaneio.setAttribute('romaneio-ativo', '')
-      }
-    },
-
-    indexadorRomaneio() {
-      const cardsRomaneio = document.querySelectorAll('dm-card-romaneio')
-
-      for (let i = 0; i < cardsRomaneio.length; i++) {
-        cardsRomaneio[i].setAttribute('id', `romaneio-${i}`)
       }
     },
 
@@ -210,20 +389,16 @@ export default {
         card[i].setAttribute('id', `card-${i}`)
       }
     },
-
     cardClicked(event) {
       const targetElement = event.currentTarget
       const attributeCard = document.querySelector('[card-ativo]')
-
       if (attributeCard == null) {
         targetElement.setAttribute('card-ativo', '')
-      }
-      else {
+      } else {
         attributeCard.removeAttribute('card-ativo')
         targetElement.setAttribute('card-ativo', '')
       }
     },
-
   }
 };
 </script>

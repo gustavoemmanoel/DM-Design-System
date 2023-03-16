@@ -22,8 +22,7 @@ export default {
 
 body {
   background: var(--dm_creme_02);
-  overflow-y: scroll;
-
+  overflow: overlay;
 }
 
 .mg-right-js {

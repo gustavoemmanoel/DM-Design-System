@@ -14,6 +14,7 @@ dm-card {
     color: var(--dm_azul_00);
     cursor: pointer;
     transition: 0.2s;
+    background: var(--dm_creme_02);
 }
 
 dm-card div {
@@ -27,6 +28,7 @@ dm-card:hover {
 }
 
 [card-ativo] {
+    background: var(--dm_creme_01);
     box-shadow: inset 3px 3px 10px rgba(0, 0, 0, 0.3);
     transition: 0;
     border: 2px solid var(--dm_amarelo_00);

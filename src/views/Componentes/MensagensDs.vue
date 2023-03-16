@@ -1255,7 +1255,7 @@ export default {
       }
       //COMPARA OS OBJETOS CLICADOS QUE PODEM FECHAR O POPUP
       else if (event.target.getAttribute('popup') == 'close') {
-        $body.style.overflow = 'auto'
+        $body.style.overflow = 'overlay'
         this.upPopup = !this.upPopup
         document.querySelector(`[popupid="${this.idPopup}"]`).style.display = 'none'
       }

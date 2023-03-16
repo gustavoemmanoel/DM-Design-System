@@ -36,12 +36,18 @@ import SobreDs from "../views/Componentes/SobreDs.vue";
 import UploadDs from "../views/Componentes/UploadDs.vue";
 import LegendaDs from "../views/Componentes/LegendaDs.vue";
 import GraficoDs from "../views/Componentes/GraficoDs.vue";
+import AtendimentoEdmil from "../views/Componentes/AtendimentoEdmil.vue";
 
 /* Outros */
 import PreProcessamentos from "../views/PreProcessamentos.vue";
 
 const routes = [
   // instalação
+  {
+    path: "/AtendimentoEdmil",
+    name: "AtendimentoEdmil",
+    component: AtendimentoEdmil,
+  },
   {
     path: "/ElementPlus",
     name: "ElementPlus",

@@ -5,7 +5,7 @@ import ScraperFaq from "../views/Atendimento/Artigos/Scraper/ScraperFaq.vue";
 import RegionaisFaq from "../views/Atendimento/Artigos/Regionais/RegionaisFaq.vue";
 import ClusterFaq from "../views/Atendimento/Artigos/Cluster/ClusterFaq.vue";
 import ClusterMais from "../views/Atendimento/Artigos/Cluster/ClusterMais.vue";
-import LojasFaq from "../views/Atendimento/Artigos/Cluster/Lojas/LojasFaq.vue";
+import LojasFaq from "../views/Atendimento/Artigos/Lojas/LojasFaq.vue";
 import MapaFaq from "../views/Atendimento/Artigos/Mapa/MapaFaq.vue";
 import FaqMapa from "../views/Atendimento/Artigos/Mapa/FaqMapa.vue";
 
@@ -105,6 +105,7 @@ const routes = [
     name: "FaqMapa",
     component: FaqMapa,
   },
+
 
 
 

@@ -37,10 +37,10 @@
 </template>
 
 <script>
-import ArtigosRelacionados from '../../ArtigosRelacionado.vue'
-import AsideNav from '../../../AsideNav.vue'
-import FaleConosco from '../../../FaleConosco.vue'
-import SearchBar from '../../../SearchBar.vue'
+import ArtigosRelacionados from '../ArtigosRelacionado.vue'
+import AsideNav from '../../AsideNav.vue'
+import FaleConosco from '../../FaleConosco.vue'
+import SearchBar from '../../SearchBar.vue'
 
 export default {
     name: 'LojasFaq',

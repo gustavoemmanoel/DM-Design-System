@@ -1,15 +1,15 @@
 <template>
-    <div>
+    <atendimento-container>
         <el-row>
 
             <div style="width: 300px;">
-                <AsideAtendimento />
+                <AsideNav />
             </div>
 
-            <el-col :span="17" :offset="1" class="results">
+            <el-col :span="22" :offset="1" class="results">
                 <SearchBar />
                 <div class="back_button">
-                    <router-link to="AtendimentoEdmil" class="body_01  el-button--terciario">&#60;
+                    <router-link to="InicioAtendimento" class="body_01  el-button--terciario">&#60;
                         voltar</router-link>
                 </div>
                 <h1><span style="color:var(--dm_azul_00)">/</span>Fale Conosco</h1>
@@ -25,9 +25,7 @@
                         <el-option v-for="(item, index) in options" :key="index" :label="item.label" :value="item.value" />
                     </el-select>
                 </div>
-
                 <!--  -->
-
                 <div class="result__input ">
                     <h6>Tela com erro</h6>
                     <el-select v-model="value" placeholder="Selecione">
@@ -41,17 +39,13 @@
                     <h6>Assunto</h6>
                     <textarea cols="30" rows="2" placeholder="Digite" />
                 </div>
-
                 <!--  -->
-
                 <div class="result__input">
                     <h6>Comentario</h6>
                     <p class="detail_02">Deixe abaixo um relato, o mais detalhado possível do ocorrido.</p>
                     <textarea cols="30" rows="6" placeholder="Digite"></textarea>
                 </div>
-
                 <!--  -->
-
                 <div class="result__input">
                     <h6>Anexo</h6>
                     <p class="detail_02">Adicione uma imagem ou vídeo do problema encontrado, para que possamos resolve-lo
@@ -84,24 +78,22 @@
                 </dm-button-popup>
 
                 <footer />
-
             </el-col>
         </el-row>
-    </div>
+    </atendimento-container>
 </template>
 
 <script>
 import SearchBar from './SearchBar.vue';
-import AsideAtendimento from './AsideNav.vue';
 
 export default {
     name: 'FormsEdmil',
     components: {
         SearchBar,
-        AsideAtendimento,
     },
     data() {
         return {
+
             upPopup: false,
             idPopup: null,
             value: null,
@@ -163,6 +155,12 @@ export default {
 }
 
 </script>
+
+
+<style>
+
+</style>
+
 
 <style scoped>
 .results {

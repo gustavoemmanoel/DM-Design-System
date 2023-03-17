@@ -1,37 +1,109 @@
 <template>
     <div class="aside">
-        <el-collapse accordion>
-            <span name="1" v-for="(coisa, index) in 10" :key="index">
-                <el-collapse-item>
-                    <template #title>
-                        <div class="aside__option">
-                            <div class="aside__icon">
-                                <dm-icon DArrowLeftWhite />
-                            </div>
-                            <h6>Unknown printer took</h6>
+        <el-collapse accordion v-model="activeNames" v-for="(coisa, index) in coisas" :key="index">
+            <el-collapse-item :name="coisa.activedCollapse">
+
+                <template #title>
+                    <div class=" aside__option">
+                        <div class="aside__icon">
+                            <dm-icon DArrowLeftWhite />
                         </div>
-                    </template>
-                    <div class="aside__container" v-for="(coisa, index) in 3" :key="index">
-                        <option-aside class="h6">Aside option</option-aside>
+                        <h6>{{ coisa.activedCollapse }}</h6>
                     </div>
-                </el-collapse-item>
-            </span>
-
+                </template>
+                <div class="aside__container" v-for="(option, index) in coisa.options" :key="index">
+                    <router-link class="h6 router-link" :to="option.artigoPage" :id="`${index}-${coisa.name}`"
+                        currentPage>{{
+                            option.artigoName }}</router-link>
+                </div>
+            </el-collapse-item>
         </el-collapse>
-
-
     </div>
 </template>
 
 
 <script>
 export default {
-    name: 'AsideNav'
+    name: 'AsideNav',
+    props: {
+        activeNamess: String
+    },
+    data() {
+        return {
+            activeNames: this.activeNamess,
+
+            coisas: [
+                {
+                    activedCollapse: 'Scraper',
+                    options: [
+                        {
+                            artigoName: 'Scraper',
+                            artigoPage: 'ScraperFaq',
+                        },
+                    ]
+                },
+
+                {
+                    activedCollapse: 'Lojas',
+                    options: [
+                        {
+                            artigoName: 'Como ver Lojas',
+                            artigoPage: 'LojasFaq',
+                        },
+
+                    ]
+                },
+                {
+                    activedCollapse: 'Cluster',
+                    options: [
+                        {
+                            artigoName: 'Cluster Mais',
+                            artigoPage: 'ClusterMais',
+                        },
+                        {
+                            artigoName: 'Cluster Faq',
+                            artigoPage: 'ClusterFaq',
+                        },
+
+                    ]
+                },
+                {
+                    activedCollapse: 'Mapa',
+                    options: [
+                        {
+                            artigoName: 'Mapa 1',
+                            artigoPage: 'FaqMapa',
+                        },
+                        {
+                            artigoName: 'Mapa 2',
+                            artigoPage: 'MapaFaq',
+                        },
+
+                    ]
+                },
+
+
+            ]
+        }
+    },
 }
 
 </script>
 
 <style scoped>
+.router-link {
+    text-decoration: none;
+    color: var(--dm_preto_00);
+    border-radius: 6px;
+    padding: 8px;
+    margin-bottom: 8px;
+    margin-left: 24px;
+}
+
+[currentPage] {
+    background: var(--dm_azul_03);
+}
+
 .aside {
     position: fixed;
     top: 0;

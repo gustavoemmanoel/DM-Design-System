@@ -1,7 +1,13 @@
-import AtendimentoEdmil from "../views/Atendimento/AtendimentoEdmil.vue";
+import InicioAtendimento from "../views/Atendimento/InicioAtendimento.vue";
 import Results from "../views/Atendimento/Results.vue";
 import FormsEdmil from "../views/Atendimento/FormsEdmil.vue";
-import ArtigosConteudo from "../views/Atendimento/Artigos/ArtigosConteudo.vue";
+import ScraperFaq from "../views/Atendimento/Artigos/Scraper/ScraperFaq.vue";
+import RegionaisFaq from "../views/Atendimento/Artigos/Regionais/RegionaisFaq.vue";
+import ClusterFaq from "../views/Atendimento/Artigos/Cluster/ClusterFaq.vue";
+import ClusterMais from "../views/Atendimento/Artigos/Cluster/ClusterMais.vue";
+import LojasFaq from "../views/Atendimento/Artigos/Cluster/Lojas/LojasFaq.vue";
+import MapaFaq from "../views/Atendimento/Artigos/Mapa/MapaFaq.vue";
+import FaqMapa from "../views/Atendimento/Artigos/Mapa/FaqMapa.vue";
 
 
 
@@ -51,9 +57,9 @@ import PreProcessamentos from "../views/PreProcessamentos.vue";
 
 const routes = [
   {
-    path: "/AtendimentoEdmil",
-    name: "AtendimentoEdmil",
-    component: AtendimentoEdmil,
+    path: "/InicioAtendimento",
+    name: "InicioAtendimento",
+    component: InicioAtendimento,
   },
   {
     path: "/Results",
@@ -66,10 +72,40 @@ const routes = [
     component: FormsEdmil,
   },
   {
-    path: "/ArtigosConteudo",
-    name: "ArtigosConteudo",
-    component: ArtigosConteudo,
+    path: "/ScraperFaq",
+    name: "ScraperFaq",
+    component: ScraperFaq,
   },
+  {
+    path: "/RegionaisFaq",
+    name: "RegionaisFaq",
+    component: RegionaisFaq,
+  },
+  {
+    path: "/ClusterFaq",
+    name: "ClusterFaq",
+    component: ClusterFaq,
+  }, {
+    path: "/ClusterMais",
+    name: "ClusterMais",
+    component: ClusterMais,
+  },
+  {
+    path: "/LojasFaq",
+    name: "LojasFaq",
+    component: LojasFaq,
+  },
+  {
+    path: "/MapaFaq",
+    name: "MapaFaq",
+    component: MapaFaq,
+  },
+  {
+    path: "/FaqMapa",
+    name: "FaqMapa",
+    component: FaqMapa,
+  },
+
 
 
 

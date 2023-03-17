@@ -1,16 +1,12 @@
 <template>
-    <div>
-        <el-col :span="4" :offset="1" class="relacionados detail_02">
-            <h6>Artigos Relacionados</h6>
-            <br>
-            <div class="relacionados__container">
-                <a v-for="(artigo, index) in artigoInfos" :key="index">
-                    {{ artigo }}
-                </a>
-            </div>
-
-
-        </el-col>
+    <div class="relacionados detail_02">
+        <h6>Artigos Relacionados</h6>
+        <br>
+        <div class="relacionados__container">
+            <router-link class="link-artigos" :to="artigo.link" v-for="(artigo, index) in artigoInfos" :key="index">
+                {{ artigo.name }}
+            </router-link>
+        </div>
     </div>
 </template>
 <script>
@@ -19,6 +15,7 @@ export default {
     props: {
         artigoInfos: String
     },
+
 }
 </script>
 
@@ -29,7 +26,10 @@ export default {
     align-items: flex-start;
     padding: 50px 20px 20px 20px;
     height: 100vh;
-    min-width: 240px;
+    min-width: 250px;
+    position: fixed;
+    right: 0;
+    top: 0;
 }
 
 .relacionados__container {
@@ -37,13 +37,15 @@ export default {
     flex-direction: column;
 }
 
-.relacionados a {
+.link-artigos {
     cursor: pointer;
     margin-bottom: 16px;
     transition: .2s;
+    color: var(--dm_cinza_01);
+    text-decoration: none;
 }
 
-.relacionados a:hover {
+.link-artigos:hover {
     color: var(--dm_azul_00);
     transition: .2s;
     text-decoration: underline;

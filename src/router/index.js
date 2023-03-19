@@ -1,4 +1,5 @@
 import InicioAtendimento from "../views/Atendimento/InicioAtendimento.vue";
+import AppTes from "../views/Atendimento/AppTes.vue";
 import Results from "../views/Atendimento/Results.vue";
 import FormsEdmil from "../views/Atendimento/FormsEdmil.vue";
 import ScraperFaq from "../views/Atendimento/Artigos/Scraper/ScraperFaq.vue";
@@ -57,52 +58,46 @@ import PreProcessamentos from "../views/PreProcessamentos.vue";
 
 const routes = [
   {
+    path: "/AppTes",
+    component: AppTes,
+  },
+  {
     path: "/InicioAtendimento",
-    name: "InicioAtendimento",
     component: InicioAtendimento,
   },
   {
     path: "/Results",
-    name: "Results",
     component: Results,
   },
   {
     path: "/FormsEdmil",
-    name: "FormsEdmil",
     component: FormsEdmil,
   },
   {
     path: "/ScraperFaq",
-    name: "ScraperFaq",
     component: ScraperFaq,
   },
   {
     path: "/RegionaisFaq",
-    name: "RegionaisFaq",
     component: RegionaisFaq,
   },
   {
     path: "/ClusterFaq",
-    name: "ClusterFaq",
     component: ClusterFaq,
   }, {
     path: "/ClusterMais",
-    name: "ClusterMais",
     component: ClusterMais,
   },
   {
     path: "/LojasFaq",
-    name: "LojasFaq",
     component: LojasFaq,
   },
   {
     path: "/MapaFaq",
-    name: "MapaFaq",
     component: MapaFaq,
   },
   {
     path: "/FaqMapa",
-    name: "FaqMapa",
     component: FaqMapa,
   },
 

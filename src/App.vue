@@ -16,13 +16,19 @@ export default {
 </script>
 
 <style>
+.aside .router-link-active {
+  background: var(--dm_azul_03);
+}
+
 atendimento-container {
   display: flex;
   flex-direction: column;
   max-width: 1000px;
-  min-height: 100vh;
   margin: auto;
 }
+
+
+/*  */
 
 
 * {

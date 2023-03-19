@@ -12,15 +12,14 @@
                     </div>
                 </template>
                 <div class="aside__container" v-for="(option, index) in coisa.options" :key="index">
-                    <router-link class="h6 router-link" :to="option.artigoPage" :id="`${index}-${coisa.name}`"
-                        currentPage>{{
-                            option.artigoName }}</router-link>
+                    <router-link class="h6 router-link" :to="option.artigoPage" :id="`${index}-${coisa.name}`">
+                        {{ option.artigoName }}
+                    </router-link>
                 </div>
             </el-collapse-item>
         </el-collapse>
     </div>
 </template>
-
 
 <script>
 export default {
@@ -42,9 +41,8 @@ export default {
                         },
                     ]
                 },
-
                 {
-                    activedCollapse: 'Lojas',
+                    activedCollapse: 'Loja',
                     options: [
                         {
                             artigoName: 'Como ver Lojas',
@@ -81,8 +79,6 @@ export default {
 
                     ]
                 },
-
-
             ]
         }
     },
@@ -100,9 +96,7 @@ export default {
     margin-left: 24px;
 }
 
-[currentPage] {
-    background: var(--dm_azul_03);
-}
+
 
 .aside {
     position: fixed;
@@ -129,20 +123,5 @@ export default {
 .aside__container {
     display: flex;
     flex-direction: column;
-}
-
-option-aside {
-    display: flex;
-    border-radius: 6px;
-    padding: 8px 14px;
-    margin-left: 26px;
-    transition: .2s;
-    width: 86%;
-    cursor: pointer;
-}
-
-option-aside:hover {
-    background: var(--dm_azul_03);
-    transition: .2s;
 }
 </style>

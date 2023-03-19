@@ -188,7 +188,8 @@
               <el-collapse-item title="Ver código">
                 <div class="html_codigos">
                   <span v-for="(style, index) in terceiro.stringHTML" :key="index">
-                    &lt;<span tagColor>el-button</span> type=<span roxo>{{style.html}}</span>&gt;<span black>Botão</span>&lt;/<span tagColor>el-button</span>&gt;
+                    &lt;<span tagColor>el-button</span> type=<span roxo>{{ style.html }}</span>&gt;<span
+                      black>Botão</span>&lt;/<span tagColor>el-button</span>&gt;
                     <br />
                   </span>
                 </div>

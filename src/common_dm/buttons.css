@@ -1,6 +1,8 @@
 dm-button {
   display: flex;
   align-items: center;
+
+  box-shadow: 0 3px 6px var(--dm_cinza_03);
 }
 
 dm-button:hover {
@@ -17,29 +19,24 @@ dm-button {
   --el-button-outline-color: var(--dm_azul_00-light-5);
   border: none;
   border-radius: 6px;
+  padding: 0 15px;
+  height: 35px;
+  box-shadow: 0 3px 6px var(--dm_cinza_03);
+  font-size: 16px;
 }
+
 
 .el-button:hover {
   color: var(--dm_preto_00);
 }
 
-.el-button--success {
-  --el-button-bg-color: var(--dm_verde_00);
-}
-
-.el-button--warning {
-  --el-button-bg-color: var(--dm_amarelo_00);
-}
-
-.el-button--danger {
-  --el-button-bg-color: var(--dm_vermelho_00);
-}
-
-.el-button--info {
-  --el-button-bg-color: var(--el-color-info);
+.el-button--primary:hover {
+  background-color: var(--dm_azul_01);
+  color: var(--dm_creme_02);
 }
 
 /*  */
+
 .el-button--primario,
 dm-button {
   box-shadow: 0 3px 6px var(--dm_cinza_03);
@@ -54,6 +51,11 @@ dm-button {
   border: none;
   height: 35px;
   cursor: pointer;
+}
+
+
+.el-button--primario:focus, .el-button--primario-larger:focus {
+  box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.21);
 }
 
 .el-button--primario-larger {
@@ -78,6 +80,7 @@ dm-button {
   background: var(--dm_azul_02);
   color: var(--dm_creme_00) !important;
   transition: 0.2s;
+
 }
 
 .el-button:focus {
@@ -86,7 +89,7 @@ dm-button {
 }
 
 .el-button--secundario {
-  box-shadow: 0 3px 6px var(--dm_cinza_03);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.21);
   font-family: "Rotobo", sans-serif;
   background: var(--dm_creme_00);
   color: var(--dm_azul_00);
@@ -101,6 +104,7 @@ dm-button {
 }
 
 .el-button--secundario:focus {
+  box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.21);
   border-color: var(--dm_amarelo_00);
   background-color: var(--dm_creme_00);
   color: var(--dm_amarelo_00);
@@ -130,6 +134,7 @@ dm-button {
 }
 
 .el-button--secundario-larger:focus {
+  box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.21);
   border-color: var(--dm_amarelo_00);
   background-color: var(--dm_creme_00);
   color: var(--dm_amarelo_00);
@@ -142,6 +147,7 @@ dm-button {
   transition: 0.2s;
   font-weight: 500;
   font-size: 16px;
+  padding: 0;
   border: none;
   cursor: pointer;
   background: none;

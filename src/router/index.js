@@ -1,19 +1,3 @@
-import InicioAtendimento from "../views/Atendimento/InicioAtendimento.vue";
-import AppTes from "../views/Atendimento/AppTes.vue";
-import Results from "../views/Atendimento/Results.vue";
-import FormsEdmil from "../views/Atendimento/FormsEdmil.vue";
-import ScraperFaq from "../views/Atendimento/Artigos/Scraper/ScraperFaq.vue";
-import RegionaisFaq from "../views/Atendimento/Artigos/Regionais/RegionaisFaq.vue";
-import ClusterFaq from "../views/Atendimento/Artigos/Cluster/ClusterFaq.vue";
-import ClusterMais from "../views/Atendimento/Artigos/Cluster/ClusterMais.vue";
-import LojasFaq from "../views/Atendimento/Artigos/Lojas/LojasFaq.vue";
-import MapaFaq from "../views/Atendimento/Artigos/Mapa/MapaFaq.vue";
-import FaqMapa from "../views/Atendimento/Artigos/Mapa/FaqMapa.vue";
-
-
-
-
-
 import { createRouter, createWebHashHistory } from "vue-router";
 
 /* Instalação */
@@ -57,60 +41,6 @@ import GraficoDs from "../views/Componentes/GraficoDs.vue";
 import PreProcessamentos from "../views/PreProcessamentos.vue";
 
 const routes = [
-  {
-    path: "/AppTes",
-    component: AppTes,
-  },
-  {
-    path: "/InicioAtendimento",
-    component: InicioAtendimento,
-  },
-  {
-    path: "/Results",
-    component: Results,
-  },
-  {
-    path: "/FormsEdmil",
-    component: FormsEdmil,
-  },
-  {
-    path: "/ScraperFaq",
-    component: ScraperFaq,
-  },
-  {
-    path: "/RegionaisFaq",
-    component: RegionaisFaq,
-  },
-  {
-    path: "/ClusterFaq",
-    component: ClusterFaq,
-  }, {
-    path: "/ClusterMais",
-    component: ClusterMais,
-  },
-  {
-    path: "/LojasFaq",
-    component: LojasFaq,
-  },
-  {
-    path: "/MapaFaq",
-    component: MapaFaq,
-  },
-  {
-    path: "/FaqMapa",
-    component: FaqMapa,
-  },
-
-
-
-
-
-
-
-
-
-
-
   // instalação
   {
     path: "/ElementPlus",

@@ -86,33 +86,6 @@ dm-button-popup {
 
 /* ALERTA */
 
-dm-information {
-    display: grid;
-    grid-template-columns: 25px 1fr;
-    gap: 20px;
-    align-items: center;
-    justify-items: center;
-    padding: 14px 20px;
-    border: 2px solid var(--dm_amarelo_01);
-    border-radius: 6px;
-    width: max-content;
-    background: var(--dm_creme_02);
-}
-
-dm-information dm-icon {
-    width: 43px;
-    height: 43px;
-}
-
-dm-information span {
-    text-align: center;
-}
-
-dm-information span .el-button--terciario {
-    text-align: center;
-    height: 0;
-}
-
 /* Element Plus */
 
 dm-alert {

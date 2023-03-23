@@ -9,65 +9,14 @@
 
         <h1>/Botões</h1>
         <hr>
+        <p>
+          Botões permitem que os usuários executem ações dentro da plataforma
+          ou os levam para outras páginas. Eles são desenhados de acordo com
+          uma hierarquia de importância dentro das tarefas da página. Os
+          botões tem alturas definidas, mas as larguras não podem ser
+          modificadas de acordo com o espaço destinado no grid.
+        </p>
         <br />
-        <div class="cont-elements">
-          <p>
-            Botões permitem que os usuários executem ações dentro da plataforma
-            ou os levam para outras páginas. Eles são desenhados de acordo com
-            uma hierarquia de importância dentro das tarefas da página. Os
-            botões tem alturas definidas, mas as larguras não podem ser
-            modificadas de acordo com o espaço destinado no grid.
-          </p>
-          <br>
-          <el-button>Default</el-button>
-          <el-button type="primary">Primary</el-button>
-          <el-button type="success">Success</el-button>
-          <el-button type="info">Info</el-button>
-          <el-button type="warning">Warning</el-button>
-          <el-button type="danger">Danger</el-button>
-          <br />
-          <br />
-          <el-button disabled>Default</el-button>
-          <el-button type="primary" disabled>Primary</el-button>
-          <el-button type="success" disabled>Success</el-button>
-          <el-button type="info" disabled>Info</el-button>
-          <el-button type="warning" disabled>Warning</el-button>
-          <el-button type="danger" disabled>Danger</el-button>
-          <br />
-          <br />
-          <el-collapse v-model="activeNames" @change="handleChange">
-            <el-collapse-item title="Ver código">
-              <div class="html_codigos">
-                <!-- el-button default -->
-                &#60;<span tagColor>el-button</span>&#62;<span black>Botão</span>&lt;/<span tagColor>el-button</span>&gt;
-                <br />
-                <!-- el-button primario -->
-                &#60;<span tagColor>el-button</span> type=<span roxo>"primario"</span>&#62;<span
-                  black>Botão</span>&lt;/<span tagColor>el-button</span>&gt;
-                <br />
-                <!-- el-button success -->
-                &#60;<span tagColor>el-button</span> type=<span roxo>"success"</span>&#62;<span
-                  black>Botão</span>&lt;/<span tagColor>el-button</span>&gt;
-                <br />
-                <!-- el-button info -->
-                &#60;<span tagColor>el-button</span> type=<span roxo>"info"</span>&#62;<span black>Botão</span>&lt;/<span
-                  tagColor>el-button</span>&gt;
-                <br />
-                <!-- el-button warning -->
-                &#60;<span tagColor>el-button</span> type=<span roxo>"warning"</span>
-                &#62;
-                <span black>Botão</span>
-                &lt;/<span tagColor>el-button</span>&gt;
-                <br />
-                <!-- el-button danger -->
-                &#60;<span tagColor>el-button</span> type=<span roxo>"danger"</span>
-                &#62;
-                <span black>Botão</span>
-                &lt;/<span tagColor>el-button</span>&gt;
-              </div>
-            </el-collapse-item>
-          </el-collapse>
-        </div>
 
         <!-- Primário -->
         <div class="cont-elements">

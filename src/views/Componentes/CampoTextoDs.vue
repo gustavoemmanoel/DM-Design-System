@@ -23,7 +23,6 @@
                 <h6>Default</h6>
                 <br>
 
-
                 <el-form :label-position="labelPosition" :model="formLabelAlign" :rules="rules" ref="ruleForm">
                   <el-form-item label="Rua" prop="street">
                     <el-input v-model="formLabelAlign.street" placeholder="Digite"></el-input>
@@ -32,9 +31,6 @@
                     <el-input v-model="formLabelAlign.number" placeholder="Digite"></el-input>
                   </el-form-item>
                 </el-form>
-
-
-
 
               </el-col>
               <el-col :span="8">

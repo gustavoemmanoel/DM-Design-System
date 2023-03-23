@@ -1,14 +1,14 @@
 <template>
   <div>
-    <!-- <AsideComponent /> -->
+    <AsideComponent />
     <router-view class="mg-right-js" />
   </div>
 </template>
 
 <script>
-// import AsideComponent from './components/AsideComponent.vue';
+import AsideComponent from './components/AsideComponent.vue';
 export default {
-  // components: { AsideComponent },
+  components: { AsideComponent },
   name: "app",
 
 
@@ -42,7 +42,7 @@ body {
 
 .mg-right-js {
   overflow: hidden;
-  /* margin-left: 256px; */
+  margin-left: 256px;
 }
 
 .flex {

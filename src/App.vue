@@ -1,7 +1,16 @@
 <template>
   <div>
-    <AsideComponent />
-    <router-view class="mg-right-js" />
+    <hide-width>
+      <AsideComponent />
+      <router-view class="mg-right-js" />
+    </hide-width>
+
+    <mensagem-width>
+      <p>
+        Esse website não oferece uma versão para dispositivos menores que 1100px de largura, acesse-o por um
+        dispositivo desktop
+      </p>
+    </mensagem-width>
   </div>
 </template>
 
@@ -16,6 +25,35 @@ export default {
 </script>
 
 <style>
+mensagem-width {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  display: none;
+  background: green;
+}
+
+
+mensagem-width p {
+  color: black;
+  width: 500px;
+  background: yellow;
+}
+
+@media only screen and (max-width: 1110px) {
+
+  hide-width {
+    display: none;
+  }
+
+  mensagem-width {
+    display: block;
+  }
+
+}
+
 .aside .router-link-active {
   background: var(--dm_azul_03);
 }
@@ -27,9 +65,7 @@ atendimento-container {
   margin: auto;
 }
 
-
 /*  */
-
 
 * {
   box-sizing: border-box;
@@ -80,6 +116,7 @@ body {
   padding: 60px 72px 20px 72px;
   box-sizing: border-box;
   border-radius: 6px;
+  overflow: visible;
 }
 
 .cont-elements {

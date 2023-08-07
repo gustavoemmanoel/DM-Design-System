@@ -41,7 +41,6 @@
             <el-collapse v-model="activeNames" @change="handleChange">
               <el-collapse-item title="Ver código">
 
-
                 <div class="html_codigos">
                   &#60;<span tagColor>template</span>&#62;
 
@@ -84,9 +83,11 @@
                     </div>
                   </div>
                   &#60;/<span tagColor>template</span>&#62;
+
                 </div>
               </el-collapse-item>
             </el-collapse>
+
             <br>
           </div>
           <div class="cont-elements">

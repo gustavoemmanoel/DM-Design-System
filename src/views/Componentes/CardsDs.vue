@@ -6,7 +6,6 @@
     <el-container>
       <el-main>
 
-
         <div class="containerInterno">
           <div>
             <h1>/Cards</h1>
@@ -25,31 +24,35 @@
             <p>Cards clicáveis possuem comportamento de botão. Além de apresentar as principais informações resumidas, ao
               serem clicados, podem expandir ou apresentar uma nova informação na página.</p>
             <br>
-            <div class="container-grid">
+            <dm-card-container class="container-grid">
               <dm-card @click="cardClicked">
                 <h4>Mercantil</h4>
-                <p class="body_02">R$ 555,03</p>
+                <span>
+                  <p class="body_02">R$ 555,03</p>
+                </span>
               </dm-card>
               <dm-card @click="cardClicked">
                 <h4>Mercantil</h4>
-                <p class="body_02">R$ 555,03</p>
+                <span>
+                  <p class="body_02">R$ 555,03</p>
+                </span>
               </dm-card>
               <dm-card @click="cardClicked">
                 <h4>Mercantil</h4>
-                <p class="body_02">R$ 555,03</p>
+                <span>
+                  <p class="body_02">R$ 555,03</p>
+                </span>
               </dm-card>
-            </div>
+            </dm-card-container>
             <br>
             <br>
             <img style="width: 93%;" src="cards/01.svg">
-
             <br>
             <br>
             <p class="detail_02">Cards azuis com função de botão: ao clicar em um deles, o gráfico muda para mostrar as
               informações
               desejadas. Os cards do tipo botão usam o comportamento de cores do botão. Ativos ficam azuis e clicados
               ficam amarelos. A sombra também é uma detalhe que identifica o botão.</p>
-
             <br>
             <el-collapse v-model="activeNames" @change="handleChange">
               <el-collapse-item title="Ver código">
@@ -62,7 +65,8 @@
                         <div recuo>
                           &#60;<span tagColor>h4</span>&#62;<span black>Mercantil</span>&#60;/<span tagColor>h4</span>
                           &#62; <br>
-                          &#60;<span tagColor>p</span> class=<span roxo>"body_02"</span>&#62;<span black>R$ 555,03</span>
+                          &#60;<span tagColor>p</span>class=<span roxo>"<span roxo>body_02</span>"</span>&#62;<span
+                            black>R$ 555,03</span>
                           &#60;/<span tagColor>p</span> &#62;
                         </div>
                       </div>
@@ -72,6 +76,9 @@
                   &#60;/<span tagColor>template</span>&#62;
                 </div>
                 <br>
+                <!-- Script -->
+
+
                 <div class="html_codigos">
                   &#60;<span tagColor>script</span>&#62; <br>
                   <span roxo>export default</span> {<br>
@@ -87,39 +94,67 @@
                       methods: {
                       <div class="border-left">
                         <div recuo>
-                          <span yellow>indexadorCard</span>() {
+                          <span yellow>cardClicked</span>(event) {
                           <div class="border-left">
                             <div recuo>
-                              const card = document.<span yellow>querySelectorAll</span>(<span brown>'dm-card'</span>)
+                              <span blue>const</span> indexElementCard = <span blue2>event.currentTarget</span>.<span
+                                yellow>getAttribute</span>(<span brown>'dm-card-index'</span>) <br>
+                              <span blue>const</span> targetElement = <span blue2>event.currentTarget</span> <br>
+                              <span blue>const</span> attributeCard = document.<span yellow>querySelector</span>('<span
+                                brown>[card-ativo]</span>') <br>
+                              <span blue>const</span> filhos = <span
+                                blue2>event.currentTarget.parentElement.childNodes</span>
                               <br>
-                              <span roxo>for</span> (<span blue>let i</span> = <span green>0</span>; <span blue>i</span>
-                              &#60;
-                              card.length; <span blue>i</span>++) {
+                              <span roxo>if</span> (indexElementCard == <span
+                                blue2>event.currentTarget.parentElement</span>.<span yellow>getAttribute</span>(<span
+                                brown>'dm-card-index'</span>)) {
                               <div class="border-left">
-                                <div recuo>card[<span blue>i</span>].setAttribute(<span brown>'id'</span>, `card-${<span
-                                    blue>i</span>}`)</div>
+                                <div recuo>
+                                  <span roxo>for</span> (<span blue>let</span> i = <span green>0</span>; i &#60;
+                                  filhos.length; i++) {
+                                  <div class="border-left">
+                                    <div recuo>filhos[i].<span yellow>removeAttribute</span>(<span
+                                        brown>'card-ativo'</span>)
+                                    </div>
+                                  </div>
+                                  }
+                                  targetElement.<span yellow>setAttribute</span>(<span brown>'card-ativo'</span>, <span
+                                    brown>''</span>)
+                                </div>
+                              </div>
+                              }<br>
+                              <span roxo>else</span> {
+                              <div class="border-left">
+                                <div recuo>
+                                  attributeCard.<span yellow>removeAttribute</span>(<span brown>'card-ativo'</span>) <br>
+                                  targetElement.<span yellow>setAttribute</span>(<span brown>'card-ativo'</span>, <span
+                                    brown>''</span>)
+                                </div>
                               </div>
                               }
                             </div>
                           </div>
                           },
                           <br>
-                          <span yellow>cardClicked</span>(<span blue2>event</span>) {
+                          <span yellow>indexadorCards</span>() {
                           <div class="border-left">
                             <div recuo>
-                              <span blue>const targetElement</span> = event.currentTarget <br>
-                              <span blue>const attributeCard</span> = document.querySelector('[card-ativo]') <br>
-                              <span roxo>if</span> (<span blue>attributeCard</span> == <span blue>null</span>) {
-                              <div recuo><span blue>targetElement</span>.setAttribute(<span brown>'card-ativo'</span>, '')
-                              </div>
-                              }
-                              <span roxo>else</span> {
+                              <span blue>const</span> container = document.<span yellow>querySelectorAll</span>(<span
+                                brown>'dm-card-container'</span>)
+                              <br>
+                              <span roxo>for</span> (<span blue>let</span> i = <span green>0</span>; i &#60;
+                              container.length; i++) {
                               <div class="border-left">
                                 <div recuo>
-                                  <span blue>attributeCard</span>.<span yellow>removeAttribute</span>(<span
-                                    brown>'card-ativo'</span>) <br>
-                                  <span blue>targetElement</span>.<span yellow>setAttribute</span>(<span
-                                    brown>'card-ativo'</span>, '')
+                                  container[i].<span yellow>setAttribute</span>(<span brown>'dm-card-index'</span>, i)<br>
+                                  <span blue>const</span> childrensContainer = container[i].childNodes<br>
+                                  <span roxo>for</span> (<span blue>let</span> y = <span green>0</span>; y &#60;
+                                  childrensContainer.length; y++) {
+                                  <div class="border-left">
+                                    <div recuo>childrensContainer[y].<span yellow>setAttribute</span>(<span
+                                        brown>'dm-card-index'</span>, i)</div>
+                                  </div>
+                                  }
                                 </div>
                               </div>
                               }
@@ -128,6 +163,7 @@
                           },
                         </div>
                       </div>
+
                       },
                     </div>
                   </div>
@@ -135,16 +171,10 @@
                   <br>
                   &#60;/<span tagColor>script</span>&#62;
                 </div>
-
               </el-collapse-item>
             </el-collapse>
           </div>
-
-          <br />
-
         </div>
-
-
 
         <div class="cont-elements">
           <h3>Card estático</h3>
@@ -157,17 +187,23 @@
 
             <dm-card-estatico>
               <h4>Renda média</h4>
-              <p class="body_02">R$ 555,03</p>
+              <span>
+                <p class="body_02">R$ 555,03</p>
+              </span>
             </dm-card-estatico>
 
             <dm-card-estatico>
               <h4>Renda média</h4>
-              <p class="body_02">R$ 555,03</p>
+              <span>
+                <p class="body_02">R$ 555,03</p>
+              </span>
             </dm-card-estatico>
 
             <dm-card-estatico>
               <h4>Renda média</h4>
-              <p class="body_02">R$ 555,03</p>
+              <span>
+                <p class="body_02">R$ 555,03</p>
+              </span>
             </dm-card-estatico>
 
           </div>
@@ -175,11 +211,65 @@
           <br>
           <p class="detail_02">Cards estáticos apenas para visualização de informações pontuais.</p>
           <br>
+
           <el-collapse v-model="activeNames" @change="handleChange">
             <el-collapse-item title="Ver código">
 
+              <div class="html_codigos">
+                &#60;<span tagColor>template</span>&#62;
+                <div class="border-left">
+                  <div recuo>
+                    &#60;<span tagColor>dm-card-estatico</span>&#62;
+
+                    <div class="border-left">
+                      <div recuo>
+                        &#60;<span tagColor>h4</span>&#62;<span black>Renda média</span>&#60;/<span
+                          tagColor>h4</span>&#62;
+                        <br>
+                        &#60;<span tagColor>p</span> class="<span roxo>body_02</span>"&#62;<span black>R$
+                          555,03</span>&#60;/<span tagColor>p</span>&#62;
+                      </div>
+                    </div>
+
+                    &#60;/<span tagColor>dm-card-estatico</span>&#62;
+
+                    <br>
+                    <br>
+
+                    &#60;<span tagColor>dm-card-estatico</span>&#62;
+                    <div class="border-left">
+                      <div recuo>
+                        &#60;<span tagColor>h4</span>&#62;<span black>Renda média</span>&#60;/<span
+                          tagColor>h4</span>&#62;<br>
+                        &#60;<span tagColor>p</span> class="<span roxo>body_02</span>"&#62;<span black>R$
+                          555,03</span>&#60;/<span tagColor>p</span>&#62;
+                      </div>
+                    </div>
+                    &#60;/<span tagColor>dm-card-estatico</span>&#62;
+
+                    <br>
+                    <br>
+
+                    &#60;<span tagColor>dm-card-estatico</span>&#62;
+                    <div class="border-left">
+                      <div recuo>
+                        &#60;<span tagColor>h4</span>&#62;<span black>Renda média</span>&#60;/<span
+                          tagColor>h4</span>&#62;<br>
+                        &#60;<span tagColor>p</span> class="<span roxo>body_02</span>"&#62;<span black>R$
+                          555,03</span>&#60;/<span tagColor>p</span>&#62;
+                      </div>
+                    </div>
+                    &#60;/<span tagColor>dm-card-estatico</span>&#62;
+
+                  </div>
+                </div>
+                &#60;<span tagColor>/template</span>&#62;
+              </div>
+
             </el-collapse-item>
           </el-collapse>
+
+
         </div>
         <div class="cont-elements">
           <h3>Cards de romaneio</h3>
@@ -355,12 +445,10 @@ export default {
       headerTitle: "Cards",
     };
   },
-
   mounted() {
-    this.indexadorCard()
+    this.indexadorCards()
     this.indexadorRomaneio()
   },
-
   methods: {
     indexadorRomaneio() {
       const cardsRomaneio = document.querySelectorAll('dm-card-romaneio')
@@ -368,7 +456,6 @@ export default {
         cardsRomaneio[i].setAttribute('id', `romaneio-${i}`)
       }
     },
-
     cardRomaneio(event) {
       const selectedRomaneio = event.currentTarget
       const romaneioAtivo = document.querySelector('[romaneio-ativo]')
@@ -383,22 +470,31 @@ export default {
       }
     },
 
-    indexadorCard() {
-      const card = document.querySelectorAll('dm-card')
-      for (let i = 0; i < card.length; i++) {
-        card[i].setAttribute('id', `card-${i}`)
-      }
-    },
     cardClicked(event) {
+      const indexElementCard = event.currentTarget.getAttribute('dm-card-index')
       const targetElement = event.currentTarget
       const attributeCard = document.querySelector('[card-ativo]')
-      if (attributeCard == null) {
-        targetElement.setAttribute('card-ativo', '')
-      } else {
+      const filhos = event.currentTarget.parentElement.childNodes
+      if (indexElementCard == event.currentTarget.parentElement.getAttribute('dm-card-index')) {
+        for (let i = 0; i < filhos.length; i++) {
+          filhos[i].removeAttribute('card-ativo')
+        } targetElement.setAttribute('card-ativo', '')
+      }
+      else {
         attributeCard.removeAttribute('card-ativo')
         targetElement.setAttribute('card-ativo', '')
       }
-    }
+    },
+    indexadorCards() {
+      const container = document.querySelectorAll('dm-card-container')
+      for (let i = 0; i < container.length; i++) {
+        container[i].setAttribute('dm-card-index', i)
+        const childrensContainer = container[i].childNodes
+        for (let y = 0; y < childrensContainer.length; y++) {
+          childrensContainer[y].setAttribute('dm-card-index', i)
+        }
+      }
+    },
   }
 };
 </script>
